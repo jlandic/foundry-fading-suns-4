@@ -3,6 +3,7 @@ import typescript from '@rollup/plugin-typescript';
 import livereload from 'rollup-plugin-livereload';
 import copy from 'rollup-plugin-copy';
 import scss from 'rollup-plugin-scss';
+import watchGlobs from 'rollup-plugin-watch-globs';
 
 const liveReloadEnabled = !!process.env.ROLLUP_WATCH;
 
@@ -22,14 +23,15 @@ export default {
     sourcemap: true,
   },
   plugins: [
+    liveReloadEnabled &&
+      watchGlobs(['src/templates/**/*.hbs', 'src/styles/**/*.scss']),
     typescript(),
     scss({ fileName: 'bundle.css' }),
     !liveReloadEnabled && terser(),
     copyStaticFiles(),
     liveReloadEnabled &&
       livereload({
-        watch: ['src/templates/**/*', 'src/styles/**/*'],
-        delay: 500,
+        delay: 200,
       }),
   ],
 };
