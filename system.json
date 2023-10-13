@@ -1,0 +1,24 @@
+{
+  "title": "Fading Suns 4th Edition",
+  "id": "fading-suns-4",
+  "name": "fading-suns-4",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 11
+  },
+  "author": "@jlandic",
+  "esmodules": ["dist/main.js"],
+  "styles": ["dist/bundle.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English (US)",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/jlandic/foundry-fading-suns-4",
+  "manifest": "https://raw.githubusercontent.com/jlandic/foundry-fading-suns-4/main/system.json",
+  "download": "https://github.com/jlandic/foundry-fading-suns-4/releases/download/development/fading-suns-4.zip"
+}

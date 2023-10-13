@@ -1,0 +1,9 @@
+.sheet {
+  @import 'sheets/shared.scss';
+
+  @import 'sheets/actor/character.sheet.scss';
+  @import 'sheets/item/shared.scss';
+  @import 'sheets/item/simple-item.scss';
+
+  font-size: 0.9em;
+}

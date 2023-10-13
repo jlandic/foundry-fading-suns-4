@@ -1,0 +1,142 @@
+{
+  "Actor": {
+    "types": ["Character"],
+    "templates": {
+      "bank": {
+        "bank": {
+          "vp": 0,
+          "wp": 0,
+          "surge´": 0
+        }
+      }
+    },
+    "Character": {
+      "templates": ["bank"],
+      "level": 1,
+      "rank": "",
+      "planet": "",
+      "birthdate": "",
+      "size": 5,
+      "speed": "10",
+      "cash": 0,
+      "techgnosis": 0,
+      "vitality": 0,
+      "revivals": 0,
+      "biography": "",
+      "characteristics": {
+        "str": 3,
+        "dex": 3,
+        "end": 3,
+        "wits": 3,
+        "per": 3,
+        "will": 3,
+        "pre": 3,
+        "int": 3,
+        "fth": 3
+      },
+      "skills": {
+        "Academia": 3,
+        "Alchemy": 0,
+        "Animalia": 3,
+        "Arts": 3,
+        "Charm": 3,
+        "Crafts": 3,
+        "Disguise": 3,
+        "Drive": 3,
+        "Empathy": 3,
+        "Fight": 3,
+        "Focus": 3,
+        "Impress": 3,
+        "Interface": 0,
+        "Intrusion": 3,
+        "Knavery": 3,
+        "Melee": 3,
+        "Observe": 3,
+        "Perform": 3,
+        "Pilot": 0,
+        "Remedy": 3,
+        "Shoot": 3,
+        "SleightOfHand": 3,
+        "Sneak": 3,
+        "Survival": 3,
+        "TechRedemption": 3,
+        "Vigor": 3
+      },
+      "res": {
+        "body": {
+          "value": 0,
+          "mod": ""
+        },
+        "mind": {
+          "value": 0,
+          "mod": ""
+        },
+        "spirit": {
+          "value": 0,
+          "mod": ""
+        }
+      },
+      "occult": {
+        "psi": 0,
+        "urge": 0,
+        "theurgy": 0,
+        "hubris": 0
+      }
+    }
+  },
+  "Item": {
+    "templates": {
+      "common": {
+        "description": ""
+      }
+    },
+    "types": [
+      "Class",
+      "Skill",
+      "Faction",
+      "Calling",
+      "Blessing",
+      "Curse",
+      "Perk",
+      "Power",
+      "Armor",
+      "EShield",
+      "Species"
+    ],
+    "Class": {
+      "templates": ["common"]
+    },
+    "Skill": {
+      "templates": ["common"]
+    },
+    "Faction": {
+      "templates": ["common"]
+    },
+    "Calling": {
+      "templates": ["common"]
+    },
+    "Blessing": {
+      "templates": ["common"]
+    },
+    "Curse": {
+      "templates": ["common"]
+    },
+    "Perk": {
+      "templates": ["common"]
+    },
+    "Power": {
+      "templates": ["common"]
+    },
+    "Armor": {
+      "templates": ["common"]
+    },
+    "EShield": {
+      "templates": ["common"]
+    },
+    "Species": {
+      "templates": ["common"],
+      "size": 5,
+      "speed": "10"
+    }
+  }
+}

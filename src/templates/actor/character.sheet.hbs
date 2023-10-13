@@ -1,0 +1,42 @@
+<form autocomplete="off" classes="{{cssClasses}}">
+  <header>
+    <div class="header">
+      <div class="block area-identity">
+        <!-- Name -->
+        <label for="name">{{ localize "FS4.Character.Trait.Name" }}</label>
+        <input type="text" name="name" value="{{actor.name}}">
+
+        <!-- Birthdate -->
+        <label for="birthdate">{{ localize "FS4.Character.Trait.Birthdate" }}</label>
+        <input type="text" name="system.birthdate" value="{{actor.system.birthdate}}">
+        
+        <label for="species">{{ localize "FS4.Character.Trait.Species" }}</label>
+        <input type="text" name="species" value="{{actor.system.species.name}}" class="item-show" data-uuid="{{actor.system.species.uuid}}" placeholder="-" readonly>
+
+        <div class="size-speed">
+          <label for="size">{{ localize "FS4.Character.Trait.Size" }}</label>
+          <input type="number" name="system.size" value="{{actor.system.size}}">
+
+          <label for="speed">{{ localize "FS4.Character.Trait.Speed" }}</label>
+          <input type="text" name="system.speed" value="{{actor.system.speed}}">
+        </div>
+
+        <label for="affliction">{{ localize "FS4.Character.Trait.Affliction" }}</label>
+        <input type="text" name="affliction" value="{{actor.system.affliction.name}}" class="item-show" data-uuid="{{actor.system.affliction.uuid}}" placeholder="-" readonly>
+
+        <label for="planet">{{ localize "FS4.Character.Trait.Planet" }}</label>
+        <input type="text" name="system.planet" value="{{actor.system.planet}}">
+
+        <label for="blessing">{{ localize "FS4.Character.Trait.Blessing" }}</label>
+        <input type="text" name="blessing" value="{{actor.system.blessing.name}}" class="item-show" data-uuid="{{actor.system.blessing.uuid}}" placeholder="-" readonly>
+
+        <label for="curse">{{ localize "FS4.Character.Trait.Curse" }}</label>
+        <input type="text" name="curse" value="{{actor.system.curse.name}}" class="item-show" data-uuid="{{actor.system.curse.uuid}}" placeholder="-" readonly>
+      </div>
+
+      <div class="area-image">
+        <img src="{{actor.img}}" alt="Actor image" data-edit="img" width="128" height="128">
+      </div>
+    </div>
+  </header>
+</form>

@@ -1,0 +1,49 @@
+{
+  "name": "fading-suns-4",
+  "version": "0.0.1",
+  "description": "FoundryVTT system for Fading Suns 4th Edition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "lint:fix": "eslint --fix 'src/**/*.{js,ts}'",
+    "build": "rollup -c",
+    "run": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlandic/foundry-fading-suns-4.git"
+  },
+  "keywords": [
+    "fadingsuns",
+    "ttrpg",
+    "foundryvtt"
+  ],
+  "author": "@jlandic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlandic/foundry-fading-suns-4/issues"
+  },
+  "homepage": "https://github.com/jlandic/foundry-fading-suns-4#readme",
+  "devDependencies": {
+    "@league-of-foundry-developers/foundry-vtt-types": "^9.280.0",
+    "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/livereload": "^0.9.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
+    "rollup": "^4.0.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.69.3",
+    "typecript": "^0.0.1-security",
+    "typescript": "^5.2.2"
+  }
+}

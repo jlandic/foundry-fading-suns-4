@@ -1,0 +1,22 @@
+$item-image-size: 64px;
+
+&.item {
+  .header {
+    display: grid;
+
+    grid-template-columns: 1fr $item-image-size;
+    grid-template-rows: $item-image-size;
+    grid-gap: 5px;
+    grid-template-areas: "identity image";
+
+    align-items: center;
+  }
+
+  .area-image {
+    grid-area: image;
+  }
+
+  .area-identity {
+    grid-area: identity;
+  }
+}

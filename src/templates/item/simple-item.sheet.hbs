@@ -1,0 +1,21 @@
+<form autocomplete="off" class="{{cssClasses}}">
+  <header>
+    <div class="header">
+      <div class="area-identity">
+        <input name="name" type="text" value="{{item.name}}">
+        <em>{{localize (concat "FS4.Item.Type." item.type) }}</em>
+      </div>
+
+      <div class="area-image">
+        <img src="{{item.img}}" data-edit="img" width="64" height="64">
+      </div>
+    </div>
+  </header>
+
+  <section class="body">
+    <div class="description">
+      <h2>{{ localize "FS4.Item.Trait.Description" }}</h2>
+      {{editor enrichedDescription target="system.description" button=true editable=editable}}
+    </div>
+  </section>
+</form>

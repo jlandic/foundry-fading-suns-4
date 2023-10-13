@@ -1,0 +1,39 @@
+{
+  "FS4": {
+    "SheetClass": {
+      "CharacterSheet": "Character",
+      "SimpleItemSheet": "Simple item"
+    },
+    "Character": {
+      "Trait": {
+        "Name": "Name",
+        "Birthdate": "Birthdate",
+        "Species": "Species",
+        "Size": "Size",
+        "Speed": "Speed",
+        "Affliction": "Affliction",
+        "Planet": "Planet",
+        "Blessing": "Blessing",
+        "Curse": "Curse"
+      }
+    },
+    "Item": {
+      "Type": {
+        "Class": "Class",
+        "Skill": "Skill",
+        "Faction": "Faction",
+        "Calling": "Calling",
+        "Blessing": "Blessing",
+        "Curse": "Curse",
+        "Perk": "Perk",
+        "Power": "Power",
+        "Armor": "Armor",
+        "EShield": "E-shield",
+        "Species": "Species"
+      },
+      "Trait": {
+        "Description": "Description"
+      }
+    }
+  }
+}
