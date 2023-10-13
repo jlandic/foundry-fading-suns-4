@@ -1,0 +1,36 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '20.x'
+      - run: npm ci
+      - run: npm run build
+        name: Build
+      - name: Zip output
+        run: zip -qq -r build.zip dist/ lang/ system.json template.json LICENSE
+      - uses: actions/create-release@v1
+        name: Create release
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: ${{ github.ref }}
+          tag_name: ${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Upload bundle to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build.zip
+          asset_name: fading-suns-4.zip
+          tag: ${{ github.ref }}
+          overwrite: true
