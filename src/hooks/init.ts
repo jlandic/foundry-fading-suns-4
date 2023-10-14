@@ -27,9 +27,7 @@ const registerDataModels = (): void => {
   };
 };
 
-const registerSheets = (): void => {
-  const { id: gameId } = (game as Game).system;
-
+const registerSheets = (gameId: string): void => {
   Actors.unregisterSheet('core', ActorSheet);
   Actors.registerSheet(gameId, FS4CharacterSheet, {
     types: ['Character'],
@@ -57,8 +55,21 @@ const registerSheets = (): void => {
   });
 };
 
-Hooks.on('init', () => {
+const registerPartials = async (
+  gameId: string
+): Promise<Array<Handlebars.TemplateDelegate<any>>> => {
+  console.log(gameId);
+  return await loadTemplates([
+    `systems/${gameId}/templates/actor/partials/character-header.hbs`,
+  ]);
+};
+
+Hooks.on('init', async () => {
+  const { id: gameId } = (game as Game).system;
+
   registerDataModels();
-  registerSheets();
+  registerSheets(gameId);
   registerHandlebarsHelpers();
+
+  await registerPartials(gameId);
 });

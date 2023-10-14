@@ -10,7 +10,7 @@ const liveReloadEnabled = !!process.env.ROLLUP_WATCH;
 const copyStaticFiles = () => {
   return copy({
     targets: [{ src: 'lang', dest: 'dist' }],
-    targets: [{ src: 'src/templates', dest: 'dist' }],
+    targets: [{ src: 'templates', dest: 'dist' }],
     verbose: true,
   });
 };
@@ -24,7 +24,7 @@ export default {
   },
   plugins: [
     liveReloadEnabled &&
-      watchGlobs(['src/templates/**/*.hbs', 'src/styles/**/*.scss']),
+      watchGlobs(['templates/**/*.hbs', 'src/styles/**/*.scss']),
     typescript(),
     scss({ fileName: 'bundle.css' }),
     !liveReloadEnabled && terser(),
