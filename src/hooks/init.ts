@@ -59,6 +59,9 @@ const registerPartials = (gameId: string): void => {
   loadTemplates([
     `systems/${gameId}/templates/partials/actor/character-header.hbs`,
     `systems/${gameId}/templates/partials/actor/bank.hbs`,
+    `systems/${gameId}/templates/partials/actor/gear.hbs`,
+    `systems/${gameId}/templates/partials/actor/stats.hbs`,
+    `systems/${gameId}/templates/partials/actor/history.hbs`,
   ]).catch(console.error);
 };
 

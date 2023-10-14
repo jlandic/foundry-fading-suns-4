@@ -29,7 +29,12 @@
       },
       "Sheet": {
         "Bank": "Bank",
-        "Surge": "Surge"
+        "Surge": "Surge",
+        "Tab": {
+          "Stats": "Stats",
+          "History": "History",
+          "Gear": "Gear"
+        }
       }
     },
     "Item": {

@@ -14,7 +14,13 @@ class FS4CharacterSheet extends ActorSheet {
       classes,
       width: 600,
       height: 800,
-      tabs: [],
+      tabs: [
+        {
+          navSelector: '.tabs',
+          contentSelector: '.body',
+          initial: 'stats',
+        },
+      ],
     });
   }
 

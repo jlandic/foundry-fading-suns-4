@@ -3,5 +3,33 @@
     {{> 'systems/fading-suns-4/templates/partials/actor/character-header.hbs' }}
   </header>
 
+  <nav class="block tabs" data-group="primary">
+    <a class="item" data-tab="stats">
+      <i class="fa fa-dice-d20"></i> {{ localize "FS4.Character.Sheet.Tab.Stats" }}
+    </a>
+
+    <a class="item" data-tab="history">
+      <i class="fa fa-dice-d20"></i> {{ localize "FS4.Character.Sheet.Tab.History" }}
+    </a>
+
+    <a class="item" data-tab="gear">
+      <i class="fa fa-dice-d20"></i> {{ localize "FS4.Character.Sheet.Tab.Gear" }}
+    </a>
+  </nav>
+
   {{> 'systems/fading-suns-4/templates/partials/actor/bank.hbs'}}
+
+  <section class="body">
+    <div class="tab" data-tab="stats" data-group="primary">
+      {{> 'systems/fading-suns-4/templates/partials/actor/stats.hbs' }}
+    </div>
+
+    <div class="tab" data-tab="history" data-group="primary">
+      {{> 'systems/fading-suns-4/templates/partials/actor/history.hbs' }}
+    </div>
+
+    <div class="tab" data-tab="gear" data-group="primary">
+      {{> 'systems/fading-suns-4/templates/partials/actor/gear.hbs' }}
+    </div>
+  </section>
 </form>

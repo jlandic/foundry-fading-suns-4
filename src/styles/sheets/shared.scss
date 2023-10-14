@@ -22,3 +22,10 @@ input:read-only {
 .editor {
   min-height: 500px;
 }
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
