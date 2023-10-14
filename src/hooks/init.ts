@@ -55,21 +55,23 @@ const registerSheets = (gameId: string): void => {
   });
 };
 
-const registerPartials = async (
-  gameId: string
-): Promise<Array<Handlebars.TemplateDelegate<any>>> => {
-  console.log(gameId);
-  return await loadTemplates([
-    `systems/${gameId}/templates/actor/partials/character-header.hbs`,
-  ]);
+const registerPartials = (gameId: string): void => {
+  loadTemplates([
+    `systems/${gameId}/templates/partials/actor/character-header.hbs`,
+    `systems/${gameId}/templates/partials/actor/bank.hbs`,
+  ]).catch(console.error);
 };
 
-Hooks.on('init', async () => {
+Hooks.once('init', () => {
   const { id: gameId } = (game as Game).system;
 
   registerDataModels();
   registerSheets(gameId);
   registerHandlebarsHelpers();
+  registerPartials(gameId);
+});
 
-  await registerPartials(gameId);
+Hooks.once('ready', () => {
+  // @ts-expect-error outdated foundry typings - v10
+  fromUuidSync('Actor.xU059A4AizzElvLY')?.sheet?.render(true);
 });

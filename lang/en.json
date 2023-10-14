@@ -7,6 +7,7 @@
     "Character": {
       "Trait": {
         "Name": "Name",
+        "Level": "Level",
         "Birthdate": "Birthdate",
         "Species": "Species",
         "Size": "Size",
@@ -14,7 +15,21 @@
         "Affliction": "Affliction",
         "Planet": "Planet",
         "Blessing": "Blessing",
-        "Curse": "Curse"
+        "Curse": "Curse",
+        "VP": {
+          "short": "VP",
+          "full": "Victory points"
+        },
+        "WP": {
+          "short": "WP",
+          "full": "Wyrd points"
+        },
+        "Vitality": "Vitality",
+        "Revivals": "Revivals"
+      },
+      "Sheet": {
+        "Bank": "Bank",
+        "Surge": "Surge"
       }
     },
     "Item": {

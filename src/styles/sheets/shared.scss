@@ -1,17 +1,18 @@
-.block {
+.block-thick {
   border: 3px solid black;
   padding: 5px;
   margin: 1px;
 }
 
-input.small {
-  max-width: 2em;
-  text-align: center
+.block {
+  border: 1px solid gray;
+  padding: 2px;
+  margin: 1px;
 }
 
-input.medium {
-  max-width: 6em;
-  text-align: center
+input.double-digits {
+  max-width: 3em;
+  text-align: center;
 }
 
 input:read-only {

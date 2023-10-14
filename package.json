@@ -8,7 +8,7 @@
     "lint": "eslint 'src/**/*.{js,ts}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,ts}'",
     "build": "rollup -c",
-    "run": "rollup -c -w"
+    "watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,6 @@
   "devDependencies": {
     "@league-of-foundry-developers/foundry-vtt-types": "^9.280.0",
     "@rollup/plugin-eslint": "^9.0.5",
-    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/livereload": "^0.9.3",

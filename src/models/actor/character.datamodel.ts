@@ -155,6 +155,15 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
     return -1;
   }
 
+  get revivalAmount(): number {
+    const system = this._getActorSystem();
+    if (system != null) {
+      return this._getSurgeAndRevivalAmountForLevel(parseInt(system.level));
+    }
+
+    return -1;
+  }
+
   get surgeRating(): number {
     const system = this._getActorSystem();
     if (system !== null) {
@@ -173,13 +182,13 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
   get surgeAmount(): number {
     const system = this._getActorSystem();
     if (system != null) {
-      return this._getSurgeAmountForLevel(parseInt(system.level));
+      return this._getSurgeAndRevivalAmountForLevel(parseInt(system.level));
     }
 
     return -1;
   }
 
-  get bankCapacity(): number {
+  get bankRating(): number {
     const system = this._getActorSystem();
     if (system != null) {
       return this._getBankCapacityForLevel(parseInt(system.level));
@@ -232,7 +241,7 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
     return Math.floor(level / 2) * 5 + 5;
   }
 
-  private _getSurgeAmountForLevel(level: number): number {
+  private _getSurgeAndRevivalAmountForLevel(level: number): number {
     if (level < 4) return 1;
     if (level < 7) return 2;
     if (level < 10) return 3;
