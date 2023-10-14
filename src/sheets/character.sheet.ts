@@ -23,9 +23,9 @@ class FS4CharacterSheet extends ActorSheet {
 
     html.find('.item-show').on('click', (event) => {
       // @ts-expect-error outdated foundry typings - v10
-      this.fromUuidSync(
-        event.currentTarget?.getAttribute('data-uuid')
-      ).sheet.render(true);
+      fromUuidSync(event.currentTarget?.getAttribute('data-uuid')).sheet.render(
+        true
+      );
     });
   }
 
