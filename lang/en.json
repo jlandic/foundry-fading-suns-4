@@ -37,6 +37,72 @@
         }
       }
     },
+    "Skill": {
+      "Academia": "Academia",
+      "Alchemy": "Alchemy",
+      "Animalia": "Animalia",
+      "Arts": "Arts",
+      "Charm": "Charm",
+      "Crafts": "Crafts",
+      "Disguise": "Disguise",
+      "Drive": "Drive",
+      "Empathy": "Empathy",
+      "Fight": "Fight",
+      "Focus": "Focus",
+      "Impress": "Impress",
+      "Interface": "Interface",
+      "Intrusion": "Intrusion",
+      "Knavery": "Knavery",
+      "Melee": "Melee",
+      "Observe": "Observe",
+      "Perform": "Perform",
+      "Pilot": "Pilot",
+      "Remedy": "Remedy",
+      "Shoot": "Shoot",
+      "SleightOfHand": "Sleight Of Hand",
+      "Sneak": "Sneak",
+      "Survival": "Survival",
+      "TechRedemption": "Tech Redemption",
+      "Vigor": "Vigor"
+    },
+    "Characteristic": {
+      "str": {
+        "short": "str",
+        "full": "Strength"
+      },
+      "dex": {
+        "short": "dex",
+        "full": "Dexterity"
+      },
+      "end": {
+        "short": "end",
+        "full": "Endurance"
+      },
+      "wits": {
+        "short": "wits",
+        "full": "Wits"
+      },
+      "per": {
+        "short": "per",
+        "full": "Perception"
+      },
+      "will": {
+        "short": "will",
+        "full": "Will"
+      },
+      "pre": {
+        "short": "pre",
+        "full": "Presence"
+      },
+      "int": {
+        "short": "int",
+        "full": "Intuition"
+      },
+      "fth": {
+        "short": "fth",
+        "full": "Faith"
+      }
+    },
     "Item": {
       "Type": {
         "Class": "Class",

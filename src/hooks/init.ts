@@ -76,5 +76,5 @@ Hooks.once('init', () => {
 
 Hooks.once('ready', () => {
   // @ts-expect-error outdated foundry typings - v10
-  fromUuidSync('Actor.xU059A4AizzElvLY')?.sheet?.render(true);
+  fromUuidSync('Actor.LnBHkDRmVSerYbqE')?.sheet?.render(true);
 });

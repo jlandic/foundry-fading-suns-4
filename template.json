@@ -6,7 +6,7 @@
         "bank": {
           "vp": 0,
           "wp": 0,
-          "surge": 0
+          "surge": 1
         }
       }
     },
@@ -20,8 +20,8 @@
       "speed": "10",
       "cash": 0,
       "techgnosis": 0,
-      "vitality": 0,
-      "revivals": 0,
+      "vitality": 15,
+      "revivals": 1,
       "biography": "",
       "characteristics": {
         "str": 3,
@@ -35,32 +35,110 @@
         "fth": 3
       },
       "skills": {
-        "Academia": 3,
-        "Alchemy": 0,
-        "Animalia": 3,
-        "Arts": 3,
-        "Charm": 3,
-        "Crafts": 3,
-        "Disguise": 3,
-        "Drive": 3,
-        "Empathy": 3,
-        "Fight": 3,
-        "Focus": 3,
-        "Impress": 3,
-        "Interface": 0,
-        "Intrusion": 3,
-        "Knavery": 3,
-        "Melee": 3,
-        "Observe": 3,
-        "Perform": 3,
-        "Pilot": 0,
-        "Remedy": 3,
-        "Shoot": 3,
-        "SleightOfHand": 3,
-        "Sneak": 3,
-        "Survival": 3,
-        "TechRedemption": 3,
-        "Vigor": 3
+        "Academia": {
+          "initial": 3,
+          "value": 3
+        },
+        "Alchemy": {
+          "initial": 0,
+          "value": 0
+        },
+        "Animalia": {
+          "initial": 3,
+          "value": 3
+        },
+        "Arts": {
+          "initial": 3,
+          "value": 3
+        },
+        "Charm": {
+          "initial": 3,
+          "value": 3
+        },
+        "Crafts": {
+          "initial": 3,
+          "value": 3
+        },
+        "Disguise": {
+          "initial": 3,
+          "value": 3
+        },
+        "Drive": {
+          "initial": 3,
+          "value": 3
+        },
+        "Empathy": {
+          "initial": 3,
+          "value": 3
+        },
+        "Fight": {
+          "initial": 3,
+          "value": 3
+        },
+        "Focus": {
+          "initial": 3,
+          "value": 3
+        },
+        "Impress": {
+          "initial": 3,
+          "value": 3
+        },
+        "Interface": {
+          "initial": 0,
+          "value": 0
+        },
+        "Intrusion": {
+          "initial": 3,
+          "value": 3
+        },
+        "Knavery": {
+          "initial": 3,
+          "value": 3
+        },
+        "Melee": {
+          "initial": 3,
+          "value": 3
+        },
+        "Observe": {
+          "initial": 3,
+          "value": 3
+        },
+        "Perform": {
+          "initial": 3,
+          "value": 3
+        },
+        "Pilot": {
+          "initial": 0,
+          "value": 0
+        },
+        "Remedy": {
+          "initial": 3,
+          "value": 3
+        },
+        "Shoot": {
+          "initial": 3,
+          "value": 3
+        },
+        "SleightOfHand": {
+          "initial": 3,
+          "value": 3
+        },
+        "Sneak": {
+          "initial": 3,
+          "value": 3
+        },
+        "Survival": {
+          "initial": 3,
+          "value": 3
+        },
+        "TechRedemption": {
+          "initial": 3,
+          "value": 3
+        },
+        "Vigor": {
+          "initial": 3,
+          "value": 3
+        }
       },
       "res": {
         "body": {

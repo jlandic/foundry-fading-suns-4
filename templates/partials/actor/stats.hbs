@@ -1,3 +1,25 @@
 <div class="stats">
-  <h1>Stats</h1>
+  <div class="block skills">
+    {{#each actor.system.skills}}
+    <div class="skill-name" data-skill="{{@key}}">
+      {{ localize (concat "FS4.Skill." @key) }}
+    </div>
+
+    <span>({{ this.initial }})</span>
+
+    <input class="double-digits" type="text" name="system.skills.{{@key}}.value" value="{{this.value}}">
+    {{/each}}
+  </div>
+
+  <div class="block characteristics">
+    {{#each actor.system.characteristics}}
+    <div class="characteristic">
+      <div class="characteristic-name" data-characteristic="{{@key}}" data-tooltip="{{ localizeCharacFull @key }}">
+        {{ uppercase (localizeCharacShort @key) }}
+      </div>
+
+      <input class="double-digits" type="text" name="system.characteristics.{{@key}}" value="{{this}}">
+    </div>
+    {{/each}}
+  </div>
 </div>

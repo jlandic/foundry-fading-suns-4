@@ -65,4 +65,32 @@ $actor-image-size: 128px;
       align-items: center;
     }
   }
+
+  .stats {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: "skills skills characteristics";
+
+    .skills {
+      display: grid;
+      grid-area: skills;
+      grid-template-columns: 25% 10% 15% 25% 10% 15%;
+    }
+
+    .characteristics {
+      display: grid;
+      grid-area: characteristics;
+      grid-template-rows: repeat(9, 1fr);
+    }
+
+    .characteristic {
+      align-items: center;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      font-size: 1.2em;
+      font-weight: bolder;
+    }
+  }
 }

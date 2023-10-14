@@ -34,23 +34,23 @@
 
   <div class="double-input">
     <label>
-      {{ localize "FS4.Character.Trait.Vitality" }}
-    </label>
-    <div class="inputs">
-      <input class="double-digits" type="number" name="system.vitality" value="{{actor.system.vitality}}">
-      <span> / </span>
-      <input class="double-digits" type="number" value="{{actor.system.vitalityRating}}" readonly disabled>
-    </div>
-  </div>
-
-  <div class="double-input">
-    <label>
       {{ localize "FS4.Character.Trait.Revivals" }} ({{ actor.system.revivalRating }})
     </label>
     <div class="inputs">
       <input class="double-digits" type="number" name="system.revivals" value="{{actor.system.revivals}}">
       <span> / </span>
       <input class="double-digits" type="number" value="{{actor.system.revivalAmount}}" readonly disabled>
+    </div>
+  </div>
+
+  <div class="double-input">
+    <label>
+      {{ localize "FS4.Character.Trait.Vitality" }}
+    </label>
+    <div class="inputs">
+      <input class="double-digits" type="number" name="system.vitality" value="{{actor.system.vitality}}">
+      <span> / </span>
+      <input class="double-digits" type="number" value="{{actor.system.vitalityRating}}" readonly disabled>
     </div>
   </div>
 </div>
