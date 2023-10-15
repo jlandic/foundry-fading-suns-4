@@ -1,6 +1,6 @@
 {
   "name": "fading-suns-4",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "FoundryVTT system for Fading Suns 4th Edition",
   "main": "index.js",
   "scripts": {
