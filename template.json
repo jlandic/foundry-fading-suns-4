@@ -176,7 +176,7 @@
       "Blessing",
       "Curse",
       "Perk",
-      "Power",
+      "Upbringing",
       "Armor",
       "EShield",
       "Species"
@@ -202,7 +202,7 @@
     "Perk": {
       "templates": ["common"]
     },
-    "Power": {
+    "Upbringing": {
       "templates": ["common"]
     },
     "Armor": {

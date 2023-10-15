@@ -215,6 +215,10 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
     return this._itemGetter(CHARACTER_ITEMS.class);
   }
 
+  get upbringing(): Item | null {
+    return this._itemGetter(CHARACTER_ITEMS.upbringing);
+  }
+
   get faction(): Item | null {
     return this._itemGetter(CHARACTER_ITEMS.faction);
   }
@@ -233,10 +237,6 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
 
   get perks(): Item[] {
     return this._itemsGetter(CHARACTER_ITEMS.perks);
-  }
-
-  get powers(): Item[] {
-    return this._itemsGetter(CHARACTER_ITEMS.powers);
   }
 
   private _getBankCapacityForLevel(level: number): number {

@@ -6,7 +6,6 @@ $actor-image-size: 128px;
     grid-template-areas: "identity image";
     grid-template-columns: 1fr $actor-image-size;
     grid-template-rows: 128px;
-    grid-gap: 5px;
 
     align-items: center;
   }
@@ -117,6 +116,32 @@ $actor-image-size: 128px;
 
     .eshield {
       grid-area: eshield;
+    }
+  }
+
+  .history {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .origin {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .faction {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .callings {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .biography {
+      text-align: justify;
+      grid-column: span 3;
     }
   }
 }

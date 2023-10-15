@@ -1,5 +1,10 @@
 import { HAS_ONE_ITEM_TYPES, UNIQUE_INSTANCE_ITEM_TYPES } from '../constants';
 
+interface CustomData {
+  enrichedBiography: string;
+}
+type CharacterSheetData = ActorSheet.Data & CustomData;
+
 class FS4CharacterSheet extends ActorSheet {
   get template(): string {
     return `systems/${
@@ -18,7 +23,7 @@ class FS4CharacterSheet extends ActorSheet {
         {
           navSelector: '.tabs',
           contentSelector: '.body',
-          initial: 'stats',
+          initial: 'history',
         },
       ],
     });
@@ -28,11 +33,33 @@ class FS4CharacterSheet extends ActorSheet {
     super.activateListeners(html);
 
     html.find('.item-show').on('click', (event) => {
+      console.log('Trying to open item sheet');
       // @ts-expect-error outdated foundry typings - v10
       fromUuidSync(event.currentTarget?.getAttribute('data-uuid')).sheet.render(
         true
       );
     });
+  }
+
+  async getData(
+    options?: Partial<ActorSheet.Options> | undefined
+  ): Promise<CharacterSheetData> {
+    const baseData = await super.getData(options);
+    // @ts-expect-error outdated foundry typings
+    let biography = getProperty(this.actor.system, 'biography');
+    if (biography === '') {
+      biography = 'Write your history here...';
+    }
+
+    const sheetData: CharacterSheetData = {
+      ...baseData,
+      // eslint-disable-next-line @typescript-eslint/await-thenable
+      enrichedBiography: await TextEditor.enrichHTML(biography, {
+        secrets: this.object.isOwner,
+      }),
+    };
+
+    return sheetData;
   }
 
   protected async _onDropItem(

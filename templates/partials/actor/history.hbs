@@ -1,3 +1,28 @@
 <div class="history">
-  <h1>History</h1>
+  <div class="origin">
+    <h1>{{ localize "FS4.Character.Sheet.Origin" }}</h1>
+
+    <input type="text" value="{{actor.system.class.name}}" placeholder="{{ localize "FS4.Character.Trait.Class" }}" class="item-show" data-uuid={{actor.system.class.uuid}} readonly>
+    <input type="text" value="{{actor.system.upbringing.name}}" placeholder="{{ localize "FS4.Character.Trait.Upbringing" }}" class="item-show" data-uuid={{actor.system.upbringing.uuid}} readonly>
+  </div>
+
+  <div class="faction">
+    <h1>{{ localize "FS4.Character.Trait.Faction" }}</h1>
+
+    <input type="text" value="{{actor.system.faction.name}}" placeholder="{{ localize "FS4.Character.Trait.Faction" }}" class="item-show" data-uuid={{actor.system.faction.uuid}} readonly>
+    <input type="text" name="system.rank" value="{{actor.system.rank}}" placeholder="{{ localize "FS4.Character.Trait.Rank" }}">
+  </div>
+
+  <div class="callings">
+    <h1>{{ localize "FS4.Character.Trait.Callings" }}</h1>
+
+    <input type="text" value="{{actor.system.callings.0.name}}" placeholder="-" class="item-show" data-uuid={{actor.system.callings.0.uuid}} readonly>
+    <input type="text" value="{{actor.system.callings.1.name}}" placeholder="-" class="item-show" data-uuid={{actor.system.callings.1.uuid}} readonly>
+  </div>
+
+  <div class="biography">
+    <h1>{{ localize "FS4.Character.Trait.Biography" }}</h1>
+
+    {{editor enrichedBiography target="system.biography" button=true editable=editable}}
+  </div>
 </div>

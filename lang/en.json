@@ -16,6 +16,12 @@
         "Planet": "Planet",
         "Blessing": "Blessing",
         "Curse": "Curse",
+        "Faction": "Faction",
+        "Upbringing": "Upbringing",
+        "Class": "Class",
+        "Callings": "Callings",
+        "Rank": "Rank",
+        "Biography": "Biography",
         "VP": {
           "short": "VP",
           "full": "Victory points"
@@ -42,6 +48,7 @@
         "Bank": "Bank",
         "Surge": "Surge",
         "Resistance": "Resistance",
+        "Origin": "Origin",
         "Tab": {
           "Stats": "Stats",
           "History": "History",
@@ -124,10 +131,10 @@
         "Blessing": "Blessing",
         "Curse": "Curse",
         "Perk": "Perk",
-        "Power": "Power",
         "Armor": "Armor",
         "EShield": "E-shield",
-        "Species": "Species"
+        "Species": "Species",
+        "Upbringing": "Upbringing"
       },
       "Trait": {
         "Description": "Description"

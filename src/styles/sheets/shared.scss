@@ -10,17 +10,24 @@
   margin: 1px;
 }
 
-input.double-digits {
-  max-width: 3em;
-  text-align: center;
+input {
+  &.double-digits {
+    max-width: 3em;
+    text-align: center;
+  }
+
+  &.item-show {
+    cursor: pointer;
+  }
 }
 
-input:read-only {
-  cursor: pointer;
-}
-
+$editor-min-height: 600px;
 .editor {
-  min-height: 500px;
+  min-height: $editor-min-height;
+
+  .tox.tox-tinymce {
+    min-height: $editor-min-height;
+  }
 }
 
 .tabs {

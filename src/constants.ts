@@ -44,7 +44,7 @@ export const CHARACTER_ITEMS: Record<string, string> = {
   callings: 'Calling',
   capabilities: 'Capability',
   perks: 'Perk',
-  powers: 'Power',
+  upbringing: 'Upbringing',
 };
 
 export const HAS_ONE_ITEM_TYPES = [
@@ -56,11 +56,11 @@ export const HAS_ONE_ITEM_TYPES = [
   'Eshield',
   'Faction',
   'Species',
+  'Upbringing',
 ];
 export const UNIQUE_INSTANCE_ITEM_TYPES = [
   'Calling',
   'Class',
   'Capability',
   'Perk',
-  'Power',
 ];
