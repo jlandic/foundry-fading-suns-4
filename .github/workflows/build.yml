@@ -15,7 +15,7 @@ jobs:
       - run: npm run build
         name: Build
       - name: Zip output
-        run: zip -qq -r build.zip dist/ lang/ system.json template.json LICENSE
+        run: zip -qq -r build.zip dist/ lang/ templates system.json template.json LICENSE
       - uses: actions/create-release@v1
         name: Create release
         id: create_release
