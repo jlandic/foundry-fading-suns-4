@@ -2,7 +2,7 @@
   "title": "Fading Suns 4th Edition",
   "id": "fading-suns-4",
   "name": "fading-suns-4",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": {
     "minimum": 11,
     "verified": 11
