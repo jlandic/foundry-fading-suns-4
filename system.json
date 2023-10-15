@@ -19,6 +19,6 @@
     }
   ],
   "url": "https://github.com/jlandic/foundry-fading-suns-4",
-  "manifest": "https://raw.githubusercontent.com/jlandic/foundry-fading-suns-4/main/system.json",
-  "download": "https://github.com/jlandic/foundry-fading-suns-4/releases/download/development/fading-suns-4.zip"
+  "manifest": "https://raw.githubusercontent.com/jlandic/foundry-fading-suns-4/v0.0.2/template.json",
+  "download": "https://github.com/jlandic/foundry-fading-suns-4/releases/download/v0.0.2/fading-suns-4.zip"
 }
