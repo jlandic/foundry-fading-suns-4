@@ -68,8 +68,10 @@ $actor-image-size: 128px;
 
   .stats {
     display: grid;
-    grid-template-columns: 40% 40% 20%;
-    grid-template-areas: "skills skills characteristics";
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "skills skills skills skills characteristics"
+                         "occult occult occult occult occult"
+                         "res armor armor armor eshield";
 
     .skills {
       display: grid;
@@ -91,6 +93,30 @@ $actor-image-size: 128px;
 
       font-size: 1.2em;
       font-weight: bolder;
+    }
+
+    .occult {
+      grid-area: occult;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      text-align: center;
+    }
+    
+    .res {
+      grid-area: res;
+      display: grid;
+
+      justify-items: center;
+      text-align: center;
+    }
+
+    .armor {
+      grid-area: armor;
+    }
+
+    .eshield {
+      grid-area: eshield;
     }
   }
 }

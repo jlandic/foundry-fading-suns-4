@@ -25,11 +25,23 @@
           "full": "Wyrd points"
         },
         "Vitality": "Vitality",
-        "Revivals": "Revivals"
+        "Revivals": "Revivals",
+        "Occult": {
+          "psi": "Psi",
+          "urge": "Urge",
+          "theurgy": "Theurgy",
+          "hubris": "Hubris"
+        },
+        "Res": {
+          "body": "Body",
+          "mind": "Mind",
+          "spirit": "Spirit"
+        }
       },
       "Sheet": {
         "Bank": "Bank",
         "Surge": "Surge",
+        "Resistance": "Resistance",
         "Tab": {
           "Stats": "Stats",
           "History": "History",
@@ -120,6 +132,9 @@
       "Trait": {
         "Description": "Description"
       }
+    },
+    "System": {
+      "mod": "mod"
     }
   }
 }

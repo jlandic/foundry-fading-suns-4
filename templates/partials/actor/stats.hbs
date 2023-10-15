@@ -7,19 +7,56 @@
 
     <span>({{ this.initial }})</span>
 
-    <input class="double-digits" type="text" name="system.skills.{{@key}}.value" value="{{this.value}}">
+    <input class="double-digits" type="number" name="system.skills.{{@key}}.value" value="{{this.value}}">
     {{/each}}
   </div>
 
   <div class="block characteristics">
     {{#each actor.system.characteristics}}
     <div class="characteristic">
-      <div class="characteristic-name" data-characteristic="{{@key}}" data-tooltip="{{ localizeCharacFull @key }}">
+      <div class="characteristic-name" data-tooltip="{{ localizeCharacFull @key }}">
         {{ uppercase (localizeCharacShort @key) }}
       </div>
 
-      <input class="double-digits" type="text" name="system.characteristics.{{@key}}" value="{{this}}">
+      <input class="double-digits" type="number" name="system.characteristics.{{@key}}" value="{{this}}">
     </div>
     {{/each}}
+  </div>
+
+  <div class="block occult">
+    {{#each actor.system.occult}}
+    <div class="occult-charac">
+      <div class="occult-charac-name">
+        {{ localize (concat "FS4.Character.Trait.Occult." @key) }}
+      </div>
+
+      <input class="double-digits" type="number" name="system.occult.{{@key}}" value="{{this}}">
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="block res">
+    {{#each actor.system.res}}
+    <div class="res-type">
+      <div class="res-type-name">
+        {{ localize (concat "FS4.Character.Trait.Res." @key) }}
+      </div>
+
+      <input class="double-digits" type="number" name="system.res.{{@key}}.value" value="{{this.value}}">
+      <input class="double-digits" type="text" name="system.res.{{@key}}.mod" value="{{this.mod}}" placeholder="{{ localize "FS4.System.mod" }}">
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="block armor">
+    <div>{{ localize "FS4.Item.Type.Armor" }}</div>
+
+    <strong>WIP</strong>
+  </div>
+
+  <div class="block eshield">
+    <div>{{ localize "FS4.Item.Type.EShield" }}</div>
+
+    <strong>WIP</strong>
   </div>
 </div>

@@ -91,17 +91,19 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
         mind: moddedValue(),
         spirit: moddedValue(),
       }),
-      psi: new NumberField({
-        ...defaultNumberFieldOptions(0),
-      }),
-      urge: new NumberField({
-        ...defaultNumberFieldOptions(0),
-      }),
-      theurgy: new NumberField({
-        ...defaultNumberFieldOptions(0),
-      }),
-      hubris: new NumberField({
-        ...defaultNumberFieldOptions(0),
+      occult: new ObjectField({
+        psi: new NumberField({
+          ...defaultNumberFieldOptions(0),
+        }),
+        urge: new NumberField({
+          ...defaultNumberFieldOptions(0),
+        }),
+        theurgy: new NumberField({
+          ...defaultNumberFieldOptions(0),
+        }),
+        hubris: new NumberField({
+          ...defaultNumberFieldOptions(0),
+        }),
       }),
       characteristics: new ObjectField({
         str: characteristicField(),
