@@ -1,0 +1,46 @@
+{
+  "name": "fading-suns-4",
+  "version": "0.01",
+  "description": "A Foundry VTT system for Fading Suns 4th Edition.",
+  "type": "module",
+  "scripts": {
+    "build": "npx vite build",
+    "watch": "npx vite build --watch",
+    "packs:compile": "node ./scripts/packs.mjs compile",
+    "packs:extract": "node ./scripts/packs.mjs extract",
+    "packs:import": "node ./scripts/packs.mjs import",
+    "packs:link": "node ./scripts/packs.mjs link-slugs",
+    "lint": "eslint src/",
+    "lint:fix": "eslint --fix src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlandic/foundryvtt-fading-suns-4.git"
+  },
+  "keywords": [
+    "fading-suns",
+    "system",
+    "foundryvtt"
+  ],
+  "author": "jlandic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlandic/foundryvtt-fading-suns-4/issues"
+  },
+  "homepage": "https://github.com/jlandic/foundryvtt-fading-suns-4#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@foundryvtt/foundryvtt-cli": "^3.0.0",
+    "commander": "^14.0.1",
+    "esbuild": "^0.25.11",
+    "eslint": "^9.37.0",
+    "eslint-plugin-json": "^4.0.1",
+    "eslint-plugin-jsonc": "^2.21.0",
+    "less": "^4.4.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-copy-watch": "^0.0.1",
+    "serve-static": "^2.2.0",
+    "vite": "^7.1.10",
+    "vite-plugin-static-copy": "^3.1.4"
+  }
+}

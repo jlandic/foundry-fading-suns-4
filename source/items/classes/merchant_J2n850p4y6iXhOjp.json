@@ -1,0 +1,130 @@
+{
+  "type": "class",
+  "name": "merchant",
+  "folder": null,
+  "system": {
+    "slug": "merchant",
+    "description": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        },
+        {
+          "slug": "strength",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "drive",
+          "value": 2
+        },
+        {
+          "slug": "pilot",
+          "value": 2
+        },
+        {
+          "slug": "techredemption",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        },
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 1
+        },
+        {
+          "slug": "vigor",
+          "value": 1
+        }
+      ]
+    ],
+    "capabilities": [],
+    "perk": "ingenious",
+    "perks": [
+      "embargo",
+      "gambler",
+      "gearhead",
+      "landed",
+      "marksmanship",
+      "martial_arts_graa",
+      "martial_arts_iron_heel",
+      "martial_arts_jox_kai_von",
+      "martial_arts_koto",
+      "martial_arts_shaidan",
+      "nimble",
+      "retainer",
+      "riches",
+      "saints_blessing",
+      "tech_savvy",
+      "guild_commission"
+    ]
+  },
+  "_id": "J2n850p4y6iXhOjp",
+  "img": "icons/skills/trades/academics-scribe-quill-gray.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760737853778,
+    "modifiedTime": 1760795837666,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 400000,
+  "_key": "!items!J2n850p4y6iXhOjp"
+}

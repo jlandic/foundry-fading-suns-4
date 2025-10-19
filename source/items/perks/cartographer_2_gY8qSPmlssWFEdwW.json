@@ -1,0 +1,42 @@
+{
+  "name": "cartographer_2",
+  "type": "perk",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "slug": "cartographer_2",
+    "description": "",
+    "sourceType": "class",
+    "type": "ability",
+    "benefice": "",
+    "preconditions": [
+      [
+        {
+          "type": "calling",
+          "slug": "explorer"
+        }
+      ]
+    ],
+    "previousLevel": "cartographer"
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760801372413,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "gY8qSPmlssWFEdwW",
+  "sort": 16900000,
+  "_key": "!items!gY8qSPmlssWFEdwW"
+}

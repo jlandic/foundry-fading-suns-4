@@ -1,0 +1,63 @@
+{
+  "type": "perk",
+  "name": "two_gun_fighting",
+  "folder": null,
+  "system": {
+    "sourceType": "class",
+    "type": "ability",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "duelist"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "pirate"
+        },
+        {
+          "type": "special",
+          "slug": "appropriate_weapon_capabilities"
+        }
+      ]
+    ],
+    "description": "",
+    "benefice": "",
+    "slug": "two_gun_fighting"
+  },
+  "_id": "nNG5U85Okxwhu6t7",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760795828230,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 18800000,
+  "_key": "!items!nNG5U85Okxwhu6t7"
+}

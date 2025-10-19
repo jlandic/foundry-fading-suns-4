@@ -1,0 +1,42 @@
+{
+  "name": "martial_arts_shaidan",
+  "type": "perk",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "slug": "martial_arts_shaidan",
+    "description": "",
+    "sourceType": "class",
+    "type": "ability",
+    "benefice": "",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ],
+    "nextLevel": "martial_arts_shaidan_2"
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760801397536,
+    "modifiedTime": 1760801397536,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "A9wuIqld23STaHY9",
+  "sort": 0,
+  "_key": "!items!A9wuIqld23STaHY9"
+}

@@ -1,0 +1,18 @@
+<header class="sheet-header">
+    <aside class="img">
+        <img src="{{item.img}}" class="document-img item-img" {{#if isEditable}}data-edit="img" data-action="editImage"{{/if}} />
+        <a class="show-image" data-action="showImage" data-src="{{document.img}}" data-id="{{item.id}}" data-name="{{item.name}}">
+            <i class="fa-solid fa-image fa-fw"></i>
+        </a>
+    </aside>
+
+    <div class="header-identity">
+        <h1 class="item-name">
+            {{#if isEditable}}
+                <input type="text" name="name" value="{{item.name}}" />
+            {{else}}
+                {{item.name}}
+            {{/if}}
+        </h1>
+    </div>
+</header>

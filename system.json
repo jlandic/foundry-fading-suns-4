@@ -1,0 +1,95 @@
+{
+  "id": "fading-suns-4",
+  "title": "Fading Suns 4th Edition",
+  "version": "0.0.1",
+  "description": "A Foundry VTT system for Fading Suns 4th Edition.",
+  "authors": [
+    {
+      "name": "jlandic"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "license": "MIT",
+  "esmodules": [
+    "fading-suns-4.mjs"
+  ],
+  "styles": [
+    "fading-suns-4.css"
+  ],
+  "primaryTokenAttribute": "attributes.vitality",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "dist/fading-suns-4.css",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "socket": false,
+  "packs": [
+    {
+      "name": "afflictions",
+      "label": "Afflictions",
+      "path": "packs/afflictions",
+      "type": "Item"
+    },
+    {
+      "name": "classes",
+      "label": "Classes",
+      "path": "packs/classes",
+      "type": "Item"
+    },
+    {
+      "name": "perks",
+      "label": "Perks",
+      "path": "packs/perks",
+      "type": "Item"
+    },
+    {
+      "name": "species",
+      "label": "Species",
+      "path": "packs/species",
+      "type": "Item"
+    }
+  ],
+  "documentTypes": {
+    "Item": {
+      "affliction": {},
+      "class": {},
+      "perk": {},
+      "species": {}
+    }
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "lancer-initiative",
+        "compatibility": {
+          "verified": "34"
+        }
+      }
+    ]
+  }
+}

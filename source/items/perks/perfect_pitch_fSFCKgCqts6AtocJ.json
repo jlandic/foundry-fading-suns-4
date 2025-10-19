@@ -1,0 +1,47 @@
+{
+  "type": "perk",
+  "name": "perfect_pitch",
+  "folder": null,
+  "system": {
+    "sourceType": "calling",
+    "type": "ability",
+    "preconditions": [
+      [
+        {
+          "type": "calling",
+          "slug": "artist"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "chorister"
+        }
+      ]
+    ],
+    "description": "",
+    "benefice": "",
+    "slug": "perfect_pitch"
+  },
+  "_id": "fSFCKgCqts6AtocJ",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760795828230,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 15700000,
+  "_key": "!items!fSFCKgCqts6AtocJ"
+}

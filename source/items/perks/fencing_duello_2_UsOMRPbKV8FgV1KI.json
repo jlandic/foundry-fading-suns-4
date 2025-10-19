@@ -1,0 +1,42 @@
+{
+  "name": "fencing_duello_2",
+  "type": "perk",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "slug": "fencing_duello_2",
+    "description": "",
+    "sourceType": "class",
+    "type": "ability",
+    "benefice": "",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ],
+    "previousLevel": "fencing_duello"
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760801382918,
+    "modifiedTime": 1760801382918,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "UsOMRPbKV8FgV1KI",
+  "sort": 0,
+  "_key": "!items!UsOMRPbKV8FgV1KI"
+}

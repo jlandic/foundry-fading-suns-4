@@ -1,0 +1,41 @@
+{
+  "type": "perk",
+  "name": "hedge_fund",
+  "folder": null,
+  "system": {
+    "sourceType": "calling",
+    "type": "verve",
+    "preconditions": [
+      [
+        {
+          "type": "calling",
+          "slug": "tycoon"
+        }
+      ]
+    ],
+    "description": "",
+    "benefice": "",
+    "slug": "hedge_fund"
+  },
+  "_id": "Yt4jeBUVZ6cd0oWT",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760795828230,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 13700000,
+  "_key": "!items!Yt4jeBUVZ6cd0oWT"
+}

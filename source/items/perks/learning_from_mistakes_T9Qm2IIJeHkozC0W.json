@@ -1,0 +1,53 @@
+{
+  "type": "perk",
+  "name": "learning_from_mistakes",
+  "folder": null,
+  "system": {
+    "sourceType": "calling",
+    "type": "ability",
+    "preconditions": [
+      [
+        {
+          "type": "calling",
+          "slug": "amateur"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "incognito"
+        }
+      ]
+    ],
+    "description": "",
+    "benefice": "",
+    "slug": "learning_from_mistakes"
+  },
+  "_id": "T9Qm2IIJeHkozC0W",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760795828230,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 11800000,
+  "_key": "!items!T9Qm2IIJeHkozC0W"
+}

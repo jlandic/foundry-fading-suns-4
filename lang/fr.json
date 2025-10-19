@@ -1,0 +1,104 @@
+{
+  "TYPES": {
+    "Item": {
+      "affliction": "Affliction",
+      "class": "Classe",
+      "perk": "Avantage"
+    }
+  },
+  "fs4": {
+    "commonFields": {
+      "description": "Description",
+      "precondition": "Précondition"
+    },
+    "packs": {
+      "afflictions": "Afflictions"
+    },
+    "sheets": {
+      "tabs": {
+        "main": "Général",
+        "modifiers": "Modificateurs"
+      },
+      "class": {
+        "classPerks": "Avantages de classe",
+        "andOnePerkFromListOrOpen": "plus 1 avantage de classe de la liste ci-dessous ou de la liste des avantages ouverts"
+      }
+    },
+    "characteristics": {
+      "strength": "Force",
+      "dexterity": "Dextérité",
+      "endurance": "Endurance",
+      "wits": "Sagacité",
+      "perception": "Perception",
+      "will": "Volonté",
+      "presence": "Présence",
+      "intuition": "Intuition",
+      "faith": "Foi"
+    },
+    "skills": {
+      "academia": "Érudition",
+      "alchemy": "Alchimie",
+      "animalia": "Animalia",
+      "arts": "Arts",
+      "charm": "Charme",
+      "crafts": "Artisanats",
+      "disguise": "Déguisement",
+      "drive": "Conduite",
+      "empathy": "Empathie",
+      "fight": "Corps à corps",
+      "focus": "Focalisation",
+      "impress": "Prestance",
+      "interface": "Interface",
+      "intrusion": "Intrusion",
+      "knavery": "Filouterie",
+      "melee": "Mêlée",
+      "observe": "Observation",
+      "perform": "Représentation",
+      "pilot": "Pilotage",
+      "remedy": "Remède",
+      "shoot": "Tir",
+      "sleightofhand": "Escamotage",
+      "sneak": "Discrétion",
+      "survival": "Survie",
+      "techredemption": "Rédemption tech",
+      "vigor": "Vigueur"
+    },
+    "class": {
+      "fields": {
+        "characteristics": "Caractéristiques",
+        "skills": "Compétences",
+        "perks": "Avantages"
+      }
+    },
+    "perk": {
+      "fields": {
+        "type": "Type",
+        "sourceType": "Source",
+        "benefice": "Bénéfice",
+        "cyberdevice": "Cyberdevice",
+        "nextLevel": "Niveau suivant",
+        "previousLevel": "Niveau précédent",
+        "perks": "Avantages"
+      },
+      "sourceTypes": {
+        "class": "Classe",
+        "calling": "Vocation"
+      },
+      "types": {
+        "ability": "Capacité",
+        "austerity": "Austérité",
+        "cyberdevice": "Cyberdevice",
+        "power": "Pouvoir",
+        "privilege": "Privilège",
+        "verve": "Verve"
+      },
+      "open": "Ouvert"
+    },
+    "common": {
+      "andSeparator": " et ",
+      "orSeparator": " ou ",
+      "and": "et",
+      "or": "ou"
+    }
+  }
+}

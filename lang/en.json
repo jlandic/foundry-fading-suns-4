@@ -1,0 +1,106 @@
+{
+  "TYPES": {
+    "Item": {
+      "affliction": "Affliction",
+      "class": "Class",
+      "perk": "Perk"
+    }
+  },
+  "fs4": {
+    "commonFields": {
+      "description": "Description",
+      "precondition": "Precondition"
+    },
+    "packs": {
+      "afflictions": "Afflictions"
+    },
+    "sheets": {
+      "tabs": {
+        "main": "Main",
+        "modifiers": "Modifiers"
+      },
+      "class": {
+        "classPerks": "Class perks",
+        "andOnePerkFromListOrOpen": "plus class 1 perk from the list below or from the Open perks list"
+      }
+    },
+    "characteristics": {
+      "strength": "Strength",
+      "dexterity": "Dexterity",
+      "endurance": "Endurance",
+      "wits": "Wits",
+      "perception": "Perception",
+      "will": "Will",
+      "presence": "Presence",
+      "intuition": "Intuition",
+      "faith": "Faith"
+    },
+    "skills": {
+      "academia": "Academia",
+      "alchemy": "Alchemy",
+      "animalia": "Animalia",
+      "arts": "Arts",
+      "charm": "Charm",
+      "crafts": "Crafts",
+      "disguise": "Disguise",
+      "drive": "Drive",
+      "empathy": "Empathy",
+      "fight": "Fight",
+      "focus": "Focus",
+      "impress": "Impress",
+      "interface": "Interface",
+      "intrusion": "Intrusion",
+      "knavery": "Knavery",
+      "melee": "Melee",
+      "observe": "Observe",
+      "perform": "Perform",
+      "pilot": "Pilot",
+      "remedy": "Remedy",
+      "shoot": "Shoot",
+      "sleightofhand": "Sleight of Hand",
+      "sneak": "Sneak",
+      "survival": "Survival",
+      "techredemption": "Tech Redemption",
+      "vigor": "Vigor"
+    },
+    "class": {
+      "fields": {
+        "characteristics": "Characteristics",
+        "skills": "Skills",
+        "perks": "Perks"
+      }
+    },
+    "perk": {
+      "fields": {
+        "type": "Type",
+        "sourceType": "Source",
+        "benefice": "Benefice",
+        "cyberdevice": "Cyberdevice",
+        "nextLevel": "Next level",
+        "previousLevel": "Previous level",
+        "perks": "Perks"
+      },
+      "sourceTypes": {
+        "class": "Class",
+        "calling": "Calling",
+        "species": "Species"
+      },
+      "types": {
+        "ability": "Ability",
+        "austerity": "Austerity",
+        "birthright": "Birthright",
+        "cyberdevice": "Cyberdevice",
+        "power": "Power",
+        "privilege": "Privilege",
+        "verve": "Verve"
+      },
+      "open": "Open"
+    },
+    "common": {
+      "andSeparator": " and ",
+      "orSeparator": " or ",
+      "and": "and",
+      "or": "or"
+    }
+  }
+}

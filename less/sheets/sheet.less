@@ -1,0 +1,70 @@
+.sheet {
+    .window-content {
+        h1 {
+            font-size: var(--font-h2-size);
+        }
+
+        h2 {
+            font-size: var(--font-h3-size);
+        }
+
+        h3 {
+            font-size: var(--font-h4-size);
+        }
+
+        h4 {
+            font-size: var(--font-h5-size);
+        }
+
+        h5 {
+            font-size: var(--font-h6-size);
+        }
+
+        header.sheet-header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            aside.img {
+                position: relative;
+                max-width: fit-content;
+
+                img.document-img {
+                    display: flex;
+                    align-items: end;
+                    margin-bottom: 0.6rem;
+                    max-width: 95%;
+                    max-height: 512px;
+                    background-color: var(--tertiary);
+                    background-size: cover;
+                    background-position: top center;
+
+                    &.item-img {
+                        max-height: 128px;
+                    }
+                }
+
+                a.show-image {
+                    --shadow-color: var(--color-text-dark-1);
+
+                    color: var(--color-text-light-0);
+                    bottom: 0;
+                    display: none;
+                    font-size: var(--font-size-16);
+                    padding: var(--space-2);
+                    position: absolute;
+                    right: 0;
+                    text-shadow: 0 0 3px var(--shadow-color), 0 0 5px var(--shadow-color), 0 0 8px var(--shadow-color);
+
+                    &:hover {
+                        --shadow-color: var(--color-pf-primary);
+                    }
+                }
+
+                &:hover a.show-image {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

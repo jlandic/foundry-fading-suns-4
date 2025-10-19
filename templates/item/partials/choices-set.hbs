@@ -1,0 +1,11 @@
+{{#if choices.length}}
+    <section>
+        <h2>{{localize titleKey}}</h2>
+
+        <ul>
+            {{#each choices}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+    </section>
+{{/if}}

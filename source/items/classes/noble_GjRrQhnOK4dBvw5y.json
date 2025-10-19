@@ -1,0 +1,121 @@
+{
+  "type": "class",
+  "name": "noble",
+  "folder": null,
+  "system": {
+    "slug": "noble",
+    "description": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        },
+        {
+          "slug": "endurance",
+          "value": 1
+        },
+        {
+          "slug": "strength",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "faith",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "arts",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "melee",
+          "value": 1
+        }
+      ]
+    ],
+    "capabilities": [],
+    "perk": "imperious",
+    "perks": [
+      "martial_arts_graa",
+      "martial_arts_iron_heel",
+      "martial_arts_jox_kai_von",
+      "martial_arts_koto",
+      "martial_arts_shaidan",
+      "saint_lextius_blessing",
+      "two_gun_fighting",
+      "fencing_duello",
+      "fencing_kraxi",
+      "fencing_serpentis",
+      "fencing_torero",
+      "lay_down_the_law",
+      "proxy",
+      "noblesse_oblige",
+      "nimble",
+      "landed",
+      "riches",
+      "retainer",
+      "noble_title"
+    ]
+  },
+  "_id": "GjRrQhnOK4dBvw5y",
+  "img": "icons/skills/trades/academics-scribe-quill-gray.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760737853778,
+    "modifiedTime": 1760795837666,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 300000,
+  "_key": "!items!GjRrQhnOK4dBvw5y"
+}

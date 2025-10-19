@@ -1,0 +1,47 @@
+{
+  "type": "class",
+  "name": "yeoman",
+  "folder": null,
+  "system": {
+    "slug": "yeoman",
+    "description": "",
+    "characteristics": [],
+    "skills": [],
+    "capabilities": [],
+    "perk": "independant",
+    "perks": [
+      "householder",
+      "martial_arts_graa",
+      "martial_arts_iron_heel",
+      "martial_arts_jox_kai_von",
+      "martial_arts_koto",
+      "martial_arts_shaidan",
+      "military_rank",
+      "nimble",
+      "peasant_hero",
+      "rep",
+      "saints_blessing"
+    ]
+  },
+  "_id": "FnNv5hYIyp4RLHvP",
+  "img": "icons/skills/trades/academics-scribe-quill-gray.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760737853778,
+    "modifiedTime": 1760795837666,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 100000,
+  "_key": "!items!FnNv5hYIyp4RLHvP"
+}

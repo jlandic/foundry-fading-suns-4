@@ -1,0 +1,47 @@
+{
+  "type": "perk",
+  "name": "rise_from_the_ashes",
+  "folder": null,
+  "system": {
+    "sourceType": "calling",
+    "type": "austerity",
+    "preconditions": [
+      [
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        }
+      ],
+      [
+        {
+          "type": "calling",
+          "slug": "questing_knight"
+        }
+      ]
+    ],
+    "description": "",
+    "benefice": "",
+    "slug": "rise_from_the_ashes"
+  },
+  "_id": "4rzdu2IwEKuUyze5",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760795828230,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 1100000,
+  "_key": "!items!4rzdu2IwEKuUyze5"
+}

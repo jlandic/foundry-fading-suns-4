@@ -1,0 +1,645 @@
+addiction,affliction,Addiction
+black_sheep,affliction,Brebis galeuse
+branded,affliction,Marque avilissante
+cloistered,affliction,Reclus
+dark_secret,affliction,Terrible secret
+excommunicated,affliction,Excommunié
+fallen_from_grace,affliction,Tombé en disgrâce
+indebted,affliction,Endetté
+infamous_family,affliction,Famille tristement célèbre
+lost_worlder,affliction,Habitant des mondes perdus
+oath_of_fealty,affliction,Serment d'allégeance
+obligation,affliction,Obligation
+outlaw,affliction,Hors-la-loi
+stigma,affliction,Stigmate
+vendetta,affliction,Vendetta
+GzuJu5z4l9XYvTL3,blessing,Test
+compassionate,blessing,Compatissant
+curious,blessing,Curieux
+disciplined,blessing,Discipliné
+ff4e5f5c-4e76-45ba-8a10-fb78bc8c8218,blessing,Audacieux
+innovative,blessing,Innovant
+unyielding,blessing,Inflexible
+actor,calling,Acteur
+amateur,calling,Amateur
+artist,calling,Artiste
+banker,calling,Banquier
+bounty_hunter,calling,Chasseur de primes
+brother_battle,calling,Frères du combat
+chainer,calling,Entraveur
+chorister,calling,Chantre
+clergy,calling,Clerc
+commander,calling,Commandant
+confessor,calling,Confesseur
+conspiracist,calling,Conspirationniste
+courtier,calling,Courtisan
+detective,calling,Détective
+dreamtender,calling,Soignesonge
+duelist,calling,Duelliste
+enthusiast,calling,Enthousiaste
+explorer,calling,Explorateur
+friar,calling,Frater
+healer,calling,Guérisseur
+imperial_cohort_merchant,calling,Acolyte impérial (Marchand)
+imperial_cohort_priest,calling,Acolyte impérial (Prêtre)
+incognito,calling,Incognito
+inquisitor,calling,Inquisiteur
+knightly_order,calling,Ordre de chevalerie noble
+lawyer,calling,Juriste
+lord,calling,Seigneur
+mendicant,calling,Mendiant
+mercenary,calling,Mercenaire
+mercurian,calling,Mercurien
+monk,calling,Moine
+musician,calling,Musicien
+occultist,calling,Occultiste
+pirate,calling,Pirate
+pistol_duelist,calling,Duelliste au pistolet
+psychic,calling,Psychique
+questing_knight,calling,Chevalier de la quête impériale
+reclaimer,calling,Récupérateur
+ronin,calling,Ronin
+scholar,calling,Érudit
+scout,calling,Éclaireur
+scribe,calling,Copiste
+smuggler,calling,Contrebandier
+spy_merchant,calling,Espion
+star_pilot,calling,Pilote stellaire
+sybarite,calling,Sybarite
+tech_redeemer,calling,Techno-rédempteur
+templar,calling,Templier
+theurgist,calling,Théurgiste
+thief,calling,Voleur
+trader,calling,Négociant
+tycoon,calling,Nabab
+ai,capability,Intelligence artificielle
+aircraft,capability,Aéronef
+applied_science,capability,Science appliquée
+archery,capability,Archerie
+architecture,capability,Architecture
+artifact_gun,capability,Canonneurs-artefacts [choisissez un artefact]
+artifact_weapon,capability,Armes-artefacts [choisissez un artefact]
+artillery,capability,Artillerie
+beast_lore,capability,Bêtes [choisissez entre les mondes connus ou les mondes barbares]
+beast_lore_barbarian_worlds,capability,Bêtes (Mondes Barbares)
+beast_lore_known_worlds,capability,Bêtes (Mondes Connus)
+beastback,capability,Montures
+beastcraft,capability,Véhicules à traction animale
+blacksmithing,capability,Forge
+carpentry,capability,Charpenterie
+cartography,capability,Cartographie
+cathedral_customs,capability,Coutumes du clergé
+combat_armor,capability,Armure de combat
+commons_customs,capability,Coutumes populaires
+cooking,capability,Cuisine
+court_customs,capability,Coutumes de la cour
+dance,capability,Danse
+demolitions,capability,Explosifs
+disease_lore,capability,Maladies
+energy_guns,capability,Canonneurs énergétiques
+faction_lore,capability,Faction [choisissez la faction]
+gunnery,capability,Canonnage
+handheld_shield,capability,Bouclier portatif
+history_lore,capability,Histoire
+imagery,capability,Imagerie
+jewelry,capability,Joaillerie
+jumpweb_lore,capability,Réseau de saut [choisissez entre les mondes connus ou les mondes barbares]
+jumpweb_lore_barbarian_worlds,capability,Réseau de saut (Mondes Barbares)
+jumpweb_lore_known_worlds,capability,Réseau de saut (Mondes Connus
+landcraft,capability,Véhicules terrestres
+leatherworking,capability,Travail du cuir
+life_science,capability,Science de la vie
+locksmithing,capability,Serrurerie
+magic,capability,Tours de magie
+magic_lantern,capability,Lanterne magique
+masonry,capability,Maçonnerie
+military_weapons,capability,Armes militaires
+music,capability,Musique
+musical_instruments,capability,Instruments de musique
+occult_lore,capability,Occulte
+oratory,capability,Art oratoire
+physical_science,capability,Science physique
+planet_lore,capability,Planète [choisissez une planète]
+planet_lore_homeworld,capability,Monde natal
+poetry,capability,Poésie
+poison_lore,capability,Poisons
+pottery,capability,Poterie
+read_language,capability,Lire [choisissez une langue]
+read_language_latin,capability,Lire (Latin)
+read_speak_urthish,capability,Lire/Parler (Taerrien)
+religion_lore,capability,Religion
+sculpting,capability,Sculpture
+shipboard_operations,capability,Opérations à bord d’un vaisseau
+slug_guns,capability,Canonneurs
+song,capability,Chant
+spacecraft,capability,Véhicules interstellaires
+speak_language,capability,Parler [choisissez une langue]
+speak_language_latin,capability,Parler (Latin)
+streetwise,capability,Monde de la rue
+surgery_lore,capability,Chirurgie
+tailoring,capability,Tailleur
+terraforming,capability,Terraformation
+theatre,capability,Théâtre
+think_machines,capability,Machines à penser
+tl5,capability,Technologie (NT5)
+tl6,capability,Technologie (NT6)
+tl7,capability,Technologie (NT7)
+tl8,capability,Technologie (NT8)
+torture_lore,capability,Tortures
+war_armor,capability,Armure de guerre
+warcraft,capability,Véhicules militaires
+warfare_lore,capability,Stratégie militaire
+watercraft,capability,Véhicules aquatiques
+weaving,capability,Tissage
+weird_tech,capability,Technologie étrange
+writing,capability,Écriture
+xeno_lore,capability,Xéno-culture [choisir une espèce extraterrestre]
+merchant,class,Marchand
+noble,class,Noble
+priest,class,Prêtre
+yeoman,class,Franc-tenancier
+clueless,curse,Asocial
+e7e3c913-aa12-424b-8bff-85882fcca4cc,curse,Insensible
+gullible,curse,Naïf
+prideful,curse,Orgueilleux
+s0YP5alFD0UM9GoJ,curse,Fouineur
+subtle,curse,Subtil
+unnerving,curse,Perturbant
+al_malik,faction,Al-malik
+brother_battle_faction,faction,Frères du Combat
+charioteers,faction,Auriges
+decados,faction,Décados
+engineers,faction,Ingénieurs
+eskatonic_order,faction,Ordre eskatonique
+far,faction,F.d.e. (front pour les droits des extraterrestres)
+hawkwood,faction,Hawkwood
+hazat,faction,Hazat
+li_halan,faction,Li halan
+ramakrishna,faction,Ramakrishna
+sanctuary_aeon,faction,Sanctuaire d’éternité
+scravers,faction,Racleurs
+society_st_paulus,faction,Société saint paul
+temple_avesti,faction,Temple avesti
+the_dispossessed,faction,Les déshérités
+the_muster,faction,Le ralliement
+the_reeves,faction,Les magistrats
+urth_orthodox,faction,Orthodoxe de tærre
+vagabonds,faction,Vagabonds
+vuldrok_barbarians,faction,Barbares vuldroks
+aim_long,maneuver,Viser (portée longue)
+aim_short,maneuver,Viser (portée courte)
+befriend,maneuver,Amadouer
+blend_in,maneuver,Se fondre dans la masse
+block,maneuver,Bloquer
+burst_long_range,maneuver,Tirer en rafale (portée longue)
+burst_short_range,maneuver,Tirer en rafale (portée courte)
+camouflage,maneuver,Se camoufler
+castigate_presence,maneuver,Blâmer (présence)
+castigate_wits,maneuver,Blâmer (sagacité)
+chase_escape,maneuver,Poursuivre ou s'échapper
+chase_escape_piloting,maneuver,Poursuivre ou s'échapper (Pilotage)
+climb_dexterity,maneuver,Escalader (dextérité)
+climb_force,maneuver,Escalader (force)
+command,maneuver,Commander
+command_animal,maneuver,Maîtriser un animal
+conceal,maneuver,Dissimuler
+concentrate,maneuver,Se concentrer
+confuse,maneuver,Déconcerter
+convince,maneuver,Convaincre
+counterstrike,maneuver,Contre-attaquer
+create_art,maneuver,Créer une œuvre
+dabble,maneuver,Laisser parler son imagination (pratique revigorante)
+daunt_presence,maneuver,Intimider (présence)
+daunt_strength,maneuver,Intimider (force)
+debunk_empathy,maneuver,Discréditer (empathie)
+debunk_knavery,maneuver,Discréditer (filouterie)
+deceive,maneuver,Duper
+design_security,maneuver,Concevoir un système de sécurité
+detect,maneuver,Détecter
+detect_interface,maneuver,Détecter (Interface)
+detect_lie,maneuver,Détecter les mensonges
+disarm,maneuver,Désarmer
+distract,maneuver,Distraire
+dodge_dexterity,maneuver,Esquiver (dextérité)
+dodge_intuition,maneuver,Esquiver (intuition)
+empty_clip_long_range,maneuver,Vider le chargeur (portée longue)
+empty_clip_short_range,maneuver,Vider le chargeur (portée courte)
+encourage,maneuver,S'enhardir
+enter_memory_palace,maneuver,Entrer dans son palais mental
+entreat,maneuver,Solliciter
+evade,maneuver,Se dérober (dextérité)
+evade,maneuver,Se dérober (intuition)
+evaluate_artwork,maneuver,Évaluer une œuvre d'art
+evaluate_artwork_detect_fake,maneuver,Évaluer une œuvre d'art (détecter faux)
+exhort_charm,maneuver,Exhorter (charme)
+exhort_impress,maneuver,Exhorter (prestance)
+find_book,maneuver,Trouver un livre
+fish,maneuver,Pêcher
+forge_artwork_dexterity,maneuver,Contrefaire une œuvre (dextérité)
+forge_artwork_perception,maneuver,Contrefaire une œuvre (perception)
+frolic,maneuver,Folâtrer avec des animaux (pratique revigorante)
+grapple,maneuver,Empoigner
+gunstorm_long_range,maneuver,Tirer plusieurs fois (portée longue)
+gunstorm_short_range,maneuver,Tirer plusieurs fois (portée courte)
+hack,maneuver,Pirater
+hack_and_slash,maneuver,Privilégier la force brute
+haggle_charm,maneuver,Marchander (charme)
+haggle_knavery,maneuver,Marchander (filouterie)
+hold_breath,maneuver,Retenir sa respiration
+humiliate,maneuver,Humilier
+hunt,maneuver,Chasser
+identify,maneuver,Identifier
+identify_animal,maneuver,Identifier un animal
+identify_substance,maneuver,Identifier une substance
+idle,maneuver,Musarder (pratique revigorante)
+impersonate,maneuver,Se faire passer pour quelqu'un
+impersonate_alien,maneuver,Se faire passer pour un extraterrestre
+invent,maneuver,Inventer
+jam,maneuver,Improviser (pratique revigorante)
+jury_rig,maneuver,Réparer sommairement
+knockdown,maneuver,Renverser
+meditate,maneuver,Mediter (pratique revigorante)
+mesmerize,maneuver,Fasciner
+minister,maneuver,Apaiser par la parole
+muse_arts,maneuver,Étudier une œuvre (arts)
+muse_focus,maneuver,Étudier une œuvre (focalisation)
+operate,maneuver,Opérer
+parry,maneuver,Parer
+pick_lock,maneuver,Crocheter une serrure
+pick_pocket,maneuver,Faire les poches
+program,maneuver,Programmer
+rally,maneuver,Rassembler ses forces
+ram,maneuver,Entrer en collision
+ram_piloting,maneuver,Entrer en collision (Pilotage)
+ready_focus,maneuver,Se préparer (focalisation)
+ready_vigor,maneuver,Se préparer (vigueur)
+rebuff,maneuver,Rabrouer
+refine,maneuver,Épurer
+rehabilitate,maneuver,Rééduquer
+remember,maneuver,Se souvenir
+repair,maneuver,Réparer
+repair_piloting,maneuver,Réparer (Pilotage)
+research,maneuver,Faire des recherches
+ride,maneuver,Chevaucher
+riposte,maneuver,Riposter
+rouse,maneuver,Inspirer
+scope,maneuver,Repérer le terrain
+search,maneuver,Chercher
+shake_it_off_body,maneuver,Se reprendre (corps)
+shake_it_off_mind,maneuver,Se reprendre (mental)
+shake_it_off_spirit,maneuver,Se reprendre (esprit)
+shoot_gun_long,maneuver,Tirer (portée longue)
+shoot_gun_short,maneuver,Tirer (portée courte)
+skulk,maneuver,Passer inaperçu
+snapshot,maneuver,Tirer furtivement (portée courte)
+snapshot,maneuver,Tirer furtivement (portée longue)
+spot,maneuver,Repérer
+spread,maneuver,Balayer
+strike,maneuver,Frapper
+stunt_piloting,maneuver,Faire une cascade (Pilotage)
+three_round_burst_long_range,maneuver,Triple-tir (portée longue)
+three_round_burst_short_range,maneuver,Triple-tir (portée courte)
+throw_long,maneuver,Lancer (portée longue)
+throw_short,maneuver,Lancer (portée courte)
+tinker_crafts,maneuver,Bricoler (pratique revigorante - artisanats)
+tinker_tech_redemption,maneuver,Bricoler (pratique revigorante - rédemption tech)
+train_beast,maneuver,Dresser un animal
+traipse,maneuver,Se promener (pratique revigorante)
+trap,maneuver,Piéger
+treat_wounds,maneuver,Soigner des blessures
+upgrade,maneuver,Améliorer
+weapon_strike,maneuver,Frapper avec une arme
+wow,maneuver,Égayer
+absolution,perk,Absolution
+advisor,perk,Conseiller
+aim_assistance,perk,Aide à la visée
+aim_where_it_hurts,perk,Précision mortelle
+alien_friend,perk,Ami des extraterrestres [choisissez une espèce extraterrestre]
+alien_upbringing,perk,Éducation extraterrestre [choisissez une espèce]
+alien_upbringing_obun,perk,Éducation extraterrestre (Obun)
+all_access_pass,perk,Laissez-passer
+ally,perk,Allié [choisissez de qui il s’agit]
+ambidextrous,perk,Ambidextre
+analyze_personality,perk,Analyse de personnalité
+animal_friend,perk,Compagnon animal
+anthropologist,perk,Anthropologue
+armed_to_the_teeth,perk,Armé jusqu’aux dents
+armor_of_purity,perk,Armure de pureté
+armor_of_sanctity,perk,Armure de sainteté
+attune_fetish,perk,Harmonisation d’un fétiche
+backdoor_key,perk,Clef de piratage
+badge_of_merit,perk,Insigne honorifique
+badge_of_valor,perk,Médaille de bravoure
+bankster,perk,Pirate de la finance
+battlesense,perk,Instinct guerrier
+beginners_luck,perk,Chance du débutant
+blackmail,perk,Chantage
+blood_hound,perk,Limier
+bodyguard,perk,Garde du corps
+bogeyman,perk,Croque-mitaine
+born_on_the_battlefield,perk,Né sur le champ de bataille
+born_under_a_lucky_star,perk,Né sous une bonne étoile
+botanist,perk,Botaniste
+breath_mark,perk,Pause rythmique
+bureaucracy,perk,Paperasse
+calculating,perk,Calculateur
+call_to_contrition,perk,Exhortation à la contrition
+can_opener,perk,Ouvre-boîte
+cant_you_take_a_joke,perk,On n’a pas le droit de plaisanter ?
+cartographer,perk,Cartographe
+cash,perk,Entrée d’argent
+cat_burglars_eye,perk,Oeil d’expert
+chameleon,perk,Caméléon
+chartophylax,perk,Chartophylax
+child_of_dhiyana,perk,Enfant de dhiyana
+church_ordination,perk,Ordination de l’église
+cleansing_word,perk,Paroles purificatrices
+comeliness,perk,Charmant
+comprehend_tech_level,perk,Maîtrise d’un niveau technologique
+concoct_elixir,perk,Concoction d’élixir
+condemn,perk,Condamnation
+conscript,perk,Conscription
+contact,perk,Contact [choisissez qui]
+contortionist,perk,Contorsionniste
+council_member,perk,Membre du conseil
+counter_the_dark,perk,Ennemi des ténèbres
+counterfeit,perk,Contrefaçon
+coven_membership,perk,Membre d’un cercle
+craft_energy_device,perk,Fabrication d’objets énergétiques
+craft_wondrous_tech,perk,Fabrication de technologies extraordinaires
+credit_worthy,perk,Solvable
+criminal_archive_access,perk,Accès aux archives criminelles
+dabble_in_the_dark,perk,Contact avec les ténèbres
+dance_of_destruction,perk,Danse mortelle
+danger_sense,perk,Perception du danger
+daredevil,perk,Téméraire
+debauchery,perk,Débauche
+deduce,perk,Déduction
+deliverance,perk,Salut
+deputize,perk,Délégation
+destinator,perk,Orienteur
+diplomatic_immunity,perk,Immunité diplomatique
+embargo,perk,Embargo
+empathic_connection,perk,Lien empathique
+enlightened,perk,Éclairé
+entourage,perk,Cortège
+epiphany,perk,Épiphanie
+executioner,perk,Exécuteur
+exemplar,perk,As
+fame_infamy,perk,Célébrité/infamie
+family_ties,perk,Liens familiaux
+fencing,perk,Escrime
+forthright,perk,Sans détour
+fortitude_in_faith,perk,Courage du fidèle
+friends_in_high_places,perk,Amis haut placés
+gambler,perk,Joueur
+gearhead,perk,Génie en technologie
+gospel,perk,Gospel
+gossip_network,perk,Réseau d’informateurs
+guild_commission,perk,Commission d’une guilde
+guts,perk,Estomac solide
+hard_boiled,perk,Dur à cuire
+harmonize,perk,Harmonisation
+hedge_fund,perk,Fonds spéculatif
+hierophant,perk,Hiérophante
+hired_muscle,perk,Homme de main
+holier_than_thou,perk,Bien-pensant
+house_confessor,perk,Confesseur d’une noble maison
+house_holder,perk,Membre de maisonnée
+hunters_cred,perk,Chasseur de primes réputé
+imbue_tabernacle,perk,Tabernacle imprégné
+imperial_charter,perk,Charte impériale
+imperial_cohort_charter,perk,Statut d’acolyte impérial
+imperious,perk,Impérieux
+incite_passion,perk,Éveil de la passion
+income_tax,perk,Impôt sur le revenu
+incubation,perk,Purification
+independant,perk,Indépendant
+indulgence,perk,Indulgence
+ingenious,perk,Ingénieux
+inquisitorial_seal,perk,Sceau inquisitorial
+inspire_fear,perk,Aura effrayante
+inspiring,perk,Source d’inspiration
+intruder,perk,Cambrioleur
+invest_phylactery,perk,Phylactère imprégné
+invigorate,perk,Effet revigorant
+keen_awareness,perk,Sens aiguisés
+keeping_secrets,perk,Gardien des secrets
+key_signature,perk,Armature musicale
+labor_contractor,perk,Embaucheur
+landed,perk,Propriétaire terrien
+lay_down_the_law,perk,La loi c’est moi
+lay_priest,perk,Prêtre séculier
+learning_from_mistakes,perk,Erreurs instructives
+legate,perk,Légat
+legerdemain,perk,Tours de passe-passe
+linguist,perk,Linguiste
+living_legend,perk,Légende vivante
+long_con,perk,Grande escroquerie
+loving_prayer,perk,Prière réconfortante
+loyalist,perk,Loyalistes
+loyalty_unto_death,perk,Loyauté éternelle
+machine_spirit,perk,Assistant i.a.
+main_attraction,perk,Centre de l’attention
+manhunter,perk,Chasseur de têtes
+mantok,perk,Mantok
+marksmanship,perk,Adresse au tir
+martial_arts,perk,Arts martiaux
+master_of_deception,perk,Maître de la tromperie
+mechanic,perk,Mécano
+memory_expander,perk,Amplificateur de mémoire
+mental_conditioning,perk,Conditionnement mental
+mentor,perk,Mentor
+micro_confessions,perk,Micro-confessions
+military_rank,perk,Rang militaire
+mimic,perk,Imitateur
+monastic_order,perk,Ordre monastique
+money_manager,perk,Gestionnaire de fonds
+musical_savant,perk,Génie de la musique
+nimble,perk,Preste
+noble_title,perk,Titre de noblesse
+noblesse_oblige,perk,Noblesse oblige
+nothing_to_lose,perk,Rien à perdre
+oral_memory,perk,Mémoire auditive
+order_badge,perk,Insigne d’un ordre
+oriented,perk,Sens de l’orientation
+paragon_of_order,perk,Parangon d’un ordre
+paramour,perk,Amant
+passage_contract,perk,Contrat de passage
+patron_of_the_arts,perk,Mécène
+peasant_hero,perk,Héros du peuple
+perfect_pitch,perk,Mémoire artistique
+perfect_recall,perk,Mémoire extraordinaire
+petition,perk,Supplique
+playing_the_game,perk,Une carte dans la manche
+polymath,perk,Génie universel
+privy_council,perk,Conseil privé
+proxy,perk,Mandataire
+purge,perk,Expiation
+quaestor,perk,Questeur
+rabble_rouse,perk,Agitateur
+recreate_artifact,perk,Reproduction d’artefact
+reeve_advocate,perk,Avocat de la guilde des magistrats
+refuge,perk,Refuge
+rep,perk,Réputation professionelle
+resilient,perk,Résistant
+respectable,perk,Respectable
+retainer,perk,Serviteur
+retinue,perk,Suite
+riches,perk,Richesses
+righteous_sermon,perk,Sermon galvanisant
+rise_from_the_ashes,perk,Renaissance du phénix
+risk_taker,perk,Risque-tout
+royal_confidence,perk,Confidences royales
+royalties,perk,Droits d’auteur
+ruthless,perk,Impitoyable
+sacrificial_lambs,perk,Boucs émissaires
+saint_lextius_blessing,perk,Bénédiction de saint lextius
+saints_blessing,perk,Bénédiction d’un saint
+sanctify_arms_and_armor,perk,Bénédiction d’armes et d’armures
+savings,perk,Économies
+savoir_faire,perk,Maestria
+scent_of_the_witch,perk,Flair du chasseur de sorcières
+schmooze,perk,Délieur de langues
+second_skin,perk,Seconde peau
+secret_agent,perk,Agent secret
+seen_too_much,perk,Mort à l’intérieur
+sensitivity,perk,Sensibilité occulte
+shepherd_of_the_flock,perk,Berger du troupeau
+shield_of_the_law,perk,Égide de la loi
+simmering_rage,perk,Rage bouillonnante
+smell_danger,perk,Alerte olfactive
+spotter,perk,Observateur
+steadfast,perk,Inébranlable
+steady_hand,perk,Sang-froid
+stoic_body,perk,Comme un roc
+stoic_mind,perk,Mental stoïque
+stoic_spirit,perk,Esprit stoïque
+strategic_mind,perk,Stratège
+stunning_statement,perk,Déclaration saisissante
+stunt_pilot,perk,Pilote cascadeur
+subtle_body,perk,Corps subtils
+superficial_knowledge,perk,Savoir superficiel
+swimming_with_the_sharks,perk,Monde de requins
+taxes,perk,Taxes
+tech_savvy,perk,Technophile
+temporary_autonomous_zone,perk,Zone autonome temporaire
+tend_the_flock,perk,Bien-être des ouailles
+trendsetter,perk,Lanceur de mode
+triumphant_return,perk,Retour triomphal
+trouble_magnet,perk,Aimant à problèmes
+tutor,perk,Précepteur
+two_gun_fighting,perk,Combat avec deux pistolets
+underworld_contacts,perk,Contacts dans la pègre
+untouchable,perk,Intouchable
+veteran,perk,Vétéran
+vicious_insult,perk,Insulte venimeuse
+virtuoso,perk,Virtuose
+vow_of_poverty,perk,Vœu de pauvreté
+web_of_lies,perk,Trame de chuchotements
+well_traveled,perk,Voyageur expérimenté
+wild_domain,perk,Environnement de prédilection
+windfall,perk,Aubaine
+wise_one,perk,Grand sage
+witch_hunt,perk,Chasse aux sorcières
+wyrd_knowledge,perk,Connaissance du wyrd
+6fkTEjg82fNF6xnm,power,Liturgie de Dévotion
+Av8oUMzJnp1T5jiY,power,Main du Juste (Tir)
+HXuv9EsTHqtZW9sB,power,Main du Juste (Mêlée)
+the_prophets_holly_blessing,power,Bénédiction du Prophète
+zX3JSX5eRokkWQ0A,power,Main du Juste (Corps à corps)
+06eb6250-2ec5-4ce5-a31d-f27ee2f03312,shield,Bouclier de combat (plastacier)
+07cd21c1-86f2-4ce5-ae83-7980f42fce1a,shield,Bouclier anti-émeute
+0b895e7b-f39d-47f6-b1c5-1c581e537b00,shield,e-shield standard
+318cd000-b888-4122-988d-c3a64e1ca150,shield,e-shield de duel
+354addbb-01bf-4101-9926-fe92312224e4,shield,Rondache (acier)
+64eb6ee5-9951-4716-b8c3-aaadd7355bf7,shield,e-shield antique
+99b78be4-eace-417c-a8c5-c5c7254a8739,shield,Grand bouclier (acier)
+e61f8e72-47f6-4635-bff7-38feed4458be,shield,e-shield de combat
+e968f877-9539-4a39-b22a-ecfd9acee96b,shield,Rondache (plastacier)
+f7314067-212a-495b-b453-181fcea148d0,shield,e-shield d'assaut
+disguised_shield,shieldFeature,Camouflé
+noisy_upon_activation,shieldFeature,Bruyant quand activé
+noisy_when_activated,shieldFeature,Toujours bruyant
+unwieldy_shield,shieldFeature,Peu maniable
+human,species,Humain
+obun,species,Ur-obun
+ukar,species,Ur-ukar
+vorox,species,Vorox
+afraid,state,Effrayé
+angered,state,Irrité
+anxious,state,Anxieux
+awed,state,Éclairé
+befriended,state,Amadoué
+berserk,state,Berserk
+blinded,state,Aveuglé
+castigated,state,Blâmé
+commanded,state,Commandé
+confused,state,Déconcerté
+convinced,state,Convaincu
+daunted,state,Intimidé
+dazed,state,Étourdi
+deafened,state,Assourdi
+deceived,state,Dupé
+desensitized,state,Désensibilisé
+disoriented,state,Désorienté
+divinely_inspired,state,Divinement inspiré
+dying,state,Mourant
+enlightened,state,Révérencieux
+entreated,state,Sollicité
+euphoric,state,Euphorique
+fatigued,state,Fatigué
+guilty,state,Coupable
+hearing_impaired,state,Auditivement gêné
+hindered,state,Ralenti
+humiliated,state,Humilié
+immobilized,state,Immobilisé
+incapacitated,state,Neutralisé
+mangled,state,Mutilé
+mesmerized,state,Fasciné
+nauseated,state,Nauséeux
+paralyzed,state,Paralysé
+penalized,state,Pénalisé
+prone,state,À terre
+roused,state,Inspiré
+seeing_impaired,state,Visuellement gêné
+stimulated,state,Stimulé
+stunned,state,Sonné
+suspended,state,Flottant
+terrified,state,Terrorisé
+tormented,state,Tourmenté
+unconscious,state,Inconscient
+wowed,state,Égayé
+1ee5cfa1-5b59-4dbb-8605-167d5acdd776,techCompulsion,Imprudent
+2e32f34e-c1e4-42b6-b22d-8106b877da76,techCompulsion,Protecteur
+72b83598-ec41-4fe4-b9c2-17f8c2141bf8,techCompulsion,Perfectionniste
+7bb5e1ed-7725-4652-860c-6dbde3aa298b,techCompulsion,Prévenant
+9d86f0e0-e134-4783-94e2-b696a7d489ca,techCompulsion,Industrieux
+academia,skill,Skill
+alchemy,skill,Skill
+animalia,skill,Skill
+arts,skill,Skill
+charm,skill,Skill
+crafts,skill,Skill
+disguise,skill,Skill
+drive,skill,Skill
+empathy,skill,Skill
+fight,skill,Skill
+focus,skill,Skill
+impress,skill,Skill
+interface,skill,Skill
+intrusion,skill,Skill
+knavery,skill,Skill
+melee,skill,Skill
+observe,skill,Skill
+perform,skill,Skill
+pilot,skill,Skill
+remedy,skill,Skill
+shoot,skill,Skill
+sleightofhand,skill,Skill
+sneak,skill,Skill
+survival,skill,Skill
+techredemption,skill,Skill
+vigor,skill,Skill
+psi,power_skill,PowerSkill
+theurgy,power_skill,PowerSkill

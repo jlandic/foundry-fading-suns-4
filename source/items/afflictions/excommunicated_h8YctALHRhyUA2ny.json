@@ -1,0 +1,38 @@
+{
+  "type": "affliction",
+  "name": "excommunicated",
+  "folder": null,
+  "system": {
+    "slug": "excommunicated",
+    "description": "",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "priest"
+        }
+      ]
+    ]
+  },
+  "_id": "h8YctALHRhyUA2ny",
+  "img": "icons/magic/control/silhouette-aura-energy.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760727973422,
+    "modifiedTime": 1760727973422,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!h8YctALHRhyUA2ny"
+}

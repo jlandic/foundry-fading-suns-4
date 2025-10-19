@@ -1,0 +1,41 @@
+{
+  "type": "perk",
+  "name": "retinue",
+  "folder": null,
+  "system": {
+    "sourceType": "calling",
+    "type": "privilege",
+    "preconditions": [
+      [
+        {
+          "type": "perk",
+          "slug": "riches"
+        }
+      ]
+    ],
+    "description": "",
+    "benefice": "",
+    "slug": "retinue"
+  },
+  "_id": "P1nhMG4J7VFAiO7D",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760795828230,
+    "modifiedTime": 1760801372488,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 10100000,
+  "_key": "!items!P1nhMG4J7VFAiO7D"
+}

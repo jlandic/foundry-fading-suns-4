@@ -1,0 +1,35 @@
+{
+  "name": "martial_arts_koto",
+  "type": "perk",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "slug": "martial_arts_koto",
+    "description": "",
+    "sourceType": "class",
+    "type": "ability",
+    "benefice": "",
+    "preconditions": [],
+    "nextLevel": "martial_arts_koto_2"
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760801395481,
+    "modifiedTime": 1760801395481,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "M4R6rppZtAAMyyS6",
+  "sort": 0,
+  "_key": "!items!M4R6rppZtAAMyyS6"
+}

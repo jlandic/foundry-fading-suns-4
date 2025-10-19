@@ -1,0 +1,31 @@
+<section class="scrollable tab {{tabs.main.cssClass}}" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
+    <div class="flex-col">
+        <div>
+            <h3>
+                {{ localize (concat "fs4.perk.sourceTypes." system.sourceType) }}
+                &nbsp;•&nbsp;
+                {{ localize (concat "fs4.perk.types." system.type) }}
+                {{#if system.isOpen}}
+                    &nbsp;•&nbsp;{{ localize "fs4.perk.open" }}
+                {{/if}}
+            </h3>
+        </div>
+
+        {{#if previousLevel}}
+            <div class="flex-row">{{localize "fs4.perk.fields.previousLevel"}}: {{{previousLevel}}}</div>
+        {{/if}}
+        {{#if nextLevel}}
+            <div class="flex-row">{{localize "fs4.perk.fields.nextLevel"}}: {{{nextLevel}}}</div>
+        {{/if}}
+    </div>
+
+    <h2>{{ localize "fs4.commonFields.description" }}</h2>
+    {{{description}}}
+
+    <h2>{{ localize "fs4.perk.fields.benefice" }}</h2>
+    {{{benefice}}}
+
+    {{#if system.preconditions.length}}
+        {{> "fading-suns-4.choices-set" choices=preconditions titleKey="fs4.commonFields.precondition" }}
+    {{/if}}
+</section>
