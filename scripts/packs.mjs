@@ -2,7 +2,6 @@ import path from "path";
 import fs from "fs/promises";
 import { Command } from "commander";
 import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
-import { ref } from "process";
 
 const SOURCE_DIR = "source";
 const DB_DIR = "dist/packs";
@@ -11,6 +10,7 @@ const PACKS = [
     "items/afflictions",
     "items/classes",
     "items/perks",
+    "items/species",
 ]
 
 const compile = async () => {
@@ -97,8 +97,8 @@ const importReference = async (collection) => {
 
 const translatePerk = (reference) => ({
     name: reference.name,
-    description: reference.system.description,
-    benefice: reference.system.benefice,
+    description: reference?.system?.description || "",
+    benefice: reference?.system?.benefice || "",
 });
 
 const TRANSLATION_FNS = {
@@ -127,11 +127,14 @@ const generateTranslations = async (collection) => {
         label: collection,
         entries: {},
     };
-    for (const item of items) {
-        const reference = references.find(ref => ref.system.id === item.system.slug);
+
+    for (const item of items.sort((a, b) => a.name.localeCompare(b.name))) {
+        let reference = references.find(ref => ref.system.id === item.system.slug);
         if (!reference) {
             console.warn(`No reference found for item: ${item.system.slug}`);
-            continue;
+            reference = {
+                name: item.name,
+            }
         }
 
         translations.entries[item.system.slug] = TRANSLATION_FNS[collection](reference);

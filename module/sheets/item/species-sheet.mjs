@@ -7,6 +7,8 @@ export default class SpeciesSheet extends BaseItemSheet {
         foundry.utils.mergeObject(context, {
             powerSkills: await this._preparePowerSkillsChoice(),
             perks: await this._prepareReferenceList("system.perks", "perk"),
+            birthrights: await this._prepareReferenceList("system.birthrights", "perk"),
+            conditionedBirthrights: await this._prepareReferenceList("system.conditionedBirthrights", "perk"),
         });
 
         return context;

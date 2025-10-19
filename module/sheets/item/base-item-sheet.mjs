@@ -5,12 +5,14 @@ const TYPE_PARTS = [
     "affliction",
     "class",
     "perk",
+    "species",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [
     "affliction",
     "class",
     "perk",
+    "species",
 ];
 
 export default class BaseItemSheet extends foundry.applications.api.HandlebarsApplicationMixin(

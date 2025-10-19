@@ -19,7 +19,7 @@ export default class SpeciesDataModel extends BaseItem {
             }),
             birthrights: new ArrayField(new StringField({ required: true })),
             perks: new ArrayField(new StringField({ required: true })),
-            conditionedPerks: new ArrayField(new StringField({ required: true })),
+            conditionedBirthrights: new ArrayField(new StringField({ required: true })),
             capabilities: new ArrayField(new StringField({ required: true })),
             powerSkills: customFields.powerSkills(),
             maneuvers: new ArrayField(new StringField({ required: true })),

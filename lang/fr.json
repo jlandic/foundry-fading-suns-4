@@ -3,7 +3,8 @@
     "Item": {
       "affliction": "Affliction",
       "class": "Classe",
-      "perk": "Avantage"
+      "perk": "Avantage",
+      "species": "Espèce"
     }
   },
   "fs4": {
@@ -19,9 +20,15 @@
         "main": "Général",
         "modifiers": "Modificateurs"
       },
+      "common": {
+        "stats": "Stats"
+      },
       "class": {
         "classPerks": "Avantages de classe",
         "andOnePerkFromListOrOpen": "plus 1 avantage de classe de la liste ci-dessous ou de la liste des avantages ouverts"
+      },
+      "species": {
+        "callingPerks": "Quand vous gagnez un avantage de vocation, vous pouvez choisir un avantage de la liste ci-dessous"
       }
     },
     "characteristics": {
@@ -63,6 +70,10 @@
       "techredemption": "Rédemption tech",
       "vigor": "Vigueur"
     },
+    "powerSkills": {
+      "psi": "Psi",
+      "theurgy": "Théurgie"
+    },
     "class": {
       "fields": {
         "characteristics": "Caractéristiques",
@@ -93,6 +104,18 @@
         "verve": "Verve"
       },
       "open": "Ouvert"
+    },
+    "species": {
+      "fields": {
+        "size": "Taille",
+        "speed": "Vitesse",
+        "birthrights": "Héritages",
+        "perks": "Avantages",
+        "conditionedBirthrights": "Héritages avec conditions",
+        "capabilities": "Aptitudes",
+        "powerSkills": "Compétences de pouvoir",
+        "maneuvers": "Manœuvres"
+      }
     },
     "common": {
       "andSeparator": " et ",

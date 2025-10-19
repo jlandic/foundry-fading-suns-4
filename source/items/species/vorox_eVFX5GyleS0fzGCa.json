@@ -1,0 +1,58 @@
+{
+  "type": "species",
+  "name": "vorox",
+  "folder": null,
+  "system": {
+    "slug": "vorox",
+    "description": "",
+    "size": 7,
+    "speed": {
+      "twoLegs": 14,
+      "fourLegs": 21,
+      "sixLegs": 28
+    },
+    "birthrights": [
+      "bite",
+      "brutal",
+      "huge",
+      "no_occult",
+      "predatory",
+      "sensitive_smell",
+      "uncouth"
+    ],
+    "perks": [
+      "smell_danger"
+    ],
+    "conditionedBirthrights": [
+      "noble_claw"
+    ],
+    "capabilities": [
+      [
+        "speak_voroxian"
+      ]
+    ],
+    "powerSkills": [],
+    "maneuvers": []
+  },
+  "_id": "eVFX5GyleS0fzGCa",
+  "img": "icons/magic/control/silhouette-grow-shrink-tan.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760871251544,
+    "modifiedTime": 1760871251544,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!eVFX5GyleS0fzGCa"
+}

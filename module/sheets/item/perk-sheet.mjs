@@ -18,8 +18,8 @@ export default class PerkSheet extends BaseItemSheet {
         foundry.utils.mergeObject(context, {
             benefice: await enrichHTML(this.item.system.benefice),
             preconditions: await this._preparePreconditions(),
-            previousLevel: this.item.system.previousLevel ? await enrichHTML(`@SLUG[${this.item.system.previousLevel}]`) : null,
-            nextLevel: this.item.system.nextLevel ? await enrichHTML(`@SLUG[${this.item.system.nextLevel}]`) : null,
+            previousLevel: this.item.system.previousLevel ? await enrichHTML(`@SLUG[perk:${this.item.system.previousLevel}]`) : null,
+            nextLevel: this.item.system.nextLevel ? await enrichHTML(`@SLUG[perk:${this.item.system.nextLevel}]`) : null,
         });
 
         return context;

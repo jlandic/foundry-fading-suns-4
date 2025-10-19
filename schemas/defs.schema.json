@@ -1,0 +1,174 @@
+{
+  "itemType": {
+    "type": "string",
+    "enum": [
+      "affliction",
+      "calling",
+      "class",
+      "perk",
+      "species"
+    ]
+  },
+  "conditionOption": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "calling",
+          "class",
+          "faction",
+          "perk",
+          "species",
+          "characteristic",
+          "skill",
+          "power_skill",
+          "special"
+        ]
+      },
+      "slug": {
+        "$ref": "./slugs.schema.json#/slug"
+      }
+    }
+  },
+  "preconditions": {
+    "type": "array",
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/conditionOption"
+      }
+    }
+  },
+  "powerSkills": {
+    "type": "array",
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "slug": {
+            "type": "string",
+            "enum": [
+              "psi",
+              "theurgy"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "skills": {
+    "type": "array",
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "enum": [
+              "academia",
+              "alchemy",
+              "animalia",
+              "arts",
+              "charm",
+              "crafts",
+              "disguise",
+              "drive",
+              "empathy",
+              "fight",
+              "focus",
+              "impress",
+              "interface",
+              "intrusion",
+              "knavery",
+              "melee",
+              "observe",
+              "perform",
+              "pilot",
+              "remedy",
+              "shoot",
+              "sleightofhand",
+              "sneak",
+              "survival",
+              "techredemption",
+              "vigor"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "characteristics": {
+    "type": "array",
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "slug": {
+            "type": "string",
+            "enum": [
+              "strength",
+              "dexterity",
+              "endurance",
+              "wits",
+              "perception",
+              "will",
+              "presence",
+              "intuition",
+              "faith"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "capabilities": {
+    "type": "array",
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "speak_lojmaa",
+          "speak_uryari",
+          "speak_voroxian"
+        ]
+      }
+    }
+  }
+}

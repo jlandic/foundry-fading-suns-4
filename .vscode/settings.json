@@ -1,0 +1,28 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "source/items/afflictions/*.json"
+      ],
+      "url": "./schemas/afflictions.schema.json"
+    },
+    {
+      "fileMatch": [
+        "source/items/classes/*.json"
+      ],
+      "url": "./schemas/classes.schema.json"
+    },
+    {
+      "fileMatch": [
+        "source/items/perks/*.json"
+      ],
+      "url": "./schemas/perks.schema.json"
+    },
+    {
+      "fileMatch": [
+        "source/items/species/*.json"
+      ],
+      "url": "./schemas/species.schema.json"
+    }
+  ]
+}

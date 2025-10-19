@@ -3,7 +3,7 @@
   "name": "daredevil",
   "folder": null,
   "system": {
-    "sourceType": "capability",
+    "sourceType": "calling",
     "type": "ability",
     "preconditions": [
       [

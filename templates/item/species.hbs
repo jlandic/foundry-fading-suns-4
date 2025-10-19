@@ -1,0 +1,70 @@
+<section class="scrollable" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
+    <h2>{{ localize "fs4.commonFields.description" }}</h2>
+    {{{description}}}
+
+    <section class="bottom-padded">
+        <h2>{{ localize "fs4.sheets.common.stats" }}</h2>
+        <div class="form-group">
+            <label>
+                {{ localize "fs4.species.fields.size" }}&nbsp;:&nbsp;
+            </label>
+
+            <span>{{system.size}}</span>
+        </div>
+
+        <div class="form-group">
+            <label>
+                {{ localize "fs4.species.fields.speed" }}&nbsp;:&nbsp;
+            </label>
+
+            <span>
+                {{system.speed.twoLegs}}
+                {{#if system.speed.fourLegs }}
+                    &nbsp;/&nbsp;{{system.speed.fourLegs}}
+                {{/if}}
+                {{#if system.speed.sixLegs }}
+                    &nbsp;/&nbsp;{{system.speed.sixLegs}}
+                {{/if}}
+            </span>
+        </div>
+    </section>
+
+    {{> "fading-suns-4.choices-set" choices=powerSkills titleKey="fs4.species.fields.powerSkills" }}
+
+    {{#if system.birthrights.length}}
+        <section>
+            <h2>{{ localize "fs4.species.fields.birthrights" }}</h2>
+            <ul>
+                {{#each birthrights}}
+                    <li>{{{this}}}</li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+
+    {{#if system.conditionedBirthrights.length}}
+        <section>
+            <h2>{{ localize "fs4.species.fields.conditionedBirthrights" }}</h2>
+            <ul>
+                {{#each conditionedBirthrights}}
+                    <li>{{{this}}}</li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+
+    {{#if system.perks.length}}
+        <section>
+            <h2>{{ localize "fs4.species.fields.perks" }}</h2>
+            <div>
+                {{ localize "fs4.sheets.species.callingPerks" }}
+            </div>
+
+            <ul>
+                {{#each perks}}
+                    <li>{{{this}}}</li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+</section>

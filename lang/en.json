@@ -3,7 +3,8 @@
     "Item": {
       "affliction": "Affliction",
       "class": "Class",
-      "perk": "Perk"
+      "perk": "Perk",
+      "species": "Species"
     }
   },
   "fs4": {
@@ -19,9 +20,15 @@
         "main": "Main",
         "modifiers": "Modifiers"
       },
+      "common": {
+        "stats": "Stats"
+      },
       "class": {
         "classPerks": "Class perks",
         "andOnePerkFromListOrOpen": "plus class 1 perk from the list below or from the Open perks list"
+      },
+      "species": {
+        "callingPerks": "Whenever you gain a calling perk, you may choose a perk from the list below"
       }
     },
     "characteristics": {
@@ -63,6 +70,10 @@
       "techredemption": "Tech Redemption",
       "vigor": "Vigor"
     },
+    "powerSkills": {
+      "psi": "Psi",
+      "theurgy": "Theurgy"
+    },
     "class": {
       "fields": {
         "characteristics": "Characteristics",
@@ -95,6 +106,18 @@
         "verve": "Verve"
       },
       "open": "Open"
+    },
+    "species": {
+      "fields": {
+        "size": "Size",
+        "speed": "Speed",
+        "birthrights": "Birthrights",
+        "perks": "Perks",
+        "conditionedBirthrights": "Birthrights with conditions",
+        "capabilities": "Capabilities",
+        "powerSkills": "Power skills",
+        "maneuvers": "Maneuvers"
+      }
     },
     "common": {
       "andSeparator": " and ",

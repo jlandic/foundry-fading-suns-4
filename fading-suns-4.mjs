@@ -17,12 +17,14 @@ Hooks.once("init", async () => {
         affliction: models.AfflictionDataModel,
         class: models.ClassDataModel,
         perk: models.PerkDataModel,
+        species: models.SpeciesDataModel,
     };
     CONFIG.Item.documentClass = documents.ProxyItem;
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.AfflictionSheet, { types: ["affliction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ClassSheet, { types: ["class"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.PerkSheet, { types: ["perk"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SpeciesSheet, { types: ["species"], makeDefault: true });
 
     await preloadTemplates();
 });
