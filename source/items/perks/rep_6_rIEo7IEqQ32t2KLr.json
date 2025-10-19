@@ -1,0 +1,42 @@
+{
+  "type": "perk",
+  "name": "rep_6",
+  "folder": null,
+  "system": {
+    "slug": "rep_6",
+    "description": "<p>Vous travaillez à votre compte, ce qui fait que votre parole fait votre réputation et votre travail votre mérite. La Rép. est l’équivalent pour un franc-tenancier d’un Titre de noblesse, d’une Ordination de l’Église ou d’une Commission d’une guilde.</p>",
+    "benefice": "<p>cet avantage peut être pris plusieurs fois, chaque nouvel avantage augmentant la Rép. d’un rang. Chaque rang confère un bonus de +2 de Résistance (Mental).</p><p>Contrairement aux rangs des autres classes, qui représentent des grades officiels accordés par des factions, la Rép.</p><p>d’un franc-tenancier est officieuse et dépend uniquement du bouche-à-oreille. Il est possible qu’un client mente parfois et essaie de diffamer le franc-tenancier mais, même alors, la vérité finira par l’emporter. Un franc-tenancier qui manque à sa parole trop souvent et se comporte de façon non professionnelle envers ses clients pourrait voir sa Rép.</p><p>tomber d’un rang ou deux jusqu’à ce qu’il se rachète.</p><p>1er = Bleu 2e = Ouvrier 3e = Ouvrier expérimenté 4e = Expert 5e = Maître</p>",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "yeoman"
+        }
+      ]
+    ],
+    "sourceType": "class",
+    "type": "privilege",
+    "previousLevel": "rep_5"
+  },
+  "_id": "rIEo7IEqQ32t2KLr",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897715440,
+    "modifiedTime": 1760897715440,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!rIEo7IEqQ32t2KLr"
+}

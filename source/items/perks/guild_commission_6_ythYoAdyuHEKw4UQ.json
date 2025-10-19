@@ -1,0 +1,42 @@
+{
+  "type": "perk",
+  "name": "guild_commission_6",
+  "folder": null,
+  "system": {
+    "slug": "guild_commission_6",
+    "description": "<p>Vous êtes un membre officiel de votre guilde.</p>",
+    "benefice": "<p>vous avez un rang officiel au sein de votre guilde. Cet avantage peut être pris plusieurs fois pour représenter des grades supérieurs. Plus votre rang sera élevé, plus vous aurez de pouvoir (et de responsabilités). Les rangs sont les mêmes pour tous les genres et toutes les identités.</p><p>De plus, chaque rang vous accorde +2 de Résistance (Mental). Ce bonus augmente à chaque rang (ex. : un manitou des Racleurs obtient +6 de Résistance [Mental]).</p><p>cf. Tableau des rangs de guilde p. 127 du Guide du Joueur</p>",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ],
+    "sourceType": "class",
+    "type": "privilege",
+    "previousLevel": "guild_commission_5"
+  },
+  "_id": "ythYoAdyuHEKw4UQ",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897715440,
+    "modifiedTime": 1760897715440,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!ythYoAdyuHEKw4UQ"
+}

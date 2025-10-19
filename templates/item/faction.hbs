@@ -1,0 +1,18 @@
+<section class="scrollable">
+    <h2>{{ localize "fs4.commonFields.description" }}</h2>
+    {{{description}}}
+
+    {{> "fading-suns-4.choices-set" choices=characteristics titleKey="fs4.class.fields.characteristics" }}
+
+    {{> "fading-suns-4.choices-set" choices=skills titleKey="fs4.class.fields.skills" }}
+
+    <section>
+        <h2>{{ localize "fs4.sheets.common.traits" }}</h2>
+
+        <ul>
+            <li><strong>{{ localize "fs4.faction.fields.perk" }}:&nbsp;</strong>{{{perk}}}</li>
+            <li><strong>{{ localize "fs4.faction.fields.blessing" }}:&nbsp;</strong>{{{blessing}}}</li>
+            <li><strong>{{ localize "fs4.faction.fields.curse" }}:&nbsp;</strong>{{{curse}}}</li>
+        </ul>
+    </section>
+</section>

@@ -4,6 +4,7 @@ import { enrichHTML } from "../../utils/text-editor.mjs";
 const TYPE_PARTS = [
     "affliction",
     "class",
+    "faction",
     "perk",
     "species",
 ];
@@ -11,6 +12,7 @@ const TYPE_PARTS = [
 const READ_ONLY_REFERENCE_TYPES = [
     "affliction",
     "class",
+    "faction",
     "perk",
     "species",
 ];

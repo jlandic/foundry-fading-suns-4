@@ -1,0 +1,37 @@
+{
+  "type": "faction",
+  "name": "hazat",
+  "folder": null,
+  "system": {
+    "slug": "hazat",
+    "description": "",
+    "perk": "",
+    "blessing": "",
+    "curse": "",
+    "equipment": "",
+    "characteristics": [],
+    "skills": [],
+    "favoredCalling": ""
+  },
+  "_id": "yhcPZ8IezZq5Lbu7",
+  "img": "icons/sundries/flags/banner-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!yhcPZ8IezZq5Lbu7"
+}

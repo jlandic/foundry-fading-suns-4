@@ -21,7 +21,7 @@
         "modifiers": "Modificateurs"
       },
       "common": {
-        "stats": "Stats"
+        "traits": "Traits"
       },
       "class": {
         "classPerks": "Avantages de classe",
@@ -79,6 +79,17 @@
         "characteristics": "Caractéristiques",
         "skills": "Compétences",
         "perks": "Avantages"
+      }
+    },
+    "faction": {
+      "fields": {
+        "perk": "Avantage",
+        "characteristics": "Caractéristiques",
+        "skills": "Compétences",
+        "blessing": "Bénédiction",
+        "curse": "Malédiction",
+        "equipment": "Équipement",
+        "favoredCalling": "Vocation privilégiée"
       }
     },
     "perk": {

@@ -62,6 +62,12 @@
       "type": "Item"
     },
     {
+      "name": "factions",
+      "label": "Factions",
+      "path": "packs/factions",
+      "type": "Item"
+    },
+    {
       "name": "perks",
       "label": "Perks",
       "path": "packs/perks",
@@ -78,6 +84,7 @@
     "Item": {
       "affliction": {},
       "class": {},
+      "faction": {},
       "perk": {},
       "species": {}
     }

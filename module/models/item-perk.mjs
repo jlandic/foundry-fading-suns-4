@@ -1,5 +1,5 @@
 import { PerkSourceTypes, PerkTypes, PreconditionTypes } from "../system/references.mjs";
-import BaseItem from "./base-item.mjs";
+import BaseItemDataModel from "./base-item.mjs";
 import * as customFields from "./custom-fields.mjs";
 
 const {
@@ -7,7 +7,7 @@ const {
     StringField
 } = foundry.data.fields;
 
-export default class PerkDataModel extends BaseItem {
+export default class PerkDataModel extends BaseItemDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
             sourceType: new StringField({ required: true, choices: Object.values(PerkSourceTypes), initial: Object.values(PerkSourceTypes)[0] }),

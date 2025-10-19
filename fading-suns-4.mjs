@@ -16,6 +16,7 @@ Hooks.once("init", async () => {
     CONFIG.Item.dataModels = {
         affliction: models.AfflictionDataModel,
         class: models.ClassDataModel,
+        faction: models.FactionDataModel,
         perk: models.PerkDataModel,
         species: models.SpeciesDataModel,
     };
@@ -25,6 +26,7 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ClassSheet, { types: ["class"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.PerkSheet, { types: ["perk"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SpeciesSheet, { types: ["species"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.FactionSheet, { types: ["faction"], makeDefault: true });
 
     await preloadTemplates();
 });

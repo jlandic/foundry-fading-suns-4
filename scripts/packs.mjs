@@ -9,6 +9,7 @@ const REF_DIR = "references";
 const PACKS = [
     "items/afflictions",
     "items/classes",
+    "items/factions",
     "items/perks",
     "items/species",
 ]

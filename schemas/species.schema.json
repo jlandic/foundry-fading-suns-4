@@ -88,7 +88,7 @@
           }
         },
         "perks": {
-          "type": "array",
+        "type": "array",
           "items": {
             "$ref": "./slugs.schema.json#/slug"
           }

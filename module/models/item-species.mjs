@@ -1,4 +1,4 @@
-import BaseItem from "./base-item.mjs";
+import BaseItemDataModel from "./base-item.mjs";
 import * as customFields from "./custom-fields.mjs";
 
 const {
@@ -8,7 +8,7 @@ const {
     StringField,
 } = foundry.data.fields;
 
-export default class SpeciesDataModel extends BaseItem {
+export default class SpeciesDataModel extends BaseItemDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
             size: new NumberField({ required: true, initial: 5 }),
@@ -20,7 +20,6 @@ export default class SpeciesDataModel extends BaseItem {
             birthrights: new ArrayField(new StringField({ required: true })),
             perks: new ArrayField(new StringField({ required: true })),
             conditionedBirthrights: new ArrayField(new StringField({ required: true })),
-            capabilities: new ArrayField(new StringField({ required: true })),
             powerSkills: customFields.powerSkills(),
             maneuvers: new ArrayField(new StringField({ required: true })),
         });

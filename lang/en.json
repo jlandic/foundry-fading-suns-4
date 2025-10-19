@@ -21,7 +21,7 @@
         "modifiers": "Modifiers"
       },
       "common": {
-        "stats": "Stats"
+        "traits": "Traits"
       },
       "class": {
         "classPerks": "Class perks",
@@ -79,6 +79,17 @@
         "characteristics": "Characteristics",
         "skills": "Skills",
         "perks": "Perks"
+      }
+    },
+    "faction": {
+      "fields": {
+        "perk": "Perk",
+        "characteristics": "Characteristics",
+        "skills": "Skills",
+        "blessing": "Blessing",
+        "curse": "Curse",
+        "equipment": "Equipment",
+        "favoredCalling": "Favored calling"
       }
     },
     "perk": {

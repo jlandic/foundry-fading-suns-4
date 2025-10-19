@@ -1,13 +1,15 @@
 <section class="scrollable tab {{tabs.main.cssClass}}" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
-    <h2>{{ localize "fs4.commonFields.description" }}</h2>
-    {{{description}}}
+    <section>
+        <h2>{{ localize "fs4.commonFields.description" }}</h2>
+        {{{description}}}
+    </section>
 
     {{> "fading-suns-4.choices-set" choices=characteristics titleKey="fs4.class.fields.characteristics" }}
 
     {{> "fading-suns-4.choices-set" choices=skills titleKey="fs4.class.fields.skills" }}
 
-    <h2>{{ localize "fs4.class.fields.perks" }}</h2>
     <section>
+        <h2>{{ localize "fs4.class.fields.perks" }}</h2>
         <div>
             {{{perk}}} {{ localize "fs4.sheets.class.andOnePerkFromListOrOpen" }}
         </div>

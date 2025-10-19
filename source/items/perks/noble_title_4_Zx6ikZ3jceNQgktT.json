@@ -1,0 +1,43 @@
+{
+  "type": "perk",
+  "name": "noble_title_4",
+  "folder": null,
+  "system": {
+    "slug": "noble_title_4",
+    "description": "<p>Vous êtes né d’une noble famille ou avez été nommé seigneur d’une noble maison.</p>",
+    "benefice": "<p>vous possédez un titre de noblesse. Ce titre dépend du nombre de niveaux que vous possédez dans cet avantage. Chaque niveau vous fait monter d’un grade (cf. liste ci-dessous). De plus, chaque rang vous accorde +2 de Résistance (Mental). Ce bonus augmente à chaque rang (ex. : un baronnet obtient +4 de Résistance [Mental]).</p><p>Les nobles ont le droit d’ordonner à n’importe quel serf dépendant de leur maison de rejoindre temporairement une armée. Néanmoins, la plupart des serfs sont de très mauvais combattants et ont tendance à fuir à la première occasion. Malgré tout, ils peuvent former un détachement convenable pour pourchasser des criminels en fuite. Si un serf ainsi mobilisé est tué en service, le noble doit payer un wergeld à sa famille mais cela ne représente généralement guère plus de trois années de salaire du serf concerné (10 phénix en moyenne).</p><p><ul> <li>1er Chevalier/Chevaleresse</li> <li>2e Baronnet/ Baronnette</li> <li>3e Baron/Baronne</li> <li>4e Marquis/Marquise</li> <li>5e Comte/Comtesse</li> <li>6e Duc/Duchesse</li> </ul> Il existe un titre supérieur pour chaque maison : le prince, qui gouverne tout le monde au sein de la maison. Il est extrêmement difficile d’atteindre un tel rang.</p><p>Les complots machiavéliques nécessaires pour remplacer le prince actuel sont presque inimaginables.</p>",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ],
+    "sourceType": "class",
+    "type": "privilege",
+    "previousLevel": "noble_title_3",
+    "nextLevel": "noble_title_5"
+  },
+  "_id": "Zx6ikZ3jceNQgktT",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897715440,
+    "modifiedTime": 1760897715440,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Zx6ikZ3jceNQgktT"
+}
