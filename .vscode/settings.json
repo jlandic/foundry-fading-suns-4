@@ -14,6 +14,12 @@
     },
     {
       "fileMatch": [
+        "source/items/factions/*.json"
+      ],
+      "url": "./schemas/factions.schema.json"
+    },
+    {
+      "fileMatch": [
         "source/items/perks/*.json"
       ],
       "url": "./schemas/perks.schema.json"

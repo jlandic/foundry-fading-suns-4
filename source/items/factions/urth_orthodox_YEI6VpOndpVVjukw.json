@@ -7,23 +7,23 @@
     "characteristics": [
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 2
         },
         {
-          "name": "will",
+          "slug": "will",
           "value": 2
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ],
       [
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 1
         }
       ]
@@ -31,46 +31,46 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "empathy",
+          "slug": "empathy",
           "value": 1
         },
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         },
         {
-          "name": "remedy",
+          "slug": "remedy",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "perform",
+          "slug": "perform",
           "value": 2
         }
       ]
     ],
     "perk": "church_ordination",
     "blessing": [
-      "TODO"
+      "pious"
     ],
-    "curse": "TODO",
+    "curse": "austere",
     "slug": "urth_orthodox",
     "equipment": "TODO",
     "favoredCalling": "TODO"

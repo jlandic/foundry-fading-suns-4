@@ -7,19 +7,19 @@
     "characteristics": [
       [
         {
-          "name": "intuition",
+          "slug": "intuition",
           "value": 2
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ],
       [
         {
-          "name": "will",
+          "slug": "will",
           "value": 1
         }
       ]
@@ -27,60 +27,60 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "fight",
+          "slug": "fight",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         },
         {
-          "name": "survival",
+          "slug": "survival",
           "value": 1
         }
       ],
       [
         {
-          "name": "empathy",
+          "slug": "empathy",
           "value": 1
         },
         {
-          "name": "sneak",
+          "slug": "sneak",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "knavery",
+          "slug": "knavery",
           "value": 1
         },
         {
-          "name": "observe",
+          "slug": "observe",
           "value": 1
         }
       ]
     ],
     "perk": "rep",
     "blessing": [
-      "TODO"
+      "righteous_blessing"
     ],
-    "curse": "TODO",
+    "curse": "bitter",
     "slug": "far",
     "equipment": "TODO",
     "favoredCalling": "TODO"

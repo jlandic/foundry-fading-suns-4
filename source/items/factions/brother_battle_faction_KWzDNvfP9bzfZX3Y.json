@@ -7,25 +7,25 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 1
         }
       ],
       [
         {
-          "name": "endurance",
+          "slug": "endurance",
           "value": 1
         }
       ],
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 1
         }
       ],
       [
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 2
         }
       ]
@@ -33,52 +33,52 @@
     "skills": [
       [
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ],
       [
         {
-          "name": "fight",
+          "slug": "fight",
           "value": 1
         }
       ],
       [
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         },
         {
-          "name": "survival",
+          "slug": "survival",
           "value": 1
         }
       ],
       [
         {
-          "name": "remedy",
+          "slug": "remedy",
           "value": 1
         }
       ],
       [
         {
-          "name": "vigor",
+          "slug": "vigor",
           "value": 1
         }
       ]
     ],
     "perk": "church_ordination",
     "blessing": [
-      "TODO"
+      "disciplined"
     ],
-    "curse": "TODO",
+    "curse": "clueless",
     "slug": "brother_battle_faction",
     "equipment": "TODO",
     "favoredCalling": "TODO"

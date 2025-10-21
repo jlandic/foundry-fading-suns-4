@@ -7,19 +7,19 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 2
         }
       ],
       [
         {
-          "name": "intuition",
+          "slug": "intuition",
           "value": 1
         }
       ],
       [
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 2
         }
       ]
@@ -27,42 +27,42 @@
     "skills": [
       [
         {
-          "name": "alchemy",
+          "slug": "alchemy",
           "value": 1
         },
         {
-          "name": "crafts",
+          "slug": "crafts",
           "value": 1
         },
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "interface",
+          "slug": "interface",
           "value": 1
         }
       ],
       [
         {
-          "name": "techredemption",
+          "slug": "techredemption",
           "value": 2
         }
       ]
     ],
-    "perk": "guiild_commission",
+    "perk": "guild_commission",
     "blessing": [
-      "TODO"
+      "innovative"
     ],
-    "curse": "TODO",
+    "curse": "unnerving",
     "slug": "engineers",
     "equipment": "TODO",
     "favoredCalling": "TODO"

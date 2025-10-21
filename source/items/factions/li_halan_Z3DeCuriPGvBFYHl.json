@@ -7,35 +7,35 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 1
         },
         {
-          "name": "endurance",
+          "slug": "endurance",
           "value": 1
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 1
         }
       ],
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 2
         },
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ],
       [
         {
-          "name": "intuition",
+          "slug": "intuition",
           "value": 2
         },
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 2
         }
       ]
@@ -43,56 +43,56 @@
     "skills": [
       [
         {
-          "name": "arts",
+          "slug": "arts",
           "value": 1
         },
         {
-          "name": "perform",
+          "slug": "perform",
           "value": 1
         }
       ],
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "empathy",
+          "slug": "empathy",
           "value": 1
         },
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "observe",
+          "slug": "observe",
           "value": 1
         },
         {
-          "name": "remedy",
+          "slug": "remedy",
           "value": 1
         }
       ]
     ],
     "perk": "noble_title",
     "blessing": [
-      "TODO"
+      "pious"
     ],
-    "curse": "TODO",
+    "curse": "dynastic_stain",
     "slug": "li_halan",
     "equipment": "TODO",
     "favoredCalling": "TODO"

@@ -3,8 +3,12 @@
     "type": "string",
     "enum": [
       "affliction",
+      "blessing",
       "calling",
+      "capability",
       "class",
+      "curse",
+      "faction",
       "perk",
       "species"
     ]

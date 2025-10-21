@@ -8,9 +8,10 @@ export default class FactionSheet extends BaseItemSheet {
             characteristics: await this._prepareCharacteristicsChoice(),
             skills: await this._prepareSkillsChoice(),
             perk: await this._prepareReference("system.perk", "perk"),
-            // blessing: await this._prepareReference("system.blessing", "blessing"),
-            // curse: await this._prepareReference("system.curse", "curse"),
+            blessing: await this._prepareReference("system.blessing", "blessing"),
+            curse: await this._prepareReference("system.curse", "curse"),
             // equipment: await this._prepareReference("system.equipment"),
+            // favoredCalling: await this._prepareReference("system.favoredCalling", "calling"),
         });
 
         return context;

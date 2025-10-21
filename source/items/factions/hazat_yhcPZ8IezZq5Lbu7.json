@@ -7,27 +7,27 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 2
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 2
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ],
       [
         {
-          "name": "will",
+          "slug": "will",
           "value": 1
         },
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 1
         }
       ]
@@ -35,52 +35,53 @@
     "skills": [
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "empathy",
+          "slug": "empathy",
           "value": 1
         },
         {
-          "name": "vigor",
+          "slug": "vigor",
           "value": 1
         }
       ],
       [
         {
-          "name": "fight",
+          "slug": "fight",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ],
       [
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         }
       ]
     ],
     "perk": "noble_title",
     "blessing": [
-      "TODO"
+      "disciplined_strength",
+      "disciplined_dexterity"
     ],
-    "curse": "TODO",
+    "curse": "vengeful",
     "slug": "hazat",
     "equipment": "TODO",
     "favoredCalling": "TODO"

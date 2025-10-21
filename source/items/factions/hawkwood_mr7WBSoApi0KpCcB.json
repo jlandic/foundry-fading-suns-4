@@ -7,31 +7,31 @@
     "characteristics": [
       [
         {
-          "name": "endurance",
+          "slug": "endurance",
           "value": 2
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 2
         },
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 2
         }
       ],
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 1
         },
         {
-          "name": "will",
+          "slug": "will",
           "value": 1
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ]
@@ -39,46 +39,46 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 2
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 2
         }
       ],
       [
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         },
         {
-          "name": "vigor",
+          "slug": "vigor",
           "value": 1
         }
       ]
     ],
     "perk": "noble_title",
     "blessing": [
-      "TODO"
+      "unyielding"
     ],
-    "curse": "TODO",
+    "curse": "prideful",
     "slug": "hawkwood",
     "equipment": "TODO",
     "favoredCalling": "TODO"

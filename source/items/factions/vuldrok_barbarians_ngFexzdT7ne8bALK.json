@@ -7,37 +7,37 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 2
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 2
         }
       ],
       [
         {
-          "name": "endurance",
+          "slug": "endurance",
           "value": 1
         }
       ],
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 1
         },
         {
-          "name": "will",
+          "slug": "will",
           "value": 1
         }
       ],
       [
         {
-          "name": "perception",
+          "slug": "perception",
           "value": 1
         },
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 1
         }
       ]
@@ -45,68 +45,68 @@
     "skills": [
       [
         {
-          "name": "animalia",
+          "slug": "animalia",
           "value": 1
         },
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "crafts",
+          "slug": "crafts",
           "value": 1
         },
         {
-          "name": "techredemption",
+          "slug": "techredemption",
           "value": 1
         }
       ],
       [
         {
-          "name": "drive",
+          "slug": "drive",
           "value": 1
         },
         {
-          "name": "pilot",
+          "slug": "pilot",
           "value": 1
         }
       ],
       [
         {
-          "name": "fight",
+          "slug": "fight",
           "value": 1
         },
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ],
       [
         {
-          "name": "survival",
+          "slug": "survival",
           "value": 1
         },
         {
-          "name": "vigor",
+          "slug": "vigor",
           "value": 1
         }
       ]
     ],
     "perk": "rep",
     "blessing": [
-      "TODO"
+      "unyielding"
     ],
-    "curse": "TODO",
+    "curse": "prideful",
     "slug": "vuldrok_barbarians",
     "equipment": "TODO",
     "favoredCalling": "TODO"

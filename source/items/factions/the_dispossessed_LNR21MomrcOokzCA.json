@@ -7,27 +7,27 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 2
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 2
         }
       ],
       [
         {
-          "name": "endurance",
+          "slug": "endurance",
           "value": 2
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 1
         },
         {
-          "name": "will",
+          "slug": "will",
           "value": 1
         }
       ]
@@ -35,48 +35,48 @@
     "skills": [
       [
         {
-          "name": "drive",
+          "slug": "drive",
           "value": 1
         },
         {
-          "name": "pilot",
+          "slug": "pilot",
           "value": 1
         },
         {
-          "name": "vigor",
+          "slug": "vigor",
           "value": 1
         }
       ],
       [
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         }
       ],
       [
         {
-          "name": "fight",
+          "slug": "fight",
           "value": 1
         }
       ],
       [
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ]
     ],
     "perk": "rep",
     "blessing": [
-      "TODO"
+      "taciturn"
     ],
-    "curse": "TODO",
+    "curse": "twitchy",
     "slug": "the_dispossessed",
     "equipment": "TODO",
     "favoredCalling": "TODO"

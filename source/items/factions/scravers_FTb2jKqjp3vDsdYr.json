@@ -7,29 +7,29 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 1
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 1
         }
       ],
       [
         {
-          "name": "perception",
+          "slug": "perception",
           "value": 1
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ],
       [
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 1
         }
       ]
@@ -37,68 +37,68 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         },
         {
-          "name": "knavery",
+          "slug": "knavery",
           "value": 1
         }
       ],
       [
         {
-          "name": "drive",
+          "slug": "drive",
           "value": 1
         },
         {
-          "name": "pilot",
+          "slug": "pilot",
           "value": 1
         }
       ],
       [
         {
-          "name": "fight",
+          "slug": "fight",
           "value": 1
         },
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ],
       [
         {
-          "name": "sleightofhand",
+          "slug": "sleightofhand",
           "value": 1
         },
         {
-          "name": "techredemption",
+          "slug": "techredemption",
           "value": 1
         }
       ],
       [
         {
-          "name": "intrusion",
+          "slug": "intrusion",
           "value": 1
         },
         {
-          "name": "observe",
+          "slug": "observe",
           "value": 1
         }
       ]
     ],
-    "perk": "guiild_commission",
+    "perk": "guild_commission",
     "blessing": [
-      "TODO"
+      "the_man"
     ],
-    "curse": "TODO",
+    "curse": "possessive",
     "slug": "scravers",
     "equipment": "TODO",
     "favoredCalling": "TODO"

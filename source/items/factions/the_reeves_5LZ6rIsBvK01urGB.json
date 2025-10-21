@@ -7,19 +7,19 @@
     "characteristics": [
       [
         {
-          "name": "intuition",
+          "slug": "intuition",
           "value": 1
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 2
         }
       ],
       [
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 2
         }
       ]
@@ -27,46 +27,46 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 2
         }
       ],
       [
         {
-          "name": "empathy",
+          "slug": "empathy",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         }
       ],
       [
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         },
         {
-          "name": "interface",
+          "slug": "interface",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ]
     ],
-    "perk": "guiild_commission",
+    "perk": "guild_commission",
     "blessing": [
-      "TODO"
+      "shrewd"
     ],
-    "curse": "TODO",
+    "curse": "mammon",
     "slug": "the_reeves",
     "equipment": "TODO",
     "favoredCalling": "TODO"

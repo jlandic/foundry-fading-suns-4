@@ -7,19 +7,19 @@
     "characteristics": [
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 2
         }
       ],
       [
         {
-          "name": "intuition",
+          "slug": "intuition",
           "value": 2
         }
       ],
       [
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 1
         }
       ]
@@ -27,46 +27,46 @@
     "skills": [
       [
         {
-          "name": "alchemy",
+          "slug": "alchemy",
           "value": 1
         },
         {
-          "name": "observe",
+          "slug": "observe",
           "value": 1
         }
       ],
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         },
         {
-          "name": "remedy",
+          "slug": "remedy",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 2
         }
       ],
       [
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         }
       ]
     ],
     "perk": "church_ordination",
     "blessing": [
-      "TODO"
+      "curious"
     ],
-    "curse": "TODO",
+    "curse": "subtle",
     "slug": "eskatonic_order",
     "equipment": "TODO",
     "favoredCalling": "TODO"

@@ -7,29 +7,29 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 2
         }
       ],
       [
         {
-          "name": "faith",
+          "slug": "faith",
           "value": 1
         },
         {
-          "name": "intuition",
+          "slug": "intuition",
           "value": 1
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 1
         }
       ],
       [
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 1
         }
       ]
@@ -37,46 +37,46 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         }
       ],
       [
         {
-          "name": "empathy",
+          "slug": "empathy",
           "value": 1
         },
         {
-          "name": "focus",
+          "slug": "focus",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         },
         {
-          "name": "arts",
+          "slug": "arts",
           "value": 1
         },
         {
-          "name": "perform",
+          "slug": "perform",
           "value": 1
         }
       ],
       [
         {
-          "name": "remedy",
+          "slug": "remedy",
           "value": 2
         }
       ]
     ],
     "perk": "church_ordination",
     "blessing": [
-      "TODO"
+      "compassionate"
     ],
-    "curse": "TODO",
+    "curse": "gullible",
     "slug": "sanctuary_aeon",
     "equipment": "TODO",
     "favoredCalling": "TODO"

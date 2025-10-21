@@ -7,37 +7,37 @@
     "characteristics": [
       [
         {
-          "name": "dexterity",
+          "slug": "dexterity",
           "value": 1
         },
         {
-          "name": "strength",
+          "slug": "strength",
           "value": 1
         },
         {
-          "name": "endurance",
+          "slug": "endurance",
           "value": 1
         }
       ],
       [
         {
-          "name": "perception",
+          "slug": "perception",
           "value": 1
         },
         {
-          "name": "wits",
+          "slug": "wits",
           "value": 1
         }
       ],
       [
         {
-          "name": "presence",
+          "slug": "presence",
           "value": 1
         }
       ],
       [
         {
-          "name": "will",
+          "slug": "will",
           "value": 2
         }
       ]
@@ -45,68 +45,68 @@
     "skills": [
       [
         {
-          "name": "charm",
+          "slug": "charm",
           "value": 1
         },
         {
-          "name": "impress",
+          "slug": "impress",
           "value": 1
         },
         {
-          "name": "knavery",
+          "slug": "knavery",
           "value": 1
         }
       ],
       [
         {
-          "name": "contact",
+          "slug": "melee",
           "value": 1
         },
         {
-          "name": "shoot",
+          "slug": "shoot",
           "value": 1
         }
       ],
       [
         {
-          "name": "disguise",
+          "slug": "disguise",
           "value": 1
         },
         {
-          "name": "interface",
+          "slug": "interface",
           "value": 1
         },
         {
-          "name": "intrusion",
+          "slug": "intrusion",
           "value": 1
         }
       ],
       [
         {
-          "name": "academia",
+          "slug": "academia",
           "value": 1
         },
         {
-          "name": "arts",
+          "slug": "arts",
           "value": 1
         }
       ],
       [
         {
-          "name": "observe",
+          "slug": "observe",
           "value": 1
         },
         {
-          "name": "sneak",
+          "slug": "sneak",
           "value": 1
         }
       ]
     ],
     "perk": "noble_title",
     "blessing": [
-      "TODO"
+      "suspicious"
     ],
-    "curse": "TODO",
+    "curse": "vain",
     "slug": "decados",
     "equipment": "TODO",
     "favoredCalling": "TODO"
