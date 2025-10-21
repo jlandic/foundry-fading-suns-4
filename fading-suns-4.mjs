@@ -15,18 +15,22 @@ Hooks.once("init", async () => {
 
     CONFIG.Item.dataModels = {
         affliction: models.AfflictionDataModel,
+        blessing: models.BlessingDataModel,
         class: models.ClassDataModel,
+        curse: models.CurseDataModel,
         faction: models.FactionDataModel,
         perk: models.PerkDataModel,
         species: models.SpeciesDataModel,
     };
     CONFIG.Item.documentClass = documents.ProxyItem;
 
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "curse"], makeDefault: true });
+
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.AfflictionSheet, { types: ["affliction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ClassSheet, { types: ["class"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.FactionSheet, { types: ["faction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.PerkSheet, { types: ["perk"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SpeciesSheet, { types: ["species"], makeDefault: true });
-    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.FactionSheet, { types: ["faction"], makeDefault: true });
 
     await preloadTemplates();
 });

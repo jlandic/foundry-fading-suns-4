@@ -3,15 +3,93 @@
   "name": "temple_avesti",
   "folder": null,
   "system": {
-    "slug": "temple_avesti",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 1
+        },
+        {
+          "name": "faith",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "endurance",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "perception",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "empathy",
+          "value": 1
+        },
+        {
+          "name": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        },
+        {
+          "name": "contact",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "focus",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "observe",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "church_ordination",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "temple_avesti",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "azcHxrPQmKdDNvrx",
   "img": "icons/sundries/flags/banner-blue.webp",

@@ -3,15 +3,73 @@
   "name": "the_reeves",
   "folder": null,
   "system": {
-    "slug": "the_reeves",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "charm",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "empathy",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "focus",
+          "value": 1
+        },
+        {
+          "name": "interface",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "guiild_commission",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "the_reeves",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "5LZ6rIsBvK01urGB",
   "img": "icons/sundries/flags/banner-blue.webp",

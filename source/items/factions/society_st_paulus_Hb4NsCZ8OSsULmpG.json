@@ -3,15 +3,99 @@
   "name": "society_st_paulus",
   "folder": null,
   "system": {
-    "slug": "society_st_paulus",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "endurance",
+          "value": 1
+        },
+        {
+          "name": "faith",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "intuition",
+          "value": 2
+        },
+        {
+          "name": "perception",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        },
+        {
+          "name": "strength",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "animalia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "drive",
+          "value": 1
+        },
+        {
+          "name": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "contact",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "remedy",
+          "value": 1
+        },
+        {
+          "name": "survival",
+          "value": 1
+        },
+        {
+          "name": "techredemption",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "rep",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "society_st_paulus",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "Hb4NsCZ8OSsULmpG",
   "img": "icons/sundries/flags/banner-blue.webp",

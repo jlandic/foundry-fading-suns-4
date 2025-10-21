@@ -1,0 +1,30 @@
+{
+  "type": "blessing",
+  "name": "pious",
+  "folder": null,
+  "system": {
+    "slug": "pious",
+    "description": ""
+  },
+  "_id": "ODLj0BWHYb7OcS3N",
+  "img": "icons/magic/symbols/mask-metal-silver-white.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760907521972,
+    "modifiedTime": 1760907521972,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!ODLj0BWHYb7OcS3N"
+}

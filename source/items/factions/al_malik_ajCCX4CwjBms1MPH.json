@@ -3,15 +3,101 @@
   "name": "al_malik",
   "folder": null,
   "system": {
-    "slug": "al_malik",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 1
+        },
+        {
+          "name": "wits",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "arts",
+          "value": 1
+        },
+        {
+          "name": "perform",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "contact",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        },
+        {
+          "name": "techredemption",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "empathy",
+          "value": 1
+        },
+        {
+          "name": "focus",
+          "value": 1
+        },
+        {
+          "name": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "noble_title",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "al_malik",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "ajCCX4CwjBms1MPH",
   "img": "icons/sundries/flags/banner-blue.webp",

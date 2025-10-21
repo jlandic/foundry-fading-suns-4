@@ -3,15 +3,77 @@
   "name": "urth_orthodox",
   "folder": null,
   "system": {
-    "slug": "urth_orthodox",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "faith",
+          "value": 2
+        },
+        {
+          "name": "will",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "empathy",
+          "value": 1
+        },
+        {
+          "name": "focus",
+          "value": 1
+        },
+        {
+          "name": "remedy",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "perform",
+          "value": 2
+        }
+      ]
+    ],
+    "perk": "church_ordination",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "urth_orthodox",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "YEI6VpOndpVVjukw",
   "img": "icons/sundries/flags/banner-blue.webp",

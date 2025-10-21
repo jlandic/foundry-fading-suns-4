@@ -3,15 +3,83 @@
   "name": "the_dispossessed",
   "folder": null,
   "system": {
-    "slug": "the_dispossessed",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 2
+        },
+        {
+          "name": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "endurance",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 1
+        },
+        {
+          "name": "will",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "drive",
+          "value": 1
+        },
+        {
+          "name": "pilot",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "contact",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "rep",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "the_dispossessed",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "LNR21MomrcOokzCA",
   "img": "icons/sundries/flags/banner-blue.webp",

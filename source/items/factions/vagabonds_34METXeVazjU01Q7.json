@@ -3,15 +3,91 @@
   "name": "vagabonds",
   "folder": null,
   "system": {
-    "slug": "vagabonds",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "endurance",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "will",
+          "value": 2
+        },
+        {
+          "name": "faith",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        },
+        {
+          "name": "contact",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "sneak",
+          "value": 1
+        },
+        {
+          "name": "survival",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "observe",
+          "value": 1
+        },
+        {
+          "name": "sleightofhand",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "rep",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "vagabonds",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "34METXeVazjU01Q7",
   "img": "icons/sundries/flags/banner-blue.webp",

@@ -3,15 +3,85 @@
   "name": "hawkwood",
   "folder": null,
   "system": {
-    "slug": "hawkwood",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "endurance",
+          "value": 2
+        },
+        {
+          "name": "strength",
+          "value": 2
+        },
+        {
+          "name": "wits",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "faith",
+          "value": 1
+        },
+        {
+          "name": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "charm",
+          "value": 2
+        },
+        {
+          "name": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "contact",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "focus",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "noble_title",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "hawkwood",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "mr7WBSoApi0KpCcB",
   "img": "icons/sundries/flags/banner-blue.webp",

@@ -3,15 +3,73 @@
   "name": "eskatonic_order",
   "folder": null,
   "system": {
-    "slug": "eskatonic_order",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "faith",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "intuition",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "alchemy",
+          "value": 1
+        },
+        {
+          "name": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        },
+        {
+          "name": "remedy",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "focus",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "church_ordination",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "eskatonic_order",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "gcI1U1Vp6NxeeoNn",
   "img": "icons/sundries/flags/banner-blue.webp",

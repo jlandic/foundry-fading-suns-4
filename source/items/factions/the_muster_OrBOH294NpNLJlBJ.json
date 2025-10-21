@@ -3,15 +3,91 @@
   "name": "the_muster",
   "folder": null,
   "system": {
-    "slug": "the_muster",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 2
+        },
+        {
+          "name": "endurance",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "faith",
+          "value": 1
+        },
+        {
+          "name": "will",
+          "value": 1
+        },
+        {
+          "name": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "strength",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "drive",
+          "value": 1
+        },
+        {
+          "name": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        },
+        {
+          "name": "contact",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "techredemption",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "guiild_commission",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "the_muster",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "OrBOH294NpNLJlBJ",
   "img": "icons/sundries/flags/banner-blue.webp",

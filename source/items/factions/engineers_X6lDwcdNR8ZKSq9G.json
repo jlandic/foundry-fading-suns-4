@@ -3,15 +3,69 @@
   "name": "engineers",
   "folder": null,
   "system": {
-    "slug": "engineers",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "alchemy",
+          "value": 1
+        },
+        {
+          "name": "crafts",
+          "value": 1
+        },
+        {
+          "name": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "techredemption",
+          "value": 2
+        }
+      ]
+    ],
+    "perk": "guiild_commission",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "engineers",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "X6lDwcdNR8ZKSq9G",
   "img": "icons/sundries/flags/banner-blue.webp",

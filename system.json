@@ -56,9 +56,21 @@
       "type": "Item"
     },
     {
+      "name": "blessings",
+      "label": "Blessings",
+      "path": "packs/blessings",
+      "type": "Item"
+    },
+    {
       "name": "classes",
       "label": "Classes",
       "path": "packs/classes",
+      "type": "Item"
+    },
+    {
+      "name": "curses",
+      "label": "Curses",
+      "path": "packs/curses",
       "type": "Item"
     },
     {
@@ -83,7 +95,9 @@
   "documentTypes": {
     "Item": {
       "affliction": {},
+      "blessing": {},
       "class": {},
+      "curse": {},
       "faction": {},
       "perk": {},
       "species": {}

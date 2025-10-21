@@ -7,11 +7,14 @@ const TYPE_PARTS = [
     "faction",
     "perk",
     "species",
+    "simpleItem",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [
     "affliction",
+    "blessing",
     "class",
+    "curse",
     "faction",
     "perk",
     "species",

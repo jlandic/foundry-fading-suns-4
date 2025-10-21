@@ -3,15 +3,87 @@
   "name": "hazat",
   "folder": null,
   "system": {
-    "slug": "hazat",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 2
+        },
+        {
+          "name": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "will",
+          "value": 1
+        },
+        {
+          "name": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "empathy",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "contact",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "noble_title",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "hazat",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "yhcPZ8IezZq5Lbu7",
   "img": "icons/sundries/flags/banner-blue.webp",

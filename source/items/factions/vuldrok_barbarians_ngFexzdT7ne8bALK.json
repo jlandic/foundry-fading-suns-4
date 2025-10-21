@@ -3,15 +3,113 @@
   "name": "vuldrok_barbarians",
   "folder": null,
   "system": {
-    "slug": "vuldrok_barbarians",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 2
+        },
+        {
+          "name": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "endurance",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "faith",
+          "value": 1
+        },
+        {
+          "name": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "perception",
+          "value": 1
+        },
+        {
+          "name": "presence",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "animalia",
+          "value": 1
+        },
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "crafts",
+          "value": 1
+        },
+        {
+          "name": "techredemption",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "drive",
+          "value": 1
+        },
+        {
+          "name": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        },
+        {
+          "name": "contact",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "survival",
+          "value": 1
+        },
+        {
+          "name": "vigor",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "rep",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "vuldrok_barbarians",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "ngFexzdT7ne8bALK",
   "img": "icons/sundries/flags/banner-blue.webp",

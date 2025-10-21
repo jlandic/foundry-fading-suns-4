@@ -3,15 +3,81 @@
   "name": "charioteers",
   "folder": null,
   "system": {
-    "slug": "charioteers",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "charm",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "drive",
+          "value": 1
+        },
+        {
+          "name": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "shoot",
+          "value": 1
+        },
+        {
+          "name": "techredemption",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "guiild_commission",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "charioteers",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "p92dg8NH5ZUAkEOG",
   "img": "icons/sundries/flags/banner-blue.webp",

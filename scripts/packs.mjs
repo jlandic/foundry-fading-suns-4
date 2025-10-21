@@ -8,7 +8,9 @@ const DB_DIR = "dist/packs";
 const REF_DIR = "references";
 const PACKS = [
     "items/afflictions",
+    "items/blessings",
     "items/classes",
+    "items/curses",
     "items/factions",
     "items/perks",
     "items/species",
@@ -42,24 +44,8 @@ const extract = async () => {
     console.log("All packs extracted.");
 }
 
-const transformPerk = async (original, perk) => {
-    return {
-        ...original,
-        name: perk.system.id,
-        system: {
-            sourceType: perk.system.sourceType,
-            type: perk.system.type,
-            preconditions: perk.system._preconditions,
-            description: "",
-            benefice: "",
-            slug: perk.system.id,
-        }
-    };
-};
-
 const TRANSFORMERS = {
-    perks: transformPerk,
-}
+};
 
 const importReference = async (collection) => {
     console.log(`Importing reference data: ${collection}...`);
@@ -96,14 +82,14 @@ const importReference = async (collection) => {
     }
 }
 
-const translatePerk = (reference) => ({
-    name: reference.name,
-    description: reference?.system?.description || "",
-    benefice: reference?.system?.benefice || "",
+const translateCurseBlessing = () => ({
+    name: "",
+    description: "",
 });
 
 const TRANSLATION_FNS = {
-    perks: translatePerk,
+    curses: translateCurseBlessing,
+    blessings: translateCurseBlessing,
 }
 
 const generateTranslations = async (collection) => {
@@ -130,7 +116,7 @@ const generateTranslations = async (collection) => {
     };
 
     for (const item of items.sort((a, b) => a.name.localeCompare(b.name))) {
-        let reference = references.find(ref => ref.system.id === item.system.slug);
+        let reference = references.find(ref => ref.system?.id === item.system.slug);
         if (!reference) {
             console.warn(`No reference found for item: ${item.system.slug}`);
             reference = {
@@ -138,7 +124,7 @@ const generateTranslations = async (collection) => {
             }
         }
 
-        translations.entries[item.system.slug] = TRANSLATION_FNS[collection](reference);
+        translations.entries[item.system.slug] = TRANSLATION_FNS[collection](reference, item);
     }
 
     await fs.writeFile(path.join(REF_DIR, "_i18n", `fading-suns-4.${collection}.json`), JSON.stringify(translations, null, 2), "utf-8");

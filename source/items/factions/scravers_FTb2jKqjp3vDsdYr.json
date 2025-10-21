@@ -3,15 +3,105 @@
   "name": "scravers",
   "folder": null,
   "system": {
-    "slug": "scravers",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 1
+        },
+        {
+          "name": "strength",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        },
+        {
+          "name": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "drive",
+          "value": 1
+        },
+        {
+          "name": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "fight",
+          "value": 1
+        },
+        {
+          "name": "contact",
+          "value": 1
+        },
+        {
+          "name": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "sleightofhand",
+          "value": 1
+        },
+        {
+          "name": "techredemption",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "intrusion",
+          "value": 1
+        },
+        {
+          "name": "observe",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "guiild_commission",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "scravers",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "FTb2jKqjp3vDsdYr",
   "img": "icons/sundries/flags/banner-blue.webp",

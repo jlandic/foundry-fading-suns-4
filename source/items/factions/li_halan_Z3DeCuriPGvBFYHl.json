@@ -3,15 +3,99 @@
   "name": "li_halan",
   "folder": null,
   "system": {
-    "slug": "li_halan",
     "description": "",
-    "perk": "",
-    "blessing": "",
-    "curse": "",
-    "equipment": "",
-    "characteristics": [],
-    "skills": [],
-    "favoredCalling": ""
+    "characteristics": [
+      [
+        {
+          "name": "dexterity",
+          "value": 1
+        },
+        {
+          "name": "endurance",
+          "value": 1
+        },
+        {
+          "name": "strength",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "faith",
+          "value": 2
+        },
+        {
+          "name": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "name": "intuition",
+          "value": 2
+        },
+        {
+          "name": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "name": "arts",
+          "value": 1
+        },
+        {
+          "name": "perform",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "charm",
+          "value": 1
+        },
+        {
+          "name": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "empathy",
+          "value": 1
+        },
+        {
+          "name": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "name": "observe",
+          "value": 1
+        },
+        {
+          "name": "remedy",
+          "value": 1
+        }
+      ]
+    ],
+    "perk": "noble_title",
+    "blessing": [
+      "TODO"
+    ],
+    "curse": "TODO",
+    "slug": "li_halan",
+    "equipment": "TODO",
+    "favoredCalling": "TODO"
   },
   "_id": "Z3DeCuriPGvBFYHl",
   "img": "icons/sundries/flags/banner-blue.webp",

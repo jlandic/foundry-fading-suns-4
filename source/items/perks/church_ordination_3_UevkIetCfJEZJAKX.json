@@ -4,8 +4,8 @@
   "folder": null,
   "system": {
     "slug": "church_ordination_3",
-    "description": "<p>Vous êtes un membre officiel de l’Église Universelle, protecteur des âmes et porteur de lumière. Les titres s’appliquent à tous les genres et identités.</p>",
-    "benefice": "<p>vous avez un rang précis au sein de l’Église.</p><p>Ce titre dépend du nombre de niveaux que vous avez dans ce trait. Chaque niveau vous fait monter d’un grade (cf. tableau ci-dessous). De plus, chaque rang vous accorde +2 de Résistance (Mental). Ce bonus augmente à chaque rang (ex. : un chanoine obtient +4 de Résistance [Mental]).</p><p>De plus, il existe différents devoirs correspondant à des titres spécifiques au sein de l’Église (et aux avantages pour les obtenir). Les prêtres qui agissent comme ambassadeurs sur une planète, auprès d’une maison noble ou d’une guilde sont appelés « légats ». Ceux qui sont reconnus pour leur savoir en théologie (et qui ont été approuvés par le Patriarche comme théologiens officiels) sont appelés « hiérophantes ». Un gardien des archives de l’Église occupe le poste de « chartophylax ». Un député du Patriarche est nommé « syneculla ». Ces titres se cumulent à ceux des rangs du tableau.</p>",
+    "description": "",
+    "benefice": "",
     "preconditions": [
       [
         {
