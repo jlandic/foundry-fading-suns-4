@@ -1,0 +1,33 @@
+{
+  "type": "capability",
+  "name": "spacecraft",
+  "folder": null,
+  "system": {
+    "slug": "spacecraft",
+    "description": "",
+    "type": "equipment",
+    "category": "armor",
+    "preconditions": []
+  },
+  "_id": "ACReyFc4o10EGWqE",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761066203458,
+    "modifiedTime": 1761066203458,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!ACReyFc4o10EGWqE"
+}

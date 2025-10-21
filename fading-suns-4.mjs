@@ -16,6 +16,7 @@ Hooks.once("init", async () => {
     CONFIG.Item.dataModels = {
         affliction: models.AfflictionDataModel,
         blessing: models.BlessingDataModel,
+        capability: models.CapabilityDataModel,
         class: models.ClassDataModel,
         curse: models.CurseDataModel,
         faction: models.FactionDataModel,
@@ -27,6 +28,7 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "curse"], makeDefault: true });
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.AfflictionSheet, { types: ["affliction"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.CapabilitySheet, { types: ["capability"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ClassSheet, { types: ["class"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.FactionSheet, { types: ["faction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.PerkSheet, { types: ["perk"], makeDefault: true });

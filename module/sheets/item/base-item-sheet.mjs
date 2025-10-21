@@ -3,6 +3,7 @@ import { enrichHTML } from "../../utils/text-editor.mjs";
 
 const TYPE_PARTS = [
     "affliction",
+    "capability",
     "class",
     "faction",
     "perk",
@@ -13,6 +14,7 @@ const TYPE_PARTS = [
 const READ_ONLY_REFERENCE_TYPES = [
     "affliction",
     "blessing",
+    "capability",
     "class",
     "curse",
     "faction",

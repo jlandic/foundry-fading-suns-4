@@ -2,7 +2,12 @@
   "TYPES": {
     "Item": {
       "affliction": "Affliction",
+      "blessing": "Blessing",
+      "calling": "Calling",
+      "capability": "Capability",
       "class": "Class",
+      "curse": "Curse",
+      "faction": "Faction",
       "perk": "Perk",
       "species": "Species"
     }
@@ -74,67 +79,94 @@
       "psi": "Psi",
       "theurgy": "Theurgy"
     },
-    "class": {
-      "fields": {
-        "characteristics": "Characteristics",
-        "skills": "Skills",
-        "perks": "Perks"
-      }
-    },
-    "faction": {
-      "fields": {
-        "perk": "Perk",
-        "characteristics": "Characteristics",
-        "skills": "Skills",
-        "blessing": "Blessing",
-        "curse": "Curse",
-        "equipment": "Equipment",
-        "favoredCalling": "Favored calling"
-      }
-    },
-    "perk": {
+    "capability": {
       "fields": {
         "type": "Type",
-        "sourceType": "Source",
-        "benefice": "Benefice",
-        "cyberdevice": "Cyberdevice",
-        "nextLevel": "Next level",
-        "previousLevel": "Previous level",
-        "perks": "Perks"
-      },
-      "sourceTypes": {
-        "class": "Class",
-        "calling": "Calling",
-        "species": "Species"
+        "category": "Category"
       },
       "types": {
-        "ability": "Ability",
-        "austerity": "Austerity",
-        "birthright": "Birthright",
-        "cyberdevice": "Cyberdevice",
-        "power": "Power",
-        "privilege": "Privilege",
-        "verve": "Verve"
+        "equipment": "Equipment",
+        "lore": "Lore"
       },
-      "open": "Open"
-    },
-    "species": {
-      "fields": {
-        "size": "Size",
-        "speed": "Speed",
-        "birthrights": "Birthrights",
-        "perks": "Perks",
-        "conditionedBirthrights": "Birthrights with conditions",
-        "capabilities": "Capabilities",
-        "powerSkills": "Power skills",
-        "maneuvers": "Maneuvers"
+      "categories": {
+        "armor": "Armor",
+        "melee_weapons": "Melee Weapons",
+        "military_ordnance": "Military Ordnance",
+        "musical_instruments": "Musical Instruments",
+        "ranged_weapons": "Ranged Weapons",
+        "think_machines": "Think Machines",
+        "transport": "Transport",
+        "arts": "Arts",
+        "crafts": "Crafts",
+        "customs": "Customs",
+        "knowledge": "Knowledge",
+        "medical": "Medical",
+        "performing_arts": "Performing Arts",
+        "science": "Science",
+        "tech": "Tech"
       }
-    },
-    "common": {
-      "andSeparator": " and ",
-      "orSeparator": " or ",
-      "and": "and",
-      "or": "or"
     }
+  },
+  "class": {
+    "fields": {
+      "characteristics": "Characteristics",
+      "skills": "Skills",
+      "perks": "Perks"
+    }
+  },
+  "faction": {
+    "fields": {
+      "perk": "Perk",
+      "characteristics": "Characteristics",
+      "skills": "Skills",
+      "blessing": "Blessing",
+      "curse": "Curse",
+      "equipment": "Equipment",
+      "favoredCalling": "Favored calling"
+    }
+  },
+  "perk": {
+    "fields": {
+      "type": "Type",
+      "sourceType": "Source",
+      "benefice": "Benefice",
+      "cyberdevice": "Cyberdevice",
+      "nextLevel": "Next level",
+      "previousLevel": "Previous level",
+      "perks": "Perks"
+    },
+    "sourceTypes": {
+      "class": "Class",
+      "calling": "Calling",
+      "species": "Species"
+    },
+    "types": {
+      "ability": "Ability",
+      "austerity": "Austerity",
+      "birthright": "Birthright",
+      "cyberdevice": "Cyberdevice",
+      "power": "Power",
+      "privilege": "Privilege",
+      "verve": "Verve"
+    },
+    "open": "Open"
+  },
+  "species": {
+    "fields": {
+      "size": "Size",
+      "speed": "Speed",
+      "birthrights": "Birthrights",
+      "perks": "Perks",
+      "conditionedBirthrights": "Birthrights with conditions",
+      "capabilities": "Capabilities",
+      "powerSkills": "Power skills",
+      "maneuvers": "Maneuvers"
+    }
+  },
+  "common": {
+    "andSeparator": " and ",
+    "orSeparator": " or ",
+    "and": "and",
+    "or": "or"
   }
 }

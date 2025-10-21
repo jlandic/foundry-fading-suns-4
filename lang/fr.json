@@ -2,7 +2,12 @@
   "TYPES": {
     "Item": {
       "affliction": "Affliction",
+      "blessing": "Bénédiction",
+      "calling": "Vocation",
+      "capability": "Aptitude",
       "class": "Classe",
+      "curse": "Malédiction",
+      "faction": "Faction",
       "perk": "Avantage",
       "species": "Espèce"
     }
@@ -73,6 +78,33 @@
     "powerSkills": {
       "psi": "Psi",
       "theurgy": "Théurgie"
+    },
+    "capability": {
+      "fields": {
+        "type": "Type",
+        "category": "Category"
+      },
+      "types": {
+        "equipment": "Équipement",
+        "lore": "Connaissance"
+      },
+      "categories": {
+        "armor": "Armures",
+        "melee_weapons": "Armes de mêlée",
+        "military_ordnance": "Équipement militaire",
+        "musical_instruments": "Instruments de musique",
+        "ranged_weapons": "Armes à distance",
+        "think_machines": "Machines à penser",
+        "transport": "Transports",
+        "arts": "Arts",
+        "crafts": "Artisanats",
+        "customs": "Coutumes",
+        "knowledge": "Savoir",
+        "medical": "Médical",
+        "performing_arts": "Arts du spectacle",
+        "science": "Science",
+        "tech": "Technologie"
+      }
     },
     "class": {
       "fields": {

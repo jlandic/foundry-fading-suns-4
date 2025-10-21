@@ -62,6 +62,12 @@
       "type": "Item"
     },
     {
+      "name": "capabilities",
+      "label": "Capabilities",
+      "path": "packs/capabilities",
+      "type": "Item"
+    },
+    {
       "name": "classes",
       "label": "Classes",
       "path": "packs/classes",
@@ -96,6 +102,7 @@
     "Item": {
       "affliction": {},
       "blessing": {},
+      "capability": {},
       "class": {},
       "curse": {},
       "faction": {},

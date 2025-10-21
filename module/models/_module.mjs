@@ -2,6 +2,7 @@ export { default as BaseItem } from "./base-item.mjs";
 
 export { default as AfflictionDataModel } from "./item-affliction.mjs";
 export { default as BlessingDataModel } from "./item-blessing.mjs";
+export { default as CapabilityDataModel } from "./item-capability.mjs";
 export { default as ClassDataModel } from "./item-class.mjs";
 export { default as CurseDataModel } from "./item-curse.mjs";
 export { default as FactionDataModel } from "./item-faction.mjs";

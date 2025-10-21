@@ -71,3 +71,29 @@ export const PerkSourceTypes = Object.freeze({
     Class: "class",
     Calling: "calling",
 });
+
+export const CapabilityTypes = Object.freeze({
+    Equipment: "equipment",
+    Lores: "lores",
+});
+
+export const CapabilityCategories = Object.freeze({
+    // equipment
+    Armor: "armor",
+    MeleeWeapons: "melee_weapons",
+    MilitaryOrdnance: "military_ordnance",
+    MusicalInstruments: "musical_instruments",
+    RangedWeapons: "ranged_weapons",
+    ThinkMachines: "think_machines",
+    Transport: "transport",
+
+    // lores
+    Arts: "arts",
+    Crafts: "crafts",
+    Customs: "customs",
+    Knowledge: "knowledge",
+    Medical: "medical",
+    PerformingArts: "performing_arts",
+    Science: "science",
+    Tech: "tech",
+});

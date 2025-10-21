@@ -1,0 +1,17 @@
+<section class="scrollable">
+    <section>
+        <h2>{{ localize "fs4.commonFields.description" }}</h2>
+        {{{description}}}
+    </section>
+
+    {{> "fading-suns-4.choices-set" choices=preconditions titleKey="fs4.commonFields.preconditions" }}
+
+    <section>
+        <h2>{{ localize "fs4.sheets.common.traits" }}</h2>
+
+        <ul>
+            <li><strong>{{ localize "fs4.capability.fields.type" }}:&nbsp;</strong>{{ localize (concat "fs4.capability.types." system.type) }}</li>
+            <li><strong>{{ localize "fs4.capability.fields.category" }}:&nbsp;</strong>{{ localize (concat "fs4.capability.categories." system.category) }}</li>
+        </ul>
+    </section>
+</section>

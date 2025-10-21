@@ -3,18 +3,33 @@ import fs from "fs/promises";
 import { Command } from "commander";
 import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
 
+const IDS = "references/ids.csv";
 const SOURCE_DIR = "source";
 const DB_DIR = "dist/packs";
 const REF_DIR = "references";
 const PACKS = [
     "items/afflictions",
     "items/blessings",
+    // "items/callings",
+    "items/capabilities",
     "items/classes",
     "items/curses",
     "items/factions",
     "items/perks",
     "items/species",
-]
+];
+
+const TYPE_MAPPING = {}
+
+const initializeTypeMapping = async () => {
+    const data = await fs.readFile(IDS, "utf-8");
+    const lines = data.split("\n").filter(line => line.trim().length > 0);
+
+    for (const line of lines) {
+        const [id, type] = line.split(",").map(part => part.trim());
+        TYPE_MAPPING[id] = type;
+    }
+}
 
 const compile = async () => {
     for (const pack of PACKS) {
@@ -44,10 +59,43 @@ const extract = async () => {
     console.log("All packs extracted.");
 }
 
+const transformCapability = async (original, reference) => {
+    return {
+        ...original,
+        name: reference.name,
+        system: {
+            ...original.system,
+            description: reference.system.description,
+            type: reference.system.type,
+            category: reference.system.category,
+            preconditions: [
+                reference.system.preconditions.map((slug) => {
+                    const type = TYPE_MAPPING[slug];
+
+                    if (!type) {
+                        console.warn(`No type mapping found for slug: ${slug}`);
+                        return {
+                            type: "TODO",
+                            slug,
+                        }
+                    } else {
+                        return {
+                            type,
+                            slug,
+                        }
+                    }
+                }),
+            ],
+        },
+    };
+}
+
 const TRANSFORMERS = {
+    capabilities: transformCapability,
 };
 
 const importReference = async (collection) => {
+    await initializeTypeMapping();
     console.log(`Importing reference data: ${collection}...`);
     const refPath = path.join(REF_DIR, collection);
     const originalPath = path.join(SOURCE_DIR, "items", collection);
