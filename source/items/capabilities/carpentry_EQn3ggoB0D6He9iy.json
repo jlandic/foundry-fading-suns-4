@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "carpentry",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous savez construire des bâtiments et autres structures.</p><p>Cette aptitude couvre également la création (non artistique) de menuiseries : petits meubles, chaises, tabourets, bâtons de marche, etc.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "EQn3ggoB0D6He9iy",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

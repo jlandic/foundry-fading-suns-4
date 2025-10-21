@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "dance",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Les danseurs offrent de belles démonstrations de mouvements corporels.</p>",
+    "type": "lores",
+    "category": "performing_arts",
     "preconditions": []
   },
   "_id": "PCWhhUul6K5gXd3B",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

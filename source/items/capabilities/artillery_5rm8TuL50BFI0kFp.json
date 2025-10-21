@@ -4,13 +4,32 @@
   "folder": null,
   "system": {
     "slug": "artillery",
-    "description": "",
+    "description": "<p>Vous savez comment utiliser et entretenir l’artillerie lourde : mortiers, lance-roquettes, etc.</p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "military_ordnance",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "mercenary"
+        }
+      ]
+    ]
   },
   "_id": "5rm8TuL50BFI0kFp",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

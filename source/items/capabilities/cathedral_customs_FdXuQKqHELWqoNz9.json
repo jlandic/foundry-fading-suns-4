@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "cathedral_customs",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Ces coutumes incluent les règles tacites sur la façon de reconnaître le rang d’une personne et de s’adresser à elle en conséquence. Cela inclut tout le monde, depuis les convers jusqu’aux prêtres les plus haut placés hiérarchiquement. Il est particulièrement important de savoir quand l’humour est acceptable et quand la solennité est de mise. Ces coutumes sont enseignées aux prêtres et les individus désirant traiter avec eux sur un pied d’égalité feraient mieux d’apprendre cette aptitude.</p>",
+    "type": "lores",
+    "category": "customs",
     "preconditions": []
   },
   "_id": "FdXuQKqHELWqoNz9",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

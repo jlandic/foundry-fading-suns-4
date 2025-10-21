@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "aircraft",
-    "description": "",
+    "description": "<p>Vous connaissez bien les véhicules volants tels que les machines volantes, avions à réaction et planeurs qui s’utilisent avec la compétence Pilotage.</p>",
     "type": "equipment",
-    "category": "armor",
+    "category": "transport",
     "preconditions": []
   },
   "_id": "tbprurpDNIVnVhpp",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

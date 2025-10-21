@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "song",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Chanter est un art angélique apprécié des fidèles pratiquants.</p>",
+    "type": "lores",
+    "category": "performing_arts",
     "preconditions": []
   },
   "_id": "IqLFElVK3hbSUpWz",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

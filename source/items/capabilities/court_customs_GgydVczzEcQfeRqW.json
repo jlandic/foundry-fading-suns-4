@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "court_customs",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous connaissez les coutumes de la cour. Les vulgaires manants ignorent tout de ces dernières. Agir à la cour sans respecter les convenances est un faux pas majeur. Ces pratiques incluent une multitude de règles tacites et subtiles.</p><p>Les nobles sont éduqués dans ces coutumes mais les autres individus souhaitant être de connivence ou rivaliser avec eux feraient mieux d’apprendre cette aptitude.</p>",
+    "type": "lores",
+    "category": "customs",
     "preconditions": []
   },
   "_id": "GgydVczzEcQfeRqW",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "slug_guns",
-    "description": "",
+    "description": "<p>Vous savez comment utiliser et entretenir les armes à distance qui tirent un projectile physique (comme une balle) à travers un canon.</p>",
     "type": "equipment",
-    "category": "armor",
+    "category": "ranged_weapons",
     "preconditions": []
   },
   "_id": "ehVUXuHWRdi2uY5j",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

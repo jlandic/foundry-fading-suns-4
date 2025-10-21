@@ -4,13 +4,64 @@
   "folder": null,
   "system": {
     "slug": "demolitions",
-    "description": "",
+    "description": "<p>Vous savez comment fabriquer et utiliser des explosifs.</p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "military_ordnance",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "bounty_hunter"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "inquisitor"
+        },
+        {
+          "type": "calling",
+          "slug": "mercenary"
+        },
+        {
+          "type": "calling",
+          "slug": "reclaimer"
+        },
+        {
+          "type": "calling",
+          "slug": "scout"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "tech_redeemer"
+        },
+        {
+          "type": "calling",
+          "slug": "thief"
+        }
+      ]
+    ]
   },
   "_id": "PzUvgr4gqD2pCWg6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

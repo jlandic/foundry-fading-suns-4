@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "torture_lore",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous maîtrisez les méthodes permettant de pousser des sujets à divulguer des informations sous la contrainte.</p>",
+    "type": "lores",
+    "category": "medical",
     "preconditions": []
   },
   "_id": "BvpIjyVWyUQJdHL1",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

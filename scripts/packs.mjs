@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import { Command } from "commander";
 import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
 
-const IDS = "references/ids.csv";
+const IDS = "source/ids.csv";
 const SOURCE_DIR = "source";
 const DB_DIR = "dist/packs";
 const REF_DIR = "references";
@@ -60,16 +60,30 @@ const extract = async () => {
 }
 
 const transformCapability = async (original, reference) => {
+    const categories = {
+        ranged: "ranged_weapons",
+        vehicle: "transport",
+        performing: "performing_arts",
+        military: "military_ordnance",
+        music: "musical_instruments",
+        thinkMachines: "think_machines",
+        tech: "technology",
+        melee: "melee_weapons",
+    }
+
+    const category = categories[reference.system.category] || reference.system.category;
+    const type = reference.system.type === "lore" ? "lores" : "equipment";
+
     return {
         ...original,
-        name: reference.name,
+        name: original.system.slug,
         system: {
             ...original.system,
             description: reference.system.description,
-            type: reference.system.type,
-            category: reference.system.category,
+            type,
+            category,
             preconditions: [
-                reference.system.preconditions.map((slug) => {
+                reference.system.reserved.map((slug) => {
                     const type = TYPE_MAPPING[slug];
 
                     if (!type) {
@@ -85,7 +99,7 @@ const transformCapability = async (original, reference) => {
                         }
                     }
                 }),
-            ],
+            ].filter(group => group.length > 0),
         },
     };
 }
@@ -130,14 +144,13 @@ const importReference = async (collection) => {
     }
 }
 
-const translateCurseBlessing = () => ({
-    name: "",
-    description: "",
+const translateCapability = (reference, item) => ({
+    name: reference.name || "MISSING NAME",
+    description: reference.system.description || "MISSING DESCRIPTION",
 });
 
 const TRANSLATION_FNS = {
-    curses: translateCurseBlessing,
-    blessings: translateCurseBlessing,
+    capabilities: translateCapability,
 }
 
 const generateTranslations = async (collection) => {

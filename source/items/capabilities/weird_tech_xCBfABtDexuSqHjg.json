@@ -5,12 +5,19 @@
   "system": {
     "slug": "weird_tech",
     "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "type": "lores",
+    "category": "technology",
+    "preconditions": [
+      [
+        {
+          "type": "calling",
+          "slug": "occultist"
+        }
+      ]
+    ]
   },
   "_id": "xCBfABtDexuSqHjg",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

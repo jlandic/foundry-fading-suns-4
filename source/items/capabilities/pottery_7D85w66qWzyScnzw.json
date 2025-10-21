@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "pottery",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez étudié l’art de création d’objets utiles en argile ou matériau similaire.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "7D85w66qWzyScnzw",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

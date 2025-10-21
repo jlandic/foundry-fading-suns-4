@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "magic",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Les illusionnistes utilisent des tours de magie et le détournement de l’attention.</p>",
+    "type": "lores",
+    "category": "performing_arts",
     "preconditions": []
   },
   "_id": "0Ix2FEXYyTRRZLpD",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

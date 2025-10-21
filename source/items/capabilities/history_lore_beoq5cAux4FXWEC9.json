@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "history_lore",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez des connaissances en Histoire (essentiellement celle des Mondes Connus). On raconte que ceux qui n’ont pas cette aptitude sont condamnés à reproduire les erreurs du passé. Toutefois, il arrive aussi qu’on entende (surtout de la part de l’Inquisition) qu’il est préférable d’oublier certaines choses.</p>",
+    "type": "lores",
+    "category": "knowledge",
     "preconditions": []
   },
   "_id": "beoq5cAux4FXWEC9",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

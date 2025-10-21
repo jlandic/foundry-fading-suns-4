@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "blacksmithing",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous savez comment forger des objets à partir de métaux bruts.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "GCVgJ1S4QL5EI5Yd",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

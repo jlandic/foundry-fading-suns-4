@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "disease_lore",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous connaissez bien les maladies et les façons de les traiter.</p>",
+    "type": "lores",
+    "category": "medical",
     "preconditions": []
   },
   "_id": "4MDtV2waAJ0mu56B",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

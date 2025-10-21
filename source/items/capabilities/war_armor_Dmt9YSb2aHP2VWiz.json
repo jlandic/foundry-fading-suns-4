@@ -4,13 +4,48 @@
   "folder": null,
   "system": {
     "slug": "war_armor",
-    "description": "",
+    "description": "<p>Vous êtes habitué à porter des armures lourdes.</p>",
     "type": "equipment",
     "category": "armor",
-    "preconditions": []
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "faction",
+          "slug": "the_dispossessed"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "mercenary"
+        },
+        {
+          "type": "calling",
+          "slug": "pirate"
+        },
+        {
+          "type": "calling",
+          "slug": "templar"
+        }
+      ]
+    ]
   },
   "_id": "Dmt9YSb2aHP2VWiz",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

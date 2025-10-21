@@ -4,13 +4,20 @@
   "folder": null,
   "system": {
     "slug": "terraforming",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "description": "<p>Vous étudiez le processus de transformation des planètes visant à les rendre habitables pour les humains.</p>",
+    "type": "lores",
+    "category": "science",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
   },
   "_id": "j9tu7fmwXwIGonsy",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "sculpting",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous comprenez et savez créer des objets esthétiques tels que des statues commémoratives militaires ou des bols de prière obun.</p>",
+    "type": "lores",
+    "category": "arts",
     "preconditions": []
   },
   "_id": "RW4SohDCH18qOYp3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

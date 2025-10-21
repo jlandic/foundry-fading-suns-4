@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "faction_lore",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous connaissez et comprenez le fonctionnement interne d’une faction.</p>",
+    "type": "lores",
+    "category": "knowledge",
     "preconditions": []
   },
   "_id": "mW19kGj500I9W6Cu",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

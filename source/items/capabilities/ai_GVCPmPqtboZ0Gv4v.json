@@ -4,13 +4,36 @@
   "folder": null,
   "system": {
     "slug": "ai",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "description": "<p>Prérequis : aptitude Machines à penser.</p><p>Vous êtes instruit dans l’art et la science de la programmation des machines à penser intelligentes. Cette aptitude est parfois requise lorsque vous utilisez votre influence contre un golem intelligent, que ce soit pour le commander, l’amadouer ou essayer de le déconcerter et ainsi l’inciter à aller à l’encontre de ses protocoles.</p>",
+    "type": "lores",
+    "category": "science",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "occultist"
+        },
+        {
+          "type": "calling",
+          "slug": "reclaimer"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "tech_redeemer"
+        }
+      ]
+    ]
   },
   "_id": "GVCPmPqtboZ0Gv4v",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

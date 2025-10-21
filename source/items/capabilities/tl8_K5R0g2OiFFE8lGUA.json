@@ -4,13 +4,32 @@
   "folder": null,
   "system": {
     "slug": "tl8",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "description": "<p>Prérequis : Technologie (NT7).</p><p>Vous savez comment utiliser et réparer des objets technologiques d’un niveau technologique 8.</p><p>Note : il s’agit du niveau de Technologie maximal qu’un personnage peut obtenir.</p>",
+    "type": "lores",
+    "category": "technology",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "reclaimer"
+        },
+        {
+          "type": "calling",
+          "slug": "star_pilot"
+        },
+        {
+          "type": "calling",
+          "slug": "tech_redeemer"
+        }
+      ]
+    ]
   },
   "_id": "K5R0g2OiFFE8lGUA",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

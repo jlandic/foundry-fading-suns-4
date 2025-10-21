@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "writing",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous êtes versé en prose et non-fiction, qu’il s’agisse de romans, de biographies ou d’histoires.</p>",
+    "type": "lores",
+    "category": "arts",
     "preconditions": []
   },
   "_id": "edMdzkzwUSrDkipL",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

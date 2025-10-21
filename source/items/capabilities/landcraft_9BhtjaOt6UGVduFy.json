@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "landcraft",
-    "description": "",
+    "description": "<p>Vous connaissez bien les véhicules terrestres, comme les glisseurs (voitures flottantes), les voitures à roues et les motos, qui sont propulsés par un moteur ou des moyens de haute technologie. Cette aptitude s’utilise avec la compétence Conduite.</p>",
     "type": "equipment",
-    "category": "armor",
+    "category": "transport",
     "preconditions": []
   },
   "_id": "9BhtjaOt6UGVduFy",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

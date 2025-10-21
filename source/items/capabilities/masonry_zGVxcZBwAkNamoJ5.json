@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "masonry",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous savez fabriquer des structures avec du bois, des briques et du mortier.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "zGVxcZBwAkNamoJ5",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

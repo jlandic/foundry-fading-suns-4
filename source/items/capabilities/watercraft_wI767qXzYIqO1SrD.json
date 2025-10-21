@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "watercraft",
-    "description": "",
+    "description": "<p>Vous savez comment utiliser et gouverner des voiliers, des canots à moteur et autres transports sur l’eau.</p>",
     "type": "equipment",
-    "category": "armor",
+    "category": "transport",
     "preconditions": []
   },
   "_id": "wI767qXzYIqO1SrD",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

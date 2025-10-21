@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "poetry",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez étudié les haïkus ainsi que la poésie lyrique et épique qui sont tous des formes d’art grandement respectées par la noblesse.</p>",
+    "type": "lores",
+    "category": "arts",
     "preconditions": []
   },
   "_id": "XNy7Fc85McSw20sS",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

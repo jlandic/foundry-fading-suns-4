@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "oratory",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>L’art oratoire est l’arme du rhétoricien et la méthode employée par le prêcheur pour répandre son message.</p>",
+    "type": "lores",
+    "category": "performing_arts",
     "preconditions": []
   },
   "_id": "1Eq8gKydYdnJjr7Q",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

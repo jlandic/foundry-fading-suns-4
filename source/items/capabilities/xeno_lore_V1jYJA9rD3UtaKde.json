@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "xeno_lore",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez acquis un savoir conséquent au sujet d’une espèce extraterrestre spécifique dont vous n’êtes pas membre. Étant donné que de nombreuses espèces ont été historiquement confinées à leur monde natal, cette aptitude fournit également des connaissances sur leur culture et leurs coutumes « populaires ». Cela ne s’applique pas forcément aux extraterrestres élevés hors de ces cultures (notez que la plupart des extraterrestres ont cette aptitude pour la culture humaine qui est dominante).</p>",
+    "type": "lores",
+    "category": "knowledge",
     "preconditions": []
   },
   "_id": "V1jYJA9rD3UtaKde",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

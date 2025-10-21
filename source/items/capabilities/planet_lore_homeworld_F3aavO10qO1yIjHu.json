@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "planet_lore_homeworld",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez une grande connaissance sur une planète spécifique des Mondes Connus et sur son système solaire. Cette spécialisation représente un savoir plus détaillé du monde que celui accessible via Savoir (Réseau de sauts).</p>",
+    "type": "lores",
+    "category": "knowledge",
     "preconditions": []
   },
   "_id": "F3aavO10qO1yIjHu",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

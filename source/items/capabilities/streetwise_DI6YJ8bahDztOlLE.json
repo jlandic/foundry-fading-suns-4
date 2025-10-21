@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "streetwise",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez une compréhension prodigieuse des pratiques et de l’étiquette criminelles. Cette aptitude inclut la connaissance des gangs majeurs des Mondes Connus (et dans la zone couverte par votre Connaissance) ainsi que des coutumes des gens vivant dans les régions à haute criminalité. L’aptitude Monde de la rue peut être requise lorsque vous tentez d’influencer des criminels et des individus de la pègre si vous ne voulez pas faire de ces personnes vos ennemis ou vous présenter accidentellement comme la victime idéale d’une escroquerie.</p>",
+    "type": "lores",
+    "category": "customs",
     "preconditions": []
   },
   "_id": "DI6YJ8bahDztOlLE",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

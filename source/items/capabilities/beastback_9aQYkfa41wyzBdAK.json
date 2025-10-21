@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "beastback",
-    "description": "",
+    "description": "<p>Vous savez comment chevaucher un animal. Il s’agit généralement d’un cheval mais d’autres créatures peuvent être dressées dans ce but. Cette aptitude s’utilise avec la compétence Vigueur.</p>",
     "type": "equipment",
-    "category": "armor",
+    "category": "transport",
     "preconditions": []
   },
   "_id": "9aQYkfa41wyzBdAK",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

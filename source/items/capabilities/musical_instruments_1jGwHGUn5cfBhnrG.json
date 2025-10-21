@@ -4,13 +4,20 @@
   "folder": null,
   "system": {
     "slug": "musical_instruments",
-    "description": "",
+    "description": "<p>Cette aptitude est le plus souvent utilisée avec la compétence Représentation, en conjonction avec l’aptitude Arts du spectacle (Musique). Chaque famille d’instruments requiert une aptitude spécifique. Lorsque vous choisissez d’apprendre l’aptitude Arts du spectacle (Musique), vous pouvez choisir une aptitude parmi les familles suivantes.</p><p>Vous pouvez également choisir d’utiliser une ou plusieurs autres aptitudes pour apprendre à utiliser des familles d’instruments supplémentaires <ul> <li>Cuivre</li> <li>Cordes</li> <li>Bois</li> <li>Percussions</li> <li>Claviers</li> </ul></p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "musical_instruments",
+    "preconditions": [
+      [
+        {
+          "type": "capability",
+          "slug": "music"
+        }
+      ]
+    ]
   },
   "_id": "1jGwHGUn5cfBhnrG",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

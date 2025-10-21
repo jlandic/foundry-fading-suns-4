@@ -4,13 +4,32 @@
   "folder": null,
   "system": {
     "slug": "applied_science",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "description": "<p>Vous savez comment créer ou fabriquer des objets technologiques en utilisant les sciences de la Ligue des marchands. Les sciences inconnues, perdues ou censurées peuvent requérir leur propre aptitude.</p>",
+    "type": "lores",
+    "category": "science",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "reclaimer"
+        },
+        {
+          "type": "calling",
+          "slug": "scholar"
+        },
+        {
+          "type": "calling",
+          "slug": "tech_redeemer"
+        }
+      ]
+    ]
   },
   "_id": "pVAax9zYs6jFhar3",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

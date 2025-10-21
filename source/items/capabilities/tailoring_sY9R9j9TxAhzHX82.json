@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "tailoring",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous savez créer des vêtements à partir de matières textiles.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "sY9R9j9TxAhzHX82",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

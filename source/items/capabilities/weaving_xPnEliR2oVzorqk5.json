@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "weaving",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous savez créer des matières textiles à partir de matériaux bruts.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "xPnEliR2oVzorqk5",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

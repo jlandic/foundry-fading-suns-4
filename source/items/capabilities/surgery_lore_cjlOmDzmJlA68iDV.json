@@ -4,13 +4,44 @@
   "folder": null,
   "system": {
     "slug": "surgery_lore",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "description": "<p>Vous pouvez effectuer des opérations chirurgicales sur des êtres vivants.</p>",
+    "type": "lores",
+    "category": "medical",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "priest"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "chainer"
+        },
+        {
+          "type": "calling",
+          "slug": "enthusiast"
+        },
+        {
+          "type": "calling",
+          "slug": "healer"
+        },
+        {
+          "type": "calling",
+          "slug": "questing_knight"
+        },
+        {
+          "type": "calling",
+          "slug": "scholar"
+        }
+      ]
+    ]
   },
   "_id": "cjlOmDzmJlA68iDV",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

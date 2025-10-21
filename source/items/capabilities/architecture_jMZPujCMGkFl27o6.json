@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "architecture",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous maîtrisez l’art et la pratique de la conception de bâtiments et de larges structures.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "jMZPujCMGkFl27o6",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

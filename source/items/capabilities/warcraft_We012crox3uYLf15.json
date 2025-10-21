@@ -4,13 +4,40 @@
   "folder": null,
   "system": {
     "slug": "warcraft",
-    "description": "",
+    "description": "<p>Vous connaissez bien les véhicules terrestres blindés utilisés par les militaires, dont les chars d’assaut, les fourgons transportant de l’artillerie et autres canons mobiles. Cette aptitude s’utilise avec la compétence Conduite.</p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "transport",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "faction",
+          "slug": "the_dispossessed"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "mercenary"
+        },
+        {
+          "type": "calling",
+          "slug": "scout"
+        }
+      ]
+    ]
   },
   "_id": "We012crox3uYLf15",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

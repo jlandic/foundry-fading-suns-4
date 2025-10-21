@@ -4,13 +4,24 @@
   "folder": null,
   "system": {
     "slug": "physical_science",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "description": "<p>Vous étudiez les systèmes non vivants : la physique, l’astronomie, la chimie et la science planétaire.</p>",
+    "type": "lores",
+    "category": "science",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "scholar"
+        }
+      ]
+    ]
   },
   "_id": "ju6lDkUSf7LvYiQu",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

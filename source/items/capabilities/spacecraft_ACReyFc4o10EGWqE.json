@@ -4,13 +4,48 @@
   "folder": null,
   "system": {
     "slug": "spacecraft",
-    "description": "",
+    "description": "<p>Vous avez été formé pour piloter des véhicules spatiaux (en utilisant la compétence Pilotage). La guilde des Auriges maintient un quasi-monopole sur le domaine du pilotage mais on trouve tout de même quelques indépendants ainsi que des pilotes militaires.</p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "transport",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "explorer"
+        },
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "mendicant"
+        },
+        {
+          "type": "calling",
+          "slug": "pirate"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_merchant"
+        }
+      ]
+    ]
   },
   "_id": "ACReyFc4o10EGWqE",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

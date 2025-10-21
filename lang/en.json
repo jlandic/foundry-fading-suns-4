@@ -15,7 +15,7 @@
   "fs4": {
     "commonFields": {
       "description": "Description",
-      "precondition": "Precondition"
+      "preconditions": "Preconditions"
     },
     "packs": {
       "afflictions": "Afflictions"
@@ -86,7 +86,7 @@
       },
       "types": {
         "equipment": "Equipment",
-        "lore": "Lore"
+        "lores": "Lores"
       },
       "categories": {
         "armor": "Armor",

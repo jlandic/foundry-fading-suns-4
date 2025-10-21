@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "locksmithing",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Votre connaissance des serrures et verrous inclut la capacité de les fabriquer mais peut également vous aider à les crocheter (lorsque vous utilisez la compétence Intrusion).</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "aiqTL5AoZTRn1DlP",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

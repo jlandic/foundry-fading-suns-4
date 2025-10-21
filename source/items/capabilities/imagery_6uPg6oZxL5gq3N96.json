@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "imagery",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous pouvez créer et interpréter des images telles que des tableaux, des dessins, des fresques ou des livres enluminés.</p>",
+    "type": "lores",
+    "category": "arts",
     "preconditions": []
   },
   "_id": "6uPg6oZxL5gq3N96",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

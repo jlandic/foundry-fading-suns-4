@@ -4,13 +4,84 @@
   "folder": null,
   "system": {
     "slug": "energy_guns",
-    "description": "",
+    "description": "<p>Vous savez comment utiliser et entretenir les armes à distance qui projettent de l’énergie : des lasers, des blasters, des brûleurs, etc.</p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "ranged_weapons",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "amateur"
+        },
+        {
+          "type": "calling",
+          "slug": "bounty_hunter"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "chainer"
+        },
+        {
+          "type": "calling",
+          "slug": "explorer"
+        },
+        {
+          "type": "calling",
+          "slug": "detective"
+        },
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "inquisitor"
+        },
+        {
+          "type": "calling",
+          "slug": "mercenary"
+        },
+        {
+          "type": "calling",
+          "slug": "pirate"
+        },
+        {
+          "type": "calling",
+          "slug": "reclaimer"
+        },
+        {
+          "type": "calling",
+          "slug": "scout"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "tech_redeemer"
+        },
+        {
+          "type": "calling",
+          "slug": "templar"
+        }
+      ]
+    ]
   },
   "_id": "MuHY4NsqAyRbVELM",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

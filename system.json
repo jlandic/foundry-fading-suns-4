@@ -62,6 +62,12 @@
       "type": "Item"
     },
     {
+      "name": "callings",
+      "label": "Callings",
+      "path": "packs/callings",
+      "type": "Item"
+    },
+    {
       "name": "capabilities",
       "label": "Capabilities",
       "path": "packs/capabilities",
@@ -102,6 +108,7 @@
     "Item": {
       "affliction": {},
       "blessing": {},
+      "calling": {},
       "capability": {},
       "class": {},
       "curse": {},

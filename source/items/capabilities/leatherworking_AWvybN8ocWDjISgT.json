@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "leatherworking",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous pouvez transformer le cuir en armures, vêtements et autres.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "AWvybN8ocWDjISgT",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "cooking",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous avez développé la capacité de créer des plats savoureux et nourrissants. Notez que certains types de grandes cuisines peuvent également requérir l’utilisation de la compétence Arts en plus de cette aptitude.</p>",
+    "type": "lores",
+    "category": "crafts",
     "preconditions": []
   },
   "_id": "zAO5t32dRZqYoPCA",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

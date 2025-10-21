@@ -4,13 +4,13 @@
   "folder": null,
   "system": {
     "slug": "tl5",
-    "description": "",
-    "type": "equipment",
-    "category": "armor",
+    "description": "<p>Vous savez comment utiliser et réparer des objets technologiques d’un niveau technologique 5.</p>",
+    "type": "lores",
+    "category": "technology",
     "preconditions": []
   },
   "_id": "99BDfQBC8tSyqocK",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {

@@ -4,13 +4,80 @@
   "folder": null,
   "system": {
     "slug": "military_weapons",
-    "description": "",
+    "description": "<p>Cette aptitude convient à n’importe quelle arme communément associée à l’armée ou au combat, comme les épées, les sabres, les armes d’hast, etc.</p>",
     "type": "equipment",
-    "category": "armor",
-    "preconditions": []
+    "category": "melee_weapons",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        },
+        {
+          "type": "class",
+          "slug": "merchant"
+        },
+        {
+          "type": "class",
+          "slug": "yeoman"
+        },
+        {
+          "type": "calling",
+          "slug": "amateur"
+        },
+        {
+          "type": "calling",
+          "slug": "bounty_hunter"
+        },
+        {
+          "type": "calling",
+          "slug": "brother_battle"
+        },
+        {
+          "type": "calling",
+          "slug": "chainer"
+        },
+        {
+          "type": "calling",
+          "slug": "explorer"
+        },
+        {
+          "type": "calling",
+          "slug": "imperial_cohort_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "mercenary"
+        },
+        {
+          "type": "calling",
+          "slug": "pirate"
+        },
+        {
+          "type": "calling",
+          "slug": "scout"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "star_pilot"
+        },
+        {
+          "type": "calling",
+          "slug": "templar"
+        },
+        {
+          "type": "calling",
+          "slug": "thief"
+        }
+      ]
+    ]
   },
   "_id": "BCE6n5hBqXZCjtR5",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
   "_stats": {
