@@ -1,0 +1,86 @@
+<section class="scrollable">
+    <section>
+        <h2>{{"fs4.sheets.common.traits"}}</h2>
+
+        <div class="form-group flexrow">
+            <div>
+                <label for="system.skill">{{ localize "fs4.maneuver.fields.skill" }}</label>
+                <select class="flex3" name="system.skill">
+                    {{selectOptions skillOptions selected=system.skill readonly=true disabled=true}}
+                </select>
+            </div>
+            <div>
+                <label for="system.characteristic">{{ localize "fs4.maneuver.fields.characteristic" }}</label>
+                <select class="flex3" name="system.characteristic">
+                    {{selectOptions characteristicOptions selected=system.characteristic readonly=true disabled=true}}
+                </select>
+            </div>
+            <div>
+                <label for="system.type">{{ localize "fs4.maneuver.fields.type" }}</label>
+                <select class="flex3" name="system.type">
+                    {{selectOptions typeOptions selected=system.type readonly=true disabled=true}}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group flexrow">
+            <div>
+                <label for="system.playScale">{{ localize "fs4.maneuver.fields.playScale" }}</label>
+                <select class="flex3" name="system.playScale">
+                    {{selectOptions playScaleOptions selected=system.playScale readonly=true disabled=true}}
+                </select>
+            </div>
+            <div>
+                <label for="system.actionType">{{ localize "fs4.maneuver.fields.actionType" }}</label>
+                <select class="flex3" name="system.actionType">
+                    {{selectOptions actionTypeOptions selected=system.actionType readonly=true disabled=true}}
+                </select>
+            </div>
+            <div>
+                <label for="system.goalModifier">{{ localize "fs4.maneuver.fields.goalModifier" }}</label>
+                <select class="flex3" name="system.goalModifier">
+                    {{selectOptions goalModifierOptions selected=system.goalModifier readonly=true disabled=true}}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="flexcol">
+                <label for="system.noVP">{{ localize "fs4.maneuver.fields.noVP" }}</label>
+                <input type="checkbox" name="system.noVP" {{checked system.noVP}} />
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section>
+        <h2>{{ localize "fs4.commonFields.description" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.description" value=description}}
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.maneuver.fields.additionalTimeInformation" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.additionalTimeInformation" value=additionalTimeInformation}}
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.maneuver.fields.capability" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.capability" value=capability}}
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.maneuver.fields.resistance" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.resistance" value=resistance}}
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.maneuver.fields.impact" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.impact" value=impact}}
+    </section>
+</section>

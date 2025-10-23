@@ -1,0 +1,39 @@
+{
+  "type": "maneuver",
+  "name": "grapple",
+  "folder": null,
+  "system": {
+    "slug": "grapple",
+    "type": "combat",
+    "skill": "fight",
+    "characteristic": "strength",
+    "goalModifier": "none",
+    "actionType": [
+      "primary",
+      "movement"
+    ],
+    "playScale": "instantaneous",
+    "noVP": false
+  },
+  "_id": "gni7gGUygtWkW9D5",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761235912183,
+    "modifiedTime": 1761235912183,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!gni7gGUygtWkW9D5"
+}

@@ -3,7 +3,7 @@
   "type": "perk",
   "img": "icons/magic/control/buff-flight-wings-blue.webp",
   "system": {
-    "slug": "fencing_duello",
+    "slug": "fencing_duello_2",
     "description": "",
     "sourceType": "class",
     "type": "ability",

@@ -8,6 +8,7 @@
       "class": "Classe",
       "curse": "Malédiction",
       "faction": "Faction",
+      "maneuver": "Manœuvre",
       "perk": "Avantage",
       "species": "Espèce"
     }
@@ -90,6 +91,27 @@
       "psi": "Psi",
       "theurgy": "Théurgie"
     },
+    "playScales": {
+      "present_tense": "Temps présent",
+      "instantaneous": "Instantané",
+      "narrated": "Temps narratif"
+    },
+    "timeScales": {
+      "turn": "Tour",
+      "round": "Round",
+      "moment": "Moment",
+      "scene": "Scène",
+      "act": "Acte",
+      "drama": "Tragédie",
+      "epic": "Épopée"
+    },
+    "actionTypes": {
+      "primary": "Principale",
+      "reflexive_primary": "Principale réflexe",
+      "secondary": "Secondaire",
+      "reflexive_secondary": "Secondaire réflexe",
+      "movement": "Mouvement"
+    },
     "calling": {
       "fields": {
         "characteristics": "Caractéristiques",
@@ -152,6 +174,34 @@
         "favoredCalling": "Vocation privilégiée"
       }
     },
+    "maneuver": {
+      "fields": {
+        "type": "Type",
+        "resistance": "Résistance",
+        "capability": "Aptitude",
+        "impact": "Impact",
+        "characteristic": "Caractéristique",
+        "skill": "Compétence",
+        "actionType": "Type d'action",
+        "playScale": "Temps",
+        "goalModifier": "Mod. valeur ciblée",
+        "additionalTimeInformation": "Règles de temps supplémentaires",
+        "noVP": "Pas de VP"
+      },
+      "types": {
+        "action": "Action",
+        "combat": "Combat",
+        "defense": "Défense",
+        "influence": "Influence",
+        "influence_persuasion": "Influence (persuasion)",
+        "influence_coercion": "Influence (coercition)"
+      },
+      "goalModifiers": {
+        "none": "Aucun",
+        "melee_weapon": "Arme de mêlée",
+        "ranged_weapon": "Arme à distance"
+      }
+    },
     "perk": {
       "fields": {
         "type": "Type",
@@ -196,7 +246,14 @@
       "andSeparator": " et ",
       "orSeparator": " ou ",
       "and": "et",
-      "or": "ou"
+      "or": "ou",
+      "none": "Aucun(e)"
+    },
+    "notifications": {
+      "babele": {
+        "loading": "Import des traductions Babele...",
+        "loaded": "Traductions Babele importées"
+      }
     }
   }
 }

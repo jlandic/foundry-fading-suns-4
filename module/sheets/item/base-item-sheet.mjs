@@ -1,4 +1,4 @@
-import { CapabilityCategories, PreconditionTypes, SPECIAL_REFERENCE_PREFIX } from "../../system/references.mjs";
+import { CapabilityCategories, None, PreconditionTypes, SPECIAL_REFERENCE_PREFIX } from "../../system/references.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
 
 const TYPE_PARTS = [
@@ -7,6 +7,7 @@ const TYPE_PARTS = [
     "capability",
     "class",
     "faction",
+    "maneuver",
     "perk",
     "species",
     "simpleItem",
@@ -20,6 +21,7 @@ const READ_ONLY_REFERENCE_TYPES = [
     "class",
     "curse",
     "faction",
+    "maneuver",
     "perk",
     "species",
 ];
@@ -111,6 +113,10 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
 
     async _prepareReference(path, type) {
         const slug = foundry.utils.getProperty(this.item, path);
+
+        if (!slug || slug === "") {
+            return "";
+        }
 
         if (slug.startsWith(SPECIAL_REFERENCE_PREFIX)) {
             const text = game.i18n.localize(`fs4.${type}.special.${slug}`);
@@ -214,5 +220,23 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
 
     async _preparePowerSkillsChoice(path = "system.powerSkills") {
         return await this._prepareSlugValueChoice(path, "fs4.powerSkills");
+    }
+
+    _prepareSelectOptions(options, selectedValue, i18nPrefix, params = { includeNone: false, sort: false }) {
+        const preparedOptions = options.map(option => ({
+            label: game.i18n.localize(`${i18nPrefix}.${option}`),
+            value: option,
+            selected: option === selectedValue,
+        }));
+
+        if (params.includeNone) {
+            preparedOptions.unshift({
+                label: game.i18n.localize("fs4.common.none"),
+                value: None,
+                selected: selectedValue === None,
+            });
+        }
+
+        return preparedOptions;
     }
 }

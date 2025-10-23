@@ -1,9 +1,9 @@
 {
   "type": "calling",
-  "name": "spy_merchant",
+  "name": "spy_noble",
   "folder": null,
   "system": {
-    "slug": "spy_merchant",
+    "slug": "spy_noble",
     "description": "",
     "capabilities": [
       [
@@ -95,7 +95,7 @@
       ]
     ]
   },
-  "_id": "jYMsBeyzQvXnwukP",
+  "_id": "UpL7s2TTu0XEPUqE",
   "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
   "effects": [],
   "flags": {},
@@ -115,5 +115,5 @@
     "ef54fWvGiyPGgegN": 3
   },
   "sort": 0,
-  "_key": "!items!jYMsBeyzQvXnwukP"
+  "_key": "!items!UpL7s2TTu0XEPUqE"
 }

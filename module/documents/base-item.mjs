@@ -10,6 +10,7 @@ export default class BaseItem extends foundry.documents.Item {
             case "class": icon = "icons/skills/trades/academics-scribe-quill-gray.webp"; break;
             case "curse": icon = "icons/magic/symbols/mask-yellow-orange.webp"; break;
             case "faction": icon = "icons/sundries/flags/banner-blue.webp"; break;
+            case "maneuver": icon = "icons/magic/symbols/cog-orange-red.webp"; break;
             case "perks": icon = "icons/magic/control/buff-flight-wings-blue.webp"; break;
             case "species": icon = "icons/magic/control/silhouette-grow-shrink-tan.webp"; break;
         }

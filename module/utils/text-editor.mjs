@@ -1,4 +1,6 @@
 export const enrichHTML = async (html, options) => {
+    if (!html) return "";
+
     let text = html.replace(
         /@SLUG\[([^:\s]+?):([^\]]+?)\]/g,
         (_capture, type, slug) => {

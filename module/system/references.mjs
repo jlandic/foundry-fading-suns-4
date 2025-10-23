@@ -1,5 +1,7 @@
 export const SPECIAL_REFERENCE_PREFIX = "special_";
 
+export const None = "none";
+
 export const PreconditionTypes = Object.freeze({
     Calling: "calling",
     Capability: "capability",
@@ -106,4 +108,42 @@ export const CapabilityCategories = Object.freeze({
     PerformingArts: "performing_arts",
     Science: "science",
     Technology: "technology",
+});
+
+export const PlayScales = Object.freeze({
+    PresentTense: "present_tense",
+    Instantaneous: "instantaneous",
+    Narrated: "narrated",
+});
+
+export const TimeScales = Object.freeze({
+    Turn: "turn",
+    Round: "round",
+    Moment: "moment",
+    Scene: "scene",
+    Act: "act",
+    Drama: "drama",
+    Epic: "epic",
+});
+
+export const ActionTypes = Object.freeze({
+    Primary: "primary",
+    ReflexivePrimary: "reflexive_primary",
+    Secondary: "secondary",
+    ReflexiveSecondary: "reflexive_secondary",
+    Movement: "movement",
+});
+
+export const ManeuverTypes = Object.freeze({
+    Action: "action",
+    Combat: "combat",
+    Defense: "defense",
+    InfluencePersuasion: "influence_persuasion",
+    InfluenceCoercion: "influence_coercion",
+});
+
+export const ManeuverGoalModifiers = Object.freeze({
+    None: "none",
+    MeleeWeapon: "melee_weapon",
+    RangedWeapon: "ranged_weapon",
 });

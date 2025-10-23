@@ -1,0 +1,38 @@
+{
+  "type": "maneuver",
+  "name": "command",
+  "folder": null,
+  "system": {
+    "slug": "command",
+    "type": "influence",
+    "skill": "impress",
+    "characteristic": "presence",
+    "goalModifier": "none",
+    "actionType": [
+      "primary"
+    ],
+    "playScale": "instantaneous",
+    "noVP": false
+  },
+  "_id": "s2k6xlXTCa2VD3W3",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761235912183,
+    "modifiedTime": 1761235912183,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!s2k6xlXTCa2VD3W3"
+}

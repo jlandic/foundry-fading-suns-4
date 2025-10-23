@@ -5,6 +5,7 @@ const PARTIALS = [
     // Shared partials
     "shared/description.hbs",
     "shared/editor.hbs",
+    "shared/reference.hbs",
 ];
 
 export async function preloadTemplates() {

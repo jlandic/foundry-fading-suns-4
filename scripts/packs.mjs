@@ -16,6 +16,7 @@ const PACKS = [
     "items/classes",
     "items/curses",
     "items/factions",
+    "items/maneuvers",
     "items/perks",
     "items/species",
 ];
@@ -94,8 +95,76 @@ const transformCalling = async (original, reference) => {
     };
 }
 
+const GOAL_MODIFIER_MAPPING = {
+    "no": "none",
+    "melee": "melee_weapon",
+    "ranged": "ranged_weapon",
+};
+
+const actionTypeMapping = (time) => {
+    if (time.match(/[aA]ctions?\sprincipale\s(?:réflexe\s)?(?:et|\+)\s(?:action\s)?de\smouvement/)) {
+        return [
+            "primary",
+            "movement",
+        ];
+    }
+    if (time.match(/action\sprincipale\sréflexe/)) {
+        return ["reflexive_primary"];
+    }
+    if (time.match(/action\sprincipale/)) {
+        return ["primary"];
+    }
+    if (time.match(/action\secondaire\sréflexe/)) {
+        return ["reflexive_secondary"];
+    }
+    if (time.match(/action\secondaire/)) {
+        return ["secondary"];
+    }
+    if (time.match(/mouvement/)) {
+        return ["movement"];
+    }
+    if (time.match(/action\sréflexe/)) {
+        return ["reflexive_secondary"];
+    }
+
+    return [];
+}
+
+const playScaleMapping = (time) => {
+    if (time.match(/^<p>Narratif/)) {
+        return "narrated";
+    }
+    if (time.match(/^<p>Instant/)) {
+        return "instantaneous";
+    }
+    if (time.match(/^<p>Temps\sprésent/)) {
+        return "present_tense";
+    }
+
+    throw new Error(`Unknown play scale for time: ${time}`);
+}
+
+const transformManeuver = async (original, reference) => {
+    return {
+        ...original,
+        name: original.system.slug,
+        img: "icons/magic/symbols/cog-orange-red.webp",
+        system: {
+            slug: reference.system.id,
+            type: reference.system.type,
+            skill: reference.system.skill,
+            characteristic: reference.system.characteristic,
+            goalModifier: GOAL_MODIFIER_MAPPING[reference.system.addWeaponToRoll] || "none",
+            actionType: actionTypeMapping(reference.system.time),
+            playScale: playScaleMapping(reference.system.time),
+            noVP: reference.system.time.includes("aucun PV"),
+        },
+    };
+}
+
 const TRANSFORMERS = {
     callings: transformCalling,
+    maneuvers: transformManeuver,
 };
 
 const importReference = async (collection) => {
@@ -145,10 +214,54 @@ const translateCalling = (reference, item) => ({
     patrons: reference.system.patrons || "MISSING PATRONS",
 });
 
+const translateManeuver = (reference, item) => ({
+    name: reference.name || "MISSING NAME",
+    description: reference.system.description.replace(/^(<p>)?([a-z])/, (_cap, p, char) => `${p || ""}${char.toUpperCase()}`) || "MISSING DESCRIPTION",
+    additionalTimeInformation: reference.system.time
+        .replace("<p>Instantané (action principale)</p>", "")
+        .replace("<p>Narratif.</p>", "")
+        .replace(/<p>Narratif.?\s/, "<p>")
+        .replace("<p>Instantané (action principale réflexe)</p>", "")
+        .replace("<p>Instantané (action secondaire réflexe ; aucun PV)</p>", "<p>Aucun PV.</p>")
+        .replace("<p>Narratif (minimum une semaine)</p>", "<p>Minimum une semaine</p>")
+        .replace("<p>Temps présent</p>", "")
+        .replace("<p>Instantané (actions principale et de mouvement)</p>", "")
+        .replace("<p>Temps présent (Action principale)</p>", "")
+        .replace("<p>Temps présent .</p>", "")
+        .replace("<p>Temps présent (un jet par semaine)</p>", "<p>Un jet par semaine</p>")
+        .replace("<p>Instantané (action réflexe)</p>", "")
+        .replace("<p>Instantané (action secondaire ; aucun PV)</p>", "<p>Aucun PV.</p>")
+        .replace("<p>Instant. Action principale.</p>", "")
+        .replace(/<p>Temps\sprésent\s\(([^\)]+)\)<\/p>/, (_cap, text) => `<p>${text}</p>`)
+        .replace(/^(<p>)?([a-z])/, (_cap, p, char) => `${p || ""}${char.toUpperCase()}`),
+    impact: reference.system.impact.replace(
+        /@UUID\[[^\]]+\](\{[^\}]+\})?/g,
+        (_cap, name) => {
+            if (name) {
+                return `@SLUG[TODO]{${name}}`;
+            } else {
+                return `@SLUG[TODO]`;
+            }
+        }
+    ).replace(/^(<p>)?([a-z])/, (_cap, p, char) => `${p || ""}${char.toUpperCase()}`),
+    resistance: reference.system.resistance.replace(/^(<p>)?([a-z])/, (_cap, p, char) => `${p || ""}${char.toUpperCase()}`),
+    capability: reference.system.capability.replace(
+        /@UUID\[[^\]]+\](\{[^\}]+\})?/g,
+        (_cap, name) => {
+            if (name) {
+                return `@SLUG[TODO]{${name}}`;
+            } else {
+                return `@SLUG[TODO]`;
+            }
+        }
+    ).replace("<p>N/A</p>", "").replace(/^(<p>)?([a-z])/, (_cap, p, char) => `${p || ""}${char.toUpperCase()}`),
+});
+
 const TRANSLATION_FNS = {
     capabilities: translateCapability,
     callings: translateCalling,
-}
+    maneuvers: translateManeuver,
+};
 
 const generateTranslations = async (collection) => {
     console.log(`Generating translations for collection: ${collection}...`);
