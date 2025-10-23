@@ -1,0 +1,116 @@
+{
+  "type": "calling",
+  "name": "chainer",
+  "folder": null,
+  "system": {
+    "slug": "chainer",
+    "description": "",
+    "capabilities": [
+      [
+        "streetwise"
+      ],
+      [
+        "transport"
+      ]
+    ],
+    "perks": [
+      "bogeyman",
+      "labor_contractor",
+      "ruthless",
+      "aim_where_it_hurts",
+      "nothing_to_lose"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        },
+        {
+          "slug": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "melee",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "vigor",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "OkUABIAyzpGk5NTJ",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!OkUABIAyzpGk5NTJ"
+}

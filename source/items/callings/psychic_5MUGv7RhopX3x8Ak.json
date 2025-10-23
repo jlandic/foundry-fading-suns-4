@@ -1,0 +1,117 @@
+{
+  "type": "calling",
+  "name": "psychic",
+  "folder": null,
+  "system": {
+    "slug": "psychic",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "special_any_lores_capability"
+      ]
+    ],
+    "perks": [
+      "attune_fetish",
+      "coven_membership",
+      "enlightened",
+      "imbue_tabernacle",
+      "scent_of_the_witch"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "will",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        },
+        {
+          "slug": "melee",
+          "value": 1
+        },
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "focus",
+          "value": 3
+        }
+      ],
+      [
+        {
+          "slug": "vigor",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": []
+  },
+  "_id": "5MUGv7RhopX3x8Ak",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!5MUGv7RhopX3x8Ak"
+}

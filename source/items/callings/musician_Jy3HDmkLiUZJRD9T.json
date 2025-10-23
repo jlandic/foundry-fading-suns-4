@@ -1,0 +1,119 @@
+{
+  "type": "calling",
+  "name": "musician",
+  "folder": null,
+  "system": {
+    "slug": "musician",
+    "description": "",
+    "capabilities": [
+      [
+        "musical_instruments"
+      ],
+      [
+        "special_any_lores_capability"
+      ]
+    ],
+    "perks": [
+      "main_attraction",
+      "contortionist",
+      "royalties",
+      "musical_savant",
+      "perfect_pitch",
+      "cat_burglars_eye",
+      "virtuoso"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 3
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "perform",
+          "value": 3
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 2
+        },
+        {
+          "slug": "focus",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "sleightofhand",
+          "value": 1
+        },
+        {
+          "slug": "vigor",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": []
+  },
+  "_id": "Jy3HDmkLiUZJRD9T",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Jy3HDmkLiUZJRD9T"
+}

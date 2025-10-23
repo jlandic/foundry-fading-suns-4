@@ -1,0 +1,120 @@
+{
+  "type": "calling",
+  "name": "spy_priest",
+  "folder": null,
+  "system": {
+    "slug": "spy_priest",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_capability"
+      ],
+      [
+        "poison_lore",
+        "streetwise",
+        "torture_lore"
+      ]
+    ],
+    "perks": [
+      "secret_agent",
+      "rabble_rouse",
+      "martial_arts_graa",
+      "martial_arts_iron_heel",
+      "martial_arts_jox_kai_von",
+      "martial_arts_koto",
+      "martial_arts_shaidan",
+      "mimic",
+      "ruthless",
+      "vicious_insult",
+      "second_skin",
+      "special_cover_identity",
+      "special_agency_list"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "sneak",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "special_distribute_points",
+          "value": 5
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "priest"
+        }
+      ]
+    ]
+  },
+  "_id": "Tt5D3vVZTvLddVk0",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Tt5D3vVZTvLddVk0"
+}

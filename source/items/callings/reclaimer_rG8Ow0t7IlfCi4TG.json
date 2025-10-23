@@ -1,0 +1,141 @@
+{
+  "type": "calling",
+  "name": "reclaimer",
+  "folder": null,
+  "system": {
+    "slug": "reclaimer",
+    "description": "",
+    "capabilities": [
+      [
+        "energy_guns",
+        "slug_guns",
+        "shipboard_operations",
+        "transport"
+      ],
+      [
+        "special_any_lores_capability",
+        "streetwise"
+      ]
+    ],
+    "perks": [
+      "intruder",
+      "spotter",
+      "can_opener",
+      "recreate_artifact",
+      "keen_awareness",
+      "oriented"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        },
+        {
+          "slug": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        },
+        {
+          "slug": "melee",
+          "value": 1
+        },
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "sneak",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intrusion",
+          "value": 3
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "techredemption",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "rG8Ow0t7IlfCi4TG",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!rG8Ow0t7IlfCi4TG"
+}

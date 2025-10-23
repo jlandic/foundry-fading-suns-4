@@ -1,0 +1,125 @@
+{
+  "type": "calling",
+  "name": "tech_redeemer",
+  "folder": null,
+  "system": {
+    "slug": "tech_redeemer",
+    "description": "",
+    "capabilities": [
+      [
+        "technology"
+      ],
+      [
+        "think_machines",
+        "crafts",
+        "science",
+        "technology"
+      ]
+    ],
+    "perks": [
+      "machine_spirit",
+      "craft_wondrous_tech",
+      "craft_energy_device",
+      "comprehend_tech_level",
+      "mechanic"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "crafts",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        },
+        {
+          "slug": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "interface",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "techredemption",
+          "value": 3
+        }
+      ],
+      [
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "mxkH5ROOMf1abMzR",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!mxkH5ROOMf1abMzR"
+}

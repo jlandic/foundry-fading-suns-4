@@ -1,0 +1,129 @@
+{
+  "type": "calling",
+  "name": "knightly_order",
+  "folder": null,
+  "system": {
+    "slug": "knightly_order",
+    "description": "",
+    "capabilities": [
+      [
+        "military_weapons",
+        "energy_guns",
+        "slug_guns"
+      ],
+      [
+        "combat_armor",
+        "war_armor",
+        "jumpweb_lore_barbarian_worlds",
+        "jumpweb_lore_known_worlds"
+      ]
+    ],
+    "perks": [
+      "martial_arts_graa",
+      "martial_arts_iron_heel",
+      "martial_arts_jox_kai_von",
+      "martial_arts_koto",
+      "martial_arts_shaidan",
+      "fencing_duello",
+      "fencing_kraxi",
+      "fencing_serpentis",
+      "fencing_torero",
+      "order_badge",
+      "badge_of_merit",
+      "badge_of_valor",
+      "paragon_of_order"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "faith",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "melee",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "remedy",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "shoot",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "vigor",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ]
+  },
+  "_id": "3a7qYKeaWPeyEJ51",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!3a7qYKeaWPeyEJ51"
+}

@@ -1,0 +1,127 @@
+{
+  "type": "calling",
+  "name": "conspiracist",
+  "folder": null,
+  "system": {
+    "slug": "conspiracist",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "poison_lore",
+        "cathedral_customs",
+        "commons_customs",
+        "streetwise"
+      ]
+    ],
+    "perks": [
+      "rabble_rouse",
+      "sacrificial_lambs",
+      "calculating",
+      "vicious_insult",
+      "master_of_deception",
+      "council_member",
+      "web_of_lies"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 3
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "disguise",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "sneak",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "academia",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "sleightofhand",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ]
+  },
+  "_id": "2h0CD8CV6qFynXF8",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!2h0CD8CV6qFynXF8"
+}

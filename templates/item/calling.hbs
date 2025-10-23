@@ -1,0 +1,33 @@
+<section class="scrollable">
+    <section>
+        <h2>{{ localize "fs4.commonFields.description" }}</h2>
+        {{{description}}}
+    </section>
+
+    {{> "fading-suns-4.choices-set" choices=preconditions titleKey="fs4.commonFields.preconditions" }}
+
+    {{> "fading-suns-4.choices-set" choices=characteristics titleKey="fs4.calling.fields.characteristics" }}
+
+    {{> "fading-suns-4.choices-set" choices=skills titleKey="fs4.calling.fields.skills" }}
+
+    {{> "fading-suns-4.choices-set" choices=capabilities titleKey="fs4.calling.fields.capabilities" }}
+
+    <section>
+        <h2>{{ localize "fs4.calling.fields.perks" }}</h2>
+        <div>
+            {{{perk}}} {{ localize "fs4.sheets.calling.onePerkFromListOrOpen" }}
+        </div>
+
+        <h3>{{ localize "fs4.sheets.calling.callingPerks" }}</h3>
+        <ul>
+            {{#each perks}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.calling.fields.patrons" }}</h2>
+        {{{patrons}}}
+    </section>
+</section>

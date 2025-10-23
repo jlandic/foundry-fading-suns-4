@@ -1,4 +1,4 @@
-import { Characteristics, PowerSkills, PreconditionTypes, Skills } from "../system/references.mjs";
+import { Characteristics, CharacteristicsSpecials, PowerSkills, PreconditionTypes, Skills, SkillsSpecials } from "../system/references.mjs";
 
 const {
     ArrayField,
@@ -18,12 +18,12 @@ export const preconditions = () => new ArrayField(new ArrayField(new SchemaField
 })));
 
 export const characteristics = () => new ArrayField(new ArrayField(new SchemaField({
-    slug: new StringField({ required: true, choices: Object.values(Characteristics), initial: () => Object.values(Characteristics)[0] }),
+    slug: new StringField({ required: true, choices: [...Object.values(Characteristics), ...Object.values(CharacteristicsSpecials)], initial: () => Object.values(Characteristics)[0] }),
     value: new NumberField({ required: true }),
 })));
 
 export const skills = () => new ArrayField(new ArrayField(new SchemaField({
-    slug: new StringField({ required: true, choices: Object.values(Skills), initial: () => Object.values(Skills)[0] }),
+    slug: new StringField({ required: true, choices: [...Object.values(Skills), ...Object.values(SkillsSpecials)], initial: () => Object.values(Skills)[0] }),
     value: new NumberField({ required: true }),
 })));
 

@@ -1,0 +1,160 @@
+{
+  "type": "calling",
+  "name": "imperial_cohort_priest",
+  "folder": null,
+  "system": {
+    "slug": "imperial_cohort_priest",
+    "description": "",
+    "capabilities": [
+      [
+        "combat_armor",
+        "military_weapons",
+        "energy_guns",
+        "slug_guns"
+      ],
+      [
+        "jumpweb_lore_known_worlds",
+        "jumpweb_lore_barbarian_worlds"
+      ]
+    ],
+    "perks": [
+      "marksmanship",
+      "martial_arts_graa",
+      "martial_arts_iron_heel",
+      "martial_arts_jox_kai_von",
+      "martial_arts_koto",
+      "martial_arts_shaidan",
+      "deputize",
+      "learning_from_mistakes",
+      "badge_of_merit",
+      "all_access_pass",
+      "badge_of_valor",
+      "rise_from_the_ashes",
+      "imperial_cohort_charter"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "endurance",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "faith",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        },
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        },
+        {
+          "slug": "melee",
+          "value": 1
+        },
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "remedy",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "survival",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "vigor",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "priest"
+        }
+      ]
+    ]
+  },
+  "_id": "VU0HgRgyzL41Ymly",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!VU0HgRgyzL41Ymly"
+}

@@ -1,0 +1,104 @@
+{
+  "type": "calling",
+  "name": "incognito",
+  "folder": null,
+  "system": {
+    "slug": "incognito",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_capability"
+      ],
+      [
+        "special_any_capability"
+      ]
+    ],
+    "perks": [
+      "learning_from_mistakes",
+      "loyalist",
+      "mentor",
+      "triumphant_return",
+      "second_skin"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ]
+  },
+  "_id": "0EuJPKehkZJJTMx8",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!0EuJPKehkZJJTMx8"
+}

@@ -1,8 +1,9 @@
-import { PreconditionTypes } from "../../system/references.mjs";
+import { CapabilityCategories, PreconditionTypes, SPECIAL_REFERENCE_PREFIX } from "../../system/references.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
 
 const TYPE_PARTS = [
     "affliction",
+    "calling",
     "capability",
     "class",
     "faction",
@@ -14,6 +15,7 @@ const TYPE_PARTS = [
 const READ_ONLY_REFERENCE_TYPES = [
     "affliction",
     "blessing",
+    "calling",
     "capability",
     "class",
     "curse",
@@ -109,22 +111,37 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
 
     async _prepareReference(path, type) {
         const slug = foundry.utils.getProperty(this.item, path);
-        const uuid = globalThis.registry.uuidFromSlug(slug, type);
-        return await enrichHTML(`@UUID[${uuid}]`);
+
+        if (slug.startsWith(SPECIAL_REFERENCE_PREFIX)) {
+            const text = game.i18n.localize(`fs4.${type}.special.${slug}`);
+            return await enrichHTML(`<em>${text}</em>`);
+        }
+
+        return await enrichHTML(`@SLUG[${type}:${slug}]`);
     }
 
     async _prepareReferenceList(path, type, options = { sort: true }) {
         const list = await Promise.all(foundry.utils.getProperty(this.item, path).map(async (slug) => {
-            const item = await globalThis.registry.fromSlug(slug, type);
-            const html = await enrichHTML(`@UUID[${item.uuid}]`);
+            if (slug.startsWith(SPECIAL_REFERENCE_PREFIX)) {
+                const text = game.i18n.localize(`fs4.${type}.special.${slug}`);
+
+                return {
+                    html: await enrichHTML(`<em>${text}</em>`),
+                    // force at the end of the list, alphabetically
+                    name: `zzz`,
+                }
+            }
+
+            const html = await enrichHTML(`@SLUG[${type}:${slug}]`);
+            const item = globalThis.registry.fromSlug(slug, type);
 
             return {
                 html,
-                name: item.name,
+                name: item?.name,
             };
         }));
 
-        const sorted = options.sort ? list.sort((a, b) => a.name.localeCompare(b.name)) : list;
+        const sorted = options.sort ? list.sort((a, b) => a?.name?.localeCompare(b?.name) || -1) : list;
         return sorted.map(entry => entry.html);
     }
 
@@ -145,8 +162,7 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
                     const skillName = game.i18n.localize(`fs4.skills.${condition.slug}`);
                     return `${skillName} ${condition.value}+`;
                 } else {
-                    const uuid = globalThis.registry.uuidFromSlug(condition.slug, condition.type);
-                    return await enrichHTML(`@UUID[${uuid}]`, { async: false })
+                    return await enrichHTML(`@SLUG[${condition.type}:${condition.slug}]`)
                 }
             },
             game.i18n.localize("fs4.common.orSeparator"),
@@ -157,11 +173,35 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
         return await this._prepareChoicesSet(
             path,
             (option) => {
+                if (option.slug.startsWith(SPECIAL_REFERENCE_PREFIX)) {
+                    return game.i18n.format(`${i18nPrefix}.special.${option.slug}`, { value: option.value });
+                }
+
                 const name = game.i18n.localize(`${i18nPrefix}.${option.slug}`);
                 return `${name} +${option.value}`;
             },
             game.i18n.localize("fs4.common.orSeparator")
         )
+    }
+
+    async _prepareCapabilitiesChoice(path = "system.capabilities") {
+        return await this._prepareChoicesSet(
+            path,
+            async (slug) => {
+                if (slug.startsWith(SPECIAL_REFERENCE_PREFIX)) {
+                    return game.i18n.localize(`fs4.capability.special.${slug}`);
+                }
+                if (Object.values(CapabilityCategories).includes(slug)) {
+                    return game.i18n.format(
+                        "fs4.capability.special.anyInCategory",
+                        { category: game.i18n.localize(`fs4.capability.categories.${slug}`) }
+                    )
+                }
+
+                return await enrichHTML(`@SLUG[capability:${slug}]`)
+            },
+            game.i18n.localize("fs4.common.orSeparator")
+        );
     }
 
     async _prepareCharacteristicsChoice(path = "system.characteristics") {

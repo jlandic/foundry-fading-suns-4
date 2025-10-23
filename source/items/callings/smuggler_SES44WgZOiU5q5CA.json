@@ -1,0 +1,126 @@
+{
+  "type": "calling",
+  "name": "smuggler",
+  "folder": null,
+  "system": {
+    "slug": "smuggler",
+    "description": "",
+    "capabilities": [
+      [
+        "shipboard_operations"
+      ],
+      [
+        "jumpweb_lore_barbarian_worlds",
+        "jumpweb_lore_barbarian_worlds",
+        "think_machines"
+      ]
+    ],
+    "perks": [
+      "marksmanship",
+      "aim_assistance",
+      "armed_to_the_teeth",
+      "two_gun_fighting",
+      "fencing_duello",
+      "fencing_kraxi",
+      "fencing_serpentis",
+      "fencing_torero",
+      "born_on_the_battlefield",
+      "can_opener"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "disguise",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "melee",
+          "value": 1
+        },
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "pilot",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "techredemption",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": []
+  },
+  "_id": "SES44WgZOiU5q5CA",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!SES44WgZOiU5q5CA"
+}

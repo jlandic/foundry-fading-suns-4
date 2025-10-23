@@ -1,0 +1,140 @@
+{
+  "type": "calling",
+  "name": "bounty_hunter",
+  "folder": null,
+  "system": {
+    "slug": "bounty_hunter",
+    "description": "",
+    "capabilities": [
+      [
+        "energy_guns",
+        "slug_guns"
+      ],
+      [
+        "streetwise",
+        "transport"
+      ]
+    ],
+    "perks": [
+      "criminal_archive_access",
+      "armed_to_the_teeth",
+      "hunters_cred",
+      "manhunter",
+      "ruthless",
+      "blood_hound",
+      "aim_where_it_hurts"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 2
+        },
+        {
+          "slug": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 2
+        },
+        {
+          "slug": "melee",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "impress",
+          "value": 2
+        },
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "shoot",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "wGroF6iysKioB20N",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!wGroF6iysKioB20N"
+}

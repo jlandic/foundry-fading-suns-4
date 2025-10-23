@@ -1,0 +1,146 @@
+{
+  "type": "calling",
+  "name": "enthusiast",
+  "folder": null,
+  "system": {
+    "slug": "enthusiast",
+    "description": "",
+    "capabilities": [
+      [
+        "musical_instruments"
+      ],
+      [
+        "musical_instruments",
+        "special_any_lores_capability"
+      ]
+    ],
+    "perks": [
+      "botanist",
+      "beginners_luck",
+      "epiphany",
+      "patron_of_the_arts",
+      "cat_burglars_eye",
+      "tutor"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "crafts",
+          "value": 1
+        },
+        {
+          "slug": "techredemption",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "arts",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "impress",
+          "value": 1
+        },
+        {
+          "slug": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        },
+        {
+          "slug": "pilot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "academia",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perform",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ]
+  },
+  "_id": "Ze8lrYXCWqpDSsmK",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Ze8lrYXCWqpDSsmK"
+}

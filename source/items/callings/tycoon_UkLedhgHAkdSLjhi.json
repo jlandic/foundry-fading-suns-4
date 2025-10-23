@@ -1,0 +1,147 @@
+{
+  "type": "calling",
+  "name": "tycoon",
+  "folder": null,
+  "system": {
+    "slug": "tycoon",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "cathedral_customs",
+        "court_customs",
+        "science"
+      ]
+    ],
+    "perks": [
+      "friends_in_high_places",
+      "hedge_fund",
+      "long_con",
+      "swimming_with_the_sharks",
+      "riches",
+      "credit_worthy"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "faith",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "alchemy",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "crafts",
+          "value": 1
+        },
+        {
+          "slug": "techredemption",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "melee",
+          "value": 1
+        },
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "perform",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "UkLedhgHAkdSLjhi",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!UkLedhgHAkdSLjhi"
+}

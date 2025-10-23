@@ -1,0 +1,146 @@
+{
+  "type": "calling",
+  "name": "mendicant",
+  "folder": null,
+  "system": {
+    "slug": "mendicant",
+    "description": "",
+    "capabilities": [
+      [
+        "commons_customs",
+        "special_any_lores_capability"
+      ],
+      [
+        "jumpweb_lore_barbarian_worlds",
+        "jumpweb_lore_known_worlds"
+      ]
+    ],
+    "perks": [
+      "anthropologist",
+      "fortitude_in_faith",
+      "epiphany",
+      "living_legend",
+      "incubation",
+      "righteous_sermon",
+      "vow_of_poverty"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "endurance",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "faith",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        },
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        },
+        {
+          "slug": "survival",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 2
+        },
+        {
+          "slug": "focus",
+          "value": 2
+        },
+        {
+          "slug": "shoot",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perform",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "vigor",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "priest"
+        }
+      ]
+    ]
+  },
+  "_id": "ukfDmqdqSnTZxOVa",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!ukfDmqdqSnTZxOVa"
+}

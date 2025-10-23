@@ -1,0 +1,139 @@
+{
+  "type": "calling",
+  "name": "detective",
+  "folder": null,
+  "system": {
+    "slug": "detective",
+    "description": "",
+    "capabilities": [
+      [
+        "streetwise"
+      ],
+      [
+        "special_any_lores_capability",
+        "energy_guns",
+        "slug_guns"
+      ]
+    ],
+    "perks": [
+      "criminal_archive_access",
+      "marksmanship",
+      "deduce",
+      "deputize",
+      "hard_boiled",
+      "all_access_pass"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        },
+        {
+          "slug": "strength",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "disguise",
+          "value": 1
+        },
+        {
+          "slug": "empathy",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "intrusion",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "shoot",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "jYfFWTZ8ujuLSiWZ",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!jYfFWTZ8ujuLSiWZ"
+}

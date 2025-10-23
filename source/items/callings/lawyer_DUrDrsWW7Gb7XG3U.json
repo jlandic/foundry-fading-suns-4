@@ -1,0 +1,121 @@
+{
+  "type": "calling",
+  "name": "lawyer",
+  "folder": null,
+  "system": {
+    "slug": "lawyer",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "cathedral_customs",
+        "court_customs"
+      ]
+    ],
+    "perks": [
+      "friends_in_high_places",
+      "stunning_statement",
+      "shield_of_the_law",
+      "bureaucracy",
+      "playing_the_game"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "faith",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        },
+        {
+          "slug": "focus",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "academia",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "knavery",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "perform",
+          "value": 2
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "merchant"
+        }
+      ]
+    ]
+  },
+  "_id": "DUrDrsWW7Gb7XG3U",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!DUrDrsWW7Gb7XG3U"
+}

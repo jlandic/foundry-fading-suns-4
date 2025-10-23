@@ -21,6 +21,7 @@
       "afflictions": "Afflictions"
     },
     "sheets": {
+      "missingReference": "Missing reference: {type} with slug '{slug}' not found.",
       "tabs": {
         "main": "Main",
         "modifiers": "Modifiers"
@@ -28,9 +29,13 @@
       "common": {
         "traits": "Traits"
       },
+      "calling": {
+        "onePerkFromListOrOpen": "One calling perk from the list below or from the Open perks list",
+        "callingPerks": "Calling perks"
+      },
       "class": {
         "classPerks": "Class perks",
-        "andOnePerkFromListOrOpen": "plus class 1 perk from the list below or from the Open perks list"
+        "andOnePerkFromListOrOpen": "plus 1 class perk from the list below or from the Open perks list"
       },
       "species": {
         "callingPerks": "Whenever you gain a calling perk, you may choose a perk from the list below"
@@ -45,7 +50,10 @@
       "will": "Will",
       "presence": "Presence",
       "intuition": "Intuition",
-      "faith": "Faith"
+      "faith": "Faith",
+      "special": {
+        "special_distribute_points": "{value} to distribute among any characteristics"
+      }
     },
     "skills": {
       "academia": "Academia",
@@ -73,11 +81,26 @@
       "sneak": "Sneak",
       "survival": "Survival",
       "techredemption": "Tech Redemption",
-      "vigor": "Vigor"
+      "vigor": "Vigor",
+      "special": {
+        "special_distribute_points": "{value} to distribute among any skills"
+      }
     },
     "powerSkills": {
       "psi": "Psi",
       "theurgy": "Theurgy"
+    },
+    "calling": {
+      "fields": {
+        "characteristics": "Characteristics",
+        "skills": "Skills",
+        "equipment": "Equipment",
+        "preconditions": "Preconditions",
+        "capabilities": "Capabilities",
+        "patrons": "Patrons",
+        "perks": "Perks",
+        "isOpen": "Open"
+      }
     },
     "capability": {
       "fields": {
@@ -103,7 +126,12 @@
         "medical": "Medical",
         "performing_arts": "Performing Arts",
         "science": "Science",
-        "tech": "Tech"
+        "technology": "Technology"
+      },
+      "special": {
+        "special_any_lores_capability": "Any lores capability",
+        "special_any_capability": "Any capability",
+        "anyInCategory": "Any capability in the '{category}' category"
       }
     }
   },
@@ -149,7 +177,11 @@
       "privilege": "Privilege",
       "verve": "Verve"
     },
-    "open": "Open"
+    "open": "Open",
+    "special": {
+      "special_agency_list": "Any perk from your agency's list: Kalinthi (@SLUG[calling:scholar], @SLUG[calling:occultist], @SLUG[calling:reclaimer], @SLUG[calling:theurgist]), Penitents (@SLUG[calling:psychic]), Synecullum (@SLUG[calling:banker], @SLUG[calling:clergy], @SLUG[calling:courtier])",
+      "special_cover_identity": "Any perk from the calling corresponding to your cover identity"
+    }
   },
   "species": {
     "fields": {

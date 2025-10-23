@@ -92,6 +92,12 @@
       "type": "Item"
     },
     {
+      "name": "maneuvers",
+      "label": "Maneuvers",
+      "path": "packs/maneuvers",
+      "type": "Item"
+    },
+    {
       "name": "perks",
       "label": "Perks",
       "path": "packs/perks",
@@ -113,6 +119,7 @@
       "class": {},
       "curse": {},
       "faction": {},
+      "maneuver": {},
       "perk": {},
       "species": {}
     }

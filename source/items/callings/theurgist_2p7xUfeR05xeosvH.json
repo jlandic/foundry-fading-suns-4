@@ -1,0 +1,103 @@
+{
+  "type": "calling",
+  "name": "theurgist",
+  "folder": null,
+  "system": {
+    "slug": "theurgist",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "special_any_lores_capability"
+      ]
+    ],
+    "perks": [
+      "sanctify_arms_and_armor",
+      "enlightened",
+      "scent_of_the_witch",
+      "invest_phylactery",
+      "imbue_tabernacle"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "faith",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "alchemy",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "academia",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "focus",
+          "value": 3
+        }
+      ]
+    ],
+    "preconditions": []
+  },
+  "_id": "2p7xUfeR05xeosvH",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!2p7xUfeR05xeosvH"
+}

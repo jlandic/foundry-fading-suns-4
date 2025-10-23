@@ -1,3 +1,5 @@
+export const SPECIAL_REFERENCE_PREFIX = "special_";
+
 export const PreconditionTypes = Object.freeze({
     Calling: "calling",
     Capability: "capability",
@@ -20,6 +22,10 @@ export const Characteristics = Object.freeze({
     Presence: "presence",
     Intuition: "intuition",
     Faith: "faith",
+});
+
+export const CharacteristicsSpecials = Object.freeze({
+    DistributePoints: "special_distribute_points",
 });
 
 export const Skills = Object.freeze({
@@ -49,6 +55,10 @@ export const Skills = Object.freeze({
     Survival: "survival",
     TechRedemption: "techredemption",
     Vigor: "vigor",
+});
+
+export const SkillsSpecials = Object.freeze({
+    DistributePoints: "special_distribute_points",
 });
 
 export const PowerSkills = Object.freeze({
@@ -95,5 +105,5 @@ export const CapabilityCategories = Object.freeze({
     Medical: "medical",
     PerformingArts: "performing_arts",
     Science: "science",
-    Tech: "tech",
+    Technology: "technology",
 });

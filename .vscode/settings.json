@@ -8,6 +8,12 @@
     },
     {
       "fileMatch": [
+        "source/items/callings/*.json"
+      ],
+      "url": "./schemas/callings.schema.json"
+    },
+    {
+      "fileMatch": [
         "source/items/classes/*.json"
       ],
       "url": "./schemas/classes.schema.json"

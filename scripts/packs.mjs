@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs/promises";
 import { Command } from "commander";
 import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
+import { type } from "os";
 
 const IDS = "source/ids.csv";
 const SOURCE_DIR = "source";
@@ -10,7 +11,7 @@ const REF_DIR = "references";
 const PACKS = [
     "items/afflictions",
     "items/blessings",
-    // "items/callings",
+    "items/callings",
     "items/capabilities",
     "items/classes",
     "items/curses",
@@ -59,53 +60,42 @@ const extract = async () => {
     console.log("All packs extracted.");
 }
 
-const transformCapability = async (original, reference) => {
-    const categories = {
-        ranged: "ranged_weapons",
-        vehicle: "transport",
-        performing: "performing_arts",
-        military: "military_ordnance",
-        music: "musical_instruments",
-        thinkMachines: "think_machines",
-        tech: "technology",
-        melee: "melee_weapons",
-    }
-
-    const category = categories[reference.system.category] || reference.system.category;
-    const type = reference.system.type === "lore" ? "lores" : "equipment";
-
+const transformCalling = async (original, reference) => {
     return {
         ...original,
         name: original.system.slug,
         system: {
             ...original.system,
-            description: reference.system.description,
-            type,
-            category,
+            capabilities: reference.system.capabilities.map((caps) => caps.split(" ou ").map(cap => cap.trim())),
+            perks: reference.system.perks,
+            characteristics: reference.system.characteristics.map((group) => {
+                return group.map((char) => {
+                    return {
+                        slug: char.name,
+                        value: char.value,
+                    };
+                });
+            }),
+            skills: reference.system.skills.map((group) => {
+                return group.map((skill) => {
+                    return {
+                        slug: skill.name,
+                        value: skill.value,
+                    };
+                });
+            }),
             preconditions: [
-                reference.system.reserved.map((slug) => {
-                    const type = TYPE_MAPPING[slug];
-
-                    if (!type) {
-                        console.warn(`No type mapping found for slug: ${slug}`);
-                        return {
-                            type: "TODO",
-                            slug,
-                        }
-                    } else {
-                        return {
-                            type,
-                            slug,
-                        }
-                    }
-                }),
+                reference.system.class === "open" ? [] : [{
+                    type: "class",
+                    slug: reference.system.class,
+                }],
             ].filter(group => group.length > 0),
         },
     };
 }
 
 const TRANSFORMERS = {
-    capabilities: transformCapability,
+    callings: transformCalling,
 };
 
 const importReference = async (collection) => {
@@ -149,8 +139,15 @@ const translateCapability = (reference, item) => ({
     description: reference.system.description || "MISSING DESCRIPTION",
 });
 
+const translateCalling = (reference, item) => ({
+    name: reference.name || "MISSING NAME",
+    description: reference.system.description || "MISSING DESCRIPTION",
+    patrons: reference.system.patrons || "MISSING PATRONS",
+});
+
 const TRANSLATION_FNS = {
     capabilities: translateCapability,
+    callings: translateCalling,
 }
 
 const generateTranslations = async (collection) => {

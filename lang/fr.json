@@ -21,12 +21,17 @@
       "afflictions": "Afflictions"
     },
     "sheets": {
+      "missingReference": "Référence manquante : {type} avec le slug '{slug}' non trouvé(e).",
       "tabs": {
         "main": "Général",
         "modifiers": "Modificateurs"
       },
       "common": {
         "traits": "Traits"
+      },
+      "calling": {
+        "onePerkFromListOrOpen": "Un avantage de vocation parmi la liste ci-dessous ou parmi la liste des avantages ouverts",
+        "callingPerks": "Avantages de vocation"
       },
       "class": {
         "classPerks": "Avantages de classe",
@@ -45,7 +50,10 @@
       "will": "Volonté",
       "presence": "Présence",
       "intuition": "Intuition",
-      "faith": "Foi"
+      "faith": "Foi",
+      "special": {
+        "special_distribute_points": "{value} à distribuer dans n'importe quelles caractéristiques"
+      }
     },
     "skills": {
       "academia": "Érudition",
@@ -73,11 +81,26 @@
       "sneak": "Discrétion",
       "survival": "Survie",
       "techredemption": "Rédemption tech",
-      "vigor": "Vigueur"
+      "vigor": "Vigueur",
+      "special": {
+        "special_distribute_points": "{value} à distribuer dans n'importe quelles compétences"
+      }
     },
     "powerSkills": {
       "psi": "Psi",
       "theurgy": "Théurgie"
+    },
+    "calling": {
+      "fields": {
+        "characteristics": "Caractéristiques",
+        "skills": "Compétences",
+        "equipment": "Équipement",
+        "preconditions": "Préconditions",
+        "capabilities": "Aptitudes",
+        "patrons": "Patrons",
+        "perks": "Avantages",
+        "isOpen": "Ouvert"
+      }
     },
     "capability": {
       "fields": {
@@ -103,7 +126,12 @@
         "medical": "Médical",
         "performing_arts": "Arts du spectacle",
         "science": "Science",
-        "tech": "Technologie"
+        "technology": "Technologie"
+      },
+      "special": {
+        "special_any_lores_capability": "N'importe quelle aptitude de connaissance",
+        "special_any_capability": "N'importe quelle aptitude",
+        "anyInCategory": "N'importe quelle aptitude de la catégorie '{category}'"
       }
     },
     "class": {
@@ -146,7 +174,11 @@
         "privilege": "Privilège",
         "verve": "Verve"
       },
-      "open": "Ouvert"
+      "open": "Ouvert",
+      "special": {
+        "special_agency_list": "N'importe quel avantage d'une vocation correspondant à votre agence : Kalinthi (@SLUG[calling:scholar], @SLUG[calling:occultist], @SLUG[calling:reclaimer], @SLUG[calling:theurgist]), Pénitents (@SLUG[calling:psychic]), Synecullum (@SLUG[calling:banker], @SLUG[calling:clergy], @SLUG[calling:courtier])",
+        "special_cover_identity": "N'importe quel avantage de la vocation correspondant à votre fausse identité"
+      }
     },
     "species": {
       "fields": {

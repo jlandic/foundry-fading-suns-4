@@ -1,4 +1,5 @@
 export { default as AfflictionSheet } from "./item/affliction-sheet.mjs";
+export { default as CallingSheet } from "./item/calling-sheet.mjs";
 export { default as CapabilitySheet } from "./item/capability-sheet.mjs";
 export { default as ClassSheet } from "./item/class-sheet.mjs";
 export { default as FactionSheet } from "./item/faction-sheet.mjs";

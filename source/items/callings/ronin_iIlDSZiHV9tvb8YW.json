@@ -1,0 +1,137 @@
+{
+  "type": "calling",
+  "name": "ronin",
+  "folder": null,
+  "system": {
+    "slug": "ronin",
+    "description": "",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "military_weapons",
+        "energy_guns",
+        "slug_guns"
+      ]
+    ],
+    "perks": [
+      "trouble_magnet",
+      "hired_muscle",
+      "living_legend",
+      "seen_too_much",
+      "military_rank",
+      "nothing_to_lose"
+    ],
+    "patrons": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 2
+        },
+        {
+          "slug": "endurance",
+          "value": 2
+        },
+        {
+          "slug": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "perception",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "knavery",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "melee",
+          "value": 2
+        },
+        {
+          "slug": "shoot",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "fight",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "empathy",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "observe",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "impress",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "survival",
+          "value": 1
+        }
+      ]
+    ],
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "noble"
+        }
+      ]
+    ]
+  },
+  "_id": "iIlDSZiHV9tvb8YW",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761131138194,
+    "modifiedTime": 1761131138194,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!iIlDSZiHV9tvb8YW"
+}
