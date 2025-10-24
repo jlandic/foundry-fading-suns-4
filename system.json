@@ -20,7 +20,7 @@
   "styles": [
     "fading-suns-4.css"
   ],
-  "primaryTokenAttribute": "attributes.vitality",
+  "primaryTokenAttribute": "vitality",
   "languages": [
     {
       "lang": "en",
@@ -122,6 +122,12 @@
       "maneuver": {},
       "perk": {},
       "species": {}
+    },
+    "Actor": {
+      "pc": {},
+      "headliner": {},
+      "agent": {},
+      "extra": {}
     }
   },
   "relationships": {

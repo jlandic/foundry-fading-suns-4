@@ -1,0 +1,10 @@
+<section class="scrollable tab {{tabs.notes.cssClass}}" data-group="{{tabs.notes.group}}" data-tab="{{tabs.notes.id}}">
+    <h2>{{ localize "fs4.sheets.common.notes"}}</h2>
+    {{> "fading-suns-4.editor" name="system.notes" value=notes }}
+
+    {{#if isUserGM}}
+        <h2>{{ localize "fs4.sheets.common.gmNotes"}}</h2>
+
+        {{> "fading-suns-4.editor" name="system.gmNotes" value=gmNotes }}
+    {{/if}}
+</section>

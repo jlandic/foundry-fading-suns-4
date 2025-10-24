@@ -1,5 +1,6 @@
-import { CapabilityCategories, None, PreconditionTypes, SPECIAL_REFERENCE_PREFIX } from "../../system/references.mjs";
+import { CapabilityCategories, PreconditionTypes, SPECIAL_REFERENCE_PREFIX } from "../../system/references.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
+import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
 
 const TYPE_PARTS = [
     "affliction",
@@ -26,8 +27,10 @@ const READ_ONLY_REFERENCE_TYPES = [
     "species",
 ];
 
-export default class BaseItemSheet extends foundry.applications.api.HandlebarsApplicationMixin(
-    foundry.applications.sheets.ItemSheetV2,
+export default class BaseItemSheet extends BaseSheetMixin(
+    foundry.applications.api.HandlebarsApplicationMixin(
+        foundry.applications.sheets.ItemSheetV2,
+    )
 ) {
     static DEFAULT_OPTIONS = {
         position: { width: 600, height: "auto" },
@@ -44,13 +47,13 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
     };
 
     static PARTS = {
-        header: { template: "systems/fading-suns-4/templates/item/parts/header.hbs" },
+        header: { template: "systems/fading-suns-4/templates/item/header.hbs" },
         tabs: { template: "templates/generic/tab-navigation.hbs" },
         ...TYPE_PARTS.reduce((acc, type) => {
             acc[type] = { template: `systems/fading-suns-4/templates/item/${type}.hbs`, scrollable: [".scrollable"] };
             return acc;
         }, {}),
-        modifiers: { template: "systems/fading-suns-4/templates/item/parts/modifiers.hbs", scrollable: [".scrollable"] },
+        modifiers: { template: "systems/fading-suns-4/templates/shared/parts/modifiers.hbs", scrollable: [".scrollable"] },
     };
 
     static TABS = {
@@ -88,8 +91,6 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
     _configureRenderOptions(options) {
         super._configureRenderOptions(options);
 
-        console.log(options);
-
         options.parts = [
             "header",
             this.includeTabs ? "tabs" : null,
@@ -109,21 +110,6 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
         });
 
         return context;
-    }
-
-    async _prepareReference(path, type) {
-        const slug = foundry.utils.getProperty(this.item, path);
-
-        if (!slug || slug === "") {
-            return "";
-        }
-
-        if (slug.startsWith(SPECIAL_REFERENCE_PREFIX)) {
-            const text = game.i18n.localize(`fs4.${type}.special.${slug}`);
-            return await enrichHTML(`<em>${text}</em>`);
-        }
-
-        return await enrichHTML(`@SLUG[${type}:${slug}]`);
     }
 
     async _prepareReferenceList(path, type, options = { sort: true }) {
@@ -220,23 +206,5 @@ export default class BaseItemSheet extends foundry.applications.api.HandlebarsAp
 
     async _preparePowerSkillsChoice(path = "system.powerSkills") {
         return await this._prepareSlugValueChoice(path, "fs4.powerSkills");
-    }
-
-    _prepareSelectOptions(options, selectedValue, i18nPrefix, params = { includeNone: false, sort: false }) {
-        const preparedOptions = options.map(option => ({
-            label: game.i18n.localize(`${i18nPrefix}.${option}`),
-            value: option,
-            selected: option === selectedValue,
-        }));
-
-        if (params.includeNone) {
-            preparedOptions.unshift({
-                label: game.i18n.localize("fs4.common.none"),
-                value: None,
-                selected: selectedValue === None,
-            });
-        }
-
-        return preparedOptions;
     }
 }

@@ -29,8 +29,15 @@ Hooks.once("init", async () => {
     };
     CONFIG.Item.documentClass = documents.ProxyItem;
 
-    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "curse"], makeDefault: true });
+    CONFIG.Actor.dataModels = {
+        pc: models.PCDataModel,
+        headliner: models.HeadlinerDataModel,
+        agent: models.AgentDataModel,
+        extra: models.ExtraDataModel,
+    };
+    CONFIG.Actor.documentClass = documents.BaseActor;
 
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "curse"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.AfflictionSheet, { types: ["affliction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.CallingSheet, { types: ["calling"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.CapabilitySheet, { types: ["capability"], makeDefault: true });
@@ -40,6 +47,9 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.PerkSheet, { types: ["perk"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SpeciesSheet, { types: ["species"], makeDefault: true });
 
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.NPCSheet, { types: ["headliner", "agent"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.PCSheet, { types: ["pc"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.ExtraSheet, { types: ["extra"], makeDefault: true });
     await preloadTemplates();
 });
 

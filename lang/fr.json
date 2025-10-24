@@ -11,6 +11,12 @@
       "maneuver": "Manœuvre",
       "perk": "Avantage",
       "species": "Espèce"
+    },
+    "Actor": {
+      "pc": "PJ",
+      "headliner": "PNJ (Vedette)",
+      "agent": "PNJ (Agent)",
+      "extra": "PNJ (Figurant)"
     }
   },
   "fs4": {
@@ -25,10 +31,16 @@
       "missingReference": "Référence manquante : {type} avec le slug '{slug}' non trouvé(e).",
       "tabs": {
         "main": "Général",
-        "modifiers": "Modificateurs"
+        "modifiers": "Modificateurs",
+        "stats": "Stats",
+        "statsExtra": "Stats",
+        "features": "Particularités",
+        "equipment": "Équipement",
+        "notes": "Notes"
       },
       "common": {
-        "traits": "Traits"
+        "traits": "Traits",
+        "gmNotes": "Notes du MJ"
       },
       "calling": {
         "onePerkFromListOrOpen": "Un avantage de vocation parmi la liste ci-dessous ou parmi la liste des avantages ouverts",
@@ -253,6 +265,11 @@
       "babele": {
         "loading": "Import des traductions Babele...",
         "loaded": "Traductions Babele importées"
+      },
+      "error": {
+        "actor": {
+          "notEnoughVP": "Pas assez de PV à dépenser."
+        }
       }
     }
   }

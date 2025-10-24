@@ -11,6 +11,12 @@
       "maneuver": "Maneuver",
       "perk": "Perk",
       "species": "Species"
+    },
+    "Actor": {
+      "pc": "PC",
+      "headliner": "NPC (Headliner)",
+      "agent": "NPC (Agent)",
+      "extra": "NPC (Extra)"
     }
   },
   "fs4": {
@@ -25,10 +31,18 @@
       "missingReference": "Missing reference: {type} with slug '{slug}' not found.",
       "tabs": {
         "main": "Main",
-        "modifiers": "Modifiers"
+        "modifiers": "Modifiers",
+        "stats": "Stats",
+        "statsExtra": "Stats",
+        "features": "Features",
+        "equipment": "Equipment",
+        "notes": "Notes",
+        "gmNotes": "GM Notes"
       },
       "common": {
-        "traits": "Traits"
+        "traits": "Traits",
+        "gmNotes": "GM Notes",
+        "notes": "Notes"
       },
       "calling": {
         "onePerkFromListOrOpen": "One calling perk from the list below or from the Open perks list",
@@ -40,7 +54,8 @@
       },
       "species": {
         "callingPerks": "Whenever you gain a calling perk, you may choose a perk from the list below"
-      }
+      },
+      "actor": {}
     },
     "characteristics": {
       "strength": "Strength",
@@ -155,107 +170,112 @@
         "special_any_capability": "Any capability",
         "anyInCategory": "Any capability in the '{category}' category"
       }
-    }
-  },
-  "class": {
-    "fields": {
-      "characteristics": "Characteristics",
-      "skills": "Skills",
-      "perks": "Perks"
-    }
-  },
-  "faction": {
-    "fields": {
-      "perk": "Perk",
-      "characteristics": "Characteristics",
-      "skills": "Skills",
-      "blessing": "Blessing",
-      "curse": "Curse",
-      "equipment": "Equipment",
-      "favoredCalling": "Favored calling"
-    }
-  },
-  "maneuver": {
-    "fields": {
-      "type": "Type",
-      "resistance": "Resistance",
-      "capability": "Capability",
-      "impact": "Impact",
-      "characteristic": "Characteristic",
-      "skill": "Skill",
-      "actionType": "Action type",
-      "playScale": "Play scale",
-      "goalModifier": "Goal modifier",
-      "additionalTimeInformation": "Additional time rules",
-      "noVP": "No VP"
     },
-    "types": {
-      "action": "Action",
-      "combat": "Combat",
-      "defense": "Defense",
-      "influence": "Influence",
-      "influence_persuasion": "Influence (persuasion)",
-      "influence_coercion": "Influence (coercion)"
+    "class": {
+      "fields": {
+        "characteristics": "Characteristics",
+        "skills": "Skills",
+        "perks": "Perks"
+      }
     },
-    "goalModifiers": {
-      "none": "None",
-      "melee_weapon": "Melee weapon",
-      "ranged_weapon": "Ranged weapon"
-    }
-  },
-  "perk": {
-    "fields": {
-      "type": "Type",
-      "sourceType": "Source",
-      "benefice": "Benefice",
-      "cyberdevice": "Cyberdevice",
-      "nextLevel": "Next level",
-      "previousLevel": "Previous level",
-      "perks": "Perks"
+    "faction": {
+      "fields": {
+        "perk": "Perk",
+        "characteristics": "Characteristics",
+        "skills": "Skills",
+        "blessing": "Blessing",
+        "curse": "Curse",
+        "equipment": "Equipment",
+        "favoredCalling": "Favored calling"
+      }
     },
-    "sourceTypes": {
-      "class": "Class",
-      "calling": "Calling",
-      "species": "Species"
+    "maneuver": {
+      "fields": {
+        "type": "Type",
+        "resistance": "Resistance",
+        "capability": "Capability",
+        "impact": "Impact",
+        "characteristic": "Characteristic",
+        "skill": "Skill",
+        "actionType": "Action type",
+        "playScale": "Play scale",
+        "goalModifier": "Goal modifier",
+        "additionalTimeInformation": "Additional time rules",
+        "noVP": "No VP"
+      },
+      "types": {
+        "action": "Action",
+        "combat": "Combat",
+        "defense": "Defense",
+        "influence": "Influence",
+        "influence_persuasion": "Influence (persuasion)",
+        "influence_coercion": "Influence (coercion)"
+      },
+      "goalModifiers": {
+        "none": "None",
+        "melee_weapon": "Melee weapon",
+        "ranged_weapon": "Ranged weapon"
+      }
     },
-    "types": {
-      "ability": "Ability",
-      "austerity": "Austerity",
-      "birthright": "Birthright",
-      "cyberdevice": "Cyberdevice",
-      "power": "Power",
-      "privilege": "Privilege",
-      "verve": "Verve"
+    "perk": {
+      "fields": {
+        "type": "Type",
+        "sourceType": "Source",
+        "benefice": "Benefice",
+        "cyberdevice": "Cyberdevice",
+        "nextLevel": "Next level",
+        "previousLevel": "Previous level",
+        "perks": "Perks"
+      },
+      "sourceTypes": {
+        "class": "Class",
+        "calling": "Calling",
+        "species": "Species"
+      },
+      "types": {
+        "ability": "Ability",
+        "austerity": "Austerity",
+        "birthright": "Birthright",
+        "cyberdevice": "Cyberdevice",
+        "power": "Power",
+        "privilege": "Privilege",
+        "verve": "Verve"
+      },
+      "open": "Open",
+      "special": {
+        "special_agency_list": "Any perk from your agency's list: Kalinthi (@SLUG[calling:scholar], @SLUG[calling:occultist], @SLUG[calling:reclaimer], @SLUG[calling:theurgist]), Penitents (@SLUG[calling:psychic]), Synecullum (@SLUG[calling:banker], @SLUG[calling:clergy], @SLUG[calling:courtier])",
+        "special_cover_identity": "Any perk from the calling corresponding to your cover identity"
+      }
     },
-    "open": "Open",
-    "special": {
-      "special_agency_list": "Any perk from your agency's list: Kalinthi (@SLUG[calling:scholar], @SLUG[calling:occultist], @SLUG[calling:reclaimer], @SLUG[calling:theurgist]), Penitents (@SLUG[calling:psychic]), Synecullum (@SLUG[calling:banker], @SLUG[calling:clergy], @SLUG[calling:courtier])",
-      "special_cover_identity": "Any perk from the calling corresponding to your cover identity"
-    }
-  },
-  "species": {
-    "fields": {
-      "size": "Size",
-      "speed": "Speed",
-      "birthrights": "Birthrights",
-      "perks": "Perks",
-      "conditionedBirthrights": "Birthrights with conditions",
-      "capabilities": "Capabilities",
-      "powerSkills": "Power skills",
-      "maneuvers": "Maneuvers"
-    }
-  },
-  "common": {
-    "andSeparator": " and ",
-    "orSeparator": " or ",
-    "and": "and",
-    "or": "or",
-    "none": "None"
-  },
-  "notifications": {
-    "babele": {
-      "loading": "Babele translations loading...",
-      "loaded": "Babele translations loaded"
+    "species": {
+      "fields": {
+        "size": "Size",
+        "speed": "Speed",
+        "birthrights": "Birthrights",
+        "perks": "Perks",
+        "conditionedBirthrights": "Birthrights with conditions",
+        "capabilities": "Capabilities",
+        "powerSkills": "Power skills",
+        "maneuvers": "Maneuvers"
+      }
+    },
+    "common": {
+      "andSeparator": " and ",
+      "orSeparator": " or ",
+      "and": "and",
+      "or": "or",
+      "none": "None"
+    },
+    "notifications": {
+      "babele": {
+        "loading": "Babele translations loading...",
+        "loaded": "Babele translations loaded"
+      },
+      "error": {
+        "actor": {
+          "notEnoughVP": "Not enough VP to spend."
+        }
+      }
     }
   }
 }

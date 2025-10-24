@@ -8,3 +8,7 @@ export { default as PerkSheet } from "./item/perk-sheet.mjs";
 export { default as SpeciesSheet } from "./item/species-sheet.mjs";
 
 export { default as SimpleItemWithModifiersSheet } from "./item/simple-item-with-modifiers-sheet.mjs";
+
+export { default as NPCSheet } from "./actor/npc-sheet.mjs";
+export { default as PCSheet } from "./actor/pc-sheet.mjs";
+export { default as ExtraSheet } from "./actor/extra-sheet.mjs";

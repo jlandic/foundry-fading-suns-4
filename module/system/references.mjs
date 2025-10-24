@@ -26,6 +26,8 @@ export const Characteristics = Object.freeze({
     Faith: "faith",
 });
 
+export const INITIAL_CHARACTERISTIC_VALUE = 3;
+
 export const CharacteristicsSpecials = Object.freeze({
     DistributePoints: "special_distribute_points",
 });
@@ -58,6 +60,15 @@ export const Skills = Object.freeze({
     TechRedemption: "techredemption",
     Vigor: "vigor",
 });
+
+export const RESERVED_SKILLS = [
+    Skills.Alchemy,
+    Skills.Interface,
+    Skills.Pilot,
+];
+
+export const INITIAL_SKILL_VALUE = 3;
+export const INITIAL_RESERVED_SKILL_VALUE = 0;
 
 export const SkillsSpecials = Object.freeze({
     DistributePoints: "special_distribute_points",
