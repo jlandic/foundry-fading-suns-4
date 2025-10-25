@@ -1,6 +1,6 @@
 const PREFIX = "Fading Suns 4";
 
-export default class Logger {
+export default class FS4Logger {
     static debug(message, ...args) {
         console.debug(`${PREFIX} | ${message}`, ...args);
     }

@@ -14,19 +14,14 @@ export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
             size: new NumberField({ required: true, initial: 5 }),
             speed: new SchemaField({
                 twoLegs: new NumberField({ required: true, initial: 10 }),
-                fourLegs: new NumberField({ required: false }),
-                sixLegs: new NumberField({ required: false }),
+                fourLegs: new NumberField({ nullable: true, initial: null }),
+                sixLegs: new NumberField({ nullable: true, initial: null }),
             }),
             description: new HTMLField({
                 required: true,
             }),
             currentVitality: new NumberField({ required: true, initial: 0 }),
             gmNotes: new HTMLField({ required: true }),
-            resistance: new SchemaField({
-                body: new NumberField({ required: true, initial: 0 }),
-                mind: new NumberField({ required: true, initial: 0 }),
-                spirit: new NumberField({ required: true, initial: 0 }),
-            }),
             vp: new SchemaField({
                 cache: new NumberField({ required: true, initial: 0 }),
             }),
@@ -56,7 +51,7 @@ export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
         };
     }
 
-    get maxRevival() {
+    get maxRevivals() {
         if (!this.hasRevivals || !this.level) return undefined;
 
         return rules.surgeAndRevivalAmountForLevel(this.level);

@@ -22,7 +22,10 @@
   "fs4": {
     "commonFields": {
       "description": "Description",
-      "preconditions": "Preconditions"
+      "preconditions": "Preconditions",
+      "max": "Max",
+      "value": "Value",
+      "current": "Current"
     },
     "packs": {
       "afflictions": "Afflictions"
@@ -35,14 +38,20 @@
         "stats": "Stats",
         "statsExtra": "Stats",
         "features": "Features",
-        "equipment": "Equipment",
+        "inventory": "Inventory",
         "notes": "Notes",
         "gmNotes": "GM Notes"
       },
       "common": {
         "traits": "Traits",
         "gmNotes": "GM Notes",
-        "notes": "Notes"
+        "notes": "Notes",
+        "delete": "Delete",
+        "add": "Add",
+        "open": "Open",
+        "edit": "Edit",
+        "unlock": "Unlock sheet",
+        "lock": "Lock sheet"
       },
       "calling": {
         "onePerkFromListOrOpen": "One calling perk from the list below or from the Open perks list",
@@ -55,7 +64,15 @@
       "species": {
         "callingPerks": "Whenever you gain a calling perk, you may choose a perk from the list below"
       },
-      "actor": {}
+      "actor": {
+        "actions": {
+          "bankVP": "Bank VP",
+          "Empty cache": "Empty cache",
+          "respite": "Respite",
+          "revival": "Revival",
+          "surge": "Surge"
+        }
+      }
     },
     "characteristics": {
       "strength": "Strength",
@@ -70,6 +87,11 @@
       "special": {
         "special_distribute_points": "{value} to distribute among any characteristics"
       }
+    },
+    "resistance": {
+      "body": "Body",
+      "mind": "Mind",
+      "spirit": "Spirit"
     },
     "skills": {
       "academia": "Academia",
@@ -207,7 +229,7 @@
         "action": "Action",
         "combat": "Combat",
         "defense": "Defense",
-        "influence": "Influence",
+        "influence": "Influence (persuasion or coercion)",
         "influence_persuasion": "Influence (persuasion)",
         "influence_coercion": "Influence (coercion)"
       },
@@ -259,6 +281,46 @@
         "maneuvers": "Maneuvers"
       }
     },
+    "actor": {
+      "fields": {
+        "species": "Species",
+        "class": "Class",
+        "calling": "Calling",
+        "faction": "Faction",
+        "rank": "Rank",
+        "characteristics": "Characteristics",
+        "skills": "Skills",
+        "maneuvers": "Maneuvers",
+        "capabilities": "Capabilities",
+        "perks": "Perks",
+        "affliction": "Affliction",
+        "blessing": "Blessing",
+        "curse": "Curse",
+        "inventory": "Inventory",
+        "size": "Size",
+        "speed": "Speed",
+        "vp": {
+          "cache": "Cache",
+          "bank": "Bank",
+          "vp": "VP",
+          "wp": "WP",
+          "bankCapacity": "Bank Capacity"
+        },
+        "cache": "Cache",
+        "bank": "Bank",
+        "surges": "Surges",
+        "revivals": "Revivals",
+        "maxRevival": "Max",
+        "level": "Level",
+        "resistance": "Resistance",
+        "occult": "Occult",
+        "psi": "Psi",
+        "urge": "Urge",
+        "theurgy": "Theurgy",
+        "hubris": "Hubris",
+        "vitality": "Vitality"
+      }
+    },
     "common": {
       "andSeparator": " and ",
       "orSeparator": " or ",
@@ -276,6 +338,9 @@
           "notEnoughVP": "Not enough VP to spend."
         }
       }
+    },
+    "actions": {
+      "roll": "Roll"
     }
   }
 }

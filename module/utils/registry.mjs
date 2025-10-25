@@ -7,7 +7,7 @@ export default class Registry {
     }
 
     async initialize() {
-        globalThis.logger.info("Initializing registry of reference items");
+        globalThis.log.info("Initializing registry of reference items");
 
         await game.packs.forEach(async (pack) => {
             await pack.index.forEach(async (document) => {
@@ -18,7 +18,7 @@ export default class Registry {
             });
         });
 
-        globalThis.logger.info("Done initialize registry of reference items");
+        globalThis.log.info("Done initialize registry of reference items");
     }
 
     uuidFromSlug(slug, type) {
@@ -27,9 +27,11 @@ export default class Registry {
                 return slug;
             }
 
-            return this.collection[type][slug];
+            return this.collection[type][slug] ||
+                game.items.find(item => item.system.slug === slug)?.uuid;
         } else {
-            return Object.values(globalThis.registry.collection).find(reference => reference[slug])[slug];
+            return Object.values(globalThis.registry.collection).find(reference => reference[slug])[slug] ||
+                game.items.find(item => item.system.slug === slug)?.uuid;
         }
     }
 

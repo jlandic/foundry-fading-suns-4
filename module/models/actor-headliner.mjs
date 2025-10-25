@@ -12,6 +12,7 @@ export default class HeadlinerDataModel extends AgentDataModel {
                 cache: new NumberField({ required: true, initial: 0 }),
                 bank: new NumberField({ required: true, initial: 0 }),
             }),
+            wp: new NumberField({ required: true, initial: 0 }),
         }, { recursive: false });
     }
 

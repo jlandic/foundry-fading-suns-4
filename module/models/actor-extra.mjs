@@ -15,6 +15,11 @@ export default class ExtraDataModel extends BaseActorDataModel {
                 goal: new NumberField({ required: true }),
                 impact: new StringField({ required: true }),
             })),
+            resistance: new SchemaField({
+                body: new NumberField({ required: true, initial: 0 }),
+                mind: new NumberField({ required: true, initial: 0 }),
+                spirit: new NumberField({ required: true, initial: 0 }),
+            }),
         }, { recursive: false });
     }
 

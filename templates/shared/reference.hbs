@@ -1,1 +1,14 @@
-<input class="{{class}}" type="text" value="{{value}}" readonly disabled />
+<div class="reference" data-uuid="{{reference.uuid}}" data-type="{{reference.type}}" data-action="openReference">
+    <input type="text" name="{{reference.name}}" value="{{reference.label}}" {{#if reference.i18nKey}}title="{{localize reference.i18nKey}}"{{/if}} readonly disabled />
+
+    {{#if isEditable}}
+        <a
+            class="item-control item-delete"
+            data-action="clearReference"
+            data-name="{{reference.name}}"
+            title="{{localize 'fs4.sheets.common.delete'}}"
+        >
+            <i class="fas fa-xmark"></i>
+        </a>
+    {{/if}}
+</div>

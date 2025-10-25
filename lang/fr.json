@@ -22,7 +22,10 @@
   "fs4": {
     "commonFields": {
       "description": "Description",
-      "preconditions": "Préconditions"
+      "preconditions": "Préconditions",
+      "max": "Max",
+      "value": "Valeur",
+      "current": "Actuel"
     },
     "packs": {
       "afflictions": "Afflictions"
@@ -35,12 +38,18 @@
         "stats": "Stats",
         "statsExtra": "Stats",
         "features": "Particularités",
-        "equipment": "Équipement",
+        "inventory": "Inventaire",
         "notes": "Notes"
       },
       "common": {
         "traits": "Traits",
-        "gmNotes": "Notes du MJ"
+        "gmNotes": "Notes du MJ",
+        "delete": "Supprimer",
+        "add": "Ajouter",
+        "open": "Ouvrir",
+        "edit": "Éditer",
+        "unlock": "Déverrouiller la fiche",
+        "lock": "Verrouiller la fiche"
       },
       "calling": {
         "onePerkFromListOrOpen": "Un avantage de vocation parmi la liste ci-dessous ou parmi la liste des avantages ouverts",
@@ -52,6 +61,15 @@
       },
       "species": {
         "callingPerks": "Quand vous gagnez un avantage de vocation, vous pouvez choisir un avantage de la liste ci-dessous"
+      },
+      "actor": {
+        "actions": {
+          "bankVP": "Banquer les PV",
+          "emptyCache": "Vider le cache",
+          "respite": "Repos",
+          "revival": "Second souffle",
+          "surge": "Adrénaline"
+        }
       }
     },
     "characteristics": {
@@ -67,6 +85,11 @@
       "special": {
         "special_distribute_points": "{value} à distribuer dans n'importe quelles caractéristiques"
       }
+    },
+    "resistance": {
+      "body": "Corps",
+      "mind": "Mental",
+      "spirit": "Esprit"
     },
     "skills": {
       "academia": "Érudition",
@@ -204,7 +227,7 @@
         "action": "Action",
         "combat": "Combat",
         "defense": "Défense",
-        "influence": "Influence",
+        "influence": "Influence (persuasion ou coercition)",
         "influence_persuasion": "Influence (persuasion)",
         "influence_coercion": "Influence (coercition)"
       },
@@ -254,6 +277,45 @@
         "maneuvers": "Manœuvres"
       }
     },
+    "actor": {
+      "fields": {
+        "species": "Espèce",
+        "class": "Classe",
+        "calling": "Vocation",
+        "faction": "Faction",
+        "rank": "Rang",
+        "characteristics": "Caractéristiques",
+        "skills": "Compétences",
+        "maneuvers": "Manœuvres",
+        "capabilities": "Aptitudes",
+        "perks": "Avantages",
+        "affliction": "Affliction",
+        "blessing": "Bénédiction",
+        "curse": "Malédiction",
+        "inventory": "Inventaire",
+        "size": "Taille",
+        "speed": "Vitesse",
+        "vp": {
+          "cache": "Cache",
+          "bank": "Banque",
+          "vp": "PV",
+          "wp": "PW",
+          "bankCapacity": "Banque max."
+        },
+        "cache": "Cache",
+        "bank": "Banque",
+        "surges": "Adrénaline",
+        "revivals": "Seconds souffles",
+        "level": "Niveau",
+        "resistance": "Résistance",
+        "occult": "Occulte",
+        "psi": "Psi",
+        "urge": "Pulsion",
+        "theurgy": "Theurgie",
+        "hubris": "Hubris",
+        "vitality": "Vitalité"
+      }
+    },
     "common": {
       "andSeparator": " et ",
       "orSeparator": " ou ",
@@ -271,6 +333,9 @@
           "notEnoughVP": "Pas assez de PV à dépenser."
         }
       }
+    },
+    "actions": {
+      "roll": "Lancer le dé"
     }
   }
 }

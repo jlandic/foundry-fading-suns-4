@@ -1,4 +1,7 @@
 const PARTIALS = [
+    // Actor partials
+    "actor/partials/scored-trait.hbs",
+
     // Item partials
     "item/partials/choices-set.hbs",
 

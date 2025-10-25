@@ -8,9 +8,8 @@ export default class PCSheet extends BaseActorSheet {
                 BaseActorSheet.TAB_REFERENCES.stats,
                 BaseActorSheet.TAB_REFERENCES.features,
                 BaseActorSheet.TAB_REFERENCES.modifiers,
-                BaseActorSheet.TAB_REFERENCES.equipment,
+                BaseActorSheet.TAB_REFERENCES.inventory,
                 BaseActorSheet.TAB_REFERENCES.notes,
-                BaseActorSheet.TAB_REFERENCES.gmNotes,
             ].filter(Boolean),
             initial: "stats",
         }

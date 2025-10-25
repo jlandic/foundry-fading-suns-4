@@ -3,7 +3,7 @@ import './less/fading-suns-4.less';
 import * as models from './module/models/_module.mjs';
 import * as documents from './module/documents/_module.mjs';
 import * as sheets from './module/sheets/_module.mjs';
-import Logger from './module/utils/logger.mjs';
+import FS4Logger from './module/utils/logger.mjs';
 import { preloadTemplates } from './module/utils/handlebars.mjs';
 import * as initScripts from './module/scripts/initData.mjs';
 import Registry from './module/utils/registry.mjs';
@@ -11,9 +11,9 @@ import Registry from './module/utils/registry.mjs';
 globalThis.babelProgress = null;
 
 Hooks.once("init", async () => {
-    globalThis.logger = Logger;
+    globalThis.log = FS4Logger;
 
-    globalThis.logger.info("Initializing Fading Suns 4 system");
+    globalThis.log.info("Initializing Fading Suns 4 system");
 
     CONFIG.Item.dataModels = {
         affliction: models.AfflictionDataModel,

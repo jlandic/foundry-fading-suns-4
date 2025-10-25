@@ -1,0 +1,18 @@
+<div class="form-group scored-trait flexrow">
+    {{#if rollData}}
+        <img
+            class="inline rollable"
+            src="icons/svg/d20-highlight.svg"
+            alt="{{localize 'fs4.actions.roll'}}"
+            title="{{localize 'fs4.actions.roll'}}"
+            data-action="roll"
+            data-roll-type="{{rollType}}"
+        />
+    {{/if}}
+
+    <label for="{{name}}">
+        {{label}}
+    </label>
+
+    <input type="number" name="{{name}}" value="{{value}}" class="score" {{#unless isEditable}}disabled{{/unless}} />
+</div>

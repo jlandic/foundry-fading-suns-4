@@ -7,12 +7,103 @@
     </aside>
 
     <div class="header-identity">
-        <h1 class="actor-name">
-            {{#if isEditable }}
-            <input type="text" name="name" value="{{actor.name}}" />
-            {{ else}}
-            {{ actor.name }}
+        <div class="flexrow">
+            <h1 class="actor-name">
+                {{#if isEditable }}
+                    <input type="text" name="name" value="{{actor.name}}" />
+                {{ else}}
+                    {{ actor.name }}
+                {{/if}}
+            </h1>
+
+            <a
+                {{#if isLocked}}
+                    title="{{ localize "fs4.sheets.common.unlock" }}"
+                {{else}}
+                    title="{{ localize "fs4.sheets.common.lock" }}"
+                {{/if}}
+                data-action="toggleLock"
+                class="flex0"
+                id="toggle-lock"
+            >
+                {{#if isLocked}}
+                    <i class="fa-solid fa-lock fa-fw"></i>
+                {{else}}
+                    <i class="fa-solid fa-lock-open fa-fw"></i>
+                {{/if}}
+            </a>
+        </div>
+
+        <div class="flexcol">
+            {{#if isExtra}}
+            {{else}}
+                <div class="flexrow">
+                    <div class="form-fields">
+                        <label for="system.level">{{ localize "fs4.actor.fields.level" }}</label>
+                        <input type="number" name="system.level" value="{{system.level}}" min="1" {{#unless isEditable}}disabled{{/unless}} />
+                    </div>
+
+                    <div class="form-fields">
+                        <label for="system.species">{{ localize "fs4.actor.fields.species" }}</label>
+                        {{> "fading-suns-4.reference" reference=species isEditable=isEditable }}
+                    </div>
+
+                    <div class="flexrow">
+                        <div class="form-fields flexcol flex0 size-container">
+                            <label for="system.size">{{ localize "fs4.actor.fields.size" }}</label>
+                            <input class="score" type="text" name="system.size" value="{{system.size}}" {{#unless isEditable}}disabled{{/unless}} />
+                        </div>
+
+                        <div class="form-fields flexcol speed-container">
+                            <label for="system.speed">{{ localize "fs4.actor.fields.speed" }}</label>
+                            <div class="flexrow">
+                                <input class="score" type="number" name="system.speed.twoLegs" value="{{system.speed.twoLegs}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+
+                                {{#if system.speed.fourLegs}}
+                                    <input class="score" type="number" name="system.speed.fourLegs" value="{{system.speed.fourLegs}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+                                {{/if}}
+                                {{#if system.speed.sixLegs}}
+                                    <input class="score" type="number" name="system.speed.sixLegs" value="{{system.speed.sixLegs}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexrow">
+                    <div class="form-fields">
+                        <label for="system.class">{{ localize "fs4.actor.fields.class" }}</label>
+                        {{> "fading-suns-4.reference" reference=class isEditable=isEditable }}
+                    </div>
+
+                    <div class="form-fields">
+                        <label for="system.faction">{{ localize "fs4.actor.fields.faction" }}</label>
+                        {{> "fading-suns-4.reference" reference=faction isEditable=isEditable }}
+                    </div>
+
+                    <div class="form-fields">
+                        <label for="system.calling">{{ localize "fs4.actor.fields.calling" }}</label>
+                        {{> "fading-suns-4.reference" reference=calling isEditable=isEditable }}
+                    </div>
+                </div>
+
+                <div class="flexrow">
+                    <div class="form-fields">
+                        <label for="system.affliction">{{ localize "fs4.actor.fields.affliction" }}</label>
+                        {{> "fading-suns-4.reference" reference=affliction isEditable=isEditable }}
+                    </div>
+
+                    <div class="form-fields">
+                        <label for="system.blessing">{{ localize "fs4.actor.fields.blessing" }}</label>
+                        {{> "fading-suns-4.reference" reference=blessing isEditable=isEditable }}
+                    </div>
+
+                    <div class="form-fields">
+                        <label for="system.curse">{{ localize "fs4.actor.fields.curse" }}</label>
+                        {{> "fading-suns-4.reference" reference=curse isEditable=isEditable }}
+                    </div>
+                </div>
             {{/if}}
-        </h1>
+        </div>
     </div>
 </header>

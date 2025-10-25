@@ -17,6 +17,28 @@ export const BaseSheetMixin = Base => class extends Base {
         return await enrichHTML(`@SLUG[${type}:${slug}]`);
     }
 
+    async _prepareReferenceLink(path, type) {
+        const slug = foundry.utils.getProperty(this.document, path);
+
+        if (!slug || slug === "") {
+            return null;
+        }
+
+        const item = await globalThis.registry.fromSlugAsync(slug, type);
+        if (!item) {
+            return null;
+        }
+
+        return {
+            slug,
+            type,
+            name: path,
+            label: item.name,
+            uuid: item.uuid,
+            img: item.img,
+        };
+    }
+
     _prepareSelectOptions(options, selectedValue, i18nPrefix, params = { includeNone: false, sort: false }) {
         const preparedOptions = options.map(option => ({
             label: game.i18n.localize(`${i18nPrefix}.${option}`),

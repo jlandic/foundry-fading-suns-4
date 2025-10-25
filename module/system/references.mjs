@@ -32,6 +32,36 @@ export const CharacteristicsSpecials = Object.freeze({
     DistributePoints: "special_distribute_points",
 });
 
+export const CharacteristicsGroups = Object.freeze({
+    Body: "body",
+    Mind: "mind",
+    Spirit: "spirit",
+});
+
+export const CharacteristicsGroupMap = Object.freeze({
+    [CharacteristicsGroups.Body]: [
+        Characteristics.Strength,
+        Characteristics.Dexterity,
+        Characteristics.Endurance,
+    ],
+    [CharacteristicsGroups.Mind]: [
+        Characteristics.Wits,
+        Characteristics.Perception,
+        Characteristics.Will,
+    ],
+    [CharacteristicsGroups.Spirit]: [
+        Characteristics.Presence,
+        Characteristics.Intuition,
+        Characteristics.Faith,
+    ],
+});
+
+export const ResistanceTypes = Object.freeze({
+    Body: "body",
+    Mind: "mind",
+    Spirit: "spirit",
+});
+
 export const Skills = Object.freeze({
     Academia: "academia",
     Alchemy: "alchemy",
@@ -151,6 +181,7 @@ export const ManeuverTypes = Object.freeze({
     Defense: "defense",
     InfluencePersuasion: "influence_persuasion",
     InfluenceCoercion: "influence_coercion",
+    Influence: "influence",
 });
 
 export const ManeuverGoalModifiers = Object.freeze({

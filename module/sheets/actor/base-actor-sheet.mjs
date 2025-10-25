@@ -1,3 +1,5 @@
+import { Characteristics, CharacteristicsGroupMap, CharacteristicsGroups, ResistanceTypes, Skills } from "../../system/references.mjs";
+import { RollTypes } from "../../system/rolls.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
 import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
 
@@ -6,8 +8,10 @@ export default class BaseActorSheet extends BaseSheetMixin(
         foundry.applications.sheets.ActorSheetV2,
     )
 ) {
+    locked = true;
+
     static DEFAULT_OPTIONS = {
-        position: { width: 800, height: "auto" },
+        position: { width: 650, height: "auto" },
         window: {
             icon: "fas fa-user-astronaut",
             resizable: true,
@@ -17,18 +21,28 @@ export default class BaseActorSheet extends BaseSheetMixin(
         form: {
             submitOnChange: true,
         },
-        actions: {},
+        actions: {
+            toggleLock: BaseActorSheet._toggleLock,
+            showImage: BaseActorSheet._showImage,
+            openReference: BaseActorSheet._openReference,
+            clearReference: BaseActorSheet._clearReference,
+            bankVP: BaseActorSheet._bankVP,
+            emptyCache: BaseActorSheet._emptyCache,
+            surge: BaseActorSheet._surge,
+            revival: BaseActorSheet._revival,
+            respite: BaseActorSheet._respite,
+        },
     };
 
     static PARTS = {
         header: { template: "systems/fading-suns-4/templates/actor/header.hbs" },
         tabs: { template: "templates/generic/tab-navigation.hbs" },
-        stats: { template: "systems/fading-suns-4/templates/actor/stats.hbs", scrollable: [".scrollable"] },
-        statsExtra: { template: "systems/fading-suns-4/templates/actor/stats-extra.hbs", scrollable: [".scrollable"] },
-        features: { template: "systems/fading-suns-4/templates/actor/features.hbs", scrollable: [".scrollable"] },
-        equipment: { template: "systems/fading-suns-4/templates/actor/equipment.hbs", scrollable: [".scrollable"] },
-        notes: { template: "systems/fading-suns-4/templates/actor/notes.hbs", scrollable: [".scrollable"] },
-        modifiers: { template: "systems/fading-suns-4/templates/shared/parts/modifiers.hbs", scrollable: [".scrollable"] },
+        stats: { template: "systems/fading-suns-4/templates/actor/stats.hbs", scrollable: [""] },
+        statsExtra: { template: "systems/fading-suns-4/templates/actor/stats-extra.hbs", scrollable: [""] },
+        features: { template: "systems/fading-suns-4/templates/actor/features.hbs", scrollable: [""] },
+        inventory: { template: "systems/fading-suns-4/templates/actor/inventory.hbs", scrollable: [""] },
+        notes: { template: "systems/fading-suns-4/templates/actor/notes.hbs", scrollable: [""] },
+        modifiers: { template: "systems/fading-suns-4/templates/shared/parts/modifiers.hbs", scrollable: [""] },
     };
 
     static TAB_REFERENCES = {
@@ -52,10 +66,10 @@ export default class BaseActorSheet extends BaseSheetMixin(
             cssClass: "tab-modifiers",
             label: "fs4.sheets.tabs.modifiers",
         },
-        equipment: {
-            id: "equipment",
-            cssClass: "tab-equipment",
-            label: "fs4.sheets.tabs.equipment",
+        inventory: {
+            id: "inventory",
+            cssClass: "tab-inventory",
+            label: "fs4.sheets.tabs.inventory",
         },
         notes: {
             id: "notes",
@@ -70,8 +84,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 BaseActorSheet.TAB_REFERENCES.stats,
                 BaseActorSheet.TAB_REFERENCES.features,
                 BaseActorSheet.TAB_REFERENCES.modifiers,
-                BaseActorSheet.TAB_REFERENCES.equipment,
-                BaseActorSheet.TAB_REFERENCES.gmNotes,
+                BaseActorSheet.TAB_REFERENCES.inventory,
             ].filter(Boolean),
             initial: "stats",
         }
@@ -81,12 +94,39 @@ export default class BaseActorSheet extends BaseSheetMixin(
         return this.actor.type !== "extra";
     }
 
-    get includeEquipment() {
+    get includeInventory() {
         return this.actor.type !== "extra";
     }
 
     get includeNotes() {
         return this.actor.system.notes !== undefined;
+    }
+
+    get droppableAsReferences() {
+        return [
+            "species",
+            "faction",
+            "class",
+            "calling",
+            "affliction",
+            "blessing",
+            "curse",
+        ];
+    }
+
+    get droppableAsEmbedded() {
+        return [
+            "equipment",
+            "maneuver",
+            "state",
+            "capability",
+            "perk",
+            "weapon",
+            "armor",
+            "handshield",
+            "eshield",
+            "power",
+        ];
     }
 
     _configureRenderOptions(options) {
@@ -98,7 +138,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             "stats",
             "features",
             this.includeModifiers ? "modifiers" : null,
-            this.includeEquipment ? "equipment" : null,
+            this.includeInventory ? "inventory" : null,
             this.includeNotes ? "notes" : null
         ].filter(Boolean);
     }
@@ -106,18 +146,162 @@ export default class BaseActorSheet extends BaseSheetMixin(
     async _prepareContext(options) {
         const context = await super._prepareContext(options);
 
+        let skills = [];
+        if (this.actor.system.skills) {
+            skills = Object.values(Skills).map((skill) => ({
+                name: `system.skills.${skill}`,
+                label: game.i18n.localize(`fs4.skills.${skill}`),
+                value: this.actor.system.skills[skill],
+                rollType: RollTypes.Skill,
+                rollData: {},
+            })).sort((a, b) => a.label.localeCompare(b.label));
+        }
+
+        let characteristics = [];
+        if (this.actor.system.characteristics) {
+            characteristics = Object.values(CharacteristicsGroups).reduce((acc, group) => {
+                const groupCharacteristics = CharacteristicsGroupMap[group].map((characteristic) => ({
+                    name: `system.characteristics.${characteristic}`,
+                    label: game.i18n.localize(`fs4.characteristics.${characteristic}`),
+                    value: this.actor.system.characteristics[characteristic],
+                }));
+
+                return {
+                    ...acc,
+                    [group]: groupCharacteristics,
+                };
+            }, {});
+        }
+
+        const resistance = Object.values(ResistanceTypes).map((type) => ({
+            name: `system.resistance.${type}`,
+            label: game.i18n.localize(`fs4.resistance.${type}`),
+            value: this.actor.resistance[type],
+        }));
+
         foundry.utils.mergeObject(context, {
             system: this.actor.system,
             actor: this.actor.toObject(),
-            isEditable: this.isEditable,
+            isLocked: this.locked,
+            isEditable: !this.locked && this.isEditable,
             isPc: this.actor.type === "pc",
             isExtra: this.actor.type === "extra",
             isUserGM: game.user.isGM,
             description: await enrichHTML(this.actor.system.description),
             gmNotes: game.user.isGM ? await enrichHTML(this.actor.system.gmNotes) : null,
-            species: await this._prepareReference("system.species", "species"),
+            species: await this._prepareReferenceLink("system.species", "species"),
+            class: await this._prepareReferenceLink("system.class", "class"),
+            faction: await this._prepareReferenceLink("system.faction", "faction"),
+            calling: await this._prepareReferenceLink("system.calling", "calling"),
+            affliction: await this._prepareReferenceLink("system.affliction", "affliction"),
+            blessing: await this._prepareReferenceLink("system.blessing", "blessing"),
+            curse: await this._prepareReferenceLink("system.curse", "curse"),
+            skillsLeftColumn: skills.slice(0, skills.length / 2),
+            skillsRightColumn: skills.slice(skills.length / 2),
+            characteristics,
+            resistance,
+            isResistanceEditable: this.isEditable && !!this.actor.system.resistance,
         });
 
         return context;
+    }
+
+    async _onDrop(event) {
+        if (event.target.classList.values().toArray().includes('editor-container')) { return; }
+
+        const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
+        const item = await fromUuid(data.uuid);
+
+        if (this.droppableAsReferences.includes(item.type)) {
+            await this.actor.addReference(`system.${item.type}`, item.system.slug);
+        } else if (this.droppableAsEmbedded.includes(item.type)) {
+            await this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
+        } else {
+            globalThis.log.warn(`Unsupported drop item type: ${item.type}`);
+        }
+    }
+
+    /**
+     * ACTIONS
+     */
+
+    static async _toggleLock(event) {
+        event.preventDefault();
+        this.locked = !this.locked;
+        this.render();
+    }
+
+    static async _showImage(event, target) {
+        event.preventDefault();
+        const {
+            dataset: {
+                src,
+                id,
+                name,
+            },
+        } = target;
+
+        const popout = new foundry.applications.apps.ImagePopout({
+            src,
+            id,
+            window: {
+                title: name,
+            },
+        });
+
+        popout.render(true);
+    }
+
+    static async _openReference(event, target) {
+        event.preventDefault();
+        const { uuid } = target.dataset;
+
+        const item = await fromUuid(uuid);
+
+        if (item) {
+            item.sheet.render(true);
+        }
+    }
+
+    static async _clearReference(event, target) {
+        event.preventDefault();
+        const { name } = target.dataset;
+
+        this.actor.removeReference(name);
+    }
+
+    static async _bankVP(event) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        await this.actor.bankVP();
+    }
+
+    static async _emptyCache(event) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        await this.actor.emptyCache();
+    }
+
+    static async _surge(event) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        await this.actor.surge();
+    }
+
+    static async _revival(event) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        await this.actor.revival();
+    }
+
+    static async _respite(event) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        await this.actor.respite();
     }
 }
