@@ -9,6 +9,7 @@ const PARTIALS = [
     "shared/description.hbs",
     "shared/editor.hbs",
     "shared/reference.hbs",
+    "shared/inline-item.hbs"
 ];
 
 export async function preloadTemplates() {

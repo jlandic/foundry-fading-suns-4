@@ -1,0 +1,32 @@
+<li class="item-list-element flexrow" data-id="{{item.id}}" data-type="{{item.type}}" draggable="true">
+    <details>
+        <summary>
+            <div class="item-name flexrow">
+                <div class="item-image" style="background-image: url({{item.img}})"></div>
+                <h4>{{item.label}}</h4>
+                <div class="item-controls">
+                    {{#each item.controls}}
+                        <a
+                            class="item-control"
+                            data-action="{{this.action}}"
+                            data-id="{{../item.id}}"
+                            data-type="{{../item.type}}"
+                            title="{{this.label}}"
+                        >
+                            <i class="fas fa-{{this.icon}}"></i>
+                        </a>
+                    {{/each}}
+                </div>
+            </div>
+        </summary>
+
+        <div class="item-details">
+            {{#each item.details}}
+                <div>
+                    <h5>{{this.label}}</h5>
+                    <div>{{{this.value}}}</div>
+                </div>
+            {{/each}}
+        </div>
+    </details>
+</li>

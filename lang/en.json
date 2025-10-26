@@ -50,6 +50,7 @@
         "add": "Add",
         "open": "Open",
         "edit": "Edit",
+        "view": "View",
         "unlock": "Unlock sheet",
         "lock": "Lock sheet"
       },

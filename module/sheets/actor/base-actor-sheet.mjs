@@ -1,4 +1,4 @@
-import { Characteristics, CharacteristicsGroupMap, CharacteristicsGroups, ResistanceTypes, Skills } from "../../system/references.mjs";
+import { CharacteristicsGroupMap, CharacteristicsGroups, ResistanceTypes, Skills } from "../../system/references.mjs";
 import { RollTypes } from "../../system/rolls.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
 import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
@@ -31,6 +31,8 @@ export default class BaseActorSheet extends BaseSheetMixin(
             surge: BaseActorSheet._surge,
             revival: BaseActorSheet._revival,
             respite: BaseActorSheet._respite,
+            viewItem: BaseActorSheet._viewItem,
+            deleteItem: BaseActorSheet._deleteItem,
         },
     };
 
@@ -89,6 +91,21 @@ export default class BaseActorSheet extends BaseSheetMixin(
             initial: "stats",
         }
     };
+
+    static INLINE_ITEM_CONTROLS = [
+        {
+            icon: "eye",
+            i18nKey: "fs4.sheets.common.view",
+            action: "viewItem",
+            requiresEdit: false,
+        },
+        {
+            icon: "trash",
+            i18nKey: "fs4.sheets.common.delete",
+            action: "deleteItem",
+            requiresEdit: true,
+        },
+    ];
 
     get includeModifiers() {
         return this.actor.type !== "extra";
@@ -201,6 +218,20 @@ export default class BaseActorSheet extends BaseSheetMixin(
             characteristics,
             resistance,
             isResistanceEditable: this.isEditable && !!this.actor.system.resistance,
+            perks: await this._prepareItemList("perk", {
+                description: "fs4.commonFields.description",
+                benefice: "fs4.perk.fields.benefice",
+            }),
+            capabilities: await this._prepareItemList("capability", {
+                description: "fs4.commonFields.description",
+            }),
+            maneuvers: await this._prepareItemList("maneuver", {
+                description: "fs4.commonFields.description",
+                impact: "fs4.maneuver.fields.impact",
+            }),
+            states: await this._prepareItemList("state", {
+                description: "fs4.commonFields.description",
+            }),
         });
 
         return context;
@@ -219,6 +250,31 @@ export default class BaseActorSheet extends BaseSheetMixin(
         } else {
             globalThis.log.warn(`Unsupported drop item type: ${item.type}`);
         }
+    }
+
+    async _prepareItemList(type, details, options = { sort: true }) {
+        const items = this.actor.items.filter(item => item.type === type);
+
+        if (options.sort) {
+            items.sort((a, b) => a.name.localeCompare(b.name));
+        }
+
+        return await Promise.all(items.map(async (item) => ({
+            id: item.id,
+            type: item.type,
+            img: item.img,
+            label: item.name,
+            controls: BaseActorSheet.INLINE_ITEM_CONTROLS
+                .filter(control => control.requiresEdit ? this.isEditable : true)
+                .map(control => ({
+                    ...control,
+                    label: game.i18n.localize(control.i18nKey),
+                })),
+            details: await Promise.all(Object.keys(details).map(async field => ({
+                label: game.i18n.localize(details[field]),
+                value: await enrichHTML(item.system[field] || "")
+            }))),
+        })));
     }
 
     /**
@@ -303,5 +359,21 @@ export default class BaseActorSheet extends BaseSheetMixin(
         if (!this.isEditable) return;
 
         await this.actor.respite();
+    }
+
+    static _viewItem(event, target) {
+        event.preventDefault();
+        const item = this.actor.items.get(target.dataset.id);
+
+        if (item) {
+            item.sheet.render(true);
+        }
+    }
+
+    static async _deleteItem(event, target) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        await this.actor.deleteEmbeddedDocuments("Item", [target.dataset.id]);
     }
 }
