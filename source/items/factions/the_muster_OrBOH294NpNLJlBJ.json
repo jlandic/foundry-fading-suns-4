@@ -87,7 +87,18 @@
     "curse": "callous",
     "slug": "the_muster",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "mercenary",
+    "capabilities": [
+      [
+        "faction_lore"
+      ],
+      [
+        "special_any_equipment_capability"
+      ],
+      [
+        "special_any_equipment_capability"
+      ]
+    ]
   },
   "_id": "OrBOH294NpNLJlBJ",
   "img": "icons/sundries/flags/banner-blue.webp",

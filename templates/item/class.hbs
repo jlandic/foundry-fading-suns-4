@@ -8,6 +8,8 @@
 
     {{> "fading-suns-4.choices-set" choices=skills titleKey="fs4.class.fields.skills" }}
 
+    {{> "fading-suns-4.choices-set" choices=capabilities titleKey="fs4.calling.fields.capabilities" }}
+
     <section>
         <h2>{{ localize "fs4.class.fields.perks" }}</h2>
         <div>
@@ -17,6 +19,16 @@
         <h3>{{ localize "fs4.sheets.class.classPerks" }}</h3>
         <ul>
             {{#each perks}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.class.fields.factions" }}</h2>
+
+        <ul>
+            {{#each factions}}
                 <li>{{{this}}}</li>
             {{/each}}
         </ul>

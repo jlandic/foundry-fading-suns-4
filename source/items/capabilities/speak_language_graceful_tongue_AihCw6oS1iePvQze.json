@@ -1,22 +1,15 @@
 {
   "type": "capability",
-  "name": "speak_language",
+  "name": "speak_language_graceful_tongue",
   "folder": null,
   "system": {
-    "slug": "speak_language",
+    "slug": "speak_language_graceful_tongue",
     "description": "<p>Vous parlez couramment une langue. La langue commune des Mondes Connus est le tærrien ; les autres langues incluent le vuldrien (langue des Vuldroks) et les diverses langues extraterrestres.</p><p>Note: les al-Malik peuvent apprendre la Langue Gracieuse, un langage complexe fait d’allusions et de métaphores.</p><p>Les Vagabonds peuvent apprendre le patois des vagabonds, un dialecte comprenant tant de jargon qu’il est presque impossible à comprendre pour les non-initiés. Les Racleurs peuvent apprendre l’argot des Racleurs, un mélange de jargon vulgaire et des gestes spécifiques.</p>",
     "type": "lores",
     "category": "knowledge",
-    "preconditions": [
-      [
-        {
-          "type": "faction",
-          "slug": "al_malik"
-        }
-      ]
-    ]
+    "preconditions": []
   },
-  "_id": "XbrXxeQOuPj0eK6s",
+  "_id": "AihCw6oS1iePvQze",
   "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
   "effects": [],
   "flags": {},
@@ -36,5 +29,5 @@
     "ef54fWvGiyPGgegN": 3
   },
   "sort": 0,
-  "_key": "!items!XbrXxeQOuPj0eK6s"
+  "_key": "!items!AihCw6oS1iePvQze"
 }

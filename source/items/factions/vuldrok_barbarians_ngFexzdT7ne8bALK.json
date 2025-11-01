@@ -109,7 +109,21 @@
     "curse": "prideful",
     "slug": "vuldrok_barbarians",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "pirate",
+    "capabilities": [
+      [
+        "war_armor",
+        "combat_armor",
+        "military_weapons"
+      ],
+      [
+        "speak_language_vuldrok"
+      ],
+      [
+        "faction_lore",
+        "crafts"
+      ]
+    ]
   },
   "_id": "ngFexzdT7ne8bALK",
   "img": "icons/sundries/flags/banner-blue.webp",

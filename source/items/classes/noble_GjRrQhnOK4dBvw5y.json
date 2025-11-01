@@ -73,7 +73,25 @@
         }
       ]
     ],
-    "capabilities": [],
+    "capabilities": [
+      [
+        "arts",
+        "beastback",
+        "warfare_lore"
+      ],
+      [
+        "military_weapons"
+      ],
+      [
+        "court_customs"
+      ],
+      [
+        "read_speak_urthish"
+      ],
+      [
+        "planet_lore_homeworld"
+      ]
+    ],
     "perk": "imperious",
     "perks": [
       "martial_arts_graa",
@@ -95,6 +113,13 @@
       "riches",
       "retainer",
       "noble_title"
+    ],
+    "factions": [
+      "al_malik",
+      "decados",
+      "hawkwood",
+      "hazat",
+      "li_halan"
     ]
   },
   "_id": "GjRrQhnOK4dBvw5y",

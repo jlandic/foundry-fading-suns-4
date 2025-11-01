@@ -25,6 +25,26 @@ export default class BaseActor extends foundry.documents.Actor {
         return super.update(data, options);
     }
 
+    async addNewModifier() {
+        return await this.createEmbeddedDocuments("ActiveEffect", [
+            {
+                name: game.i18n.localize("fs4.modifier.defaultName"),
+                disabled: false,
+            }
+        ]);
+    }
+
+    async toggleModifier(id) {
+        const effect = this.effects.get(id);
+        if (!effect) return;
+
+        return await effect.update({ disabled: !effect.disabled });
+    }
+
+    async removeModifier(modifierId) {
+        return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
+    }
+
     get resistance() {
         if (this.system.resistance) {
             return this.system.resistance;
@@ -98,13 +118,13 @@ export default class BaseActor extends foundry.documents.Actor {
 
         await this.update({
             "system.revivals": this.system.revivals - 1,
-            "system.currentVitality": this.system.currentVitality + this.system.revivalVitalityGain
+            "system.currentVitality": Math.min(this.system.currentVitality + this.system.revivalVitalityGain, this.system.maxVitality),
         });
     }
 
     async respite() {
         const updates = {
-            "system.currentVitality": Math.max(this.system.currentVitality + 1, this.maxVitality),
+            "system.currentVitality": Math.min(this.system.currentVitality + 1, this.system.maxVitality),
         };
 
         if (this.system.hasSurges) {

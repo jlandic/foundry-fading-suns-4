@@ -162,9 +162,20 @@ const transformManeuver = async (original, reference) => {
     };
 }
 
+const transformFactions = async (original, reference) => {
+    return {
+        ...original,
+        system: {
+            ...original.system,
+            capabilities: reference.system.capabilities.map((caps) => caps.split(" ou ").map(cap => cap.trim())),
+        }
+    }
+}
+
 const TRANSFORMERS = {
     callings: transformCalling,
     maneuvers: transformManeuver,
+    factions: transformFactions,
 };
 
 const importReference = async (collection) => {

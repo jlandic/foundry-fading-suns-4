@@ -235,6 +235,9 @@
           "song",
           "spacecraft",
           "speak_language_latin",
+          "speak_language_graceful_tongue",
+          "speak_language_vagabond_patois",
+          "speak_language_vuldrok",
           "speak_language",
           "streetwise",
           "surgery_lore",
@@ -271,7 +274,8 @@
           "science",
           "technology",
           "special_any_capability",
-          "special_any_lores_capability"
+          "special_any_lores_capability",
+          "special_any_equipment_capability"
         ]
       }
     }

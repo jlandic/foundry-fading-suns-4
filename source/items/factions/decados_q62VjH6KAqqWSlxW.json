@@ -109,7 +109,21 @@
     "curse": "vain",
     "slug": "decados",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "sybarite",
+    "capabilities": [
+      [
+        "faction_lore"
+      ],
+      [
+        "arts",
+        "medical"
+      ],
+      [
+        "military_weapons",
+        "slug_guns",
+        "energy_guns"
+      ]
+    ]
   },
   "_id": "q62VjH6KAqqWSlxW",
   "img": "icons/sundries/flags/banner-blue.webp",

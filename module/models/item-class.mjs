@@ -11,8 +11,10 @@ export default class ClassDataModel extends BaseItemDataModel {
         return foundry.utils.mergeObject(super.defineSchema(), {
             characteristics: customFields.characteristics(),
             skills: customFields.skills(),
+            capabilities: customFields.capabilities(),
             perk: new StringField({ required: true }),
             perks: new ArrayField(new StringField({ required: true })),
+            factions: new ArrayField(new StringField({ required: true })),
         });
     }
 }

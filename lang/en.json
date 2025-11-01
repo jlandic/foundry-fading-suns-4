@@ -52,7 +52,9 @@
         "edit": "Edit",
         "view": "View",
         "unlock": "Unlock sheet",
-        "lock": "Lock sheet"
+        "lock": "Lock sheet",
+        "toggle": "Toggle",
+        "saveChanges": "Save changes"
       },
       "calling": {
         "onePerkFromListOrOpen": "One calling perk from the list below or from the Open perks list",
@@ -190,6 +192,7 @@
       },
       "special": {
         "special_any_lores_capability": "Any lores capability",
+        "special_any_equipment_capability": "Any equipment capability",
         "special_any_capability": "Any capability",
         "anyInCategory": "Any capability in the '{category}' category"
       }
@@ -198,7 +201,9 @@
       "fields": {
         "characteristics": "Characteristics",
         "skills": "Skills",
-        "perks": "Perks"
+        "perks": "Perks",
+        "factions": "Factions",
+        "capabilities": "Capabilities"
       }
     },
     "faction": {
@@ -321,6 +326,50 @@
         "hubris": "Hubris",
         "vitality": "Vitality"
       }
+    },
+    "modifier": {
+      "fields": {
+        "name": "Name",
+        "value": "Value",
+        "valueType": "Type of value",
+        "context": "Context",
+        "active": "Active",
+        "targetType": "Affected attribute type",
+        "target": "Affected attribute",
+        "austerity": "Austerity",
+        "maneuverSlug": "Maneuver",
+        "notes": "Notes"
+      },
+      "valueTypes": {
+        "constant": "Constant",
+        "formula": "Formula",
+        "favorable": "Favorable",
+        "unfavorable": "Unfavorable"
+      },
+      "targetTypes": {
+        "characteristic": "Characteristic",
+        "skill": "Skill",
+        "resistance": "Resistance",
+        "initiative": "Initiative",
+        "goal": "Goal",
+        "damage": "Damage",
+        "none": "None"
+      },
+      "contexts": {
+        "none": "None",
+        "ranged": "Ranged attack",
+        "melee": "Melee attack",
+        "defense": "Defense",
+        "specific_maneuver": "Maneuver",
+        "influence_persuasion": "Influence (persuasion)",
+        "influence_coercion": "Influence (coercion)",
+        "influence": "Influence"
+      },
+      "initiativeModifierTypes": {
+        "edge": "Edge",
+        "hindmost": "Hindmost"
+      },
+      "defaultName": "New modifier"
     },
     "common": {
       "andSeparator": " and ",

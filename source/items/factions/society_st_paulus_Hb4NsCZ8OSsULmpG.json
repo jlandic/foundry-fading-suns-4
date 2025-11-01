@@ -95,7 +95,20 @@
     "curse": "fidgety",
     "slug": "society_st_paulus",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "explorer",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "beast_lore",
+        "life_science",
+        "xeno_lore"
+      ],
+      [
+        "shipboard_operations"
+      ]
+    ]
   },
   "_id": "Hb4NsCZ8OSsULmpG",
   "img": "icons/sundries/flags/banner-blue.webp",

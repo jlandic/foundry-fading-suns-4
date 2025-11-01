@@ -22,4 +22,24 @@ export default class BaseItem extends foundry.documents.Item {
             },
         };
     }
+
+    async addNewModifier() {
+        return await this.createEmbeddedDocuments("ActiveEffect", [
+            {
+                name: this.name,
+                disabled: false,
+            }
+        ]);
+    }
+
+    async toggleModifier(id) {
+        const effect = this.effects.get(id);
+        if (!effect) return;
+
+        return await effect.update({ disabled: !effect.disabled });
+    }
+
+    async removeModifier(modifierId) {
+        return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
+    }
 }

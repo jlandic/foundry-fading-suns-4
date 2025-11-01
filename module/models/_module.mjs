@@ -15,3 +15,5 @@ export { default as PCDataModel } from "./actor-pc.mjs";
 export { default as HeadlinerDataModel } from "./actor-headliner.mjs";
 export { default as AgentDataModel } from "./actor-agent.mjs";
 export { default as ExtraDataModel } from "./actor-extra.mjs";
+
+export { default as BaseActiveEffectDataModel } from "./base-activeeffect.mjs";

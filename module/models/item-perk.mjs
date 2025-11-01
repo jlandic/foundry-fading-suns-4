@@ -4,7 +4,7 @@ import * as customFields from "./custom-fields.mjs";
 
 const {
     HTMLField,
-    StringField
+    StringField,
 } = foundry.data.fields;
 
 export default class PerkDataModel extends BaseItemDataModel {

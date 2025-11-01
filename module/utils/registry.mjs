@@ -42,4 +42,11 @@ export default class Registry {
     async fromSlugAsync(slug, type) {
         return await fromUuid(this.uuidFromSlug(slug, type));
     }
+
+    async getAllOfType(type) {
+        const uuids = Object.values(this.collection[type] || {});
+        const fromCompendium = await Promise.all(uuids.map(uuid => fromUuid(uuid)));
+        const fromWorld = game.items.filter(item => item.type === type && !this.collection[type][item.system.slug]);
+        return fromCompendium.concat(fromWorld);
+    }
 }

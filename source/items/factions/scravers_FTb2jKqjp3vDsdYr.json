@@ -101,7 +101,21 @@
     "curse": "possessive",
     "slug": "scravers",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "thief",
+    "capabilities": [
+      [
+        "energy_guns",
+        "slug_guns",
+        "tl5",
+        "transport"
+      ],
+      [
+        "streetwise"
+      ],
+      [
+        "faction_lore"
+      ]
+    ]
   },
   "_id": "FTb2jKqjp3vDsdYr",
   "img": "icons/sundries/flags/banner-blue.webp",

@@ -79,7 +79,21 @@
     "curse": "twitchy",
     "slug": "the_dispossessed",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "mercenary",
+    "capabilities": [
+      [
+        "combat_armor",
+        "war_armor"
+      ],
+      [
+        "artillery",
+        "demolitions",
+        "gunnery"
+      ],
+      [
+        "warfare_lore"
+      ]
+    ]
   },
   "_id": "LNR21MomrcOokzCA",
   "img": "icons/sundries/flags/banner-blue.webp",

@@ -85,7 +85,29 @@
         }
       ]
     ],
-    "capabilities": [],
+    "capabilities": [
+      [
+        "slug_guns",
+        "energy_guns",
+        "shipboard_operations"
+      ],
+      [
+        "commons_customs"
+      ],
+      [
+        "read_speak_urthish"
+      ],
+      [
+        "planet_lore_homeworld"
+      ],
+      [
+        "jumpweb_lore_barbarian_worlds",
+        "jumpweb_lore_known_worlds",
+        "tl5",
+        "think_machines",
+        "transport"
+      ]
+    ],
     "perk": "ingenious",
     "perks": [
       "embargo",
@@ -104,6 +126,13 @@
       "saints_blessing",
       "tech_savvy",
       "guild_commission"
+    ],
+    "factions": [
+      "charioteers",
+      "engineers",
+      "the_muster",
+      "the_reeves",
+      "scravers"
     ]
   },
   "_id": "J2n850p4y6iXhOjp",

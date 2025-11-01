@@ -97,7 +97,24 @@
     "curse": "impetuous",
     "slug": "al_malik",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "enthusiast",
+    "capabilities": [
+      [
+        "faction_lore"
+      ],
+      [
+        "commons_customs",
+        "think_machines",
+        "slug_guns",
+        "energy_guns",
+        "military_weapons",
+        "arts",
+        "performing_arts"
+      ],
+      [
+        "speak_language_graceful_tongue"
+      ]
+    ]
   },
   "_id": "ajCCX4CwjBms1MPH",
   "img": "icons/sundries/flags/banner-blue.webp",

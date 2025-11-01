@@ -31,3 +31,7 @@ export const powerSkills = () => new ArrayField(new ArrayField(new SchemaField({
     slug: new StringField({ required: true, choices: Object.values(PowerSkills), initial: () => Object.values(PowerSkills)[0] }),
     value: new NumberField({ required: true }),
 })));
+
+export const capabilities = () => new ArrayField(new ArrayField(new StringField({
+    required: true,
+})));

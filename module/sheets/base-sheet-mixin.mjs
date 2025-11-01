@@ -56,4 +56,63 @@ export const BaseSheetMixin = Base => class extends Base {
 
         return preparedOptions;
     }
-}
+
+    _prepareModifiers() {
+        if (!this.includeModifiers) return [];
+
+        return this.document.effects.map((modifier) => ({
+            id: modifier.id,
+            label: modifier.name,
+            controls: [
+                {
+                    icon: modifier.disabled ? "square" : "check-square",
+                    i18nKey: "fs4.sheets.common.toggle",
+                    action: "toggleModifier",
+                    requiresEdit: true,
+                },
+                {
+                    icon: "edit",
+                    i18nKey: "fs4.sheets.common.edit",
+                    action: "editModifier",
+                    requiresEdit: true,
+                },
+                {
+                    icon: "trash",
+                    i18nKey: "fs4.sheets.common.delete",
+                    action: "removeModifier",
+                    requiresEdit: true,
+                }
+            ],
+            details: [
+                {
+                    label: game.i18n.localize("fs4.modifier.fields.notes"),
+                    value: modifier.system.notes || "",
+                }
+            ]
+        }));
+    }
+
+    static async _addModifier(event) {
+        event.preventDefault();
+
+        await this.document.addNewModifier();
+    }
+
+    static async _editModifier(event, target) {
+        event.preventDefault();
+
+        this.document.effects.get(target.dataset.id)?.sheet?.render(true);
+    }
+
+    static async _toggleModifier(event, target) {
+        event.preventDefault();
+
+        await this.document.toggleModifier(target.dataset.id);
+    }
+
+    static async _removeModifier(event, target) {
+        event.preventDefault();
+
+        await this.document.removeModifier(target.dataset.id);
+    }
+};

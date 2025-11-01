@@ -37,6 +37,9 @@ Hooks.once("init", async () => {
     };
     CONFIG.Actor.documentClass = documents.BaseActor;
 
+    CONFIG.ActiveEffect.dataModels.base = models.BaseActiveEffectDataModel;
+    CONFIG.ActiveEffect.documentClass = documents.BaseActiveEffect;
+
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "curse"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.AfflictionSheet, { types: ["affliction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.CallingSheet, { types: ["calling"], makeDefault: true });
@@ -50,6 +53,9 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.NPCSheet, { types: ["headliner", "agent"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.PCSheet, { types: ["pc"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.ExtraSheet, { types: ["extra"], makeDefault: true });
+
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.ActiveEffect, "fading-suns-4", sheets.ModifierSheet, { makeDefault: true });
+
     await preloadTemplates();
 });
 

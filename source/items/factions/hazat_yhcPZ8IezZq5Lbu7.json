@@ -84,7 +84,21 @@
     "curse": "vengeful",
     "slug": "hazat",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "duelist",
+    "capabilities": [
+      [
+        "combat_armor",
+        "knowledge",
+        "slug_guns",
+        "energy_guns"
+      ],
+      [
+        "faction_lore"
+      ],
+      [
+        "warfare_lore"
+      ]
+    ]
   },
   "_id": "yhcPZ8IezZq5Lbu7",
   "img": "icons/sundries/flags/banner-blue.webp",

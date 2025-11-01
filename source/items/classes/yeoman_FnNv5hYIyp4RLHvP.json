@@ -7,10 +7,28 @@
     "description": "",
     "characteristics": [],
     "skills": [],
-    "capabilities": [],
+    "capabilities": [
+      [
+        "commons_customs",
+        "cathedral_customs",
+        "court_customs"
+      ],
+      [
+        "planet_lore_homeworld"
+      ],
+      [
+        "read_speak_urthish"
+      ],
+      [
+        "special_any_capability"
+      ],
+      [
+        "special_any_capability"
+      ]
+    ],
     "perk": "independant",
     "perks": [
-      "householder",
+      "house_holder",
       "martial_arts_graa",
       "martial_arts_iron_heel",
       "martial_arts_jox_kai_von",
@@ -21,6 +39,13 @@
       "peasant_hero",
       "rep",
       "saints_blessing"
+    ],
+    "factions": [
+      "the_dispossessed",
+      "far",
+      "society_st_paulus",
+      "vuldrok_barbarians",
+      "vagabonds"
     ]
   },
   "_id": "FnNv5hYIyp4RLHvP",

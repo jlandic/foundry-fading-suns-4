@@ -73,7 +73,27 @@
         }
       ]
     ],
-    "capabilities": [],
+    "capabilities": [
+      [
+        "cathedral_customs"
+      ],
+      [
+        "read_speak_urthish"
+      ],
+      [
+        "medical",
+        "musical_instruments",
+        "beastback",
+        "beastcraft",
+        "landcraft"
+      ],
+      [
+        "planet_lore_homeworld"
+      ],
+      [
+        "religion_lore"
+      ]
+    ],
     "perk": "inspiring",
     "perks": [
       "martial_arts_graa",
@@ -101,6 +121,13 @@
       "retainer",
       "petition",
       "church_ordination"
+    ],
+    "factions": [
+      "brother_battle_faction",
+      "eskatonic_order",
+      "sanctuary_aeon",
+      "temple_avesti",
+      "urth_orthodox"
     ]
   },
   "_id": "fCREMEIJncocqJHl",

@@ -1,0 +1,55 @@
+<section>
+    <div class="form-group">
+        <input type="text" name="name" value="{{name}}" />
+    </div>
+
+    <div class="form-group">
+        <label for="system.valueType">{{localize "fs4.modifier.fields.valueType"}}</label>
+        <select name="system.valueType">
+            {{selectOptions valueTypeOptions selected=system.valueType}}
+        </select>
+
+        {{#if displayValue}}
+            <label for="system.value">{{localize "fs4.modifier.fields.value"}}</label>
+            <input type="text" name="system.value" value="{{system.value}}" />
+        {{/if}}
+    </div>
+
+    <div class="form-group">
+        <label for="system.targetType">{{localize "fs4.modifier.fields.targetType"}}</label>
+        <select name="system.targetType">
+            {{selectOptions targetTypeOptions selected=system.targetType}}
+        </select>
+
+        {{#if displayTarget}}
+            <label for="system.target">{{localize "fs4.modifier.fields.target"}}</label>
+            <select name="system.target">
+                {{selectOptions targetOptions selected=system.target}}
+            </select>
+        {{/if}}
+    </div>
+
+    <div class="form-group">
+        <label for="system.context">{{localize "fs4.modifier.fields.context"}}</label>
+        <select name="system.context">
+            {{selectOptions contextOptions selected=system.context}}
+        </select>
+
+        {{#if displayManeuver}}
+            <label for="system.maneuverSlug">{{localize "fs4.modifier.fields.maneuverSlug"}}</label>
+            <select name="system.maneuver">
+                {{selectOptions maneuverOptions selected=system.maneuverSlug}}
+            </select>
+        {{/if}}
+    </div>
+
+    <div class="form-group">
+        <label for="system.notes">{{localize "fs4.modifier.fields.notes"}}</label>
+        <input type="text" name="system.notes" value="{{system.notes}}" />
+    </div>
+
+    <div class="form-group">
+        <label for="system.austerity">{{localize "fs4.modifier.fields.austerity"}}</label>
+        <input type="checkbox" name="system.austerity" {{checked system.austerity}} />
+    </div>
+</section>

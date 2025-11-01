@@ -83,7 +83,23 @@
     "curse": "bitter",
     "slug": "far",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "lawyer",
+    "capabilities": [
+      [
+        "court_customs",
+        "cathedral_customs",
+        "commons_customs"
+      ],
+      [
+        "read_language"
+      ],
+      [
+        "speak_language"
+      ],
+      [
+        "xeno_lore"
+      ]
+    ]
   },
   "_id": "jZ0hnZlYptYngzwF",
   "img": "icons/sundries/flags/banner-blue.webp",

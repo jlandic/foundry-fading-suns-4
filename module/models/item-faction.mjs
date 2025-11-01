@@ -16,6 +16,7 @@ export default class FactionDataModel extends BaseItemDataModel {
             characteristics: customFields.characteristics(),
             skills: customFields.skills(),
             favoredCalling: new StringField({ required: true }),
+            capabilities: customFields.capabilities(),
         });
     }
 }

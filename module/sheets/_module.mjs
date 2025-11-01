@@ -7,6 +7,7 @@ export { default as ManeuverSheet } from "./item/maneuver-sheet.mjs";
 export { default as PerkSheet } from "./item/perk-sheet.mjs";
 export { default as SpeciesSheet } from "./item/species-sheet.mjs";
 
+export { default as ModifierSheet } from "./activeeffect/modifier-sheet.mjs";
 export { default as SimpleItemWithModifiersSheet } from "./item/simple-item-with-modifiers-sheet.mjs";
 
 export { default as NPCSheet } from "./actor/npc-sheet.mjs";

@@ -77,7 +77,21 @@
     "curse": "nosy",
     "slug": "charioteers",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "star_pilot",
+    "capabilities": [
+      [
+        "faction_lore"
+      ],
+      [
+        "shipboard_operations"
+      ],
+      [
+        "jumpweb_lore_barbarian_worlds",
+        "jumpweb_lore_known_worlds",
+        "tl5",
+        "think_machines"
+      ]
+    ]
   },
   "_id": "p92dg8NH5ZUAkEOG",
   "img": "icons/sundries/flags/banner-blue.webp",

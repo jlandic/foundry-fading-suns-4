@@ -87,7 +87,18 @@
     "curse": "uncouth",
     "slug": "vagabonds",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "amateur",
+    "capabilities": [
+      [
+        "streetwise"
+      ],
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "speak_vagabond_patois"
+      ]
+    ]
   },
   "_id": "34METXeVazjU01Q7",
   "img": "icons/sundries/flags/banner-blue.webp",

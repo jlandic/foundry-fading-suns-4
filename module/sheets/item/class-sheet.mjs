@@ -17,8 +17,10 @@ export default class ClassSheet extends BaseItemSheet {
         foundry.utils.mergeObject(context, {
             characteristics: await this._prepareCharacteristicsChoice(),
             skills: await this._prepareSkillsChoice(),
+            capabilities: await this._prepareCapabilitiesChoice(),
             perk: await this._prepareReference("system.perk", "perk"),
             perks: await this._prepareReferenceList("system.perks", "perk"),
+            factions: await this._prepareReferenceList("system.factions", "faction"),
         });
 
         return context;

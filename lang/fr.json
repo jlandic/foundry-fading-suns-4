@@ -23,6 +23,7 @@
     "commonFields": {
       "description": "Description",
       "preconditions": "Préconditions",
+      "modifiers": "Modificateurs",
       "max": "Max",
       "value": "Valeur",
       "current": "Actuel"
@@ -50,7 +51,9 @@
         "edit": "Éditer",
         "view": "Visualiser",
         "unlock": "Déverrouiller la fiche",
-        "lock": "Verrouiller la fiche"
+        "lock": "Verrouiller la fiche",
+        "toggle": "Activer/Désactiver",
+        "saveChanges": "Sauvegarder"
       },
       "calling": {
         "onePerkFromListOrOpen": "Un avantage de vocation parmi la liste ci-dessous ou parmi la liste des avantages ouverts",
@@ -188,6 +191,7 @@
       },
       "special": {
         "special_any_lores_capability": "N'importe quelle aptitude de connaissance",
+        "special_any_equipment_capability": "N'importe quelle aptitude d'équipement",
         "special_any_capability": "N'importe quelle aptitude",
         "anyInCategory": "N'importe quelle aptitude de la catégorie '{category}'"
       }
@@ -196,7 +200,9 @@
       "fields": {
         "characteristics": "Caractéristiques",
         "skills": "Compétences",
-        "perks": "Avantages"
+        "perks": "Avantages",
+        "capabilities": "Aptitudes",
+        "factions": "Factions"
       }
     },
     "faction": {
@@ -316,6 +322,50 @@
         "hubris": "Hubris",
         "vitality": "Vitalité"
       }
+    },
+    "modifier": {
+      "fields": {
+        "name": "Nom",
+        "value": "Valeur",
+        "valueType": "Type de valeur",
+        "context": "Contexte",
+        "active": "Actif",
+        "targetType": "Type d'attribut affecté",
+        "target": "Attribut affecté",
+        "austerity": "Austérité",
+        "maneuverSlug": "Manoeuvre",
+        "notes": "Notes"
+      },
+      "valueTypes": {
+        "constant": "Constante",
+        "formula": "Formule",
+        "favorable": "Favorable",
+        "unfavorable": "Défavorable"
+      },
+      "targetTypes": {
+        "characteristic": "Caractéristique",
+        "skill": "Compétence",
+        "resistance": "Résistance",
+        "initiative": "Initiative",
+        "goal": "Valeur ciblée",
+        "damage": "Dégâts",
+        "none": "Aucun"
+      },
+      "contexts": {
+        "none": "Aucun",
+        "ranged": "Attaque à distance",
+        "melee": "Mêlée",
+        "defense": "Défense",
+        "specific_maneuver": "Manœuvre",
+        "influence_persuasion": "Influence (persuasion)",
+        "influence_coercion": "Influence (coercition)",
+        "influence": "Influence"
+      },
+      "initiativeModifierTypes": {
+        "edge": "Avantage",
+        "hindmost": "À la fin"
+      },
+      "defaultName": "Nouveau modificateur"
     },
     "common": {
       "andSeparator": " et ",

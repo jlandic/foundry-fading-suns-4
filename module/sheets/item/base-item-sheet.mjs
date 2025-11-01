@@ -18,12 +18,9 @@ const READ_ONLY_REFERENCE_TYPES = [
     "affliction",
     "blessing",
     "calling",
-    "capability",
     "class",
     "curse",
     "faction",
-    "maneuver",
-    "perk",
     "species",
 ];
 
@@ -43,17 +40,22 @@ export default class BaseItemSheet extends BaseSheetMixin(
         form: {
             submitOnChange: true,
         },
-        actions: {},
+        actions: {
+            addModifier: BaseItemSheet._addModifier,
+            toggleModifier: BaseItemSheet._toggleModifier,
+            editModifier: BaseItemSheet._editModifier,
+            removeModifier: BaseItemSheet._removeModifier,
+        },
     };
 
     static PARTS = {
         header: { template: "systems/fading-suns-4/templates/item/header.hbs" },
         tabs: { template: "templates/generic/tab-navigation.hbs" },
         ...TYPE_PARTS.reduce((acc, type) => {
-            acc[type] = { template: `systems/fading-suns-4/templates/item/${type}.hbs`, scrollable: [".scrollable"] };
+            acc[type] = { template: `systems/fading-suns-4/templates/item/${type}.hbs`, scrollable: [""] };
             return acc;
         }, {}),
-        modifiers: { template: "systems/fading-suns-4/templates/shared/parts/modifiers.hbs", scrollable: [".scrollable"] },
+        modifiers: { template: "systems/fading-suns-4/templates/shared/parts/modifiers.hbs", scrollable: [""] },
     };
 
     static TABS = {
@@ -107,6 +109,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
             item: this.item.toObject(),
             isEditable: !READ_ONLY_REFERENCE_TYPES.includes(this.item.type),
             description: await enrichHTML(this.item.system.description),
+            modifiers: this._prepareModifiers(),
         });
 
         return context;

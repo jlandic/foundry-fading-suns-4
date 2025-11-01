@@ -81,7 +81,21 @@
     "curse": "clueless",
     "slug": "brother_battle_faction",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "brother_battle",
+    "capabilities": [
+      [
+        "military_weapons"
+      ],
+      [
+        "combat_armor",
+        "war_armor",
+        "slug_guns",
+        "energy_guns"
+      ],
+      [
+        "faction_lore"
+      ]
+    ]
   },
   "_id": "KWzDNvfP9bzfZX3Y",
   "img": "icons/sundries/flags/banner-blue.webp",

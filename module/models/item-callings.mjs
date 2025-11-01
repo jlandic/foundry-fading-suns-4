@@ -10,9 +10,7 @@ const {
 export default class CallingDataModel extends BaseItemDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
-            capabilities: new ArrayField(new ArrayField(new StringField({
-                required: true,
-            }))),
+            capabilities: customFields.capabilities(),
             perks: new ArrayField(new StringField({
                 required: true,
             })),
@@ -28,5 +26,9 @@ export default class CallingDataModel extends BaseItemDataModel {
 
     get isOpen() {
         return this.preconditions.length === 0;
+    }
+
+    isRestrictedToClass(classSlug) {
+        return this.preconditions.some(precondition => precondition.some(condition => condition.type === "class" && condition.value === classSlug));
     }
 }

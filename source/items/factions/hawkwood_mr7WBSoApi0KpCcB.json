@@ -81,7 +81,22 @@
     "curse": "prideful",
     "slug": "hawkwood",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "commander",
+    "capabilities": [
+      [
+        "military_weapons",
+        "slug_guns",
+        "energy_guns"
+      ],
+      [
+        "faction_lore"
+      ],
+      [
+        "beastback",
+        "shipboard_operations",
+        "warfare_lore"
+      ]
+    ]
   },
   "_id": "mr7WBSoApi0KpCcB",
   "img": "icons/sundries/flags/banner-blue.webp",

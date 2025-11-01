@@ -2,6 +2,12 @@
   "json.schemas": [
     {
       "fileMatch": [
+        "source/items/classes/*.json"
+      ],
+      "url": "./schemas/classes.schema.json"
+    },
+    {
+      "fileMatch": [
         "source/items/afflictions/*.json"
       ],
       "url": "./schemas/afflictions.schema.json"

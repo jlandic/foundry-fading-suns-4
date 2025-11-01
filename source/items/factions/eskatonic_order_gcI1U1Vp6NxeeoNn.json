@@ -69,7 +69,19 @@
     "curse": "subtle",
     "slug": "eskatonic_order",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "occultist",
+    "capabilities": [
+      [
+        "occult_lore"
+      ],
+      [
+        "faction_lore"
+      ],
+      [
+        "read_language_latin",
+        "special_any_lores_capability"
+      ]
+    ]
   },
   "_id": "gcI1U1Vp6NxeeoNn",
   "img": "icons/sundries/flags/banner-blue.webp",

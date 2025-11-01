@@ -69,7 +69,20 @@
     "curse": "mammon",
     "slug": "the_reeves",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "lawyer",
+    "capabilities": [
+      [
+        "cathedral_customs",
+        "court_customs",
+        "streetwise"
+      ],
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "faction_lore"
+      ]
+    ]
   },
   "_id": "5LZ6rIsBvK01urGB",
   "img": "icons/sundries/flags/banner-blue.webp",

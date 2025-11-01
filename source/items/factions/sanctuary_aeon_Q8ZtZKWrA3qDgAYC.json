@@ -79,7 +79,18 @@
     "curse": "gullible",
     "slug": "sanctuary_aeon",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "healer",
+    "capabilities": [
+      [
+        "special_any_lores_capability"
+      ],
+      [
+        "medical"
+      ],
+      [
+        "faction_lore"
+      ]
+    ]
   },
   "_id": "Q8ZtZKWrA3qDgAYC",
   "img": "icons/sundries/flags/banner-blue.webp",

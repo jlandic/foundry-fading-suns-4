@@ -3,5 +3,25 @@
     data-group="{{tabs.modifiers.group}}"
     data-tab="{{tabs.modifiers.id}}"
 >
-    TODO
+    <ol class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.commonFields.modifiers" }}</h3>
+
+            <div class="item-controls">
+                <a
+                    class="item-control"
+                    data-action="addModifier"
+                    title="{{ localize "fs4.sheets.common.add" }}"
+                >
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </li>
+    </ol>
+
+    <ol class="item-list">
+        {{#each modifiers}}
+            {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ol>
 </section>

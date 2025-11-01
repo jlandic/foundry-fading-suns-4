@@ -64,35 +64,52 @@
         "perk": {
           "$ref": "./slugs.schema.json#/slug"
         },
-        "curse": {
-          "$ref": "./slugs.schema.json#/slug"
+        "capabilities": {
+          "$ref": "./defs.schema.json#/capabilities"
         },
-        "blessing": {
+        "perks": {
           "type": "array",
           "items": {
             "$ref": "./slugs.schema.json#/slug"
           }
         },
-        "favoredCalling": {
-          "$ref": "./slugs.schema.json#/slug"
-        },
-        "equipment": {
-          "$ref": "./slugs.schema.json#/slug"
-        },
-        "capabilities": {
-          "$ref": "./defs.schema.json#/capabilities"
+        "factions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "al_malik",
+              "brother_battle_faction",
+              "charioteers",
+              "decados",
+              "engineers",
+              "eskatonic_order",
+              "far",
+              "hawkwood",
+              "hazat",
+              "li_halan",
+              "sanctuary_aeon",
+              "scravers",
+              "society_st_paulus",
+              "temple_avesti",
+              "the_dispossessed",
+              "the_muster",
+              "the_reeves",
+              "urth_orthodox",
+              "vagabonds",
+              "vuldrok_barbarians"
+            ]
+          }
         }
       },
       "required": [
         "slug",
         "description",
         "perk",
-        "curse",
-        "blessing",
-        "characteristics",
+        "perks",
         "skills",
-        "equipment",
-        "capabilities"
+        "capabilities",
+        "factions"
       ],
       "additionalProperties": true
     }

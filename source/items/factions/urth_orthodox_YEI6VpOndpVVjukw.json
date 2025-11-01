@@ -73,7 +73,20 @@
     "curse": "austere",
     "slug": "urth_orthodox",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "clergy",
+    "capabilities": [
+      [
+        "court_customs",
+        "special_any_lores_capability"
+      ],
+      [
+        "read_language_latin",
+        "speak_language_latin"
+      ],
+      [
+        "faction_lore"
+      ]
+    ]
   },
   "_id": "YEI6VpOndpVVjukw",
   "img": "icons/sundries/flags/banner-blue.webp",

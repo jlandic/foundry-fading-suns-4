@@ -89,7 +89,20 @@
     "curse": "righteous_curse",
     "slug": "temple_avesti",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "inquisitor",
+    "capabilities": [
+      [
+        "special_any_lores_capability",
+        "slug_guns",
+        "energy_guns"
+      ],
+      [
+        "faction_lore"
+      ],
+      [
+        "torture_lore"
+      ]
+    ]
   },
   "_id": "azcHxrPQmKdDNvrx",
   "img": "icons/sundries/flags/banner-blue.webp",

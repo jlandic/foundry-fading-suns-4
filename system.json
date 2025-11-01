@@ -121,7 +121,13 @@
       "faction": {},
       "maneuver": {},
       "perk": {},
-      "species": {}
+      "species": {},
+      "equipment": {},
+      "weapon": {},
+      "armor": {},
+      "eshield": {},
+      "shield": {},
+      "modifier": {}
     },
     "Actor": {
       "pc": {},

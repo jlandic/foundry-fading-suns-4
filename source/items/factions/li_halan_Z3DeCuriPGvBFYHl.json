@@ -95,7 +95,22 @@
     "curse": "dynastic_stain",
     "slug": "li_halan",
     "equipment": "TODO",
-    "favoredCalling": "TODO"
+    "favoredCalling": "courtier",
+    "capabilities": [
+      [
+        "cathedral_customs"
+      ],
+      [
+        "faction_lore"
+      ],
+      [
+        "military_weapons",
+        "slug_guns",
+        "energy_guns",
+        "arts",
+        "performing_arts"
+      ]
+    ]
   },
   "_id": "Z3DeCuriPGvBFYHl",
   "img": "icons/sundries/flags/banner-blue.webp",

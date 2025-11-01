@@ -189,3 +189,41 @@ export const ManeuverGoalModifiers = Object.freeze({
     MeleeWeapon: "melee_weapon",
     RangedWeapon: "ranged_weapon",
 });
+
+export const ModifierValueTypes = Object.freeze({
+    Constant: "constant",
+    Formula: "formula",
+    Favorable: "favorable",
+    Unfavorable: "unfavorable",
+});
+
+export const ModifierTargetTypes = Object.freeze({
+    None: "none",
+    Skill: "skill",
+    Characteristic: "characteristic",
+    Resistance: "resistance",
+    Initiative: "initiative",
+    Goal: "goal",
+    Damage: "damage",
+});
+
+export const InitiativeModifierTypes = Object.freeze({
+    Edge: "edge",
+    Hindmost: "hindmost",
+});
+
+export const ModifierTypes = Object.freeze({
+    Austerity: "austerity",
+    Untyped: "untyped",
+});
+
+export const ModifierContexts = Object.freeze({
+    None: "none",
+    RangedAttack: "ranged",
+    MeleeAttack: "melee",
+    InfluencePersuasion: "influence_persuasion",
+    InfluenceCoercion: "influence_coercion",
+    Influence: "influence",
+    Defense: "defense",
+    SpecificManeuver: "specific_maneuver",
+});
