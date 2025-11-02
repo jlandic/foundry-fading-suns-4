@@ -19,6 +19,7 @@ const PACKS = [
     "items/maneuvers",
     "items/perks",
     "items/species",
+    "items/equipmentFeatures",
 ];
 
 const TYPE_MAPPING = {}

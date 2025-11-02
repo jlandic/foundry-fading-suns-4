@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Armor features",
+  "color": null,
+  "sorting": "a",
+  "_id": "aZCTmL2siKBeG1Or",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1762121742612,
+    "modifiedTime": 1762121742612,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_key": "!folders!aZCTmL2siKBeG1Or"
+}

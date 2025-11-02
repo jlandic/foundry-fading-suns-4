@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Weapon features",
+  "color": null,
+  "sorting": "a",
+  "_id": "gSSJDLU0GoM0EOOe",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1762121746843,
+    "modifiedTime": 1762121746843,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_key": "!folders!gSSJDLU0GoM0EOOe"
+}

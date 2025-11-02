@@ -1,0 +1,30 @@
+{
+  "type": "shieldFeature",
+  "name": "disguised_shield",
+  "folder": "8W78g8Pb9ObRdpV8",
+  "system": {
+    "slug": "disguised_shield",
+    "description": ""
+  },
+  "_id": "E4hzWeSbYPwaWzKC",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1762121772979,
+    "modifiedTime": 1762121772979,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!E4hzWeSbYPwaWzKC"
+}

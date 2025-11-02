@@ -1,0 +1,30 @@
+{
+  "type": "weaponFeature",
+  "name": "build_in_knuckleduster",
+  "folder": "gSSJDLU0GoM0EOOe",
+  "system": {
+    "slug": "build_in_knuckleduster",
+    "description": ""
+  },
+  "_id": "9NdX7eEOM3c0cFQ5",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1762121778691,
+    "modifiedTime": 1762121778691,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!9NdX7eEOM3c0cFQ5"
+}
