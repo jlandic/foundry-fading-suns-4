@@ -33,10 +33,6 @@ export default class BaseActiveEffectDataModel extends foundry.abstract.TypeData
         };
     }
 
-    get valueAsNumber() {
-        return Number(this.value);
-    }
-
     get targetI18nPrefix() {
         switch (this.targetType) {
             case ModifierTargetTypes.Characteristic:

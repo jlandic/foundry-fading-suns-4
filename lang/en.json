@@ -40,7 +40,9 @@
         "features": "Features",
         "inventory": "Inventory",
         "notes": "Notes",
-        "gmNotes": "GM Notes"
+        "gmNotes": "GM Notes",
+        "modifier": "Modifier",
+        "duration": "Duration"
       },
       "common": {
         "traits": "Traits",
@@ -74,6 +76,35 @@
           "respite": "Respite",
           "revival": "Revival",
           "surge": "Surge"
+        }
+      }
+    },
+    "apps": {
+      "roll": {
+        "rollDice": "Roll the dice",
+        "availableModifiers": "Modifiers",
+        "noModifiersAvailable": "No modifiers available",
+        "goalModifier": "Goal modifier",
+        "modifiers": "Modifiers",
+        "favorable": "Favorable",
+        "unfavorable": "Unfavorable",
+        "goal": "Goal",
+        "result": "Result",
+        "vp": "VP",
+        "circumstances": "Circumstances",
+        "gainVp": "Gain VP",
+        "baseRoll": "Base roll",
+        "techCompulsionRisk": "Tech Compulsion risk!"
+      }
+    },
+    "dialogs": {
+      "selectCharacteristic": {
+        "label": "Select characteristic"
+      },
+      "common": {
+        "buttons": {
+          "ok": "OK",
+          "cancel": "Cancel"
         }
       }
     },
@@ -369,7 +400,8 @@
         "edge": "Edge",
         "hindmost": "Hindmost"
       },
-      "defaultName": "New modifier"
+      "defaultName": "New modifier",
+      "noAffectedAttribute": "No affected attribute"
     },
     "common": {
       "andSeparator": " and ",

@@ -1,0 +1,70 @@
+<div class="scrollable">
+    <h1>{{title}}</h1>
+
+    <h2>{{localize "fs4.apps.roll.baseRoll"}}</h2>
+    <div class="form-group">
+        <strong>
+            {{localize "fs4.apps.roll.goal"}}:
+            {{baseRoll.baseGoal}}
+        </strong>
+        {{#unless isExtra}}
+            <p>
+                {{localize (concat "fs4.skills." rollIntention.skill)}}&nbsp;({{baseRoll.skillActorValue}})&nbsp;+&nbsp;
+                {{localize
+                    (concat "fs4.characteristics." rollIntention.characteristic)
+                }}&nbsp;({{baseRoll.characteristicActorValue}})
+            </p>
+        {{/unless}}
+    </div>
+
+    <h2>{{localize "fs4.apps.roll.modifiers"}}</h2>
+
+    <div class="form-group">
+        <label for="goalModifier">{{localize "fs4.apps.roll.goalModifier"}}</label>
+        <input type="number" name="goalModifier" value="0" />
+    </div>
+
+    <div class="form-group">
+        <label class="checkbox">
+            <input type="checkbox" name="favorable" />
+            {{localize "fs4.apps.roll.favorable"}}
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label class="checkbox">
+            <input type="checkbox" name="unfavorable" />
+            {{localize "fs4.apps.roll.unfavorable"}}
+        </label>
+    </div>
+
+    {{#if availableModifiers.length}}
+        <div class="form-group">
+            <ol class="modifiers-list">
+                {{#each availableModifiers}}
+                    <li class="flexrow">
+                        <div class="flex0">
+                            <label class="checkbox">
+                                <input type="checkbox" name="active.{{this._id}}" />
+                            </label>
+                        </div>
+
+                        <div class="item-name truncate" title="{{this.system.notes}}">
+                            <strong>{{this.humanReadable}}</strong>
+                        </div>
+
+                        <div class="item-parent truncate" title="{{this.parent.name}}">
+                            {{this.parent.name}}
+                        </div>
+                    </li>
+                {{/each}}
+            </ol>
+        </div>
+    {{/if}}
+
+    <div class="form-group">
+        <button type="submit">
+            {{localize "fs4.apps.roll.rollDice"}}
+        </button>
+    </div>
+</div>

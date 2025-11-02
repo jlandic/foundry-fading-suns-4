@@ -1,0 +1,66 @@
+<div class="chat-message">
+    <section>
+        {{#if maneuverName}}
+        <h4 class="roll-title" title="{{maneuverName}}">
+            {{#if maneuverUuid}}
+            @UUID[{{maneuverUuid}}]
+            {{else}}
+            {{maneuverName}}
+            {{/if}}
+        </h4>
+        {{/if}}
+
+        {{#unless isExtra}}
+        <pre>
+{{ skill }} ({{skillActorValue}} + {{skillModifier}} = {{modifiedSkillValue}}) +
+{{ characteristic }} ({{characteristicActorValue}} + {{characteristicModifier}} = {{modifiedCharacteristicValue}})
+= {{baseGoal}}
+            </pre>
+        {{/unless}}
+    </section>
+
+    {{#if hasModifiers}}
+    <section>
+        <h5>{{localize "fs4.apps.roll.modifiers"}}</h5>
+        <ul>
+            {{#each modifiers}}
+            <li>{{this.humanReadable}} <em>({{this.name}})</em></li>
+            {{/each}}
+            {{#if goalModifier}}
+            <li>{{withSign goalModifier}} <em>({{localize "fs4.apps.roll.circumstances"}})</em></li>
+            {{/if}}
+        </ul>
+    </section>
+    {{/if}}
+
+    <section>
+        <h5>{{localize "fs4.apps.roll.result"}}</h5>
+
+        <div>
+            <strong>{{localize "fs4.apps.roll.goal"}}:</strong>&nbsp;{{baseGoal}} + {{goalModifier}} +
+            {{actorGoalModifier}} = {{goal}}
+        </div>
+
+        <div>
+            <strong>{{localize "fs4.apps.roll.result"}}:</strong>
+            {{result}}
+        </div>
+
+        <div>
+            <strong>{{localize "fs4.apps.roll.vp"}}:</strong>
+            {{vp}}
+        </div>
+
+        {{#if techCompulsionRisk}}
+        <div>
+            <strong>{{localize "fs4.apps.roll.techCompulsionRisk"}}</strong>
+        </div>
+        {{/if}}
+
+        {{#if hasVpToGain}}
+        <button class="gain-vp" type="button" data-actor-id="{{actorId}}" data-vp="{{vp}}">
+            {{localize "fs4.apps.roll.gainVp"}}
+        </button>
+        {{/if}}
+    </section>
+</div>

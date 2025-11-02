@@ -40,7 +40,9 @@
         "statsExtra": "Stats",
         "features": "Particularités",
         "inventory": "Inventaire",
-        "notes": "Notes"
+        "notes": "Notes",
+        "modifier": "Modificateur",
+        "duration": "Durée"
       },
       "common": {
         "traits": "Traits",
@@ -73,6 +75,35 @@
           "respite": "Repos",
           "revival": "Second souffle",
           "surge": "Adrénaline"
+        }
+      }
+    },
+    "apps": {
+      "roll": {
+        "rollDice": "Lancer les dés",
+        "availableModifiers": "Modificateurs",
+        "noModifiersAvailable": "Aucun modificateur",
+        "goalModifier": "Mod. de la valeur ciblée",
+        "modifiers": "Modificateurs",
+        "favorable": "Favorable",
+        "unfavorable": "Défavorable",
+        "goal": "Valeur ciblée",
+        "result": "Résultat",
+        "vp": "PV",
+        "circumstances": "Circonstances",
+        "gainVp": "Gagner PV",
+        "baseRoll": "Jet de base",
+        "techCompulsionRisk": "Risque de compulsion tech!"
+      }
+    },
+    "dialogs": {
+      "selectCharacteristic": {
+        "label": "Sélectionner une caractéristique"
+      },
+      "common": {
+        "buttons": {
+          "ok": "OK",
+          "cancel": "Annuler"
         }
       }
     },
@@ -365,7 +396,8 @@
         "edge": "Avantage",
         "hindmost": "À la fin"
       },
-      "defaultName": "Nouveau modificateur"
+      "defaultName": "Nouveau modificateur",
+      "noAffectedAttribute": "Aucun attribut affecté"
     },
     "common": {
       "andSeparator": " et ",

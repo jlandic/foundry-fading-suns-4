@@ -7,6 +7,7 @@ import FS4Logger from './module/utils/logger.mjs';
 import { preloadTemplates } from './module/utils/handlebars.mjs';
 import * as initScripts from './module/scripts/initData.mjs';
 import Registry from './module/utils/registry.mjs';
+import { onHotbarDrop } from './module/utils/hotbar.mjs';
 
 globalThis.babelProgress = null;
 
@@ -57,6 +58,8 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.ActiveEffect, "fading-suns-4", sheets.ModifierSheet, { makeDefault: true });
 
     await preloadTemplates();
+
+    Hooks.on("hotbarDrop", onHotbarDrop);
 });
 
 Hooks.once("ready", async () => {

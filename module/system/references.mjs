@@ -227,3 +227,9 @@ export const ModifierContexts = Object.freeze({
     Defense: "defense",
     SpecificManeuver: "specific_maneuver",
 });
+
+export const RollFavor = Object.freeze({
+    Unfavorable: -1,
+    Normal: 0,
+    Favorable: 1,
+});

@@ -17,23 +17,46 @@ export default class ModifierSheet extends BaseSheetMixin(
         form: {
             submitOnChange: true,
             closeOnSubmit: false,
-            // handler: ModifierSheet._handleUpdates,
         },
         actions: {},
     };
 
     static PARTS = {
+        tabs: { template: "templates/generic/tab-navigation.hbs" },
         modifier: {
-            template: "systems/fading-suns-4/templates/item/modifier.hbs",
+            template: "systems/fading-suns-4/templates/activeeffect/modifier.hbs",
             scrollable: [""],
-        }
+        },
+        duration: {
+            template: "systems/fading-suns-4/templates/activeeffect/duration.hbs",
+            scrollable: [""],
+        },
     };
+
+    static TABS = {
+        primary: {
+            tabs: [
+                {
+                    id: "modifier",
+                    cssClass: "tab-modifier",
+                    label: "fs4.sheets.tabs.modifier",
+                },
+                {
+                    id: "duration",
+                    cssClass: "tab-duration",
+                    label: "fs4.sheets.tabs.duration",
+                }
+            ]
+        }
+    }
 
     _configureRenderOptions(options) {
         super._configureRenderOptions(options);
 
         options.parts = [
+            "tabs",
             "modifier",
+            "duration",
         ];
     }
 

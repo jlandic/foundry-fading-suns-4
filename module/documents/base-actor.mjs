@@ -1,3 +1,7 @@
+import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
+import RollApp from "../apps/roll.mjs";
+import { RollIntention } from "../system/rolls.mjs";
+
 export default class BaseActor extends foundry.documents.Actor {
     async update(data, options = {}) {
         const newSpeciesSlug = data["system.species"];
@@ -139,5 +143,33 @@ export default class BaseActor extends foundry.documents.Actor {
 
         // TODO: if Fatigued, remove Fatigued
         // TODO: roll Vigor + Endurance against Effortless Resistance to gain VP to add to vitality
+    }
+
+    async rollSkill(skill) {
+        const form = await selectCharacteristic();
+        const characteristic = form.characteristic;
+
+        if (!characteristic) return;
+
+        await new RollApp(
+            this,
+            new RollIntention({
+                skill,
+                characteristic,
+            }),
+        ).render(true);
+    }
+
+    async rollManeuver(slug) {
+        const maneuver = this.items.find(i => i.system.slug === slug);
+
+        const rollIntention = new RollIntention({
+            maneuver,
+        });
+
+        await new RollApp(
+            this,
+            rollIntention,
+        ).render(true);
     }
 }

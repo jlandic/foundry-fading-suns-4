@@ -1,5 +1,5 @@
 import { CharacteristicsGroupMap, CharacteristicsGroups, ResistanceTypes, Skills } from "../../system/references.mjs";
-import { RollTypes } from "../../system/rolls.mjs";
+import { RollData, RollIntention, RollTypes } from "../../system/rolls.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
 import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
 
@@ -33,6 +33,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             respite: BaseActorSheet._respite,
             viewItem: BaseActorSheet._viewItem,
             deleteItem: BaseActorSheet._deleteItem,
+            roll: BaseActorSheet._roll,
         },
     };
 
@@ -170,7 +171,9 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 label: game.i18n.localize(`fs4.skills.${skill}`),
                 value: this.actor.system.skills[skill],
                 rollType: RollTypes.Skill,
-                rollData: {},
+                rollData: {
+                    slug: skill,
+                },
             })).sort((a, b) => a.label.localeCompare(b.label));
         }
 
@@ -228,6 +231,18 @@ export default class BaseActorSheet extends BaseSheetMixin(
             maneuvers: await this._prepareItemList("maneuver", {
                 description: "fs4.commonFields.description",
                 impact: "fs4.maneuver.fields.impact",
+            }, {
+                draggable: true,
+                rollData: (maneuver) => ({
+                    slug: maneuver.system.slug,
+                    rollType: RollTypes.Maneuver,
+                }),
+                transformName: (maneuver) => {
+                    const rollIntention = new RollIntention({ maneuver });
+                    const goal = new RollData({ actor: this.actor, rollIntention }).baseGoal;
+
+                    return `${maneuver.name} (${goal})`;
+                }
             }),
             states: await this._prepareItemList("state", {
                 description: "fs4.commonFields.description",
@@ -252,7 +267,18 @@ export default class BaseActorSheet extends BaseSheetMixin(
         }
     }
 
-    async _prepareItemList(type, details, options = { sort: true }) {
+    _onDragStart(event) {
+        event.dataTransfer.setData(
+            "text/plain",
+            JSON.stringify({
+                type: event.currentTarget.dataset.type,
+                itemId: event.currentTarget.dataset.id,
+                actorId: this.actor.id,
+            })
+        )
+    }
+
+    async _prepareItemList(type, details, options = { draggable: false, sort: true, rollData: null, transformName: null }) {
         const items = this.actor.items.filter(item => item.type === type);
 
         if (options.sort) {
@@ -263,7 +289,9 @@ export default class BaseActorSheet extends BaseSheetMixin(
             id: item.id,
             type: item.type,
             img: item.img,
-            label: item.name,
+            draggable: options.draggable,
+            label: options.transformName ? options.transformName(item) : item.name,
+            rollData: options.rollData ? options.rollData(item) : null,
             controls: BaseActorSheet.INLINE_ITEM_CONTROLS
                 .filter(control => control.requiresEdit ? this.isEditable : true)
                 .map(control => ({
@@ -285,6 +313,19 @@ export default class BaseActorSheet extends BaseSheetMixin(
         event.preventDefault();
         this.locked = !this.locked;
         this.render();
+    }
+
+    static async _roll(event, target) {
+        event.preventDefault();
+
+        switch (target.dataset.rollType) {
+            case RollTypes.Skill:
+                await this.actor.rollSkill(target.dataset.rollAttribute);
+                break;
+            case RollTypes.Maneuver:
+                await this.actor.rollManeuver(target.dataset.rollAttribute);
+                break;
+        }
     }
 
     static async _showImage(event, target) {

@@ -1,13 +1,9 @@
 <div class="form-group scored-trait flexrow">
     {{#if rollData}}
-        <img
-            class="inline rollable"
-            src="icons/svg/d20-highlight.svg"
-            alt="{{localize 'fs4.actions.roll'}}"
-            title="{{localize 'fs4.actions.roll'}}"
-            data-action="roll"
-            data-roll-type="{{rollType}}"
-        />
+    <img class="inline rollable" src="icons/svg/d20-highlight.svg" alt="{{localize 'fs4.actions.roll'}}"
+        title="{{localize 'fs4.actions.roll'}}" data-action="roll" data-roll-type="{{rollType}}"
+        data-roll-attribute="{{rollData.slug}}" {{#if draggable}} data-id="{{rollData.slug}}" data-type="{{rollType}}"
+        draggable="true" {{/if}} />
     {{/if}}
 
     <label for="{{name}}">

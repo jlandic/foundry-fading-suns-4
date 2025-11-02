@@ -6,27 +6,29 @@
             <section class="flexrow">
                 <section class="flexcol skills-left">
                     {{#each skillsLeftColumn}}
-                        {{> "fading-suns-4.scored-trait"
-                            label=this.label
-                            name=this.name
-                            value=this.value
-                            rollData=this.rollData
-                            rollType=this.rollType
-                            isEditable=../isEditable
-                        }}
+                    {{> "fading-suns-4.scored-trait"
+                    label=this.label
+                    name=this.name
+                    value=this.value
+                    rollData=this.rollData
+                    rollType=this.rollType
+                    isEditable=../isEditable
+                    draggable=true
+                    }}
                     {{/each}}
                 </section>
 
                 <section class="flexcol skills-right">
                     {{#each skillsRightColumn}}
-                        {{> "fading-suns-4.scored-trait"
-                            label=this.label
-                            name=this.name
-                            value=this.value
-                            rollData=this.rollData
-                            rollType=this.rollType
-                            isEditable=../isEditable
-                        }}
+                    {{> "fading-suns-4.scored-trait"
+                    label=this.label
+                    name=this.name
+                    value=this.value
+                    rollData=this.rollData
+                    rollType=this.rollType
+                    isEditable=../isEditable
+                    draggable=true
+                    }}
                     {{/each}}
                 </section>
             </section>
@@ -37,22 +39,26 @@
                 <div class="flexrow occult-container">
                     <div class="flexcol">
                         <label for="system.psi">{{ localize "fs4.actor.fields.psi" }}</label>
-                        <input class="score" type="number" name="system.psi" value="{{system.psi}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+                        <input class="score" type="number" name="system.psi" value="{{system.psi}}" min="0" {{#unless
+                            isEditable}}disabled{{/unless}} />
                     </div>
 
                     <div class="flexcol">
                         <label for="system.urge">{{ localize "fs4.actor.fields.urge" }}</label>
-                        <input class="score" type="number" name="system.urge" value="{{system.urge}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+                        <input class="score" type="number" name="system.urge" value="{{system.urge}}" min="0" {{#unless
+                            isEditable}}disabled{{/unless}} />
                     </div>
 
                     <div class="flexcol">
                         <label for="system.theurgy">{{ localize "fs4.actor.fields.theurgy" }}</label>
-                        <input class="score" type="number" name="system.theurgy" value="{{system.theurgy}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+                        <input class="score" type="number" name="system.theurgy" value="{{system.theurgy}}" min="0"
+                            {{#unless isEditable}}disabled{{/unless}} />
                     </div>
 
                     <div class="flexcol">
                         <label for="system.hubris">{{ localize "fs4.actor.fields.hubris" }}</label>
-                        <input class="score" type="number" name="system.hubris" value="{{system.hubris}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+                        <input class="score" type="number" name="system.hubris" value="{{system.hubris}}" min="0"
+                            {{#unless isEditable}}disabled{{/unless}} />
                     </div>
                 </div>
             </section>
@@ -63,12 +69,12 @@
             <div class="flexcol">
                 <div class="flexcol flex0">
                     {{#each characteristics.body}}
-                        {{> "fading-suns-4.scored-trait"
-                            label=this.label
-                            name=this.name
-                            value=this.value
-                            isEditable=../isEditable
-                        }}
+                    {{> "fading-suns-4.scored-trait"
+                    label=this.label
+                    name=this.name
+                    value=this.value
+                    isEditable=../isEditable
+                    }}
                     {{/each}}
                 </div>
 
@@ -76,12 +82,12 @@
 
                 <div class="flexcol flex0">
                     {{#each characteristics.mind}}
-                        {{> "fading-suns-4.scored-trait"
-                            label=this.label
-                            name=this.name
-                            value=this.value
-                            isEditable=../isEditable
-                        }}
+                    {{> "fading-suns-4.scored-trait"
+                    label=this.label
+                    name=this.name
+                    value=this.value
+                    isEditable=../isEditable
+                    }}
                     {{/each}}
                 </div>
 
@@ -89,12 +95,12 @@
 
                 <div class="flexcol flex0">
                     {{#each characteristics.spirit}}
-                        {{> "fading-suns-4.scored-trait"
-                            label=this.label
-                            name=this.name
-                            value=this.value
-                            isEditable=../isEditable
-                        }}
+                    {{> "fading-suns-4.scored-trait"
+                    label=this.label
+                    name=this.name
+                    value=this.value
+                    isEditable=../isEditable
+                    }}
                     {{/each}}
                 </div>
 
@@ -103,12 +109,12 @@
                 <div class="flexcol">
                     <h2>{{ localize "fs4.actor.fields.resistance" }}</h2>
                     {{#each resistance}}
-                        {{> "fading-suns-4.scored-trait"
-                            label=this.label
-                            name=this.name
-                            value=this.value
-                            isEditable=../isResistanceEditable
-                        }}
+                    {{> "fading-suns-4.scored-trait"
+                    label=this.label
+                    name=this.name
+                    value=this.value
+                    isEditable=../isResistanceEditable
+                    }}
                     {{/each}}
                 </div>
             </div>
@@ -120,27 +126,29 @@
     <section class="flexrow health-container">
         <h2>{{ localize "fs4.actor.fields.vitality" }}</h2>
         <div class="flex1 vitality-container flexrow">
-            <input class="score" type="number" name="system.currentVitality" value="{{system.vitality.value}}" min="0" max="{{system.vitality.max}}" {{#unless isEditable}}disabled{{/unless}} />
+            <input class="score" type="number" name="system.currentVitality" value="{{system.vitality.value}}" min="0"
+                max="{{system.vitality.max}}" {{#unless isEditable}}disabled{{/unless}} />
             &nbsp;/&nbsp;
             <strong>{{system.vitality.max}}</strong>
         </div>
 
         {{#if system.hasRevivals}}
-            <div class="form-group flex3 flexrow revivals-container">
-                <h2>{{ localize "fs4.actor.fields.revivals" }}</h2>
+        <div class="form-group flex3 flexrow revivals-container">
+            <h2>{{ localize "fs4.actor.fields.revivals" }}</h2>
 
-                <input type="number" class="score" name="system.revivals" value="{{system.revivals}}" min="0" max="{{system.maxRevivals}}" {{#unless isEditable}}disabled{{/unless}} />
+            <input type="number" class="score" name="system.revivals" value="{{system.revivals}}" min="0"
+                max="{{system.maxRevivals}}" {{#unless isEditable}}disabled{{/unless}} />
 
-                <div class="flexcol">
-                    <strong>{{ localize "fs4.commonFields.max" }}</strong>
-                    <span>{{system.maxRevivals}}</span>
-                </div>
-
-                <div class="flexcol">
-                    <strong>{{ localize "fs4.commonFields.value" }}</strong>
-                    <span>{{system.revivalVitalityGain}}</span>
-                </div>
+            <div class="flexcol">
+                <strong>{{ localize "fs4.commonFields.max" }}</strong>
+                <span>{{system.maxRevivals}}</span>
             </div>
+
+            <div class="flexcol">
+                <strong>{{ localize "fs4.commonFields.value" }}</strong>
+                <span>{{system.revivalVitalityGain}}</span>
+            </div>
+        </div>
         {{/if}}
     </section>
 
@@ -150,43 +158,47 @@
         <h2>{{ localize "fs4.actor.fields.vp.vp" }}</h2>
         <div class="flexcol">
             <label for="system.vp.cache">{{ localize "fs4.actor.fields.vp.cache" }}</label>
-            <input class="score" type="number" name="system.vp.cache" value="{{system.vp.cache}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
+            <input class="score" type="number" name="system.vp.cache" value="{{system.vp.cache}}" min="0" {{#unless
+                isEditable}}disabled{{/unless}} />
         </div>
 
         {{#if system.hasVPBank}}
-            <div class="flexcol">
-                <label for="system.vp.bank">{{ localize "fs4.actor.fields.vp.bank" }}</label>
-                <input class="score" type="number" name="system.vp.bank" value="{{system.vp.bank}}" min="0" max="{{system.bankVPCapacity}}" {{#unless isEditable}}disabled{{/unless}} />
-            </div>
+        <div class="flexcol">
+            <label for="system.vp.bank">{{ localize "fs4.actor.fields.vp.bank" }}</label>
+            <input class="score" type="number" name="system.vp.bank" value="{{system.vp.bank}}" min="0"
+                max="{{system.bankVPCapacity}}" {{#unless isEditable}}disabled{{/unless}} />
+        </div>
 
-            {{#if system.hasWP}}
-                <div class="flexcol">
-                    <label for="system.wp">{{ localize "fs4.actor.fields.vp.wp" }}</label>
-                    <input class="score" type="number" name="system.wp" value="{{system.wp}}" min="0" {{#unless isEditable}}disabled{{/unless}} />
-                </div>
-            {{/if}}
+        {{#if system.hasWP}}
+        <div class="flexcol">
+            <label for="system.wp">{{ localize "fs4.actor.fields.vp.wp" }}</label>
+            <input class="score" type="number" name="system.wp" value="{{system.wp}}" min="0" {{#unless
+                isEditable}}disabled{{/unless}} />
+        </div>
+        {{/if}}
 
-            <div class="flexcol">
-                <strong>{{ localize "fs4.actor.fields.vp.bankCapacity" }}</strong>
-                <span>{{system.maxBank}}</span>
-            </div>
+        <div class="flexcol">
+            <strong>{{ localize "fs4.actor.fields.vp.bankCapacity" }}</strong>
+            <span>{{system.maxBank}}</span>
+        </div>
         {{/if}}
 
         {{#if system.hasSurges}}
-            <div class="flexcol">
-                <label for="system.surges">{{ localize "fs4.actor.fields.surges" }}</label>
-                <input class="score" type="number" name="system.surges" value="{{system.surges}}" min="0" max="{{system.maxSurges}}" {{#unless isEditable}}disabled{{/unless}} />
-            </div>
+        <div class="flexcol">
+            <label for="system.surges">{{ localize "fs4.actor.fields.surges" }}</label>
+            <input class="score" type="number" name="system.surges" value="{{system.surges}}" min="0"
+                max="{{system.maxSurges}}" {{#unless isEditable}}disabled{{/unless}} />
+        </div>
 
-            <div class="flexcol">
-                <strong>{{ localize "fs4.commonFields.max" }}</strong>
-                <span>{{system.maxSurges}}</span>
-            </div>
+        <div class="flexcol">
+            <strong>{{ localize "fs4.commonFields.max" }}</strong>
+            <span>{{system.maxSurges}}</span>
+        </div>
 
-            <div class="flexcol">
-                <strong>{{ localize "fs4.commonFields.value" }}</strong>
-                <span>{{system.surgeVPGain}}</span>
-            </div>
+        <div class="flexcol">
+            <strong>{{ localize "fs4.commonFields.value" }}</strong>
+            <span>{{system.surgeVPGain}}</span>
+        </div>
         {{/if}}
     </section>
 
