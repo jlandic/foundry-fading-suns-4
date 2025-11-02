@@ -13,4 +13,8 @@ export default class BaseItemDataModel extends foundry.abstract.TypeDataModel {
             }),
         };
     }
+
+    get isEquippable() {
+        return false;
+    }
 }

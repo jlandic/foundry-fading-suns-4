@@ -135,5 +135,24 @@
             max-width: 3rem;
             text-align: center;
         }
+
+        .damage-type {
+            border: var(--color-text-primary) 2px solid;
+            border-radius: 5%;
+            text-align: center;
+            align-content: center;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            cursor: pointer;
+
+            &.active {
+                color: var(--color-text-accent);
+            }
+
+            &.inactive {
+                color: var(--color-text-subtle);
+                border-width: 0;
+            }
+        }
     }
 }

@@ -46,7 +46,8 @@ export default class ModifierSheet extends BaseSheetMixin(
                     cssClass: "tab-duration",
                     label: "fs4.sheets.tabs.duration",
                 }
-            ]
+            ],
+            initial: "modifier",
         }
     }
 

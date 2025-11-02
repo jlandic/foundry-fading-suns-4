@@ -18,6 +18,13 @@
                 <label for="system.adjustedCost">{{ localize "fs4.equipment.fields.adjustedCost" }}</label>
                 <input type="number" name="system.adjustedCost" value="{{system.adjustedCost}}" readonly />
             </div>
+
+            <div class="form-fields flexcol">
+                <label for="system.size">{{ localize "fs4.equipment.fields.size" }}</label>
+                <select name="system.size">
+                    {{selectOptions sizeOptions selected=system.size}}
+                </select>
+            </div>
         </div>
 
         <div class="form-group flexrow">

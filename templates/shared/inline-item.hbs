@@ -6,6 +6,16 @@
                 <div class="item-image" style="background-image: url({{item.img}})"></div>
                 <h4>{{item.label}}</h4>
                 <div class="item-controls">
+                    {{#if item.equippable}}
+                    <a class="item-control" data-action="toggleEquip" data-id="{{item.id}}" data-type="{{item.type}}"
+                        title="{{ localize 'fs4.actions.toggleEquip' }}">
+                        {{#if item.isEquipped}}
+                        <i class="fas fa-hand-rock active"></i>
+                        {{else}}
+                        <i class="fas fa-hand-paper"></i>
+                        {{/if}}
+                    </a>
+                    {{/if}}
                     {{#if item.rollData}}
                     <a class="item-control" data-action="roll" data-roll-type="{{item.rollData.rollType}}"
                         data-roll-attribute="{{item.rollData.slug}}" title="{{ localize 'fs4.actions.roll' }}">
@@ -14,7 +24,7 @@
                     {{/if}}
                     {{#each item.controls}}
                     <a class="item-control" data-action="{{this.action}}" data-id="{{../item.id}}"
-                        data-type="{{../item.type}}" title="{{this.label}}">
+                        data-type="{{../item.type}}" data-name={{this.name}} title="{{this.label}}">
                         <i class="fas fa-{{this.icon}}"></i>
                     </a>
                     {{/each}}

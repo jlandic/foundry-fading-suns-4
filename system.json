@@ -108,6 +108,18 @@
       "label": "Species",
       "path": "packs/species",
       "type": "Item"
+    },
+    {
+      "name": "equipment",
+      "label": "Equipment",
+      "path": "packs/equipment",
+      "type": "Item"
+    },
+    {
+      "name": "equipmentFeatures",
+      "label": "Equipment Features",
+      "path": "packs/equipmentFeatures",
+      "type": "Item"
     }
   ],
   "documentTypes": {
@@ -127,7 +139,10 @@
       "armor": {},
       "eshield": {},
       "shield": {},
-      "modifier": {}
+      "modifier": {},
+      "weaponFeature": {},
+      "armorFeature": {},
+      "shieldFeature": {}
     },
     "Actor": {
       "pc": {},

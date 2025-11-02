@@ -11,7 +11,15 @@
       "maneuver": "Maneuver",
       "perk": "Perk",
       "species": "Species",
-      "equipment": "Equipment"
+      "equipment": "Equipment",
+      "weapon": "Weapon",
+      "modifier": "Modifier",
+      "weaponFeature": "Weapon Feature",
+      "armor": "Armor",
+      "eshield": "E-shield",
+      "handshield": "Handshield",
+      "shieldFeature": "Shield Feature",
+      "armorFeature": "Armor Feature"
     },
     "Actor": {
       "pc": "PC",
@@ -372,7 +380,8 @@
         "adjustedCost": "Adjusted Cost",
         "goalModifier": "Goal Modifier",
         "agora": "Agora",
-        "techCompulsion": "Tech Compulsion"
+        "techCompulsion": "Tech Compulsion",
+        "size": "Size"
       },
       "qualities": {
         "disrepair": "Disrepair",
@@ -384,6 +393,35 @@
         "premium": "Premium"
       },
       "noTechCompulsion": "No Tech Compulsion"
+    },
+    "weapon": {
+      "fields": {
+        "tl": "TL",
+        "goal": "Goal",
+        "damage": "Damage",
+        "str": "Str.",
+        "range": "Range",
+        "burst": "Burst",
+        "rof": "RoF",
+        "ammo": "Ammo",
+        "features": "Features",
+        "capability": "Capability",
+        "strRequirement": "Str. requirement",
+        "size": "Size",
+        "goalModifier": "Goal Modifier",
+        "melee": "Melee",
+        "extremeRange": "Extreme range",
+        "blastForce": "Blast force"
+      },
+      "range": {
+        "extreme": "Extreme",
+        "short": "Short",
+        "long": "Long"
+      },
+      "noCapabilityRequirement": "No requirement",
+      "increaseAmmo": "Increase ammo",
+      "decreaseAmmo": "Decrease ammo",
+      "reload": "Reload"
     },
     "modifier": {
       "fields": {
@@ -430,6 +468,42 @@
       "defaultName": "New modifier",
       "noAffectedAttribute": "No affected attribute"
     },
+    "damageTypes": {
+      "short": {
+        "blstr": "Blstr",
+        "flm": "Flm",
+        "hrd": "Hrd",
+        "lsr": "Lsr",
+        "shk": "Shk",
+        "slm": "Slm",
+        "son": "Son"
+      },
+      "blstr": "Blaster",
+      "flm": "Flame",
+      "hrd": "Hard",
+      "lsr": "Laser",
+      "shk": "Shock",
+      "slm": "Slam",
+      "son": "Sonic"
+    },
+    "size": {
+      "short": {
+        "xxs": "XXS",
+        "xs": "XS",
+        "s": "S",
+        "m": "M",
+        "l": "L",
+        "xl": "XL",
+        "xxl": "XXL"
+      },
+      "xxs": "Extremely small",
+      "xs": "Very small",
+      "s": "Small",
+      "m": "Medium",
+      "l": "Large",
+      "xl": "Very large",
+      "xxl": "Extremely large"
+    },
     "common": {
       "andSeparator": " and ",
       "orSeparator": " or ",
@@ -449,7 +523,8 @@
       }
     },
     "actions": {
-      "roll": "Roll"
+      "roll": "Roll",
+      "toggleEquip": "Equip/Unequip"
     }
   }
 }

@@ -13,6 +13,7 @@ const TYPE_PARTS = [
     "species",
     "simpleItem",
     "equipment",
+    "weapon",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [
@@ -46,6 +47,8 @@ export default class BaseItemSheet extends BaseSheetMixin(
             toggleModifier: BaseItemSheet._toggleModifier,
             editModifier: BaseItemSheet._editModifier,
             removeModifier: BaseItemSheet._removeModifier,
+            viewItem: BaseItemSheet._viewInlineItem,
+            deleteItem: BaseItemSheet._deleteInlineItem,
         },
     };
 
@@ -78,6 +81,21 @@ export default class BaseItemSheet extends BaseSheetMixin(
             label: "fs4.sheets.tabs.modifiers",
         },
     }
+
+    static INLINE_ITEM_CONTROLS = [
+        {
+            icon: "eye",
+            i18nKey: "fs4.sheets.common.view",
+            action: "viewItem",
+            requiresEdit: false,
+        },
+        {
+            icon: "trash",
+            i18nKey: "fs4.sheets.common.delete",
+            action: "deleteItem",
+            requiresEdit: true,
+        },
+    ];
 
     get typePart() {
         return this.item.type;
@@ -120,6 +138,16 @@ export default class BaseItemSheet extends BaseSheetMixin(
         return context;
     }
 
+    _onRender(context, options) {
+        super._onRender(context, options);
+
+        new foundry.applications.ux.DragDrop.implementation({
+            callbacks: {
+                drop: this._onDrop.bind(this),
+            }
+        }).bind(this.element);
+    }
+
     async _onDrop(event) {
         if (event.target.classList.values().toArray().includes("editor-container")) return;
 
@@ -156,6 +184,29 @@ export default class BaseItemSheet extends BaseSheetMixin(
 
         const sorted = options.sort ? list.sort((a, b) => a?.name?.localeCompare(b?.name) || -1) : list;
         return sorted.map(entry => entry.html);
+    }
+
+    async _prepareInlineItemList(path, type) {
+        const list = await Promise.all(foundry.utils.getProperty(this.item, path).map(async (slug) => {
+            return await globalThis.registry.fromSlugAsync(slug, type);
+        }));
+
+        return await Promise.all(list.map(async (item) => ({
+            id: item.system.slug,
+            label: item.name,
+            type: item.type,
+            controls: BaseItemSheet.INLINE_ITEM_CONTROLS
+                .filter(control => control.requiresEdit ? this.isEditable : true)
+                .map(control => ({
+                    ...control,
+                    name: path,
+                    label: game.i18n.localize(control.i18nKey),
+                })),
+            details: [{
+                label: game.i18n.localize("fs4.commonFields.description"),
+                value: await enrichHTML(item.system.description),
+            }],
+        })));
     }
 
     async _prepareChoicesSet(property, transformOption, optionSeparator) {
@@ -227,5 +278,27 @@ export default class BaseItemSheet extends BaseSheetMixin(
 
     async _preparePowerSkillsChoice(path = "system.powerSkills") {
         return await this._prepareSlugValueChoice(path, "fs4.powerSkills");
+    }
+
+    static async _viewInlineItem(event, target) {
+        event.preventDefault();
+
+        const slug = target.dataset.id;
+        const item = await globalThis.registry.fromSlugAsync(slug, target.dataset.type);
+        item.sheet.render(true);
+    }
+
+    static async _deleteInlineItem(event, target) {
+        event.preventDefault();
+
+        const slug = target.dataset.id;
+        const path = target.dataset.name;
+
+        const list = foundry.utils.getProperty(this.item, path);
+        const index = list.indexOf(slug);
+        if (index !== -1) {
+            list.splice(index, 1);
+            await this.item.update({ [path]: list });
+        }
     }
 }

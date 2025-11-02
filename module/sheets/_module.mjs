@@ -8,6 +8,7 @@ export { default as PerkSheet } from "./item/perk-sheet.mjs";
 export { default as SpeciesSheet } from "./item/species-sheet.mjs";
 
 export { default as EquipmentSheet } from "./item/equipment-sheet.mjs";
+export { default as WeaponSheet } from "./item/weapon-sheet.mjs";
 
 export { default as ModifierSheet } from "./activeeffect/modifier-sheet.mjs";
 export { default as SimpleItemWithModifiersSheet } from "./item/simple-item-with-modifiers-sheet.mjs";

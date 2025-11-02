@@ -11,7 +11,15 @@
       "maneuver": "Manœuvre",
       "perk": "Avantage",
       "species": "Espèce",
-      "equipment": "Équipement"
+      "equipment": "Équipement",
+      "weapon": "Arme",
+      "modifier": "Modificateur",
+      "weaponFeature": "Particularité d'arme",
+      "armor": "Armure",
+      "eshield": "E-bouclier",
+      "handshield": "Bouclier",
+      "shieldFeature": "Particularité de bouclier",
+      "armorFeature": "Particularité d'armure"
     },
     "Actor": {
       "pc": "PJ",
@@ -368,7 +376,8 @@
         "adjustedCost": "Coût ajusté",
         "goalModifier": "Mod.",
         "agora": "Agora",
-        "techCompulsion": "Compulsion tech."
+        "techCompulsion": "Compulsion tech.",
+        "size": "Taille"
       },
       "qualities": {
         "disrepair": "Mauvais état",
@@ -380,6 +389,51 @@
         "premium": "Magistrale"
       },
       "noTechCompulsion": "Pas de Compulsion tech."
+    },
+    "weapon": {
+      "fields": {
+        "tl": "NT",
+        "goal": "Cible",
+        "damage": "Dég.",
+        "str": "For.",
+        "range": "Port.",
+        "burst": "Rafale",
+        "rof": "CdT",
+        "ammo": "Mun.",
+        "features": "Particularités",
+        "capability": "Aptitude",
+        "strRequirement": "FOR",
+        "melee": "Mêlée",
+        "extremeRange": "Portée extrême",
+        "blastForce": "Déflagration"
+      },
+      "range": {
+        "extreme": "Extrême",
+        "short": "Courte",
+        "long": "Longue"
+      },
+      "noCapabilityRequirement": "Aucun prérequis",
+      "increaseAmmo": "Ajouter munition",
+      "decreaseAmmo": "Retirer munition",
+      "reload": "Recharger"
+    },
+    "damageTypes": {
+      "short": {
+        "blstr": "Blast.",
+        "flm": "Feu",
+        "hrd": "Perf.",
+        "lsr": "Laser",
+        "shk": "Choc",
+        "slm": "Impct.",
+        "son": "Son."
+      },
+      "blstr": "Blaster",
+      "flm": "Feu",
+      "hrd": "Perforant",
+      "lsr": "Laser",
+      "shk": "Choc",
+      "slm": "Impact",
+      "son": "Sonique"
     },
     "modifier": {
       "fields": {
@@ -426,6 +480,24 @@
       "defaultName": "Nouveau modificateur",
       "noAffectedAttribute": "Aucun attribut affecté"
     },
+    "size": {
+      "short": {
+        "xxs": "XXS",
+        "xs": "XS",
+        "s": "S",
+        "m": "M",
+        "l": "L",
+        "xl": "XL",
+        "xxl": "XXL"
+      },
+      "xxs": "Extrêmement petite",
+      "xs": "Très petite",
+      "s": "Petite",
+      "m": "Moyenne",
+      "l": "Grande",
+      "xl": "Très grande",
+      "xxl": "Extrêmement grande"
+    },
     "common": {
       "andSeparator": " et ",
       "orSeparator": " ou ",
@@ -445,7 +517,8 @@
       }
     },
     "actions": {
-      "roll": "Lancer le dé"
+      "roll": "Lancer le dé",
+      "toggleEquip": "Équiper/Déséquiper"
     }
   }
 }

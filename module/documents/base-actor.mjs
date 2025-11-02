@@ -172,4 +172,16 @@ export default class BaseActor extends foundry.documents.Actor {
             rollIntention,
         ).render(true);
     }
+
+    toggleEquip(itemId) {
+        const item = this.items.get(itemId);
+        if (!item || !item.system.isEquippable) return;
+
+        const equipped = this.getFlag("fading-suns-4", `equipped.${itemId}`) ?? false;
+        return this.setFlag("fading-suns-4", `equipped.${itemId}`, !equipped);
+    }
+
+    hasItemEquipped(itemId) {
+        return this.getFlag("fading-suns-4", `equipped.${itemId}`) ?? false;
+    }
 }

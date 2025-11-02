@@ -1,4 +1,4 @@
-import { EquipmentCostMultipliers, EquipmentQualities } from "../system/references.mjs";
+import { EquipmentCostMultipliers, EquipmentQualities, EquipmentSizes } from "../system/references.mjs";
 import BaseItemDataModel from "./base-item.mjs";
 
 const {
@@ -20,6 +20,11 @@ export default class PhysicalItemDataModel extends BaseItemDataModel {
                 choices: Object.values(EquipmentQualities),
                 initial: EquipmentQualities.Standard,
             }),
+            size: new StringField({
+                required: true,
+                choices: Object.values(EquipmentSizes),
+                initial: EquipmentSizes.M,
+            }),
         });
     }
 
@@ -29,9 +34,7 @@ export default class PhysicalItemDataModel extends BaseItemDataModel {
         return Math.round(this.cost * EquipmentCostMultipliers[this.quality]);
     }
 
-    get goalModifier() {
-        if (this.quality !== EquipmentQualities.Premium) return 0;
-
-        return 1;
+    get isEquippable() {
+        return true;
     }
 }

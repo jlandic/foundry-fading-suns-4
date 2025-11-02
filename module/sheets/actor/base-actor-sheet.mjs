@@ -21,6 +21,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
         form: {
             submitOnChange: true,
         },
+        dragDrop: [{ dragSelector: '[draggable]' }],
         actions: {
             toggleLock: BaseActorSheet._toggleLock,
             showImage: BaseActorSheet._showImage,
@@ -34,6 +35,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             viewItem: BaseActorSheet._viewItem,
             deleteItem: BaseActorSheet._deleteItem,
             roll: BaseActorSheet._roll,
+            toggleEquip: BaseActorSheet._toggleEquip,
         },
     };
 
@@ -86,8 +88,8 @@ export default class BaseActorSheet extends BaseSheetMixin(
             tabs: [
                 BaseActorSheet.TAB_REFERENCES.stats,
                 BaseActorSheet.TAB_REFERENCES.features,
-                BaseActorSheet.TAB_REFERENCES.modifiers,
                 BaseActorSheet.TAB_REFERENCES.inventory,
+                BaseActorSheet.TAB_REFERENCES.modifiers,
             ].filter(Boolean),
             initial: "stats",
         }
@@ -155,10 +157,20 @@ export default class BaseActorSheet extends BaseSheetMixin(
             "tabs",
             "stats",
             "features",
-            this.includeModifiers ? "modifiers" : null,
             this.includeInventory ? "inventory" : null,
+            this.includeModifiers ? "modifiers" : null,
             this.includeNotes ? "notes" : null
         ].filter(Boolean);
+    }
+
+    _onRender(context, options) {
+        super._onRender(context, options);
+
+        new foundry.applications.ux.DragDrop.implementation({
+            callbacks: {
+                drag: this._onDragStart.bind(this),
+            }
+        }).bind(this.element);
     }
 
     async _prepareContext(options) {
@@ -230,7 +242,10 @@ export default class BaseActorSheet extends BaseSheetMixin(
             }),
             equipment: await this._prepareItemList("equipment", {
                 description: "fs4.commonFields.description",
-            }),
+            }, { equippable: true }),
+            weapons: await this._prepareItemList("weapon", {
+                description: "fs4.commonFields.description",
+            }, { equippable: true }),
             maneuvers: await this._prepareItemList("maneuver", {
                 description: "fs4.commonFields.description",
                 impact: "fs4.maneuver.fields.impact",
@@ -281,7 +296,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
         )
     }
 
-    async _prepareItemList(type, details, options = { draggable: false, sort: true, rollData: null, transformName: null }) {
+    async _prepareItemList(type, details, options = { equippable: false, draggable: false, sort: true, rollData: null, transformName: null }) {
         const items = this.actor.items.filter(item => item.type === type);
 
         if (options.sort) {
@@ -295,6 +310,8 @@ export default class BaseActorSheet extends BaseSheetMixin(
             draggable: options.draggable,
             label: options.transformName ? options.transformName(item) : item.name,
             rollData: options.rollData ? options.rollData(item) : null,
+            equippable: options.equippable,
+            isEquipped: options.equippable ? (this.actor.getFlag("fading-suns-4", `equipped.${item.id}`) ?? false) : false,
             controls: BaseActorSheet.INLINE_ITEM_CONTROLS
                 .filter(control => control.requiresEdit ? this.isEditable : true)
                 .map(control => ({
@@ -419,5 +436,12 @@ export default class BaseActorSheet extends BaseSheetMixin(
         if (!this.isEditable) return;
 
         await this.actor.deleteEmbeddedDocuments("Item", [target.dataset.id]);
+    }
+
+    static _toggleEquip(event, target) {
+        event.preventDefault();
+        if (!this.isEditable) return;
+
+        this.actor.toggleEquip(target.dataset.id);
     }
 }

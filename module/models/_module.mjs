@@ -12,6 +12,10 @@ export { default as PerkDataModel } from "./item-perk.mjs";
 export { default as SpeciesDataModel } from "./item-species.mjs";
 
 export { default as EquipmentDataModel } from "./item-equipment.mjs";
+export { default as WeaponDataModel } from "./item-weapon.mjs";
+export { default as WeaponFeatureDataModel } from "./item-weapon-feature.mjs";
+export { default as ArmorFeatureDataModel } from "./item-armor-feature.mjs";
+export { default as ShieldFeatureDataModel } from "./item-shield-feature.mjs";
 
 export { default as PCDataModel } from "./actor-pc.mjs";
 export { default as HeadlinerDataModel } from "./actor-headliner.mjs";

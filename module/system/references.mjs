@@ -253,3 +253,28 @@ export const EquipmentCostMultipliers = Object.freeze({
     [EquipmentQualities.Masterwork]: 1.2,
     [EquipmentQualities.Premium]: 1.3,
 });
+
+export const EquipmentSizes = Object.freeze({
+    XXS: "xxs",
+    XS: "xs",
+    S: "s",
+    M: "m",
+    L: "l",
+    XL: "xl",
+    XXL: "xxl",
+});
+
+export const DamageTypes = Object.freeze({
+    Blstr: "blstr",
+    Flm: "flm",
+    Hrd: "hrd",
+    Lsr: "lsr",
+    Shk: "shk",
+    Slm: "slm",
+    Son: "son",
+});
+
+export const WeaponTypes = Object.freeze({
+    Melee: "melee",
+    Ranged: "ranged",
+});
