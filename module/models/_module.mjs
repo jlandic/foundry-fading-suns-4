@@ -11,6 +11,8 @@ export { default as ManeuverDataModel } from "./item-maneuver.mjs";
 export { default as PerkDataModel } from "./item-perk.mjs";
 export { default as SpeciesDataModel } from "./item-species.mjs";
 
+export { default as EquipmentDataModel } from "./item-equipment.mjs";
+
 export { default as PCDataModel } from "./actor-pc.mjs";
 export { default as HeadlinerDataModel } from "./actor-headliner.mjs";
 export { default as AgentDataModel } from "./actor-agent.mjs";

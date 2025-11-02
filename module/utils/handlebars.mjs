@@ -4,6 +4,7 @@ const PARTIALS = [
 
     // Item partials
     "item/partials/choices-set.hbs",
+    "item/partials/equipment-base.hbs",
 
     // Shared partials
     "shared/description.hbs",

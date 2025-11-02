@@ -12,6 +12,7 @@ const TYPE_PARTS = [
     "perk",
     "species",
     "simpleItem",
+    "equipment",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [
@@ -90,6 +91,10 @@ export default class BaseItemSheet extends BaseSheetMixin(
         return this.constructor.TABS.primary.tabs.length > 0;
     }
 
+    get droppableAsReferences() {
+        return [];
+    }
+
     _configureRenderOptions(options) {
         super._configureRenderOptions(options);
 
@@ -113,6 +118,19 @@ export default class BaseItemSheet extends BaseSheetMixin(
         });
 
         return context;
+    }
+
+    async _onDrop(event) {
+        if (event.target.classList.values().toArray().includes("editor-container")) return;
+
+        const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
+        const item = await fromUuid(data.uuid);
+
+        if (this.droppableAsReferences.includes(item.type)) {
+            await this.item.addReference(`system.${item.type}`, item.system.slug);
+        } else {
+            globalThis.log.warn(`Unsupported drop item type: ${item.type}`);
+        }
     }
 
     async _prepareReferenceList(path, type, options = { sort: true }) {

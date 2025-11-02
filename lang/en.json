@@ -10,7 +10,8 @@
       "faction": "Faction",
       "maneuver": "Maneuver",
       "perk": "Perk",
-      "species": "Species"
+      "species": "Species",
+      "equipment": "Equipment"
     },
     "Actor": {
       "pc": "PC",
@@ -355,8 +356,34 @@
         "urge": "Urge",
         "theurgy": "Theurgy",
         "hubris": "Hubris",
-        "vitality": "Vitality"
+        "vitality": "Vitality",
+        "equipment": "Equipment",
+        "weapons": "Weapons",
+        "armor": "Armor",
+        "shield": "Shield",
+        "eshield": "E-shield"
       }
+    },
+    "equipment": {
+      "fields": {
+        "tl": "TL",
+        "quality": "Quality",
+        "cost": "Cost",
+        "adjustedCost": "Adjusted Cost",
+        "goalModifier": "Goal Modifier",
+        "agora": "Agora",
+        "techCompulsion": "Tech Compulsion"
+      },
+      "qualities": {
+        "disrepair": "Disrepair",
+        "unreliable": "Unreliable",
+        "poor_workmanship": "Poor workmanship",
+        "standard": "Standard",
+        "superior": "Superior",
+        "masterwork": "Masterwork",
+        "premium": "Premium"
+      },
+      "noTechCompulsion": "No Tech Compulsion"
     },
     "modifier": {
       "fields": {

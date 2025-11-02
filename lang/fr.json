@@ -10,7 +10,8 @@
       "faction": "Faction",
       "maneuver": "Manœuvre",
       "perk": "Avantage",
-      "species": "Espèce"
+      "species": "Espèce",
+      "equipment": "Équipement"
     },
     "Actor": {
       "pc": "PJ",
@@ -351,8 +352,34 @@
         "urge": "Pulsion",
         "theurgy": "Theurgie",
         "hubris": "Hubris",
-        "vitality": "Vitalité"
+        "vitality": "Vitalité",
+        "equipment": "Équipement",
+        "weapons": "Armes",
+        "armor": "Armure",
+        "shield": "Bouclier",
+        "eshield": "E-bouclier"
       }
+    },
+    "equipment": {
+      "fields": {
+        "tl": "NT",
+        "quality": "Qualité",
+        "cost": "Coût",
+        "adjustedCost": "Coût ajusté",
+        "goalModifier": "Mod.",
+        "agora": "Agora",
+        "techCompulsion": "Compulsion tech."
+      },
+      "qualities": {
+        "disrepair": "Mauvais état",
+        "unreliable": "Peu fiable",
+        "poor_workmanship": "Mauvaise qualité",
+        "standard": "Standard",
+        "superior": "Supérieure",
+        "masterwork": "Exceptionnelle",
+        "premium": "Magistrale"
+      },
+      "noTechCompulsion": "Pas de Compulsion tech."
     },
     "modifier": {
       "fields": {

@@ -1,7 +1,14 @@
-<section
-    class="scrollable tab {{tabs.inventory.cssClass}}"
-    data-group="{{tabs.inventory.group}}"
-    data-tab="{{tabs.inventory.id}}"
->
-    TODO
+<section class="scrollable tab {{tabs.inventory.cssClass}}" data-group="{{tabs.inventory.group}}"
+    data-tab="{{tabs.inventory.id}}">
+    <ol class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.equipment" }}</h3>
+        </li>
+    </ol>
+
+    <ol class="item-list">
+        {{#each equipment}}
+        {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ol>
 </section>

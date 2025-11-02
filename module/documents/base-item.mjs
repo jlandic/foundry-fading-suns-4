@@ -23,6 +23,10 @@ export default class BaseItem extends foundry.documents.Item {
         };
     }
 
+    async addReference(property, slug) {
+        await this.update({ [property]: slug });
+    }
+
     async addNewModifier() {
         return await this.createEmbeddedDocuments("ActiveEffect", [
             {

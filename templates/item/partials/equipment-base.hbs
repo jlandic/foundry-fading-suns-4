@@ -1,0 +1,40 @@
+<section class="equipment-base">
+    <h2>{{ localize "fs4.sheets.common.traits" }}</h2>
+    <div class="flexcol">
+        <div class="form-group flexrow">
+            <div class="form-fields flexcol">
+                <label for="system.cost">{{ localize "fs4.equipment.fields.cost" }}</label>
+                <input type="number" name="system.cost" value="{{system.cost}}" />
+            </div>
+
+            <div class="form-fields flexcol">
+                <label for="system.quality">{{ localize "fs4.equipment.fields.quality" }}</label>
+                <select name="system.quality">
+                    {{selectOptions qualityOptions selected=system.quality}}
+                </select>
+            </div>
+
+            <div class="form-fields flexcol">
+                <label for="system.adjustedCost">{{ localize "fs4.equipment.fields.adjustedCost" }}</label>
+                <input type="number" name="system.adjustedCost" value="{{system.adjustedCost}}" readonly />
+            </div>
+        </div>
+
+        <div class="form-group flexrow">
+            <div class="form-fields flexcol">
+                <label for="system.agora">{{ localize "fs4.equipment.fields.agora" }}</label>
+                <input type="text" name="system.agora" value="{{system.agora}}" />
+            </div>
+
+            <div class="form-fields flexcol">
+                <label for="system.tl">{{ localize "fs4.equipment.fields.tl" }}</label>
+                <input type="text" name="system.tl" value="{{system.tl}}" />
+            </div>
+
+            <div class="form-fields flexcol">
+                <label for="system.techCompulsion">{{ localize "fs4.equipment.fields.techCompulsion" }}</label>
+                {{> "fading-suns-4.reference" reference=techCompulsion isEditable=isEditable }}
+            </div>
+        </div>
+    </div>
+</section>

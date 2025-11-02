@@ -233,3 +233,23 @@ export const RollFavor = Object.freeze({
     Normal: 0,
     Favorable: 1,
 });
+
+export const EquipmentQualities = Object.freeze({
+    Disrepair: "disrepair",
+    Unreliable: "unreliable",
+    PoorWorkmanship: "poor_workmanship",
+    Standard: "standard",
+    Superior: "superior",
+    Masterwork: "masterwork",
+    Premium: "premium",
+});
+
+export const EquipmentCostMultipliers = Object.freeze({
+    [EquipmentQualities.Disrepair]: 0.7,
+    [EquipmentQualities.Unreliable]: 0.8,
+    [EquipmentQualities.PoorWorkmanship]: 0.9,
+    [EquipmentQualities.Standard]: 1.0,
+    [EquipmentQualities.Superior]: 1.1,
+    [EquipmentQualities.Masterwork]: 1.2,
+    [EquipmentQualities.Premium]: 1.3,
+});
