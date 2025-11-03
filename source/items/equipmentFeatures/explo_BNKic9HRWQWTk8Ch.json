@@ -1,15 +1,21 @@
 {
   "type": "weaponFeature",
-  "name": "explo",
+  "name": "Explo",
   "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "explo",
-    "description": ""
+    "description": "Les explosions sont des attaques de zone. Le rayon de l'explosion est indiqué en mètres ; toutes les cibles dans la zone d'effet sont affectées. De plus, les explosions ignorent toutes les Résistances sauf les armures. La Résistance renforcée et les avantages comme @SLUG[perk:nimble] ne permettent pas de se défendre contre une explosion."
   },
   "_id": "BNKic9HRWQWTk8Ch",
   "img": "icons/svg/item-bag.svg",
   "effects": [],
-  "flags": {},
+  "flags": {
+    "babele": {
+      "translated": true,
+      "hasTranslation": true,
+      "originalName": "explo"
+    }
+  },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
@@ -18,12 +24,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1762121778691,
-    "modifiedTime": 1762121778691,
+    "modifiedTime": 1762179344434,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!BNKic9HRWQWTk8Ch"

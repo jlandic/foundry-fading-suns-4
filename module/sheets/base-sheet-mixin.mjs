@@ -44,7 +44,12 @@ export const BaseSheetMixin = Base => class extends Base {
             label: game.i18n.localize(`${i18nPrefix}.${option}`),
             value: option,
             selected: option === selectedValue,
-        }));
+        })).sort((a, b) => {
+            if (params.sort) {
+                return a.label.localeCompare(b.label);
+            }
+            return 0;
+        });
 
         if (params.includeNone) {
             preparedOptions.unshift({

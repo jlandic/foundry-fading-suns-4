@@ -299,6 +299,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
         if (index !== -1) {
             list.splice(index, 1);
             await this.item.update({ [path]: list });
+            await this.item.clearImportedEffects(slug);
         }
     }
 }

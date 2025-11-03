@@ -8,7 +8,46 @@
   },
   "_id": "U6m4YOd7jwRfBfCC",
   "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "effects": [
+    {
+      "name": "Guard",
+      "disabled": false,
+      "_id": "ff1Sz3YKcL1j67i1",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "austerity": false,
+        "context": "none",
+        "value": "1",
+        "target": "body",
+        "notes": "When the weapon is in use"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!U6m4YOd7jwRfBfCC.ff1Sz3YKcL1j67i1"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -18,12 +57,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1762121778691,
-    "modifiedTime": 1762121778691,
+    "modifiedTime": 1762164814946,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!U6m4YOd7jwRfBfCC"

@@ -46,4 +46,32 @@ export default class BaseItem extends foundry.documents.Item {
     async removeModifier(modifierId) {
         return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
     }
+
+    async addFeature(slug, type, path = "system.features") {
+        const feature = globalThis.registry.fromSlug(slug, type);
+        if (!feature) return;
+
+        const features = foundry.utils.getProperty(this.system, path) || [];
+        if (!features.includes(slug)) {
+            features.push(slug);
+            feature.effects.forEach((effect) => {
+                this.createEmbeddedDocuments("ActiveEffect", [{
+                    name: effect.name,
+                    disabled: false,
+                    origin: slug,
+                    system: {
+                        ...effect.system,
+                    }
+                }]);
+            });
+            return await this.update({ [path]: features });
+        }
+    }
+
+    async clearImportedEffects(slug) {
+        const effectsToRemove = this.effects.filter(effect => effect.origin === slug);
+        if (effectsToRemove.size > 0) {
+            return await this.deleteEmbeddedDocuments("ActiveEffect", effectsToRemove.map(e => e.id));
+        }
+    }
 }

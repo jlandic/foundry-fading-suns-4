@@ -226,6 +226,11 @@ const translateCalling = (reference, item) => ({
     patrons: reference.system.patrons || "MISSING PATRONS",
 });
 
+const translateFeature = (reference, item) => ({
+    name: reference.name || "MISSING NAME",
+    description: "",
+});
+
 const translateManeuver = (reference, item) => ({
     name: reference.name || "MISSING NAME",
     description: reference.system.description.replace(/^(<p>)?([a-z])/, (_cap, p, char) => `${p || ""}${char.toUpperCase()}`) || "MISSING DESCRIPTION",
@@ -273,6 +278,7 @@ const TRANSLATION_FNS = {
     capabilities: translateCapability,
     callings: translateCalling,
     maneuvers: translateManeuver,
+    equipmentFeatures: translateFeature,
 };
 
 const generateTranslations = async (collection) => {
@@ -301,13 +307,15 @@ const generateTranslations = async (collection) => {
     for (const item of items.sort((a, b) => a.name.localeCompare(b.name))) {
         let reference = references.find(ref => ref.system?.id === item.system.slug);
         if (!reference) {
-            console.warn(`No reference found for item: ${item.system.slug}`);
+            console.warn(`No reference found for item: ${item.system?.slug}`);
             reference = {
                 name: item.name,
             }
         }
 
-        translations.entries[item.system.slug] = TRANSLATION_FNS[collection](reference, item);
+        if (item.system) {
+            translations.entries[item.system.slug] = TRANSLATION_FNS[collection](reference, item);
+        }
     }
 
     await fs.writeFile(path.join(REF_DIR, "_i18n", `fading-suns-4.${collection}.json`), JSON.stringify(translations, null, 2), "utf-8");

@@ -68,6 +68,29 @@ Hooks.once("init", async () => {
     await preloadTemplates();
 
     Hooks.on("hotbarDrop", onHotbarDrop);
+    Babele.get().registerConverters({
+        "translateEffects": (effects, translations) => {
+            return effects.map((effect) => {
+                console.log(effect);
+                console.log(translations);
+                if (translations) {
+                    let translation = translations[effect._id];
+                    const translated = {
+                        name: translation?.name || effect.name,
+                        system: {
+                            notes: translation?.notes || effect.system.notes,
+                        },
+                    };
+
+                    if (translation) {
+                        effect = foundry.utils.mergeObject(effect, translated);
+                    }
+                }
+
+                return effect;
+            });
+        },
+    });
 });
 
 Hooks.once("ready", async () => {

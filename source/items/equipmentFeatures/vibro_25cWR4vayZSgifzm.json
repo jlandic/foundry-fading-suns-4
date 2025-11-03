@@ -1,15 +1,21 @@
 {
   "type": "weaponFeature",
-  "name": "vibro",
+  "name": "Vibro",
   "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "vibro",
-    "description": ""
+    "description": "Réduit l'efficacité des boucliers énergétiques par +1/-1 (c'est à dire que les valeurs d'un bouclier ordinaire passeront de 5/10 à 6/9). Son activation nécessite une cellule à fusion (qui dure 25 tours)."
   },
   "_id": "25cWR4vayZSgifzm",
   "img": "icons/svg/item-bag.svg",
   "effects": [],
-  "flags": {},
+  "flags": {
+    "babele": {
+      "translated": true,
+      "hasTranslation": true,
+      "originalName": "vibro"
+    }
+  },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
@@ -18,12 +24,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1762121778691,
-    "modifiedTime": 1762121778691,
+    "modifiedTime": 1762179344434,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!25cWR4vayZSgifzm"

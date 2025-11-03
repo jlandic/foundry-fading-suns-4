@@ -13,10 +13,10 @@ export const enrichHTML = async (html, options) => {
     );
     text = await foundry.applications.ux.TextEditor.implementation.enrichHTML(text, options);
     return text.replaceAll(
-        /data-tooltip=".+"/g,
+        /data-tooltip=".+?"/g,
         ""
     ).replaceAll(
-        /data-tooltip-text=".+"/g,
+        /data-tooltip-text=".+?"/g,
         ""
     );
 }

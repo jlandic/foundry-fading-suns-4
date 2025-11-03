@@ -1,4 +1,5 @@
 import { Characteristics, InitiativeModifierTypes, ModifierContexts, ModifierTargetTypes, ModifierValueTypes, ResistanceTypes, Skills } from "../../system/references.mjs";
+import { enrichHTML } from "../../utils/text-editor.mjs";
 import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
 
 export default class ModifierSheet extends BaseSheetMixin(
@@ -122,7 +123,7 @@ export default class ModifierSheet extends BaseSheetMixin(
                 return this._prepareSelectOptions(
                     Object.values(ResistanceTypes),
                     this.document.system.target,
-                    "fs4.resistances",
+                    "fs4.resistance",
                 );
             case ModifierTargetTypes.Initiative:
                 return this._prepareSelectOptions(

@@ -26,12 +26,7 @@ export default class WeaponSheet extends EquipmentSheet {
         const item = await fromUuid(data.uuid);
 
         if (item.type === "weaponFeature") {
-            const feature = item.system.slug;
-            const features = this.item.system.features;
-            if (!features.includes(feature)) {
-                features.push(feature);
-                await this.item.update({ "system.features": features });
-            }
+            await this.item.addFeature(item.system.slug, "weaponFeature");
         } else {
             await super._onDrop(event);
         }
