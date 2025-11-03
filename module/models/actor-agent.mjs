@@ -42,8 +42,4 @@ export default class AgentDataModel extends BaseActorDataModel {
             surges: new NumberField({ required: true, initial: 0 }),
         }, { recursive: false });
     }
-
-    get maxVitality() {
-        return this.size + this.level + 5;
-    }
 }

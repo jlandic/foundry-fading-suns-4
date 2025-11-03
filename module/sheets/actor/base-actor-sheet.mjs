@@ -36,6 +36,10 @@ export default class BaseActorSheet extends BaseSheetMixin(
             deleteItem: BaseActorSheet._deleteItem,
             roll: BaseActorSheet._roll,
             toggleEquip: BaseActorSheet._toggleEquip,
+            addModifier: BaseActorSheet._addModifier,
+            toggleModifier: BaseActorSheet._toggleModifier,
+            editModifier: BaseActorSheet._editModifier,
+            removeModifier: BaseActorSheet._removeModifier,
         },
     };
 
@@ -233,6 +237,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             characteristics,
             resistance,
             isResistanceEditable: this.isEditable && !!this.actor.system.resistance,
+            modifiers: this._prepareModifiers(),
             perks: await this._prepareItemList("perk", {
                 description: "fs4.commonFields.description",
                 benefice: "fs4.perk.fields.benefice",
@@ -244,6 +249,9 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 description: "fs4.commonFields.description",
             }, { equippable: true }),
             weapons: await this._prepareItemList("weapon", {
+                description: "fs4.commonFields.description",
+            }, { equippable: true }),
+            armors: await this._prepareItemList("armor", {
                 description: "fs4.commonFields.description",
             }, { equippable: true }),
             maneuvers: await this._prepareItemList("maneuver", {

@@ -65,9 +65,10 @@ export const BaseSheetMixin = Base => class extends Base {
     _prepareModifiers() {
         if (!this.includeModifiers) return [];
 
-        return this.document.effects.map((modifier) => ({
+        return this.document.effects.map(e => e).concat(this.document.embeddedModifiers || []).map((modifier) => ({
             id: modifier.id,
-            label: modifier.name,
+            label: `${modifier.humanReadable} (${modifier.name})`,
+            parentId: modifier.parent?.id || null,
             controls: [
                 {
                     icon: modifier.disabled ? "square" : "check-square",
@@ -81,13 +82,13 @@ export const BaseSheetMixin = Base => class extends Base {
                     action: "editModifier",
                     requiresEdit: true,
                 },
-                {
+                modifier.parent ? null : {
                     icon: "trash",
                     i18nKey: "fs4.sheets.common.delete",
                     action: "removeModifier",
                     requiresEdit: true,
                 }
-            ],
+            ].filter(Boolean),
             details: [
                 {
                     label: game.i18n.localize("fs4.modifier.fields.notes"),
@@ -106,18 +107,28 @@ export const BaseSheetMixin = Base => class extends Base {
     static async _editModifier(event, target) {
         event.preventDefault();
 
+        if (target.dataset.parentId) {
+            const item = this.document.items?.find(i => i.id === target.dataset.parentId);
+            if (item) {
+                const effect = item.effects.get(target.dataset.id);
+                if (effect) {
+                    return effect.sheet.render(true);
+                }
+            }
+        }
+
         this.document.effects.get(target.dataset.id)?.sheet?.render(true);
     }
 
     static async _toggleModifier(event, target) {
         event.preventDefault();
 
-        await this.document.toggleModifier(target.dataset.id);
+        await this.document.toggleModifier(target.dataset.id, target.dataset.origin);
     }
 
     static async _removeModifier(event, target) {
         event.preventDefault();
 
-        await this.document.removeModifier(target.dataset.id);
+        await this.document.removeModifier(target.dataset.id, target.dataset.origin);
     }
 };

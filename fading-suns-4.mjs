@@ -8,6 +8,7 @@ import { preloadTemplates } from './module/utils/handlebars.mjs';
 import * as initScripts from './module/scripts/initData.mjs';
 import Registry from './module/utils/registry.mjs';
 import { onHotbarDrop } from './module/utils/hotbar.mjs';
+import { initializeChatListeners } from './module/utils/global-listerners.mjs';
 
 globalThis.babelProgress = null;
 
@@ -29,6 +30,7 @@ Hooks.once("init", async () => {
         species: models.SpeciesDataModel,
         equipment: models.EquipmentDataModel,
         weapon: models.WeaponDataModel,
+        armor: models.ArmorDataModel,
         weaponFeature: models.WeaponFeatureDataModel,
         armorFeature: models.ArmorFeatureDataModel,
         shieldFeature: models.ShieldFeatureDataModel,
@@ -58,6 +60,7 @@ Hooks.once("init", async () => {
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.EquipmentSheet, { types: ["equipment"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.WeaponSheet, { types: ["weapon"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ArmorSheet, { types: ["armor"], makeDefault: true });
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.NPCSheet, { types: ["headliner", "agent"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.PCSheet, { types: ["pc"], makeDefault: true });
@@ -71,8 +74,6 @@ Hooks.once("init", async () => {
     Babele.get().registerConverters({
         "translateEffects": (effects, translations) => {
             return effects.map((effect) => {
-                console.log(effect);
-                console.log(translations);
                 if (translations) {
                     let translation = translations[effect._id];
                     const translated = {
@@ -102,6 +103,7 @@ Hooks.once("ready", async () => {
     }
 
     globalThis.babelProgress = ui.notifications.info(game.i18n.localize("fs4.notifications.babele.loading"), { progress: true });
+    initializeChatListeners();
 });
 
 Hooks.once("babele.ready", () => {

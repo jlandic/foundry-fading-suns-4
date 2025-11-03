@@ -1,5 +1,4 @@
 import { Characteristics, InitiativeModifierTypes, ModifierContexts, ModifierTargetTypes, ModifierValueTypes, ResistanceTypes, Skills } from "../../system/references.mjs";
-import { enrichHTML } from "../../utils/text-editor.mjs";
 import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
 
 export default class ModifierSheet extends BaseSheetMixin(

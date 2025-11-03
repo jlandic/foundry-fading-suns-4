@@ -1,9 +1,10 @@
+import { EShieldTypes } from "../../system/references.mjs";
 import EquipmentSheet from "./equipment-sheet.mjs";
 
-export default class WeaponSheet extends EquipmentSheet {
+export default class ArmorSheet extends EquipmentSheet {
     static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
         actions: {
-            toggleDamageType: WeaponSheet._toggleDamageType,
+            toggleDamageType: ArmorSheet._toggleDamageType,
         },
     });
 
@@ -20,7 +21,12 @@ export default class WeaponSheet extends EquipmentSheet {
         foundry.utils.mergeObject(context, {
             capability: await this._prepareReferenceLink("system.capability", "capability"),
             damageTypeOptions: this._prepareDamageTypeOptions(this.item.system.anti),
-            features: await this._prepareInlineItemList("system.features", "weaponFeature"),
+            features: await this._prepareInlineItemList("system.features", "armorFeature"),
+            eshieldTypeOptions: this._prepareSelectOptions(
+                Object.values(EShieldTypes),
+                this.item.system.eshieldCompatibility,
+                "fs4.eshieldTypes"
+            ),
         });
 
         return context;
@@ -32,8 +38,8 @@ export default class WeaponSheet extends EquipmentSheet {
         const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
         const item = await fromUuid(data.uuid);
 
-        if (item.type === "weaponFeature") {
-            await this.item.addFeature(item.system.slug, "weaponFeature");
+        if (item.type === "armorFeature") {
+            await this.item.addFeature(item.system.slug, "armorFeature");
         } else {
             await super._onDrop(event);
         }

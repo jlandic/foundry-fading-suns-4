@@ -255,6 +255,7 @@ export const EquipmentCostMultipliers = Object.freeze({
 });
 
 export const EquipmentSizes = Object.freeze({
+    None: "none",
     XXS: "xxs",
     XS: "xs",
     S: "s",
@@ -277,4 +278,10 @@ export const DamageTypes = Object.freeze({
 export const WeaponTypes = Object.freeze({
     Melee: "melee",
     Ranged: "ranged",
+});
+
+export const EShieldTypes = Object.freeze({
+    Es: "es",
+    Ea: "ea",
+    Eb: "eb",
 });

@@ -1,0 +1,52 @@
+<section class="scrollable tab {{tabs.main.cssClass}}" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
+    {{> "fading-suns-4.equipment-base"}}
+
+    <div class="flexrow">
+        <div class="flexcol">
+            <label for="system.res">{{ localize "fs4.armor.fields.res" }}</label>
+            <input type="number" name="system.res" value="{{system.res}}" />
+        </div>
+
+        <div class="flexcol">
+            <label for="system.eshieldCompatibility">{{ localize "fs4.armor.fields.eshieldCompatibility" }}</label>
+            <select name="system.eshieldCompatibility">
+                {{selectOptions eshieldTypeOptions selected=system.eshieldCompatibility}}
+            </select>
+        </div>
+
+        <div class="flexcol">
+            <label for="system.capability">{{ localize "fs4.armor.fields.capability" }}</label>
+            {{> "fading-suns-4.reference" reference=capability isEditable=isEditable }}
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="flexrow">
+        {{#each damageTypeOptions}}
+        <span class="damage-type {{#if this.checked}}active{{else}}inactive{{/if}}" data-type="{{this.type}}"
+            data-action="toggleDamageType" title="{{this.title}}">
+            {{this.label}}
+        </span>
+        {{/each}}
+    </div>
+
+    <hr>
+
+    <section>
+        <ol class="item-list">
+            <li class="item-list-header flexrow">
+                <h3>{{ localize "fs4.armor.fields.features" }}</h3>
+            </li>
+        </ol>
+
+        <ol class="item-list">
+            {{#each features}}
+            {{> "fading-suns-4.inline-item" item=this}}
+            {{/each}}
+        </ol>
+    </section>
+
+    <h2>{{ localize "fs4.commonFields.description" }}</h2>
+    {{> "fading-suns-4.editor" name="system.description" value=description}}
+</section>

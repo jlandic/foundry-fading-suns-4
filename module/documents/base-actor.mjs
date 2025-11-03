@@ -1,5 +1,6 @@
 import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
+import { ModifierTargetTypes, ResistanceTypes } from "../system/references.mjs";
 import { RollIntention } from "../system/rolls.mjs";
 
 export default class BaseActor extends foundry.documents.Actor {
@@ -39,7 +40,10 @@ export default class BaseActor extends foundry.documents.Actor {
     }
 
     async toggleModifier(id) {
-        const effect = this.effects.get(id);
+        let effect = this.effects.get(id);
+        if (!effect) {
+            effect = this.embeddedModifiers.find(e => e.id === id);
+        }
         if (!effect) return;
 
         return await effect.update({ disabled: !effect.disabled });
@@ -49,21 +53,8 @@ export default class BaseActor extends foundry.documents.Actor {
         return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
     }
 
-    get resistance() {
-        if (this.system.resistance) {
-            return this.system.resistance;
-        }
-
-        // TODO: calculate total Resistance from modifiers
-        return {
-            body: 0,
-            mind: 0,
-            spirit: 0,
-        }
-    }
-
     async gainVP(amount) {
-        await this.update("system.vp.cache", this.system.vp.cache + amount);
+        await this.update({ ["system.vp.cache"]: this.system.vp.cache + amount });
     }
 
     async bankVP() {
@@ -183,5 +174,49 @@ export default class BaseActor extends foundry.documents.Actor {
 
     hasItemEquipped(itemId) {
         return this.getFlag("fading-suns-4", `equipped.${itemId}`) ?? false;
+    }
+
+    get embeddedModifiers() {
+        return this.items
+            .filter(i => !i.system.isEquippable || this.hasItemEquipped(i.id))
+            .map(i => i.effects.map(e => e)).flat();
+    }
+
+    get allModifiers() {
+        return this.effects.map(e => e).concat(this.embeddedModifiers);
+    }
+
+    get resistance() {
+        if (this.system.resistance) {
+            return this.system.resistance;
+        }
+
+        return {
+            body: this.resistanceMod(ResistanceTypes.Body),
+            mind: this.resistanceMod(ResistanceTypes.Mind),
+            spirit: this.resistanceMod(ResistanceTypes.Spirit),
+        }
+    }
+
+    resistanceMod(resistanceType) {
+        const embedded = this.embeddedModifiers
+            .filter(m => !m.disabled)
+            .filter(m => m.system.targetType === ModifierTargetTypes.Resistance && m.system.target === resistanceType)
+            .reduce((sum, m) => sum + Number(m.system.value), 0);
+
+        const modifiers = this.effects
+            .filter(m => !m.disabled)
+            .filter(m => m.system.targetType === ModifierTargetTypes.Resistance && m.system.target === resistanceType)
+            .reduce((sum, m) => sum + Number(m.system.value), 0);
+
+        if (resistanceType === ResistanceTypes.Body) {
+            const armor = this.items
+                .filter(i => i.type === "armor" && this.hasItemEquipped(i.id))
+                .reduce((sum, i) => sum + Number(i.system.res), 0);
+
+            return embedded + modifiers + armor;
+        }
+
+        return embedded + modifiers;
     }
 }

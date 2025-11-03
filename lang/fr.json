@@ -364,6 +364,7 @@
         "equipment": "Équipement",
         "weapons": "Armes",
         "armor": "Armure",
+        "armors": "Armures",
         "shield": "Bouclier",
         "eshield": "E-bouclier"
       }
@@ -377,7 +378,8 @@
         "goalModifier": "Mod.",
         "agora": "Agora",
         "techCompulsion": "Compulsion tech.",
-        "size": "Taille"
+        "size": "Taille",
+        "curio": "Curio"
       },
       "qualities": {
         "disrepair": "Mauvais état",
@@ -416,6 +418,17 @@
       "increaseAmmo": "Ajouter munition",
       "decreaseAmmo": "Retirer munition",
       "reload": "Recharger"
+    },
+    "armor": {
+      "fields": {
+        "res": "Résistance",
+        "dexModifier": "Dex.",
+        "vigorModifier": "Vigueur",
+        "features": "Particularités",
+        "eshieldCompatibility": "Compatibilité",
+        "capability": "Aptitude"
+      },
+      "noCapabilityRequirement": "Aucun prérequis"
     },
     "damageTypes": {
       "short": {
@@ -480,8 +493,19 @@
       "defaultName": "Nouveau modificateur",
       "noAffectedAttribute": "Aucun attribut affecté"
     },
+    "eshieldTypes": {
+      "short": {
+        "es": "eS",
+        "ea": "eA",
+        "eb": "eB"
+      },
+      "es": "eS",
+      "ea": "eA",
+      "eb": "eB"
+    },
     "size": {
       "short": {
+        "none": "-",
         "xxs": "XXS",
         "xs": "XS",
         "s": "S",
@@ -490,6 +514,7 @@
         "xl": "XL",
         "xxl": "XXL"
       },
+      "none": "-",
       "xxs": "Extrêmement petite",
       "xs": "Très petite",
       "s": "Petite",
@@ -514,6 +539,9 @@
         "actor": {
           "notEnoughVP": "Pas assez de PV à dépenser."
         }
+      },
+      "warn": {
+        "cantStealVp": "These VPs do not belong to you."
       }
     },
     "actions": {

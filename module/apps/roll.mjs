@@ -53,26 +53,20 @@ export default class RollApp extends foundry.applications.api.HandlebarsApplicat
     }
 
     _prepareAvailableModifiers() {
-        return this.actor.items
-            .filter(item => item.system.isEquippable ? this.actor.isEquipped(item.id) : true)
-            .map((item) => {
-                return item.effects
-                    .filter(effect => !effect.disabled && effect.appliesToRoll(this.rollIntention))
-                    .map(effect => ({
-                        ...effect.toObject(),
-                        parent: {
-                            name: item.name,
-                        },
-                        humanReadable: effect.humanReadable,
-                    }));
-            }).flat();
+        return this.actor.allModifiers
+            .filter(effect => !effect.disabled && effect.appliesToRoll(this.rollIntention))
+            .map(effect => ({
+                ...effect.toObject(),
+                parent: {
+                    name: effect.parent?.name || "",
+                },
+                humanReadable: effect.humanReadable,
+            }));
     }
 
     _fetchSelectedModifiers(formData) {
-        return this.actor.items.map((item) => {
-            return item.effects
-                .filter(effect => formData[`active.${effect._id}`] === "true")
-        }).flat();
+        return this.actor.allModifiers
+            .filter(effect => formData[`active.${effect._id}`] === "true");
     }
 
     static async _onSubmit(event, _form, formData) {

@@ -24,7 +24,8 @@
                     {{/if}}
                     {{#each item.controls}}
                     <a class="item-control" data-action="{{this.action}}" data-id="{{../item.id}}"
-                        data-type="{{../item.type}}" data-name={{this.name}} title="{{this.label}}">
+                        data-type="{{../item.type}}" data-name="{{this.name}}" {{#if
+                        ../item.parentId}}data-parent-id="{{../item.parentId}}" {{/if}} title="{{this.label}}">
                         <i class="fas fa-{{this.icon}}"></i>
                     </a>
                     {{/each}}

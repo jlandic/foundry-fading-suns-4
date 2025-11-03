@@ -27,6 +27,10 @@ export default class BaseItem extends foundry.documents.Item {
         await this.update({ [property]: slug });
     }
 
+    async removeReference(property) {
+        await this.update({ [property]: null });
+    }
+
     async addNewModifier() {
         return await this.createEmbeddedDocuments("ActiveEffect", [
             {

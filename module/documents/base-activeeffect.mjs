@@ -6,25 +6,43 @@ export default class BaseActiveEffect extends foundry.documents.ActiveEffect {
     }
 
     get humanReadable() {
+        let context = "";
+
+        switch (this.system.context) {
+            case ModifierContexts.MeleeAttack:
+            case ModifierContexts.RangedAttack:
+            case ModifierContexts.Influence:
+            case ModifierContexts.InfluencePersuasion:
+            case ModifierContexts.InfluenceCoercion:
+            case ModifierContexts.Defense:
+                context = `${game.i18n.localize("fs4.modifier.contexts." + this.system.context)}: `;
+                break;
+            case ModifierContexts.SpecificManeuver:
+                if (this.maneuverName) {
+                    context = `${this.maneuverName}: `;
+                }
+                break;
+        }
+
         if (this.system.valueType === ModifierValueTypes.Favorable) {
-            return game.i18n.localize("fs4.modifier.valueTypes.favorable");
+            return context + game.i18n.localize("fs4.modifier.valueTypes.favorable");
         }
 
         if (this.system.valueType === ModifierValueTypes.Unfavorable) {
-            return game.i18n.localize("fs4.modifier.valueTypes.unfavorable");
+            return context + game.i18n.localize("fs4.modifier.valueTypes.unfavorable");
         }
 
         if (this.system.targetType === ModifierTargetTypes.Goal) {
-            return `${this.system.value >= 0 ? "+" : ""}${this.system.value}`;
+            return `${context}${this.system.value >= 0 ? "+" : ""}${this.system.value}`;
         }
 
         if (this.system.targetType === ModifierTargetTypes.None) {
-            return game.i18n.localize(`fs4.modifier.valueTypes.${this.system.valueType}`);
+            return context + game.i18n.localize(`fs4.modifier.valueTypes.${this.system.valueType}`);
         }
 
         const targetName = game.i18n.localize(`${this.targetI18nPrefix}.${this.system.target}`);
 
-        return `${targetName} ${this.system.value >= 0 ? "+" : ""}${this.system.value}`;
+        return `${context}${targetName} ${this.system.value >= 0 ? "+" : ""}${this.system.value}`;
     }
 
     get maneuverName() {
@@ -41,7 +59,7 @@ export default class BaseActiveEffect extends foundry.documents.ActiveEffect {
             case ModifierTargetTypes.Skill:
                 return "fs4.skills";
             case ModifierTargetTypes.Resistance:
-                return "fs4.resistances";
+                return "fs4.resistance";
             default:
                 return "fs4.modifier.noAffectedAttribute";
         }
@@ -69,7 +87,7 @@ export default class BaseActiveEffect extends foundry.documents.ActiveEffect {
         }
 
         if (!rollIntention.maneuver) {
-            return true;
+            return this.system.context === ModifierContexts.None;
         }
 
         switch (this.system.context) {

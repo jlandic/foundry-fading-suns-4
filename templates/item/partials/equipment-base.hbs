@@ -25,6 +25,11 @@
                     {{selectOptions sizeOptions selected=system.size}}
                 </select>
             </div>
+
+            <div class="form-fields flexcol flex0">
+                <label for="system.curio">{{ localize "fs4.equipment.fields.curio" }}</label>
+                <input type="checkbox" name="system.curio" {{checked system.curio}} />
+            </div>
         </div>
 
         <div class="form-group flexrow">

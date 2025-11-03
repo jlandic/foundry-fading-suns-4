@@ -23,4 +23,16 @@
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
     </ol>
+
+    <ol class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.armors" }}</h3>
+        </li>
+    </ol>
+
+    <ol class="item-list">
+        {{#each armors}}
+        {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ol>
 </section>

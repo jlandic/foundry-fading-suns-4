@@ -14,6 +14,7 @@ const TYPE_PARTS = [
     "simpleItem",
     "equipment",
     "weapon",
+    "armor",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [
@@ -49,6 +50,8 @@ export default class BaseItemSheet extends BaseSheetMixin(
             removeModifier: BaseItemSheet._removeModifier,
             viewItem: BaseItemSheet._viewInlineItem,
             deleteItem: BaseItemSheet._deleteInlineItem,
+            openReference: BaseItemSheet._openReference,
+            clearReference: BaseItemSheet._clearReference,
         },
     };
 
@@ -301,5 +304,23 @@ export default class BaseItemSheet extends BaseSheetMixin(
             await this.item.update({ [path]: list });
             await this.item.clearImportedEffects(slug);
         }
+    }
+
+    static async _openReference(event, target) {
+        event.preventDefault();
+        const { uuid } = target.dataset;
+
+        const item = await fromUuid(uuid);
+
+        if (item) {
+            item.sheet.render(true);
+        }
+    }
+
+    static async _clearReference(event, target) {
+        event.preventDefault();
+        const { name } = target.dataset;
+
+        this.item.removeReference(name);
     }
 }

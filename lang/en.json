@@ -368,6 +368,7 @@
         "equipment": "Equipment",
         "weapons": "Weapons",
         "armor": "Armor",
+        "armors": "Armors",
         "shield": "Shield",
         "eshield": "E-shield"
       }
@@ -381,7 +382,8 @@
         "goalModifier": "Goal Modifier",
         "agora": "Agora",
         "techCompulsion": "Tech Compulsion",
-        "size": "Size"
+        "size": "Size",
+        "curio": "Curio"
       },
       "qualities": {
         "disrepair": "Disrepair",
@@ -468,6 +470,15 @@
       "defaultName": "New modifier",
       "noAffectedAttribute": "No affected attribute"
     },
+    "armor": {
+      "fields": {
+        "res": "Resistance",
+        "features": "Features",
+        "eshieldCompatibility": "Compatibility",
+        "capability": "Capability"
+      },
+      "noCapabilityRequirement": "No requirement"
+    },
     "damageTypes": {
       "short": {
         "blstr": "Blstr",
@@ -486,8 +497,19 @@
       "slm": "Slam",
       "son": "Sonic"
     },
+    "eshieldTypes": {
+      "short": {
+        "es": "eS",
+        "ea": "eA",
+        "eb": "eB"
+      },
+      "es": "eS",
+      "ea": "eA",
+      "eb": "eB"
+    },
     "size": {
       "short": {
+        "none": "-",
         "xxs": "XXS",
         "xs": "XS",
         "s": "S",
@@ -496,6 +518,7 @@
         "xl": "XL",
         "xxl": "XXL"
       },
+      "none": "-",
       "xxs": "Extremely small",
       "xs": "Very small",
       "s": "Small",
@@ -520,6 +543,9 @@
         "actor": {
           "notEnoughVP": "Not enough VP to spend."
         }
+      },
+      "warn": {
+        "cantStealVp": "These VPs do not belong to you."
       }
     },
     "actions": {

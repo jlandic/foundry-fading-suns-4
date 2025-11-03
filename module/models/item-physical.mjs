@@ -23,7 +23,7 @@ export default class PhysicalItemDataModel extends BaseItemDataModel {
             size: new StringField({
                 required: true,
                 choices: Object.values(EquipmentSizes),
-                initial: EquipmentSizes.M,
+                initial: EquipmentSizes.None,
             }),
         });
     }
