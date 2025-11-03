@@ -8,7 +8,46 @@
   },
   "_id": "OgFplf9CJa2HQmCa",
   "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "effects": [
+    {
+      "name": "noisy_upon_activation",
+      "disabled": false,
+      "_id": "l91Fydgnv4UVN7VG",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "skill",
+        "austerity": false,
+        "context": "none",
+        "value": "",
+        "target": "sneak",
+        "notes": "During the round following the activation"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!OgFplf9CJa2HQmCa.l91Fydgnv4UVN7VG"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

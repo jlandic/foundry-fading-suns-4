@@ -8,7 +8,46 @@
   },
   "_id": "JCWbcGZ5pqJsopwD",
   "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "effects": [
+    {
+      "name": "unwieldy_weapon",
+      "disabled": false,
+      "_id": "4sfqqWcAHZfi2moe",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "initiative",
+        "austerity": false,
+        "context": "none",
+        "value": "",
+        "target": "hindmost",
+        "notes": "When the weapon is in use"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!JCWbcGZ5pqJsopwD.4sfqqWcAHZfi2moe"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

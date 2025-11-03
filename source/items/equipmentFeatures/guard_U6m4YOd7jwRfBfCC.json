@@ -10,7 +10,7 @@
   "img": "icons/svg/item-bag.svg",
   "effects": [
     {
-      "name": "Guard",
+      "name": "guard",
       "disabled": false,
       "_id": "ff1Sz3YKcL1j67i1",
       "img": null,
@@ -22,7 +22,7 @@
         "context": "none",
         "value": "1",
         "target": "body",
-        "notes": "When the weapon is in use"
+        "notes": "Against melee weapons, when the weapon is in use"
       },
       "changes": [],
       "duration": {

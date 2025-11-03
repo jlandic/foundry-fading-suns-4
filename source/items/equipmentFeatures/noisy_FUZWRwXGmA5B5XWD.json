@@ -8,7 +8,46 @@
   },
   "_id": "FUZWRwXGmA5B5XWD",
   "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "effects": [
+    {
+      "name": "Bruyant",
+      "disabled": false,
+      "_id": "dRzp4U3DXzGa4DX6",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "skill",
+        "austerity": false,
+        "context": "none",
+        "value": "",
+        "target": "sneak",
+        "notes": "When the weapon is in use"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "0.0.1",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!FUZWRwXGmA5B5XWD.dRzp4U3DXzGa4DX6"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,
