@@ -237,6 +237,8 @@ export default class BaseActorSheet extends BaseSheetMixin(
             characteristics,
             resistance,
             isResistanceEditable: this.isEditable && !!this.actor.system.resistance,
+            techGnosis: this.actor.techGnosis,
+            overloaded: this.actor.overloaded,
             modifiers: this._prepareModifiers(),
             perks: await this._prepareItemList("perk", {
                 description: "fs4.commonFields.description",

@@ -1,6 +1,6 @@
 import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
-import { ModifierTargetTypes, ResistanceTypes } from "../system/references.mjs";
+import { ModifierTargetTypes, ResistanceTypes, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
 import { RollIntention } from "../system/rolls.mjs";
 
 export default class BaseActor extends foundry.documents.Actor {
@@ -198,6 +198,12 @@ export default class BaseActor extends foundry.documents.Actor {
         }
     }
 
+    get armorResistance() {
+        return this.items
+            .filter(i => i.type === "armor" && this.hasItemEquipped(i.id))
+            .reduce((sum, i) => sum + Number(i.system.res), 0);
+    }
+
     resistanceMod(resistanceType) {
         const embedded = this.embeddedModifiers
             .filter(m => !m.disabled)
@@ -210,13 +216,19 @@ export default class BaseActor extends foundry.documents.Actor {
             .reduce((sum, m) => sum + Number(m.system.value), 0);
 
         if (resistanceType === ResistanceTypes.Body) {
-            const armor = this.items
-                .filter(i => i.type === "armor" && this.hasItemEquipped(i.id))
-                .reduce((sum, i) => sum + Number(i.system.res), 0);
-
-            return embedded + modifiers + armor;
+            return embedded + modifiers + this.armorResistance;
         }
 
         return embedded + modifiers;
+    }
+
+    get techGnosis() {
+        return this.items.filter(i => i.system.tl && i.system.tl > TECHGNOSIS_TL_MAX && !i.system.curio).length;
+    }
+
+    get overloaded() {
+        if (!this.system.level) return false;
+
+        return this.system.techGnosis > this.system.level;
     }
 }

@@ -35,4 +35,24 @@
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
     </ol>
+
+    <hr>
+
+    <div class="flexrow">
+        <div class="form-group">
+            <label for="system.cash">{{ localize "fs4.actor.fields.cash" }}</label>
+            <input type="number" name="system.cash" value="{{system.cash}}" step="1" />
+        </div>
+
+        {{#if system.level}}
+        <div class="form-group">
+            <label for="system.techGnosis">{{ localize "fs4.actor.fields.techGnosis" }}</label>
+            <div class="flexrow">
+                <input type="number" name="system.techGnosis" value="{{system.techGnosis}}" readonly />
+                &nbsp;/&nbsp;
+                <input type="number" name="system.level" value="{{system.level}}" readonly />
+            </div>
+        </div>
+        {{/if}}
+    </div>
 </section>

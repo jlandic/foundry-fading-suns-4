@@ -370,7 +370,9 @@
         "armor": "Armor",
         "armors": "Armors",
         "shield": "Shield",
-        "eshield": "E-shield"
+        "eshield": "E-shield",
+        "techGnosis": "Tech Gnosis",
+        "cash": "Cash"
       }
     },
     "equipment": {

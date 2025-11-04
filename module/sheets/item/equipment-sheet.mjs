@@ -1,4 +1,4 @@
-import { DamageTypes, EquipmentQualities, EquipmentSizes } from "../../system/references.mjs";
+import { EquipmentQualities, EquipmentSizes } from "../../system/references.mjs";
 import BaseItemSheet from "./base-item-sheet.mjs";
 
 export default class EquipmentSheet extends BaseItemSheet {
@@ -36,14 +36,5 @@ export default class EquipmentSheet extends BaseItemSheet {
         });
 
         return context;
-    }
-
-    _prepareDamageTypeOptions(selectedTypes) {
-        return Object.values(DamageTypes).map((type) => ({
-            label: game.i18n.localize(`fs4.damageTypes.short.${type}`),
-            title: game.i18n.localize(`fs4.damageTypes.${type}`),
-            type,
-            checked: selectedTypes.includes(type),
-        }));
     }
 }

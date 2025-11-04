@@ -366,7 +366,9 @@
         "armor": "Armure",
         "armors": "Armures",
         "shield": "Bouclier",
-        "eshield": "E-bouclier"
+        "eshield": "E-bouclier",
+        "techGnosis": "Tech Gnosis",
+        "cash": "Cash"
       }
     },
     "equipment": {

@@ -285,3 +285,5 @@ export const EShieldTypes = Object.freeze({
     Ea: "ea",
     Eb: "eb",
 });
+
+export const TECHGNOSIS_TL_MAX = 4;

@@ -10,7 +10,7 @@ const {
 export default class PhysicalItemDataModel extends BaseItemDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
-            nt: new NumberField({ required: false }),
+            tl: new NumberField({ required: false }),
             curio: new BooleanField({ required: false, initial: false }),
             agora: new StringField({ required: true, initial: "" }),
             cost: new NumberField({ required: false }),

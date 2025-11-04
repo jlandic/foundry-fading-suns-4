@@ -1,4 +1,4 @@
-import { None, SPECIAL_REFERENCE_PREFIX } from "../system/references.mjs";
+import { DamageTypes, None, SPECIAL_REFERENCE_PREFIX } from "../system/references.mjs";
 import { enrichHTML } from "../utils/text-editor.mjs";
 
 export const BaseSheetMixin = Base => class extends Base {
@@ -95,6 +95,15 @@ export const BaseSheetMixin = Base => class extends Base {
                     value: modifier.system.notes || "",
                 }
             ]
+        }));
+    }
+
+    _prepareDamageTypeOptions(selectedTypes) {
+        return Object.values(DamageTypes).map((type) => ({
+            label: game.i18n.localize(`fs4.damageTypes.short.${type}`),
+            title: game.i18n.localize(`fs4.damageTypes.${type}`),
+            type,
+            checked: selectedTypes.includes(type),
         }));
     }
 
