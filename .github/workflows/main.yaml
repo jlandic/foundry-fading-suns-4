@@ -32,6 +32,5 @@ jobs:
           name: Latest
           draft: false
           prerelease: false
-          token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "./system.json,./foundry-fading-suns-4.zip"
           tag: latest
