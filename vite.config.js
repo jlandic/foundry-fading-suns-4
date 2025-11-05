@@ -54,12 +54,6 @@ export default defineConfig({
             entry: "fading-suns-4.mjs",
             formats: ["es"],
             fileName: "fading-suns-4"
-        },
-        watch: {
-            chokidar: {
-                usePolling: true,
-                interval: 500,
-            },
         }
     },
 });
