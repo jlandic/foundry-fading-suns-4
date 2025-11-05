@@ -190,6 +190,12 @@ export const ManeuverGoalModifiers = Object.freeze({
     RangedWeapon: "ranged_weapon",
 });
 
+export const BASIC_MANEUVERS = Object.freeze([
+    "shake_it_off_body",
+    "shake_it_off_mind",
+    "shake_it_off_spirit",
+]);
+
 export const ModifierValueTypes = Object.freeze({
     Constant: "constant",
     Formula: "formula",

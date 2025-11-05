@@ -1,7 +1,61 @@
-<section
-    class="scrollable tab {{tabs.statsExtra.cssClass}}"
-    data-group="{{tabs.statsExtra.group}}"
-    data-tab="{{tabs.statsExtra.id}}"
->
-    TODO
+<section class="scrollable tab {{tabs.statsExtra.cssClass}}" data-group="{{tabs.statsExtra.group}}"
+    data-tab="{{tabs.statsExtra.id}}">
+    <div class="flexrow">
+        <div class="form-group">
+            <label for="system.vitality.value">{{ localize "fs4.actor.fields.vitality" }}</label>
+            <input class="score" type="number" name="system.vitality.value" value="{{system.vitality.value}}">
+            &nbsp;/&nbsp;
+            <input class="score" type="number" name="system.maxVitality" value="{{system.maxVitality}}" disabled />
+        </div>
+
+        <div class="form-group">
+            <label for="system.resistance.body">{{ localize "fs4.resistance.body" }}</label>
+            <input class="score" type="number" name="system.resistance.body" value="{{system.resistance.body}}"
+                min="0" />
+
+            <label for="system.resistance.mind">{{ localize "fs4.resistance.mind" }}</label>
+            <input class="score" type="number" name="system.resistance.mind" value="{{system.resistance.mind}}"
+                min="0" />
+
+            <label for="system.resistance.spirit">{{ localize "fs4.resistance.spirit" }}</label>
+            <input class="score" type="number" name="system.resistance.spirit" value="{{system.resistance.spirit}}"
+                min="0" />
+        </div>
+    </div>
+
+    <hr>
+
+    <section class="flexcol">
+        <ol class="item-list">
+            <li class="item-list-header flexrow">
+                <h3>{{ localize "fs4.actor.fields.maneuvers" }}</h3>
+
+                <div class="item-controls">
+                    <a class="item-control" data-action="addManeuver" title="{{ localize " fs4.sheets.common.add" }}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+            </li>
+        </ol>
+
+        <ol class="item-list maneuvers-list">
+            {{#each maneuvers}}
+            <li class="item-list-element flexrow">
+                <input class="maneuver-name" type="text" name="system.maneuvers.{{this.id}}.name" value="{{this.name}}">
+                <input type="number" class="score" name="system.maneuvers.{{this.id}}.goal" value="{{this.goal}}"
+                    min="0">
+                <input type="text" name="system.maneuvers.{{this.id}}.impact" value="{{this.impact}}">
+                <div class="item-controls">
+                    {{#each this.controls}}
+                    <a class="item-control" data-action="{{this.action}}" data-id="{{../id}}" data-type="{{../type}}"
+                        data-name="{{this.name}}" {{#if ../parentId}}data-parent-id="{{../parentId}}" {{/if}}
+                        title="{{this.label}}">
+                        <i class="fas fa-{{this.icon}}"></i>
+                    </a>
+                    {{/each}}
+                </div>
+            </li>
+            {{/each}}
+        </ol>
+    </section>
 </section>

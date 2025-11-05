@@ -53,7 +53,7 @@ export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
     }
 
     get maxRevivals() {
-        if (!this.hasRevivals || !this.level) return undefined;
+        if (!this.hasRevivals || !this.level) return 0;
 
         return rules.surgeAndRevivalAmountForLevel(this.level);
     }

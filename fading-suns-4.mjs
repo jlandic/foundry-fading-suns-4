@@ -46,6 +46,23 @@ Hooks.once("init", async () => {
         extra: models.ExtraDataModel,
     };
     CONFIG.Actor.documentClass = documents.BaseActor;
+    CONFIG.Actor.trackableAttributes = {
+        pc: {
+            bar: ["vitality"],
+            value: ["vp.cache"],
+        },
+        headliner: {
+            bar: ["vitality"],
+            value: ["vp.cache"],
+        },
+        agent: {
+            bar: ["vitality"],
+            value: ["vp.cache"],
+        },
+        extra: {
+            bar: ["vitality"],
+        },
+    };
 
     CONFIG.ActiveEffect.dataModels.base = models.BaseActiveEffectDataModel;
     CONFIG.ActiveEffect.documentClass = documents.BaseActiveEffect;

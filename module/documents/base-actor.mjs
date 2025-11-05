@@ -1,6 +1,6 @@
 import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
-import { ModifierTargetTypes, ResistanceTypes, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
+import { BASIC_MANEUVERS, ModifierTargetTypes, ResistanceTypes, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
 import { RollIntention } from "../system/rolls.mjs";
 
 export default class BaseActor extends foundry.documents.Actor {
@@ -230,5 +230,16 @@ export default class BaseActor extends foundry.documents.Actor {
         if (!this.system.level) return false;
 
         return this.system.techGnosis > this.system.level;
+    }
+
+    get addBasicManeuvers() {
+        if (this.system.maneuvers) return;
+
+        this.items.createEmbeddedDocuments("Item", BASIC_MANEUVERS.map((slug) => {
+            const maneuver = globalThis.registry.fromSlug(slug, "maneuver");
+            if (!maneuver) return;
+
+            return maneuver.toObject();
+        }).filter(Boolean));
     }
 }

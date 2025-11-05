@@ -366,7 +366,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
         )
     }
 
-    async _prepareItemList(type, details, options = { equippable: false, columns: [], draggable: false, sort: true, rollData: null, transformName: null }) {
+    async _prepareItemList(type, details, options = { equippable: false, columns: [], draggable: false, sort: true, rollData: null, transformName: null, controls: null }) {
         const items = this.actor.items.filter(item => item.type === type);
 
         if (options.sort) {
@@ -383,7 +383,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             equippable: options.equippable,
             columns: options.columns?.map((column) => column(item)) || [],
             isEquipped: options.equippable ? (this.actor.getFlag("fading-suns-4", `equipped.${item.id}`) ?? false) : false,
-            controls: BaseActorSheet.INLINE_ITEM_CONTROLS
+            controls: options.controls || BaseActorSheet.INLINE_ITEM_CONTROLS
                 .filter(control => control.requiresEdit ? this.isEditable : true)
                 .map(control => ({
                     ...control,

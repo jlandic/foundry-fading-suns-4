@@ -203,10 +203,13 @@
     </section>
 
     <ul class="flexrow actions-container">
-        <li class="action" data-action="bankVP">{{ localize "fs4.sheets.actor.actions.bankVP" }}</li>
+        {{#if system.hasVPBank}}<li class="action" data-action="bankVP">{{ localize "fs4.sheets.actor.actions.bankVP" }}
+        </li>{{/if}}
         <li class="action" data-action="emptyCache">{{ localize "fs4.sheets.actor.actions.emptyCache" }}</li>
-        <li class="action" data-action="surge">{{ localize "fs4.sheets.actor.actions.surge" }}</li>
-        <li class="action" data-action="revival">{{ localize "fs4.sheets.actor.actions.revival" }}</li>
+        {{#if system.hasSurges}}<li class="action" data-action="surge">{{ localize "fs4.sheets.actor.actions.surge" }}
+        </li>{{/if}}
+        {{#if system.hasRevivals}}<li class="action" data-action="revival">{{ localize
+            "fs4.sheets.actor.actions.revival" }}</li>{{/if}}
         <li class="action" data-action="respite">{{ localize "fs4.sheets.actor.actions.respite" }}</li>
     </ul>
 </section>

@@ -38,8 +38,15 @@ export default class AgentDataModel extends BaseActorDataModel {
                 theurgy: new NumberField({ required: true, initial: 0 }),
                 hubris: new NumberField({ required: true, initial: 0 }),
             }),
-            revivals: new NumberField({ required: true, initial: 0 }),
             surges: new NumberField({ required: true, initial: 0 }),
         }, { recursive: false });
+    }
+
+    get maxVitality() {
+        return (
+            this.size +
+            this.level +
+            5
+        );
     }
 }
