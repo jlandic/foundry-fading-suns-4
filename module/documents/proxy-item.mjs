@@ -1,6 +1,8 @@
 import BaseItem from "./base-item.mjs";
+import EShield from "./eshield.mjs";
 
 const PROXIED_TYPES = {
+    "eshield": EShield,
 };
 
 export const ProxyItem = new Proxy(function () { }, {

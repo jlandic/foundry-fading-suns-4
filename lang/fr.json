@@ -17,7 +17,7 @@
       "weaponFeature": "Particularité d'arme",
       "armor": "Armure",
       "eshield": "E-bouclier",
-      "handshield": "Bouclier",
+      "shield": "Bouclier",
       "shieldFeature": "Particularité de bouclier",
       "armorFeature": "Particularité d'armure"
     },
@@ -368,7 +368,9 @@
         "shield": "Bouclier",
         "eshield": "E-bouclier",
         "techGnosis": "Tech Gnosis",
-        "cash": "Cash"
+        "cash": "Cash",
+        "shields": "Boucliers",
+        "eshields": "E-boucliers"
       }
     },
     "equipment": {
@@ -431,6 +433,24 @@
         "capability": "Aptitude"
       },
       "noCapabilityRequirement": "Aucun prérequis"
+    },
+    "shield": {
+      "fields": {
+        "hits": "Coups",
+        "burnout": "Épuisement",
+        "distortion": "Distorsion",
+        "res": "Rés.",
+        "damage": "Dég.",
+        "thresholds": "Seuils",
+        "features": "Particularités",
+        "handheld": "Portatif",
+        "strRequirement": "Force requise",
+        "compatibility": "Compatibilité"
+      },
+      "recharge": "Recharger",
+      "resetBurnout": "Réinitialiser épuisement",
+      "testBurnout": "Tester",
+      "toggleDistortion": "Distortion"
     },
     "damageTypes": {
       "short": {

@@ -1,0 +1,56 @@
+<section class="tab scrollable {{tabs.main.cssClass}}" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
+    {{> "fading-suns-4.equipment-base"}}
+
+    <div class="flexrow">
+        <div class="flexcol">
+            <label for="system.compatibility">{{ localize "fs4.shield.fields.compatibility" }}</label>
+            <select name="system.compatibility">
+                {{selectOptions compatibilityOptions selected=system.compatibility}}
+            </select>
+        </div>
+
+        <div class="flexcol">
+            <label for="system.hits">{{ localize "fs4.shield.fields.hits" }}</label>
+            <input type="number" name="system.hits" value="{{system.hits}}" />
+        </div>
+
+        <div class="flexcol">
+            <label for="system.burnout">{{ localize "fs4.shield.fields.burnout" }}</label>
+            <input type="number" name="system.burnout" value="{{system.burnout}}" />
+        </div>
+
+        <div class="flexcol">
+            <label for="system.distortion">{{ localize "fs4.shield.fields.distortion" }}</label>
+            <input type="number" name="system.distortion" value="{{system.distortion}}" />
+        </div>
+
+        <div class="flexcol">
+            <label for="system.thresholds">{{ localize "fs4.shield.fields.thresholds" }}</label>
+
+            <div class="flexrow">
+                <input type="number" name="system.thresholds.low" value="{{system.thresholds.low}}" />
+                &nbsp;/&nbsp;
+                <input type="number" name="system.thresholds.high" value="{{system.thresholds.high}}" />
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <section>
+        <ol class="item-list">
+            <li class="item-list-header flexrow">
+                <h3>{{ localize "fs4.shield.fields.features" }}</h3>
+            </li>
+        </ol>
+
+        <ol class="item-list">
+            {{#each features}}
+            {{> "fading-suns-4.inline-item" item=this}}
+            {{/each}}
+        </ol>
+    </section>
+
+    <h2>{{ localize "fs4.commonFields.description" }}</h2>
+    {{> "fading-suns-4.editor" name="system.description" value=description}}
+</section>

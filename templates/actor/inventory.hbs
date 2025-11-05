@@ -15,6 +15,10 @@
     <ol class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.weapons" }}</h3>
+            {{#each weaponColumnLabels}}
+            <div class="item-column">{{this}}</div>
+            {{/each}}
+            <div></div>
         </li>
     </ol>
 
@@ -27,11 +31,47 @@
     <ol class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.armors" }}</h3>
+            {{#each armorColumnLabels}}
+            <div class="item-column">{{this}}</div>
+            {{/each}}
+            <div></div>
         </li>
     </ol>
 
     <ol class="item-list">
         {{#each armors}}
+        {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ol>
+
+    <ol class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.shields" }}</h3>
+            {{#each shieldColumnLabels}}
+            <div class="item-column">{{this}}</div>
+            {{/each}}
+            <div></div>
+        </li>
+    </ol>
+
+    <ol class="item-list">
+        {{#each shields}}
+        {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ol>
+
+    <ol class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.eshields" }}</h3>
+            {{#each eshieldColumnLabels}}
+            <div class="item-column">{{this}}</div>
+            {{/each}}
+            <div></div>
+        </li>
+    </ol>
+
+    <ol class="item-list">
+        {{#each eshields}}
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
     </ol>
@@ -48,9 +88,9 @@
         <div class="form-group">
             <label for="system.techGnosis">{{ localize "fs4.actor.fields.techGnosis" }}</label>
             <div class="flexrow">
-                <input type="number" name="system.techGnosis" value="{{system.techGnosis}}" readonly />
+                <input type="number" name="system.techGnosis" value="{{system.techGnosis}}" readonly disabled />
                 &nbsp;/&nbsp;
-                <input type="number" name="system.level" value="{{system.level}}" readonly />
+                <input type="number" name="system.level" value="{{system.level}}" readonly disabled />
             </div>
         </div>
         {{/if}}

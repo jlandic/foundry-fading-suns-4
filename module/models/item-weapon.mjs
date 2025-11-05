@@ -56,6 +56,11 @@ export default class WeaponDataModel extends EquipmentDataModel {
         return `${this.range.short}/${this.range.long}`;
     }
 
+    get ammoText() {
+        if (this.melee) return "-";
+        return `${this.currentAmmo}/${this.ammo}`;
+    }
+
     resetRange() {
         this.range.short = undefined;
         this.range.long = undefined;

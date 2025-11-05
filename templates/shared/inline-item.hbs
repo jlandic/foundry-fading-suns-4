@@ -5,6 +5,9 @@
             <div class="item-name flexrow">
                 <div class="item-image" style="background-image: url({{item.img}})"></div>
                 <h4>{{item.label}}</h4>
+                {{#each columns}}
+                <div class="item-column">{{this}}</div>
+                {{/each}}
                 <div class="item-controls">
                     {{#if item.equippable}}
                     <a class="item-control" data-action="toggleEquip" data-id="{{item.id}}" data-type="{{item.type}}"

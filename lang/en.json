@@ -17,7 +17,7 @@
       "weaponFeature": "Weapon Feature",
       "armor": "Armor",
       "eshield": "E-shield",
-      "handshield": "Handshield",
+      "shield": "Shield",
       "shieldFeature": "Shield Feature",
       "armorFeature": "Armor Feature"
     },
@@ -372,7 +372,9 @@
         "shield": "Shield",
         "eshield": "E-shield",
         "techGnosis": "Tech Gnosis",
-        "cash": "Cash"
+        "cash": "Cash",
+        "shields": "Shields",
+        "eshields": "E-shields"
       }
     },
     "equipment": {
@@ -477,9 +479,28 @@
         "res": "Resistance",
         "features": "Features",
         "eshieldCompatibility": "Compatibility",
-        "capability": "Capability"
+        "capability": "Capability",
+        "anti": "Anti"
       },
       "noCapabilityRequirement": "No requirement"
+    },
+    "shield": {
+      "fields": {
+        "hits": "Hits",
+        "burnout": "Burnout",
+        "distortion": "Distortion",
+        "res": "Res.",
+        "damage": "Dmg.",
+        "thresholds": "Thresholds",
+        "features": "Features",
+        "handheld": "Handheld",
+        "strRequirement": "Force required",
+        "compatibility": "Compatibility"
+      },
+      "recharge": "Recharge",
+      "resetBurnout": "Reset burnout",
+      "testBurnout": "Test burnout",
+      "toggleDistortion": "Distortion On/Off"
     },
     "damageTypes": {
       "short": {

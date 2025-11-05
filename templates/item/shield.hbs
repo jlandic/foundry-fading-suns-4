@@ -1,0 +1,39 @@
+<section class="tab scrollable {{tabs.main.cssClass}}" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
+    {{> "fading-suns-4.equipment-base"}}
+
+    <div class="flexrow">
+        <div class="flexcol">
+            <label for="system.res">{{ localize "fs4.shield.fields.res" }}</label>
+            <input type="number" name="system.res" value="{{system.res}}">
+        </div>
+
+        <div class="flexcol">
+            <label for="system.strRequirement">{{ localize "fs4.shield.fields.strRequirement" }}</label>
+            <input type="number" name="system.strRequirement" value="{{system.strRequirement}}">
+        </div>
+
+        <div class="flexcol">
+            <label for="system.damage">{{ localize "fs4.shield.fields.damage" }}</label>
+            <input type="number" name="system.damage" value="{{system.damage}}">
+        </div>
+    </div>
+
+    <hr>
+
+    <section>
+        <ol class="item-list">
+            <li class="item-list-header flexrow">
+                <h3>{{ localize "fs4.shield.fields.features" }}</h3>
+            </li>
+        </ol>
+
+        <ol class="item-list">
+            {{#each features}}
+            {{> "fading-suns-4.inline-item" item=this}}
+            {{/each}}
+        </ol>
+    </section>
+
+    <h2>{{ localize "fs4.commonFields.description" }}</h2>
+    {{> "fading-suns-4.editor" name="system.description" value=description}}
+</section>

@@ -31,6 +31,8 @@ Hooks.once("init", async () => {
         equipment: models.EquipmentDataModel,
         weapon: models.WeaponDataModel,
         armor: models.ArmorDataModel,
+        shield: models.ShieldDataModel,
+        eshield: models.EShieldDataModel,
         weaponFeature: models.WeaponFeatureDataModel,
         armorFeature: models.ArmorFeatureDataModel,
         shieldFeature: models.ShieldFeatureDataModel,
@@ -61,6 +63,7 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.EquipmentSheet, { types: ["equipment"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.WeaponSheet, { types: ["weapon"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ArmorSheet, { types: ["armor"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.ShieldSheet, { types: ["shield", "eshield"], makeDefault: true });
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.NPCSheet, { types: ["headliner", "agent"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.PCSheet, { types: ["pc"], makeDefault: true });

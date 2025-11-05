@@ -150,6 +150,8 @@ export default class BaseActorSheet extends BaseSheetMixin(
             "handshield",
             "eshield",
             "power",
+            "shield",
+            "techCompulsion",
         ];
     }
 
@@ -250,12 +252,38 @@ export default class BaseActorSheet extends BaseSheetMixin(
             equipment: await this._prepareItemList("equipment", {
                 description: "fs4.commonFields.description",
             }, { equippable: true }),
+            weaponColumnLabels: [
+                game.i18n.localize("fs4.weapon.fields.damage"),
+                game.i18n.localize("fs4.weapon.fields.range"),
+                game.i18n.localize("fs4.weapon.fields.rof"),
+                game.i18n.localize("fs4.weapon.fields.ammo"),
+            ],
             weapons: await this._prepareItemList("weapon", {
                 description: "fs4.commonFields.description",
-            }, { equippable: true }),
+            }, {
+                equippable: true,
+                columns: [
+                    (item) => item.system.damage,
+                    (item) => item.system.melee
+                        ? game.i18n.localize("fs4.weapon.fields.melee")
+                        : item.system.rangeText,
+                    (item) => item.system.melee ? "-" : item.system.rof,
+                    (item) => item.system.ammoText,
+                ],
+            }),
+            armorColumnLabels: [
+                game.i18n.localize("fs4.armor.fields.res"),
+                game.i18n.localize("fs4.armor.fields.anti"),
+            ],
             armors: await this._prepareItemList("armor", {
                 description: "fs4.commonFields.description",
-            }, { equippable: true }),
+            }, {
+                equippable: true,
+                columns: [
+                    (item) => item.system.res,
+                    (item) => item.system.anti.map(type => game.i18n.localize(`fs4.damageTypes.${type}`)).join(", "),
+                ],
+            }),
             maneuvers: await this._prepareItemList("maneuver", {
                 description: "fs4.commonFields.description",
                 impact: "fs4.maneuver.fields.impact",
@@ -274,6 +302,38 @@ export default class BaseActorSheet extends BaseSheetMixin(
             }),
             states: await this._prepareItemList("state", {
                 description: "fs4.commonFields.description",
+            }),
+            shieldColumnLabels: [
+                game.i18n.localize("fs4.shield.fields.res"),
+                game.i18n.localize("fs4.shield.fields.strRequirement"),
+                game.i18n.localize("fs4.shield.fields.damage"),
+            ],
+            shields: await this._prepareItemList("shield", {
+                description: "fs4.commonFields.description",
+            }, {
+                equippable: true,
+                columns: [
+                    (item) => item.system.res,
+                    (item) => item.system.strRequirement,
+                    (item) => item.system.damage,
+                ],
+            }),
+            eshieldColumnLabels: [
+                game.i18n.localize("fs4.shield.fields.thresholds"),
+                game.i18n.localize("fs4.shield.fields.hits"),
+                game.i18n.localize("fs4.shield.fields.burnout"),
+                game.i18n.localize("fs4.shield.fields.distortion"),
+            ],
+            eshields: await this._prepareItemList("eshield", {
+                description: "fs4.commonFields.description",
+            }, {
+                equippable: true,
+                columns: [
+                    (item) => `${item.system.thresholds.low}/${item.system.thresholds.high}`,
+                    (item) => item.system.hitsText,
+                    (item) => item.system.burnoutText,
+                    (item) => item.system.distortion,
+                ],
             }),
         });
 
@@ -306,7 +366,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
         )
     }
 
-    async _prepareItemList(type, details, options = { equippable: false, draggable: false, sort: true, rollData: null, transformName: null }) {
+    async _prepareItemList(type, details, options = { equippable: false, columns: [], draggable: false, sort: true, rollData: null, transformName: null }) {
         const items = this.actor.items.filter(item => item.type === type);
 
         if (options.sort) {
@@ -321,6 +381,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             label: options.transformName ? options.transformName(item) : item.name,
             rollData: options.rollData ? options.rollData(item) : null,
             equippable: options.equippable,
+            columns: options.columns?.map((column) => column(item)) || [],
             isEquipped: options.equippable ? (this.actor.getFlag("fading-suns-4", `equipped.${item.id}`) ?? false) : false,
             controls: BaseActorSheet.INLINE_ITEM_CONTROLS
                 .filter(control => control.requiresEdit ? this.isEditable : true)

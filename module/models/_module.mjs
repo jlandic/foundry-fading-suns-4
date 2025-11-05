@@ -14,6 +14,8 @@ export { default as SpeciesDataModel } from "./item-species.mjs";
 export { default as EquipmentDataModel } from "./item-equipment.mjs";
 export { default as WeaponDataModel } from "./item-weapon.mjs";
 export { default as ArmorDataModel } from "./item-armor.mjs";
+export { default as ShieldDataModel } from "./item-shield.mjs";
+export { default as EShieldDataModel } from "./item-eshield.mjs";
 export { default as WeaponFeatureDataModel } from "./item-weapon-feature.mjs";
 export { default as ArmorFeatureDataModel } from "./item-armor-feature.mjs";
 export { default as ShieldFeatureDataModel } from "./item-shield-feature.mjs";
