@@ -1,7 +1,7 @@
 {
   "id": "fading-suns-4",
   "title": "Fading Suns 4th Edition",
-  "version": "0.0.1",
+  "version": "PLACEHOLDER",
   "description": "A Foundry VTT system for Fading Suns 4th Edition.",
   "authors": [
     {
@@ -13,6 +13,9 @@
     "verified": "13",
     "maximum": "13"
   },
+  "url": "https://github.com/jlandic/foundry-fading-suns-4",
+  "manifest": "",
+  "download": "",
   "license": "MIT",
   "esmodules": [
     "fading-suns-4.mjs"

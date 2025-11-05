@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "redhat.vscode-yaml",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "github.vscode-github-actions",
+        "christian-kohler.npm-intellisense",
+        "esbenp.prettier-vscode"
+    ]
+}
