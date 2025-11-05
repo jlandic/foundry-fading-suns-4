@@ -1,5 +1,8 @@
 name: Build system
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
