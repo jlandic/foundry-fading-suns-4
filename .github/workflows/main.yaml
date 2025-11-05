@@ -17,17 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set version from version.txt
+        id: set_version
         run: |
           VERSION=$(cat version.txt)
           echo "Setting version to $VERSION"
           jq --arg ver "$VERSION" '.version = $ver' system.json > tmp.$$.json && mv tmp.$$.json system.json
+          echo "::set-output name=TAG::$VERSION"
       - uses: actions/setup-node@v3
         with:
           node-version: "22"
       - run: npm install
       - run: npm run build
       - run: zip -r foundry-fading-suns-4.zip dist
-      - name: Create release
+      - name: Create latest release
         id: create_latest_release
         uses: ncipollo/release-action@v1
         with:
@@ -37,3 +39,13 @@ jobs:
           prerelease: false
           artifacts: "./system.json,./foundry-fading-suns-4.zip"
           tag: latest
+      - name: Create tag release
+        id: create_tag_release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: false
+          name: ${{ steps.set_version.outputs.TAG }}
+          draft: false
+          prerelease: false
+          artifacts: "./system.json,./foundry-fading-suns-4.zip"
+          tag: ${{ steps.set_version.outputs.TAG }}
