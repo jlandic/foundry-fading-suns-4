@@ -28,6 +28,7 @@ jobs:
           node-version: "22"
       - run: npm install
       - run: npm run build
+      - run: npm run packs:compile
       - run: zip -r foundry-fading-suns-4.zip dist
       - name: Create latest release
         id: create_latest_release
