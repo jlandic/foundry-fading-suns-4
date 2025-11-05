@@ -14,8 +14,8 @@
     "maximum": "13"
   },
   "url": "https://github.com/jlandic/foundry-fading-suns-4",
-  "manifest": "",
-  "download": "",
+  "manifest": "https://github.com/jlandic/foundry-fading-suns-4/releases/download/latest/system.json",
+  "download": "https://github.com/jlandic/foundry-fading-suns-4/releases/download/latest/foundry-fading-suns-4.zip",
   "license": "MIT",
   "esmodules": [
     "fading-suns-4.mjs"
