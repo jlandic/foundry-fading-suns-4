@@ -1,0 +1,37 @@
+name: Build system
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "version.txt"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set version from version.txt
+        run: |
+          VERSION=$(cat version.txt)
+          echo "Setting version to $VERSION"
+          jq --arg ver "$VERSION" '.version = $ver' system.json > tmp.$$.json && mv tmp.$$.json system.json
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+      - run: npm install
+      - run: npm run build
+      - run: zip -r foundry-fading-suns-4.zip dist
+      - name: Create release
+        id: create_latest_release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          name: Latest
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: "./system.json,./foundry-fading-suns-4.zip"
+          tag: latest
