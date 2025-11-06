@@ -82,7 +82,7 @@ export const BaseSheetMixin = Base => class extends Base {
                     action: "editModifier",
                     requiresEdit: true,
                 },
-                modifier.parent ? null : {
+                modifier.parent.id !== this.document.id ? null : {
                     icon: "trash",
                     i18nKey: "fs4.sheets.common.delete",
                     action: "removeModifier",

@@ -1,7 +1,7 @@
 <section class="scrollable tab {{tabs.main.cssClass}}" data-group="{{tabs.main.group}}" data-tab="{{tabs.main.id}}">
     {{> "fading-suns-4.equipment-base"}}
 
-    <div class="flexrow">
+    <div class="flexrow stats-row">
         <div class="flexcol flex2">
             <label for="system.capability">{{ localize "fs4.weapon.fields.capability" }}</label>
             {{> "fading-suns-4.reference" reference=capability isEditable=isEditable }}
@@ -16,18 +16,23 @@
             <label for="system.strRequirement">{{ localize "fs4.weapon.fields.strRequirement" }}</label>
             <input type="number" name="system.strRequirement" value="{{system.strRequirement}}" />
         </div>
-    </div>
 
-    <div class="flexrow">
         <div class="flexcol">
             <label for="system.melee">{{ localize "fs4.weapon.fields.melee" }}</label>
             <input name="system.melee" type="checkbox" {{checked system.melee}} />
         </div>
+    </div>
+
+    {{#if (not system.melee)}}
+    <div class="flexrow stats-row">
+        <div class="flexcol">
+            <label for="system.ammo">{{ localize "fs4.weapon.fields.ammo" }}</label>
+            <input type="number" name="system.ammo" value="{{system.ammo}}" />
+        </div>
 
         <div class="flexcol">
-            <label for="system.range.extreme">{{ localize "fs4.weapon.fields.extremeRange" }}</label>
-            <input type="checkbox" name="system.range.extreme" {{checked system.range.extreme}} {{#if
-                system.melee}}disabled{{/if}} />
+            <label for="system.rof">{{ localize "fs4.weapon.fields.rof" }}</label>
+            <input type="number" name="system.rof" value="{{system.rof}}" />
         </div>
 
         <div class="flexcol flex2">
@@ -39,28 +44,15 @@
                     value="{{system.range.long}}" {{#if system.melee}}disabled{{/if}} />
             </div>
         </div>
-    </div>
-
-    {{#if (not system.melee)}}
-    <div class="flexrow">
-        <div class="flexcol">
-            <label for="system.ammo">{{ localize "fs4.weapon.fields.ammo" }}</label>
-            <input type="number" name="system.ammo" value="{{system.ammo}}" />
-        </div>
 
         <div class="flexcol">
-            <label for="system.rof">{{ localize "fs4.weapon.fields.rof" }}</label>
-            <input type="number" name="system.rof" value="{{system.rof}}" />
+            <label for="system.burst">{{ localize "fs4.weapon.fields.burst" }}</label>
+            <input type="checkbox" name="system.burst" {{checked system.burst}} />
         </div>
 
         <div class="flexcol">
             <label for="system.blastForce">{{ localize "fs4.weapon.fields.blastForce" }}</label>
             <input type="number" name="system.blastForce" value="{{system.blastForce}}" />
-        </div>
-
-        <div class="flexcol">
-            <label for="system.burst">{{ localize "fs4.weapon.fields.burst" }}</label>
-            <input type="checkbox" name="system.burst" {{checked system.burst}} />
         </div>
     </div>
     {{/if}}

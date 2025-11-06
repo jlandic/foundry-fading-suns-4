@@ -69,7 +69,7 @@ export default class ModifierSheet extends BaseSheetMixin(
             name: this.document.name,
             system: this.document.system,
             displayValue: [ModifierValueTypes.Constant, ModifierValueTypes.Formula].includes(this.document.system.valueType),
-            displayManeuver: this.document.system.targetType === ModifierTargetTypes.Maneuver,
+            displayManeuver: this.document.system.context === ModifierContexts.SpecificManeuver,
             displayTarget: targetOptions.length > 0,
             targetOptions,
             valueTypeOptions: this._prepareSelectOptions(

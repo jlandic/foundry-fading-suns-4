@@ -1,4 +1,4 @@
-import { DamageTypes, EShieldTypes, WeaponTypes } from "../system/references.mjs";
+import { DamageTypes, EShieldTypes } from "../system/references.mjs";
 import EquipmentDataModel from "./item-equipment.mjs";
 
 const {

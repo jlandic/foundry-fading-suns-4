@@ -119,6 +119,24 @@
       "type": "Item"
     },
     {
+      "name": "weapons",
+      "label": "Weapons",
+      "path": "packs/weapons",
+      "type": "Item"
+    },
+    {
+      "name": "armors",
+      "label": "Armors",
+      "path": "packs/armors",
+      "type": "Item"
+    },
+    {
+      "name": "shields",
+      "label": "Shields",
+      "path": "packs/shields",
+      "type": "Item"
+    },
+    {
       "name": "equipmentFeatures",
       "label": "Equipment Features",
       "path": "packs/equipmentFeatures",

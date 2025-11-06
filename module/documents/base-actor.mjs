@@ -232,10 +232,10 @@ export default class BaseActor extends foundry.documents.Actor {
         return this.system.techGnosis > this.system.level;
     }
 
-    get addBasicManeuvers() {
+    async addBasicManeuvers() {
         if (this.system.maneuvers) return;
 
-        this.items.createEmbeddedDocuments("Item", BASIC_MANEUVERS.map((slug) => {
+        return await this.items.createEmbeddedDocuments("Item", BASIC_MANEUVERS.map((slug) => {
             const maneuver = globalThis.registry.fromSlug(slug, "maneuver");
             if (!maneuver) return;
 

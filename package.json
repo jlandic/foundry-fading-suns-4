@@ -10,8 +10,8 @@
     "packs:extract": "node ./scripts/packs.mjs extract",
     "packs:import": "node ./scripts/packs.mjs import",
     "packs:link": "node ./scripts/packs.mjs link-slugs",
-    "lint": "eslint src/",
-    "lint:fix": "eslint --fix src/"
+    "lint": "eslint module/ fading-suns-4.mjs",
+    "lint:fix": "eslint --fix module fading-suns-4.mjs"
   },
   "repository": {
     "type": "git",
@@ -29,13 +29,16 @@
   },
   "homepage": "https://github.com/jlandic/foundryvtt-fading-suns-4#readme",
   "devDependencies": {
-    "@eslint/js": "^9.37.0",
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^9.39.1",
+    "@eslint/json": "^0.14.0",
     "@foundryvtt/foundryvtt-cli": "^3.0.0",
     "commander": "^14.0.1",
     "esbuild": "^0.25.11",
-    "eslint": "^9.37.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-json": "^4.0.1",
     "eslint-plugin-jsonc": "^2.21.0",
+    "globals": "^16.5.0",
     "less": "^4.4.2",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-copy-watch": "^0.0.1",

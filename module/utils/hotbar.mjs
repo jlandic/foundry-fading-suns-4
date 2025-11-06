@@ -29,8 +29,9 @@ export const onHotbarDrop = async (_hotbar, data, slot) => {
 
     let command = "";
     let name = null;
+    let item = null;
     if (type === RollTypes.Maneuver) {
-        const item = actor.items.get(itemId);
+        item = actor.items.get(itemId);
         name = new Handlebars.SafeString(item.name);
         command = `Actor.get("${actorId}")?.rollManeuver("${itemId}")`;
     } else if (type === RollTypes.Skill) {

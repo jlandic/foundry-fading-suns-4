@@ -17,7 +17,6 @@ export default class WeaponDataModel extends EquipmentDataModel {
             strRequirement: new NumberField({ required: true, initial: 0 }),
             melee: new BooleanField({ required: true, initial: true }),
             range: new SchemaField({
-                extreme: new BooleanField({ required: true, initial: false }),
                 short: new NumberField({ required: false }),
                 long: new NumberField({ required: false }),
             }),

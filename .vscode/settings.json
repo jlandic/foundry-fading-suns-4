@@ -51,5 +51,7 @@
       ],
       "url": "./schemas/species.schema.json"
     }
-  ]
+  ],
+  "typescript.validate.enable": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

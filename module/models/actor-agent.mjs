@@ -17,7 +17,6 @@ export default class AgentDataModel extends BaseActorDataModel {
             calling: new StringField({ nullable: true }),
             secondaryCalling: new StringField({ nullable: true }),
             tertiaryCalling: new StringField({ nullable: true }),
-            rank: new StringField({ required: true }),
             planet: new StringField({ required: true }),
             birthdate: new StringField({ required: true }),
             blessing: new StringField({ nullable: true }),

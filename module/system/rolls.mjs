@@ -165,8 +165,6 @@ export class DiceThrow {
     }
 
     async roll() {
-        let rolls = [];
-
         const roll = await new Roll("1d20").roll();
         this.rolls.push(roll);
 
