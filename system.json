@@ -54,7 +54,7 @@
   "packFolders": [
     {
       "name": "Fading Suns 4",
-      "sorting": "alphabetical",
+      "sorting": "a",
       "packs": [
         "afflictions",
         "blessings",
