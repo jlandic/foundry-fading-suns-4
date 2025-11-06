@@ -77,7 +77,7 @@
           "$ref": "./slugs.schema.json#/slug"
         },
         "equipment": {
-          "$ref": "./slugs.schema.json#/slug"
+          "$ref": "./defs.schema.json#/equipment"
         },
         "capabilities": {
           "$ref": "./defs.schema.json#/capabilities"

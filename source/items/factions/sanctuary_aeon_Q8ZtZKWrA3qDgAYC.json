@@ -78,7 +78,14 @@
     ],
     "curse": "gullible",
     "slug": "sanctuary_aeon",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "merciful_technal"
+        }
+      ]
+    ],
     "favoredCalling": "healer",
     "capabilities": [
       [

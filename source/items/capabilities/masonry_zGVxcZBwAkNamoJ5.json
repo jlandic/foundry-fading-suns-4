@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "masonry",
-    "description": "<p>Vous savez fabriquer des structures avec du bois, des briques et du mortier.</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

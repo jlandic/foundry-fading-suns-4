@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "combat_armor",
-    "description": "<p>Cette aptitude fait qu’un personnage est habitué à utiliser des armures légères et intermédiaires.</p>",
+    "description": "",
     "type": "equipment",
     "category": "armor",
     "preconditions": []

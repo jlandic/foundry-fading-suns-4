@@ -4,7 +4,7 @@
   "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "explo",
-    "description": "Les explosions sont des attaques de zone. Le rayon de l'explosion est indiqué en mètres ; toutes les cibles dans la zone d'effet sont affectées. De plus, les explosions ignorent toutes les Résistances sauf les armures. La Résistance renforcée et les avantages comme @SLUG[perk:nimble] ne permettent pas de se défendre contre une explosion."
+    "description": ""
   },
   "_id": "BNKic9HRWQWTk8Ch",
   "img": "icons/commodities/tech/blueprint.webp",

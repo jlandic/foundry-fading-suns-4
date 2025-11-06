@@ -253,6 +253,20 @@ export default class BaseItemSheet extends BaseSheetMixin(
         )
     }
 
+    async _prepareEquipmentChoice(path = "system.equipment") {
+        return await this._prepareChoicesSet(
+            path,
+            async ({ slug, type }) => {
+                if (type === "special") {
+                    return game.i18n.localize(`fs4.faction.equipment.special.${slug}`);
+                }
+
+                return await enrichHTML(`@SLUG[${type}:${slug}]`);
+            },
+            game.i18n.localize("fs4.common.orSeparator")
+        )
+    }
+
     async _prepareCapabilitiesChoice(path = "system.capabilities") {
         return await this._prepareChoicesSet(
             path,

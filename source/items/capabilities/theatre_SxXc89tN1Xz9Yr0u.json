@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "theatre",
-    "description": "<p>L’art de la comédie est très apprécié. En réalité, il est présenté par l’Église comme la méthode originelle pour prêcher le message du Prophète.</p>",
+    "description": "",
     "type": "lores",
     "category": "performing_arts",
     "preconditions": []

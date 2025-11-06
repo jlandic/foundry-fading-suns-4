@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "warfare_lore",
-    "description": "<p>Vous avez une connaissance approfondie des tactiques militaires. La guerre est un domaine complexe impliquant des compétences nombreuses et variées pour les différentes étapes d’une bataille. Cette aptitude peut être requise dans des situations où vous devez planifier ou faire exécuter des mouvements de troupes ou anticiper ceux d’un ennemi. Elle peut également s’appliquer lors des manœuvres commander de la compétence Prestance pour mettre les soldats en rang.</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": [

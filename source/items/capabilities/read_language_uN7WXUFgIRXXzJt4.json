@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "read_language",
-    "description": "<p>La plupart des paysans ne savent pas lire, même certains membres de guildes et francs-tenanciers sont analphabètes. Il leur faut donc engager d’autres personnes pour ces tâches. Avec cette aptitude, vous savez lire une langue.</p><p>La langue écrite commune est le tærrien.</p><p>Note: les membres de guilde de la Ligue des marchands peuvent lire le tætech qui n’est pas vraiment une langue distincte mais un vaste jargon technique. Nombre d’anciens (c.à-d. de la Deuxième République, voire de la Diaspora) manuels techniques regorgent de tant de termes obsolètes et de néologismes qu’ils sont presque illisibles par les non-initiés. La guilde adopte et entretient volontairement cette « langue » pour conserver son monopole. Vous devez d’abord avoir Lire le tærrien pour apprendre Lire le tætech.</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

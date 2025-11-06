@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "tl8",
-    "description": "<p>Prérequis : Technologie (NT7).</p><p>Vous savez comment utiliser et réparer des objets technologiques d’un niveau technologique 8.</p><p>Note : il s’agit du niveau de Technologie maximal qu’un personnage peut obtenir.</p>",
+    "description": "",
     "type": "lores",
     "category": "technology",
     "preconditions": [

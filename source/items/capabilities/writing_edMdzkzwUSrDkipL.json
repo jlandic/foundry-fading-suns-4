@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "writing",
-    "description": "<p>Vous êtes versé en prose et non-fiction, qu’il s’agisse de romans, de biographies ou d’histoires.</p>",
+    "description": "",
     "type": "lores",
     "category": "arts",
     "preconditions": []

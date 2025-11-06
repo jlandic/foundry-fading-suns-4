@@ -94,7 +94,14 @@
     ],
     "curse": "fidgety",
     "slug": "society_st_paulus",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "st_paulus_expedition_guide"
+        }
+      ]
+    ],
     "favoredCalling": "explorer",
     "capabilities": [
       [

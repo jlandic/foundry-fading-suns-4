@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "life_science",
-    "description": "<p>Vous comprenez les complexités de l’étude des organismes vivants.</p>",
+    "description": "",
     "type": "lores",
     "category": "science",
     "preconditions": []

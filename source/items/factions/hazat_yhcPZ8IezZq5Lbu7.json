@@ -83,7 +83,20 @@
     ],
     "curse": "vengeful",
     "slug": "hazat",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "armor",
+          "slug": "synthsilk_cape"
+        }
+      ],
+      [
+        {
+          "type": "special",
+          "slug": "dueling_weapon"
+        }
+      ]
+    ],
     "favoredCalling": "duelist",
     "capabilities": [
       [

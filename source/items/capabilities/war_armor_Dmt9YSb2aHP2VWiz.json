@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "war_armor",
-    "description": "<p>Vous êtes habitué à porter des armures lourdes.</p>",
+    "description": "",
     "type": "equipment",
     "category": "armor",
     "preconditions": [

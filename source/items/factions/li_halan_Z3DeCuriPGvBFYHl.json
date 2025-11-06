@@ -94,7 +94,20 @@
     ],
     "curse": "dynastic_stain",
     "slug": "li_halan",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "armor",
+          "slug": "synthsilk_robes"
+        }
+      ],
+      [
+        {
+          "type": "equipment",
+          "slug": "saints_relic"
+        }
+      ]
+    ],
     "favoredCalling": "courtier",
     "capabilities": [
       [

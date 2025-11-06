@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "disease_lore",
-    "description": "<p>Vous connaissez bien les maladies et les façons de les traiter.</p>",
+    "description": "",
     "type": "lores",
     "category": "medical",
     "preconditions": []

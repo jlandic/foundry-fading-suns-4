@@ -12,7 +12,7 @@ export default class FactionSheet extends BaseItemSheet {
             blessing: blessings.join(game.i18n.localize("fs4.common.orSeparator")),
             curse: await this._prepareReference("system.curse", "curse"),
             capabilities: await this._prepareCapabilitiesChoice(),
-            // equipment: await this._prepareReference("system.equipment"),
+            equipment: await this._prepareEquipmentChoice("system.equipment"),
             favoredCalling: await this._prepareReference("system.favoredCalling", "calling"),
         });
 

@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "physical_science",
-    "description": "<p>Vous étudiez les systèmes non vivants : la physique, l’astronomie, la chimie et la science planétaire.</p>",
+    "description": "",
     "type": "lores",
     "category": "science",
     "preconditions": [

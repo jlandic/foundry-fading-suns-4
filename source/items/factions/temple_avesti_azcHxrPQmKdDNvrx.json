@@ -88,7 +88,14 @@
     ],
     "curse": "righteous_curse",
     "slug": "temple_avesti",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "holy_flame_pendant"
+        }
+      ]
+    ],
     "favoredCalling": "inquisitor",
     "capabilities": [
       [

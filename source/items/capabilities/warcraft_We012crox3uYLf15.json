@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "warcraft",
-    "description": "<p>Vous connaissez bien les véhicules terrestres blindés utilisés par les militaires, dont les chars d’assaut, les fourgons transportant de l’artillerie et autres canons mobiles. Cette aptitude s’utilise avec la compétence Conduite.</p>",
+    "description": "",
     "type": "equipment",
     "category": "transport",
     "preconditions": [

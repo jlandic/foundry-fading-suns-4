@@ -68,7 +68,20 @@
     ],
     "curse": "subtle",
     "slug": "eskatonic_order",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "apocrypha_of_horace_set"
+        }
+      ],
+      [
+        {
+          "type": "equipment",
+          "slug": "saint_horace_rejected_texts"
+        }
+      ]
+    ],
     "favoredCalling": "occultist",
     "capabilities": [
       [

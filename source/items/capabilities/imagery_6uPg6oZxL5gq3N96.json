@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "imagery",
-    "description": "<p>Vous pouvez créer et interpréter des images telles que des tableaux, des dessins, des fresques ou des livres enluminés.</p>",
+    "description": "",
     "type": "lores",
     "category": "arts",
     "preconditions": []

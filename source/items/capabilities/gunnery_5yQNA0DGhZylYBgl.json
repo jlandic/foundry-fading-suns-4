@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "gunnery",
-    "description": "<p>Cette aptitude vous permet d’utiliser des armes lourdes en batterie comme les armes montées sur un véhicule. Elle inclut également les canons de vaisseaux (bien que ces derniers requièrent aussi l’aptitude Opérations à bord d’un vaisseau).</p>",
+    "description": "",
     "type": "equipment",
     "category": "military_ordnance",
     "preconditions": [

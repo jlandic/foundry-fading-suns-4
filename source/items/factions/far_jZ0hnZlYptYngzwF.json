@@ -82,7 +82,18 @@
     ],
     "curse": "bitter",
     "slug": "far",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "scrambler_key"
+        },
+        {
+          "type": "equipment",
+          "slug": "translator"
+        }
+      ]
+    ],
     "favoredCalling": "lawyer",
     "capabilities": [
       [

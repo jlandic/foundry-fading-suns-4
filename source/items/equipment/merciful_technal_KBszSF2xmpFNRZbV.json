@@ -1,0 +1,74 @@
+{
+  "folder": "JBHNPclQVljwbkRh",
+  "name": "merciful_technal",
+  "type": "equipment",
+  "_id": "KBszSF2xmpFNRZbV",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "slug": "merciful_technal",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "cost": null,
+    "tl": 5
+  },
+  "effects": [
+    {
+      "name": "merciful_technal",
+      "disabled": false,
+      "_id": "d842MIQOHO5TwlVD",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "skill",
+        "austerity": false,
+        "context": "none",
+        "value": "2",
+        "notes": "",
+        "target": "remedy"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!KBszSF2xmpFNRZbV.d842MIQOHO5TwlVD"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762460524950,
+    "modifiedTime": 1762460675233,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!KBszSF2xmpFNRZbV"
+}

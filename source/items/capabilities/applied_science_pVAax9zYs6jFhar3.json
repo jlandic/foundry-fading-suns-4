@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "applied_science",
-    "description": "<p>Vous savez comment créer ou fabriquer des objets technologiques en utilisant les sciences de la Ligue des marchands. Les sciences inconnues, perdues ou censurées peuvent requérir leur propre aptitude.</p>",
+    "description": "",
     "type": "lores",
     "category": "science",
     "preconditions": [

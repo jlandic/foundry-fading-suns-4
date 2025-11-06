@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "magic_lantern",
-    "description": "<p>Votre art utilise des images animées ou immobiles enregistrées par un appareil (une caméra ou un œil holographique), ce qui inclut toutes sortes de choses depuis des photographies jusqu’à des holovidéos narratives.</p><p>(Notez que cela s’applique à l’écriture, la direction et l’holographie d’une pièce de lanterne magique mais que la représentation utilise la compétence Représentation.)</p>",
+    "description": "",
     "type": "lores",
     "category": "arts",
     "preconditions": []

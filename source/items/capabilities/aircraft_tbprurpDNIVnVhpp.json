@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "aircraft",
-    "description": "<p>Vous connaissez bien les véhicules volants tels que les machines volantes, avions à réaction et planeurs qui s’utilisent avec la compétence Pilotage.</p>",
+    "description": "",
     "type": "equipment",
     "category": "transport",
     "preconditions": []

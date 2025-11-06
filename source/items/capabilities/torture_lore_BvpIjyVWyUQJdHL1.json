@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "torture_lore",
-    "description": "<p>Vous maîtrisez les méthodes permettant de pousser des sujets à divulguer des informations sous la contrainte.</p>",
+    "description": "",
     "type": "lores",
     "category": "medical",
     "preconditions": []

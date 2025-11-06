@@ -80,7 +80,14 @@
     ],
     "curse": "prideful",
     "slug": "hawkwood",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "special",
+          "slug": "premium_quality_weapon"
+        }
+      ]
+    ],
     "favoredCalling": "commander",
     "capabilities": [
       [

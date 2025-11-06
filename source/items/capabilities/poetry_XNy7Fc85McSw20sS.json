@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "poetry",
-    "description": "<p>Vous avez étudié les haïkus ainsi que la poésie lyrique et épique qui sont tous des formes d’art grandement respectées par la noblesse.</p>",
+    "description": "",
     "type": "lores",
     "category": "arts",
     "preconditions": []

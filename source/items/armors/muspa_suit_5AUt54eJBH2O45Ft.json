@@ -1,0 +1,43 @@
+{
+  "folder": "4geLGbwgCVI1GW3v",
+  "name": "muspa_suit",
+  "type": "armor",
+  "_id": "5AUt54eJBH2O45Ft",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "system": {
+    "slug": "muspa_suit",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "res": 4,
+    "eshieldCompatibility": "es",
+    "anti": [
+      "shk",
+      "slm"
+    ],
+    "features": [],
+    "cost": null,
+    "tl": 6,
+    "techCompulsion": "protective"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762460492140,
+    "modifiedTime": 1762460683355,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!5AUt54eJBH2O45Ft"
+}

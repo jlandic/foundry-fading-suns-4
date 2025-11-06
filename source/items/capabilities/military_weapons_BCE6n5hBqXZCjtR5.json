@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "military_weapons",
-    "description": "<p>Cette aptitude convient à n’importe quelle arme communément associée à l’armée ou au combat, comme les épées, les sabres, les armes d’hast, etc.</p>",
+    "description": "",
     "type": "equipment",
     "category": "melee_weapons",
     "preconditions": [

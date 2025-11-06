@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "ai",
-    "description": "<p>Prérequis : aptitude Machines à penser.</p><p>Vous êtes instruit dans l’art et la science de la programmation des machines à penser intelligentes. Cette aptitude est parfois requise lorsque vous utilisez votre influence contre un golem intelligent, que ce soit pour le commander, l’amadouer ou essayer de le déconcerter et ainsi l’inciter à aller à l’encontre de ses protocoles.</p>",
+    "description": "",
     "type": "lores",
     "category": "science",
     "preconditions": [
@@ -28,6 +28,12 @@
         {
           "type": "calling",
           "slug": "tech_redeemer"
+        }
+      ],
+      [
+        {
+          "type": "capability",
+          "slug": "think_machines"
         }
       ]
     ]

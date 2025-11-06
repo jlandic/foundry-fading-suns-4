@@ -23,7 +23,15 @@ const PACKS = [
     "items/armors",
     "items/shields",
     "items/techCompulsions",
+    "items/equipment",
 ];
+
+const PACK_TYPE_MAPPING = {
+    weapons: "weapon",
+    armors: "armor",
+    shields: "shield",
+    equipment: "equipment",
+}
 
 const TYPE_MAPPING = {}
 
@@ -35,6 +43,18 @@ const initializeTypeMapping = async () => {
         const [id, type] = line.split(",").map(part => part.trim());
         TYPE_MAPPING[id] = type;
     }
+}
+
+const randomID = (length = 16) => {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const cutoff = 0x100000000 - (0x100000000 % chars.length);
+    const random = new Uint32Array(length);
+    do {
+        crypto.getRandomValues(random);
+    } while (random.some(x => x >= cutoff));
+    let id = "";
+    for (let i = 0; i < length; i++) id += chars[random[i] % chars.length];
+    return id;
 }
 
 const compile = async () => {
@@ -105,7 +125,7 @@ const importReference = async (collection) => {
     }
 }
 
-const translateWeapons = (_reference, item) => {
+const translateEquipment = (_reference, item) => {
     const base = {
         name: item.system.slug,
         description: "",
@@ -122,16 +142,14 @@ const translateWeapons = (_reference, item) => {
             return acc;
         }, {});
     }
+
+    return base;
 }
 
-const translateTechCompulsions = (_reference, item) => ({
-    name: item.system.slug,
-    description: "",
-});
-
 const TRANSLATION_FNS = {
-    weapons: translateWeapons,
-    techCompulsions: translateTechCompulsions,
+    weapons: translateEquipment,
+    armors: translateEquipment,
+    equipment: translateEquipment,
 };
 
 const generateTranslations = async (collection) => {
@@ -159,7 +177,7 @@ const generateTranslations = async (collection) => {
 
     for (const item of items.sort((a, b) => a.name.localeCompare(b.name))) {
         let reference = references.find(ref => ref.system?.id === item.system.slug);
-        if (!reference) {
+        if (!reference && item.system) {
             console.warn(`No reference found for item: ${item.system?.slug}`);
             reference = {
                 name: item.name,
@@ -167,9 +185,14 @@ const generateTranslations = async (collection) => {
         }
 
         if (item.system) {
+            console.log(`Generating translation for item: ${item.system.slug}`);
             translations.entries[item.system.slug] = TRANSLATION_FNS[collection](reference, item);
+        } else {
+            console.warn(`Skipping Folder item: ${item.name}`);
         }
     }
+
+    console.log(translations);
 
     await fs.writeFile(path.join(REF_DIR, "_i18n", `fading-suns-4.${collection}.json`), JSON.stringify(translations, null, 2), "utf-8");
 }
@@ -236,6 +259,109 @@ const linkSlugs = async (collection, property) => {
     }
 }
 
+const IMG_MAPPING = {
+    armor: "icons/equipment/chest/breastplate-banded-blue.webp",
+    weapon: "icons/weapons/swords/swords-short.webp",
+    shield: "icons/armor/shields/shield-round-brown-steel.webp",
+};
+
+const DEFAULT_SYSTEM = {
+    armor: {
+        curio: false,
+        agora: "",
+        quality: "standard",
+        size: "none",
+        features: [],
+        cost: 0,
+        tl: 5,
+        capability: null,
+        res: 0,
+        eshieldCompatibility: "es",
+        anti: [],
+        techCompulsion: null,
+    },
+    weapon: {
+        curio: false,
+        agora: "",
+        quality: "standard",
+        size: "none",
+        features: [],
+        cost: 0,
+        tl: 5,
+        capability: null,
+        damage: 0,
+        strRequirement: 0,
+        melee: false,
+        range: {
+            short: 0,
+            long: 0,
+        },
+        rof: 1,
+        burst: false,
+        ammo: 0,
+        currentAmmo: 0,
+        blastForce: null,
+        anti: [],
+        techCompulsion: null,
+    },
+    equipment: {
+        curio: false,
+        agora: "",
+        quality: "standard",
+        size: "none",
+        cost: 0,
+        tl: 5,
+        techCompulsion: undefined,
+    }
+}
+
+const createSourceItem = async (pack, slug) => {
+    const type = PACK_TYPE_MAPPING[pack];
+    if (!type) {
+        console.error(`Unknown pack type: ${pack}`);
+        return;
+    }
+    console.log(`Creating new source item of type: ${type} with slug: ${slug}...`);
+    const collectionPath = path.join(SOURCE_DIR, "items", pack);
+    const id = randomID();
+
+    const newItem = {
+        type,
+        name: slug,
+        folder: null,
+        system: {
+            slug,
+            description: "",
+            ...DEFAULT_SYSTEM[type],
+        },
+        _id: id,
+        img: IMG_MAPPING[type] || "icons/svg/item-bag.svg",
+        effects: [],
+        flags: {},
+        _stats: {
+            compendiumSource: null,
+            duplicateSource: null,
+            exportSource: null,
+            coreVersion: "13.350",
+            systemId: "fading-suns-4",
+            systemVersion: "0.0.1",
+            createdTime: 1760897547556,
+            modifiedTime: 1760897547556,
+            lastModifiedBy: "ef54fWvGiyPGgegN"
+        },
+        ownership: {
+            default: 0,
+            ef54fWvGiyPGgegN: 3
+        },
+        sort: 0,
+        _key: `!items!${id}`,
+    };
+
+    await fs.writeFile(path.join(collectionPath, `${slug}_${id}.json`), JSON.stringify(newItem, null, 2), "utf-8");
+
+    console.log(`Created new item at: ${path.join(collectionPath, `${slug}_${id}.json`)}`);
+}
+
 const cmd = new Command();
 
 cmd.name("packs")
@@ -265,5 +391,10 @@ cmd
     .command("translate <collection>")
     .description("Generate translations for the given collection")
     .action(generateTranslations);
+
+cmd
+    .command("create <pack> <slug>")
+    .description("Create a new item in the given pack with the specified slug")
+    .action(createSourceItem);
 
 cmd.parseAsync();

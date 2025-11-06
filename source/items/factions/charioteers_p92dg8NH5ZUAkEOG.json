@@ -76,7 +76,14 @@
     ],
     "curse": "nosy",
     "slug": "charioteers",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "jumpkey"
+        }
+      ]
+    ],
     "favoredCalling": "star_pilot",
     "capabilities": [
       [

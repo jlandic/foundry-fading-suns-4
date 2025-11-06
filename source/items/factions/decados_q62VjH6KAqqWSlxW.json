@@ -108,7 +108,14 @@
     ],
     "curse": "vain",
     "slug": "decados",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "little_friend"
+        }
+      ]
+    ],
     "favoredCalling": "sybarite",
     "capabilities": [
       [

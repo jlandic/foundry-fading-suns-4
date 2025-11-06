@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "handheld_shield",
-    "description": "<p>Cette aptitude fait qu’un personnage est habitué à utiliser des boucliers portatifs tels que des rondaches et des boucliers anti-émeutes des forces de sécurité. Lorsque vous portez un bouclier sans cette aptitude, vos jets de Vigueur et vos jets d’attaque sont défavorables. À moins que vous ne soyez en combat, que vous n’assuriez la sécurité de quelqu’un ou que vous ne partiez en guerre, porter un bouclier portatif est considéré comme dégradant (le MJ peut également décider que vos jets de persuasion sont défavorables).</p>",
+    "description": "",
     "type": "equipment",
     "category": "armor",
     "preconditions": []

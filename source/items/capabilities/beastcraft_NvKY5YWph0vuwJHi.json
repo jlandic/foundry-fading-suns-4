@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "beastcraft",
-    "description": "<p>Vous êtes habitué aux véhicules terrestres comme les charrettes, chariots, ou traîneaux qui sont tirés par un ou plusieurs animaux tels que des chevaux, des brutes (grosses bêtes de somme), voire des chiens de traîneau. Cette aptitude s’utilise avec la compétence Conduite.</p>",
+    "description": "",
     "type": "equipment",
     "category": "transport",
     "preconditions": []

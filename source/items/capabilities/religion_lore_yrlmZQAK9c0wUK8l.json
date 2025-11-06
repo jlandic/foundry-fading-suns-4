@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "religion_lore",
-    "description": "<p>Vous connaissez très bien tout ce qui a trait aux croyances, aux enseignements, aux coutumes, aux dogmes, aux saintes Écritures et aux rituels de l’Église Universelle du Soleil Céleste, y compris ses hymnes, ses fables et la vie des saints.</p><p>Vous pouvez remplacer cette aptitude par (ou prendre en supplément) : Savoir (Erdgheist) — la religion païenne des Vuldroks —, Savoir (El-Diin) — la religion des Kurgans —, Savoir (gjarti) ou Savoir (Zuranisme).</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

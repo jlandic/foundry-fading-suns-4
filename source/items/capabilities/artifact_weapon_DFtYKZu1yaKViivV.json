@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "artifact_weapon",
-    "description": "<p>Cette aptitude concerne les armes extrêmement avancées telles que les épées flux ou les lances énergétiques Vaü.</p><p>Chaque arme requiert sa propre aptitude.</p>",
+    "description": "",
     "type": "equipment",
     "category": "melee_weapons",
     "preconditions": []

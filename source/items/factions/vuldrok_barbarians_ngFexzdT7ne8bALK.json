@@ -108,7 +108,18 @@
     ],
     "curse": "prideful",
     "slug": "vuldrok_barbarians",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "special",
+          "slug": "premium_weapon_vuldrok"
+        },
+        {
+          "type": "special",
+          "slug": "premium_shield"
+        }
+      ]
+    ],
     "favoredCalling": "pirate",
     "capabilities": [
       [

@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "jumpweb_lore",
-    "description": "<p>Cette aptitude recouvre le savoir général sur le réseau de saut des Mondes Connus. Vous avez dans votre esprit l’équivalent d’une carte de la position relative des mondes, de leurs connexions (routes de saut) les uns aux autres ainsi que de leurs systèmes solaires.</p><p>Vous connaissez également la plupart des informations fournies dans le Chapitre 3 : les Mondes Connus du Guide de l’univers, mais il se peut que vous deviez effectuer une manœuvre d’Érudition entrer dans son palais mental pour vous en rappeler dans une situation d’urgence.</p><p>Lorsque vous obtenez cette aptitude, vous devez choisir la zone à laquelle elle s’applique : les Mondes Connus ou les Mondes Barbares. Vous pouvez choisir cette aptitude une deuxième fois pour compléter votre connaissance du réseau de sauts.</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

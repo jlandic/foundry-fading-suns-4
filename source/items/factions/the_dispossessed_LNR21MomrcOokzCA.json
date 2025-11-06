@@ -78,7 +78,14 @@
     ],
     "curse": "twitchy",
     "slug": "the_dispossessed",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "military_squawker"
+        }
+      ]
+    ],
     "favoredCalling": "mercenary",
     "capabilities": [
       [

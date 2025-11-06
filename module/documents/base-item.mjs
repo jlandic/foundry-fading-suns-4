@@ -19,6 +19,7 @@ export default class BaseItem extends foundry.documents.Item {
             case "weaponFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
             case "armorFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
             case "shieldFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
+            case "armor": icon = "icons/equipment/chest/breastplate-banded-blue.webp"; break;
         }
 
         return {

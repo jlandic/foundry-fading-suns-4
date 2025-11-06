@@ -86,7 +86,20 @@
     ],
     "curse": "callous",
     "slug": "the_muster",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "armor",
+          "slug": "muspa_suit"
+        }
+      ],
+      [
+        {
+          "type": "special",
+          "slug": "muspa_suit_one_more_proof"
+        }
+      ]
+    ],
     "favoredCalling": "mercenary",
     "capabilities": [
       [

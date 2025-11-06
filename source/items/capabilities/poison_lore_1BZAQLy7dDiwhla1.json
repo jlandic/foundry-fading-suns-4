@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "poison_lore",
-    "description": "<p>Vous connaissez bien les poisons et leurs remèdes.</p>",
+    "description": "",
     "type": "lores",
     "category": "medical",
     "preconditions": []

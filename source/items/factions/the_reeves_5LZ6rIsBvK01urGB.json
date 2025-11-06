@@ -68,7 +68,14 @@
     ],
     "curse": "mammon",
     "slug": "the_reeves",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "crawler"
+        }
+      ]
+    ],
     "favoredCalling": "lawyer",
     "capabilities": [
       [

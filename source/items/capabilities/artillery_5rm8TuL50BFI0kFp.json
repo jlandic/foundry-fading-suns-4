@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "artillery",
-    "description": "<p>Vous savez comment utiliser et entretenir l’artillerie lourde : mortiers, lance-roquettes, etc.</p>",
+    "description": "",
     "type": "equipment",
     "category": "military_ordnance",
     "preconditions": [

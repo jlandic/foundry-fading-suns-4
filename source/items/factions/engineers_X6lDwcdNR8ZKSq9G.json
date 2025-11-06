@@ -64,7 +64,14 @@
     ],
     "curse": "unnerving",
     "slug": "engineers",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "nanotech_multitool"
+        }
+      ]
+    ],
     "favoredCalling": "tech_redeemer",
     "capabilities": [
       [

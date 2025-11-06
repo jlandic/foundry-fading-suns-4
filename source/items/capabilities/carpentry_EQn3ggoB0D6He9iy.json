@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "carpentry",
-    "description": "<p>Vous savez construire des bâtiments et autres structures.</p><p>Cette aptitude couvre également la création (non artistique) de menuiseries : petits meubles, chaises, tabourets, bâtons de marche, etc.</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

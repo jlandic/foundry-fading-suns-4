@@ -72,7 +72,18 @@
     ],
     "curse": "austere",
     "slug": "urth_orthodox",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "illuminated_gospels"
+        },
+        {
+          "type": "equipment",
+          "slug": "silver_jumpgate_cross"
+        }
+      ]
+    ],
     "favoredCalling": "clergy",
     "capabilities": [
       [

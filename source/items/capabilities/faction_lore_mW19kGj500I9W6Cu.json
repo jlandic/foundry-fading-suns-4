@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "faction_lore",
-    "description": "<p>Vous connaissez et comprenez le fonctionnement interne d’une faction.</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

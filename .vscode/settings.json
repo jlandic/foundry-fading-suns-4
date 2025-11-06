@@ -8,6 +8,10 @@
     "editor.defaultColorDecorators": "never",
     "editor.detectIndentation": false
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "files.insertFinalNewline": true
+  },
   "json.schemas": [
     {
       "fileMatch": [

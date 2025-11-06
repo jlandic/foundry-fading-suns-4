@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "planet_lore",
-    "description": "<p>Vous avez une grande connaissance sur une planète spécifique des Mondes Connus et sur son système solaire. Cette spécialisation représente un savoir plus détaillé du monde que celui accessible via Savoir (Réseau de sauts).</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "energy_guns",
-    "description": "<p>Vous savez comment utiliser et entretenir les armes à distance qui projettent de l’énergie : des lasers, des blasters, des brûleurs, etc.</p>",
+    "description": "",
     "type": "equipment",
     "category": "ranged_weapons",
     "preconditions": [

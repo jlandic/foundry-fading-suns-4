@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "think_machines",
-    "description": "<p>Cette aptitude est requise pour utiliser et programmer les objets complexes que sont les machines à penser telles que celles utilisées sur les vaisseaux ou dans les salles d’archives de l’Église. Elle implique généralement la compétence Interface mais peut également être utilisée avec Intrusion lorsque vous essayez de toucher à un système de sécurité ou Rédemption technologique lorsque vous essayez d’effectuer des réparations simples sur un appareil.</p><p>La plupart des appareils grand public, comme des dispositifs permettant de porter des objets et d’avoir les mains libres ou bien des nœuds d’extraction de données, ne requièrent ni jet ni cette aptitude. Leurs interfaces d’utilisation sont conçues pour une utilisation simple.</p><p>Référez-vous au Chapitre 4 : technologie pour plus d’informations sur les machines à penser.</p>",
+    "description": "",
     "type": "equipment",
     "category": "think_machines",
     "preconditions": []

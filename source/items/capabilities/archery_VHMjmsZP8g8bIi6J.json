@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "archery",
-    "description": "<p>Vous savez comment utiliser et entretenir les arcs, les flèches et n’importe quels projectiles tirés par une arme avec une corde (comme les arbalètes).</p>",
+    "description": "",
     "type": "equipment",
     "category": "ranged_weapons",
     "preconditions": []

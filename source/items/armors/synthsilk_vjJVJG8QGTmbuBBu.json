@@ -1,0 +1,41 @@
+{
+  "folder": "4geLGbwgCVI1GW3v",
+  "name": "synthsilk",
+  "type": "armor",
+  "_id": "vjJVJG8QGTmbuBBu",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "system": {
+    "slug": "synthsilk",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "res": 3,
+    "eshieldCompatibility": "es",
+    "anti": [
+      "shk"
+    ],
+    "features": [],
+    "cost": 300,
+    "tl": 5
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762460492140,
+    "modifiedTime": 1762460683355,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!vjJVJG8QGTmbuBBu"
+}

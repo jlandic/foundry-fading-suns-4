@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "beast_lore",
-    "description": "<p>Vous avez de grandes connaissances sur le royaume animal, y compris les créatures extraterrestres de nombreux mondes. Lorsque vous obtenez cette aptitude, vous devez choisir la zone à laquelle elle s’applique : les Mondes Connus ou les Mondes Barbares. Vous pouvez choisir cette aptitude une deuxième fois pour compléter votre connaissance de la faune et l’étendre à tous les mondes.</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

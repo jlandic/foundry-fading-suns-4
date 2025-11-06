@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "blacksmithing",
-    "description": "<p>Vous savez comment forger des objets à partir de métaux bruts.</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

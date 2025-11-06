@@ -163,6 +163,31 @@
       }
     }
   },
+  "equipment": {
+    "type": "array",
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "weapon",
+              "armor",
+              "equipment",
+              "shield",
+              "special"
+            ]
+          }
+        }
+      }
+    }
+  },
   "capabilities": {
     "type": "array",
     "items": {

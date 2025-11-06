@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "watercraft",
-    "description": "<p>Vous savez comment utiliser et gouverner des voiliers, des canots à moteur et autres transports sur l’eau.</p>",
+    "description": "",
     "type": "equipment",
     "category": "transport",
     "preconditions": []

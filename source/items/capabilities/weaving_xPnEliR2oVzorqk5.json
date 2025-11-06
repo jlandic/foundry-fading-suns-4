@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "weaving",
-    "description": "<p>Vous savez créer des matières textiles à partir de matériaux bruts.</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

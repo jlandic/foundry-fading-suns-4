@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "artifact_gun",
-    "description": "<p>Vous savez comment utiliser et entretenir des armes à distance extrêmement avancées telles qu’une arme employant des nanites ou un monocle émetteur des rayons Vaü. Comme pour les armes-artefacts de contact, chaque arme requiert sa propre aptitude.</p>",
+    "description": "",
     "type": "equipment",
     "category": "ranged_weapons",
     "preconditions": []

@@ -100,7 +100,14 @@
     ],
     "curse": "possessive",
     "slug": "scravers",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "guest_key"
+        }
+      ]
+    ],
     "favoredCalling": "thief",
     "capabilities": [
       [

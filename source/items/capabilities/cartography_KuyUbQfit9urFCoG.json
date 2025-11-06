@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "cartography",
-    "description": "<p>Vous savez créer des cartes.</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

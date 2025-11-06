@@ -1,0 +1,35 @@
+{
+  "folder": "JBHNPclQVljwbkRh",
+  "name": "apocrypha_of_horace_set",
+  "type": "equipment",
+  "_id": "0yJObKuaRSKK4xrr",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "slug": "apocrypha_of_horace_set",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "cost": null,
+    "tl": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762460524950,
+    "modifiedTime": 1762460675233,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!0yJObKuaRSKK4xrr"
+}

@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "tl7",
-    "description": "<p>Prérequis : Technologie (NT6).</p><p>Vous savez comment utiliser et réparer des objets technologiques d’un niveau technologique 7.</p>",
+    "description": "",
     "type": "lores",
     "category": "technology",
     "preconditions": [

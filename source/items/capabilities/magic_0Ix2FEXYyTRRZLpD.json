@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "magic",
-    "description": "<p>Les illusionnistes utilisent des tours de magie et le détournement de l’attention.</p>",
+    "description": "",
     "type": "lores",
     "category": "performing_arts",
     "preconditions": []

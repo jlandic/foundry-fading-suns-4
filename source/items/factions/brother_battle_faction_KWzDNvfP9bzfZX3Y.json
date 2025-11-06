@@ -80,7 +80,18 @@
     ],
     "curse": "clueless",
     "slug": "brother_battle_faction",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "special",
+          "slug": "blessed_sword"
+        },
+        {
+          "type": "special",
+          "slug": "blessed_slug_gun"
+        }
+      ]
+    ],
     "favoredCalling": "brother_battle",
     "capabilities": [
       [

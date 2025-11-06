@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "shipboard_operations",
-    "description": "<p>Vous connaissez très bien les règles de la vie à bord d’un vaisseau et vous avez été formé pour pouvoir assumer les tâches basiques. (Cf. Vaisseaux interstellaires dans le Chapitre 4 : technologie pour obtenir une liste des manœuvres que les personnages peuvent effectuer à bord ; beaucoup requièrent cette aptitude.) Effectuer une action physique dans l’espace ou en apesanteur alors que vous portez une combinaison spatiale sans avoir cette aptitude rend l’action défavorable (les combinaisons spatiales renforcées requièrent également l’aptitude Armure de guerre).</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

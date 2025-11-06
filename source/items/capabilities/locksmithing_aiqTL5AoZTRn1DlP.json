@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "locksmithing",
-    "description": "<p>Votre connaissance des serrures et verrous inclut la capacité de les fabriquer mais peut également vous aider à les crocheter (lorsque vous utilisez la compétence Intrusion).</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

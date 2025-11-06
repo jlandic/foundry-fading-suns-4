@@ -1,0 +1,36 @@
+{
+  "folder": "JBHNPclQVljwbkRh",
+  "name": "military_squawker",
+  "type": "equipment",
+  "_id": "3iFPAbhCJdHKRaCP",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "slug": "military_squawker",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "cost": null,
+    "tl": 6,
+    "techCompulsion": "indiscreet"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762460524950,
+    "modifiedTime": 1762460675233,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!3iFPAbhCJdHKRaCP"
+}

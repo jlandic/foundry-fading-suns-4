@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "commons_customs",
-    "description": "<p>Ce sont les coutumes des gens du commun et de ceux qui traitent le plus souvent avec eux : les membres des guildes (marchands) et francs-tenanciers. En plus du fait de permettre de savoir comment ne pas prendre de grands airs auprès du peuple et des hommes libres, cette aptitude inclut la connaissance des règles tacites pour marchander dans l’agora ainsi que celle des prix adaptés. Les Marchands sont généralement éduqués dans ces coutumes dès le plus jeune âge ou les apprennent rapidement en entrant dans une guilde. Ceux qui souhaitent les rencontrer ou traiter avec eux sans avoir cette aptitude risquent de se faire rouler.</p>",
+    "description": "",
     "type": "lores",
     "category": "customs",
     "preconditions": []

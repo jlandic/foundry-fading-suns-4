@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "occult_lore",
-    "description": "<p>Vous entretenez un savoir sur les phénomènes ésotériques, arcaniques et simplement étranges qui forment ensemble ce que l’on appelle « l’occulte ». Il ne s’agit pas seulement des pouvoirs psychiques et de la théurgie, cela inclut également la super-science des Anunnakis et les sciences de pointe qui commençaient seulement à être atteintes à la fin de la Deuxième République.</p>",
+    "description": "",
     "type": "lores",
     "category": "knowledge",
     "preconditions": []

@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "leatherworking",
-    "description": "<p>Vous pouvez transformer le cuir en armures, vêtements et autres.</p>",
+    "description": "",
     "type": "lores",
     "category": "crafts",
     "preconditions": []

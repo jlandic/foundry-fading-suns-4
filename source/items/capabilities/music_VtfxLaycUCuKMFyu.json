@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "music",
-    "description": "<p>La musique apaise les âmes les plus sauvages… et incite à des danses pécheresses. Cette aptitude permet de jouer, lire et écrire des partitions de musique.</p><p>Vous pouvez utiliser cette aptitude conjointement avec la compétence Arts pour reconnaître ou interpréter une musique orchestrale, des chansons folkloriques, des ballades, des chants shantors, etc.</p><p>Lorsque vous obtenez cette aptitude, vous gagnez également une aptitude Instruments de musique.</p>",
+    "description": "",
     "type": "lores",
     "category": "performing_arts",
     "preconditions": []

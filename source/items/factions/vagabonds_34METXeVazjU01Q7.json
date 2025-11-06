@@ -86,7 +86,14 @@
     ],
     "curse": "uncouth",
     "slug": "vagabonds",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "special",
+          "slug": "100_firebirds"
+        }
+      ]
+    ],
     "favoredCalling": "amateur",
     "capabilities": [
       [
@@ -96,7 +103,7 @@
         "special_any_lores_capability"
       ],
       [
-        "speak_vagabond_patois"
+        "speak_language_vagabond_patois"
       ]
     ]
   },

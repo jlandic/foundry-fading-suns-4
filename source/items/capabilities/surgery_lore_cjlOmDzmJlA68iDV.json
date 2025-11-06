@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "surgery_lore",
-    "description": "<p>Vous pouvez effectuer des opérations chirurgicales sur des êtres vivants.</p>",
+    "description": "",
     "type": "lores",
     "category": "medical",
     "preconditions": [

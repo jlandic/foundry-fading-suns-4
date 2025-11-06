@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "oratory",
-    "description": "<p>L’art oratoire est l’arme du rhétoricien et la méthode employée par le prêcheur pour répandre son message.</p>",
+    "description": "",
     "type": "lores",
     "category": "performing_arts",
     "preconditions": []

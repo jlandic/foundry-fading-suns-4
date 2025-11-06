@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "tl5",
-    "description": "<p>Vous savez comment utiliser et réparer des objets technologiques d’un niveau technologique 5.</p>",
+    "description": "",
     "type": "lores",
     "category": "technology",
     "preconditions": []

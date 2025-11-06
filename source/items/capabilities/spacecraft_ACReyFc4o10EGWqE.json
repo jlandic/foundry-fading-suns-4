@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "spacecraft",
-    "description": "<p>Vous avez été formé pour piloter des véhicules spatiaux (en utilisant la compétence Pilotage). La guilde des Auriges maintient un quasi-monopole sur le domaine du pilotage mais on trouve tout de même quelques indépendants ainsi que des pilotes militaires.</p>",
+    "description": "",
     "type": "equipment",
     "category": "transport",
     "preconditions": [

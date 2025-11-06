@@ -96,7 +96,14 @@
     ],
     "curse": "impetuous",
     "slug": "al_malik",
-    "equipment": "TODO",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "aesthetic_orb"
+        }
+      ]
+    ],
     "favoredCalling": "enthusiast",
     "capabilities": [
       [

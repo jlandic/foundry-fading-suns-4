@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "terraforming",
-    "description": "<p>Vous étudiez le processus de transformation des planètes visant à les rendre habitables pour les humains.</p>",
+    "description": "",
     "type": "lores",
     "category": "science",
     "preconditions": [

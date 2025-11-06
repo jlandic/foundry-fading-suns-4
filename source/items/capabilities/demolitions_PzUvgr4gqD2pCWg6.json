@@ -4,7 +4,7 @@
   "folder": null,
   "system": {
     "slug": "demolitions",
-    "description": "<p>Vous savez comment fabriquer et utiliser des explosifs.</p>",
+    "description": "",
     "type": "equipment",
     "category": "military_ordnance",
     "preconditions": [
