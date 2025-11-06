@@ -1,0 +1,30 @@
+{
+  "type": "techCompulsion",
+  "name": "indiscreet",
+  "folder": null,
+  "system": {
+    "slug": "indiscreet",
+    "description": ""
+  },
+  "_id": "6j7FcQ8R1LHoIzOF",
+  "img": "icons/commodities/tech/tube-chamber-lightning.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762442818085,
+    "modifiedTime": 1762442818085,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!6j7FcQ8R1LHoIzOF"
+}

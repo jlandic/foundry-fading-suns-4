@@ -1,0 +1,53 @@
+{
+  "folder": "vAUl0g7HdaWlZj2u",
+  "name": "soe_crucible",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "soe_crucible",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xl",
+    "damage": 9,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 20,
+      "long": 30
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 15,
+    "currentAmmo": 0,
+    "anti": [
+      "blstr"
+    ],
+    "features": [],
+    "tl": 7,
+    "cost": 1000,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444330150,
+    "modifiedTime": 1762444330150,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "MtEZYJoYqXSFZThS",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!MtEZYJoYqXSFZThS"
+}

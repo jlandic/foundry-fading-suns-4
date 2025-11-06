@@ -1,0 +1,93 @@
+{
+  "folder": "vAUl0g7HdaWlZj2u",
+  "name": "nitobi_blaster_blade",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "nitobi_blaster_blade",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xl",
+    "damage": 9,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 20,
+      "long": 30
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 15,
+    "currentAmmo": 0,
+    "anti": [
+      "blstr"
+    ],
+    "features": [
+      "unstable"
+    ],
+    "tl": 7,
+    "cost": 3000,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [
+    {
+      "name": "nitobi_blaster_blade",
+      "disabled": false,
+      "_id": "tLlvOt2ZmnaRjy59",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "ranged",
+        "value": "-1",
+        "notes": ""
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!EuGuXE06dEHtxDMM.tLlvOt2ZmnaRjy59"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444330150,
+    "modifiedTime": 1762444330150,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "EuGuXE06dEHtxDMM",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!EuGuXE06dEHtxDMM"
+}

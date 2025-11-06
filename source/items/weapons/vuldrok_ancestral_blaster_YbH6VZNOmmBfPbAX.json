@@ -1,0 +1,55 @@
+{
+  "folder": "vAUl0g7HdaWlZj2u",
+  "name": "vuldrok_ancestral_blaster",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "vuldrok_ancestral_blaster",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "s",
+    "damage": 6,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 10,
+      "long": 20
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 13,
+    "currentAmmo": 0,
+    "anti": [
+      "blstr"
+    ],
+    "features": [
+      "sturdy"
+    ],
+    "tl": 7,
+    "cost": 1000,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444330150,
+    "modifiedTime": 1762444330150,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "YbH6VZNOmmBfPbAX",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!YbH6VZNOmmBfPbAX"
+}

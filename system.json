@@ -51,6 +51,30 @@
     }
   },
   "socket": false,
+  "packFolders": [
+    {
+      "name": "Fading Suns 4",
+      "sorting": "alphabetical",
+      "packs": [
+        "afflictions",
+        "blessings",
+        "callings",
+        "capabilities",
+        "classes",
+        "curses",
+        "factions",
+        "maneuvers",
+        "perks",
+        "species",
+        "equipment",
+        "weapons",
+        "armors",
+        "shields",
+        "equipmentFeatures",
+        "techCompulsions"
+      ]
+    }
+  ],
   "packs": [
     {
       "name": "afflictions",
@@ -141,6 +165,12 @@
       "label": "Equipment Features",
       "path": "packs/equipmentFeatures",
       "type": "Item"
+    },
+    {
+      "name": "techCompulsions",
+      "label": "Tech Compulsions",
+      "path": "packs/techCompulsions",
+      "type": "Item"
     }
   ],
   "documentTypes": {
@@ -161,6 +191,7 @@
       "eshield": {},
       "shield": {},
       "modifier": {},
+      "techCompulsion": {},
       "weaponFeature": {},
       "armorFeature": {},
       "shieldFeature": {}

@@ -1,0 +1,53 @@
+{
+  "folder": "vAUl0g7HdaWlZj2u",
+  "name": "lank_eruptor",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "lank_eruptor",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "m",
+    "damage": 7,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 10,
+      "long": 20
+    },
+    "rof": 1,
+    "burst": true,
+    "ammo": 9,
+    "currentAmmo": 0,
+    "anti": [
+      "blstr"
+    ],
+    "features": [],
+    "tl": 7,
+    "cost": 900,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444330150,
+    "modifiedTime": 1762444330150,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "OJPKnajbtCt4RSug",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!OJPKnajbtCt4RSug"
+}

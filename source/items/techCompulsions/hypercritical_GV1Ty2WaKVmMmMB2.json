@@ -1,0 +1,30 @@
+{
+  "type": "techCompulsion",
+  "name": "hypercritical",
+  "folder": null,
+  "system": {
+    "slug": "hypercritical",
+    "description": ""
+  },
+  "_id": "GV1Ty2WaKVmMmMB2",
+  "img": "icons/commodities/tech/tube-chamber-lightning.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762442818085,
+    "modifiedTime": 1762442818085,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!GV1Ty2WaKVmMmMB2"
+}

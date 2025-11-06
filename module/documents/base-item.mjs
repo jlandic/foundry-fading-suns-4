@@ -13,6 +13,12 @@ export default class BaseItem extends foundry.documents.Item {
             case "maneuver": icon = "icons/magic/symbols/cog-orange-red.webp"; break;
             case "perks": icon = "icons/magic/control/buff-flight-wings-blue.webp"; break;
             case "species": icon = "icons/magic/control/silhouette-grow-shrink-tan.webp"; break;
+            case "techCompulsion": icon = "icons/commodities/tech/tube-chamber-lightning.webp"; break;
+            case "weapon": icon = "icons/weapons/swords/swords-short.webp"; break;
+            case "shield": icon = "icons/armor/shields/shield-round-brown-steel.webp"; break;
+            case "weaponFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
+            case "armorFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
+            case "shieldFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
         }
 
         return {

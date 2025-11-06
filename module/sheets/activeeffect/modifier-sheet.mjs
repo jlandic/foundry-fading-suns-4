@@ -98,8 +98,8 @@ export default class ModifierSheet extends BaseSheetMixin(
         return maneuvers.map(maneuver => ({
             label: maneuver.name,
             value: maneuver.system.slug,
-            selected: maneuver.system.slug === this.document.system.target,
-        }));
+            selected: maneuver.system.slug === this.document.system.maneuverSlug,
+        })).sort((a, b) => a.label.localeCompare(b.label));
     }
 
     _prepareTargetOptions() {

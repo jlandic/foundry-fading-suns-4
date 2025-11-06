@@ -1,0 +1,53 @@
+{
+  "folder": "xZXG33mZYOMfaxfq",
+  "name": "martech_midget",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "martech_midget",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xs",
+    "damage": 3,
+    "strRequirement": 0,
+    "melee": false,
+    "range": {
+      "short": 5,
+      "long": 10
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 7,
+    "currentAmmo": 0,
+    "anti": [
+      "lsr"
+    ],
+    "features": [],
+    "cost": 200,
+    "tl": 6,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444336387,
+    "modifiedTime": 1762444336387,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "0zikckDbYukDEoWl",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!0zikckDbYukDEoWl"
+}

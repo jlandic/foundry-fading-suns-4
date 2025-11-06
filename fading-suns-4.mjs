@@ -20,6 +20,7 @@ Hooks.once("init", async () => {
     CONFIG.Item.dataModels = {
         affliction: models.AfflictionDataModel,
         blessing: models.BlessingDataModel,
+        techCompulsion: models.TechCompulsionDataModel,
         calling: models.CallingDataModel,
         capability: models.CapabilityDataModel,
         class: models.ClassDataModel,
@@ -68,7 +69,7 @@ Hooks.once("init", async () => {
     CONFIG.ActiveEffect.dataModels.base = models.BaseActiveEffectDataModel;
     CONFIG.ActiveEffect.documentClass = documents.BaseActiveEffect;
 
-    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "curse", "weaponFeature", "armorFeature", "shieldFeature"], makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "techCompulsion", "curse", "weaponFeature", "armorFeature", "shieldFeature"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.AfflictionSheet, { types: ["affliction"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.CallingSheet, { types: ["calling"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.CapabilitySheet, { types: ["capability"], makeDefault: true });
@@ -92,7 +93,8 @@ Hooks.once("init", async () => {
     await preloadTemplates();
 
     Hooks.on("hotbarDrop", onHotbarDrop);
-    Babele.get().registerConverters({
+
+    Babele?.get()?.registerConverters({
         "translateEffects": (effects, translations) => {
             return effects.map((effect) => {
                 if (translations) {
@@ -123,11 +125,14 @@ Hooks.once("ready", async () => {
         globalThis.initScripts = initScripts;
     }
 
-    globalThis.babelProgress = ui.notifications.info(game.i18n.localize("fs4.notifications.babele.loading"), { progress: true });
+    if (Babele) {
+        globalThis.babelProgress = ui.notifications.info(game.i18n.localize("fs4.notifications.babele.loading"), { progress: true });
+    }
+
     initializeChatListeners();
 });
 
 Hooks.once("babele.ready", () => {
     globalThis.babelProgress.update({ message: game.i18n.localize("fs4.notifications.babele.loaded"), pct: 1 });
     globalThis.babelProgress = undefined;
-})
+});

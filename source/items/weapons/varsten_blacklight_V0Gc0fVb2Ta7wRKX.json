@@ -1,0 +1,53 @@
+{
+  "folder": "xZXG33mZYOMfaxfq",
+  "name": "varsten_blacklight",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "varsten_blacklight",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xl",
+    "damage": 8,
+    "strRequirement": 0,
+    "melee": false,
+    "range": {
+      "short": 20,
+      "long": 60
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 20,
+    "currentAmmo": 0,
+    "anti": [
+      "lsr"
+    ],
+    "features": [],
+    "cost": 700,
+    "tl": 6,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444336387,
+    "modifiedTime": 1762444336387,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "V0Gc0fVb2Ta7wRKX",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!V0Gc0fVb2Ta7wRKX"
+}

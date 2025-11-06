@@ -7,7 +7,7 @@
     "description": "Réduit l'efficacité des boucliers énergétiques par +1/-1 (c'est à dire que les valeurs d'un bouclier ordinaire passeront de 5/10 à 6/9). Son activation nécessite une cellule à fusion (qui dure 25 tours)."
   },
   "_id": "25cWR4vayZSgifzm",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/commodities/tech/blueprint.webp",
   "effects": [],
   "flags": {
     "babele": {

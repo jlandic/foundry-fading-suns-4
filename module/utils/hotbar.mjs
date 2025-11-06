@@ -23,7 +23,7 @@ export const onHotbarDrop = async (_hotbar, data, slot) => {
         folder = await Folder.create({
             name: game.user.name,
             type: "Macro",
-            parent: rootFolder,
+            folder: rootFolder,
         });
     }
 

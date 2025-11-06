@@ -1,0 +1,55 @@
+{
+  "folder": "xZXG33mZYOMfaxfq",
+  "name": "ring_laser",
+  "type": "weapon",
+  "_id": "m0ItX0D8g6zfPKRs",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "ring_laser",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xxs",
+    "damage": 3,
+    "strRequirement": 0,
+    "melee": false,
+    "range": {
+      "short": 5,
+      "long": 10
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 1,
+    "currentAmmo": 0,
+    "anti": [
+      "lsr"
+    ],
+    "features": [
+      "disguised_weapon"
+    ],
+    "cost": 600,
+    "tl": 6,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444336387,
+    "modifiedTime": 1762444336387,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!m0ItX0D8g6zfPKRs"
+}

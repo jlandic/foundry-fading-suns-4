@@ -1,0 +1,130 @@
+{
+  "folder": "vAUl0g7HdaWlZj2u",
+  "name": "soe_volcano",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "soe_volcano",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "l",
+    "damage": 5,
+    "strRequirement": 4,
+    "melee": false,
+    "range": {
+      "short": 10,
+      "long": 20
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 8,
+    "currentAmmo": 0,
+    "anti": [
+      "blstr"
+    ],
+    "features": [
+      "stock"
+    ],
+    "tl": 7,
+    "cost": 1200,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [
+    {
+      "name": "soe_volcano",
+      "disabled": false,
+      "_id": "oTt0JLRBoVCxsr5H",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "ranged",
+        "value": "2",
+        "notes": "At short range"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!xC35u9o2ZtrEWyjK.oTt0JLRBoVCxsr5H"
+    },
+    {
+      "name": "soe_volcano",
+      "disabled": false,
+      "_id": "oeC0an5fwTHy2igj",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "ranged",
+        "value": "-1",
+        "notes": "At extreme range"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!xC35u9o2ZtrEWyjK.oeC0an5fwTHy2igj"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444330150,
+    "modifiedTime": 1762444330150,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "xC35u9o2ZtrEWyjK",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!xC35u9o2ZtrEWyjK"
+}

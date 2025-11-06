@@ -1,0 +1,94 @@
+{
+  "folder": "vAUl0g7HdaWlZj2u",
+  "name": "republic_arms_3000",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "republic_arms_3000",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xl",
+    "damage": 15,
+    "strRequirement": 4,
+    "melee": false,
+    "range": {
+      "short": 30,
+      "long": 80
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 20,
+    "currentAmmo": 0,
+    "anti": [
+      "blstr",
+      "shk"
+    ],
+    "features": [
+      "stock"
+    ],
+    "tl": 8,
+    "cost": 5000,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [
+    {
+      "name": "republic_arms_3000",
+      "disabled": false,
+      "_id": "WRYTVXJRvzGyjdwy",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "ranged",
+        "value": "1",
+        "notes": ""
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!5tpVsAJaFfYY9jCC.WRYTVXJRvzGyjdwy"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444330150,
+    "modifiedTime": 1762444330150,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "5tpVsAJaFfYY9jCC",
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!5tpVsAJaFfYY9jCC"
+}

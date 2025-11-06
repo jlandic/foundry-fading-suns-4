@@ -1,0 +1,91 @@
+{
+  "folder": "xZXG33mZYOMfaxfq",
+  "name": "martech_amber",
+  "type": "weapon",
+  "_id": "hlrSQGEYs92WBH51",
+  "img": "icons/weapons/guns/gun-green.webp",
+  "system": {
+    "slug": "martech_amber",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "s",
+    "damage": 4,
+    "strRequirement": 0,
+    "melee": false,
+    "range": {
+      "short": 10,
+      "long": 20
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 21,
+    "currentAmmo": 0,
+    "anti": [
+      "lsr"
+    ],
+    "features": [],
+    "cost": 300,
+    "tl": 6,
+    "capability": "energy_guns",
+    "blastForce": null
+  },
+  "effects": [
+    {
+      "name": "martech_amber",
+      "disabled": false,
+      "_id": "KeNJCKYlE5Z6U8St",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "ranged",
+        "value": "1",
+        "notes": ""
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!hlrSQGEYs92WBH51.KeNJCKYlE5Z6U8St"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762444336387,
+    "modifiedTime": 1762444336387,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!hlrSQGEYs92WBH51"
+}

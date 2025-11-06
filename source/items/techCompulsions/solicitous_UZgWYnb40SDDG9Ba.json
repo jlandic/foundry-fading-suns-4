@@ -1,0 +1,30 @@
+{
+  "type": "techCompulsion",
+  "name": "solicitous",
+  "folder": null,
+  "system": {
+    "slug": "solicitous",
+    "description": ""
+  },
+  "_id": "UZgWYnb40SDDG9Ba",
+  "img": "icons/commodities/tech/tube-chamber-lightning.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762442818085,
+    "modifiedTime": 1762442818085,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!UZgWYnb40SDDG9Ba"
+}

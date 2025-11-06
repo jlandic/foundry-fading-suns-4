@@ -7,7 +7,7 @@
     "description": "Peut utiliser du poison ; le nombre total de doses est égal à la valeur indiquée (une dose par attaque à moins que le contraire ne soit indiqué)."
   },
   "_id": "bOkzqqEpMwWITWcP",
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/commodities/tech/blueprint.webp",
   "effects": [],
   "flags": {
     "babele": {
