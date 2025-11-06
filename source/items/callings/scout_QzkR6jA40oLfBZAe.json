@@ -5,6 +5,7 @@
   "system": {
     "slug": "scout",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "energy_guns",

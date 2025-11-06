@@ -5,6 +5,7 @@
   "system": {
     "slug": "explorer",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "science",

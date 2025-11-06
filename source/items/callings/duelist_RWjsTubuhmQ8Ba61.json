@@ -5,6 +5,7 @@
   "system": {
     "slug": "duelist",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons"

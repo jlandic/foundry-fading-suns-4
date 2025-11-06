@@ -5,6 +5,7 @@
   "system": {
     "slug": "incognito",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "special_any_capability"

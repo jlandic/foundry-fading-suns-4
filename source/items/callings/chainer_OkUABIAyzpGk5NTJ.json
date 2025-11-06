@@ -5,6 +5,7 @@
   "system": {
     "slug": "chainer",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "streetwise"

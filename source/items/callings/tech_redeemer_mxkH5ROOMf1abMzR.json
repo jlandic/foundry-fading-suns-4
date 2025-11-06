@@ -5,6 +5,7 @@
   "system": {
     "slug": "tech_redeemer",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "technology"

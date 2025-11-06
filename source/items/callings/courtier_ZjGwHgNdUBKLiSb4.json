@@ -5,6 +5,7 @@
   "system": {
     "slug": "courtier",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "cathedral_customs",

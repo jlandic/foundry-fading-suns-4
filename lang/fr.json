@@ -254,18 +254,6 @@
         "curse": "Malédiction",
         "equipment": "Équipement",
         "favoredCalling": "Vocation privilégiée"
-      },
-      "equipment": {
-        "special": {
-          "premium_quality_weapon": "une arme de qualité Premium, généralement une épée",
-          "premium_weapon_vuldrok": "une arme de qualité Premium, généralement une hache",
-          "premium_shield": "un bouclier portatif de qualité Premium",
-          "dueling_weapon": "une arme de duel",
-          "blessed_sword": "une épée bénie",
-          "blessed_slug_gun": "un cannoneur béni",
-          "muspa_suit_one_more_proof": "choisissez un anti- supplémentaire (Blaster, Feu ou Laser) pour la combinaison ASpeRa",
-          "100_firebirds": "100 phénix accumulés en mendiant. Peuvent être cachés dans diverses caches par sécurité"
-        }
       }
     },
     "maneuver": {
@@ -405,6 +393,16 @@
         "superior": "Supérieure",
         "masterwork": "Exceptionnelle",
         "premium": "Magistrale"
+      },
+      "special": {
+        "premium_quality_weapon": "une arme de qualité Premium, généralement une épée",
+        "premium_weapon_vuldrok": "une arme de qualité Premium, généralement une hache",
+        "premium_shield": "un bouclier portatif de qualité Premium",
+        "dueling_weapon": "une arme de duel",
+        "blessed_sword": "une épée bénie",
+        "blessed_slug_gun": "un cannoneur béni",
+        "muspa_suit_one_more_proof": "choisissez un anti- supplémentaire (Blaster, Feu ou Laser) pour la combinaison ASpeRa",
+        "100_firebirds": "100 phénix accumulés en mendiant. Peuvent être cachés dans diverses caches par sécurité"
       },
       "noTechCompulsion": "Pas de Compulsion tech."
     },

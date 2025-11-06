@@ -5,6 +5,7 @@
   "system": {
     "slug": "spy_noble",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "special_any_capability"

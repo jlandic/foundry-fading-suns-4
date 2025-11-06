@@ -5,6 +5,7 @@
   "system": {
     "slug": "banker",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "think_machines"

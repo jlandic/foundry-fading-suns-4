@@ -5,6 +5,7 @@
   "system": {
     "slug": "lawyer",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "special_any_lores_capability"

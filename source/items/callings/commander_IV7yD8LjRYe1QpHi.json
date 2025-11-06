@@ -5,6 +5,7 @@
   "system": {
     "slug": "commander",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons"

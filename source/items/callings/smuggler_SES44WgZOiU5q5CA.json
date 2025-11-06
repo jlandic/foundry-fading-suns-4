@@ -5,6 +5,7 @@
   "system": {
     "slug": "smuggler",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "shipboard_operations"

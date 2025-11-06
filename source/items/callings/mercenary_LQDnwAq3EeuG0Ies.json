@@ -5,6 +5,7 @@
   "system": {
     "slug": "mercenary",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "energy_guns",

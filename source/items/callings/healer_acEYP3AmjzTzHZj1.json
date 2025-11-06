@@ -5,6 +5,7 @@
   "system": {
     "slug": "healer",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "medical"

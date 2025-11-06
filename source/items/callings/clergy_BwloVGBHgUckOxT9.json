@@ -5,6 +5,7 @@
   "system": {
     "slug": "clergy",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "speak_language_latin"

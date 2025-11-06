@@ -11,7 +11,7 @@ export default class CallingSheet extends BaseItemSheet {
             preconditions: await this._preparePreconditions(),
             perks: await this._prepareReferenceList("system.perks", "perk"),
             capabilities: await this._prepareCapabilitiesChoice(),
-            // equipment: await this._prepareReference("system.equipment", "equipment"),
+            equipment: await this._prepareEquipmentChoice("system.equipment"),
             patrons: await enrichHTML(this.item.system.patrons),
         });
 

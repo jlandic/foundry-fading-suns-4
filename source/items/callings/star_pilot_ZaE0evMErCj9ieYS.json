@@ -5,6 +5,7 @@
   "system": {
     "slug": "star_pilot",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "shipboard_operations"

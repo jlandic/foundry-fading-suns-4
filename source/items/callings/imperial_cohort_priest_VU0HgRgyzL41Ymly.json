@@ -5,6 +5,14 @@
   "system": {
     "slug": "imperial_cohort_priest",
     "description": "",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "cohort_badge"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "combat_armor",

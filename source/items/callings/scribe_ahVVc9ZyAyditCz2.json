@@ -5,6 +5,7 @@
   "system": {
     "slug": "scribe",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "commons_customs",

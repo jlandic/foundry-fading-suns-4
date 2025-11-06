@@ -74,7 +74,7 @@
           "$ref": "./defs.schema.json#/capabilities"
         },
         "equipment": {
-          "$ref": "./slugs.schema.json#/slug"
+          "$ref": "./defs.schema.json#/equipment"
         },
         "patrons": {
           "type": "string"
@@ -88,7 +88,8 @@
         "skills",
         "preconditions",
         "capabilities",
-        "patrons"
+        "patrons",
+        "equipment"
       ],
       "additionalProperties": false
     }

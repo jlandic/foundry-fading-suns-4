@@ -5,6 +5,7 @@
   "system": {
     "slug": "bounty_hunter",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "energy_guns",

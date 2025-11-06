@@ -5,6 +5,7 @@
   "system": {
     "slug": "knightly_order",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons",

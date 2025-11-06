@@ -5,6 +5,7 @@ const {
     ArrayField,
     HTMLField,
     StringField,
+    SchemaField,
 } = foundry.data.fields;
 
 export default class CallingDataModel extends BaseItemDataModel {
@@ -18,9 +19,10 @@ export default class CallingDataModel extends BaseItemDataModel {
             characteristics: customFields.characteristics(),
             skills: customFields.skills(),
             preconditions: customFields.preconditions(),
-            equipment: new StringField({
-                required: false,
-            }),
+            equipment: new ArrayField(new ArrayField(new SchemaField({
+                type: new StringField({ required: true }),
+                slug: new StringField({ required: true }),
+            }))),
         });
     }
 

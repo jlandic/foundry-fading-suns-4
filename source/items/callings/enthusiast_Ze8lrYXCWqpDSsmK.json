@@ -5,6 +5,7 @@
   "system": {
     "slug": "enthusiast",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "musical_instruments"

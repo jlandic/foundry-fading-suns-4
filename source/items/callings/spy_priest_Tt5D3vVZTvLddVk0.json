@@ -5,6 +5,7 @@
   "system": {
     "slug": "spy_priest",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "special_any_capability"

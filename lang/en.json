@@ -255,18 +255,6 @@
         "curse": "Curse",
         "equipment": "Equipment",
         "favoredCalling": "Favored calling"
-      },
-      "equipment": {
-        "special": {
-          "premium_quality_weapon": "a Premium-quality weapon, usually a sword",
-          "premium_weapon_vuldrok": "a Premium-quality weapon, usually an axe",
-          "premium_shield": "a Premium-quality handheld shield",
-          "dueling_weapon": "a dueling weapon",
-          "blessed_sword": "a blessed sword",
-          "blessed_slug_gun": "a blessed slug gun",
-          "muspa_suit_one_more_proof": "choose one more -proof (Blaster, Flame, or Laser) for the MuSpA suit",
-          "100_firebirds": "100 firebirds from epic begging. Can be stashed in portions in various hiding places"
-        }
       }
     },
     "maneuver": {
@@ -409,6 +397,16 @@
         "superior": "Superior",
         "masterwork": "Masterwork",
         "premium": "Premium"
+      },
+      "special": {
+        "premium_quality_weapon": "a Premium-quality weapon, usually a sword",
+        "premium_weapon_vuldrok": "a Premium-quality weapon, usually an axe",
+        "premium_shield": "a Premium-quality handheld shield",
+        "dueling_weapon": "a dueling weapon",
+        "blessed_sword": "a blessed sword",
+        "blessed_slug_gun": "a blessed slug gun",
+        "muspa_suit_one_more_proof": "choose one more -proof (Blaster, Flame, or Laser) for the MuSpA suit",
+        "100_firebirds": "100 firebirds from epic begging. Can be stashed in portions in various hiding places"
       },
       "noTechCompulsion": "No Tech Compulsion"
     },

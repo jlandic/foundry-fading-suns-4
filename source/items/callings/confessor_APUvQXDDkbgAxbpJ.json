@@ -5,6 +5,7 @@
   "system": {
     "slug": "confessor",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "commons_customs",

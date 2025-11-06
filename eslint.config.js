@@ -8,6 +8,7 @@ export default defineConfig([
     {
         files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: {
             globals: {
+                process: false,
                 foundry: false,
                 game: false,
                 CONFIG: true,

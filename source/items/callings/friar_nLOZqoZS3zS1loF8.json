@@ -5,6 +5,7 @@
   "system": {
     "slug": "friar",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "commons_customs"

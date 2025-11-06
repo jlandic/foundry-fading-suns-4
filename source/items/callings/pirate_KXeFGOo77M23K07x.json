@@ -5,6 +5,7 @@
   "system": {
     "slug": "pirate",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons",

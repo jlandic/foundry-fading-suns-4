@@ -5,6 +5,7 @@
   "system": {
     "slug": "chorister",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "song"

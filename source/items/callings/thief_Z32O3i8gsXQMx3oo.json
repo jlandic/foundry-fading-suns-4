@@ -5,6 +5,7 @@
   "system": {
     "slug": "thief",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "streetwise"

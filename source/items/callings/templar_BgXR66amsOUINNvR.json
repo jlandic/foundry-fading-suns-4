@@ -5,6 +5,7 @@
   "system": {
     "slug": "templar",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons",

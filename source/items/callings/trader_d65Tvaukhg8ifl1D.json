@@ -5,6 +5,7 @@
   "system": {
     "slug": "trader",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "court_customs",

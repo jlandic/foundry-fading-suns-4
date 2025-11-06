@@ -5,6 +5,7 @@
   "system": {
     "slug": "questing_knight",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons",

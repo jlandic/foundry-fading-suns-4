@@ -7,6 +7,7 @@ const IDS = "source/ids.csv";
 const SOURCE_DIR = "source";
 const DB_DIR = "dist/packs";
 const REF_DIR = "references";
+const BABELE_COMPENDIUM_FOLDER = process.env.BABELE_COMPENDIUM_FOLDER;
 const PACKS = [
     "items/afflictions",
     "items/blessings",
@@ -313,7 +314,25 @@ const DEFAULT_SYSTEM = {
         tl: 5,
         techCompulsion: undefined,
     }
-}
+};
+
+const TRANSLATION_ENTRY_TEMPLATE = {
+    weapon: {
+        name: "",
+        description: "",
+        agora: "",
+    },
+    armor: {
+        name: "",
+        description: "",
+        agora: "",
+    },
+    equipment: {
+        name: "",
+        description: "",
+        agora: "",
+    }
+};
 
 const createSourceItem = async (pack, slug) => {
     const type = PACK_TYPE_MAPPING[pack];
@@ -356,6 +375,19 @@ const createSourceItem = async (pack, slug) => {
         sort: 0,
         _key: `!items!${id}`,
     };
+
+    const translationFile = path.join(BABELE_COMPENDIUM_FOLDER, `fading-suns-4.${pack}.json`);
+    const translations = await fs.readFile(translationFile, "utf-8")
+        .then(data => JSON.parse(data))
+
+    translations.entries[slug] = TRANSLATION_ENTRY_TEMPLATE[type];
+    // sort entries by key
+    const sortedEntries = Object.keys(translations.entries).sort().reduce((acc, key) => {
+        acc[key] = translations.entries[key];
+        return acc;
+    }, {});
+
+    await fs.writeFile(translationFile, JSON.stringify({ ...translations, entries: sortedEntries }, null, 2), "utf-8");
 
     await fs.writeFile(path.join(collectionPath, `${slug}_${id}.json`), JSON.stringify(newItem, null, 2), "utf-8");
 

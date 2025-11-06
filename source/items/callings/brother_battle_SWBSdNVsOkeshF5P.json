@@ -5,6 +5,7 @@
   "system": {
     "slug": "brother_battle",
     "description": "",
+    "equipment": [],
     "capabilities": [
       [
         "military_weapons",

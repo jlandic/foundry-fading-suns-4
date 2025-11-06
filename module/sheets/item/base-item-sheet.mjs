@@ -258,7 +258,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
             path,
             async ({ slug, type }) => {
                 if (type === "special") {
-                    return game.i18n.localize(`fs4.faction.equipment.special.${slug}`);
+                    return game.i18n.localize(`fs4.equipment.special.${slug}`);
                 }
 
                 return await enrichHTML(`@SLUG[${type}:${slug}]`);
