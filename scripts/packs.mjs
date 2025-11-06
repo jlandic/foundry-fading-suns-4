@@ -124,8 +124,14 @@ const translateWeapons = (_reference, item) => {
     }
 }
 
+const translateTechCompulsions = (_reference, item) => ({
+    name: item.system.slug,
+    description: "",
+});
+
 const TRANSLATION_FNS = {
     weapons: translateWeapons,
+    techCompulsions: translateTechCompulsions,
 };
 
 const generateTranslations = async (collection) => {
