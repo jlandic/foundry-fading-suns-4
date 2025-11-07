@@ -1,6 +1,6 @@
 import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
-import { BASIC_MANEUVERS, ModifierTargetTypes, ResistanceTypes, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
+import { BASIC_MANEUVERS, Characteristics, ModifierTargetTypes, ResistanceTypes, ResistanceValues, Skills, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
 import { RollIntention } from "../system/rolls.mjs";
 
 export default class BaseActor extends foundry.documents.Actor {
@@ -55,6 +55,11 @@ export default class BaseActor extends foundry.documents.Actor {
 
     async gainVP(amount) {
         await this.update({ ["system.vp.cache"]: this.system.vp.cache + amount });
+    }
+
+    async gainRespiteVP(amount) {
+        const newVitality = Math.min(this.system.currentVitality + Math.floor(amount / 2), this.system.maxVitality);
+        await this.update({ ["system.currentVitality"]: newVitality });
     }
 
     async bankVP() {
@@ -133,7 +138,18 @@ export default class BaseActor extends foundry.documents.Actor {
         await this.update(updates);
 
         // TODO: if Fatigued, remove Fatigued
-        // TODO: roll Vigor + Endurance against Effortless Resistance to gain VP to add to vitality
+        new RollApp(
+            this,
+            new RollIntention({
+                characteristic: Characteristics.Endurance,
+                skill: Skills.Vigor,
+                resistance: ResistanceValues.Effortless,
+            }),
+            {
+                subtitle: game.i18n.localize("fs4.apps.roll.subtitle.respite"),
+                respite: true,
+            }
+        ).render(true);
     }
 
     async rollSkill(skill) {

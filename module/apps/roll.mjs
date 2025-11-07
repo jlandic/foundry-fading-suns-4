@@ -4,12 +4,13 @@ import { DiceThrow, RollData } from "../system/rolls.mjs";
 export default class RollApp extends foundry.applications.api.HandlebarsApplicationMixin(
     foundry.applications.api.ApplicationV2,
 ) {
-    constructor(actor, rollIntention) {
+    constructor(actor, rollIntention, diceThrowOptions = { subtitle: null, respite: false }) {
         super();
 
         this.actor = actor;
         this.rollIntention = rollIntention;
         this.availableModifiers = this._prepareAvailableModifiers();
+        this.diceThrowOptions = diceThrowOptions;
     }
 
     static DEFAULT_OPTIONS = {
@@ -83,7 +84,7 @@ export default class RollApp extends foundry.applications.api.HandlebarsApplicat
             modifiers: this._fetchSelectedModifiers(data),
         });
 
-        const diceRoll = await new DiceThrow(rollData).roll();
+        const diceRoll = await new DiceThrow(rollData, this.diceThrowOptions).roll();
         await diceRoll.sendToChat();
 
         this.close();

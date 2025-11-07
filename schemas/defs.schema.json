@@ -10,7 +10,17 @@
       "curse",
       "faction",
       "perk",
-      "species"
+      "species",
+      "maneuver",
+      "weapon",
+      "armor",
+      "equipment",
+      "shield",
+      "weaponFeature",
+      "shieldFeature",
+      "armorFeature",
+      "state",
+      "power"
     ]
   },
   "conditionOption": {

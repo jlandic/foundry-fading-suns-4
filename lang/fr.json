@@ -51,7 +51,8 @@
         "inventory": "Inventaire",
         "notes": "Notes",
         "modifier": "Modificateur",
-        "duration": "Durée"
+        "duration": "Durée",
+        "maneuvers": "Manœuvres"
       },
       "common": {
         "traits": "Traits",
@@ -101,8 +102,13 @@
         "vp": "PV",
         "circumstances": "Circonstances",
         "gainVp": "Gagner PV",
+        "gainVitality": "Récupérer de la Vitalité",
         "baseRoll": "Jet de base",
-        "techCompulsionRisk": "Risque de compulsion tech!"
+        "techCompulsionRisk": "Risque de compulsion tech!",
+        "res": "Rés.",
+        "subtitle": {
+          "respite": "Repos"
+        }
       }
     },
     "dialogs": {
@@ -370,7 +376,8 @@
         "techGnosis": "Tech Gnosis",
         "cash": "Cash",
         "shields": "Boucliers",
-        "eshields": "E-boucliers"
+        "eshields": "E-boucliers",
+        "states": "États"
       }
     },
     "equipment": {

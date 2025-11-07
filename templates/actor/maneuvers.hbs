@@ -1,0 +1,19 @@
+<section
+    class="scrollable tab {{tabs.maneuvers.cssClass}}"
+    data-group="{{tabs.maneuvers.group}}"
+    data-tab="{{tabs.maneuvers.id}}"
+>
+    {{#each maneuverTypes}}
+    <ul class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ this.label }}</h3>
+        </li>
+    </ul>
+
+    <ul class="item-list">
+        {{#each (getProperty ../maneuvers this.type) }}
+            {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ul>
+    {{/each}}
+</section>

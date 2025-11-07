@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "$ref": "./defs.schema.json#/itemType"
+    },
+    "name": {
+      "type": "string"
+    },
+    "folder": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "_id": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "flags": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "_stats": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "ownership": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "sort": {
+      "type": "number"
+    },
+    "_key": {
+      "type": "string"
+    },
+    "system": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "string",
+          "enum": [
+            "academia",
+            "alchemy",
+            "animalia",
+            "arts",
+            "charm",
+            "crafts",
+            "disguise",
+            "drive",
+            "empathy",
+            "fight",
+            "focus",
+            "impress",
+            "interface",
+            "intrusion",
+            "knavery",
+            "melee",
+            "observe",
+            "perform",
+            "pilot",
+            "remedy",
+            "shoot",
+            "sleightofhand",
+            "sneak",
+            "survival",
+            "techredemption",
+            "vigor"
+          ]
+        },
+        "characteristic": {
+          "type": "string",
+          "enum": [
+            "strength",
+            "dexterity",
+            "endurance",
+            "wits",
+            "perception",
+            "will",
+            "presence",
+            "intuition",
+            "faith",
+            "special_distribute_points"
+          ]
+        },
+        "playScale": {
+          "type": "string",
+          "enum": [
+            "present_tense",
+            "instantaneous",
+            "narrated"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "action",
+            "combat",
+            "defense",
+            "influence",
+            "influence_persuasion",
+            "influence_coercion"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "goalModifier": {
+          "type": "string",
+          "enum": [
+            "none",
+            "melee_weapon",
+            "ranged_weapon"
+          ]
+        },
+        "slug": {
+          "$ref": "./slugs.schema.json#/slug"
+        },
+        "noVp": {
+          "type": "boolean"
+        },
+        "actionType": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "reflexive_primary",
+              "secondary",
+              "reflexive_secondary",
+              "movement"
+            ]
+          }
+        }
+      },
+      "required": [
+        "type",
+        "playScale",
+        "goalModifier",
+        "actionType",
+        "slug",
+        "noVp"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "type",
+    "name",
+    "_id",
+    "system"
+  ],
+  "additionalProperties": true
+}

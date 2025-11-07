@@ -71,7 +71,10 @@
         "armors",
         "shields",
         "equipmentFeatures",
-        "techCompulsions"
+        "techCompulsions",
+        "states",
+        "psiPowers",
+        "theurgyPowers"
       ]
     }
   ],
@@ -171,6 +174,24 @@
       "label": "Tech Compulsions",
       "path": "packs/techCompulsions",
       "type": "Item"
+    },
+    {
+      "name": "states",
+      "label": "States",
+      "path": "packs/states",
+      "type": "Item"
+    },
+    {
+      "name": "psiPowers",
+      "label": "Psi Powers",
+      "path": "packs/psiPowers",
+      "type": "Item"
+    },
+    {
+      "name": "theurgyPowers",
+      "label": "Theurgy Powers",
+      "path": "packs/theurgyPowers",
+      "type": "Item"
     }
   ],
   "documentTypes": {
@@ -194,7 +215,9 @@
       "techCompulsion": {},
       "weaponFeature": {},
       "armorFeature": {},
-      "shieldFeature": {}
+      "shieldFeature": {},
+      "state": {},
+      "power": {}
     },
     "Actor": {
       "pc": {},
@@ -209,6 +232,12 @@
         "id": "lancer-initiative",
         "compatibility": {
           "verified": "34"
+        }
+      },
+      {
+        "id": "game-icons-net",
+        "compatibility": {
+          "verified": "0.0.39"
         }
       }
     ]

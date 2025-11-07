@@ -1,4 +1,4 @@
-import { CharacteristicsGroupMap, CharacteristicsGroups, ResistanceTypes, Skills } from "../../system/references.mjs";
+import { CharacteristicsGroupMap, CharacteristicsGroups, ManeuverTypes, ResistanceTypes, Skills } from "../../system/references.mjs";
 import { RollData, RollIntention, RollTypes } from "../../system/rolls.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
 import { BaseSheetMixin } from "../base-sheet-mixin.mjs";
@@ -48,6 +48,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
         tabs: { template: "templates/generic/tab-navigation.hbs" },
         stats: { template: "systems/fading-suns-4/templates/actor/stats.hbs", scrollable: [""] },
         statsExtra: { template: "systems/fading-suns-4/templates/actor/stats-extra.hbs", scrollable: [""] },
+        maneuvers: { template: "systems/fading-suns-4/templates/actor/maneuvers.hbs", scrollable: [""] },
         features: { template: "systems/fading-suns-4/templates/actor/features.hbs", scrollable: [""] },
         inventory: { template: "systems/fading-suns-4/templates/actor/inventory.hbs", scrollable: [""] },
         notes: { template: "systems/fading-suns-4/templates/actor/notes.hbs", scrollable: [""] },
@@ -64,6 +65,11 @@ export default class BaseActorSheet extends BaseSheetMixin(
             id: "statsExtra",
             cssClass: "tab-stats-extra",
             label: "fs4.sheets.tabs.statsExtra",
+        },
+        maneuvers: {
+            id: "maneuvers",
+            cssClass: "tab-maneuvers",
+            label: "fs4.sheets.tabs.maneuvers",
         },
         features: {
             id: "features",
@@ -92,6 +98,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             tabs: [
                 BaseActorSheet.TAB_REFERENCES.stats,
                 BaseActorSheet.TAB_REFERENCES.features,
+                BaseActorSheet.TAB_REFERENCES.maneuvers,
                 BaseActorSheet.TAB_REFERENCES.inventory,
                 BaseActorSheet.TAB_REFERENCES.modifiers,
             ].filter(Boolean),
@@ -119,6 +126,10 @@ export default class BaseActorSheet extends BaseSheetMixin(
     }
 
     get includeInventory() {
+        return this.actor.type !== "extra";
+    }
+
+    get includeManeuvers() {
         return this.actor.type !== "extra";
     }
 
@@ -163,6 +174,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
             "tabs",
             "stats",
             "features",
+            this.includeManeuvers ? "maneuvers" : null,
             this.includeInventory ? "inventory" : null,
             this.includeModifiers ? "modifiers" : null,
             this.includeNotes ? "notes" : null
@@ -284,25 +296,31 @@ export default class BaseActorSheet extends BaseSheetMixin(
                     (item) => item.system.anti.map(type => game.i18n.localize(`fs4.damageTypes.${type}`)).join(", "),
                 ],
             }),
-            maneuvers: await this._prepareItemList("maneuver", {
-                description: "fs4.commonFields.description",
-                impact: "fs4.maneuver.fields.impact",
-            }, {
-                draggable: true,
-                rollData: (maneuver) => ({
-                    slug: maneuver.system.slug,
-                    rollType: RollTypes.Maneuver,
-                }),
-                transformName: (maneuver) => {
-                    const rollIntention = new RollIntention({ maneuver });
-                    const goal = new RollData({ actor: this.actor, rollIntention }).baseGoal;
-
-                    return `${maneuver.name} (${goal})`;
+            maneuvers: await (async () => {
+                const maneuversObj = {};
+                for (const maneuverType of Object.values(ManeuverTypes)) {
+                    maneuversObj[maneuverType] = await this._prepareManeuvers(maneuverType);
                 }
-            }),
-            states: await this._prepareItemList("state", {
-                description: "fs4.commonFields.description",
-            }),
+                return maneuversObj;
+            })(),
+            maneuverTypes: Object.values(ManeuverTypes).map((maneuverType) => ({
+                type: maneuverType,
+                label: game.i18n.localize(`fs4.maneuver.types.${maneuverType}`),
+            })),
+            stateColumnLabels: [
+                game.i18n.localize("fs4.actor.fields.resistance"),
+            ],
+            states: await this._prepareItemList(
+                "state",
+                {
+                    description: "fs4.commonFields.description",
+                },
+                {
+                    columns: [
+                        (item) => game.i18n.localize(`fs4.resistance.${item.system.type}`),
+                    ]
+                }
+            ),
             shieldColumnLabels: [
                 game.i18n.localize("fs4.shield.fields.res"),
                 game.i18n.localize("fs4.shield.fields.strRequirement"),
@@ -366,11 +384,14 @@ export default class BaseActorSheet extends BaseSheetMixin(
         )
     }
 
-    async _prepareItemList(type, details, options = { equippable: false, columns: [], draggable: false, sort: true, rollData: null, transformName: null, controls: null }) {
-        const items = this.actor.items.filter(item => item.type === type);
+    async _prepareItemList(type, details, options = { equippable: false, columns: [], draggable: false, sort: true, rollData: null, transformName: null, controls: null, filterFn: null }) {
+        let items = this.actor.items.filter(item => item.type === type);
+        if (options.filterFn) {
+            items = items.filter(options.filterFn);
+        }
 
         if (options.sort) {
-            items.sort((a, b) => a.name.localeCompare(b.name));
+            items = items.sort((a, b) => a.name.localeCompare(b.name));
         }
 
         return await Promise.all(items.map(async (item) => ({
@@ -394,6 +415,27 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 value: await enrichHTML(item.system[field] || "")
             }))),
         })));
+    }
+
+    async _prepareManeuvers(maneuverType) {
+        return await this._prepareItemList("maneuver", {
+            description: "fs4.commonFields.description",
+            impact: "fs4.maneuver.fields.impact",
+        }, {
+            draggable: true,
+            sort: true,
+            filterFn: (item) => item.system.type === maneuverType,
+            rollData: (maneuver) => ({
+                slug: maneuver.system.slug,
+                rollType: RollTypes.Maneuver,
+            }),
+            transformName: (maneuver) => {
+                const rollIntention = new RollIntention({ maneuver });
+                const goal = new RollData({ actor: this.actor, rollIntention }).baseGoal;
+
+                return `${maneuver.name} (${goal})`;
+            }
+        });
     }
 
     /**

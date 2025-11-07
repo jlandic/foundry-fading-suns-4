@@ -1,0 +1,30 @@
+{
+  "type": "state",
+  "name": "tormented",
+  "folder": null,
+  "system": {
+    "slug": "tormented",
+    "type": "body"
+  },
+  "_id": "Bsi6AYAGANEYb35C",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762535654603,
+    "modifiedTime": 1762535654603,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Bsi6AYAGANEYb35C"
+}

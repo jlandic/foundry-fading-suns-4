@@ -4,7 +4,7 @@ import * as models from './module/models/_module.mjs';
 import * as documents from './module/documents/_module.mjs';
 import * as sheets from './module/sheets/_module.mjs';
 import FS4Logger from './module/utils/logger.mjs';
-import { preloadTemplates } from './module/utils/handlebars.mjs';
+import { preloadTemplates, registerHandlebarsHelpers } from './module/utils/handlebars.mjs';
 import * as initScripts from './module/scripts/initData.mjs';
 import Registry from './module/utils/registry.mjs';
 import { onHotbarDrop } from './module/utils/hotbar.mjs';
@@ -94,7 +94,7 @@ Hooks.once("init", async () => {
 
     Hooks.on("hotbarDrop", onHotbarDrop);
 
-    Babele?.get()?.registerConverters({
+    globalThis.Babele?.get()?.registerConverters({
         "translateEffects": (effects, translations) => {
             return effects.map((effect) => {
                 if (translations) {
@@ -125,11 +125,12 @@ Hooks.once("ready", async () => {
         globalThis.initScripts = initScripts;
     }
 
-    if (Babele) {
+    if (globalThis.Babele) {
         globalThis.babelProgress = ui.notifications.info(game.i18n.localize("fs4.notifications.babele.loading"), { progress: true });
     }
 
     initializeChatListeners();
+    registerHandlebarsHelpers();
 });
 
 Hooks.once("babele.ready", () => {

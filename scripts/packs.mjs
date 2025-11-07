@@ -25,6 +25,7 @@ const PACKS = [
     "items/shields",
     "items/techCompulsions",
     "items/equipment",
+    "items/states",
 ];
 
 const PACK_TYPE_MAPPING = {
@@ -32,6 +33,7 @@ const PACK_TYPE_MAPPING = {
     armors: "armor",
     shields: "shield",
     equipment: "equipment",
+    maneuvers: "maneuver",
 }
 
 const TYPE_MAPPING = {}
@@ -88,7 +90,17 @@ const extract = async () => {
     console.log("All packs extracted.");
 }
 
-const TRANSFORMERS = {};
+const TRANSFORMERS = {
+    states: async (original, reference) => {
+        return {
+            ...original,
+            system: {
+                ...original.system,
+                type: reference.system.type,
+            },
+        };
+    },
+};
 
 const importReference = async (collection) => {
     await initializeTypeMapping();
@@ -147,10 +159,18 @@ const translateEquipment = (_reference, item) => {
     return base;
 }
 
+const translateState = (reference, _item) => {
+    return {
+        name: reference.name,
+        description: reference.system.description,
+    };
+}
+
 const TRANSLATION_FNS = {
     weapons: translateEquipment,
     armors: translateEquipment,
     equipment: translateEquipment,
+    states: translateState,
 };
 
 const generateTranslations = async (collection) => {
@@ -264,6 +284,7 @@ const IMG_MAPPING = {
     armor: "icons/equipment/chest/breastplate-banded-blue.webp",
     weapon: "icons/weapons/swords/swords-short.webp",
     shield: "icons/armor/shields/shield-round-brown-steel.webp",
+    maneuver: "icons/magic/symbols/cog-orange-red.webp",
 };
 
 const DEFAULT_SYSTEM = {
@@ -313,7 +334,18 @@ const DEFAULT_SYSTEM = {
         cost: 0,
         tl: 5,
         techCompulsion: undefined,
-    }
+    },
+    maneuver: {
+        type: "action",
+        skill: "",
+        characteristic: "",
+        goalModifier: "none",
+        actionType: [
+            "primary",
+        ],
+        playScale: "instantaneous",
+        noVp: false,
+    },
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {
@@ -331,7 +363,15 @@ const TRANSLATION_ENTRY_TEMPLATE = {
         name: "",
         description: "",
         agora: "",
-    }
+    },
+    maneuver: {
+        name: "",
+        description: "",
+        additionalTimeInformation: "",
+        impact: "",
+        resistance: "",
+        capability: "",
+    },
 };
 
 const createSourceItem = async (pack, slug) => {

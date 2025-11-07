@@ -1,0 +1,30 @@
+{
+  "type": "state",
+  "name": "divinely_inspired",
+  "folder": null,
+  "system": {
+    "slug": "divinely_inspired",
+    "type": "spirit"
+  },
+  "_id": "3Gpkgce7ByrGQ9dZ",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762535654603,
+    "modifiedTime": 1762535654603,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!3Gpkgce7ByrGQ9dZ"
+}

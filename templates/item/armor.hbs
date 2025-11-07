@@ -34,17 +34,17 @@
     <hr>
 
     <section>
-        <ol class="item-list">
+        <ul class="item-list">
             <li class="item-list-header flexrow">
                 <h3>{{ localize "fs4.armor.fields.features" }}</h3>
             </li>
-        </ol>
+        </ul>
 
-        <ol class="item-list">
+        <ul class="item-list">
             {{#each features}}
             {{> "fading-suns-4.inline-item" item=this}}
             {{/each}}
-        </ol>
+        </ul>
     </section>
 
     <h2>{{ localize "fs4.commonFields.description" }}</h2>

@@ -1,18 +1,18 @@
 <section class="scrollable tab {{tabs.inventory.cssClass}}" data-group="{{tabs.inventory.group}}"
     data-tab="{{tabs.inventory.id}}">
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.equipment" }}</h3>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each equipment}}
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.weapons" }}</h3>
             {{#each weaponColumnLabels}}
@@ -20,15 +20,15 @@
             {{/each}}
             <div></div>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each weapons}}
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.armors" }}</h3>
             {{#each armorColumnLabels}}
@@ -36,15 +36,15 @@
             {{/each}}
             <div></div>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each armors}}
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.shields" }}</h3>
             {{#each shieldColumnLabels}}
@@ -52,15 +52,15 @@
             {{/each}}
             <div></div>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each shields}}
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.actor.fields.eshields" }}</h3>
             {{#each eshieldColumnLabels}}
@@ -68,17 +68,17 @@
             {{/each}}
             <div></div>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each eshields}}
         {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 
     <hr>
 
-    <div class="flexrow">
+    <div class="flexrow stats-row">
         <div class="form-group">
             <label for="system.cash">{{ localize "fs4.actor.fields.cash" }}</label>
             <input type="number" name="system.cash" value="{{system.cash}}" step="1" />

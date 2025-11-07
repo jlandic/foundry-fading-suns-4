@@ -179,9 +179,9 @@ export const ManeuverTypes = Object.freeze({
     Action: "action",
     Combat: "combat",
     Defense: "defense",
+    Influence: "influence",
     InfluencePersuasion: "influence_persuasion",
     InfluenceCoercion: "influence_coercion",
-    Influence: "influence",
 });
 
 export const ManeuverGoalModifiers = Object.freeze({
@@ -293,3 +293,25 @@ export const EShieldTypes = Object.freeze({
 });
 
 export const TECHGNOSIS_TL_MAX = 4;
+
+export const Resistance = Object.freeze({
+    Effortless: "effortless",
+    Easy: "easy",
+    Hard: "hard",
+    Demanding: "demanding",
+    Tough: "tough",
+    Severe: "severe",
+    Herculean: "herculean",
+    Miraculous: "miraculous",
+});
+
+export const ResistanceValues = Object.freeze({
+    Effortless: 0,
+    Easy: 2,
+    Hard: 4,
+    Demanding: 6,
+    Tough: 8,
+    Severe: 10,
+    Herculean: 12,
+    Miraculous: 14,
+});

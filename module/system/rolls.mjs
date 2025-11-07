@@ -10,8 +10,10 @@ export class RollIntention {
         characteristic = null,
         skill = null,
         maneuver = null,
+        resistance = null,
     } = {}) {
         this.maneuver = maneuver;
+        this.resistance = resistance;
 
         if (this.maneuver) {
             this.characteristic = this.maneuver.system.characteristic;
@@ -136,10 +138,11 @@ export class RollData {
 }
 
 export class DiceThrow {
-    constructor(rollData) {
+    constructor(rollData, options = { subtitle: null, respite: false }) {
         this.rollData = rollData;
         this.result = null;
         this.rolls = [];
+        this.options = options;
     }
 
     static isBetterThan(a, b) {
@@ -150,7 +153,7 @@ export class DiceThrow {
         return a.vp > b.vp;
     }
 
-    static calculateVP(result, goal) {
+    static calculateVP(result, goal, resistance = null) {
         let vp = result;
 
         if (vp > goal) {
@@ -161,7 +164,7 @@ export class DiceThrow {
             return 0;
         }
 
-        return vp;
+        return vp - (resistance || 0);
     }
 
     async roll() {
@@ -198,7 +201,7 @@ export class DiceThrow {
     get vp() {
         if (this.result === null) return null;
 
-        return DiceThrow.calculateVP(this.result, this.goal);
+        return DiceThrow.calculateVP(this.result, this.goal, this.rollData.rollIntention.resistance);
     }
 
     get goal() {
@@ -223,9 +226,10 @@ export class DiceThrow {
 
     get chatContext() {
         return {
+            subtitle: this.options.subtitle,
             result: this.result,
             vp: this.vp,
-            hasVpToGain: this.vp > 0,
+            hasVpToGain: this.vp > 0 && !this.rollData.rollIntention.maneuver?.system?.noVp,
             goal: this.goal,
             isFavorable: this.isFavorable,
             isUnfavorable: this.isUnfavorable,
@@ -248,9 +252,10 @@ export class DiceThrow {
             hasModifiers: this.rollData.modifiers.length > 0,
             actorId: this.rollData.actor.id,
             isExtra: this.rollData.actor.type === "extra",
-            // TODO: check whether Actor is overloaded
-            techCompulsionRisk: this.isCriticalSuccess,
-        }
+            techCompulsionRisk: this.rollData.actor.overloaded && this.isCriticalSuccess,
+            resistance: this.rollData.rollIntention.resistance,
+            respite: this.options.respite,
+        };
     }
 
     async sendToChat() {

@@ -1,0 +1,39 @@
+{
+  "type": "maneuver",
+  "name": "honorable_strike",
+  "folder": null,
+  "system": {
+    "slug": "honorable_strike",
+    "description": "",
+    "type": "combat",
+    "skill": "melee",
+    "characteristic": "dexterity",
+    "goalModifier": "melee_weapon",
+    "actionType": [
+      "primary"
+    ],
+    "playScale": "instantaneous",
+    "noVp": false
+  },
+  "_id": "9WUfhDB5v42EkULR",
+  "img": "icons/magic/symbols/cog-orange-red.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!9WUfhDB5v42EkULR"
+}

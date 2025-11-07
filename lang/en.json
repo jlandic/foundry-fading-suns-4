@@ -51,7 +51,8 @@
         "notes": "Notes",
         "gmNotes": "GM Notes",
         "modifier": "Modifier",
-        "duration": "Duration"
+        "duration": "Duration",
+        "maneuvers": "Maneuvers"
       },
       "common": {
         "traits": "Traits",
@@ -102,8 +103,13 @@
         "vp": "VP",
         "circumstances": "Circumstances",
         "gainVp": "Gain VP",
+        "gainVitality": "Gain Vitality",
         "baseRoll": "Base roll",
-        "techCompulsionRisk": "Tech Compulsion risk!"
+        "techCompulsionRisk": "Tech Compulsion risk!",
+        "res": "Res.",
+        "subtitle": {
+          "respite": "Respite"
+        }
       }
     },
     "dialogs": {
@@ -374,7 +380,8 @@
         "techGnosis": "Tech Gnosis",
         "cash": "Cash",
         "shields": "Shields",
-        "eshields": "E-shields"
+        "eshields": "E-shields",
+        "states": "States"
       }
     },
     "equipment": {

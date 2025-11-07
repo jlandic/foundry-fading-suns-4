@@ -3,7 +3,7 @@
     data-group="{{tabs.modifiers.group}}"
     data-tab="{{tabs.modifiers.id}}"
 >
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3>{{ localize "fs4.commonFields.modifiers" }}</h3>
 
@@ -17,11 +17,11 @@
                 </a>
             </div>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each modifiers}}
             {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 </section>

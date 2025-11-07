@@ -54,6 +54,12 @@
         "source/items/species/*.json"
       ],
       "url": "./schemas/species.schema.json"
+    },
+    {
+      "fileMatch": [
+        "source/items/maneuvers/*.json"
+      ],
+      "url": "./schemas/maneuver.schema.json"
     }
   ],
   "typescript.validate.enable": false

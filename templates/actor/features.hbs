@@ -3,39 +3,44 @@
     data-group="{{tabs.features.group}}"
     data-tab="{{tabs.features.id}}"
 >
-    <ol class="item-list">
+    <ul class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.states" }}</h3>
+
+            {{#each stateColumnLabels}}
+                <div class="item-column">{{this}}</div>
+            {{/each}}
+            <div></div>
+        </li>
+    </ul>
+
+    <ul class="item-list">
+        {{#each states}}
+            {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ul>
+
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3 class="">{{localize "fs4.actor.fields.perks"}}</h3>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each perks}}
             {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         <li class="item-list-header flexrow">
             <h3 class="">{{localize "fs4.actor.fields.capabilities"}}</h3>
         </li>
-    </ol>
+    </ul>
 
-    <ol class="item-list">
+    <ul class="item-list">
         {{#each capabilities}}
             {{> "fading-suns-4.inline-item" item=this}}
         {{/each}}
-    </ol>
-
-    <ol class="item-list">
-        <li class="item-list-header flexrow">
-            <h3 class="">{{localize "fs4.actor.fields.maneuvers"}}</h3>
-        </li>
-    </ol>
-
-    <ol class="item-list">
-        {{#each maneuvers}}
-            {{> "fading-suns-4.inline-item" item=this}}
-        {{/each}}
-    </ol>
+    </ul>
 </section>

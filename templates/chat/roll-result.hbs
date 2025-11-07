@@ -9,6 +9,9 @@
             {{/if}}
         </h4>
         {{/if}}
+        {{#if subtitle}}
+        <h5 class="roll-subtitle">{{subtitle}}</h5>
+        {{/if}}
 
         {{#unless isExtra}}
         <pre>
@@ -49,6 +52,9 @@
         <div>
             <strong>{{localize "fs4.apps.roll.vp"}}:</strong>
             {{vp}}
+            {{#if resistance}}
+            &nbsp;({{localize "fs4.apps.roll.res"}}: {{resistance}})
+            {{/if}}
         </div>
 
         {{#if techCompulsionRisk}}
@@ -58,9 +64,15 @@
         {{/if}}
 
         {{#if hasVpToGain}}
+        {{#if respite}}
+        <button class="gain-vp" type="button" data-actor-id="{{actorId}}" data-vp="{{vp}}" data-respite="true">
+            {{localize "fs4.apps.roll.gainVitality"}}
+        </button>
+        {{else}}
         <button class="gain-vp" type="button" data-actor-id="{{actorId}}" data-vp="{{vp}}">
             {{localize "fs4.apps.roll.gainVp"}}
         </button>
+        {{/if}}
         {{/if}}
     </section>
 </div>
