@@ -569,6 +569,32 @@
       "xl": "Very large",
       "xxl": "Extremely large"
     },
+    "power": {
+      "fields": {
+        "path": "Path",
+        "cost": "Cost",
+        "discipline": "Discipline",
+        "components": "Components",
+        "level": "Level",
+        "preconditions": "Preconditions",
+        "elementary": "Elementary",
+        "characteristic": "Characteristic",
+        "skill": "Skill",
+        "playScale": "Play scale",
+        "actionType": "Action type",
+        "resistance": "Resistance",
+        "impact": "Impact"
+      },
+      "disciplines": {
+        "psi": "Psi",
+        "theurgy": "Theurgy"
+      },
+      "components": {
+        "liturgy": "Liturgy",
+        "gestures": "Gestures",
+        "prayer": "Prayer"
+      }
+    },
     "common": {
       "andSeparator": " and ",
       "orSeparator": " or ",

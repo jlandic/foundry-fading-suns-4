@@ -315,3 +315,14 @@ export const ResistanceValues = Object.freeze({
     Herculean: 12,
     Miraculous: 14,
 });
+
+export const PowerDisciplines = Object.freeze({
+    Psi: "psi",
+    Theurgy: "theurgy",
+});
+
+export const TheurgyComponents = Object.freeze({
+    Liturgy: "liturgy",
+    Gestures: "gestures",
+    Prayer: "prayer",
+});

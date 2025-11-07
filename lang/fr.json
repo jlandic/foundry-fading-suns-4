@@ -544,6 +544,32 @@
       "ea": "eA",
       "eb": "eB"
     },
+    "power": {
+      "fields": {
+        "path": "Voie",
+        "cost": "Coût",
+        "discipline": "Discipline",
+        "components": "Composantes",
+        "level": "Niveau",
+        "preconditions": "Préconditions",
+        "elementary": "Élémentaire",
+        "characteristic": "Caractéristique",
+        "skill": "Compétence",
+        "playScale": "Temps",
+        "actionType": "Type d'action",
+        "resistance": "Résistance",
+        "impact": "Incidence"
+      },
+      "disciplines": {
+        "psi": "Psi",
+        "theurgy": "Théurgie"
+      },
+      "components": {
+        "liturgy": "Liturgie",
+        "gestures": "Gestes",
+        "prayer": "Prière"
+      }
+    },
     "size": {
       "short": {
         "none": "-",
