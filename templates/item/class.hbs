@@ -33,4 +33,24 @@
             {{/each}}
         </ul>
     </section>
+
+    <section>
+        <h2>{{ localize "fs4.class.fields.callings" }}</h2>
+
+        <ul>
+            {{#each callings.classCallings}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.class.fields.openCallings" }}</h2>
+
+        <ul>
+            {{#each callings.openCallings}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+    </section>
 </section>

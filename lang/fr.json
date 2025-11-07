@@ -248,7 +248,9 @@
         "skills": "Compétences",
         "perks": "Avantages",
         "capabilities": "Aptitudes",
-        "factions": "Factions"
+        "factions": "Factions",
+        "callings": "Vocations",
+        "openCallings": "Vocations ouvertes"
       }
     },
     "faction": {

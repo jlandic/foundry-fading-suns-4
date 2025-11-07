@@ -249,7 +249,9 @@
         "skills": "Skills",
         "perks": "Perks",
         "factions": "Factions",
-        "capabilities": "Capabilities"
+        "capabilities": "Capabilities",
+        "callings": "Callings",
+        "openCallings": "Open callings"
       }
     },
     "faction": {
