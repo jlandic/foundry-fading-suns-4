@@ -5,7 +5,14 @@
   "system": {
     "slug": "actor",
     "description": "",
-    "equipment": [],
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "performance_outfits"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "special_any_lores_capability"

@@ -64,7 +64,7 @@ export default class BaseItem extends foundry.documents.Item {
         const feature = globalThis.registry.fromSlug(slug, type);
         if (!feature) return;
 
-        const features = foundry.utils.getProperty(this.system, path) || [];
+        const features = foundry.utils.getProperty(this, path) || [];
         if (!features.includes(slug)) {
             features.push(slug);
             feature.effects.forEach((effect) => {
