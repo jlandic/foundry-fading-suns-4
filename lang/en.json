@@ -386,6 +386,11 @@
         "states": "States"
       }
     },
+    "state": {
+      "fields": {
+        "type": "Resistance"
+      }
+    },
     "equipment": {
       "fields": {
         "tl": "TL",

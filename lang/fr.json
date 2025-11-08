@@ -382,6 +382,11 @@
         "states": "États"
       }
     },
+    "state": {
+      "fields": {
+        "type": "Résistance"
+      }
+    },
     "equipment": {
       "fields": {
         "tl": "NT",

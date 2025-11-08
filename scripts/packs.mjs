@@ -34,6 +34,7 @@ const PACK_TYPE_MAPPING = {
     shields: "shield",
     equipment: "equipment",
     maneuvers: "maneuver",
+    states: "state",
 }
 
 const TYPE_MAPPING = {}
@@ -94,6 +95,7 @@ const TRANSFORMERS = {
     states: async (original, reference) => {
         return {
             ...original,
+            img: reference.img,
             system: {
                 ...original.system,
                 type: reference.system.type,
@@ -346,6 +348,9 @@ const DEFAULT_SYSTEM = {
         playScale: "instantaneous",
         noVp: false,
     },
+    state: {
+        type: "TODO",
+    }
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {
@@ -371,6 +376,10 @@ const TRANSLATION_ENTRY_TEMPLATE = {
         impact: "",
         resistance: "",
         capability: "",
+    },
+    state: {
+        name: "",
+        description: "",
     },
 };
 

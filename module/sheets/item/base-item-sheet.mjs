@@ -17,6 +17,7 @@ const TYPE_PARTS = [
     "armor",
     "shield",
     "eshield",
+    "state",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [

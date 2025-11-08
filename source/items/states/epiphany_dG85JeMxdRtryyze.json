@@ -1,13 +1,13 @@
 {
   "type": "state",
-  "name": "humiliated",
+  "name": "epiphany",
   "folder": null,
   "system": {
-    "slug": "humiliated",
+    "slug": "epiphany",
     "type": "spirit"
   },
-  "_id": "e1gMTHXVmzTcn0Dw",
-  "img": "modules/game-icons-net/blackbackground/oppression.svg",
+  "_id": "dG85JeMxdRtryyze",
+  "img": "modules/game-icons-net/blackbackground/abstract-078.svg",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -16,9 +16,9 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "fading-suns-4",
-    "systemVersion": "PLACEHOLDER",
-    "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
@@ -26,5 +26,5 @@
     "ef54fWvGiyPGgegN": 3
   },
   "sort": 0,
-  "_key": "!items!e1gMTHXVmzTcn0Dw"
+  "_key": "!items!dG85JeMxdRtryyze"
 }
