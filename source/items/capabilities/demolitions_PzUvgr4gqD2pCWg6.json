@@ -51,6 +51,14 @@
         },
         {
           "type": "calling",
+          "slug": "spy_priest"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_noble"
+        },
+        {
+          "type": "calling",
           "slug": "tech_redeemer"
         },
         {
