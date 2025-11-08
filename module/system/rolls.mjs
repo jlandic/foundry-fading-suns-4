@@ -171,10 +171,6 @@ export class DiceThrow {
         const roll = await new Roll("1d20").roll();
         this.rolls.push(roll);
 
-        if (game.dice3d) {
-            await game.dice3d.showForRoll(roll, game.user, true);
-        }
-
         this.result = roll.total;
 
         if (this.isFavorable || this.isUnfavorable) {
@@ -182,6 +178,7 @@ export class DiceThrow {
             this.rolls.push(secondRoll);
 
             if (game.dice3d) {
+                await game.dice3d.showForRoll(roll, game.user, true);
                 await game.dice3d.showForRoll(secondRoll, game.user, true);
             }
 
