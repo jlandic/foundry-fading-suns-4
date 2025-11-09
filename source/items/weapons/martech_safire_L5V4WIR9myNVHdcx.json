@@ -21,11 +21,12 @@
     "burst": false,
     "ammo": 10,
     "currentAmmo": 0,
-    "anti": [
-      "lsr"
+    "damageTypes": [
+      "laser"
     ],
     "features": [],
     "tl": 6,
+    "techCompulsion": "inerrant",
     "cost": 600,
     "capability": "energy_guns",
     "blastForce": null

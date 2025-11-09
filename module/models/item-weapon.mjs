@@ -24,7 +24,7 @@ export default class WeaponDataModel extends EquipmentDataModel {
             burst: new BooleanField({ required: true, initial: false }),
             ammo: new NumberField({ required: true, initial: 0 }),
             currentAmmo: new NumberField({ required: true, initial: 0 }),
-            anti: new ArrayField(new StringField({
+            damageTypes: new ArrayField(new StringField({
                 required: true,
                 choices: Object.values(DamageTypes),
             })),

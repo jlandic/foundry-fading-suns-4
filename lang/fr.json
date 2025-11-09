@@ -478,21 +478,21 @@
     },
     "damageTypes": {
       "short": {
-        "blstr": "Blast.",
-        "flm": "Feu",
-        "hrd": "Perf.",
-        "lsr": "Laser",
-        "shk": "Choc",
-        "slm": "Impct.",
-        "son": "Son."
+        "blaster": "Blast.",
+        "flame": "Feu",
+        "hard": "Perf.",
+        "laser": "Laser",
+        "shock": "Choc",
+        "slam": "Impct.",
+        "sonic": "Son."
       },
-      "blstr": "Blaster",
-      "flm": "Feu",
-      "hrd": "Perforant",
-      "lsr": "Laser",
-      "shk": "Choc",
-      "slm": "Impact",
-      "son": "Sonique"
+      "blaster": "Blaster",
+      "flame": "Feu",
+      "hard": "Perforant",
+      "laser": "Laser",
+      "shock": "Choc",
+      "slam": "Impact",
+      "sonic": "Sonique"
     },
     "modifier": {
       "fields": {

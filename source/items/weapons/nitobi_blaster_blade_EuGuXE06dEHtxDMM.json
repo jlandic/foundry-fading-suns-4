@@ -21,13 +21,14 @@
     "burst": false,
     "ammo": 15,
     "currentAmmo": 0,
-    "anti": [
-      "blstr"
+    "damageTypes": [
+      "blaster"
     ],
     "features": [
       "unstable"
     ],
     "tl": 7,
+    "techCompulsion": "destructive",
     "cost": 3000,
     "capability": "energy_guns",
     "blastForce": null

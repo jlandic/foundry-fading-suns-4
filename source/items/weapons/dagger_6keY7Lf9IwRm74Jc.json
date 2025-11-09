@@ -22,7 +22,7 @@
     "burst": false,
     "ammo": 0,
     "currentAmmo": 0,
-    "anti": [],
+    "damageTypes": [],
     "features": [],
     "cost": 4,
     "tl": 1,

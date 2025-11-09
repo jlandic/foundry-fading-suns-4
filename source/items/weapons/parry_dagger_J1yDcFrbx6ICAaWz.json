@@ -19,7 +19,7 @@
     "burst": false,
     "ammo": 0,
     "currentAmmo": 0,
-    "anti": [],
+    "damageTypes": [],
     "features": [
       "military",
       "guard"

@@ -272,13 +272,13 @@ export const EquipmentSizes = Object.freeze({
 });
 
 export const DamageTypes = Object.freeze({
-    Blstr: "blstr",
-    Flm: "flm",
-    Hrd: "hrd",
-    Lsr: "lsr",
-    Shk: "shk",
-    Slm: "slm",
-    Son: "son",
+    Blstr: "blaster",
+    Flm: "flame",
+    Hrd: "hard",
+    Lsr: "laser",
+    Shk: "shock",
+    Slm: "slam",
+    Son: "sonic",
 });
 
 export const WeaponTypes = Object.freeze({

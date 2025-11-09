@@ -28,14 +28,20 @@ const PACKS = [
     "items/states",
 ];
 
-const PACK_TYPE_MAPPING = {
-    weapons: "weapon",
-    armors: "armor",
-    shields: "shield",
+const TEMPLATE_PACK_MAPPING = {
+    melee: "weapons",
+    weaponFeature: "equipmentFeatures",
+    weapon: "weapons",
+    armor: "armors",
     equipment: "equipment",
-    maneuvers: "maneuver",
-    states: "state",
-}
+    maneuver: "maneuvers",
+    state: "states",
+};
+
+const TEMPLATE_TYPE_MAPPING = {
+    melee: "weapon",
+    weaponFeature: "equipmentFeature",
+};
 
 const TYPE_MAPPING = {}
 
@@ -287,22 +293,23 @@ const IMG_MAPPING = {
     weapon: "icons/weapons/swords/swords-short.webp",
     shield: "icons/armor/shields/shield-round-brown-steel.webp",
     maneuver: "icons/magic/symbols/cog-orange-red.webp",
+    equipmentFeature: "icons/commodities/tech/blueprint.webp",
 };
 
 const DEFAULT_SYSTEM = {
     armor: {
+        tl: 5,
+        techCompulsion: null,
+        res: 0,
+        eshieldCompatibility: "es",
+        cost: 0,
+        anti: [],
+        features: [],
         curio: false,
         agora: "",
         quality: "standard",
         size: "none",
-        features: [],
-        cost: 0,
-        tl: 5,
         capability: null,
-        res: 0,
-        eshieldCompatibility: "es",
-        anti: [],
-        techCompulsion: null,
     },
     weapon: {
         curio: false,
@@ -325,8 +332,27 @@ const DEFAULT_SYSTEM = {
         ammo: 0,
         currentAmmo: 0,
         blastForce: null,
-        anti: [],
+        damageTypes: [],
         techCompulsion: null,
+    },
+    melee: {
+        tl: 5,
+        damage: 0,
+        strRequirement: 0,
+        size: "none",
+        cost: 0,
+        features: [],
+        capability: null,
+        agora: "",
+        curio: false,
+        quality: "standard",
+        melee: true,
+        range: {},
+        rof: 1,
+        burst: false,
+        ammo: 0,
+        currentAmmo: 0,
+        damageTypes: [],
     },
     equipment: {
         curio: false,
@@ -350,7 +376,75 @@ const DEFAULT_SYSTEM = {
     },
     state: {
         type: "TODO",
+    },
+    weaponFeature: {
     }
+};
+
+const BASE_EFFECT_SYSTEM = {
+    valueType: "constant",
+    targetType: "goal",
+    austerity: false,
+    context: "none",
+    value: "0",
+    notes: ""
+};
+
+const BASE_ARMOR_EFFECT_SYSTEM = {
+    ...BASE_EFFECT_SYSTEM,
+    targetType: "skill",
+    target: "vigor",
+    value: "-1"
+};
+
+const BASE_EFFECT = {
+    disabled: false,
+    img: null,
+    type: "base",
+    changes: [],
+    duration: {
+        startTime: null,
+        combat: null
+    },
+    description: "",
+    origin: null,
+    tint: "#ffffff",
+    transfer: true,
+    statuses: [],
+    flags: {},
+    _stats: {
+        compendiumSource: null,
+        duplicateSource: null,
+        exportSource: null,
+        coreVersion: "13.350",
+        systemId: "fading-suns-4",
+        systemVersion: "PLACEHOLDER",
+        lastModifiedBy: null
+    },
+}
+
+const EFFECT_TEMPLATE_FNS = {
+    melee: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+            context: "melee",
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
+    armor: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_ARMOR_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {
@@ -381,10 +475,15 @@ const TRANSLATION_ENTRY_TEMPLATE = {
         name: "",
         description: "",
     },
+    equipmentFeature: {
+        name: "",
+        description: "",
+    },
 };
 
-const createSourceItem = async (pack, slug) => {
-    const type = PACK_TYPE_MAPPING[pack];
+const createSourceItem = async (template, slug, effects = 0) => {
+    const pack = TEMPLATE_PACK_MAPPING[template];
+    const type = TEMPLATE_TYPE_MAPPING[template] || template;
     if (!type) {
         console.error(`Unknown pack type: ${pack}`);
         return;
@@ -400,11 +499,13 @@ const createSourceItem = async (pack, slug) => {
         system: {
             slug,
             description: "",
-            ...DEFAULT_SYSTEM[type],
+            ...DEFAULT_SYSTEM[template],
         },
         _id: id,
         img: IMG_MAPPING[type] || "icons/svg/item-bag.svg",
-        effects: [],
+        effects: Array.from({ length: effects }, (_, i) =>
+            EFFECT_TEMPLATE_FNS[template](slug, id, i)
+        ),
         flags: {},
         _stats: {
             compendiumSource: null,
@@ -430,7 +531,17 @@ const createSourceItem = async (pack, slug) => {
         .then(data => JSON.parse(data))
 
     translations.entries[slug] = TRANSLATION_ENTRY_TEMPLATE[type];
-    // sort entries by key
+
+    if (effects > 0) {
+        translations.entries[slug].effects = {};
+        newItem.effects.forEach((effect) => {
+            translations.entries[slug].effects[effect._id] = {
+                name: slug,
+                notes: "",
+            };
+        });
+    }
+
     const sortedEntries = Object.keys(translations.entries).sort().reduce((acc, key) => {
         acc[key] = translations.entries[key];
         return acc;
@@ -438,6 +549,7 @@ const createSourceItem = async (pack, slug) => {
 
     await fs.writeFile(translationFile, JSON.stringify({ ...translations, entries: sortedEntries }, null, 2), "utf-8");
 
+    console.log(`Updated translations at: ${translationFile}: `, translations.entries[slug]);
     await fs.writeFile(path.join(collectionPath, `${slug}_${id}.json`), JSON.stringify(newItem, null, 2), "utf-8");
 
     console.log(`Created new item at: ${path.join(collectionPath, `${slug}_${id}.json`)}`);
@@ -474,7 +586,7 @@ cmd
     .action(generateTranslations);
 
 cmd
-    .command("create <pack> <slug>")
+    .command("create <pack> <slug> [effectsAmount]")
     .description("Create a new item in the given pack with the specified slug")
     .action(createSourceItem);
 

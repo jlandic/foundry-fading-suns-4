@@ -528,21 +528,21 @@
     },
     "damageTypes": {
       "short": {
-        "blstr": "Blstr",
-        "flm": "Flm",
-        "hrd": "Hrd",
-        "lsr": "Lsr",
-        "shk": "Shk",
-        "slm": "Slm",
-        "son": "Son"
+        "blaster": "Blstr",
+        "flame": "Flm",
+        "hard": "Hrd",
+        "laser": "Lsr",
+        "shock": "Shk",
+        "slam": "Slm",
+        "sonic": "Son"
       },
-      "blstr": "Blaster",
-      "flm": "Flame",
-      "hrd": "Hard",
-      "lsr": "Laser",
-      "shk": "Shock",
-      "slm": "Slam",
-      "son": "Sonic"
+      "blaster": "Blaster",
+      "flame": "Flame",
+      "hard": "Hard",
+      "laser": "Laser",
+      "shock": "Shock",
+      "slam": "Slam",
+      "sonic": "Sonic"
     },
     "eshieldTypes": {
       "short": {
