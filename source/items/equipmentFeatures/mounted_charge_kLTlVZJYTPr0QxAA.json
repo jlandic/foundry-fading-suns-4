@@ -1,0 +1,30 @@
+{
+  "type": "equipmentFeature",
+  "name": "mounted_charge",
+  "folder": null,
+  "system": {
+    "slug": "mounted_charge",
+    "description": ""
+  },
+  "_id": "kLTlVZJYTPr0QxAA",
+  "img": "icons/commodities/tech/blueprint.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!kLTlVZJYTPr0QxAA"
+}

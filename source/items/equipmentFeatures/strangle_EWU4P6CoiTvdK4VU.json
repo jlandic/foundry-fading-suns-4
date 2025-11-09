@@ -1,0 +1,29 @@
+{
+  "type": "weaponFeature",
+  "name": "strangle",
+  "folder": "gSSJDLU0GoM0EOOe",
+  "system": {
+    "slug": "strangle",
+    "description": ""
+  },
+  "_id": "EWU4P6CoiTvdK4VU",
+  "img": "icons/commodities/tech/blueprint.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1762121778691,
+    "modifiedTime": 1762164814946,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!EWU4P6CoiTvdK4VU"
+}

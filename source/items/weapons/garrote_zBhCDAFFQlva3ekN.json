@@ -1,0 +1,87 @@
+{
+  "type": "weapon",
+  "name": "garrote",
+  "folder": null,
+  "system": {
+    "slug": "garrote",
+    "description": "",
+    "tl": 0,
+    "damage": 1,
+    "strRequirement": 1,
+    "size": "xs",
+    "cost": 5,
+    "features": [
+      "strangle"
+    ],
+    "capability": null,
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": []
+  },
+  "_id": "zBhCDAFFQlva3ekN",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [
+    {
+      "name": "garrote",
+      "disabled": false,
+      "_id": "mSNEkYxspDuE9EUP",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "melee",
+        "value": "-1",
+        "notes": ""
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!zBhCDAFFQlva3ekN.mSNEkYxspDuE9EUP"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!zBhCDAFFQlva3ekN"
+}

@@ -1,0 +1,53 @@
+{
+  "type": "weapon",
+  "name": "ascorbite_crystal_sword",
+  "folder": null,
+  "system": {
+    "slug": "ascorbite_crystal_sword",
+    "description": "",
+    "tl": 2,
+    "damage": 6,
+    "strRequirement": 3,
+    "size": "l",
+    "cost": 1000,
+    "features": [
+      "military",
+      "noisy",
+      "vibro"
+    ],
+    "capability": null,
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 3,
+    "currentAmmo": 0,
+    "damageTypes": [
+      "hard"
+    ]
+  },
+  "_id": "VdPfrf1eo1J321qH",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!VdPfrf1eo1J321qH"
+}

@@ -1,0 +1,42 @@
+{
+  "type": "armor",
+  "name": "thick_clothing",
+  "folder": "4geLGbwgCVI1GW3v",
+  "system": {
+    "slug": "thick_clothing",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "features": [],
+    "cost": 1,
+    "tl": 0,
+    "capability": null,
+    "res": 1,
+    "eshieldCompatibility": "es",
+    "anti": [],
+    "techCompulsion": null
+  },
+  "_id": "lpjgMZ8HQKNuBMsl",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!lpjgMZ8HQKNuBMsl"
+}

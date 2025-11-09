@@ -1,0 +1,49 @@
+{
+  "type": "weapon",
+  "name": "hollow_knife",
+  "folder": null,
+  "system": {
+    "slug": "hollow_knife",
+    "description": "",
+    "tl": 4,
+    "damage": 3,
+    "strRequirement": 1,
+    "size": "m",
+    "cost": 50,
+    "features": [
+      "poison"
+    ],
+    "capability": null,
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": []
+  },
+  "_id": "4AijdFWY2LFvKpjp",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!4AijdFWY2LFvKpjp"
+}

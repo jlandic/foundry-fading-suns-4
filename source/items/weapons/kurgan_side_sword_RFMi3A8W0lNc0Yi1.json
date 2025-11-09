@@ -1,0 +1,51 @@
+{
+  "type": "weapon",
+  "name": "kurgan_side_sword",
+  "folder": null,
+  "system": {
+    "slug": "kurgan_side_sword",
+    "description": "",
+    "tl": 4,
+    "damage": 6,
+    "strRequirement": 2,
+    "size": "l",
+    "cost": 45,
+    "features": [
+      "guard",
+      "military",
+      "leg_sheath"
+    ],
+    "capability": "military_weapons",
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": []
+  },
+  "_id": "RFMi3A8W0lNc0Yi1",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!RFMi3A8W0lNc0Yi1"
+}

@@ -1,0 +1,91 @@
+{
+  "type": "weapon",
+  "name": "morningstar",
+  "folder": null,
+  "system": {
+    "slug": "morningstar",
+    "description": "",
+    "tl": 1,
+    "damage": 5,
+    "strRequirement": 4,
+    "size": "l",
+    "cost": 20,
+    "features": [
+      "ignores_handshield",
+      "military"
+    ],
+    "capability": "military_weapons",
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": [
+      "hard",
+      "slam"
+    ]
+  },
+  "_id": "MUXa0wIhUK3SM8hX",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [
+    {
+      "name": "morningstar",
+      "disabled": false,
+      "_id": "AKDwWy5goqwguTab",
+      "img": null,
+      "type": "base",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "melee",
+        "value": "-1",
+        "notes": ""
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!MUXa0wIhUK3SM8hX.AKDwWy5goqwguTab"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!MUXa0wIhUK3SM8hX"
+}
