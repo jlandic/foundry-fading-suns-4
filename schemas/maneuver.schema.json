@@ -128,7 +128,7 @@
         "slug": {
           "$ref": "./slugs.schema.json#/slug"
         },
-        "noVp": {
+        "noVP": {
           "type": "boolean"
         },
         "actionType": {
@@ -151,7 +151,7 @@
         "goalModifier",
         "actionType",
         "slug",
-        "noVp"
+        "noVP"
       ],
       "additionalProperties": true
     }

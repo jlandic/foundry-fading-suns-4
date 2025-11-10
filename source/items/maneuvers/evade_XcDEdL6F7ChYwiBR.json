@@ -3,10 +3,10 @@
   "name": "evade",
   "folder": null,
   "system": {
-    "slug": "evade",
+    "slug": "evade_intuition",
     "type": "defense",
     "skill": "vigor",
-    "characteristic": "dexterity",
+    "characteristic": "intuition",
     "goalModifier": "none",
     "actionType": [
       "primary",

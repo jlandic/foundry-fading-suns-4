@@ -3,7 +3,7 @@
   "name": "evade",
   "folder": null,
   "system": {
-    "slug": "evade",
+    "slug": "evade_dexterity",
     "type": "defense",
     "skill": "vigor",
     "characteristic": "dexterity",
