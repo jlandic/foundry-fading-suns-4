@@ -1,18 +1,23 @@
 {
-  "type": "state",
-  "name": "fatigued",
-  "folder": null,
+  "type": "equipment",
+  "name": "medpack_personal",
+  "folder": "njGJyuuk24vXp7aO",
   "system": {
-    "slug": "fatigued",
-    "type": "body",
-    "description": ""
+    "slug": "medpack_personal",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xs",
+    "cost": 5,
+    "tl": 4
   },
-  "_id": "opc2V5tcRZTdTusI",
-  "img": "icons/svg/sleep.svg",
+  "_id": "smBQc3Bt4SLx2kMP",
+  "img": "icons/svg/item-bag.svg",
   "effects": [
     {
       "disabled": false,
-      "img": "icons/svg/sleep.svg",
+      "img": null,
       "type": "base",
       "changes": [],
       "duration": {
@@ -23,9 +28,7 @@
       "origin": null,
       "tint": "#ffffff",
       "transfer": true,
-      "statuses": [
-        "fatigued"
-      ],
+      "statuses": [],
       "flags": {},
       "_stats": {
         "compendiumSource": null,
@@ -36,10 +39,18 @@
         "systemVersion": "PLACEHOLDER",
         "lastModifiedBy": null
       },
-      "name": "fatigued",
-      "_id": "6GlrPXC8su6ddxgv",
-      "system": {},
-      "_key": "!items.effects!opc2V5tcRZTdTusI.6GlrPXC8su6ddxgv"
+      "name": "medpack_personal",
+      "_id": "xxYohHTgKCx75vxA",
+      "system": {
+        "valueType": "favorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "specific_maneuver",
+        "maneuverSlug": "treat_wounds",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!smBQc3Bt4SLx2kMP.xxYohHTgKCx75vxA"
     }
   ],
   "flags": {},
@@ -49,9 +60,9 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "fading-suns-4",
-    "systemVersion": "PLACEHOLDER",
-    "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
@@ -59,5 +70,5 @@
     "ef54fWvGiyPGgegN": 3
   },
   "sort": 0,
-  "_key": "!items!opc2V5tcRZTdTusI"
+  "_key": "!items!smBQc3Bt4SLx2kMP"
 }

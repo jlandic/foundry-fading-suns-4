@@ -5,7 +5,20 @@
   "system": {
     "slug": "healer",
     "description": "",
-    "equipment": [],
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "doctors_bag"
+        }
+      ],
+      [
+        {
+          "type": "equipment",
+          "slug": "five_elixirs"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "medical"

@@ -1,18 +1,23 @@
 {
-  "type": "state",
-  "name": "fatigued",
-  "folder": null,
+  "type": "equipment",
+  "name": "doctors_bag",
+  "folder": "njGJyuuk24vXp7aO",
   "system": {
-    "slug": "fatigued",
-    "type": "body",
-    "description": ""
+    "slug": "doctors_bag",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "l",
+    "cost": 10,
+    "tl": 2
   },
-  "_id": "opc2V5tcRZTdTusI",
-  "img": "icons/svg/sleep.svg",
+  "_id": "qXTsG63Z0C2trgP8",
+  "img": "icons/svg/item-bag.svg",
   "effects": [
     {
       "disabled": false,
-      "img": "icons/svg/sleep.svg",
+      "img": null,
       "type": "base",
       "changes": [],
       "duration": {
@@ -23,9 +28,7 @@
       "origin": null,
       "tint": "#ffffff",
       "transfer": true,
-      "statuses": [
-        "fatigued"
-      ],
+      "statuses": [],
       "flags": {},
       "_stats": {
         "compendiumSource": null,
@@ -36,10 +39,19 @@
         "systemVersion": "PLACEHOLDER",
         "lastModifiedBy": null
       },
-      "name": "fatigued",
-      "_id": "6GlrPXC8su6ddxgv",
-      "system": {},
-      "_key": "!items.effects!opc2V5tcRZTdTusI.6GlrPXC8su6ddxgv"
+      "name": "doctors_bag",
+      "_id": "hnJcC0w66h6XAWlw",
+      "system": {
+        "valueType": "constant",
+        "targetType": "skill",
+        "target": "remedy",
+        "austerity": false,
+        "context": "none",
+        "value": "1",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!qXTsG63Z0C2trgP8.hnJcC0w66h6XAWlw"
     }
   ],
   "flags": {},
@@ -49,9 +61,9 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "fading-suns-4",
-    "systemVersion": "PLACEHOLDER",
-    "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
@@ -59,5 +71,5 @@
     "ef54fWvGiyPGgegN": 3
   },
   "sort": 0,
-  "_key": "!items!opc2V5tcRZTdTusI"
+  "_key": "!items!qXTsG63Z0C2trgP8"
 }
