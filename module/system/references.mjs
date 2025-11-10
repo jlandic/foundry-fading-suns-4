@@ -315,3 +315,9 @@ export const ResistanceValues = Object.freeze({
     Herculean: 12,
     Miraculous: 14,
 });
+
+export const FeatureTypeMapping = Object.freeze({
+    weapon: "weaponFeature",
+    armor: "armorFeature",
+    shield: "shieldFeature",
+});

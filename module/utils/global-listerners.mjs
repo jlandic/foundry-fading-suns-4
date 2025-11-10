@@ -2,11 +2,8 @@ export const initializeChatListeners = () => {
     const chatLogs = document.querySelectorAll(".chat-log");
     chatLogs.forEach((chatLog) => {
         chatLog.addEventListener("click", async (event) => {
-            console.log("Chat log clicked", event);
             const button = event.target.closest("button.gain-vp");
             if (!button) return;
-
-            console.log("Gain VP button clicked", button);
 
             const {
                 actorId,

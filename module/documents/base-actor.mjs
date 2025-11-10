@@ -2,8 +2,26 @@ import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
 import { BASIC_MANEUVERS, Characteristics, ModifierTargetTypes, ResistanceTypes, ResistanceValues, Skills, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
 import { RollIntention } from "../system/rolls.mjs";
+import { WithModifiersMixin } from "./mixins.mjs";
 
-export default class BaseActor extends foundry.documents.Actor {
+export default class BaseActor extends WithModifiersMixin(
+    foundry.documents.Actor,
+) {
+    static ALLOWED_ITEM_TYPES = [
+        "equipment",
+        "maneuver",
+        "state",
+        "capability",
+        "perk",
+        "weapon",
+        "armor",
+        "handshield",
+        "eshield",
+        "power",
+        "shield",
+        "techCompulsion",
+    ];
+
     async update(data, options = {}) {
         const newSpeciesSlug = data["system.species"];
 
@@ -28,29 +46,6 @@ export default class BaseActor extends foundry.documents.Actor {
         }
 
         return super.update(data, options);
-    }
-
-    async addNewModifier() {
-        return await this.createEmbeddedDocuments("ActiveEffect", [
-            {
-                name: game.i18n.localize("fs4.modifier.defaultName"),
-                disabled: false,
-            }
-        ]);
-    }
-
-    async toggleModifier(id) {
-        let effect = this.effects.get(id);
-        if (!effect) {
-            effect = this.embeddedModifiers.find(e => e.id === id);
-        }
-        if (!effect) return;
-
-        return await effect.update({ disabled: !effect.disabled });
-    }
-
-    async removeModifier(modifierId) {
-        return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
     }
 
     async gainVP(amount) {
@@ -98,6 +93,18 @@ export default class BaseActor extends foundry.documents.Actor {
 
     async removeReference(property) {
         await this.update({ [property]: null });
+    }
+
+    async addItem(item) {
+        if (!BaseActor.ALLOWED_ITEM_TYPES.includes(item.type));
+
+        const createdItems = await this.createEmbeddedDocuments("Item", [item.toObject()]);
+
+        if (!item.featureModifiers.length) return;
+
+        await this.items.get(createdItems[0]._id).createEmbeddedDocuments("ActiveEffect", [
+            ...item.featureModifiers.map(e => e.toObject()),
+        ]);
     }
 
     async surge() {
@@ -195,11 +202,7 @@ export default class BaseActor extends foundry.documents.Actor {
     get embeddedModifiers() {
         return this.items
             .filter(i => !i.system.isEquippable || this.hasItemEquipped(i.id))
-            .map(i => i.effects.map(e => e)).flat();
-    }
-
-    get allModifiers() {
-        return this.effects.map(e => e).concat(this.embeddedModifiers);
+            .map(i => i.allModifiers).flat();
     }
 
     get resistance() {
@@ -221,21 +224,16 @@ export default class BaseActor extends foundry.documents.Actor {
     }
 
     resistanceMod(resistanceType) {
-        const embedded = this.embeddedModifiers
-            .filter(m => !m.disabled)
-            .filter(m => m.system.targetType === ModifierTargetTypes.Resistance && m.system.target === resistanceType)
-            .reduce((sum, m) => sum + Number(m.system.value), 0);
-
-        const modifiers = this.effects
+        const modifiers = this.allModifiers
             .filter(m => !m.disabled)
             .filter(m => m.system.targetType === ModifierTargetTypes.Resistance && m.system.target === resistanceType)
             .reduce((sum, m) => sum + Number(m.system.value), 0);
 
         if (resistanceType === ResistanceTypes.Body) {
-            return embedded + modifiers + this.armorResistance;
+            return modifiers + this.armorResistance;
         }
 
-        return embedded + modifiers;
+        return modifiers;
     }
 
     get techGnosis() {

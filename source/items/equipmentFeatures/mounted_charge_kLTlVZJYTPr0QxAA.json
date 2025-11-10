@@ -1,7 +1,7 @@
 {
-  "type": "equipmentFeature",
+  "type": "weaponFeature",
   "name": "mounted_charge",
-  "folder": null,
+  "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "mounted_charge",
     "description": ""

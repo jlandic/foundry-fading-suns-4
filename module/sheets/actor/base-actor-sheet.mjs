@@ -1,3 +1,4 @@
+import BaseActor from "../../documents/base-actor.mjs";
 import { CharacteristicsGroupMap, CharacteristicsGroups, ManeuverTypes, ResistanceTypes, Skills } from "../../system/references.mjs";
 import { RollData, RollIntention, RollTypes } from "../../system/rolls.mjs";
 import { enrichHTML } from "../../utils/text-editor.mjs";
@@ -150,20 +151,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
     }
 
     get droppableAsEmbedded() {
-        return [
-            "equipment",
-            "maneuver",
-            "state",
-            "capability",
-            "perk",
-            "weapon",
-            "armor",
-            "handshield",
-            "eshield",
-            "power",
-            "shield",
-            "techCompulsion",
-        ];
+        return BaseActor.ALLOWED_ITEM_TYPES;
     }
 
     _configureRenderOptions(options) {
@@ -367,7 +355,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
         if (this.droppableAsReferences.includes(item.type)) {
             await this.actor.addReference(`system.${item.type}`, item.system.slug);
         } else if (this.droppableAsEmbedded.includes(item.type)) {
-            await this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
+            await this.actor.addItem(item);
         } else {
             globalThis.log.warn(`Unsupported drop item type: ${item.type}`);
         }
@@ -412,7 +400,13 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 })),
             details: await Promise.all(Object.keys(details).map(async field => ({
                 label: game.i18n.localize(details[field]),
-                value: await enrichHTML(item.system[field] || "")
+                value: item.system[field] instanceof Array
+                    ? Promise.all(
+                        item.system[field].map(async (entry) => await enrichHTML(
+                            `<li>${entry}</li>`
+                        ))
+                    ).then(enrichedEntries => `<ul>${enrichedEntries.join("")}</ul>`)
+                    : await enrichHTML(item.system[field] || "")
             }))),
         })));
     }

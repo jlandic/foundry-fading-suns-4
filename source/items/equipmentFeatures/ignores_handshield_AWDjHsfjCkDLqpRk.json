@@ -1,7 +1,7 @@
 {
-  "type": "equipmentFeature",
+  "type": "weaponFeature",
   "name": "ignores_handshield",
-  "folder": null,
+  "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "ignores_handshield",
     "description": ""

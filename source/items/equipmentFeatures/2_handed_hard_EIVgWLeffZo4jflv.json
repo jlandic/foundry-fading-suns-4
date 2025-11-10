@@ -1,7 +1,7 @@
 {
-  "type": "equipmentFeature",
+  "type": "weaponFeature",
   "name": "2_handed_hard",
-  "folder": null,
+  "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "2_handed_hard",
     "description": ""

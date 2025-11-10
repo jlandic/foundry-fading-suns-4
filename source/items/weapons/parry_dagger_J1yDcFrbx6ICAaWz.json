@@ -28,46 +28,7 @@
     "cost": 5,
     "tl": 2
   },
-  "effects": [
-    {
-      "name": "guard",
-      "disabled": false,
-      "origin": "guard",
-      "system": {
-        "value": "1",
-        "valueType": "constant",
-        "targetType": "resistance",
-        "target": "body",
-        "austerity": false,
-        "context": "none",
-        "notes": "Against melee weapons, when the weapon is in use"
-      },
-      "_id": "XXUX3sdNmW9B42HP",
-      "img": null,
-      "type": "base",
-      "changes": [],
-      "duration": {
-        "startTime": null,
-        "combat": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "transfer": true,
-      "statuses": [],
-      "sort": 0,
-      "flags": {},
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.350",
-        "systemId": "fading-suns-4",
-        "systemVersion": "PLACEHOLDER",
-        "lastModifiedBy": null
-      },
-      "_key": "!items.effects!J1yDcFrbx6ICAaWz.XXUX3sdNmW9B42HP"
-    }
-  ],
+  "effects": [],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

@@ -1,4 +1,9 @@
-export default class BaseItem extends foundry.documents.Item {
+import { FeatureTypeMapping } from "../system/references.mjs";
+import { WithModifiersMixin } from "./mixins.mjs";
+
+export default class BaseItem extends WithModifiersMixin(
+    foundry.documents.Item,
+) {
     static getDefaultArtwork(itemData) {
         let icon = this.DEFAULT_ICON;
 
@@ -40,51 +45,25 @@ export default class BaseItem extends foundry.documents.Item {
         await this.update({ [property]: null });
     }
 
-    async addNewModifier() {
-        return await this.createEmbeddedDocuments("ActiveEffect", [
-            {
-                name: this.name,
-                disabled: false,
-            }
-        ]);
+    get embeddedModifiers() {
+        return [];
     }
 
-    async toggleModifier(id) {
-        const effect = this.effects.get(id);
-        if (!effect) return;
+    get featureModifiers() {
+        const featureType = FeatureTypeMapping[this.type];
+        if (!featureType) return [];
 
-        return await effect.update({ disabled: !effect.disabled });
+        return this.system.features
+            .map(slug => globalThis.registry.fromSlug(slug, featureType))
+            .map(feature => feature.effects.map(e => e))
+            .flat();
     }
 
-    async removeModifier(modifierId) {
-        return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
-    }
+    async addFeature(slug, path = "system.features") {
+        const features = foundry.utils.getProperty(this.system, path) || [];
+        if (features.includes(slug)) return;
 
-    async addFeature(slug, type, path = "system.features") {
-        const feature = globalThis.registry.fromSlug(slug, type);
-        if (!feature) return;
-
-        const features = foundry.utils.getProperty(this, path) || [];
-        if (!features.includes(slug)) {
-            features.push(slug);
-            feature.effects.forEach((effect) => {
-                this.createEmbeddedDocuments("ActiveEffect", [{
-                    name: effect.name,
-                    disabled: false,
-                    origin: slug,
-                    system: {
-                        ...effect.system,
-                    }
-                }]);
-            });
-            return await this.update({ [path]: features });
-        }
-    }
-
-    async clearImportedEffects(slug) {
-        const effectsToRemove = this.effects.filter(effect => effect.origin === slug);
-        if (effectsToRemove.size > 0) {
-            return await this.deleteEmbeddedDocuments("ActiveEffect", effectsToRemove.map(e => e.id));
-        }
+        features.push(slug);
+        await this.update({ [path]: features });
     }
 }

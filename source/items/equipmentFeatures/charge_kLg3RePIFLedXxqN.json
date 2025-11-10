@@ -1,7 +1,7 @@
 {
-  "type": "equipmentFeature",
+  "type": "weaponFeature",
   "name": "charge",
-  "folder": null,
+  "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "charge",
     "description": ""

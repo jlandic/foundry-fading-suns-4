@@ -25,8 +25,6 @@ export async function preloadTemplates() {
 
 export const registerHandlebarsHelpers = () => {
     Handlebars.registerHelper("getProperty", (object, property) => {
-        console.log(object);
-        console.log(property);
         return object[property];
     });
 };

@@ -1,7 +1,7 @@
 {
-  "type": "equipmentFeature",
+  "type": "weaponFeature",
   "name": "leg_sheath",
-  "folder": null,
+  "folder": "gSSJDLU0GoM0EOOe",
   "system": {
     "slug": "leg_sheath",
     "description": ""
