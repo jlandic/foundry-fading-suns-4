@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "berserk",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "oY5IlzvpbUbNRH9K",
   "img": "modules/game-icons-net/blackbackground/enrage.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/enrage.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "berserk"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "berserk",
+      "_id": "CP0TRByVfzUANl27",
+      "system": {},
+      "_key": "!items.effects!oY5IlzvpbUbNRH9K.CP0TRByVfzUANl27"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "stimulated",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "8GC1W6mJE3haX6BG",
   "img": "modules/game-icons-net/blackbackground/extra-lucid.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/extra-lucid.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "stimulated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "stimulated",
+      "_id": "Z6nkFBDeHeOvalbW",
+      "system": {},
+      "_key": "!items.effects!8GC1W6mJE3haX6BG.Z6nkFBDeHeOvalbW"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

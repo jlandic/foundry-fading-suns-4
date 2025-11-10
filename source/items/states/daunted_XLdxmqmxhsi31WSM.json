@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "daunted",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "XLdxmqmxhsi31WSM",
   "img": "modules/game-icons-net/blackbackground/worried-eyes.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/worried-eyes.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "daunted"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "daunted",
+      "_id": "1C5HMWs65QiNBCyM",
+      "system": {},
+      "_key": "!items.effects!XLdxmqmxhsi31WSM.1C5HMWs65QiNBCyM"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

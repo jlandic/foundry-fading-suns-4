@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "incapacitated",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "XFJ4DsBhwQfCWIQC",
   "img": "modules/game-icons-net/blackbackground/imprisoned.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/imprisoned.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "incapacitated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "incapacitated",
+      "_id": "qB1gd00rBP23eNzd",
+      "system": {},
+      "_key": "!items.effects!XFJ4DsBhwQfCWIQC.qB1gd00rBP23eNzd"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

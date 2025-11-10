@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "dazed",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "YTjcHAIQv4ZART1H",
   "img": "icons/svg/daze.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/daze.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "dazed"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "dazed",
+      "_id": "gWns456bxaNrEzJC",
+      "system": {},
+      "_key": "!items.effects!YTjcHAIQv4ZART1H.gWns456bxaNrEzJC"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

@@ -14,7 +14,7 @@
       "disabled": false,
       "_id": "l91Fydgnv4UVN7VG",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "unfavorable",
         "targetType": "skill",

@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "humiliated",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "e1gMTHXVmzTcn0Dw",
   "img": "modules/game-icons-net/blackbackground/oppression.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/oppression.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "humiliated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "humiliated",
+      "_id": "JF8aJhf4ivAmMKQU",
+      "system": {},
+      "_key": "!items.effects!e1gMTHXVmzTcn0Dw.JF8aJhf4ivAmMKQU"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

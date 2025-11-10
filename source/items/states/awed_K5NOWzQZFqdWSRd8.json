@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "awed",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "K5NOWzQZFqdWSRd8",
   "img": "modules/game-icons-net/blackbackground/awareness.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/awareness.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "awed"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "awed",
+      "_id": "nUTMSFeHCQFaFLb4",
+      "system": {},
+      "_key": "!items.effects!K5NOWzQZFqdWSRd8.nUTMSFeHCQFaFLb4"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

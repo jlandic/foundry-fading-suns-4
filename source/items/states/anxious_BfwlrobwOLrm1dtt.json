@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "anxious",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "BfwlrobwOLrm1dtt",
   "img": "modules/game-icons-net/blackbackground/drowning.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/drowning.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "anxious"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "anxious",
+      "_id": "dX3F3RFS91pwABp4",
+      "system": {},
+      "_key": "!items.effects!BfwlrobwOLrm1dtt.dX3F3RFS91pwABp4"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

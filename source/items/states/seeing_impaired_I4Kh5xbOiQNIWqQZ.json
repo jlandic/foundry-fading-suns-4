@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "seeing_impaired",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "I4Kh5xbOiQNIWqQZ",
   "img": "icons/svg/blind.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/blind.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "seeing_impaired"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "seeing_impaired",
+      "_id": "366SmdqIOPTcM594",
+      "system": {},
+      "_key": "!items.effects!I4Kh5xbOiQNIWqQZ.366SmdqIOPTcM594"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

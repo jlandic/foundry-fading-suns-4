@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "hearing_impaired",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "HstCy4YxnkJKDiLV",
   "img": "icons/svg/deaf.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/deaf.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "hearing_impaired"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "hearing_impaired",
+      "_id": "jTydXHZEhhsqZc3P",
+      "system": {},
+      "_key": "!items.effects!HstCy4YxnkJKDiLV.jTydXHZEhhsqZc3P"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

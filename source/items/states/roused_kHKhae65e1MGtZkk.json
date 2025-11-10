@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "roused",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "kHKhae65e1MGtZkk",
   "img": "modules/game-icons-net/blackbackground/inspiration.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/inspiration.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "roused"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "roused",
+      "_id": "H8t0DShue8keVN9s",
+      "system": {},
+      "_key": "!items.effects!kHKhae65e1MGtZkk.H8t0DShue8keVN9s"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

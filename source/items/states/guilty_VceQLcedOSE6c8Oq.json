@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "guilty",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "VceQLcedOSE6c8Oq",
   "img": "modules/game-icons-net/blackbackground/cement-shoes.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/cement-shoes.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "guilty"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "guilty",
+      "_id": "kvD9UaBpQVCjtKtM",
+      "system": {},
+      "_key": "!items.effects!VceQLcedOSE6c8Oq.kvD9UaBpQVCjtKtM"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

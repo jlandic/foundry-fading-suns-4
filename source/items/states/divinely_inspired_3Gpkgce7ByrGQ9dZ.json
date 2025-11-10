@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "divinely_inspired",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "3Gpkgce7ByrGQ9dZ",
   "img": "icons/svg/angel.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/angel.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "divinely_inspired"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "divinely_inspired",
+      "_id": "DFOUUQnAnLzOGqGH",
+      "system": {},
+      "_key": "!items.effects!3Gpkgce7ByrGQ9dZ.DFOUUQnAnLzOGqGH"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

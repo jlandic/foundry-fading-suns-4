@@ -19,7 +19,8 @@
       "eshield": "E-bouclier",
       "shield": "Bouclier",
       "shieldFeature": "Particularité de bouclier",
-      "armorFeature": "Particularité d'armure"
+      "armorFeature": "Particularité d'armure",
+      "state": "État"
     },
     "Actor": {
       "pc": "PJ",

@@ -39,7 +39,7 @@
       "disabled": false,
       "_id": "oTt0JLRBoVCxsr5H",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",
@@ -76,7 +76,7 @@
       "disabled": false,
       "_id": "oeC0an5fwTHy2igj",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",

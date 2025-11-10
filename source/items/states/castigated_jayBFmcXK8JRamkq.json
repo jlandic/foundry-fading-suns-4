@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "castigated",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "jayBFmcXK8JRamkq",
   "img": "modules/game-icons-net/blackbackground/pointing.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/pointing.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "castigated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "castigated",
+      "_id": "CiSNkel0xSFkqDb3",
+      "system": {},
+      "_key": "!items.effects!jayBFmcXK8JRamkq.CiSNkel0xSFkqDb3"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

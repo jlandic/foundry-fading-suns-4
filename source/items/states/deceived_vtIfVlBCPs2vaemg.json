@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "deceived",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "vtIfVlBCPs2vaemg",
   "img": "modules/game-icons-net/blackbackground/distraction_1.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/distraction_1.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "deceived"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "deceived",
+      "_id": "0uKTMKLt1R4alTrC",
+      "system": {},
+      "_key": "!items.effects!vtIfVlBCPs2vaemg.0uKTMKLt1R4alTrC"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

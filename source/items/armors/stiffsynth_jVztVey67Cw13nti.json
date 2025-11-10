@@ -27,7 +27,7 @@
     {
       "disabled": false,
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "changes": [],
       "duration": {
         "startTime": null,

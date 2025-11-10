@@ -14,7 +14,7 @@
       "disabled": false,
       "_id": "iwq0zUxdesMpfzgY",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "initiative",

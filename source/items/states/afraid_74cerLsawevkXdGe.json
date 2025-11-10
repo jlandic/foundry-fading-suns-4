@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "afraid",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "74cerLsawevkXdGe",
   "img": "modules/game-icons-net/blackbackground/dread.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/dread.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "afraid"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "afraid",
+      "_id": "ZHlnB1CzTMX7fLdr",
+      "system": {},
+      "_key": "!items.effects!74cerLsawevkXdGe.ZHlnB1CzTMX7fLdr"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

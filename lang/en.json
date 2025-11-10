@@ -19,7 +19,8 @@
       "eshield": "E-shield",
       "shield": "Shield",
       "shieldFeature": "Shield Feature",
-      "armorFeature": "Armor Feature"
+      "armorFeature": "Armor Feature",
+      "state": "State"
     },
     "Actor": {
       "pc": "PC",

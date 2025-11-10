@@ -20,7 +20,7 @@
       "disabled": false,
       "_id": "d842MIQOHO5TwlVD",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "skill",

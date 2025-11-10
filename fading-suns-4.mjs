@@ -9,6 +9,7 @@ import * as initScripts from './module/scripts/initData.mjs';
 import Registry from './module/utils/registry.mjs';
 import { onHotbarDrop } from './module/utils/hotbar.mjs';
 import { initializeChatListeners } from './module/utils/global-listerners.mjs';
+import { createStatusEffects } from './module/utils/statuses.mjs';
 
 globalThis.babelProgress = null;
 
@@ -37,8 +38,11 @@ Hooks.once("init", async () => {
         weaponFeature: models.WeaponFeatureDataModel,
         armorFeature: models.ArmorFeatureDataModel,
         shieldFeature: models.ShieldFeatureDataModel,
+        state: models.StateDataModel,
     };
     CONFIG.Item.documentClass = documents.ProxyItem;
+
+    CONFIG.specialStatusEffects.DEFEATED = "dying";
 
     CONFIG.Actor.dataModels = {
         pc: models.PCDataModel,
@@ -66,7 +70,7 @@ Hooks.once("init", async () => {
         },
     };
 
-    CONFIG.ActiveEffect.dataModels.base = models.BaseActiveEffectDataModel;
+    CONFIG.ActiveEffect.dataModels.modifier = models.BaseActiveEffectDataModel;
     CONFIG.ActiveEffect.documentClass = documents.BaseActiveEffect;
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Item, "fading-suns-4", sheets.SimpleItemWithModifiersSheet, { types: ["blessing", "techCompulsion", "curse", "weaponFeature", "armorFeature", "shieldFeature"], makeDefault: true });
@@ -132,9 +136,15 @@ Hooks.once("ready", async () => {
 
     initializeChatListeners();
     registerHandlebarsHelpers();
+
+    if (!globalThis.Babele) {
+        await createStatusEffects();
+    }
 });
 
-Hooks.once("babele.ready", () => {
+Hooks.once("babele.ready", async () => {
     globalThis.babelProgress.update({ message: game.i18n.localize("fs4.notifications.babele.loaded"), pct: 1 });
     globalThis.babelProgress = undefined;
+
+    await createStatusEffects();
 });

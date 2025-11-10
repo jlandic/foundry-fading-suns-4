@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "blinded",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "UrmqSBJggOiFC4hb",
   "img": "icons/svg/blind.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/blind.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "blinded"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "blinded",
+      "_id": "GZkUsSqyrOgyHNs1",
+      "system": {},
+      "_key": "!items.effects!UrmqSBJggOiFC4hb.GZkUsSqyrOgyHNs1"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

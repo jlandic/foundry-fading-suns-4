@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "befriended",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "920fb2zel62t6qty",
   "img": "modules/game-icons-net/blackbackground/three-friends.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/three-friends.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "befriended"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "befriended",
+      "_id": "butluMQemt1jHlP6",
+      "system": {},
+      "_key": "!items.effects!920fb2zel62t6qty.butluMQemt1jHlP6"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

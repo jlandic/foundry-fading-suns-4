@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "desensitized",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "1lCyBAFiq49NMdML",
   "img": "modules/game-icons-net/blackbackground/chained-heart.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/chained-heart.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "desensitized"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "desensitized",
+      "_id": "Q2oYC3vLM2OfdrYk",
+      "system": {},
+      "_key": "!items.effects!1lCyBAFiq49NMdML.Q2oYC3vLM2OfdrYk"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

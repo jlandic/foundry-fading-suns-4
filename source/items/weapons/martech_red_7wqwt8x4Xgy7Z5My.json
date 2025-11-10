@@ -37,7 +37,7 @@
       "disabled": false,
       "_id": "HHirPZsd2G0CSrLr",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",

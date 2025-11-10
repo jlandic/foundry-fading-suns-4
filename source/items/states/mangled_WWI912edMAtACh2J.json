@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "mangled",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "WWI912edMAtACh2J",
   "img": "icons/svg/blood.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/blood.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "mangled"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "mangled",
+      "_id": "JjuOOqGoaUWeP373",
+      "system": {},
+      "_key": "!items.effects!WWI912edMAtACh2J.JjuOOqGoaUWeP373"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

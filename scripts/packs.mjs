@@ -555,6 +555,33 @@ const createSourceItem = async (template, slug, effects = 0) => {
     console.log(`Created new item at: ${path.join(collectionPath, `${slug}_${id}.json`)}`);
 }
 
+const addEffectsToStates = async () => {
+    const statesPath = path.join(SOURCE_DIR, "items", "states");
+
+    const files = await fs.readdir(statesPath)
+    files.forEach(async (file) => {
+        const data = await fs.readFile(path.join(statesPath, file), "utf-8");
+        const state = JSON.parse(data);
+        const effectID = randomID();
+        const effect = {
+            ...BASE_EFFECT,
+            name: state.system.slug,
+            _id: effectID,
+            img: state.img,
+            system: {},
+            statuses: [state.system.slug],
+            _key: `!items.effects!${state._id}.${effectID}`
+        }
+
+        state.effects = [effect];
+        await fs.writeFile(
+            path.join(statesPath, file),
+            JSON.stringify(state, null, 2),
+            "utf-8"
+        );
+    });
+}
+
 const cmd = new Command();
 
 cmd.name("packs")
@@ -589,5 +616,10 @@ cmd
     .command("create <pack> <slug> [effectsAmount]")
     .description("Create a new item in the given pack with the specified slug")
     .action(createSourceItem);
+
+cmd
+    .command("add-effects-to-states")
+    .description("Add default effects to all states")
+    .action(addEffectsToStates);
 
 cmd.parseAsync();

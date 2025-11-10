@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "tormented",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "Bsi6AYAGANEYb35C",
   "img": "icons/svg/stoned.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/stoned.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "tormented"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "tormented",
+      "_id": "HuxkcfwgUCp36ZVh",
+      "system": {},
+      "_key": "!items.effects!Bsi6AYAGANEYb35C.HuxkcfwgUCp36ZVh"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

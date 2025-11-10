@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "stunned",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "wqWZxhl5UiR9jnWg",
   "img": "modules/game-icons-net/blackbackground/knockout.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/knockout.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "stunned"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "stunned",
+      "_id": "JVOCvb8R4wP4L6JN",
+      "system": {},
+      "_key": "!items.effects!wqWZxhl5UiR9jnWg.JVOCvb8R4wP4L6JN"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "nauseated",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "nXgU4Sg9MzL8DaRi",
   "img": "icons/svg/biohazard.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/biohazard.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "nauseated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "nauseated",
+      "_id": "bwH1aqclNlJV5Dsh",
+      "system": {},
+      "_key": "!items.effects!nXgU4Sg9MzL8DaRi.bwH1aqclNlJV5Dsh"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

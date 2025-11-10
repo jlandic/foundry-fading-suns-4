@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "wowed",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "zR2Ws8IWIw5YgIDl",
   "img": "modules/game-icons-net/blackbackground/sensuousness.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/sensuousness.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "wowed"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "wowed",
+      "_id": "qNooeogDPNTdGvCb",
+      "system": {},
+      "_key": "!items.effects!zR2Ws8IWIw5YgIDl.qNooeogDPNTdGvCb"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

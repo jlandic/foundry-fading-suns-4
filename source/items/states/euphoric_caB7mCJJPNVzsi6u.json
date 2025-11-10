@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "euphoric",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "caB7mCJJPNVzsi6u",
   "img": "modules/game-icons-net/blackbackground/self-love.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/self-love.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "euphoric"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "euphoric",
+      "_id": "U0kxyktuqoMFr1Dt",
+      "system": {},
+      "_key": "!items.effects!caB7mCJJPNVzsi6u.U0kxyktuqoMFr1Dt"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

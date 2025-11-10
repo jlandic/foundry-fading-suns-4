@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "immobilized",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "f0Kb9b7UutM5gIag",
   "img": "icons/svg/net.svg",
-  "effects": [],
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/net.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "immobilized"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "immobilized",
+      "_id": "W2jn98SxY85rtxkI",
+      "system": {},
+      "_key": "!items.effects!f0Kb9b7UutM5gIag.W2jn98SxY85rtxkI"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,
