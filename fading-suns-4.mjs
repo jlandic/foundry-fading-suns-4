@@ -10,6 +10,7 @@ import Registry from './module/utils/registry.mjs';
 import { onHotbarDrop } from './module/utils/hotbar.mjs';
 import { initializeChatListeners } from './module/utils/global-listerners.mjs';
 import { createStatusEffects } from './module/utils/statuses.mjs';
+import { combatTurnChange } from './module/system/combat.mjs';
 
 globalThis.babelProgress = null;
 
@@ -98,6 +99,7 @@ Hooks.once("init", async () => {
     await preloadTemplates();
 
     Hooks.on("hotbarDrop", onHotbarDrop);
+    Hooks.on("combatTurnChange", combatTurnChange);
 
     globalThis.Babele?.get()?.registerConverters({
         "translateEffects": (effects, translations) => {

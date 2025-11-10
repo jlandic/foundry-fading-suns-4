@@ -45,6 +45,12 @@ export default class BaseActor extends WithModifiersMixin(
             data.system.vp.bank = this.system.maxBank - this.system.wp - data.system.wp;
         }
 
+        if (data["system.vitality.value"] !== undefined) {
+            data["system.vitality.value"] = Math.clamped(data["system.vitality.value"], 0, this.system.maxVitality);
+        }
+
+        data["system.vitality.max"] = this.system.maxVitality;
+
         return super.update(data, options);
     }
 
@@ -53,8 +59,8 @@ export default class BaseActor extends WithModifiersMixin(
     }
 
     async gainRespiteVP(amount) {
-        const newVitality = Math.min(this.system.currentVitality + Math.floor(amount / 2), this.system.maxVitality);
-        await this.update({ ["system.currentVitality"]: newVitality });
+        const newVitality = Math.min(this.system.vitality.value + Math.floor(amount / 2), this.system.maxVitality);
+        await this.update({ ["system.vitality.value"]: newVitality });
     }
 
     async bankVP() {
@@ -125,13 +131,13 @@ export default class BaseActor extends WithModifiersMixin(
 
         await this.update({
             "system.revivals": this.system.revivals - 1,
-            "system.currentVitality": Math.min(this.system.currentVitality + this.system.revivalVitalityGain, this.system.maxVitality),
+            "system.vitality.value": Math.min(this.system.vitality.value + this.system.revivalVitalityGain, this.system.maxVitality),
         });
     }
 
     async respite() {
         const updates = {
-            "system.currentVitality": Math.min(this.system.currentVitality + 1, this.system.maxVitality),
+            "system.vitality.value": Math.min(this.system.vitality.value + 1, this.system.maxVitality),
         };
 
         if (this.system.hasSurges) {
@@ -144,7 +150,13 @@ export default class BaseActor extends WithModifiersMixin(
 
         await this.update(updates);
 
-        // TODO: if Fatigued, remove Fatigued
+        const fatigued = this.items.find(i => i.type === "state" && i.system.slug === "fatigued");
+        if (fatigued) {
+            await this.deleteEmbeddedDocuments("Item", [fatigued.id]);
+        }
+
+        if (updates["system.vitality.value"] === this.system.maxVitality) return;
+
         new RollApp(
             this,
             new RollIntention({
@@ -255,5 +267,12 @@ export default class BaseActor extends WithModifiersMixin(
 
             return maneuver.toObject();
         }).filter(Boolean));
+    }
+
+    async turnStartTick() {
+        await this.emptyCache();
+    }
+
+    async turnEndTick() {
     }
 }

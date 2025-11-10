@@ -126,7 +126,7 @@
     <section class="flexrow health-container">
         <h2>{{ localize "fs4.actor.fields.vitality" }}</h2>
         <div class="flex1 vitality-container flexrow">
-            <input class="score" type="number" name="system.currentVitality" value="{{system.vitality.value}}" min="0"
+            <input class="score" type="number" name="system.vitality.value" value="{{system.vitality.value}}" min="0"
                 max="{{system.vitality.max}}" {{#unless isEditable}}disabled{{/unless}} />
             &nbsp;/&nbsp;
             <strong>{{system.vitality.max}}</strong>
