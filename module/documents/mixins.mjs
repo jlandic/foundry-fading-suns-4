@@ -8,6 +8,7 @@ export const WithModifiersMixin = Base => class extends Base {
             {
                 name: this.name,
                 disabled: false,
+                type: "modifier",
             }
         ]);
     }

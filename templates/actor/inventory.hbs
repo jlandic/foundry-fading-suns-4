@@ -84,6 +84,11 @@
             <input type="number" name="system.cash" value="{{system.cash}}" step="1" />
         </div>
 
+        <div class="form-group">
+            <label for="system.savings">{{ localize "fs4.actor.fields.savings" }}</label>
+            <input type="number" name="system.savings" value="{{system.savings}}" step="1" />
+        </div>
+
         {{#if system.level}}
         <div class="form-group">
             <label for="system.techGnosis">{{ localize "fs4.actor.fields.techGnosis" }}</label>
@@ -95,4 +100,18 @@
         </div>
         {{/if}}
     </div>
+
+    <hr>
+
+    <ul class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.techCompulsions" }}</h3>
+        </li>
+    </ul>
+
+    <ul class="item-list">
+        {{#each techCompulsions}}
+        {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ul>
 </section>

@@ -445,6 +445,16 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
+    equipment: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {

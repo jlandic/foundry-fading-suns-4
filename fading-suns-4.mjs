@@ -8,11 +8,16 @@ import { preloadTemplates, registerHandlebarsHelpers } from './module/utils/hand
 import * as initScripts from './module/scripts/initData.mjs';
 import Registry from './module/utils/registry.mjs';
 import { onHotbarDrop } from './module/utils/hotbar.mjs';
-import { initializeChatListeners } from './module/utils/global-listerners.mjs';
+import { initializeChatListeners } from './module/utils/chat-listeners.mjs';
 import { createStatusEffects } from './module/utils/statuses.mjs';
 import { combatTurnChange } from './module/system/combat.mjs';
+import { renderChatMessage } from './module/utils/chat-message.mjs';
 
 globalThis.babelProgress = null;
+
+Hooks.on("hotbarDrop", onHotbarDrop);
+Hooks.on("combatTurnChange", combatTurnChange);
+Hooks.on("renderChatMessage", renderChatMessage);
 
 Hooks.once("init", async () => {
     globalThis.log = FS4Logger;
@@ -94,12 +99,9 @@ Hooks.once("init", async () => {
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.PCSheet, { types: ["pc"], makeDefault: true });
     foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.Actor, "fading-suns-4", sheets.ExtraSheet, { types: ["extra"], makeDefault: true });
 
-    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.ActiveEffect, "fading-suns-4", sheets.ModifierSheet, { makeDefault: true });
+    foundry.applications.apps.DocumentSheetConfig.registerSheet(foundry.documents.ActiveEffect, "fading-suns-4", sheets.ModifierSheet, { types: ["modifier"], makeDefault: true });
 
     await preloadTemplates();
-
-    Hooks.on("hotbarDrop", onHotbarDrop);
-    Hooks.on("combatTurnChange", combatTurnChange);
 
     globalThis.Babele?.get()?.registerConverters({
         "translateEffects": (effects, translations) => {

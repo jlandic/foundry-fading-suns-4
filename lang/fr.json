@@ -346,6 +346,7 @@
         "capabilities": "Aptitudes",
         "perks": "Avantages",
         "affliction": "Affliction",
+        "techCompulsions": "Compulsions tech.",
         "blessing": "Bénédiction",
         "curse": "Malédiction",
         "inventory": "Inventaire",
@@ -378,6 +379,7 @@
         "eshield": "E-bouclier",
         "techGnosis": "Tech Gnosis",
         "cash": "Cash",
+        "savings": "Économies",
         "shields": "Boucliers",
         "eshields": "E-boucliers",
         "states": "États"

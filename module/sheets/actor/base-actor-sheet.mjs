@@ -249,6 +249,9 @@ export default class BaseActorSheet extends BaseSheetMixin(
             capabilities: await this._prepareItemList("capability", {
                 description: "fs4.commonFields.description",
             }),
+            techCompulsions: await this._prepareItemList("techCompulsion", {
+                description: "fs4.commonFields.description",
+            }),
             equipment: await this._prepareItemList("equipment", {
                 description: "fs4.commonFields.description",
             }, { equippable: true }),

@@ -8,7 +8,7 @@ const {
 export default class PCDataModel extends HeadlinerDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
-            cash: new NumberField({ required: true, initial: 0 }),
+            savings: new NumberField({ required: true, initial: 0 }),
             notes: new HTMLField({ required: true }),
         }, { recursive: false });
     }

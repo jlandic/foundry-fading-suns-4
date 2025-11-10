@@ -5,6 +5,7 @@ const {
     NumberField,
     SchemaField,
     StringField,
+    ArrayField,
 } = foundry.data.fields;
 
 export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
@@ -28,6 +29,11 @@ export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
                 value: new NumberField({ required: true, initial: 0 }),
                 max: new NumberField({ required: true, initial: 0 }),
             }),
+            techCompulsions: new ArrayField(
+                new StringField({
+                    nullable: true,
+                })
+            ),
         };
     }
 

@@ -349,6 +349,7 @@
         "capabilities": "Capabilities",
         "perks": "Perks",
         "affliction": "Affliction",
+        "techCompulsions": "Tech Compulsions",
         "blessing": "Blessing",
         "curse": "Curse",
         "inventory": "Inventory",
@@ -382,6 +383,7 @@
         "eshield": "E-shield",
         "techGnosis": "Tech Gnosis",
         "cash": "Cash",
+        "savings": "Savings",
         "shields": "Shields",
         "eshields": "E-shields",
         "states": "States"

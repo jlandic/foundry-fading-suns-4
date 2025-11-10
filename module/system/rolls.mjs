@@ -145,6 +145,40 @@ export class DiceThrow {
         this.options = options;
     }
 
+    get actorId() {
+        return this.rollData.actor.id;
+    }
+
+    get rollMode() {
+        return game.settings.get("core", "rollMode");
+    }
+
+    get isBlind() {
+        return this.rollMode === CONST.DICE_ROLL_MODES.BLIND;
+    }
+
+    get whisperList() {
+        switch (this.rollMode) {
+            case CONST.DICE_ROLL_MODES.PRIVATE:
+                return [
+                    ...this.gmIds,
+                    this.actorId,
+                ];
+            case CONST.DICE_ROLL_MODES.BLIND:
+                return this.gmIds;
+            case CONST.DICE_ROLL_MODES.SELF:
+                return [
+                    this.actorId,
+                ];
+            default:
+                return null;
+        }
+    }
+
+    get gmIds() {
+        return game.users.filter((u) => u.isGM).map((u) => u.id);
+    }
+
     static isBetterThan(a, b) {
         if (a.vp === b.vp) {
             return a.result < b.result;
@@ -167,6 +201,23 @@ export class DiceThrow {
         return vp - (resistance || 0);
     }
 
+    async showRoll(roll) {
+        if (!game.dice3d) return;
+
+        await game.dice3d.showForRoll(
+            roll,
+            game.user,
+            true,
+            this.whisperList,
+            this.isBlind,
+            null,
+            ChatMessage.getSpeaker({
+                actor: this.rollData.actor,
+                blind: this.isBlind,
+            }),
+        );
+    }
+
     async roll() {
         const roll = await new Roll("1d20").roll();
         this.rolls.push(roll);
@@ -178,8 +229,9 @@ export class DiceThrow {
             this.rolls.push(secondRoll);
 
             if (game.dice3d) {
-                await game.dice3d.showForRoll(roll, game.user, true);
-                await game.dice3d.showForRoll(secondRoll, game.user, true);
+                // throw both dice simultaneously
+                this.showRoll(roll);
+                await this.showRoll(secondRoll);
             }
 
             const firstRollResult = { result: roll.total, goal: this.goal };
@@ -190,6 +242,8 @@ export class DiceThrow {
             } else if (this.isUnfavorable && DiceThrow.isBetterThan(firstRollResult, secondRollResult)) {
                 this.result = secondRoll.total;
             }
+        } else {
+            await this.showRoll(roll);
         }
 
         return this;
@@ -252,20 +306,22 @@ export class DiceThrow {
             techCompulsionRisk: this.rollData.actor.overloaded && this.isCriticalSuccess,
             resistance: this.rollData.rollIntention.resistance,
             respite: this.options.respite,
+            isBlind: this.isBlind,
         };
     }
 
     async sendToChat() {
+        const content = await renderTemplate(
+            "systems/fading-suns-4/templates/chat/roll-result.hbs",
+            this.chatContext,
+        );
+
         ChatMessage.create(
             {
                 speaker: ChatMessage.getSpeaker({ actor: this.rollData.actor }),
-                content: await renderTemplate(
-                    "systems/fading-suns-4/templates/chat/roll-result.hbs",
-                    this.chatContext,
-                ),
-            },
-            {
-                rollMode: game.settings.get("core", "rollMode"),
+                content,
+                whisper: this.whisperList,
+                blind: this.isBlind,
             },
         );
     }
