@@ -4,11 +4,87 @@
   "folder": null,
   "system": {
     "slug": "paralyzed",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "pCJ3UAWucuiqy3CQ",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/frozen.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/frozen.svg",
+      "type": "base",
+      "changes": [
+        {
+          "key": "system.speed",
+          "mode": "override",
+          "value": "0",
+          "priority": 0
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "paralyzed"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "paralyzed",
+      "_id": "sGC2PGIEjdEwUQd5",
+      "system": {},
+      "_key": "!items.effects!pCJ3UAWucuiqy3CQ.sGC2PGIEjdEwUQd5"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/frozen.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "paralyzed",
+      "_id": "9HdeSm0fLsF7sf0l",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "influence",
+        "notes": "For any influence action that requires anything more than whispered speaking"
+      },
+      "sort": 1,
+      "_key": "!items.effects!pCJ3UAWucuiqy3CQ.9HdeSm0fLsF7sf0l"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

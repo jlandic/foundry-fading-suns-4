@@ -1,0 +1,49 @@
+{
+  "folder": "vI9hoWF2avbphts2",
+  "name": "parry_dagger",
+  "type": "weapon",
+  "_id": "J1yDcFrbx6ICAaWz",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "system": {
+    "slug": "parry_dagger",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "damage": 4,
+    "strRequirement": 2,
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": [],
+    "features": [
+      "military",
+      "guard"
+    ],
+    "capability": "military_weapons",
+    "cost": 5,
+    "tl": 2
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762626804220,
+    "modifiedTime": 1762626926211,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!J1yDcFrbx6ICAaWz"
+}

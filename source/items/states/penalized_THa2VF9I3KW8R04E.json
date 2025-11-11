@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "penalized",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "THa2VF9I3KW8R04E",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/despair.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/despair.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "penalized"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "penalized",
+      "_id": "SyGexPFigvSPAf7Z",
+      "system": {},
+      "_key": "!items.effects!THa2VF9I3KW8R04E.SyGexPFigvSPAf7Z"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

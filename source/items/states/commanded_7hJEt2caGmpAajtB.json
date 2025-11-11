@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "commanded",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "7hJEt2caGmpAajtB",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/captain-hat-profile.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/captain-hat-profile.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "commanded"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "commanded",
+      "_id": "3LwYaYIqyLe48GQk",
+      "system": {},
+      "_key": "!items.effects!7hJEt2caGmpAajtB.3LwYaYIqyLe48GQk"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

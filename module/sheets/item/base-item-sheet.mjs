@@ -17,6 +17,7 @@ const TYPE_PARTS = [
     "armor",
     "shield",
     "eshield",
+    "state",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [
@@ -135,7 +136,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
         foundry.utils.mergeObject(context, {
             system: this.item.system,
             item: this.item.toObject(),
-            isEditable: !READ_ONLY_REFERENCE_TYPES.includes(this.item.type) && this.isEditable,
+            isEditable: (!READ_ONLY_REFERENCE_TYPES.includes(this.item.type) || this.parent) && this.isEditable,
             description: await enrichHTML(this.item.system.description),
             modifiers: this._prepareModifiers(),
         });

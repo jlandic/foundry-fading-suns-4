@@ -1,0 +1,54 @@
+{
+  "type": "weapon",
+  "name": "shantor_horn",
+  "folder": "vI9hoWF2avbphts2",
+  "system": {
+    "slug": "shantor_horn",
+    "description": "",
+    "tl": 5,
+    "techCompulsion": "bloodthirsty",
+    "damage": 5,
+    "strRequirement": 2,
+    "size": "m",
+    "cost": 30,
+    "features": [
+      "guard",
+      "military",
+      "charge"
+    ],
+    "capability": null,
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": [
+      "hard"
+    ]
+  },
+  "_id": "6yPSnT2NBsLtu0ET",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!6yPSnT2NBsLtu0ET"
+}

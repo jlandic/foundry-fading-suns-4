@@ -21,14 +21,15 @@
     "burst": false,
     "ammo": 20,
     "currentAmmo": 0,
-    "anti": [
-      "blstr",
-      "shk"
+    "damageTypes": [
+      "blaster",
+      "shock"
     ],
     "features": [
       "stock"
     ],
     "tl": 8,
+    "techCompulsion": "destructive",
     "cost": 5000,
     "capability": "energy_guns",
     "blastForce": null
@@ -39,7 +40,7 @@
       "disabled": false,
       "_id": "WRYTVXJRvzGyjdwy",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",

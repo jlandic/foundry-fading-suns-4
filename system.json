@@ -224,6 +224,9 @@
       "headliner": {},
       "agent": {},
       "extra": {}
+    },
+    "ActiveEffect": {
+      "modifier": {}
     }
   },
   "relationships": {

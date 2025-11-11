@@ -2,8 +2,26 @@ import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
 import { BASIC_MANEUVERS, Characteristics, ModifierTargetTypes, ResistanceTypes, ResistanceValues, Skills, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
 import { RollIntention } from "../system/rolls.mjs";
+import { WithModifiersMixin } from "./mixins.mjs";
 
-export default class BaseActor extends foundry.documents.Actor {
+export default class BaseActor extends WithModifiersMixin(
+    foundry.documents.Actor,
+) {
+    static ALLOWED_ITEM_TYPES = [
+        "equipment",
+        "maneuver",
+        "state",
+        "capability",
+        "perk",
+        "weapon",
+        "armor",
+        "handshield",
+        "eshield",
+        "power",
+        "shield",
+        "techCompulsion",
+    ];
+
     async update(data, options = {}) {
         const newSpeciesSlug = data["system.species"];
 
@@ -27,30 +45,13 @@ export default class BaseActor extends foundry.documents.Actor {
             data.system.vp.bank = this.system.maxBank - this.system.wp - data.system.wp;
         }
 
-        return super.update(data, options);
-    }
-
-    async addNewModifier() {
-        return await this.createEmbeddedDocuments("ActiveEffect", [
-            {
-                name: game.i18n.localize("fs4.modifier.defaultName"),
-                disabled: false,
-            }
-        ]);
-    }
-
-    async toggleModifier(id) {
-        let effect = this.effects.get(id);
-        if (!effect) {
-            effect = this.embeddedModifiers.find(e => e.id === id);
+        if (data["system.vitality.value"] !== undefined) {
+            data["system.vitality.value"] = Math.clamped(data["system.vitality.value"], 0, this.system.maxVitality);
         }
-        if (!effect) return;
 
-        return await effect.update({ disabled: !effect.disabled });
-    }
+        data["system.vitality.max"] = this.system.maxVitality;
 
-    async removeModifier(modifierId) {
-        return await this.deleteEmbeddedDocuments("ActiveEffect", [modifierId]);
+        return super.update(data, options);
     }
 
     async gainVP(amount) {
@@ -58,8 +59,8 @@ export default class BaseActor extends foundry.documents.Actor {
     }
 
     async gainRespiteVP(amount) {
-        const newVitality = Math.min(this.system.currentVitality + Math.floor(amount / 2), this.system.maxVitality);
-        await this.update({ ["system.currentVitality"]: newVitality });
+        const newVitality = Math.min(this.system.vitality.value + Math.floor(amount / 2), this.system.maxVitality);
+        await this.update({ ["system.vitality.value"]: newVitality });
     }
 
     async bankVP() {
@@ -100,6 +101,18 @@ export default class BaseActor extends foundry.documents.Actor {
         await this.update({ [property]: null });
     }
 
+    async addItem(item) {
+        if (!BaseActor.ALLOWED_ITEM_TYPES.includes(item.type));
+
+        const createdItems = await this.createEmbeddedDocuments("Item", [item.toObject()]);
+
+        if (!item.featureModifiers.length) return;
+
+        await this.items.get(createdItems[0]._id).createEmbeddedDocuments("ActiveEffect", [
+            ...item.featureModifiers.map(e => e.toObject()),
+        ]);
+    }
+
     async surge() {
         if (!this.system.hasSurges) return false;
         if (this.system.surges === 0) return false;
@@ -118,13 +131,13 @@ export default class BaseActor extends foundry.documents.Actor {
 
         await this.update({
             "system.revivals": this.system.revivals - 1,
-            "system.currentVitality": Math.min(this.system.currentVitality + this.system.revivalVitalityGain, this.system.maxVitality),
+            "system.vitality.value": Math.min(this.system.vitality.value + this.system.revivalVitalityGain, this.system.maxVitality),
         });
     }
 
     async respite() {
         const updates = {
-            "system.currentVitality": Math.min(this.system.currentVitality + 1, this.system.maxVitality),
+            "system.vitality.value": Math.min(this.system.vitality.value + 1, this.system.maxVitality),
         };
 
         if (this.system.hasSurges) {
@@ -137,7 +150,13 @@ export default class BaseActor extends foundry.documents.Actor {
 
         await this.update(updates);
 
-        // TODO: if Fatigued, remove Fatigued
+        const fatigued = this.items.find(i => i.type === "state" && i.system.slug === "fatigued");
+        if (fatigued) {
+            await this.deleteEmbeddedDocuments("Item", [fatigued.id]);
+        }
+
+        if (updates["system.vitality.value"] === this.system.maxVitality) return;
+
         new RollApp(
             this,
             new RollIntention({
@@ -195,11 +214,7 @@ export default class BaseActor extends foundry.documents.Actor {
     get embeddedModifiers() {
         return this.items
             .filter(i => !i.system.isEquippable || this.hasItemEquipped(i.id))
-            .map(i => i.effects.map(e => e)).flat();
-    }
-
-    get allModifiers() {
-        return this.effects.map(e => e).concat(this.embeddedModifiers);
+            .map(i => i.allModifiers).flat();
     }
 
     get resistance() {
@@ -221,21 +236,16 @@ export default class BaseActor extends foundry.documents.Actor {
     }
 
     resistanceMod(resistanceType) {
-        const embedded = this.embeddedModifiers
-            .filter(m => !m.disabled)
-            .filter(m => m.system.targetType === ModifierTargetTypes.Resistance && m.system.target === resistanceType)
-            .reduce((sum, m) => sum + Number(m.system.value), 0);
-
-        const modifiers = this.effects
+        const modifiers = this.allModifiers
             .filter(m => !m.disabled)
             .filter(m => m.system.targetType === ModifierTargetTypes.Resistance && m.system.target === resistanceType)
             .reduce((sum, m) => sum + Number(m.system.value), 0);
 
         if (resistanceType === ResistanceTypes.Body) {
-            return embedded + modifiers + this.armorResistance;
+            return modifiers + this.armorResistance;
         }
 
-        return embedded + modifiers;
+        return modifiers;
     }
 
     get techGnosis() {
@@ -257,5 +267,12 @@ export default class BaseActor extends foundry.documents.Actor {
 
             return maneuver.toObject();
         }).filter(Boolean));
+    }
+
+    async turnStartTick() {
+        await this.emptyCache();
+    }
+
+    async turnEndTick() {
     }
 }

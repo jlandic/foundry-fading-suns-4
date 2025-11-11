@@ -1,0 +1,88 @@
+{
+  "type": "weapon",
+  "name": "cavalry_lance",
+  "folder": "vI9hoWF2avbphts2",
+  "system": {
+    "slug": "cavalry_lance",
+    "description": "",
+    "tl": 1,
+    "damage": 8,
+    "strRequirement": 5,
+    "size": "xl",
+    "cost": 20,
+    "features": [
+      "military",
+      "mounted_charge"
+    ],
+    "capability": "military_weapons",
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": []
+  },
+  "_id": "lGBd8KL3ypj3dm5W",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [
+    {
+      "name": "cavalry_lance",
+      "disabled": false,
+      "_id": "1MgrMuxLI7AKQi2V",
+      "img": null,
+      "type": "modifier",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "melee",
+        "value": "0",
+        "notes": ""
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!lGBd8KL3ypj3dm5W.1MgrMuxLI7AKQi2V"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!lGBd8KL3ypj3dm5W"
+}

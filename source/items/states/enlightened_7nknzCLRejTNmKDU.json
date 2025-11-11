@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "enlightened",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "7nknzCLRejTNmKDU",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/aura.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/aura.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "enlightened"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "enlightened",
+      "_id": "0pyYT97TL0BQWBfs",
+      "system": {},
+      "_key": "!items.effects!7nknzCLRejTNmKDU.0pyYT97TL0BQWBfs"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

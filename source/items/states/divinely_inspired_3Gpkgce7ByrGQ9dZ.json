@@ -4,11 +4,195 @@
   "folder": null,
   "system": {
     "slug": "divinely_inspired",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "3Gpkgce7ByrGQ9dZ",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/angel.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/angel.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "divinely_inspired"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "divinely_inspired",
+      "_id": "DFOUUQnAnLzOGqGH",
+      "system": {},
+      "_key": "!items.effects!3Gpkgce7ByrGQ9dZ.DFOUUQnAnLzOGqGH"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/angel.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "divinely_inspired",
+      "_id": "XIqfnpIcc7ZDqNgV",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "+2",
+        "notes": "All attack rolls and influence actions"
+      },
+      "sort": 1,
+      "_key": "!items.effects!3Gpkgce7ByrGQ9dZ.XIqfnpIcc7ZDqNgV"
+    },
+    {
+      "disabled": true,
+      "img": "icons/svg/angel.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "divinely_inspired",
+      "_id": "quM5sRSam8ntNgGl",
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "target": "body",
+        "austerity": false,
+        "context": "none",
+        "value": "2",
+        "notes": ""
+      },
+      "sort": 2,
+      "_key": "!items.effects!3Gpkgce7ByrGQ9dZ.quM5sRSam8ntNgGl"
+    },
+    {
+      "disabled": true,
+      "img": "icons/svg/angel.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "divinely_inspired",
+      "_id": "JXNOQLoOhMIETfTF",
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "target": "mental",
+        "austerity": false,
+        "context": "none",
+        "value": "2",
+        "notes": ""
+      },
+      "sort": 3,
+      "_key": "!items.effects!3Gpkgce7ByrGQ9dZ.JXNOQLoOhMIETfTF"
+    },
+    {
+      "disabled": true,
+      "img": "icons/svg/angel.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "divinely_inspired",
+      "_id": "2CQlc49oyhQdHvut",
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "target": "spirit",
+        "austerity": false,
+        "context": "none",
+        "value": "2",
+        "notes": ""
+      },
+      "sort": 4,
+      "_key": "!items.effects!3Gpkgce7ByrGQ9dZ.2CQlc49oyhQdHvut"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

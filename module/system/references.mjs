@@ -194,6 +194,10 @@ export const BASIC_MANEUVERS = Object.freeze([
     "shake_it_off_body",
     "shake_it_off_mind",
     "shake_it_off_spirit",
+    "dodge_dexterity",
+    "dodge_intuition",
+    "evade_dexterity",
+    "evade_intuition",
 ]);
 
 export const ModifierValueTypes = Object.freeze({
@@ -272,13 +276,13 @@ export const EquipmentSizes = Object.freeze({
 });
 
 export const DamageTypes = Object.freeze({
-    Blstr: "blstr",
-    Flm: "flm",
-    Hrd: "hrd",
-    Lsr: "lsr",
-    Shk: "shk",
-    Slm: "slm",
-    Son: "son",
+    Blstr: "blaster",
+    Flm: "flame",
+    Hrd: "hard",
+    Lsr: "laser",
+    Shk: "shock",
+    Slm: "slam",
+    Son: "sonic",
 });
 
 export const WeaponTypes = Object.freeze({
@@ -325,4 +329,10 @@ export const TheurgyComponents = Object.freeze({
     Liturgy: "liturgy",
     Gestures: "gestures",
     Prayer: "prayer",
+});
+
+export const FeatureTypeMapping = Object.freeze({
+    weapon: "weaponFeature",
+    armor: "armorFeature",
+    shield: "shieldFeature",
 });

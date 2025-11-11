@@ -19,7 +19,8 @@
       "eshield": "E-shield",
       "shield": "Shield",
       "shieldFeature": "Shield Feature",
-      "armorFeature": "Armor Feature"
+      "armorFeature": "Armor Feature",
+      "state": "State"
     },
     "Actor": {
       "pc": "PC",
@@ -348,6 +349,7 @@
         "capabilities": "Capabilities",
         "perks": "Perks",
         "affliction": "Affliction",
+        "techCompulsions": "Tech Compulsions",
         "blessing": "Blessing",
         "curse": "Curse",
         "inventory": "Inventory",
@@ -381,9 +383,15 @@
         "eshield": "E-shield",
         "techGnosis": "Tech Gnosis",
         "cash": "Cash",
+        "savings": "Savings",
         "shields": "Shields",
         "eshields": "E-shields",
         "states": "States"
+      }
+    },
+    "state": {
+      "fields": {
+        "type": "Resistance"
       }
     },
     "equipment": {
@@ -523,21 +531,21 @@
     },
     "damageTypes": {
       "short": {
-        "blstr": "Blstr",
-        "flm": "Flm",
-        "hrd": "Hrd",
-        "lsr": "Lsr",
-        "shk": "Shk",
-        "slm": "Slm",
-        "son": "Son"
+        "blaster": "Blstr",
+        "flame": "Flm",
+        "hard": "Hrd",
+        "laser": "Lsr",
+        "shock": "Shk",
+        "slam": "Slm",
+        "sonic": "Son"
       },
-      "blstr": "Blaster",
-      "flm": "Flame",
-      "hrd": "Hard",
-      "lsr": "Laser",
-      "shk": "Shock",
-      "slm": "Slam",
-      "son": "Sonic"
+      "blaster": "Blaster",
+      "flame": "Flame",
+      "hard": "Hard",
+      "laser": "Laser",
+      "shock": "Shock",
+      "slam": "Slam",
+      "sonic": "Sonic"
     },
     "eshieldTypes": {
       "short": {

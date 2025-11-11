@@ -5,7 +5,20 @@
   "system": {
     "slug": "musician",
     "description": "",
-    "equipment": [],
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "musical_instrument"
+        }
+      ],
+      [
+        {
+          "type": "equipment",
+          "slug": "performance_clothing"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "musical_instruments"

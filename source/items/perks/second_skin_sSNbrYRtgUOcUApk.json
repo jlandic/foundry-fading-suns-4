@@ -16,6 +16,14 @@
         {
           "type": "calling",
           "slug": "spy_merchant"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_noble"
+        },
+        {
+          "type": "calling",
+          "slug": "spy_priest"
         }
       ]
     ],

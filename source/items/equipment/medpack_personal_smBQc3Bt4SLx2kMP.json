@@ -1,0 +1,74 @@
+{
+  "type": "equipment",
+  "name": "medpack_personal",
+  "folder": "njGJyuuk24vXp7aO",
+  "system": {
+    "slug": "medpack_personal",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "xs",
+    "cost": 5,
+    "tl": 4
+  },
+  "_id": "smBQc3Bt4SLx2kMP",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": null,
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "medpack_personal",
+      "_id": "xxYohHTgKCx75vxA",
+      "system": {
+        "valueType": "favorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "specific_maneuver",
+        "maneuverSlug": "treat_wounds",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!smBQc3Bt4SLx2kMP.xxYohHTgKCx75vxA"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!smBQc3Bt4SLx2kMP"
+}

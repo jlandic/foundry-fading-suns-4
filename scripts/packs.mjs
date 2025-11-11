@@ -26,15 +26,25 @@ const PACKS = [
     "items/techCompulsions",
     "items/equipment",
     "items/states",
+    "items/psiPowers",
 ];
 
-const PACK_TYPE_MAPPING = {
-    weapons: "weapon",
-    armors: "armor",
-    shields: "shield",
+const TEMPLATE_PACK_MAPPING = {
+    melee: "weapons",
+    weaponFeature: "equipmentFeatures",
+    weapon: "weapons",
+    armor: "armors",
     equipment: "equipment",
-    maneuvers: "maneuver",
-}
+    maneuver: "maneuvers",
+    state: "states",
+    psiPower: "psiPowers",
+};
+
+const TEMPLATE_TYPE_MAPPING = {
+    melee: "weapon",
+    weaponFeature: "equipmentFeature",
+    psiPower: "power",
+};
 
 const TYPE_MAPPING = {}
 
@@ -94,6 +104,7 @@ const TRANSFORMERS = {
     states: async (original, reference) => {
         return {
             ...original,
+            img: reference.img,
             system: {
                 ...original.system,
                 type: reference.system.type,
@@ -285,22 +296,24 @@ const IMG_MAPPING = {
     weapon: "icons/weapons/swords/swords-short.webp",
     shield: "icons/armor/shields/shield-round-brown-steel.webp",
     maneuver: "icons/magic/symbols/cog-orange-red.webp",
+    equipmentFeature: "icons/commodities/tech/blueprint.webp",
+    power: "icons/magic/control/buff-flight-wings-runes-red-yellow.webp",
 };
 
 const DEFAULT_SYSTEM = {
     armor: {
+        tl: 5,
+        techCompulsion: null,
+        res: 0,
+        eshieldCompatibility: "es",
+        cost: 0,
+        anti: [],
+        features: [],
         curio: false,
         agora: "",
         quality: "standard",
         size: "none",
-        features: [],
-        cost: 0,
-        tl: 5,
         capability: null,
-        res: 0,
-        eshieldCompatibility: "es",
-        anti: [],
-        techCompulsion: null,
     },
     weapon: {
         curio: false,
@@ -323,8 +336,27 @@ const DEFAULT_SYSTEM = {
         ammo: 0,
         currentAmmo: 0,
         blastForce: null,
-        anti: [],
+        damageTypes: [],
         techCompulsion: null,
+    },
+    melee: {
+        tl: 5,
+        damage: 0,
+        strRequirement: 0,
+        size: "none",
+        cost: 0,
+        features: [],
+        capability: null,
+        agora: "",
+        curio: false,
+        quality: "standard",
+        melee: true,
+        range: {},
+        rof: 1,
+        burst: false,
+        ammo: 0,
+        currentAmmo: 0,
+        damageTypes: [],
     },
     equipment: {
         curio: false,
@@ -346,6 +378,126 @@ const DEFAULT_SYSTEM = {
         playScale: "instantaneous",
         noVp: false,
     },
+    state: {
+        type: "TODO",
+    },
+    weaponFeature: {
+    },
+    psiPower: {
+        cost: 1,
+        additionalCost: "",
+        path: "Psyche",
+        characteristic: "",
+        skill: "",
+        discipline: "psi",
+        components: [],
+        level: 1,
+        preconditions: [
+            {
+                type: "power",
+                slug: "",
+            }
+        ],
+        elementary: false,
+        resistance: "",
+        incidence: "",
+    }
+};
+
+const BASE_EFFECT_SYSTEM = {
+    valueType: "constant",
+    targetType: "goal",
+    austerity: false,
+    context: "none",
+    value: "0",
+    notes: ""
+};
+
+const BASE_ARMOR_EFFECT_SYSTEM = {
+    ...BASE_EFFECT_SYSTEM,
+    targetType: "skill",
+    target: "vigor",
+    value: "-1"
+};
+
+const BASE_EFFECT = {
+    disabled: false,
+    img: null,
+    type: "base",
+    changes: [],
+    duration: {
+        startTime: null,
+        combat: null
+    },
+    description: "",
+    origin: null,
+    tint: "#ffffff",
+    transfer: true,
+    statuses: [],
+    flags: {},
+    _stats: {
+        compendiumSource: null,
+        duplicateSource: null,
+        exportSource: null,
+        coreVersion: "13.350",
+        systemId: "fading-suns-4",
+        systemVersion: "PLACEHOLDER",
+        lastModifiedBy: null
+    },
+}
+
+const EFFECT_TEMPLATE_FNS = {
+    melee: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+            context: "melee",
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
+    armor: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_ARMOR_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
+    equipment: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
+    state: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
+    psiPower: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {
@@ -372,10 +524,27 @@ const TRANSLATION_ENTRY_TEMPLATE = {
         resistance: "",
         capability: "",
     },
+    state: {
+        name: "",
+        description: "",
+    },
+    equipmentFeature: {
+        name: "",
+        description: "",
+    },
+    power: {
+        name: "",
+        description: "",
+        additionalCost: "",
+        path: "",
+        resistance: "",
+        incidence: "",
+    }
 };
 
-const createSourceItem = async (pack, slug) => {
-    const type = PACK_TYPE_MAPPING[pack];
+const createSourceItem = async (template, slug, effects = 0) => {
+    const pack = TEMPLATE_PACK_MAPPING[template];
+    const type = TEMPLATE_TYPE_MAPPING[template] || template;
     if (!type) {
         console.error(`Unknown pack type: ${pack}`);
         return;
@@ -391,11 +560,13 @@ const createSourceItem = async (pack, slug) => {
         system: {
             slug,
             description: "",
-            ...DEFAULT_SYSTEM[type],
+            ...DEFAULT_SYSTEM[template],
         },
         _id: id,
         img: IMG_MAPPING[type] || "icons/svg/item-bag.svg",
-        effects: [],
+        effects: Array.from({ length: effects }, (_, i) =>
+            EFFECT_TEMPLATE_FNS[template](slug, id, i)
+        ),
         flags: {},
         _stats: {
             compendiumSource: null,
@@ -421,7 +592,17 @@ const createSourceItem = async (pack, slug) => {
         .then(data => JSON.parse(data))
 
     translations.entries[slug] = TRANSLATION_ENTRY_TEMPLATE[type];
-    // sort entries by key
+
+    if (effects > 0) {
+        translations.entries[slug].effects = {};
+        newItem.effects.forEach((effect) => {
+            translations.entries[slug].effects[effect._id] = {
+                name: slug,
+                notes: "",
+            };
+        });
+    }
+
     const sortedEntries = Object.keys(translations.entries).sort().reduce((acc, key) => {
         acc[key] = translations.entries[key];
         return acc;
@@ -429,9 +610,59 @@ const createSourceItem = async (pack, slug) => {
 
     await fs.writeFile(translationFile, JSON.stringify({ ...translations, entries: sortedEntries }, null, 2), "utf-8");
 
+    console.log(`Updated translations at: ${translationFile}: `, translations.entries[slug]);
     await fs.writeFile(path.join(collectionPath, `${slug}_${id}.json`), JSON.stringify(newItem, null, 2), "utf-8");
 
     console.log(`Created new item at: ${path.join(collectionPath, `${slug}_${id}.json`)}`);
+}
+
+const addModifierToState = async (slug) => {
+    const statesPath = path.join(SOURCE_DIR, "items", "states");
+    const translationFile = path.join(BABELE_COMPENDIUM_FOLDER, `fading-suns-4.states.json`);
+    const translations = await fs.readFile(translationFile, "utf-8")
+        .then(data => JSON.parse(data));
+
+    const files = await fs.readdir(statesPath)
+    const file = files.find(file => file.startsWith(slug));
+    const data = await fs.readFile(path.join(statesPath, file), "utf-8");
+    const state = JSON.parse(data);
+    const effectID = randomID();
+    const effect = {
+        ...BASE_EFFECT,
+        name: state.system.slug,
+        type: "modifier",
+        _id: effectID,
+        img: state.img,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        statuses: [],
+        sort: state.effects.length,
+        _key: `!items.effects!${state._id}.${effectID}`
+    }
+
+    state.effects = [
+        ...state.effects,
+        effect
+    ];
+
+    await fs.writeFile(
+        path.join(statesPath, file),
+        JSON.stringify(state, null, 2),
+        "utf-8"
+    );
+
+    translations.entries[slug].effects = {
+        ...translations.entries[slug].effects,
+        [effectID]: {
+            name: state.system.slug,
+            notes: "",
+        }
+    };
+
+    await fs.writeFile(translationFile, JSON.stringify(translations, null, 2), "utf-8");
+
+    console.log(`Added modifier effect to state: ${slug}`);
 }
 
 const cmd = new Command();
@@ -465,8 +696,13 @@ cmd
     .action(generateTranslations);
 
 cmd
-    .command("create <pack> <slug>")
+    .command("create <pack> <slug> [effectsAmount]")
     .description("Create a new item in the given pack with the specified slug")
     .action(createSourceItem);
+
+cmd
+    .command("add-mod-to-state <slug>")
+    .description("Add a modifier effect to the specified state")
+    .action(addModifierToState);
 
 cmd.parseAsync();

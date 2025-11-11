@@ -21,13 +21,14 @@
     "burst": false,
     "ammo": 8,
     "currentAmmo": 0,
-    "anti": [
-      "blstr"
+    "damageTypes": [
+      "blaster"
     ],
     "features": [
       "stock"
     ],
     "tl": 7,
+    "techCompulsion": "destructive",
     "cost": 1200,
     "capability": "energy_guns",
     "blastForce": null
@@ -38,7 +39,7 @@
       "disabled": false,
       "_id": "oTt0JLRBoVCxsr5H",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",
@@ -75,7 +76,7 @@
       "disabled": false,
       "_id": "oeC0an5fwTHy2igj",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",

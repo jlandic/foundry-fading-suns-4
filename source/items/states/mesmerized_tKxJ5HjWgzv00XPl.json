@@ -4,11 +4,80 @@
   "folder": null,
   "system": {
     "slug": "mesmerized",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "tKxJ5HjWgzv00XPl",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/smitten.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/smitten.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "mesmerized"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "mesmerized",
+      "_id": "8QjZpqIXylfLy46v",
+      "system": {},
+      "_key": "!items.effects!tKxJ5HjWgzv00XPl.8QjZpqIXylfLy46v"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/smitten.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "mesmerized",
+      "_id": "lIdikkIaqJo0WZCl",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "none",
+        "notes": "When struggling to pay attention to things unrelated to whatever mesmerized you"
+      },
+      "sort": 1,
+      "_key": "!items.effects!tKxJ5HjWgzv00XPl.lIdikkIaqJo0WZCl"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

@@ -1,9 +1,9 @@
 {
   "type": "maneuver",
-  "name": "evade",
+  "name": "evade_dexterity",
   "folder": null,
   "system": {
-    "slug": "evade",
+    "slug": "evade_dexterity",
     "type": "defense",
     "skill": "vigor",
     "characteristic": "dexterity",

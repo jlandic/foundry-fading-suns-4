@@ -4,11 +4,81 @@
   "folder": null,
   "system": {
     "slug": "nauseated",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "nXgU4Sg9MzL8DaRi",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/biohazard.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/biohazard.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "nauseated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "nauseated",
+      "_id": "bwH1aqclNlJV5Dsh",
+      "system": {},
+      "_key": "!items.effects!nXgU4Sg9MzL8DaRi.bwH1aqclNlJV5Dsh"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/biohazard.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "nauseated",
+      "_id": "x22W3oiyy3uYHVum",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!nXgU4Sg9MzL8DaRi.x22W3oiyy3uYHVum"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

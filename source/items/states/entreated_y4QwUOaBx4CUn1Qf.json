@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "entreated",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "y4QwUOaBx4CUn1Qf",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/shaking-hands.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/shaking-hands.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "entreated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "entreated",
+      "_id": "SPkl7Cjsyi0htrNR",
+      "system": {},
+      "_key": "!items.effects!y4QwUOaBx4CUn1Qf.SPkl7Cjsyi0htrNR"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

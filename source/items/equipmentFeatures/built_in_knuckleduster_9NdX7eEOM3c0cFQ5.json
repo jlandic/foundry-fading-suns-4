@@ -1,0 +1,29 @@
+{
+  "type": "weaponFeature",
+  "name": "built_in_knuckleduster",
+  "folder": "gSSJDLU0GoM0EOOe",
+  "system": {
+    "slug": "built_in_knuckleduster",
+    "description": ""
+  },
+  "_id": "9NdX7eEOM3c0cFQ5",
+  "img": "icons/commodities/tech/blueprint.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1762121778691,
+    "modifiedTime": 1762164814946,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!9NdX7eEOM3c0cFQ5"
+}

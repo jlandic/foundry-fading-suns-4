@@ -14,7 +14,7 @@
       "disabled": false,
       "_id": "ff1Sz3YKcL1j67i1",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "resistance",

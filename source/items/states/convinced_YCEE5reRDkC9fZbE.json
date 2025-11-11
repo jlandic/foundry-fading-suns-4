@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "convinced",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "YCEE5reRDkC9fZbE",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/idea.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/idea.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "convinced"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "convinced",
+      "_id": "OKDxJxnwrmJKvEpL",
+      "system": {},
+      "_key": "!items.effects!YCEE5reRDkC9fZbE.OKDxJxnwrmJKvEpL"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

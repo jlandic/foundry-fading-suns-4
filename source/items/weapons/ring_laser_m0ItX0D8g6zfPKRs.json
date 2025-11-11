@@ -22,14 +22,15 @@
     "burst": false,
     "ammo": 1,
     "currentAmmo": 0,
-    "anti": [
-      "lsr"
+    "damageTypes": [
+      "laser"
     ],
     "features": [
       "disguised_weapon"
     ],
     "cost": 600,
     "tl": 6,
+    "techCompulsion": "inerrant",
     "capability": "energy_guns",
     "blastForce": null
   },

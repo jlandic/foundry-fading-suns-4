@@ -5,6 +5,7 @@ const {
     NumberField,
     SchemaField,
     StringField,
+    ArrayField,
 } = foundry.data.fields;
 
 export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
@@ -20,11 +21,19 @@ export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
             description: new HTMLField({
                 required: true,
             }),
-            currentVitality: new NumberField({ required: true, initial: 0 }),
             gmNotes: new HTMLField({ required: true }),
             vp: new SchemaField({
                 cache: new NumberField({ required: true, initial: 0 }),
             }),
+            vitality: new SchemaField({
+                value: new NumberField({ required: true, initial: 0 }),
+                max: new NumberField({ required: true, initial: 0 }),
+            }),
+            techCompulsions: new ArrayField(
+                new StringField({
+                    nullable: true,
+                })
+            ),
         };
     }
 
@@ -42,13 +51,6 @@ export default class BaseActorDataModel extends foundry.abstract.TypeDataModel {
 
     get hasSurges() {
         return this.surges !== undefined;
-    }
-
-    get vitality() {
-        return {
-            value: this.currentVitality,
-            max: this.maxVitality,
-        };
     }
 
     get maxRevivals() {

@@ -4,11 +4,51 @@
   "folder": null,
   "system": {
     "slug": "prone",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "OFgabbCqkhxG4PXh",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/falling.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/falling.svg",
+      "type": "base",
+      "changes": [
+        {
+          "key": "system.speed",
+          "mode": "multiply",
+          "value": "0.25",
+          "priority": 0
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "prone"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "prone",
+      "_id": "oe5Sw9QhS7B6ZXvv",
+      "system": {},
+      "_key": "!items.effects!OFgabbCqkhxG4PXh.oe5Sw9QhS7B6ZXvv"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

@@ -11,6 +11,7 @@ export { default as FactionDataModel } from "./item-faction.mjs";
 export { default as ManeuverDataModel } from "./item-maneuver.mjs";
 export { default as PerkDataModel } from "./item-perk.mjs";
 export { default as SpeciesDataModel } from "./item-species.mjs";
+export { default as StateDataModel } from "./item-state.mjs";
 
 export { default as EquipmentDataModel } from "./item-equipment.mjs";
 export { default as WeaponDataModel } from "./item-weapon.mjs";

@@ -14,11 +14,12 @@
     "res": 3,
     "eshieldCompatibility": "es",
     "anti": [
-      "shk"
+      "shock"
     ],
     "features": [],
     "cost": 300,
-    "tl": 5
+    "tl": 5,
+    "techCompulsion": "protective"
   },
   "effects": [],
   "flags": {},

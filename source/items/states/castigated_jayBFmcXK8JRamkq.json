@@ -4,11 +4,81 @@
   "folder": null,
   "system": {
     "slug": "castigated",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "jayBFmcXK8JRamkq",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/pointing.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/pointing.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "castigated"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "castigated",
+      "_id": "CiSNkel0xSFkqDb3",
+      "system": {},
+      "_key": "!items.effects!jayBFmcXK8JRamkq.CiSNkel0xSFkqDb3"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/pointing.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "castigated",
+      "_id": "3GxjfYGWYsYGY346",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "influence",
+        "value": "-2",
+        "notes": "Against your influencer"
+      },
+      "sort": 1,
+      "_key": "!items.effects!jayBFmcXK8JRamkq.3GxjfYGWYsYGY346"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

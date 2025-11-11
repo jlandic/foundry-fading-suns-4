@@ -4,11 +4,81 @@
   "folder": null,
   "system": {
     "slug": "afraid",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "74cerLsawevkXdGe",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/dread.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/dread.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "afraid"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "afraid",
+      "_id": "ZHlnB1CzTMX7fLdr",
+      "system": {},
+      "_key": "!items.effects!74cerLsawevkXdGe.ZHlnB1CzTMX7fLdr"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/dread.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "afraid",
+      "_id": "uo0SIlhA3NcV4q6T",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": "Any action except perception actions, dodge, or stonewall maneuvers"
+      },
+      "sort": 1,
+      "_key": "!items.effects!74cerLsawevkXdGe.uo0SIlhA3NcV4q6T"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

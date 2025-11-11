@@ -65,7 +65,13 @@ export const BaseSheetMixin = Base => class extends Base {
     _prepareModifiers() {
         if (!this.includeModifiers) return [];
 
-        return this.document.effects.map(e => e).concat(this.document.embeddedModifiers || []).map((modifier) => ({
+        // Include feature modifiers for Items, unless they're embedded in an actor,
+        // lest we duplicate the feature modifiers copied when adding the item to the actor.
+        const modifiers = this.document.featureModifiers && !this.document.parent
+            ? this.document.allModifiers.concat(this.document.featureModifiers)
+            : this.document.allModifiers;
+
+        return modifiers.map((modifier) => ({
             id: modifier.id,
             label: `${modifier.humanReadable} (${modifier.name})`,
             parentId: modifier.parent?.id || null,
@@ -76,12 +82,17 @@ export const BaseSheetMixin = Base => class extends Base {
                     action: "toggleModifier",
                     requiresEdit: true,
                 },
-                {
-                    icon: "edit",
-                    i18nKey: "fs4.sheets.common.edit",
-                    action: "editModifier",
-                    requiresEdit: true,
-                },
+                modifier.parent.id === this.document.id ||
+                    // Modifiers embedded in items (equipment features) are not editable
+                    // since they belong to non-copied references.
+                    (this.document.items || []).map(i => i.id).includes(modifier.parent.id)
+                    ? {
+                        icon: "edit",
+                        i18nKey: "fs4.sheets.common.edit",
+                        action: "editModifier",
+                        requiresEdit: true,
+                    }
+                    : null,
                 modifier.parent.id !== this.document.id ? null : {
                     icon: "trash",
                     i18nKey: "fs4.sheets.common.delete",

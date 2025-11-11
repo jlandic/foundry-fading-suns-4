@@ -4,11 +4,80 @@
   "folder": null,
   "system": {
     "slug": "stunned",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "wqWZxhl5UiR9jnWg",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/knockout.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/knockout.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "stunned"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "stunned",
+      "_id": "JVOCvb8R4wP4L6JN",
+      "system": {},
+      "_key": "!items.effects!wqWZxhl5UiR9jnWg.JVOCvb8R4wP4L6JN"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/knockout.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "stunned",
+      "_id": "EXDaQ76eroh3iNRG",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "none",
+        "notes": "Physical and perception actions"
+      },
+      "sort": 1,
+      "_key": "!items.effects!wqWZxhl5UiR9jnWg.EXDaQ76eroh3iNRG"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

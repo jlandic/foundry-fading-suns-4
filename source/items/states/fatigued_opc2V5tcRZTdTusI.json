@@ -4,11 +4,179 @@
   "folder": null,
   "system": {
     "slug": "fatigued",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "opc2V5tcRZTdTusI",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/sleep.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/sleep.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "fatigued"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "fatigued",
+      "_id": "6GlrPXC8su6ddxgv",
+      "system": {},
+      "_key": "!items.effects!opc2V5tcRZTdTusI.6GlrPXC8su6ddxgv"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/sleep.svg",
+      "type": "modifier",
+      "changes": [
+        {
+          "key": "system.characteristics.force",
+          "mode": "add",
+          "value": "-2",
+          "priority": 0
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "fatigued",
+      "_id": "o4Ahtmtttcv3piwR",
+      "system": {
+        "valueType": "constant",
+        "targetType": "characteristic",
+        "target": "force",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!opc2V5tcRZTdTusI.o4Ahtmtttcv3piwR"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/sleep.svg",
+      "type": "modifier",
+      "changes": [
+        {
+          "key": "system.characteristics.dexterity",
+          "mode": "add",
+          "value": "-2",
+          "priority": 0
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "fatigued",
+      "_id": "HcFOdHRIASOuExlw",
+      "system": {
+        "valueType": "constant",
+        "targetType": "characteristic",
+        "target": "dexterity",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 2,
+      "_key": "!items.effects!opc2V5tcRZTdTusI.HcFOdHRIASOuExlw"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/sleep.svg",
+      "type": "modifier",
+      "changes": [
+        {
+          "key": "system.characteristics.endurance",
+          "mode": "add",
+          "value": "-2",
+          "priority": 0
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "fatigued",
+      "_id": "PPe8TlDkol9oRdJX",
+      "system": {
+        "valueType": "constant",
+        "targetType": "characteristic",
+        "target": "endurance",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 3,
+      "_key": "!items.effects!opc2V5tcRZTdTusI.PPe8TlDkol9oRdJX"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

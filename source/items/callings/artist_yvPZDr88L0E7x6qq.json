@@ -5,7 +5,14 @@
   "system": {
     "slug": "artist",
     "description": "",
-    "equipment": [],
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "artist_tools"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "special_any_lores_capability"

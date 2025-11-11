@@ -2,8 +2,8 @@
     data-tab="{{tabs.statsExtra.id}}">
     <div class="flexrow">
         <div class="form-group">
-            <label for="system.currentVitality">{{ localize "fs4.actor.fields.vitality" }}</label>
-            <input class="score" type="number" name="system.currentVitality" value="{{system.currentVitality}}">
+            <label for="system.vitality.value">{{ localize "fs4.actor.fields.vitality" }}</label>
+            <input class="score" type="number" name="system.vitality.value" value="{{system.vitality.value}}" max="{{system.maxVitality}}" min="0" />
             &nbsp;/&nbsp;
             <input class="score" type="number" name="system.maxVitality" value="{{system.maxVitality}}" disabled />
         </div>

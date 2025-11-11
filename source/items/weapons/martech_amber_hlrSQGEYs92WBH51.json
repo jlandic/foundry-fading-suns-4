@@ -22,12 +22,13 @@
     "burst": false,
     "ammo": 21,
     "currentAmmo": 0,
-    "anti": [
-      "lsr"
+    "damageTypes": [
+      "laser"
     ],
     "features": [],
     "cost": 300,
     "tl": 6,
+    "techCompulsion": "inerrant",
     "capability": "energy_guns",
     "blastForce": null
   },
@@ -37,7 +38,7 @@
       "disabled": false,
       "_id": "KeNJCKYlE5Z6U8St",
       "img": null,
-      "type": "base",
+      "type": "modifier",
       "system": {
         "valueType": "constant",
         "targetType": "goal",

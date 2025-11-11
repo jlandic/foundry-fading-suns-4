@@ -1,0 +1,75 @@
+{
+  "type": "equipment",
+  "name": "doctors_bag",
+  "folder": "njGJyuuk24vXp7aO",
+  "system": {
+    "slug": "doctors_bag",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "l",
+    "cost": 10,
+    "tl": 2
+  },
+  "_id": "qXTsG63Z0C2trgP8",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": null,
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "doctors_bag",
+      "_id": "hnJcC0w66h6XAWlw",
+      "system": {
+        "valueType": "constant",
+        "targetType": "skill",
+        "target": "remedy",
+        "austerity": false,
+        "context": "none",
+        "value": "1",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!qXTsG63Z0C2trgP8.hnJcC0w66h6XAWlw"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!qXTsG63Z0C2trgP8"
+}

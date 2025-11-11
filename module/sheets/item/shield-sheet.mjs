@@ -31,7 +31,7 @@ export default class ShieldSheet extends EquipmentSheet {
         const item = await fromUuid(data.uuid);
 
         if (item.type === "shieldFeature") {
-            await this.item.addFeature(item.system.slug, "shieldFeature");
+            await this.item.addFeature(item.system.slug);
         } else {
             await super._onDrop(event);
         }

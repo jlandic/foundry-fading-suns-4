@@ -1,0 +1,49 @@
+{
+  "folder": "vI9hoWF2avbphts2",
+  "name": "dagger",
+  "type": "weapon",
+  "_id": "6keY7Lf9IwRm74Jc",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "system": {
+    "slug": "dagger",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "m",
+    "damage": 4,
+    "strRequirement": 2,
+    "melee": true,
+    "range": {
+      "short": null,
+      "long": null
+    },
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": [],
+    "features": [],
+    "cost": 4,
+    "tl": 1,
+    "blastForce": null
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1762626804220,
+    "modifiedTime": 1762626926211,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!6keY7Lf9IwRm74Jc"
+}

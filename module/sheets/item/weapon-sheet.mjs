@@ -19,7 +19,7 @@ export default class WeaponSheet extends EquipmentSheet {
 
         foundry.utils.mergeObject(context, {
             capability: await this._prepareReferenceLink("system.capability", "capability"),
-            damageTypeOptions: this._prepareDamageTypeOptions(this.item.system.anti),
+            damageTypeOptions: this._prepareDamageTypeOptions(this.item.system.damageTypes),
             features: await this._prepareInlineItemList("system.features", "weaponFeature"),
         });
 
@@ -33,7 +33,7 @@ export default class WeaponSheet extends EquipmentSheet {
         const item = await fromUuid(data.uuid);
 
         if (item.type === "weaponFeature") {
-            await this.item.addFeature(item.system.slug, "weaponFeature");
+            await this.item.addFeature(item.system.slug);
         } else {
             await super._onDrop(event);
         }
@@ -43,15 +43,15 @@ export default class WeaponSheet extends EquipmentSheet {
         event.preventDefault();
 
         const type = target.dataset.type;
-        const anti = this.item.system.anti;
-        const index = anti.indexOf(type);
+        const damageTypes = this.item.system.damageTypes;
+        const index = damageTypes.indexOf(type);
 
         if (index === -1) {
-            anti.push(type);
+            damageTypes.push(type);
         } else {
-            anti.splice(index, 1);
+            damageTypes.splice(index, 1);
         }
 
-        await this.item.update({ "system.anti": anti });
+        await this.item.update({ "system.damageTypes": damageTypes });
     }
 }

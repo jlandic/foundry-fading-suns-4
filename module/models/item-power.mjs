@@ -5,6 +5,7 @@ import * as customFields from "../system/custom-fields.mjs";
 const {
     ArrayField,
     BooleanField,
+    HTMLField,
     NumberField,
     StringField,
     SchemaField,
@@ -16,7 +17,7 @@ export default class PowerDataModel extends BaseItemDataModel {
             cost: new NumberField({ required: true, initial: 0, min: 0 }),
             additionalCost: new StringField({ required: false }),
             path: new StringField({ required: true }),
-            characteristics: new StringField({ required: true, choices: Object.values(Characteristics) }),
+            characteristic: new StringField({ required: true, choices: Object.values(Characteristics) }),
             skill: new StringField({ required: true, choices: Object.values(Skills) }),
             discipline: new StringField({
                 required: true,
@@ -31,6 +32,8 @@ export default class PowerDataModel extends BaseItemDataModel {
             level: new NumberField({ required: true, initial: 1, min: 1 }),
             preconditions: customFields.preconditions(),
             elementary: new BooleanField({ required: true, initial: false }),
+            resistance: new HTMLField({ required: true, initial: "" }),
+            incidence: new HTMLField({ required: true, initial: "" }),
         });
     }
 

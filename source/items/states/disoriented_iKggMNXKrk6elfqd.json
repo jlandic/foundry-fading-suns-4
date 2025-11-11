@@ -4,11 +4,44 @@
   "folder": null,
   "system": {
     "slug": "disoriented",
-    "type": "body"
+    "type": "body",
+    "description": ""
   },
   "_id": "iKggMNXKrk6elfqd",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "icons/svg/daze.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/svg/daze.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "disoriented"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "disoriented",
+      "_id": "Xm1kj5Wlk5PMFaGj",
+      "system": {},
+      "_key": "!items.effects!iKggMNXKrk6elfqd.Xm1kj5Wlk5PMFaGj"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

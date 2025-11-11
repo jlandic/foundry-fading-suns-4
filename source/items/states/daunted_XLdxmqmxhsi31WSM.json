@@ -4,11 +4,117 @@
   "folder": null,
   "system": {
     "slug": "daunted",
-    "type": "spirit"
+    "type": "spirit",
+    "description": ""
   },
   "_id": "XLdxmqmxhsi31WSM",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/worried-eyes.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/worried-eyes.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "daunted"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "daunted",
+      "_id": "1C5HMWs65QiNBCyM",
+      "system": {},
+      "_key": "!items.effects!XLdxmqmxhsi31WSM.1C5HMWs65QiNBCyM"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/worried-eyes.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "daunted",
+      "_id": "d9XzgMVOVnqAfGJM",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "influence_coercion",
+        "notes": "Against your influencer"
+      },
+      "sort": 1,
+      "_key": "!items.effects!XLdxmqmxhsi31WSM.d9XzgMVOVnqAfGJM"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/worried-eyes.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "daunted",
+      "_id": "ntEP7emdIfaDmMhT",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": "Physical attacks against your influencer"
+      },
+      "sort": 2,
+      "_key": "!items.effects!XLdxmqmxhsi31WSM.ntEP7emdIfaDmMhT"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,

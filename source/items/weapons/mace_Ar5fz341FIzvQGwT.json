@@ -1,0 +1,52 @@
+{
+  "type": "weapon",
+  "name": "mace",
+  "folder": "vI9hoWF2avbphts2",
+  "system": {
+    "slug": "mace",
+    "description": "",
+    "tl": 1,
+    "damage": 5,
+    "strRequirement": 3,
+    "size": "l",
+    "cost": 10,
+    "features": [
+      "military",
+      "slam"
+    ],
+    "capability": "military_weapons",
+    "agora": "",
+    "curio": false,
+    "quality": "standard",
+    "melee": true,
+    "range": {},
+    "rof": 1,
+    "burst": false,
+    "ammo": 0,
+    "currentAmmo": 0,
+    "damageTypes": [
+      "hard"
+    ]
+  },
+  "_id": "Ar5fz341FIzvQGwT",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Ar5fz341FIzvQGwT"
+}

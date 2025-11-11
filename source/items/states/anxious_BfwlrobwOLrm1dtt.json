@@ -4,11 +4,118 @@
   "folder": null,
   "system": {
     "slug": "anxious",
-    "type": "mind"
+    "type": "mind",
+    "description": ""
   },
   "_id": "BfwlrobwOLrm1dtt",
-  "img": "icons/svg/item-bag.svg",
-  "effects": [],
+  "img": "modules/game-icons-net/blackbackground/drowning.svg",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/drowning.svg",
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [
+        "anxious"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "anxious",
+      "_id": "dX3F3RFS91pwABp4",
+      "system": {},
+      "_key": "!items.effects!BfwlrobwOLrm1dtt.dX3F3RFS91pwABp4"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/drowning.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "anxious",
+      "_id": "AosyScPr1qPmITLO",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "influence",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!BfwlrobwOLrm1dtt.AosyScPr1qPmITLO"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/drowning.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "anxious",
+      "_id": "kRDmLymImnBIztq2",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": "Any long-term task"
+      },
+      "sort": 2,
+      "_key": "!items.effects!BfwlrobwOLrm1dtt.kRDmLymImnBIztq2"
+    }
+  ],
   "flags": {},
   "_stats": {
     "compendiumSource": null,
