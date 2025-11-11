@@ -22,7 +22,7 @@ jobs:
           VERSION=$(cat version.txt)
           echo "Setting version to $VERSION"
           jq --arg ver "$VERSION" '.version = $ver' system.json > tmp.$$.json && mv tmp.$$.json system.json
-          echo "::set-output name=TAG::$VERSION"
+          echo "tag=$VERSION" >> $GITHUB_OUTPUT
       - uses: actions/setup-node@v3
         with:
           node-version: "22"
@@ -45,8 +45,8 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: false
-          name: ${{ steps.set_version.outputs.TAG }}
+          name: ${{ steps.set_version.outputs.tag }}
           draft: false
           prerelease: false
           artifacts: "./system.json,./foundry-fading-suns-4.zip"
-          tag: ${{ steps.set_version.outputs.TAG }}
+          tag: ${{ steps.set_version.outputs.tag }}
