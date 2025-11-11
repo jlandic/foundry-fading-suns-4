@@ -1,12 +1,12 @@
 {
   "type": "maneuver",
-  "name": "evade",
+  "name": "evade_dexterity",
   "folder": null,
   "system": {
-    "slug": "evade_intuition",
+    "slug": "evade_dexterity",
     "type": "defense",
     "skill": "vigor",
-    "characteristic": "intuition",
+    "characteristic": "dexterity",
     "goalModifier": "none",
     "actionType": [
       "primary",
@@ -15,7 +15,7 @@
     "playScale": "instantaneous",
     "noVP": false
   },
-  "_id": "XcDEdL6F7ChYwiBR",
+  "_id": "RvSqjXyqByFBMC5p",
   "img": "icons/magic/symbols/cog-orange-red.webp",
   "effects": [],
   "flags": {},
@@ -35,5 +35,5 @@
     "ef54fWvGiyPGgegN": 3
   },
   "sort": 0,
-  "_key": "!items!XcDEdL6F7ChYwiBR"
+  "_key": "!items!RvSqjXyqByFBMC5p"
 }
