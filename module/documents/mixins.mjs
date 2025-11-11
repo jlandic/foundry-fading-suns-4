@@ -1,6 +1,9 @@
 export const WithModifiersMixin = Base => class extends Base {
     get allModifiers() {
-        return this.effects.map(e => e).concat(this.embeddedModifiers);
+        return this.effects
+            .filter(e => e.type === "modifier")
+            .map(e => e)
+            .concat(this.embeddedModifiers);
     }
 
     async addNewModifier() {
