@@ -7,6 +7,7 @@ export { default as ManeuverSheet } from "./item/maneuver-sheet.mjs";
 export { default as PerkSheet } from "./item/perk-sheet.mjs";
 export { default as SpeciesSheet } from "./item/species-sheet.mjs";
 export { default as StateSheet } from "./item/state-sheet.mjs";
+export { default as PowerSheet } from "./item/power-sheet.mjs";
 
 export { default as EquipmentSheet } from "./item/equipment-sheet.mjs";
 export { default as WeaponSheet } from "./item/weapon-sheet.mjs";

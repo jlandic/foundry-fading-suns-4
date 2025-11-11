@@ -396,11 +396,15 @@ const DEFAULT_SYSTEM = {
             {
                 type: "power",
                 slug: "",
-            }
+            },
         ],
-        elementary: false,
+        elemental: false,
         resistance: "",
-        incidence: "",
+        impact: "",
+        playScale: "instantaneous",
+        actionType: [
+            "primary",
+        ],
     }
 };
 
@@ -538,7 +542,7 @@ const TRANSLATION_ENTRY_TEMPLATE = {
         additionalCost: "",
         path: "",
         resistance: "",
-        incidence: "",
+        impact: "",
     }
 };
 

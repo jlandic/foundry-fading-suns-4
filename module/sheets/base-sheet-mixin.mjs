@@ -43,7 +43,7 @@ export const BaseSheetMixin = Base => class extends Base {
         const preparedOptions = options.map(option => ({
             label: game.i18n.localize(`${i18nPrefix}.${option}`),
             value: option,
-            selected: option === selectedValue,
+            selected: selectedValue instanceof Array ? selectedValue.includes(option) : option === selectedValue,
         })).sort((a, b) => {
             if (params.sort) {
                 return a.label.localeCompare(b.label);

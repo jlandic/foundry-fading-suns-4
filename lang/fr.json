@@ -20,7 +20,8 @@
       "shield": "Bouclier",
       "shieldFeature": "Particularité de bouclier",
       "armorFeature": "Particularité d'armure",
-      "state": "État"
+      "state": "État",
+      "power": "Pouvoir"
     },
     "Actor": {
       "pc": "PJ",
@@ -556,11 +557,12 @@
       "fields": {
         "path": "Voie",
         "cost": "Coût",
+        "additionalCost": "Coût additionel",
         "discipline": "Discipline",
         "components": "Composantes",
         "level": "Niveau",
         "preconditions": "Préconditions",
-        "elementary": "Élémentaire",
+        "elemental": "Élémentaire",
         "characteristic": "Caractéristique",
         "skill": "Compétence",
         "playScale": "Temps",

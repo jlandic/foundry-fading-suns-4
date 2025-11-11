@@ -1,0 +1,96 @@
+<section class="scrollable">
+    <section>
+        <h2>{{"fs4.sheets.common.traits"}}</h2>
+
+        <div class="flexrow stats-row">
+            <div>
+                <label for="system.skill">{{ localize "fs4.power.fields.skill" }}</label>
+                <select class="flex3" name="system.skill">
+                    {{selectOptions skillOptions selected=system.skill}}
+                </select>
+            </div>
+            <div>
+                <label for="system.characteristic">{{ localize "fs4.power.fields.characteristic" }}</label>
+                <select class="flex3" name="system.characteristic">
+                    {{selectOptions characteristicOptions selected=system.characteristic}}
+                </select>
+            </div>
+            <div>
+                <label for="system.discipline">{{ localize "fs4.power.fields.discipline" }}</label>
+                <select class="flex3" name="system.discipline">
+                    {{selectOptions disciplineOptions selected=system.discipline }}
+                </select>
+            </div>
+
+            <div>
+                <label for="system.path">{{ localize "fs4.power.fields.path" }}</label>
+                <input type="text" name="system.path" value="{{system.path}}" />
+            </div>
+        </div>
+
+        <div class="flexrow stats-row">
+            <div>
+                <label for="system.playScale">{{ localize "fs4.power.fields.playScale" }}</label>
+                <select class="flex3" name="system.playScale">
+                    {{selectOptions playScaleOptions selected=system.playScale readonly=true disabled=true}}
+                </select>
+            </div>
+            <div>
+                <label for="system.actionType">{{ localize "fs4.power.fields.actionType" }}</label>
+                <select name="system.actionType">
+                    {{selectOptions actionTypeOptions selected=system.actionType readonly=true disabled=true}}
+                </select>
+            </div>
+            <div>
+                <label for="system.cost">{{ localize "fs4.power.fields.cost" }}</label>
+                <input type="number" name="system.cost" value="{{system.cost}}" />
+            </div>
+            <div class="flex2">
+                <label for="system.additionalCost">{{ localize "fs4.power.fields.additionalCost" }}</label>
+                <input type="text" name="system.additionalCost" value="{{system.additionalCost}}" />
+            </div>
+        </div>
+
+        <div class="flexrow stats-row">
+            <div>
+                <label for="system.level">{{ localize "fs4.power.fields.level" }}</label>
+                <input type="number" name="system.level" value="{{system.level}}" />
+            </div>
+            <div class="flexcol">
+                <label for="system.elemental">{{ localize "fs4.power.fields.elemental" }}</label>
+                <input type="checkbox" name="system.elemental" {{checked system.elemental}} />
+            </div>
+
+            {{#if system.canRequireComponents}}
+            <div class="flex3">
+                {{#each componentOptions}}
+                <div class="flexrow">
+                    <label for="system.components.{{this.value}}">{{this.label}}</label>
+                    <input type="checkbox" name="system.components.{{this.value}}" {{checked this.selected}} />
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+        </div>
+    </section>
+
+    <hr />
+
+    <section>
+        <h2>{{ localize "fs4.commonFields.description" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.description" value=description}}
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.maneuver.fields.resistance" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.resistance" value=resistance}}
+    </section>
+
+    <section>
+        <h2>{{ localize "fs4.maneuver.fields.impact" }}</h2>
+
+        {{> "fading-suns-4.editor" name="system.impact" value=impact}}
+    </section>
+</section>

@@ -4,6 +4,12 @@ import { WithModifiersMixin } from "./mixins.mjs";
 export default class BaseItem extends WithModifiersMixin(
     foundry.documents.Item,
 ) {
+    async update(data, options = {}) {
+        console.log(data);
+        console.log(options);
+        return super.update(data, options);
+    }
+
     static getDefaultArtwork(itemData) {
         let icon = this.DEFAULT_ICON;
 

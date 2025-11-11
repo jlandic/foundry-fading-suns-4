@@ -20,7 +20,8 @@
       "shield": "Shield",
       "shieldFeature": "Shield Feature",
       "armorFeature": "Armor Feature",
-      "state": "State"
+      "state": "State",
+      "power": "Power"
     },
     "Actor": {
       "pc": "PC",
@@ -581,11 +582,12 @@
       "fields": {
         "path": "Path",
         "cost": "Cost",
+        "additionalCost": "Additional cost",
         "discipline": "Discipline",
         "components": "Components",
         "level": "Level",
         "preconditions": "Preconditions",
-        "elementary": "Elementary",
+        "elemental": "Elemental",
         "characteristic": "Characteristic",
         "skill": "Skill",
         "playScale": "Play scale",

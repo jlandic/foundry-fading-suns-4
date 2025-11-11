@@ -18,6 +18,7 @@ const TYPE_PARTS = [
     "shield",
     "eshield",
     "state",
+    "power",
 ];
 
 const READ_ONLY_REFERENCE_TYPES = [

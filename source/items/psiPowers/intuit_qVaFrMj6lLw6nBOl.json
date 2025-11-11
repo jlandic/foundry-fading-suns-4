@@ -1,0 +1,51 @@
+{
+  "type": "power",
+  "name": "intuit",
+  "folder": null,
+  "system": {
+    "slug": "intuit",
+    "description": "",
+    "cost": 1,
+    "additionalCost": "+1 per 10 turns extended duration",
+    "path": "Psyche",
+    "characteristic": "intuition",
+    "skill": "empathy",
+    "discipline": "psi",
+    "components": [],
+    "level": 2,
+    "preconditions": [
+      {
+        "type": "power",
+        "slug": "mind_speech"
+      }
+    ],
+    "elemental": false,
+    "resistance": "Target's Resistance (Spirit)",
+    "impact": "",
+    "playScale": "instantaneous",
+    "actionType": [
+      "primary"
+    ]
+  },
+  "_id": "qVaFrMj6lLw6nBOl",
+  "img": "icons/magic/control/buff-flight-wings-runes-red-yellow.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!qVaFrMj6lLw6nBOl"
+}

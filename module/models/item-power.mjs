@@ -1,6 +1,6 @@
-import { Characteristics, PowerDisciplines, Skills } from "../system/references.mjs";
+import { ActionTypes, Characteristics, None, PlayScales, PowerDisciplines, Skills } from "../system/references.mjs";
 import BaseItemDataModel from "./base-item.mjs";
-import * as customFields from "../system/custom-fields.mjs";
+import * as customFields from "./custom-fields.mjs";
 
 const {
     ArrayField,
@@ -17,27 +17,43 @@ export default class PowerDataModel extends BaseItemDataModel {
             cost: new NumberField({ required: true, initial: 0, min: 0 }),
             additionalCost: new StringField({ required: false }),
             path: new StringField({ required: true }),
-            characteristic: new StringField({ required: true, choices: Object.values(Characteristics) }),
-            skill: new StringField({ required: true, choices: Object.values(Skills) }),
+            characteristic: new StringField({
+                required: true,
+                choices: Object.values(Characteristics),
+                initial: Object.values(Characteristics)[0]
+            }),
+            skill: new StringField({
+                required: true,
+                choices: Object.values(Skills),
+                initial: Object.values(Skills)[0]
+            }),
             discipline: new StringField({
                 required: true,
                 choices: Object.values(PowerDisciplines),
                 initial: PowerDisciplines.Psi,
             }),
-            components: new ArrayField(new SchemaField({
+            components: new SchemaField({
                 liturgy: new BooleanField({ required: false, initial: false }),
                 gestures: new BooleanField({ required: false, initial: false }),
                 prayer: new BooleanField({ required: false, initial: false }),
-            })),
+            }),
             level: new NumberField({ required: true, initial: 1, min: 1 }),
             preconditions: customFields.preconditions(),
-            elementary: new BooleanField({ required: true, initial: false }),
+            elemental: new BooleanField({ required: true, initial: false }),
             resistance: new HTMLField({ required: true, initial: "" }),
-            incidence: new HTMLField({ required: true, initial: "" }),
+            impact: new HTMLField({ required: true }),
+            playScale: new StringField({ required: true, choices: Object.values(PlayScales), initial: PlayScales.Instantaneous }),
+            actionType: new ArrayField(new StringField({
+                required: true,
+                choices: [
+                    ...Object.values(ActionTypes),
+                    None,
+                ],
+            })),
         });
     }
 
-    get canRequiredComponents() {
+    get canRequireComponents() {
         return this.discipline === PowerDisciplines.Theurgy;
     }
 }
