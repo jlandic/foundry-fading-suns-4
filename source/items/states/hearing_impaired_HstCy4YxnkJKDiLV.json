@@ -40,6 +40,44 @@
       "_id": "jTydXHZEhhsqZc3P",
       "system": {},
       "_key": "!items.effects!HstCy4YxnkJKDiLV.jTydXHZEhhsqZc3P"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/deaf.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "hearing_impaired",
+      "_id": "PXeSq34MCOx0HHBu",
+      "system": {
+        "valueType": "constant",
+        "targetType": "characteristic",
+        "target": "perception",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": "When hearing is required"
+      },
+      "sort": 1,
+      "_key": "!items.effects!HstCy4YxnkJKDiLV.PXeSq34MCOx0HHBu"
     }
   ],
   "flags": {},

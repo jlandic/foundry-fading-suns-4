@@ -40,6 +40,42 @@
       "_id": "cRDh9QqUODirjfW9",
       "system": {},
       "_key": "!items.effects!X6i7RG6j9ag6o6qQ.cRDh9QqUODirjfW9"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/angry-eyes.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "angered",
+      "_id": "HYV6xUdg9Usyi6LT",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "influence_persuasion",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!X6i7RG6j9ag6o6qQ.HYV6xUdg9Usyi6LT"
     }
   ],
   "flags": {},

@@ -14,7 +14,14 @@
       "disabled": false,
       "img": "icons/svg/falling.svg",
       "type": "base",
-      "changes": [],
+      "changes": [
+        {
+          "key": "system.speed",
+          "mode": "multiply",
+          "value": "0.25",
+          "priority": 0
+        }
+      ],
       "duration": {
         "startTime": null,
         "combat": null

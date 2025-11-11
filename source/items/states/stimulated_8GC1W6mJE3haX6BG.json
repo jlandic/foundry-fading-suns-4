@@ -40,6 +40,80 @@
       "_id": "Z6nkFBDeHeOvalbW",
       "system": {},
       "_key": "!items.effects!8GC1W6mJE3haX6BG.Z6nkFBDeHeOvalbW"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/extra-lucid.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "stimulated",
+      "_id": "WNMsM2pfBqcagA5y",
+      "system": {
+        "valueType": "favorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "specific_maneuver",
+        "maneuverSlug": "spot",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!8GC1W6mJE3haX6BG.WNMsM2pfBqcagA5y"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/extra-lucid.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "stimulated",
+      "_id": "wuK3RcZJl68q2nFI",
+      "system": {
+        "valueType": "constant",
+        "targetType": "initiative",
+        "target": "edge",
+        "austerity": false,
+        "context": "none",
+        "notes": ""
+      },
+      "sort": 2,
+      "_key": "!items.effects!8GC1W6mJE3haX6BG.wuK3RcZJl68q2nFI"
     }
   ],
   "flags": {},

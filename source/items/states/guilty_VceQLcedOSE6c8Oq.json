@@ -40,6 +40,42 @@
       "_id": "kvD9UaBpQVCjtKtM",
       "system": {},
       "_key": "!items.effects!VceQLcedOSE6c8Oq.kvD9UaBpQVCjtKtM"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/cement-shoes.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "guilty",
+      "_id": "fHMwpPG9VbXWbKP4",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "influence",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!VceQLcedOSE6c8Oq.fHMwpPG9VbXWbKP4"
     }
   ],
   "flags": {},

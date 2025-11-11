@@ -40,6 +40,80 @@
       "_id": "366SmdqIOPTcM594",
       "system": {},
       "_key": "!items.effects!I4Kh5xbOiQNIWqQZ.366SmdqIOPTcM594"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/blind.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "seeing_impaired",
+      "_id": "ziC3G8aENHhRN35H",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": "All physical rolls you make against anyone you are not touching with direct contact"
+      },
+      "sort": 1,
+      "_key": "!items.effects!I4Kh5xbOiQNIWqQZ.ziC3G8aENHhRN35H"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/blind.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "seeing_impaired",
+      "_id": "ul6x92VibBLsE9du",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "influence",
+        "value": "-2",
+        "notes": "Influence actions that usually require eye contact"
+      },
+      "sort": 2,
+      "_key": "!items.effects!I4Kh5xbOiQNIWqQZ.ul6x92VibBLsE9du"
     }
   ],
   "flags": {},

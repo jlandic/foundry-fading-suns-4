@@ -40,6 +40,118 @@
       "_id": "gWns456bxaNrEzJC",
       "system": {},
       "_key": "!items.effects!YTjcHAIQv4ZART1H.gWns456bxaNrEzJC"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/daze.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "dazed",
+      "_id": "R3ZiTqoGfKxbFIlG",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "melee",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 1,
+      "_key": "!items.effects!YTjcHAIQv4ZART1H.R3ZiTqoGfKxbFIlG"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/daze.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "dazed",
+      "_id": "nS54qfELr0JLPNym",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "ranged",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 2,
+      "_key": "!items.effects!YTjcHAIQv4ZART1H.nS54qfELr0JLPNym"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/daze.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "dazed",
+      "_id": "8OGIdYkf7vMSs0CH",
+      "system": {
+        "valueType": "constant",
+        "targetType": "characteristic",
+        "target": "perception",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": ""
+      },
+      "sort": 3,
+      "_key": "!items.effects!YTjcHAIQv4ZART1H.8OGIdYkf7vMSs0CH"
     }
   ],
   "flags": {},

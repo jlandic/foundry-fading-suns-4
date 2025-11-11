@@ -14,7 +14,14 @@
       "disabled": false,
       "img": "icons/svg/net.svg",
       "type": "base",
-      "changes": [],
+      "changes": [
+        {
+          "key": "system.speed",
+          "mode": "override",
+          "value": "0",
+          "priority": 0
+        }
+      ],
       "duration": {
         "startTime": null,
         "combat": null
@@ -40,6 +47,42 @@
       "_id": "W2jn98SxY85rtxkI",
       "system": {},
       "_key": "!items.effects!f0Kb9b7UutM5gIag.W2jn98SxY85rtxkI"
+    },
+    {
+      "disabled": false,
+      "img": "icons/svg/net.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "immobilized",
+      "_id": "fYJQvKrqdiqXld8d",
+      "system": {
+        "valueType": "unfavorable",
+        "targetType": "none",
+        "austerity": false,
+        "context": "none",
+        "notes": "All actions involving full-body movement"
+      },
+      "sort": 1,
+      "_key": "!items.effects!f0Kb9b7UutM5gIag.fYJQvKrqdiqXld8d"
     }
   ],
   "flags": {},

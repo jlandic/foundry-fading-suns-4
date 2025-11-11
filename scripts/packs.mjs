@@ -455,6 +455,16 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
+    state: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {
@@ -565,31 +575,53 @@ const createSourceItem = async (template, slug, effects = 0) => {
     console.log(`Created new item at: ${path.join(collectionPath, `${slug}_${id}.json`)}`);
 }
 
-const addEffectsToStates = async () => {
+const addModifierToState = async (slug) => {
     const statesPath = path.join(SOURCE_DIR, "items", "states");
+    const translationFile = path.join(BABELE_COMPENDIUM_FOLDER, `fading-suns-4.states.json`);
+    const translations = await fs.readFile(translationFile, "utf-8")
+        .then(data => JSON.parse(data));
 
     const files = await fs.readdir(statesPath)
-    files.forEach(async (file) => {
-        const data = await fs.readFile(path.join(statesPath, file), "utf-8");
-        const state = JSON.parse(data);
-        const effectID = randomID();
-        const effect = {
-            ...BASE_EFFECT,
-            name: state.system.slug,
-            _id: effectID,
-            img: state.img,
-            system: {},
-            statuses: [state.system.slug],
-            _key: `!items.effects!${state._id}.${effectID}`
-        }
+    const file = files.find(file => file.startsWith(slug));
+    const data = await fs.readFile(path.join(statesPath, file), "utf-8");
+    const state = JSON.parse(data);
+    const effectID = randomID();
+    const effect = {
+        ...BASE_EFFECT,
+        name: state.system.slug,
+        type: "modifier",
+        _id: effectID,
+        img: state.img,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+        },
+        statuses: [],
+        sort: state.effects.length,
+        _key: `!items.effects!${state._id}.${effectID}`
+    }
 
-        state.effects = [effect];
-        await fs.writeFile(
-            path.join(statesPath, file),
-            JSON.stringify(state, null, 2),
-            "utf-8"
-        );
-    });
+    state.effects = [
+        ...state.effects,
+        effect
+    ];
+
+    await fs.writeFile(
+        path.join(statesPath, file),
+        JSON.stringify(state, null, 2),
+        "utf-8"
+    );
+
+    translations.entries[slug].effects = {
+        ...translations.entries[slug].effects,
+        [effectID]: {
+            name: state.system.slug,
+            notes: "",
+        }
+    };
+
+    await fs.writeFile(translationFile, JSON.stringify(translations, null, 2), "utf-8");
+
+    console.log(`Added modifier effect to state: ${slug}`);
 }
 
 const cmd = new Command();
@@ -628,8 +660,8 @@ cmd
     .action(createSourceItem);
 
 cmd
-    .command("add-effects-to-states")
-    .description("Add default effects to all states")
-    .action(addEffectsToStates);
+    .command("add-mod-to-state <slug>")
+    .description("Add a modifier effect to the specified state")
+    .action(addModifierToState);
 
 cmd.parseAsync();

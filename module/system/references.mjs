@@ -194,6 +194,10 @@ export const BASIC_MANEUVERS = Object.freeze([
     "shake_it_off_body",
     "shake_it_off_mind",
     "shake_it_off_spirit",
+    "dodge_dexterity",
+    "dodge_intuition",
+    "evade_dexterity",
+    "evade_intuition",
 ]);
 
 export const ModifierValueTypes = Object.freeze({

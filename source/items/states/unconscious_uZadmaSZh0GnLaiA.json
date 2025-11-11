@@ -14,7 +14,14 @@
       "disabled": false,
       "img": "icons/svg/unconscious.svg",
       "type": "base",
-      "changes": [],
+      "changes": [
+        {
+          "key": "system.speed",
+          "mode": "override",
+          "value": "0",
+          "priority": 0
+        }
+      ],
       "duration": {
         "startTime": null,
         "combat": null

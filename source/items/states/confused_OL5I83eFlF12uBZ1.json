@@ -40,6 +40,43 @@
       "_id": "LqAZnzVTFj7DET6h",
       "system": {},
       "_key": "!items.effects!OL5I83eFlF12uBZ1.LqAZnzVTFj7DET6h"
+    },
+    {
+      "disabled": false,
+      "img": "modules/game-icons-net/blackbackground/uncertainty.svg",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "confused",
+      "_id": "CuIbPpbyWoRmsTKx",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-2",
+        "notes": "All non-physical actions"
+      },
+      "sort": 1,
+      "_key": "!items.effects!OL5I83eFlF12uBZ1.CuIbPpbyWoRmsTKx"
     }
   ],
   "flags": {},
