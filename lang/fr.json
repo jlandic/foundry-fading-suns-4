@@ -383,7 +383,8 @@
         "savings": "Économies",
         "shields": "Boucliers",
         "eshields": "E-boucliers",
-        "states": "États"
+        "states": "États",
+        "powers": "Pouvoirs"
       }
     },
     "state": {
@@ -599,6 +600,10 @@
       "l": "Grande",
       "xl": "Très grande",
       "xxl": "Extrêmement grande"
+    },
+    "units": {
+      "vp": "PV",
+      "wp": "PW"
     },
     "common": {
       "andSeparator": " et ",

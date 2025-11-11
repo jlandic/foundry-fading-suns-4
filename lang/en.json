@@ -387,7 +387,8 @@
         "savings": "Savings",
         "shields": "Shields",
         "eshields": "E-shields",
-        "states": "States"
+        "states": "States",
+        "powers": "Powers"
       }
     },
     "state": {
@@ -604,6 +605,10 @@
         "gestures": "Gestures",
         "prayer": "Prayer"
       }
+    },
+    "units": {
+      "vp": "VP",
+      "wp": "WP"
     },
     "common": {
       "andSeparator": " and ",

@@ -55,6 +55,7 @@
     {
       "name": "Fading Suns 4",
       "sorting": "a",
+      "color": "#2b0c26",
       "packs": [
         "afflictions",
         "blessings",

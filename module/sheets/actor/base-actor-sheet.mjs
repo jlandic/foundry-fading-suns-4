@@ -298,6 +298,11 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 type: maneuverType,
                 label: game.i18n.localize(`fs4.maneuver.types.${maneuverType}`),
             })),
+            powerColumnLabels: [
+                game.i18n.localize("fs4.power.fields.level"),
+                game.i18n.localize("fs4.power.fields.cost"),
+            ],
+            powers: await this._preparePowers(),
             stateColumnLabels: [
                 game.i18n.localize("fs4.actor.fields.resistance"),
             ],
@@ -433,6 +438,32 @@ export default class BaseActorSheet extends BaseSheetMixin(
                 return `${maneuver.name} (${goal})`;
             }
         });
+    }
+
+    async _preparePowers() {
+        return await this._prepareItemList("power", {
+            description: "fs4.commonFields.description",
+            resistance: "fs4.power.fields.resistance",
+            impact: "fs4.power.fields.impact",
+        }, {
+            draggable: true,
+            sort: true,
+            columns: [
+                (power) => power.system.level,
+                (power) => `${power.system.cost} ${game.i18n.localize("fs4.units.vp")}`
+                    + (power.system.additionalCost ? ` (${power.system.additionalCost})` : ""),
+            ],
+            rollData: (power) => ({
+                slug: power.system.slug,
+                rollType: RollTypes.Maneuver,
+            }),
+            transformName: (power) => {
+                const rollIntention = new RollIntention({ maneuver: power });
+                const goal = new RollData({ actor: this.actor, rollIntention }).baseGoal;
+
+                return `${power.name} (${goal})`;
+            },
+        })
     }
 
     /**

@@ -16,4 +16,22 @@
         {{/each}}
     </ul>
     {{/each}}
+
+    <ul class="item-list">
+        <li class="item-list-header flexrow">
+            <h3>{{ localize "fs4.actor.fields.powers" }}</h3>
+
+            {{#each powerColumnLabels}}
+                <div class="item-column">{{this}}</div>
+            {{/each}}
+
+            <div></div>
+        </li>
+    </ul>
+
+    <ul class="item-list">
+        {{#each powers}}
+            {{> "fading-suns-4.inline-item" item=this}}
+        {{/each}}
+    </ul>
 </section>
