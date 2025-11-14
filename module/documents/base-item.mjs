@@ -61,7 +61,7 @@ export default class BaseItem extends WithModifiersMixin(
 
         return this.system.features
             .map(slug => globalThis.registry.fromSlug(slug, featureType))
-            .map(feature => feature.effects.map(e => e))
+            .map(feature => feature.effects?.map(e => e) || [])
             .flat();
     }
 
