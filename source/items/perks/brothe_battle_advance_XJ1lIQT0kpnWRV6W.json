@@ -1,0 +1,41 @@
+{
+  "type": "perk",
+  "name": "brothe_battle_advance",
+  "folder": null,
+  "system": {
+    "slug": "brothe_battle_advance",
+    "description": "",
+    "sourceType": "faction",
+    "type": "privilege",
+    "preconditions": [
+      [
+        {
+          "type": "faction",
+          "slug": "brother_battle_faction"
+        }
+      ]
+    ],
+    "benefice": ""
+  },
+  "_id": "XJ1lIQT0kpnWRV6W",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!XJ1lIQT0kpnWRV6W"
+}

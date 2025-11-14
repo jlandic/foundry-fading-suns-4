@@ -54,6 +54,7 @@
           "enum": [
             "class",
             "calling",
+            "faction",
             "species"
           ]
         },
