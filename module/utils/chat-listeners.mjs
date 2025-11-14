@@ -34,14 +34,44 @@ const gainVP = async (event) => {
         await actor.gainVP(Number(vp));
     }
 
-    const messages = game.messages.entries().toArray();
-    const [lastMessageId] = messages[messages.length - 1];
-    const lastMessage = game.messages.get(lastMessageId);
-    const updatedContent = lastMessage.content.replace(/<button(?:.*\n.*)+<\/button>/gm, '');
+    const {
+        messageId
+    } = event.target.closest("li.chat-message").dataset;
 
-    lastMessage.update({
+    const message = game.messages.get(messageId);
+    const updatedContent = message.content.replace(/<button class="gain-vp"[\s\S]*?<\/button>/m, '');
+
+    message.update({
         content: updatedContent,
     });
+};
+
+const gainWP = async (event) => {
+    const {
+        actorId,
+    } = event.target.dataset;
+
+    const actor = game.actors.get(actorId);
+
+    if (!actor?.isOwner) {
+        ui.notifications.warn(game.i18n.localize("fs4.notifications.warn.cantStealWp"));
+        return;
+    }
+
+    const success = await actor.gainWP();
+
+    if (success) {
+        const {
+            messageId
+        } = event.target.closest("li.chat-message").dataset;
+
+        const message = game.messages.get(messageId);
+        const updatedContent = message.content.replace(/<button class="gain-wp"[\s\S]*?<\/button>/m, '');
+
+        message.update({
+            content: updatedContent,
+        });
+    }
 };
 
 export const initializeChatListeners = () => {
@@ -55,6 +85,9 @@ export const initializeChatListeners = () => {
             }
             else if (event.target.matches("button.gain-vp")) {
                 gainVP(event);
+            }
+            else if (event.target.matches("button.gain-wp")) {
+                gainWP(event);
             }
         });
     });

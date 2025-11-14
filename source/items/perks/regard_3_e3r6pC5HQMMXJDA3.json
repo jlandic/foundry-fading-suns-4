@@ -1,0 +1,86 @@
+{
+  "type": "perk",
+  "name": "regard_3",
+  "folder": null,
+  "system": {
+    "slug": "regard_3",
+    "description": "",
+    "sourceType": "calling",
+    "type": "privilege",
+    "preconditions": [
+      [
+        {
+          "type": "faction",
+          "slug": "vuldrok_barbarians"
+        },
+        {
+          "type": "faction",
+          "slug": "maghtaw"
+        }
+      ]
+    ],
+    "benefice": "",
+    "previousLevel": "regard_2",
+    "nextLevel": "regard_4"
+  },
+  "_id": "e3r6pC5HQMMXJDA3",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [
+    {
+      "disabled": false,
+      "img": null,
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "regard_3",
+      "_id": "yNfDBmer4KQRrtrp",
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "target": "mind",
+        "austerity": false,
+        "context": "none",
+        "value": "6",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!e3r6pC5HQMMXJDA3.yNfDBmer4KQRrtrp"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!e3r6pC5HQMMXJDA3"
+}

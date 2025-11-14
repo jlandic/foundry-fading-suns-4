@@ -84,9 +84,9 @@ export default class RollApp extends foundry.applications.api.HandlebarsApplicat
             modifiers: this._fetchSelectedModifiers(data),
         });
 
+        this.close();
+
         const diceRoll = await new DiceThrow(rollData, this.diceThrowOptions).roll();
         await diceRoll.sendToChat();
-
-        this.close();
     }
 }

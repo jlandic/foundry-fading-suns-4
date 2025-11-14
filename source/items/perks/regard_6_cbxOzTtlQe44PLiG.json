@@ -1,0 +1,85 @@
+{
+  "type": "perk",
+  "name": "regard_6",
+  "folder": null,
+  "system": {
+    "slug": "regard_6",
+    "description": "",
+    "sourceType": "calling",
+    "type": "privilege",
+    "preconditions": [
+      [
+        {
+          "type": "faction",
+          "slug": "vuldrok_barbarians"
+        },
+        {
+          "type": "faction",
+          "slug": "maghtaw"
+        }
+      ]
+    ],
+    "benefice": "",
+    "previousLevel": "regard_5"
+  },
+  "_id": "cbxOzTtlQe44PLiG",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "effects": [
+    {
+      "disabled": false,
+      "img": null,
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "regard_6",
+      "_id": "hdGBknoXGRCGwfHk",
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "target": "mind",
+        "austerity": false,
+        "context": "none",
+        "value": "12",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!cbxOzTtlQe44PLiG.hdGBknoXGRCGwfHk"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!cbxOzTtlQe44PLiG"
+}

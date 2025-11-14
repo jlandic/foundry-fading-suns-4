@@ -38,6 +38,8 @@ const TEMPLATE_PACK_MAPPING = {
     maneuver: "maneuvers",
     state: "states",
     psiPower: "psiPowers",
+    perk: "perks",
+    calling: "callings",
 };
 
 const TEMPLATE_TYPE_MAPPING = {
@@ -170,7 +172,7 @@ const translateEquipment = (_reference, item) => {
     return base;
 }
 
-const translateState = (reference, _item) => {
+const translateState = (reference) => {
     return {
         name: reference.name,
         description: reference.system.description,
@@ -298,6 +300,8 @@ const IMG_MAPPING = {
     maneuver: "icons/magic/symbols/cog-orange-red.webp",
     equipmentFeature: "icons/commodities/tech/blueprint.webp",
     power: "icons/magic/control/buff-flight-wings-runes-red-yellow.webp",
+    calling: "icons/magic/symbols/rune-circle-blue-purple.webp",
+    perk: "icons/svg/item-bag.svg",
 };
 
 const DEFAULT_SYSTEM = {
@@ -405,8 +409,33 @@ const DEFAULT_SYSTEM = {
         actionType: [
             "primary",
         ],
+    },
+    perk: {
+        sourceType: "calling",
+        type: "privilege",
+        preconditions: [],
+        benefice: "",
+    },
+    calling: {
+        equipment: "",
+        capabilities: [],
+        perks: [],
+        patrons: "",
+        characteristics: [{ slug: "", value: 1 }],
+        skills: [{ slug: "", value: 1 }],
+        preconditions: [{ type: "faction", slug: "vuldrok_barbarians" }, { type: "faction", slug: "maghtaw" }],
     }
 };
+
+const BASE_EFFECT_RESISTANCE = {
+    valueType: "constant",
+    targetType: "resistance",
+    target: "mind",
+    austerity: false,
+    context: "none",
+    value: "2",
+    notes: ""
+}
 
 const BASE_EFFECT_SYSTEM = {
     valueType: "constant",
@@ -502,6 +531,16 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
+    perk: (slug, id, index, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_RESISTANCE,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
 };
 
 const TRANSLATION_ENTRY_TEMPLATE = {
@@ -543,6 +582,16 @@ const TRANSLATION_ENTRY_TEMPLATE = {
         path: "",
         resistance: "",
         impact: "",
+    },
+    perk: {
+        name: "",
+        description: "",
+        benefice: "",
+    },
+    calling: {
+        name: "",
+        description: "",
+        patrons: "",
     }
 };
 
@@ -620,53 +669,60 @@ const createSourceItem = async (template, slug, effects = 0) => {
     console.log(`Created new item at: ${path.join(collectionPath, `${slug}_${id}.json`)}`);
 }
 
-const addModifierToState = async (slug) => {
-    const statesPath = path.join(SOURCE_DIR, "items", "states");
-    const translationFile = path.join(BABELE_COMPENDIUM_FOLDER, `fading-suns-4.states.json`);
+const addModifier = async (template, slug) => {
+    const pack = TEMPLATE_PACK_MAPPING[template];
+    const packPath = path.join(SOURCE_DIR, "items", pack);
+    const type = TEMPLATE_TYPE_MAPPING[template] || template;
+    if (!type) {
+        console.error(`Unknown pack type: ${pack}`);
+        return;
+    }
+    console.log(`Adding modifier effect to item: ${slug} in pack: ${pack}...`);
+    const translationFile = path.join(BABELE_COMPENDIUM_FOLDER, `fading-suns-4.${pack}.json`);
     const translations = await fs.readFile(translationFile, "utf-8")
         .then(data => JSON.parse(data));
 
-    const files = await fs.readdir(statesPath)
+    const files = await fs.readdir(packPath)
     const file = files.find(file => file.startsWith(slug));
-    const data = await fs.readFile(path.join(statesPath, file), "utf-8");
-    const state = JSON.parse(data);
+    const data = await fs.readFile(path.join(packPath, file), "utf-8");
+    const item = JSON.parse(data);
     const effectID = randomID();
     const effect = {
         ...BASE_EFFECT,
-        name: state.system.slug,
+        name: item.system.slug,
         type: "modifier",
         _id: effectID,
-        img: state.img,
+        img: item.img,
         system: {
             ...BASE_EFFECT_SYSTEM,
         },
         statuses: [],
-        sort: state.effects.length,
-        _key: `!items.effects!${state._id}.${effectID}`
+        sort: item.effects.length,
+        _key: `!items.effects!${item._id}.${effectID}`
     }
 
-    state.effects = [
-        ...state.effects,
+    item.effects = [
+        ...item.effects,
         effect
     ];
 
     await fs.writeFile(
-        path.join(statesPath, file),
-        JSON.stringify(state, null, 2),
+        path.join(packPath, file),
+        JSON.stringify(item, null, 2),
         "utf-8"
     );
 
     translations.entries[slug].effects = {
         ...translations.entries[slug].effects,
         [effectID]: {
-            name: state.system.slug,
+            name: item.system.slug,
             notes: "",
         }
     };
 
     await fs.writeFile(translationFile, JSON.stringify(translations, null, 2), "utf-8");
 
-    console.log(`Added modifier effect to state: ${slug}`);
+    console.log(`Added modifier effect to item: ${slug}`);
 }
 
 const cmd = new Command();
@@ -705,8 +761,8 @@ cmd
     .action(createSourceItem);
 
 cmd
-    .command("add-mod-to-state <slug>")
-    .description("Add a modifier effect to the specified state")
-    .action(addModifierToState);
+    .command("add-mod <pack> <slug>")
+    .description("Add a modifier effect to the specified item in the given pack")
+    .action(addModifier);
 
 cmd.parseAsync();

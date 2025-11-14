@@ -10,6 +10,10 @@
         {
           "type": "class",
           "slug": "merchant"
+        },
+        {
+          "type": "faction",
+          "slug": "maghtaw"
         }
       ]
     ],

@@ -58,6 +58,15 @@ export default class BaseActor extends WithModifiersMixin(
         await this.update({ ["system.vp.cache"]: this.system.vp.cache + amount });
     }
 
+    async gainWP() {
+        if (this.system.wp === undefined) return false;
+        if (this.system.bankVPCapacity - this.system.vp.bank - this.system.wp < 0) return false;
+
+        await this.update({ ["system.wp"]: this.system.wp + 1 });
+
+        return true;
+    }
+
     async gainRespiteVP(amount) {
         const newVitality = Math.min(this.system.vitality.value + Math.floor(amount / 2), this.system.maxVitality);
         await this.update({ ["system.vitality.value"]: newVitality });

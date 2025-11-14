@@ -1,0 +1,45 @@
+{
+  "type": "armor",
+  "name": "premium_half_plate",
+  "folder": "GwqJbcl0GIPjEOQW",
+  "system": {
+    "slug": "premium_half_plate",
+    "description": "",
+    "tl": 1,
+    "techCompulsion": null,
+    "res": 6,
+    "eshieldCompatibility": "eg",
+    "cost": 30,
+    "anti": [
+      "shock",
+      "slam"
+    ],
+    "features": [],
+    "curio": false,
+    "agora": "Common",
+    "quality": "premium",
+    "size": "none",
+    "capability": "combat_armor"
+  },
+  "_id": "rQOXTFfvKRf8uAR7",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!rQOXTFfvKRf8uAR7"
+}

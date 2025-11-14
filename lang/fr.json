@@ -104,10 +104,13 @@
         "vp": "PV",
         "circumstances": "Circonstances",
         "gainVp": "Gagner PV",
+        "gainWp": "Gagner PW",
         "gainVitality": "Récupérer de la Vitalité",
         "baseRoll": "Jet de base",
         "techCompulsionRisk": "Risque de compulsion tech!",
         "res": "Rés.",
+        "criticalSuccess": "Succès critique !",
+        "criticalFailure": "Échec critique !",
         "subtitle": {
           "respite": "Repos"
         }
@@ -414,9 +417,11 @@
         "premium": "Magistrale"
       },
       "special": {
-        "premium_quality_weapon": "une arme de qualité Premium, généralement une épée",
-        "premium_weapon_vuldrok": "une arme de qualité Premium, généralement une hache",
-        "premium_shield": "un bouclier portatif de qualité Premium",
+        "premium_quality_weapon": "une arme de qualité Magistrale, généralement une épée",
+        "premium_weapon_vuldrok": "une arme de qualité Magistrale, généralement une hache",
+        "premium_shield": "un bouclier portatif de qualité Magistrale",
+        "premium_sword": "une épée de qualité Magistrale",
+        "premium_gun": "un pistolet de qualité Magistrale",
         "dueling_weapon": "une arme de duel",
         "blessed_sword": "une épée bénie",
         "blessed_slug_gun": "un cannoneur béni",
@@ -623,7 +628,8 @@
         }
       },
       "warn": {
-        "cantStealVp": "These VPs do not belong to you."
+        "cantStealVp": "Ces PVs ne vous appartiennent pas.",
+        "cantStealWp": "Ces PWs ne vous appartiennent pas."
       }
     },
     "actions": {

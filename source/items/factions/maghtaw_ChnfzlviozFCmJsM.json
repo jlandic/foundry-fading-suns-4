@@ -1,0 +1,126 @@
+{
+  "type": "faction",
+  "name": "maghtaw",
+  "folder": null,
+  "system": {
+    "description": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "wits",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "academia",
+          "value": 1
+        },
+        {
+          "slug": "crafts",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "impress",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "drive",
+          "value": 1
+        },
+        {
+          "slug": "focus",
+          "value": 1
+        },
+        {
+          "slug": "interface",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "techredemption",
+          "value": 2
+        }
+      ]
+    ],
+    "perk": "noble_title",
+    "blessing": [
+      "loyal"
+    ],
+    "curse": "secretive",
+    "slug": "maghtaw",
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "premium_tool_kit"
+        },
+        {
+          "type": "equipment",
+          "slug": "electric_oliphant"
+        }
+      ]
+    ],
+    "favoredCalling": "tech_redeemer",
+    "capabilities": [
+      [
+        "faction_lore"
+      ],
+      [
+        "energy_guns",
+        "slug_guns",
+        "military_weapons",
+        "crafts",
+        "think_machines"
+      ],
+      [
+        "science",
+        "technology"
+      ]
+    ]
+  },
+  "_id": "ChnfzlviozFCmJsM",
+  "img": "icons/sundries/flags/banner-blue.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!ChnfzlviozFCmJsM"
+}

@@ -105,9 +105,12 @@
         "vp": "VP",
         "circumstances": "Circumstances",
         "gainVp": "Gain VP",
+        "gainWp": "Gain WP",
         "gainVitality": "Gain Vitality",
         "baseRoll": "Base roll",
         "techCompulsionRisk": "Tech Compulsion risk!",
+        "criticalSuccess": "Critical Success!",
+        "criticalFailure": "Critical Failure!",
         "res": "Res.",
         "subtitle": {
           "respite": "Respite"
@@ -628,7 +631,8 @@
         }
       },
       "warn": {
-        "cantStealVp": "These VPs do not belong to you."
+        "cantStealVp": "These VPs do not belong to you.",
+        "cantStealWp": "These WPs do not belong to you."
       }
     },
     "actions": {

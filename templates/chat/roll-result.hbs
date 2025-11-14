@@ -49,6 +49,18 @@
             {{result}}
         </div>
 
+        {{#if isCriticalSuccess}}
+        <div>
+            <strong>{{localize "fs4.apps.roll.criticalSuccess"}}</strong>
+        </div>
+        {{/if}}
+
+        {{#if isCriticalFailure}}
+        <div>
+            <strong>{{localize "fs4.apps.roll.criticalFailure"}}</strong>
+        </div>
+        {{/if}}
+
         <div>
             <strong>{{localize "fs4.apps.roll.vp"}}:</strong>
             {{vp}}
@@ -73,6 +85,12 @@
             {{localize "fs4.apps.roll.gainVp"}}
         </button>
         {{/if}}
+        {{/if}}
+
+        {{#if isCriticalSuccess}}
+        <button class="gain-wp" type="button" data-actor-id="{{actorId}}">
+            {{localize "fs4.apps.roll.gainWp"}}
+        </button>
         {{/if}}
     </section>
 </div>

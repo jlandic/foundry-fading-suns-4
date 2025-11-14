@@ -1,0 +1,145 @@
+{
+  "type": "blessing",
+  "name": "loyal",
+  "folder": null,
+  "system": {
+    "slug": "loyal",
+    "description": ""
+  },
+  "_id": "6Klc3PXmX2YliOyb",
+  "img": "icons/magic/symbols/mask-metal-silver-white.webp",
+  "effects": [
+    {
+      "disabled": false,
+      "img": "icons/magic/symbols/mask-metal-silver-white.webp",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "loyal",
+      "_id": "KwmnVCmanTXBghsz",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "specific_maneuver",
+        "maneuverSlug": "shake_it_off_body",
+        "value": "2",
+        "notes": "To shake off influence that betrays chain of command"
+      },
+      "sort": 0,
+      "_key": "!items.effects!6Klc3PXmX2YliOyb.KwmnVCmanTXBghsz"
+    },
+    {
+      "disabled": false,
+      "img": "icons/magic/symbols/mask-metal-silver-white.webp",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "loyal",
+      "_id": "dk2gVeNSGshMMM75",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "specific_maneuver",
+        "maneuverSlug": "shake_it_off_mind",
+        "value": "2",
+        "notes": "To shake off influence that betrays chain of command"
+      },
+      "sort": 1,
+      "_key": "!items.effects!6Klc3PXmX2YliOyb.dk2gVeNSGshMMM75"
+    },
+    {
+      "disabled": false,
+      "img": "icons/magic/symbols/mask-metal-silver-white.webp",
+      "type": "modifier",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "loyal",
+      "_id": "rVd3qPNLvQzl2rTl",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "specific_maneuver",
+        "maneuverSlug": "shake_it_off_spirit",
+        "value": "2",
+        "notes": "To shake off influence that betrays chain of command"
+      },
+      "sort": 2,
+      "_key": "!items.effects!6Klc3PXmX2YliOyb.rVd3qPNLvQzl2rTl"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760907521972,
+    "modifiedTime": 1760907521972,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!6Klc3PXmX2YliOyb"
+}
