@@ -27,6 +27,7 @@ const PACKS = [
     "items/equipment",
     "items/states",
     "items/psiPowers",
+    "items/theurgyPowers",
 ];
 
 const TEMPLATE_PACK_MAPPING = {
