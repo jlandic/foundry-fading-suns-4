@@ -1,0 +1,141 @@
+{
+  "type": "class",
+  "name": "vuldrok",
+  "folder": null,
+  "system": {
+    "slug": "vuldrok",
+    "description": "",
+    "characteristics": [
+      [
+        {
+          "slug": "dexterity",
+          "value": 2
+        },
+        {
+          "slug": "endurance",
+          "value": 2
+        },
+        {
+          "slug": "strength",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "faith",
+          "value": 1
+        },
+        {
+          "slug": "will",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "presence",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "intuition",
+          "value": 2
+        }
+      ]
+    ],
+    "skills": [
+      [
+        {
+          "slug": "fight",
+          "value": 2
+        },
+        {
+          "slug": "melee",
+          "value": 2
+        },
+        {
+          "slug": "shoot",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "slug": "arts",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "charm",
+          "value": 1
+        },
+        {
+          "slug": "impress",
+          "value": 1
+        },
+        {
+          "slug": "perform",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "survival",
+          "value": 1
+        }
+      ],
+      [
+        {
+          "slug": "vigor",
+          "value": 1
+        }
+      ]
+    ],
+    "capabilities": [
+      [
+        "beastback",
+        "oratory",
+        "religion_lore_erdgheist"
+      ],
+      [
+        "vuldrok_customs"
+      ],
+      [
+        "military_weapons",
+        "archery"
+      ],
+      [
+        "read_speak_vuldrish"
+      ],
+      [
+        "planet_lore_homeworld"
+      ]
+    ],
+    "perk": "independant",
+    "perks": [],
+    "factions": [
+      "maghtaw"
+    ]
+  },
+  "_id": "GjRrQhnOK4dBvw5y",
+  "img": "icons/skills/trades/academics-scribe-quill-gray.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760737853778,
+    "modifiedTime": 1760795837666,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 300000,
+  "_key": "!items!GjRrQhnOK4dBvw5y"
+}
