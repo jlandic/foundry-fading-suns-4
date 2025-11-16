@@ -5,7 +5,14 @@
   "system": {
     "slug": "explorer",
     "description": "",
-    "equipment": [],
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "expeditionary_medallion"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "science",

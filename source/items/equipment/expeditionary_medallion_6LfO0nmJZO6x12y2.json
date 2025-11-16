@@ -1,0 +1,36 @@
+{
+  "type": "equipment",
+  "name": "expeditionary_medallion",
+  "folder": "JBHNPclQVljwbkRh",
+  "system": {
+    "slug": "expeditionary_medallion",
+    "description": "",
+    "curio": true,
+    "agora": "",
+    "quality": "standard",
+    "size": "none",
+    "cost": 0,
+    "tl": 5
+  },
+  "_id": "6LfO0nmJZO6x12y2",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!6LfO0nmJZO6x12y2"
+}
