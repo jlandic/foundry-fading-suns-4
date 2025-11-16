@@ -21,7 +21,8 @@
       "shieldFeature": "Particularité de bouclier",
       "armorFeature": "Particularité d'armure",
       "state": "État",
-      "power": "Pouvoir"
+      "power": "Pouvoir",
+      "techCompulsion": "Compulsion tech."
     },
     "Actor": {
       "pc": "PJ",

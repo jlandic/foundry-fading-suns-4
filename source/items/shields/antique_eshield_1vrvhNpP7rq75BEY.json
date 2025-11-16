@@ -1,0 +1,53 @@
+{
+  "folder": "Y7QO6Sc0ifTWFA09",
+  "name": "antique_eshield",
+  "type": "eshield",
+  "_id": "1vrvhNpP7rq75BEY",
+  "img": "icons/equipment/shield/heater-steel-segmented-purple.webp",
+  "system": {
+    "slug": "antique_eshield",
+    "description": "",
+    "curio": false,
+    "agora": "Rare",
+    "quality": "standard",
+    "size": "s",
+    "compatibility": "es",
+    "thresholds": {
+      "low": 6,
+      "high": 9
+    },
+    "features": [
+      "noisy_upon_activation"
+    ],
+    "hits": 8,
+    "burnout": 10,
+    "distortion": 2,
+    "state": {
+      "hits": 0,
+      "burnoutRounds": 0,
+      "isDistorted": false
+    },
+    "cost": 300,
+    "tl": 6,
+    "techCompulsion": "reckless"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763299214094,
+    "modifiedTime": 1763299214094,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!1vrvhNpP7rq75BEY"
+}

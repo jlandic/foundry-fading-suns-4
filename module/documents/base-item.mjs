@@ -26,7 +26,8 @@ export default class BaseItem extends WithModifiersMixin(
             case "species": icon = "icons/magic/control/silhouette-grow-shrink-tan.webp"; break;
             case "techCompulsion": icon = "icons/commodities/tech/tube-chamber-lightning.webp"; break;
             case "weapon": icon = "icons/weapons/swords/swords-short.webp"; break;
-            case "shield": icon = "icons/armor/shields/shield-round-brown-steel.webp"; break;
+            case "eshield": icon = "icons/equipment/shield/heater-steel-segmented-purple.webp"; break;
+            case "shield": icon = "icons/equipment/shield/round-wooden-reinforced-boss-steel.webp"; break;
             case "weaponFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
             case "armorFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
             case "shieldFeature": icon = "icons/commodities/tech/blueprint.webp"; break;
@@ -66,7 +67,7 @@ export default class BaseItem extends WithModifiersMixin(
     }
 
     async addFeature(slug, path = "system.features") {
-        const features = foundry.utils.getProperty(this.system, path) || [];
+        const features = foundry.utils.getProperty(this, path) || [];
         if (features.includes(slug)) return;
 
         features.push(slug);

@@ -21,7 +21,8 @@
       "shieldFeature": "Shield Feature",
       "armorFeature": "Armor Feature",
       "state": "State",
-      "power": "Power"
+      "power": "Power",
+      "techCompulsion": "Tech Compulsion"
     },
     "Actor": {
       "pc": "PC",

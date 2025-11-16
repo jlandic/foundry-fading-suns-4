@@ -1,0 +1,48 @@
+{
+  "type": "power",
+  "name": "laying_on_hands_remedy",
+  "folder": null,
+  "system": {
+    "slug": "laying_on_hands_remedy",
+    "description": "",
+    "cost": 1,
+    "additionalCost": "",
+    "path": "Ecumenical",
+    "characteristic": "will",
+    "skill": "remedy",
+    "discipline": "theurgy",
+    "components": [
+      "prayer"
+    ],
+    "level": 3,
+    "preconditions": [],
+    "elemental": false,
+    "resistance": "Hard (4)",
+    "impact": "",
+    "playScale": "instantaneous",
+    "actionType": [
+      "primary"
+    ]
+  },
+  "_id": "uAjSsienCD8dRNt7",
+  "img": "icons/magic/control/buff-flight-wings-runes-red-yellow.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!uAjSsienCD8dRNt7"
+}

@@ -2,6 +2,11 @@
     {{> "fading-suns-4.equipment-base"}}
 
     <div class="flexrow stats-row">
+        <div class="flexcol flex2">
+            <label for="system.capability">{{ localize "fs4.armor.fields.capability" }}</label>
+            {{> "fading-suns-4.reference" reference=capability isEditable=isEditable }}
+        </div>
+
         <div class="flexcol">
             <label for="system.res">{{ localize "fs4.shield.fields.res" }}</label>
             <input type="number" name="system.res" value="{{system.res}}">
@@ -16,6 +21,17 @@
             <label for="system.damage">{{ localize "fs4.shield.fields.damage" }}</label>
             <input type="number" name="system.damage" value="{{system.damage}}">
         </div>
+    </div>
+
+    <hr>
+
+    <div class="flexrow">
+        {{#each damageTypeOptions}}
+        <span class="damage-type {{#if this.checked}}active{{else}}inactive{{/if}}" data-type="{{this.type}}"
+            data-action="toggleDamageType" title="{{this.title}}">
+            {{this.label}}
+        </span>
+        {{/each}}
     </div>
 
     <hr>

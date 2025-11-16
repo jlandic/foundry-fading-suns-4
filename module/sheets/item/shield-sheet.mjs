@@ -13,12 +13,15 @@ export default class ShieldSheet extends EquipmentSheet {
         const context = await super._prepareContext(options);
 
         foundry.utils.mergeObject(context, {
+            capability: await this._prepareReferenceLink("system.capability", "capability"),
             isEshield: this.item.type === "eshield",
             compatibilityOptions: this._prepareSelectOptions(
                 Object.values(EShieldTypes),
                 this.item.system.compatibility,
                 "fs4.eshieldTypes"
             ),
+            damageTypeOptions: this._prepareDamageTypeOptions(this.item.system.anti || []),
+            features: await this._prepareInlineItemList("system.features", "shieldFeature"),
         });
 
         return context;
@@ -35,5 +38,21 @@ export default class ShieldSheet extends EquipmentSheet {
         } else {
             await super._onDrop(event);
         }
+    }
+
+    static async _toggleDamageType(event, target) {
+        event.preventDefault();
+
+        const type = target.dataset.type;
+        const anti = this.item.system.anti;
+        const index = anti.indexOf(type);
+
+        if (index === -1) {
+            anti.push(type);
+        } else {
+            anti.splice(index, 1);
+        }
+
+        await this.item.update({ "system.anti": anti });
     }
 }

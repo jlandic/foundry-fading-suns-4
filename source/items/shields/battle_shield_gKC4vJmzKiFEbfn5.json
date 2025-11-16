@@ -1,0 +1,47 @@
+{
+  "folder": "f3TN08wVVxGARQIi",
+  "name": "battle_shield",
+  "type": "shield",
+  "_id": "gKC4vJmzKiFEbfn5",
+  "img": "icons/equipment/shield/round-wooden-reinforced-boss-steel.webp",
+  "system": {
+    "slug": "battle_shield",
+    "description": "",
+    "curio": false,
+    "agora": "Rare",
+    "quality": "standard",
+    "size": "none",
+    "res": 4,
+    "damage": 0,
+    "strRequirement": 4,
+    "features": [
+      "unwieldy_shield"
+    ],
+    "anti": [
+      "slam",
+      "hard"
+    ],
+    "cost": 50,
+    "tl": 5,
+    "techCompulsion": "reckless",
+    "capability": "handheld_shield"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763298485484,
+    "modifiedTime": 1763299368019,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!gKC4vJmzKiFEbfn5"
+}

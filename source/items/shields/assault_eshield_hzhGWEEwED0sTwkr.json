@@ -1,0 +1,53 @@
+{
+  "folder": "Y7QO6Sc0ifTWFA09",
+  "name": "assault_eshield",
+  "type": "eshield",
+  "_id": "hzhGWEEwED0sTwkr",
+  "img": "icons/equipment/shield/heater-steel-segmented-purple.webp",
+  "system": {
+    "slug": "assault_eshield",
+    "description": "",
+    "curio": false,
+    "agora": "Exotic",
+    "quality": "standard",
+    "size": "m",
+    "compatibility": "ea",
+    "thresholds": {
+      "low": 5,
+      "high": 15
+    },
+    "features": [
+      "noisy_when_activated"
+    ],
+    "hits": 20,
+    "burnout": 15,
+    "distortion": 1,
+    "state": {
+      "hits": 0,
+      "burnoutRounds": 0,
+      "isDistorted": false
+    },
+    "tl": 7,
+    "cost": 3000,
+    "techCompulsion": "reckless"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763299214094,
+    "modifiedTime": 1763299214094,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!hzhGWEEwED0sTwkr"
+}

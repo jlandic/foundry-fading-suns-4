@@ -1,0 +1,44 @@
+{
+  "folder": "f3TN08wVVxGARQIi",
+  "name": "buckler",
+  "type": "shield",
+  "_id": "OknynKnflSLeYBlt",
+  "img": "icons/equipment/shield/round-wooden-reinforced-boss-steel.webp",
+  "system": {
+    "slug": "buckler",
+    "description": "",
+    "curio": false,
+    "agora": "Common",
+    "quality": "standard",
+    "size": "m",
+    "res": 2,
+    "damage": 3,
+    "strRequirement": 2,
+    "features": [],
+    "anti": [
+      "slam"
+    ],
+    "cost": 10,
+    "tl": 1,
+    "capability": "handheld_shield",
+    "techCompulsion": "reckless"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763298485484,
+    "modifiedTime": 1763299368019,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!OknynKnflSLeYBlt"
+}

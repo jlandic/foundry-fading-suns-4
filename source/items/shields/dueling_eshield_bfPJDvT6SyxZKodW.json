@@ -1,0 +1,54 @@
+{
+  "folder": "Y7QO6Sc0ifTWFA09",
+  "name": "dueling_eshield",
+  "type": "eshield",
+  "_id": "bfPJDvT6SyxZKodW",
+  "img": "icons/equipment/shield/heater-steel-segmented-purple.webp",
+  "system": {
+    "slug": "dueling_eshield",
+    "description": "",
+    "curio": false,
+    "agora": "Rare",
+    "quality": "standard",
+    "size": "xs",
+    "compatibility": "es",
+    "thresholds": {
+      "low": 5,
+      "high": 10
+    },
+    "features": [
+      "noisy_upon_activation",
+      "disguised_shield"
+    ],
+    "hits": 15,
+    "burnout": 13,
+    "distortion": 0,
+    "state": {
+      "hits": 0,
+      "burnoutRounds": 0,
+      "isDistorted": false
+    },
+    "cost": 1000,
+    "tl": 7,
+    "techCompulsion": "reckless"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763299214094,
+    "modifiedTime": 1763299214094,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!bfPJDvT6SyxZKodW"
+}

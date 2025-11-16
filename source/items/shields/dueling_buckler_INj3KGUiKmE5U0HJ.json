@@ -1,0 +1,47 @@
+{
+  "folder": "f3TN08wVVxGARQIi",
+  "name": "dueling_buckler",
+  "type": "shield",
+  "_id": "INj3KGUiKmE5U0HJ",
+  "img": "icons/equipment/shield/round-wooden-reinforced-boss-steel.webp",
+  "system": {
+    "slug": "dueling_buckler",
+    "description": "<p>+4 resistance vs missile attacks</p>",
+    "curio": false,
+    "agora": "Rare",
+    "quality": "standard",
+    "size": "m",
+    "res": 2,
+    "damage": 0,
+    "strRequirement": 1,
+    "features": [
+      "resistance_against_missile_4"
+    ],
+    "anti": [
+      "slam",
+      "hard"
+    ],
+    "cost": 25,
+    "tl": 5,
+    "techCompulsion": "reckless",
+    "capability": "handheld_shield"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763298485484,
+    "modifiedTime": 1763299368019,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!items!INj3KGUiKmE5U0HJ"
+}
