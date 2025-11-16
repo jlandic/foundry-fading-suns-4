@@ -173,6 +173,7 @@ export const ActionTypes = Object.freeze({
     Secondary: "secondary",
     ReflexiveSecondary: "reflexive_secondary",
     Movement: "movement",
+    BonusPrimaryAction: "bonus_primary_action",
 });
 
 export const ManeuverTypes = Object.freeze({
