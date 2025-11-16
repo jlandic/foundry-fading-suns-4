@@ -5,7 +5,14 @@
   "system": {
     "slug": "tech_redeemer",
     "description": "",
-    "equipment": [],
+    "equipment": [
+      [
+        {
+          "type": "equipment",
+          "slug": "tool_bandolier"
+        }
+      ]
+    ],
     "capabilities": [
       [
         "technology"
