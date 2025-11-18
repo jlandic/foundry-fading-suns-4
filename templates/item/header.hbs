@@ -1,9 +1,18 @@
 <header class="sheet-header">
     <aside class="img">
-        <img src="{{item.img}}" class="document-img item-img" {{#if isEditable}}data-edit="img" data-action="editImage"{{/if}} />
-        <a class="show-image" data-action="showImage" data-src="{{document.img}}" data-id="{{item.id}}" data-name="{{item.name}}">
-            <i class="fa-solid fa-image fa-fw"></i>
-        </a>
+        <img
+            src="{{item.img}}"
+            class="document-img item-img"
+            data-action="showImage"
+            data-src="{{document.img}}"
+            data-id="{{item.id}}"
+            data-name="{{item.name}}"
+        />
+        {{#if isEditable}}
+            <a class="show-image" data-edit="img" data-action="editImage">
+                <i class="fa-solid fa-image fa-fw"></i>
+            </a>
+        {{/if}}
     </aside>
 
     <div class="header-identity">

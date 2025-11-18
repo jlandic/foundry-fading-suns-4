@@ -1,11 +1,13 @@
 <header class="sheet-header">
     <aside class="img">
-        <img src="{{actor.img}}" class="document-img actor-img {{#if isExtra}}extra-img{{/if}}" {{#if
-            isEditable}}data-edit="img" data-action="editImage" {{/if}} />
-        <a class="show-image" data-action="showImage" data-src="{{actor.img}}" data-id="{{actor.id}}"
-            data-name="{{actor.name}}">
-            <i class="fa-solid fa-image fa-fw"></i>
-        </a>
+        <img src="{{actor.img}}" class="document-img actor-img {{#if isExtra}}extra-img{{/if}}"
+            data-action="showImage" data-src="{{actor.img}}" data-id="{{actor.id}}"
+            data-name="{{actor.name}}" />
+        {{#if isEditable }}
+            <a class="edit-image" data-edit="img" data-action="editImage">
+                <i class="fa-solid fa-image fa-fw"></i>
+            </a>
+        {{/if}}
     </aside>
 
     <div class="header-identity">
