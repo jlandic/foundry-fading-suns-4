@@ -14,12 +14,10 @@
     "components": [],
     "level": 2,
     "preconditions": [
-      [
-        {
-          "type": "power",
-          "slug": "lifting_hand"
-        }
-      ]
+      {
+        "type": "power",
+        "slug": "lifting_hand"
+      }
     ],
     "elemental": false,
     "resistance": "",

@@ -6,7 +6,7 @@
   "system": {
     "slug": "false_face",
     "description": "",
-    "cost": 0,
+    "cost": 1,
     "path": "Concealing",
     "characteristic": "presence",
     "skill": "knavery",
@@ -17,20 +17,7 @@
       "prayer": false
     },
     "level": 3,
-    "preconditions": [
-      [
-        {
-          "type": "special",
-          "slug": "major_sacrifice"
-        }
-      ],
-      [
-        {
-          "type": "power",
-          "slug": "innocuous"
-        }
-      ]
-    ],
+    "preconditions": [],
     "elemental": false,
     "resistance": "",
     "impact": "",

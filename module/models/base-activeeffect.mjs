@@ -49,6 +49,6 @@ export default class BaseActiveEffectDataModel extends foundry.abstract.TypeData
     get contextManeuverName() {
         if (!this.maneuverId) return null;
 
-        return globalThis.registry.fromSlug(this.maneuverSlug, "maneuver")?.name;
+        return globalThis.fs4.registry.fromSlug(this.maneuverSlug, "maneuver")?.name;
     }
 }

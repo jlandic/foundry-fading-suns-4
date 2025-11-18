@@ -122,6 +122,12 @@
       "selectCharacteristic": {
         "label": "Select characteristic"
       },
+      "openPerks": {
+        "title": "Open Perks"
+      },
+      "capabilities": {
+        "title": "All Capabilities"
+      },
       "common": {
         "buttons": {
           "ok": "OK",

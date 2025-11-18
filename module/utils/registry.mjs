@@ -30,7 +30,7 @@ export default class Registry {
             return this.collection[type][slug] ||
                 game.items.find(item => item.system.slug === slug)?.uuid;
         } else {
-            return Object.values(globalThis.registry.collection).find(reference => reference[slug])[slug] ||
+            return Object.values(globalThis.fs4.registry.collection).find(reference => reference[slug])[slug] ||
                 game.items.find(item => item.system.slug === slug)?.uuid;
         }
     }
@@ -48,5 +48,10 @@ export default class Registry {
         const fromCompendium = await Promise.all(uuids.map(uuid => fromUuid(uuid)));
         const fromWorld = game.items.filter(item => item.type === type && !this.collection[type][item.system.slug]);
         return fromCompendium.concat(fromWorld);
+    }
+
+    async getAllOpenPerks() {
+        const allPerks = await this.getAllOfType("perk");
+        return allPerks.filter(perk => perk.system.isOpen);
     }
 }

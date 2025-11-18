@@ -121,6 +121,12 @@
       "selectCharacteristic": {
         "label": "Sélectionner une caractéristique"
       },
+      "openPerks": {
+        "title": "Avantages ouverts"
+      },
+      "capabilities": {
+        "title": "Toutes les capacités"
+      },
       "common": {
         "buttons": {
           "ok": "OK",

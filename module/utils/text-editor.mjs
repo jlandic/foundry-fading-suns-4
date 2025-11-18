@@ -4,7 +4,7 @@ export const enrichHTML = async (html, options) => {
     let text = html.replace(
         /@SLUG\[([^:\s]+?):([^\]]+?)\]/g,
         (_capture, type, slug) => {
-            const uuid = globalThis.registry.uuidFromSlug(slug, type);
+            const uuid = globalThis.fs4.registry.uuidFromSlug(slug, type);
 
             if (uuid) return `@UUID[${uuid}]`;
 

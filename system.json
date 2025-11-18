@@ -200,6 +200,12 @@
       "label": "Rune Casting",
       "path": "packs/runecasting",
       "type": "Item"
+    },
+    {
+      "name": "macros",
+      "label": "Fading Suns 4 - Macros",
+      "path": "packs/macros",
+      "type": "Macro"
     }
   ],
   "documentTypes": {

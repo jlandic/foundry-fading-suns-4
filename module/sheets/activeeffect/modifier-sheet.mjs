@@ -94,7 +94,7 @@ export default class ModifierSheet extends BaseSheetMixin(
     }
 
     async _prepareManeuverOptions() {
-        const maneuvers = await globalThis.registry.getAllOfType("maneuver");
+        const maneuvers = await globalThis.fs4.registry.getAllOfType("maneuver");
         return maneuvers.map(maneuver => ({
             label: maneuver.name,
             value: maneuver.system.slug,

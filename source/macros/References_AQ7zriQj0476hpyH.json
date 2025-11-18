@@ -1,0 +1,23 @@
+{
+  "type": "Macro",
+  "folder": null,
+  "name": "References",
+  "color": null,
+  "sorting": "a",
+  "_id": "AQ7zriQj0476hpyH",
+  "description": "",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763497670610,
+    "modifiedTime": 1763497670626,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_key": "!folders!AQ7zriQj0476hpyH"
+}

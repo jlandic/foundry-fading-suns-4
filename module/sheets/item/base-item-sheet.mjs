@@ -182,7 +182,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
             }
 
             const html = await enrichHTML(`@SLUG[${type}:${slug}]`);
-            const item = globalThis.registry.fromSlug(slug, type);
+            const item = globalThis.fs4.registry.fromSlug(slug, type);
 
             return {
                 html,
@@ -196,7 +196,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
 
     async _prepareInlineItemList(path, type) {
         const list = await Promise.all(foundry.utils.getProperty(this.item, path).map(async (slug) => {
-            return await globalThis.registry.fromSlugAsync(slug, type);
+            return await globalThis.fs4.registry.fromSlugAsync(slug, type);
         }));
 
         return await Promise.all(list.map(async (item) => ({
@@ -309,7 +309,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
         event.preventDefault();
 
         const slug = target.dataset.id;
-        const item = await globalThis.registry.fromSlugAsync(slug, target.dataset.type);
+        const item = await globalThis.fs4.registry.fromSlugAsync(slug, target.dataset.type);
         item.sheet.render(true);
     }
 

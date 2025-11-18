@@ -29,7 +29,7 @@ export default class ClassSheet extends BaseItemSheet {
     }
 
     async _prepareCallings() {
-        const callings = await globalThis.registry.getAllOfType("calling");
+        const callings = await globalThis.fs4.registry.getAllOfType("calling");
         let openCallings = [];
         let classCallings = [];
 

@@ -17,14 +17,7 @@
       "prayer": false
     },
     "level": 1,
-    "preconditions": [
-      [
-        {
-          "type": "special",
-          "slug": "mild_sacrifice"
-        }
-      ]
-    ],
+    "preconditions": [],
     "elemental": false,
     "resistance": "",
     "impact": "",

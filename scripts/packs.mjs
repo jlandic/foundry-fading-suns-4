@@ -29,6 +29,7 @@ const PACKS = [
     "items/psiPowers",
     "items/theurgyPowers",
     "items/runecasting",
+    "macros",
 ];
 
 const TEMPLATE_PACK_MAPPING = {

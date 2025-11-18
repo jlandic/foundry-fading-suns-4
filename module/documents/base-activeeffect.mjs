@@ -48,7 +48,7 @@ export default class BaseActiveEffect extends foundry.documents.ActiveEffect {
     get maneuverName() {
         if (!this.system.maneuverSlug) return null;
 
-        const maneuver = globalThis.registry.fromSlug(this.system.maneuverSlug, "maneuver");
+        const maneuver = globalThis.fs4.registry.fromSlug(this.system.maneuverSlug, "maneuver");
         return maneuver ? maneuver.name : null;
     }
 

@@ -1,0 +1,28 @@
+{
+  "folder": "AQ7zriQj0476hpyH",
+  "name": "List of capabilities",
+  "type": "script",
+  "_id": "hYlAQQPOvxNbGweu",
+  "author": "ef54fWvGiyPGgegN",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "new globalThis.fs4.dialogs.CapabilitiesDialog().render(true);",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763497670617,
+    "modifiedTime": 1763497670617,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_key": "!macros!hYlAQQPOvxNbGweu"
+}

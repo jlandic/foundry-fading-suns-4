@@ -24,7 +24,7 @@ export const BaseSheetMixin = Base => class extends Base {
             return null;
         }
 
-        const item = await globalThis.registry.fromSlugAsync(slug, type);
+        const item = await globalThis.fs4.registry.fromSlugAsync(slug, type);
         if (!item) {
             return null;
         }

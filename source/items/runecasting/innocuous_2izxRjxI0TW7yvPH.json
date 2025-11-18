@@ -17,14 +17,7 @@
       "prayer": false
     },
     "level": 2,
-    "preconditions": [
-      [
-        {
-          "type": "power",
-          "slug": "camouflage"
-        }
-      ]
-    ],
+    "preconditions": [],
     "elemental": false,
     "resistance": "",
     "impact": "",

@@ -8,15 +8,7 @@
     "description": "",
     "type": "runes",
     "category": "condition",
-    "preconditions": [
-      [
-        {
-          "type": "powerSkill",
-          "slug": "runemastery",
-          "value": 3
-        }
-      ]
-    ]
+    "preconditions": []
   },
   "effects": [],
   "ownership": {

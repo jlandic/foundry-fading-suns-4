@@ -33,7 +33,7 @@ export default class BaseActor extends WithModifiersMixin(
                 sixLegs: this.system.schema.fields.speed.fields.sixLegs.initial,
             };
         } else if (newSpeciesSlug) {
-            const species = await globalThis.registry.fromSlugAsync(newSpeciesSlug, "species");
+            const species = await globalThis.fs4.registry.fromSlugAsync(newSpeciesSlug, "species");
 
             if (species) {
                 data["system.size"] = species.system.size;
@@ -271,7 +271,7 @@ export default class BaseActor extends WithModifiersMixin(
         if (this.system.maneuvers) return;
 
         return await this.items.createEmbeddedDocuments("Item", BASIC_MANEUVERS.map((slug) => {
-            const maneuver = globalThis.registry.fromSlug(slug, "maneuver");
+            const maneuver = globalThis.fs4.registry.fromSlug(slug, "maneuver");
             if (!maneuver) return;
 
             return maneuver.toObject();

@@ -12,6 +12,7 @@ import { initializeChatListeners } from './module/utils/chat-listeners.mjs';
 import { createStatusEffects } from './module/utils/statuses.mjs';
 import { combatTurnChange } from './module/system/combat.mjs';
 import { renderChatMessage } from './module/utils/chat-message.mjs';
+import * as dialogs from './module/apps/dialogs/_module.mjs';
 
 globalThis.babelProgress = null;
 
@@ -23,6 +24,10 @@ Hooks.once("init", async () => {
     globalThis.log = FS4Logger;
 
     globalThis.log.info("Initializing Fading Suns 4 system");
+
+    globalThis.fs4 = {
+        dialogs,
+    };
 
     CONFIG.Item.dataModels = {
         affliction: models.AfflictionDataModel,
@@ -129,11 +134,11 @@ Hooks.once("init", async () => {
 });
 
 Hooks.once("ready", async () => {
-    globalThis.registry = new Registry();
-    await globalThis.registry.initialize();
+    globalThis.fs4.registry = new Registry();
+    await globalThis.fs4.registry.initialize();
 
     if (game.user.isGM) {
-        globalThis.initScripts = initScripts;
+        globalThis.fs4.initScripts = initScripts;
     }
 
     if (globalThis.Babele) {
