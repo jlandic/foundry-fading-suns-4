@@ -26,6 +26,7 @@ export default defineConfig([
                 fromUuidSync: false,
                 renderTemplate: false,
                 Babele: false,
+                FilePicker: false,
                 ...globals.browser
             }
         }

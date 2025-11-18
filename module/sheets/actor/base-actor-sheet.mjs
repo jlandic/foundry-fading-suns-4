@@ -11,7 +11,7 @@ export default class BaseActorSheet extends BaseSheetMixin(
 ) {
     locked = true;
 
-    static DEFAULT_OPTIONS = {
+    static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
         position: { width: 650, height: "auto" },
         window: {
             icon: "fas fa-user-astronaut",
@@ -41,8 +41,9 @@ export default class BaseActorSheet extends BaseSheetMixin(
             toggleModifier: BaseActorSheet._toggleModifier,
             editModifier: BaseActorSheet._editModifier,
             removeModifier: BaseActorSheet._removeModifier,
+            editImage: BaseActorSheet._editImage,
         },
-    };
+    });
 
     static PARTS = {
         header: { template: "systems/fading-suns-4/templates/actor/header.hbs" },

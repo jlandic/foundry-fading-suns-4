@@ -172,4 +172,30 @@ export const BaseSheetMixin = Base => class extends Base {
 
         popout.render(true);
     }
+
+    static async _editImage(_event, target) {
+        const path = "img";
+        const current = foundry.utils.getProperty(this.document, path);
+        const defaultArtwork = this.document.constructor.getDefaultArtwork?.(this.document._source) ?? {};
+        const defaultImage = foundry.utils.getProperty(defaultArtwork, path) || "";
+
+        const filePicker = new FilePicker.implementation({
+            current,
+            type: "image",
+            redirectToRoot: defaultImage ? [defaultImage] : [],
+            callback: path => {
+                target.parentElement.querySelector("img").src = path;
+                if (this.options.form.submitOnChange) {
+                    const submit = new Event("submit", { cancelable: true });
+                    this.form.dispatchEvent(submit);
+                }
+            },
+            position: {
+                top: this.position.top + 40,
+                left: this.position.left + 10,
+            },
+        });
+
+        await filePicker.browse();
+    }
 };

@@ -36,7 +36,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
         foundry.applications.sheets.ItemSheetV2,
     )
 ) {
-    static DEFAULT_OPTIONS = {
+    static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
         position: { width: 600, height: "auto" },
         window: {
             icon: "fas fa-box-open",
@@ -57,8 +57,9 @@ export default class BaseItemSheet extends BaseSheetMixin(
             deleteItem: BaseItemSheet._deleteInlineItem,
             openReference: BaseItemSheet._openReference,
             clearReference: BaseItemSheet._clearReference,
+            editImage: BaseItemSheet._editImage,
         },
-    };
+    });
 
     static PARTS = {
         header: { template: "systems/fading-suns-4/templates/item/header.hbs" },
