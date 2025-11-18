@@ -48,6 +48,7 @@ export default class BaseItemSheet extends BaseSheetMixin(
             submitOnChange: true,
         },
         actions: {
+            showImage: BaseItemSheet._showImage,
             addModifier: BaseItemSheet._addModifier,
             toggleModifier: BaseItemSheet._toggleModifier,
             editModifier: BaseItemSheet._editModifier,

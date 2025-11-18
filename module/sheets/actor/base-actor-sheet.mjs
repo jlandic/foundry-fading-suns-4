@@ -489,27 +489,6 @@ export default class BaseActorSheet extends BaseSheetMixin(
         }
     }
 
-    static async _showImage(event, target) {
-        event.preventDefault();
-        const {
-            dataset: {
-                src,
-                id,
-                name,
-            },
-        } = target;
-
-        const popout = new foundry.applications.apps.ImagePopout({
-            src,
-            id,
-            window: {
-                title: name,
-            },
-        });
-
-        popout.render(true);
-    }
-
     static async _openReference(event, target) {
         event.preventDefault();
         const { uuid } = target.dataset;

@@ -60,6 +60,12 @@
                         <input class="score" type="number" name="system.occult.hubris" value="{{system.occult.hubris}}" min="0"
                             {{#unless isEditable}}disabled{{/unless}} />
                     </div>
+
+                    <div class="flexcol">
+                        <label for="system.occult.runecasting">{{ localize "fs4.actor.fields.runecasting" }}</label>
+                        <input class="score" type="number" name="system.occult.runecasting" value="{{system.occult.runecasting}}" min="0"
+                            {{#unless isEditable}}disabled{{/unless}} />
+                    </div>
                 </div>
             </section>
         </section> <!-- End skills -->

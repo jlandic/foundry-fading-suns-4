@@ -1,0 +1,93 @@
+{
+  "type": "weapon",
+  "name": "lank_derringer",
+  "folder": "derringer_autofeeds",
+  "system": {
+    "slug": "lank_derringer",
+    "description": "",
+    "curio": false,
+    "agora": "Rare ; Scravers",
+    "quality": "standard",
+    "size": "xs",
+    "features": [
+      "single_use",
+      "undetectable"
+    ],
+    "cost": 70,
+    "tl": 4,
+    "capability": "slug_guns",
+    "damage": 3,
+    "strRequirement": 1,
+    "melee": false,
+    "range": {
+      "short": 5,
+      "long": 10
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 5,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "0AYx89KvVYmjWdUf",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [
+    {
+      "disabled": false,
+      "img": null,
+      "type": "base",
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null
+      },
+      "name": "lank_derringer",
+      "_id": "w62QzUghTA011uTR",
+      "system": {
+        "valueType": "constant",
+        "targetType": "goal",
+        "austerity": false,
+        "context": "none",
+        "value": "-1",
+        "notes": ""
+      },
+      "sort": 0,
+      "_key": "!items.effects!0AYx89KvVYmjWdUf.w62QzUghTA011uTR"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!0AYx89KvVYmjWdUf"
+}

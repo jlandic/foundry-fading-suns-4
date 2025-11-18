@@ -181,7 +181,8 @@
     },
     "powerSkills": {
       "psi": "Psi",
-      "theurgy": "Theurgy"
+      "theurgy": "Theurgy",
+      "runecasting": "Runecasting"
     },
     "playScales": {
       "present_tense": "Present tense",
@@ -223,7 +224,8 @@
       },
       "types": {
         "equipment": "Equipment",
-        "lores": "Lores"
+        "lores": "Lores",
+        "runes": "Runes"
       },
       "categories": {
         "armor": "Armor",
@@ -240,7 +242,9 @@
         "medical": "Medical",
         "performing_arts": "Performing Arts",
         "science": "Science",
-        "technology": "Technology"
+        "technology": "Technology",
+        "form": "Form",
+        "condition": "Condition"
       },
       "special": {
         "special_any_lores_capability": "Any lores capability",
@@ -379,6 +383,7 @@
         "urge": "Urge",
         "theurgy": "Theurgy",
         "hubris": "Hubris",
+        "runecasting": "Rune casting",
         "vitality": "Vitality",
         "equipment": "Equipment",
         "weapons": "Weapons",

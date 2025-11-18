@@ -193,6 +193,12 @@
       "label": "Theurgy Powers",
       "path": "packs/theurgyPowers",
       "type": "Item"
+    },
+    {
+      "name": "runecasting",
+      "label": "Rune Casting",
+      "path": "packs/runecasting",
+      "type": "Item"
     }
   ],
   "documentTypes": {

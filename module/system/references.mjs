@@ -128,6 +128,7 @@ export const PerkSourceTypes = Object.freeze({
 export const CapabilityTypes = Object.freeze({
     Equipment: "equipment",
     Lores: "lores",
+    Runes: "runes",
 });
 
 export const CapabilityCategories = Object.freeze({
@@ -149,6 +150,10 @@ export const CapabilityCategories = Object.freeze({
     PerformingArts: "performing_arts",
     Science: "science",
     Technology: "technology",
+
+    // runes
+    Form: "form",
+    Condition: "condition",
 });
 
 export const PlayScales = Object.freeze({
@@ -324,6 +329,7 @@ export const ResistanceValues = Object.freeze({
 export const PowerDisciplines = Object.freeze({
     Psi: "psi",
     Theurgy: "theurgy",
+    Runecasting: "runecasting",
 });
 
 export const TheurgyComponents = Object.freeze({

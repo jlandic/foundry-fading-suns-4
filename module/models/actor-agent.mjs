@@ -37,6 +37,7 @@ export default class AgentDataModel extends BaseActorDataModel {
                 urge: new NumberField({ required: true, initial: 0 }),
                 theurgy: new NumberField({ required: true, initial: 0 }),
                 hubris: new NumberField({ required: true, initial: 0 }),
+                runecasting: new NumberField({ required: true, initial: 0 }),
             }),
             surges: new NumberField({ required: true, initial: 0 }),
         }, { recursive: false });

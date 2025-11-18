@@ -180,7 +180,8 @@
     },
     "powerSkills": {
       "psi": "Psi",
-      "theurgy": "Théurgie"
+      "theurgy": "Théurgie",
+      "runecasting": "Runes"
     },
     "playScales": {
       "present_tense": "Temps présent",
@@ -222,7 +223,8 @@
       },
       "types": {
         "equipment": "Équipement",
-        "lores": "Connaissance"
+        "lores": "Connaissance",
+        "runes": "Runes"
       },
       "categories": {
         "armor": "Armures",
@@ -239,7 +241,9 @@
         "medical": "Médical",
         "performing_arts": "Arts du spectacle",
         "science": "Science",
-        "technology": "Technologie"
+        "technology": "Technologie",
+        "form": "Forme",
+        "condition": "Condition"
       },
       "special": {
         "special_any_lores_capability": "N'importe quelle aptitude de connaissance",
@@ -375,6 +379,7 @@
         "urge": "Pulsion",
         "theurgy": "Théurgie",
         "hubris": "Hubris",
+        "runecasting": "Runes",
         "vitality": "Vitalité",
         "equipment": "Équipement",
         "weapons": "Armes",

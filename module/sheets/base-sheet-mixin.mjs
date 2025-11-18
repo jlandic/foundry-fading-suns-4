@@ -151,4 +151,25 @@ export const BaseSheetMixin = Base => class extends Base {
 
         await this.document.removeModifier(target.dataset.id, target.dataset.origin);
     }
+
+    static async _showImage(event, target) {
+        event.preventDefault();
+        const {
+            dataset: {
+                src,
+                id,
+                name,
+            },
+        } = target;
+
+        const popout = new foundry.applications.apps.ImagePopout({
+            src,
+            id,
+            window: {
+                title: name,
+            },
+        });
+
+        popout.render(true);
+    }
 };

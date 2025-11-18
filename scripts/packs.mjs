@@ -28,6 +28,7 @@ const PACKS = [
     "items/states",
     "items/psiPowers",
     "items/theurgyPowers",
+    "items/runecasting",
 ];
 
 const TEMPLATE_PACK_MAPPING = {
@@ -481,7 +482,18 @@ const BASE_EFFECT = {
 }
 
 const EFFECT_TEMPLATE_FNS = {
-    melee: (slug, id, index, effectID = randomID()) => ({
+    weapon: (slug, id, index = 0, system = {}, effectID = randomID()) => ({
+        ...BASE_EFFECT,
+        name: slug,
+        _id: effectID,
+        system: {
+            ...BASE_EFFECT_SYSTEM,
+            ...system,
+        },
+        sort: index,
+        _key: `!items.effects!${id}.${effectID}`
+    }),
+    melee: (slug, id, index = 0, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
@@ -492,7 +504,7 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
-    armor: (slug, id, index, effectID = randomID()) => ({
+    armor: (slug, id, index = 0, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
@@ -502,7 +514,7 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
-    equipment: (slug, id, index, effectID = randomID()) => ({
+    equipment: (slug, id, index = 0, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
@@ -512,7 +524,7 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
-    state: (slug, id, index, effectID = randomID()) => ({
+    state: (slug, id, index = 0, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
@@ -522,7 +534,7 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
-    psiPower: (slug, id, index, effectID = randomID()) => ({
+    psiPower: (slug, id, index = 0, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
@@ -532,7 +544,7 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
-    perk: (slug, id, index, effectID = randomID()) => ({
+    perk: (slug, id, index = 0, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
@@ -596,7 +608,7 @@ const TRANSLATION_ENTRY_TEMPLATE = {
     }
 };
 
-const createSourceItem = async (template, slug, effects = 0) => {
+const createSourceItem = async (template, slug, effects = 0, options = { id: null, system: null, i18n: null, folder: null, effects: null }) => {
     const pack = TEMPLATE_PACK_MAPPING[template];
     const type = TEMPLATE_TYPE_MAPPING[template] || template;
     if (!type) {
@@ -605,20 +617,21 @@ const createSourceItem = async (template, slug, effects = 0) => {
     }
     console.log(`Creating new source item of type: ${type} with slug: ${slug}...`);
     const collectionPath = path.join(SOURCE_DIR, "items", pack);
-    const id = randomID();
+    const id = options.id || randomID();
 
     const newItem = {
         type,
         name: slug,
-        folder: null,
+        folder: options.folder || null,
         system: {
             slug,
             description: "",
             ...DEFAULT_SYSTEM[template],
+            ...options.system,
         },
         _id: id,
         img: IMG_MAPPING[type] || "icons/svg/item-bag.svg",
-        effects: Array.from({ length: effects }, (_, i) =>
+        effects: options.effects || Array.from({ length: effects }, (_, i) =>
             EFFECT_TEMPLATE_FNS[template](slug, id, i)
         ),
         flags: {},
@@ -645,7 +658,7 @@ const createSourceItem = async (template, slug, effects = 0) => {
     const translations = await fs.readFile(translationFile, "utf-8")
         .then(data => JSON.parse(data))
 
-    translations.entries[slug] = TRANSLATION_ENTRY_TEMPLATE[type];
+    translations.entries[slug] = options.i18n || TRANSLATION_ENTRY_TEMPLATE[type];
 
     if (effects > 0) {
         translations.entries[slug].effects = {};
@@ -726,6 +739,84 @@ const addModifier = async (template, slug) => {
     console.log(`Added modifier effect to item: ${slug}`);
 }
 
+const importWeaponCsv = async () => {
+    const csvPath = path.join(REF_DIR, "weapons.csv");
+    const data = await fs.readFile(csvPath, "utf-8");
+    const lines = data.split("\n").filter(line => line.trim().length > 0);
+    lines.forEach(async line => {
+        const id = randomID();
+        const [
+            folderId,
+            slug,
+            name,
+            tl,
+            goalModifier,
+            damage,
+            strRequirement,
+            range,
+            rof,
+            ammo,
+            size,
+            agora,
+            agoraFr,
+            cost,
+            featureList,
+        ] = line.split(",").map(part => part.trim());
+
+        const features = featureList.split(";").map(f => f.trim()).filter(f => f.length > 0);
+        const translation = {
+            name,
+            description: "",
+            agora: agoraFr,
+        };
+        const [shortRange, longRange] = range.split("/").map(r => r.trim());
+        const system = {
+            slug,
+            tl: parseInt(tl, 10),
+            damage: parseInt(damage, 10),
+            strRequirement: parseInt(strRequirement, 10),
+            range: {
+                short: parseInt(shortRange, 10),
+                long: parseInt(longRange, 10),
+            },
+            rof: parseInt(rof, 10),
+            ammo: parseInt(ammo, 10),
+            currentAmmo: 0,
+            size,
+            agora,
+            cost: parseInt(cost, 10),
+            features,
+        }
+
+        let effects = [];
+        if (goalModifier !== "") {
+            effects.push({
+                ...EFFECT_TEMPLATE_FNS["weapon"](slug, id, 0, { value: goalModifier }),
+            });
+
+            translation.effects = {};
+            translation.effects[effects[0]._id] = {
+                name,
+                notes: "",
+            };
+        }
+
+        await createSourceItem(
+            "weapon",
+            slug,
+            0,
+            {
+                system,
+                i18n: translation,
+                folder: folderId,
+                id,
+                effects,
+            }
+        );
+    });
+};
+
+
 const cmd = new Command();
 
 cmd.name("packs")
@@ -765,5 +856,10 @@ cmd
     .command("add-mod <pack> <slug>")
     .description("Add a modifier effect to the specified item in the given pack")
     .action(addModifier);
+
+cmd
+    .command("import-weapons-csv")
+    .description("Import weapons from weapons.csv")
+    .action(importWeaponCsv);
 
 cmd.parseAsync();
