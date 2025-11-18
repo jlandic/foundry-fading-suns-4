@@ -182,7 +182,7 @@
     "powerSkills": {
       "psi": "Psi",
       "theurgy": "Theurgy",
-      "runecasting": "Runecasting"
+      "runemastery": "Runemastery"
     },
     "playScales": {
       "present_tense": "Present tense",
@@ -204,6 +204,13 @@
       "secondary": "Secondary",
       "reflexive_secondary": "Reflexive Secondary",
       "movement": "Movement"
+    },
+    "preconditions": {
+      "special": {
+        "mild_sacrifice": "a mild sacrifice",
+        "major_sacrifice": "a major sacrifice",
+        "severe_sacrifice": "a severe sacrifice"
+      }
     },
     "calling": {
       "fields": {
@@ -383,7 +390,7 @@
         "urge": "Urge",
         "theurgy": "Theurgy",
         "hubris": "Hubris",
-        "runecasting": "Rune casting",
+        "runemastery": "Runemastery",
         "vitality": "Vitality",
         "equipment": "Equipment",
         "weapons": "Weapons",
@@ -607,7 +614,8 @@
       },
       "disciplines": {
         "psi": "Psi",
-        "theurgy": "Theurgy"
+        "theurgy": "Theurgy",
+        "runecasting": "Runecasting"
       },
       "components": {
         "liturgy": "Liturgy",

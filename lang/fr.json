@@ -204,6 +204,13 @@
       "reflexive_secondary": "Secondaire réflexe",
       "movement": "Mouvement"
     },
+    "preconditions": {
+      "special": {
+        "mild_sacrifice": "a mild sacrifice",
+        "major_sacrifice": "a major sacrifice",
+        "severe_sacrifice": "a severe sacrifice"
+      }
+    },
     "calling": {
       "fields": {
         "characteristics": "Caractéristiques",
@@ -379,7 +386,7 @@
         "urge": "Pulsion",
         "theurgy": "Théurgie",
         "hubris": "Hubris",
-        "runecasting": "Runes",
+        "runemastery": "Runes",
         "vitality": "Vitalité",
         "equipment": "Équipement",
         "weapons": "Armes",
@@ -584,7 +591,8 @@
       },
       "disciplines": {
         "psi": "Psi",
-        "theurgy": "Théurgie"
+        "theurgy": "Théurgie",
+        "runecasting": "Runes"
       },
       "components": {
         "liturgy": "Liturgie",

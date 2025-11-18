@@ -1,0 +1,22 @@
+{
+  "type": "Item",
+  "folder": "UbA6L9ajFMtgzIF5",
+  "name": "Unmaking",
+  "color": null,
+  "sorting": "m",
+  "_id": "oP4x1gaqe8icfLeD",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": "ef54fWvGiyPGgegN",
+    "modifiedTime": 1763486812836
+  },
+  "_key": "!folders!oP4x1gaqe8icfLeD"
+}

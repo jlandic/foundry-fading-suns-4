@@ -1,0 +1,41 @@
+{
+  "folder": "NjY4TAzsUWNOzO6Y",
+  "name": "rune_time",
+  "type": "capability",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
+  "system": {
+    "slug": "rune_time",
+    "description": "",
+    "type": "runes",
+    "category": "condition",
+    "preconditions": [
+      [
+        {
+          "type": "powerSkill",
+          "slug": "runemastery",
+          "value": 3
+        }
+      ]
+    ]
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763486838244,
+    "modifiedTime": 1763486838258,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_id": "XQ4T694TrlOB9G2O",
+  "sort": 200000,
+  "_key": "!items!XQ4T694TrlOB9G2O"
+}

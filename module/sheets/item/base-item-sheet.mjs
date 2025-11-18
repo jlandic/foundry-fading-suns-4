@@ -233,6 +233,9 @@ export default class BaseItemSheet extends BaseSheetMixin(
                 } else if (condition.type === PreconditionTypes.Skill) {
                     const skillName = game.i18n.localize(`fs4.skills.${condition.slug}`);
                     return `${skillName} ${condition.value}+`;
+                } else if (condition.type === PreconditionTypes.PowerSkill) {
+                    const powerSkillName = game.i18n.localize(`fs4.powerSkills.${condition.slug}`);
+                    return `${powerSkillName} ${condition.value}+`;
                 } else {
                     return await enrichHTML(`@SLUG[${condition.type}:${condition.slug}]`)
                 }

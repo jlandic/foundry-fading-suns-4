@@ -6,7 +6,6 @@ export default class BaseItem extends WithModifiersMixin(
 ) {
     async update(data, options = {}) {
         console.log(data);
-        console.log(options);
         return super.update(data, options);
     }
 

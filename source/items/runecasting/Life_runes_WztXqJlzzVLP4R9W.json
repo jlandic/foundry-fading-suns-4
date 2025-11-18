@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "Ss5z9XXdJkl7xNpB",
+  "name": "Life runes",
+  "color": null,
+  "sorting": "a",
+  "_id": "WztXqJlzzVLP4R9W",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!WztXqJlzzVLP4R9W"
+}

@@ -1,0 +1,40 @@
+{
+  "type": "capability",
+  "name": "runelore",
+  "folder": null,
+  "system": {
+    "slug": "runelore",
+    "description": "",
+    "type": "lores",
+    "category": "knowledge",
+    "preconditions": [
+      [
+        {
+          "type": "class",
+          "slug": "vuldrok"
+        }
+      ]
+    ]
+  },
+  "_id": "Fc2i61TRL2LczDly",
+  "img": "icons/sundries/scrolls/scroll-bound-blue-red.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1761066203458,
+    "modifiedTime": 1761066203458,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Fc2i61TRL2LczDly"
+}

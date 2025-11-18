@@ -7,9 +7,10 @@
             data-src="{{document.img}}"
             data-id="{{item.id}}"
             data-name="{{item.name}}"
+            data-edit="img"
         />
         {{#if isEditable}}
-            <a class="show-image" data-edit="img" data-action="editImage">
+            <a class="edit-image" data-action="editImage">
                 <i class="fa-solid fa-image fa-fw"></i>
             </a>
         {{/if}}

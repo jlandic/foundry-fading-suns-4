@@ -1,0 +1,22 @@
+{
+  "type": "Item",
+  "folder": "UbA6L9ajFMtgzIF5",
+  "name": "Concealing",
+  "color": null,
+  "sorting": "m",
+  "_id": "U9vy0CeDMQsHJWjm",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": "ef54fWvGiyPGgegN",
+    "modifiedTime": 1763486792102
+  },
+  "_key": "!folders!U9vy0CeDMQsHJWjm"
+}

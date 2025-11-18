@@ -158,12 +158,8 @@
     "preconditions": [
       [
         {
-          "type": "faction",
-          "slug": "vuldrok_barbarians"
-        },
-        {
-          "type": "faction",
-          "slug": "maghtaw"
+          "type": "class",
+          "slug": "vuldrok"
         }
       ]
     ]

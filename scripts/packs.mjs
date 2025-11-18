@@ -816,6 +816,35 @@ const importWeaponCsv = async () => {
     });
 };
 
+const findMissingTranslations = async () => {
+    for (const pack of PACKS) {
+        const packName = pack.split("/").pop();
+        const translationFile = path.join(BABELE_COMPENDIUM_FOLDER, `fading-suns-4.${packName}.json`);
+        const translations = await fs.readFile(translationFile, "utf-8")
+            .then(data => JSON.parse(data));
+
+        const collectionPath = path.join(SOURCE_DIR, pack);
+        const items = await fs.readdir(collectionPath)
+            .then(files => Promise.all(
+                files.filter(file => file.endsWith(".json"))
+                    .map(file => fs.readFile(path.join(collectionPath, file), "utf-8")
+                        .then(data => JSON.parse(data))
+                        .catch(err => {
+                            console.error(`Error reading file: ${file} in pack: ${packName}`, err);
+                            return null;
+                        })
+                    )
+            ));
+
+        for (const item of items) {
+            if (!item.system?.slug) continue;
+
+            if (!translations.entries[item.system.slug]) {
+                console.log(`Missing translation for item: ${item.system.slug} in pack: ${packName}`);
+            }
+        }
+    }
+}
 
 const cmd = new Command();
 
@@ -861,5 +890,10 @@ cmd
     .command("import-weapons-csv")
     .description("Import weapons from weapons.csv")
     .action(importWeaponCsv);
+
+cmd
+    .command("find-missing-translations")
+    .description("Find missing translations in all packs")
+    .action(findMissingTranslations);
 
 cmd.parseAsync();
