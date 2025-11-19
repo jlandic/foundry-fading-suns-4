@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "71RA8HXPKYwFSI6o",
+  "name": "Light revolvers",
+  "color": null,
+  "sorting": "a",
+  "_id": "vTsH172p9nl20yOm",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!vTsH172p9nl20yOm"
+}

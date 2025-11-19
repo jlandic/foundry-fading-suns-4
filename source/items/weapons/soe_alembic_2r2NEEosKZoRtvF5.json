@@ -26,7 +26,7 @@
       "blaster"
     ],
     "features": [],
-    "cost": 700,
+    "fb": 700,
     "tl": 7,
     "techCompulsion": "destructive",
     "capability": "energy_guns",

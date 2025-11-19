@@ -27,7 +27,7 @@
     "features": [],
     "tl": 6,
     "techCompulsion": "inerrant",
-    "cost": 500,
+    "fb": 500,
     "capability": "energy_guns",
     "blastForce": null
   },

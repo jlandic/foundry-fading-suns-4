@@ -24,7 +24,7 @@
     "currentAmmo": 0,
     "damageTypes": [],
     "features": [],
-    "cost": 4,
+    "fb": 4,
     "tl": 1,
     "blastForce": null
   },

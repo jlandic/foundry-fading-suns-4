@@ -10,7 +10,7 @@
     "damage": 5,
     "strRequirement": 2,
     "size": "m",
-    "cost": 30,
+    "fb": 30,
     "features": [
       "guard",
       "military",

@@ -405,7 +405,7 @@
         "shield": "Shield",
         "eshield": "E-shield",
         "techGnosis": "Tech Gnosis",
-        "cash": "Cash",
+        "fb": "Cash",
         "savings": "Savings",
         "shields": "Shields",
         "eshields": "E-shields",
@@ -422,7 +422,8 @@
       "fields": {
         "tl": "TL",
         "quality": "Quality",
-        "cost": "Cost",
+        "quantity": "Quantity",
+        "fb": "Cost",
         "adjustedCost": "Adjusted Cost",
         "goalModifier": "Goal Modifier",
         "agora": "Agora",

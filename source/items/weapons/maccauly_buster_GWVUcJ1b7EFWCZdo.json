@@ -1,0 +1,54 @@
+{
+  "type": "weapon",
+  "name": "maccauly_buster",
+  "folder": "ude9bfYr7yUb3GGK",
+  "system": {
+    "slug": "maccauly_buster",
+    "description": "",
+    "curio": false,
+    "agora": "Rare ; Tethys",
+    "quality": "standard",
+    "size": "m",
+    "features": [
+      "sturdy"
+    ],
+    "fb": 300,
+    "tl": 3,
+    "capability": "slug_guns",
+    "damage": 6,
+    "strRequirement": 5,
+    "melee": false,
+    "range": {
+      "short": 40,
+      "long": 60
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 7,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "GWVUcJ1b7EFWCZdo",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!GWVUcJ1b7EFWCZdo"
+}

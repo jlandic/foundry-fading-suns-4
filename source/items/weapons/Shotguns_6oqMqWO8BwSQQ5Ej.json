@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "71RA8HXPKYwFSI6o",
+  "name": "Shotguns",
+  "color": null,
+  "sorting": "a",
+  "_id": "6oqMqWO8BwSQQ5Ej",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!6oqMqWO8BwSQQ5Ej"
+}

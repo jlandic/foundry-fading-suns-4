@@ -10,7 +10,7 @@
     "damage": 2,
     "strRequirement": 1,
     "size": "xs",
-    "cost": 20,
+    "fb": 20,
     "features": [
       "military"
     ],

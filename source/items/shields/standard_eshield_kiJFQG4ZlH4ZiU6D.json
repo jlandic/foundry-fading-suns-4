@@ -27,7 +27,7 @@
       "burnoutRounds": 0,
       "isDistorted": false
     },
-    "cost": 500,
+    "fb": 500,
     "tl": 7,
     "techCompulsion": "reckless"
   },

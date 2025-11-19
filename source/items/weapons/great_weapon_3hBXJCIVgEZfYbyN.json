@@ -9,7 +9,7 @@
     "damage": 8,
     "strRequirement": 6,
     "size": "xl",
-    "cost": 40,
+    "fb": 40,
     "features": [
       "2_handed",
       "military"

@@ -1,0 +1,52 @@
+{
+  "type": "weapon",
+  "name": "tenson_blitzer",
+  "folder": "W9VJpCswIcVhCpE1",
+  "system": {
+    "slug": "tenson_blitzer",
+    "description": "",
+    "curio": false,
+    "agora": "Leagueheim",
+    "quality": "standard",
+    "size": "m",
+    "features": [],
+    "fb": 280,
+    "tl": 4,
+    "capability": "slug_guns",
+    "damage": 6,
+    "strRequirement": 4,
+    "melee": false,
+    "range": {
+      "short": 25,
+      "long": 35
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 8,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "MKjLgR6dATcRDu07",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!MKjLgR6dATcRDu07"
+}

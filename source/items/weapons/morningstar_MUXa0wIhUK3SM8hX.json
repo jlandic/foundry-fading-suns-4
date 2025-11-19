@@ -9,7 +9,7 @@
     "damage": 5,
     "strRequirement": 4,
     "size": "l",
-    "cost": 20,
+    "fb": 20,
     "features": [
       "ignores_handshield",
       "military"

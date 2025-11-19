@@ -1,7 +1,7 @@
 {
   "type": "weapon",
   "name": "typical_light_auto",
-  "folder": "cz4RX8A0ArX0avqx",
+  "folder": "5flCj1ditxXwFcuq",
   "system": {
     "slug": "typical_light_auto",
     "description": "",
@@ -10,7 +10,7 @@
     "quality": "standard",
     "size": "s",
     "features": [],
-    "cost": 150,
+    "fb": 150,
     "tl": 4,
     "capability": "slug_guns",
     "damage": 4,
@@ -40,13 +40,13 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1760897547556,
-    "modifiedTime": 1760897547556,
+    "modifiedTime": 1763567845529,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
     "default": 0,
     "ef54fWvGiyPGgegN": 3
   },
-  "sort": 0,
+  "sort": 200000,
   "_key": "!items!Qpxr9ugFXg9KqXPF"
 }

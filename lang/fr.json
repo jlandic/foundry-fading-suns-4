@@ -401,7 +401,7 @@
         "shield": "Bouclier",
         "eshield": "E-bouclier",
         "techGnosis": "Tech Gnosis",
-        "cash": "Cash",
+        "fb": "Cash",
         "savings": "Économies",
         "shields": "Boucliers",
         "eshields": "E-boucliers",
@@ -418,7 +418,8 @@
       "fields": {
         "tl": "NT",
         "quality": "Qualité",
-        "cost": "Coût",
+        "quantity": "Quantité",
+        "fb": "Coût",
         "adjustedCost": "Coût ajusté",
         "goalModifier": "Mod.",
         "agora": "Agora",

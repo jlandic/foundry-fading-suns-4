@@ -10,7 +10,7 @@
     "damage": 0,
     "strRequirement": 0,
     "size": "l",
-    "cost": 150,
+    "fb": 150,
     "features": [
       "mangle",
       "military",

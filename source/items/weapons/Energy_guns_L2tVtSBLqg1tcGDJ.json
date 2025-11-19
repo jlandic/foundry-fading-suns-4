@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Energy guns",
+  "color": null,
+  "sorting": "a",
+  "_id": "L2tVtSBLqg1tcGDJ",
+  "description": "",
+  "sort": 400000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763563133793,
+    "modifiedTime": 1763563142062,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_key": "!folders!L2tVtSBLqg1tcGDJ"
+}

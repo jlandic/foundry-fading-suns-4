@@ -18,7 +18,7 @@
     "anti": [
       "slam"
     ],
-    "cost": 10,
+    "fb": 10,
     "tl": 1,
     "capability": "handheld_shield",
     "techCompulsion": "reckless"

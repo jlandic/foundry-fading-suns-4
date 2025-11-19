@@ -9,7 +9,7 @@
     "damage": 8,
     "strRequirement": 5,
     "size": "xl",
-    "cost": 20,
+    "fb": 20,
     "features": [
       "military",
       "mounted_charge"

@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "L2tVtSBLqg1tcGDJ",
+  "name": "Screechers",
+  "color": null,
+  "sorting": "a",
+  "_id": "k3QBkHcfHfjGZasd",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!k3QBkHcfHfjGZasd"
+}

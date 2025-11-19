@@ -28,7 +28,7 @@
     "features": [
       "disguised_weapon"
     ],
-    "cost": 600,
+    "fb": 600,
     "tl": 6,
     "techCompulsion": "inerrant",
     "capability": "energy_guns",

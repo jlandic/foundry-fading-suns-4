@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "71RA8HXPKYwFSI6o",
+  "name": "Derringer breakfeeds",
+  "color": null,
+  "sorting": "a",
+  "_id": "EiI2FxWVrEMWR3Kg",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!EiI2FxWVrEMWR3Kg"
+}

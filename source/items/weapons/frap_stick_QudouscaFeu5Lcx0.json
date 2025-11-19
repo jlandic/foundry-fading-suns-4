@@ -9,7 +9,7 @@
     "damage": 6,
     "strRequirement": 2,
     "size": "l",
-    "cost": 15,
+    "fb": 15,
     "features": [],
     "capability": null,
     "agora": "",

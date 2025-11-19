@@ -1,7 +1,7 @@
 {
   "type": "weapon",
   "name": "typical_derringer_rev",
-  "folder": "derringer_revolvers",
+  "folder": "7582y9iiiMgH9yIJ",
   "system": {
     "slug": "typical_derringer_rev",
     "description": "",
@@ -10,7 +10,7 @@
     "quality": "standard",
     "size": "xs",
     "features": [],
-    "cost": 50,
+    "fb": 50,
     "tl": 3,
     "capability": "slug_guns",
     "damage": 3,
@@ -78,13 +78,13 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1760897547556,
-    "modifiedTime": 1760897547556,
+    "modifiedTime": 1763565142780,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
     "default": 0,
     "ef54fWvGiyPGgegN": 3
   },
-  "sort": 0,
+  "sort": 100000,
   "_key": "!items!P6CPRf4dxiWpty7D"
 }

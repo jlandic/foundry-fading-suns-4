@@ -1,12 +1,12 @@
 {
   "type": "Item",
-  "folder": null,
+  "folder": "L2tVtSBLqg1tcGDJ",
   "name": "Lasers",
   "color": null,
   "sorting": "a",
   "_id": "xZXG33mZYOMfaxfq",
   "description": "",
-  "sort": 0,
+  "sort": 100000,
   "flags": {},
   "_stats": {
     "compendiumSource": null,
@@ -16,7 +16,7 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762443594478,
-    "modifiedTime": 1762443594478,
+    "modifiedTime": 1763563145474,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "_key": "!folders!xZXG33mZYOMfaxfq"

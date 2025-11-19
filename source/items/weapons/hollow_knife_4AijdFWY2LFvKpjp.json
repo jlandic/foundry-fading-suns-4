@@ -9,7 +9,7 @@
     "damage": 3,
     "strRequirement": 1,
     "size": "m",
-    "cost": 50,
+    "fb": 50,
     "features": [
       "poison"
     ],

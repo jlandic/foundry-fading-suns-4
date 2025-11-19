@@ -25,7 +25,7 @@
       "laser"
     ],
     "features": [],
-    "cost": 200,
+    "fb": 200,
     "tl": 6,
     "techCompulsion": "inerrant",
     "capability": "energy_guns",

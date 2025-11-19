@@ -313,7 +313,7 @@ const DEFAULT_SYSTEM = {
         techCompulsion: null,
         res: 0,
         eshieldCompatibility: "es",
-        cost: 0,
+        fb: 0,
         anti: [],
         features: [],
         curio: false,
@@ -328,7 +328,7 @@ const DEFAULT_SYSTEM = {
         quality: "standard",
         size: "none",
         features: [],
-        cost: 0,
+        fb: 0,
         tl: 4,
         capability: "slug_guns",
         damage: 0,
@@ -351,7 +351,7 @@ const DEFAULT_SYSTEM = {
         damage: 0,
         strRequirement: 0,
         size: "none",
-        cost: 0,
+        fb: 0,
         features: [],
         capability: null,
         agora: "",
@@ -370,7 +370,7 @@ const DEFAULT_SYSTEM = {
         agora: "",
         quality: "standard",
         size: "none",
-        cost: 0,
+        fb: 0,
         tl: 5,
         techCompulsion: undefined,
     },
@@ -505,12 +505,13 @@ const EFFECT_TEMPLATE_FNS = {
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
     }),
-    armor: (slug, id, index = 0, effectID = randomID()) => ({
+    armor: (slug, id, index = 0, system = {}, effectID = randomID()) => ({
         ...BASE_EFFECT,
         name: slug,
         _id: effectID,
         system: {
             ...BASE_ARMOR_EFFECT_SYSTEM,
+            ...system,
         },
         sort: index,
         _key: `!items.effects!${id}.${effectID}`
@@ -740,17 +741,118 @@ const addModifier = async (template, slug) => {
     console.log(`Added modifier effect to item: ${slug}`);
 }
 
-const importWeaponCsv = async () => {
-    const csvPath = path.join(REF_DIR, "weapons.csv");
+const importArmorCsv = async () => {
+    const csvPath = path.join(REF_DIR, "armors.csv");
     const data = await fs.readFile(csvPath, "utf-8");
     const lines = data.split("\n").filter(line => line.trim().length > 0);
-    lines.forEach(async line => {
+
+    const existingFiles = await fs.readdir(path.join(SOURCE_DIR, "items", "armors"));
+    const existingSlugs = existingFiles.map(file => file.split("_").slice(0, -1).join("_"));
+
+    for (const line of lines) {
         const id = randomID();
         const [
             folderId,
             slug,
             name,
+            techLevel,
+            res,
+            eshieldCompatibility,
+            dexModifier,
+            vigorModifier,
+            agora,
+            agoraFr,
+            fb,
+            antiList,
+            featureList,
+        ] = line.split(",").map(part => part.trim());
+
+        if (existingSlugs.includes(slug)) {
+            console.log(`Armor with slug: ${slug} already exists. Skipping...`);
+            continue;
+        }
+
+        const features = featureList.split(";").map(f => f.trim()).filter(f => f.length > 0);
+        const anti = antiList.split(";").map(f => f.trim()).filter(f => f.length > 0);
+        const translation = {
+            name,
+            description: "",
+            agora: agoraFr,
+        };
+        const tl = parseInt(techLevel, 10);
+        const system = {
+            slug,
             tl,
+            res: parseInt(res, 10),
+            eshieldCompatibility,
+            agora,
+            fb: parseInt(fb, 10),
+            anti,
+            features,
+        }
+
+        if (tl > 4) {
+            system.techCompulsion = "destructive";
+        }
+
+        let effects = [];
+        if (vigorModifier !== "") {
+            effects.push({
+                ...EFFECT_TEMPLATE_FNS["armor"](slug, id, 0, { targetType: "skill", target: "vigor", value: vigorModifier }),
+            });
+
+            if (translation.effects === undefined) {
+                translation.effects = {};
+            }
+            translation.effects[effects[0]._id] = {
+                name,
+                notes: "",
+            };
+        }
+        if (dexModifier !== "") {
+            effects.push({
+                ...EFFECT_TEMPLATE_FNS["armor"](slug, id, 0, { targetType: "characteristic", target: "dexterity", value: dexModifier }),
+            });
+
+            if (translation.effects === undefined) {
+                translation.effects = {};
+            }
+            translation.effects[effects[0]._id] = {
+                name,
+                notes: "",
+            };
+        }
+
+        await createSourceItem(
+            "armor",
+            slug,
+            0,
+            {
+                system,
+                i18n: translation,
+                folder: folderId,
+                id,
+                effects,
+            }
+        );
+    }
+};
+
+const importWeaponCsv = async () => {
+    const csvPath = path.join(REF_DIR, "weapons.csv");
+    const data = await fs.readFile(csvPath, "utf-8");
+    const lines = data.split("\n").filter(line => line.trim().length > 0);
+
+    const existingFiles = await fs.readdir(path.join(SOURCE_DIR, "items", "weapons"));
+    const existingSlugs = existingFiles.map(file => file.split("_").slice(0, -1).join("_"));
+
+    for (const line of lines) {
+        const id = randomID();
+        const [
+            folderId,
+            slug,
+            name,
+            techLevel,
             goalModifier,
             damage,
             strRequirement,
@@ -760,9 +862,14 @@ const importWeaponCsv = async () => {
             size,
             agora,
             agoraFr,
-            cost,
+            fb,
             featureList,
         ] = line.split(",").map(part => part.trim());
+
+        if (existingSlugs.includes(slug)) {
+            console.log(`Weapon with slug: ${slug} already exists. Skipping...`);
+            continue;
+        }
 
         const features = featureList.split(";").map(f => f.trim()).filter(f => f.length > 0);
         const translation = {
@@ -770,10 +877,11 @@ const importWeaponCsv = async () => {
             description: "",
             agora: agoraFr,
         };
+        const tl = parseInt(techLevel, 10);
         const [shortRange, longRange] = range.split("/").map(r => r.trim());
         const system = {
             slug,
-            tl: parseInt(tl, 10),
+            tl,
             damage: parseInt(damage, 10),
             strRequirement: parseInt(strRequirement, 10),
             range: {
@@ -785,14 +893,18 @@ const importWeaponCsv = async () => {
             currentAmmo: 0,
             size,
             agora,
-            cost: parseInt(cost, 10),
+            fb: parseInt(fb, 10),
             features,
+        }
+
+        if (tl > 4) {
+            system.techCompulsion = "destructive";
         }
 
         let effects = [];
         if (goalModifier !== "") {
             effects.push({
-                ...EFFECT_TEMPLATE_FNS["weapon"](slug, id, 0, { value: goalModifier }),
+                ...EFFECT_TEMPLATE_FNS["armor"](slug, id, 0, { value: goalModifier }),
             });
 
             translation.effects = {};
@@ -814,7 +926,7 @@ const importWeaponCsv = async () => {
                 effects,
             }
         );
-    });
+    }
 };
 
 const findMissingTranslations = async () => {
@@ -891,6 +1003,11 @@ cmd
     .command("import-weapons-csv")
     .description("Import weapons from weapons.csv")
     .action(importWeaponCsv);
+
+cmd
+    .command("import-armors-csv")
+    .description("Import armors from armors.csv")
+    .action(importArmorCsv);
 
 cmd
     .command("find-missing-translations")

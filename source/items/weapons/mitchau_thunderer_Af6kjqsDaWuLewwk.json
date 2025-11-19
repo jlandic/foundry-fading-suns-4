@@ -1,0 +1,54 @@
+{
+  "type": "weapon",
+  "name": "mitchau_thunderer",
+  "folder": "DKKyHySGxvH8gnTX",
+  "system": {
+    "slug": "mitchau_thunderer",
+    "description": "",
+    "curio": false,
+    "agora": "Common ; Hzt & UC",
+    "quality": "standard",
+    "size": "s",
+    "features": [
+      "sturdy"
+    ],
+    "fb": 200,
+    "tl": 3,
+    "capability": "slug_guns",
+    "damage": 5,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 20,
+      "long": 30
+    },
+    "rof": 3,
+    "burst": false,
+    "ammo": 6,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "Af6kjqsDaWuLewwk",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Af6kjqsDaWuLewwk"
+}

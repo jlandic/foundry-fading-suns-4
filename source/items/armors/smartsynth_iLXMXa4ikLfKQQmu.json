@@ -9,7 +9,7 @@
     "techCompulsion": "protective",
     "res": 4,
     "eshieldCompatibility": "ea",
-    "cost": 600,
+    "fb": 600,
     "anti": [
       "hard",
       "shock",

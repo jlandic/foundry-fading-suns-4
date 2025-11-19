@@ -1,0 +1,52 @@
+{
+  "type": "weapon",
+  "name": "fenir_monbow",
+  "folder": "5flCj1ditxXwFcuq",
+  "system": {
+    "slug": "fenir_monbow",
+    "description": "",
+    "curio": false,
+    "agora": "Fenir & many licensees",
+    "quality": "standard",
+    "size": "s",
+    "features": [],
+    "fb": 150,
+    "tl": 4,
+    "capability": "slug_guns",
+    "damage": 4,
+    "strRequirement": 2,
+    "melee": false,
+    "range": {
+      "short": 10,
+      "long": 20
+    },
+    "rof": 3,
+    "burst": false,
+    "ammo": 13,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "tb8B5rDAOewPrDj9",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1763567845529,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 500000,
+  "_key": "!items!tb8B5rDAOewPrDj9"
+}

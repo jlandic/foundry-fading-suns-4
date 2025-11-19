@@ -13,7 +13,8 @@ export default class PhysicalItemDataModel extends BaseItemDataModel {
             tl: new NumberField({ required: false }),
             curio: new BooleanField({ required: false, initial: false }),
             agora: new StringField({ required: true, initial: "" }),
-            cost: new NumberField({ required: false }),
+            fb: new NumberField({ required: false }),
+            quantity: new NumberField({ required: true, initial: 1 }),
             techCompulsion: new StringField({ required: false }),
             quality: new StringField({
                 required: true,
@@ -29,9 +30,9 @@ export default class PhysicalItemDataModel extends BaseItemDataModel {
     }
 
     get adjustedCost() {
-        if (this.cost == null) return null;
+        if (this.fb == null) return null;
 
-        return Math.round(this.cost * EquipmentCostMultipliers[this.quality]);
+        return Math.round(this.fb * EquipmentCostMultipliers[this.quality]);
     }
 
     get isEquippable() {

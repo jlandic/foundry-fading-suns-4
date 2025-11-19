@@ -27,7 +27,7 @@
     "features": [],
     "tl": 7,
     "techCompulsion": "destructive",
-    "cost": 900,
+    "fb": 900,
     "capability": "energy_guns",
     "blastForce": null
   },

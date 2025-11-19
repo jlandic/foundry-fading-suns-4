@@ -1,0 +1,52 @@
+{
+  "type": "weapon",
+  "name": "typical_med_auto",
+  "folder": "P1zeEneTV8P262bU",
+  "system": {
+    "slug": "typical_med_auto",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "s",
+    "features": [],
+    "fb": 250,
+    "tl": 4,
+    "capability": "slug_guns",
+    "damage": 5,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 20,
+      "long": 30
+    },
+    "rof": 3,
+    "burst": false,
+    "ammo": 10,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "Hzd2ULcrEoMQlPkr",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Hzd2ULcrEoMQlPkr"
+}

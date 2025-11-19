@@ -11,7 +11,7 @@ export default class AgentDataModel extends BaseActorDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
             level: new NumberField({ required: true, initial: 1 }),
-            cash: new NumberField({ required: true, initial: 0 }),
+            fb: new NumberField({ required: true, initial: 0 }),
             rank: new StringField({ required: true }),
             class: new StringField({ nullable: true }),
             faction: new StringField({ nullable: true }),

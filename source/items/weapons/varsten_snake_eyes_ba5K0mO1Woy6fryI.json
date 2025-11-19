@@ -1,7 +1,7 @@
 {
   "type": "weapon",
   "name": "varsten_snake_eyes",
-  "folder": "derringer_breakfeeds",
+  "folder": "EiI2FxWVrEMWR3Kg",
   "system": {
     "slug": "varsten_snake_eyes",
     "description": "",
@@ -12,7 +12,7 @@
     "features": [
       "sturdy"
     ],
-    "cost": 45,
+    "fb": 45,
     "tl": 3,
     "capability": "slug_guns",
     "damage": 3,
@@ -80,13 +80,13 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1760897547556,
-    "modifiedTime": 1760897547556,
+    "modifiedTime": 1763565140109,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
     "default": 0,
     "ef54fWvGiyPGgegN": 3
   },
-  "sort": 0,
+  "sort": 100000,
   "_key": "!items!ba5K0mO1Woy6fryI"
 }

@@ -21,7 +21,7 @@
       "slam",
       "hard"
     ],
-    "cost": 25,
+    "fb": 25,
     "tl": 5,
     "techCompulsion": "reckless",
     "capability": "handheld_shield"

@@ -1,7 +1,7 @@
 {
   "type": "weapon",
   "name": "lank_derringer",
-  "folder": "derringer_autofeeds",
+  "folder": "igMAHkct1er6GKfa",
   "system": {
     "slug": "lank_derringer",
     "description": "",
@@ -13,7 +13,7 @@
       "single_use",
       "undetectable"
     ],
-    "cost": 70,
+    "fb": 70,
     "tl": 4,
     "capability": "slug_guns",
     "damage": 3,
@@ -81,13 +81,13 @@
     "systemId": "fading-suns-4",
     "systemVersion": "0.0.1",
     "createdTime": 1760897547556,
-    "modifiedTime": 1760897547556,
+    "modifiedTime": 1763565131593,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
     "default": 0,
     "ef54fWvGiyPGgegN": 3
   },
-  "sort": 0,
+  "sort": 100000,
   "_key": "!items!0AYx89KvVYmjWdUf"
 }

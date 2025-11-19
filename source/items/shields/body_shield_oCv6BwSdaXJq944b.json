@@ -17,7 +17,7 @@
     "features": [
       "unwieldy_shield"
     ],
-    "cost": 15,
+    "fb": 15,
     "tl": 1,
     "anti": [
       "slam"

@@ -28,7 +28,7 @@
       "isDistorted": false
     },
     "tl": 7,
-    "cost": 5000,
+    "fb": 5000,
     "techCompulsion": "reckless"
   },
   "effects": [],

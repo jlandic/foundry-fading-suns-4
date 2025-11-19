@@ -1,0 +1,23 @@
+{
+  "type": "Item",
+  "folder": null,
+  "name": "Slug guns",
+  "color": null,
+  "sorting": "a",
+  "_id": "71RA8HXPKYwFSI6o",
+  "description": "",
+  "sort": 500000,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "createdTime": 1763563137549,
+    "modifiedTime": 1763563142062,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "_key": "!folders!71RA8HXPKYwFSI6o"
+}

@@ -25,7 +25,7 @@
       "guard"
     ],
     "capability": "military_weapons",
-    "cost": 5,
+    "fb": 5,
     "tl": 2
   },
   "effects": [],

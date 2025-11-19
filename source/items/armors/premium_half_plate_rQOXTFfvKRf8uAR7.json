@@ -9,7 +9,7 @@
     "techCompulsion": null,
     "res": 6,
     "eshieldCompatibility": "eg",
-    "cost": 30,
+    "fb": 30,
     "anti": [
       "shock",
       "slam"

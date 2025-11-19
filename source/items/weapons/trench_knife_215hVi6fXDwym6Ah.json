@@ -9,7 +9,7 @@
     "damage": 3,
     "strRequirement": 1,
     "size": "m",
-    "cost": 6,
+    "fb": 6,
     "features": [
       "built_in_knuckleduster",
       "military"

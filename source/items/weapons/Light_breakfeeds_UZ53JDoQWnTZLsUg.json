@@ -1,0 +1,21 @@
+{
+  "type": "Item",
+  "folder": "71RA8HXPKYwFSI6o",
+  "name": "Light breakfeeds",
+  "color": null,
+  "sorting": "a",
+  "_id": "UZ53JDoQWnTZLsUg",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "PLACEHOLDER",
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!UZ53JDoQWnTZLsUg"
+}

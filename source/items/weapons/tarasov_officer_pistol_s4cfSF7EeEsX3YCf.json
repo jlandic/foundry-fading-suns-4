@@ -1,0 +1,55 @@
+{
+  "type": "weapon",
+  "name": "tarasov_officer_pistol",
+  "folder": "paQ2TCQqbv8F97C7",
+  "system": {
+    "slug": "tarasov_officer_pistol",
+    "description": "",
+    "curio": false,
+    "agora": "Common ; KW (Reeves)",
+    "quality": "standard",
+    "size": "s",
+    "features": [
+      "sturdy",
+      "pommel"
+    ],
+    "fb": 50,
+    "tl": 3,
+    "capability": "slug_guns",
+    "damage": 5,
+    "strRequirement": 3,
+    "melee": false,
+    "range": {
+      "short": 10,
+      "long": 20
+    },
+    "rof": 2,
+    "burst": false,
+    "ammo": 5,
+    "currentAmmo": 0,
+    "blastForce": null,
+    "damageTypes": [],
+    "techCompulsion": null
+  },
+  "_id": "s4cfSF7EeEsX3YCf",
+  "img": "icons/weapons/swords/swords-short.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!s4cfSF7EeEsX3YCf"
+}
