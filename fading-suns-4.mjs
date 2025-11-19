@@ -151,6 +151,10 @@ Hooks.once("ready", async () => {
     if (!globalThis.Babele) {
         await createStatusEffects();
     }
+
+    if (game.MonksEnhancedJournal) {
+        game.MonksEnhancedJournal.pricename = "fb";
+    }
 });
 
 Hooks.once("babele.ready", async () => {
