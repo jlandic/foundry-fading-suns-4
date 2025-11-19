@@ -610,7 +610,7 @@ const TRANSLATION_ENTRY_TEMPLATE = {
     }
 };
 
-const createSourceItem = async (template, slug, effects = 0, options = { id: null, system: null, i18n: null, folder: null, effects: null }) => {
+const createSourceItem = async (template, slug, effects = 0, options = { id: null, system: null, i18n: null, folder: null, effects: null, img: null }) => {
     const pack = TEMPLATE_PACK_MAPPING[template];
     const type = TEMPLATE_TYPE_MAPPING[template] || template;
     if (!type) {
@@ -632,7 +632,7 @@ const createSourceItem = async (template, slug, effects = 0, options = { id: nul
             ...options.system,
         },
         _id: id,
-        img: IMG_MAPPING[type] || "icons/svg/item-bag.svg",
+        img: IMG_MAPPING[type] || options.img || "icons/svg/item-bag.svg",
         effects: options.effects || Array.from({ length: effects }, (_, i) =>
             EFFECT_TEMPLATE_FNS[template](slug, id, i)
         ),
@@ -920,6 +920,7 @@ const importWeaponCsv = async () => {
             0,
             {
                 system,
+                img: "icons/weapons/guns/gun-green.webp",
                 i18n: translation,
                 folder: folderId,
                 id,

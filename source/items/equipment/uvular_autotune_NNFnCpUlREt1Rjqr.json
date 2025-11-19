@@ -1,37 +1,19 @@
 {
-  "type": "weapon",
-  "name": "varsten_snake_eyes",
-  "folder": "EiI2FxWVrEMWR3Kg",
+  "type": "equipment",
+  "name": "uvular_autotune",
+  "folder": null,
   "system": {
-    "slug": "varsten_snake_eyes",
+    "slug": "uvular_autotune",
     "description": "",
     "curio": false,
-    "agora": "Decados",
+    "agora": "",
     "quality": "standard",
-    "size": "xs",
-    "features": [
-      "sturdy"
-    ],
-    "fb": 45,
-    "tl": 3,
-    "capability": "slug_guns",
-    "damage": 3,
-    "strRequirement": 1,
-    "melee": false,
-    "range": {
-      "short": 5,
-      "long": 10
-    },
-    "rof": 2,
-    "burst": false,
-    "ammo": 2,
-    "currentAmmo": 0,
-    "blastForce": null,
-    "damageTypes": [],
-    "quantity": 1
+    "size": "s",
+    "fb": 50,
+    "tl": 6
   },
-  "_id": "ba5K0mO1Woy6fryI",
-  "img": "icons/weapons/guns/gun-green.webp",
+  "_id": "NNFnCpUlREt1Rjqr",
+  "img": "icons/svg/item-bag.svg",
   "effects": [
     {
       "disabled": false,
@@ -57,18 +39,18 @@
         "systemVersion": "PLACEHOLDER",
         "lastModifiedBy": null
       },
-      "name": "varsten_snake_eyes",
-      "_id": "857zXwi86mxmIprd",
+      "name": "uvular_autotune",
+      "_id": "kb1OhmqZpzSgU9GI",
       "system": {
-        "valueType": "constant",
-        "targetType": "goal",
+        "valueType": "favorable",
+        "targetType": "skill",
+        "target": "perform",
         "austerity": false,
         "context": "none",
-        "value": "-1",
         "notes": ""
       },
       "sort": 0,
-      "_key": "!items.effects!ba5K0mO1Woy6fryI.857zXwi86mxmIprd"
+      "_key": "!items.effects!NNFnCpUlREt1Rjqr.kb1OhmqZpzSgU9GI"
     }
   ],
   "flags": {},
@@ -78,14 +60,15 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "fading-suns-4",
-    "systemVersion": "PLACEHOLDER",
+    "systemVersion": "0.0.1",
     "createdTime": 1760897547556,
-    "modifiedTime": 1763575796201,
+    "modifiedTime": 1760897547556,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
   },
-  "sort": 100000,
-  "_key": "!items!ba5K0mO1Woy6fryI"
+  "sort": 0,
+  "_key": "!items!NNFnCpUlREt1Rjqr"
 }

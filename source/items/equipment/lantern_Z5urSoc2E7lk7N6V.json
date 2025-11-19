@@ -1,0 +1,36 @@
+{
+  "type": "equipment",
+  "name": "lantern",
+  "folder": null,
+  "system": {
+    "slug": "lantern",
+    "description": "",
+    "curio": false,
+    "agora": "",
+    "quality": "standard",
+    "size": "m",
+    "fb": 2,
+    "tl": 1
+  },
+  "_id": "Z5urSoc2E7lk7N6V",
+  "img": "icons/svg/item-bag.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "fading-suns-4",
+    "systemVersion": "0.0.1",
+    "createdTime": 1760897547556,
+    "modifiedTime": 1760897547556,
+    "lastModifiedBy": "ef54fWvGiyPGgegN"
+  },
+  "ownership": {
+    "default": 0,
+    "ef54fWvGiyPGgegN": 3
+  },
+  "sort": 0,
+  "_key": "!items!Z5urSoc2E7lk7N6V"
+}

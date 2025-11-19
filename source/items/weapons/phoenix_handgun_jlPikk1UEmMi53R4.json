@@ -28,10 +28,10 @@
     "currentAmmo": 0,
     "blastForce": null,
     "damageTypes": [],
-    "techCompulsion": null
+    "quantity": 1
   },
   "_id": "jlPikk1UEmMi53R4",
-  "img": "icons/weapons/swords/swords-short.webp",
+  "img": "icons/weapons/guns/gun-green.webp",
   "effects": [],
   "flags": {},
   "_stats": {
@@ -40,14 +40,13 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "fading-suns-4",
-    "systemVersion": "0.0.1",
+    "systemVersion": "PLACEHOLDER",
     "createdTime": 1760897547556,
-    "modifiedTime": 1763567845529,
+    "modifiedTime": 1763575796201,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 400000,
   "_key": "!items!jlPikk1UEmMi53R4"
