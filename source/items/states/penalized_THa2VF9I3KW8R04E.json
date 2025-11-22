@@ -39,6 +39,7 @@
       "name": "penalized",
       "_id": "SyGexPFigvSPAf7Z",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!THa2VF9I3KW8R04E.SyGexPFigvSPAf7Z"
     }
   ],
@@ -51,12 +52,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!THa2VF9I3KW8R04E"

@@ -39,6 +39,7 @@
       "name": "hearing_impaired",
       "_id": "jTydXHZEhhsqZc3P",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!HstCy4YxnkJKDiLV.jTydXHZEhhsqZc3P"
     },
     {
@@ -89,12 +90,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!HstCy4YxnkJKDiLV"

@@ -39,6 +39,7 @@
       "name": "fatigued",
       "_id": "6GlrPXC8su6ddxgv",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!opc2V5tcRZTdTusI.6GlrPXC8su6ddxgv"
     },
     {
@@ -48,7 +49,7 @@
       "changes": [
         {
           "key": "system.characteristics.force",
-          "mode": "add",
+          "mode": 2,
           "value": "-2",
           "priority": 0
         }
@@ -93,7 +94,7 @@
       "changes": [
         {
           "key": "system.characteristics.dexterity",
-          "mode": "add",
+          "mode": 2,
           "value": "-2",
           "priority": 0
         }
@@ -138,7 +139,7 @@
       "changes": [
         {
           "key": "system.characteristics.endurance",
-          "mode": "add",
+          "mode": 2,
           "value": "-2",
           "priority": 0
         }
@@ -186,12 +187,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!opc2V5tcRZTdTusI"

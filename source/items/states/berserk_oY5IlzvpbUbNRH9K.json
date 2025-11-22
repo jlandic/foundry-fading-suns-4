@@ -39,6 +39,7 @@
       "name": "berserk",
       "_id": "CP0TRByVfzUANl27",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!oY5IlzvpbUbNRH9K.CP0TRByVfzUANl27"
     }
   ],
@@ -51,12 +52,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!oY5IlzvpbUbNRH9K"

@@ -39,6 +39,7 @@
       "name": "epiphany",
       "_id": "I0PmuQgNyk6G3DAh",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!dG85JeMxdRtryyze.I0PmuQgNyk6G3DAh"
     }
   ],
@@ -49,14 +50,13 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "fading-suns-4",
-    "systemVersion": "0.0.1",
+    "systemVersion": "PLACEHOLDER",
     "createdTime": 1760897547556,
-    "modifiedTime": 1760897547556,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!dG85JeMxdRtryyze"

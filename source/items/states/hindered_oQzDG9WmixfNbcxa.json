@@ -17,7 +17,7 @@
       "changes": [
         {
           "key": "system.speed",
-          "mode": "multiply",
+          "mode": 2,
           "value": "0.5",
           "priority": 0
         }
@@ -46,6 +46,7 @@
       "name": "hindered",
       "_id": "1HNxysgNKfKbyHCU",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!oQzDG9WmixfNbcxa.1HNxysgNKfKbyHCU"
     },
     {
@@ -95,12 +96,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!oQzDG9WmixfNbcxa"

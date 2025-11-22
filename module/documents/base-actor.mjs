@@ -47,6 +47,13 @@ export default class BaseActor extends WithModifiersMixin(
 
         if (data["system.vitality.value"] !== undefined) {
             data["system.vitality.value"] = Math.clamped(data["system.vitality.value"], 0, this.system.maxVitality);
+
+            if (data["system.vitality.value"] === 0) {
+                const defeatedState = await globalThis.fs4.registry.fromSlugAsync(CONFIG.specialStatusEffects.DEFEATED, "state");
+                if (defeatedState) {
+                    await this.addItem(defeatedState);
+                }
+            }
         }
 
         data["system.vitality.max"] = this.system.maxVitality;

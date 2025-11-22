@@ -60,6 +60,8 @@ export default class BaseActiveEffect extends foundry.documents.ActiveEffect {
                 return "fs4.skills";
             case ModifierTargetTypes.Resistance:
                 return "fs4.resistance";
+            case ModifierTargetTypes.Initiative:
+                return "fs4.modifier.initiativeModifierTypes";
             default:
                 return "fs4.modifier.noAffectedAttribute";
         }

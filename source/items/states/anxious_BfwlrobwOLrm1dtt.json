@@ -39,6 +39,7 @@
       "name": "anxious",
       "_id": "dX3F3RFS91pwABp4",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!BfwlrobwOLrm1dtt.dX3F3RFS91pwABp4"
     },
     {
@@ -125,12 +126,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!BfwlrobwOLrm1dtt"

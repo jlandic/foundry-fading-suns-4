@@ -39,6 +39,7 @@
       "name": "confused",
       "_id": "LqAZnzVTFj7DET6h",
       "system": {},
+      "sort": 0,
       "_key": "!items.effects!OL5I83eFlF12uBZ1.LqAZnzVTFj7DET6h"
     },
     {
@@ -88,12 +89,11 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1762535654603,
-    "modifiedTime": 1762535654603,
+    "modifiedTime": 1763818224413,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
-    "default": 0,
-    "ef54fWvGiyPGgegN": 3
+    "default": 0
   },
   "sort": 0,
   "_key": "!items!OL5I83eFlF12uBZ1"
