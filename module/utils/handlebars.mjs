@@ -27,4 +27,7 @@ export const registerHandlebarsHelpers = () => {
     Handlebars.registerHelper("getProperty", (object, property) => {
         return object[property];
     });
+    Handlebars.registerHelper("withSign", (number) => {
+        return number >= 0 ? `+${number}` : number;
+    });
 };

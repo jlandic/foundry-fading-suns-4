@@ -41,6 +41,82 @@
       "system": {},
       "sort": 0,
       "_key": "!items.effects!dG85JeMxdRtryyze.I0PmuQgNyk6G3DAh"
+    },
+    {
+      "name": "epiphany",
+      "disabled": false,
+      "type": "modifier",
+      "_id": "uAVteyvpPsrVh5qC",
+      "img": null,
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "austerity": false,
+        "context": "none",
+        "value": "2",
+        "target": "mind",
+        "notes": "Against unwanted states"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!dG85JeMxdRtryyze.uAVteyvpPsrVh5qC"
+    },
+    {
+      "name": "epiphany",
+      "disabled": false,
+      "type": "modifier",
+      "_id": "HDmSZrRzxaF7sFwG",
+      "img": null,
+      "system": {
+        "valueType": "constant",
+        "targetType": "resistance",
+        "austerity": false,
+        "context": "none",
+        "value": "2",
+        "target": "spirit",
+        "notes": "Against unwanted states"
+      },
+      "changes": [],
+      "duration": {
+        "startTime": null,
+        "combat": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "fading-suns-4",
+        "systemVersion": "PLACEHOLDER",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!dG85JeMxdRtryyze.HDmSZrRzxaF7sFwG"
     }
   ],
   "flags": {},
@@ -52,7 +128,7 @@
     "systemId": "fading-suns-4",
     "systemVersion": "PLACEHOLDER",
     "createdTime": 1760897547556,
-    "modifiedTime": 1763818224413,
+    "modifiedTime": 1763898882047,
     "lastModifiedBy": "ef54fWvGiyPGgegN"
   },
   "ownership": {
