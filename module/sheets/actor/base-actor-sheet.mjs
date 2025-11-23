@@ -170,16 +170,6 @@ export default class BaseActorSheet extends BaseSheetMixin(
         ].filter(Boolean);
     }
 
-    _onRender(context, options) {
-        super._onRender(context, options);
-
-        new foundry.applications.ux.DragDrop.implementation({
-            callbacks: {
-                drag: this._onDragStart.bind(this),
-            }
-        }).bind(this.element);
-    }
-
     async _prepareContext(options) {
         const context = await super._prepareContext(options);
 
@@ -371,12 +361,14 @@ export default class BaseActorSheet extends BaseSheetMixin(
     }
 
     _onDragStart(event) {
+        console.log(event);
         event.dataTransfer.setData(
             "text/plain",
             JSON.stringify({
-                type: event.currentTarget.dataset.type,
-                itemId: event.currentTarget.dataset.id,
+                type: event.target.dataset.type,
+                itemId: event.target.dataset.id,
                 actorId: this.actor.id,
+                img: "icons/svg/d20-highlight.svg",
             })
         )
     }

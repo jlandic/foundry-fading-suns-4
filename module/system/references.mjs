@@ -123,6 +123,7 @@ export const PerkSourceTypes = Object.freeze({
     Species: "species",
     Class: "class",
     Calling: "calling",
+    Faction: "faction",
 });
 
 export const CapabilityTypes = Object.freeze({

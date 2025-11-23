@@ -7,6 +7,7 @@ export const onHotbarDrop = async (_hotbar, data, slot) => {
         type,
         itemId,
         actorId,
+        img,
     } = data;
 
     const actor = Actor.get(actorId);
@@ -33,7 +34,7 @@ export const onHotbarDrop = async (_hotbar, data, slot) => {
     if (type === RollTypes.Maneuver) {
         item = actor.items.get(itemId);
         name = new Handlebars.SafeString(item.name);
-        command = `Actor.get("${actorId}")?.rollManeuver("${itemId}")`;
+        command = `Actor.get("${actorId}")?.rollManeuver("${item.system.slug}")`;
     } else if (type === RollTypes.Skill) {
         name = game.i18n.localize(`fs4.skills.${itemId}`);
         command = `Actor.get("${actorId}")?.rollSkill("${itemId}")`;
@@ -47,7 +48,7 @@ export const onHotbarDrop = async (_hotbar, data, slot) => {
             name,
             command,
             folder: folder.id,
-            img: item?.img,
+            img: img || item?.img,
         })) ?? null;
 
     if (macro == null) return;

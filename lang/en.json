@@ -85,7 +85,7 @@
       "actor": {
         "actions": {
           "bankVP": "Bank VP",
-          "Empty cache": "Empty cache",
+          "emptyCache": "Empty cache",
           "respite": "Respite",
           "revival": "Revival",
           "surge": "Surge"
