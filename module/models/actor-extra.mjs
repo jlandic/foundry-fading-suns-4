@@ -10,6 +10,9 @@ const {
 export default class ExtraDataModel extends BaseActorDataModel {
     static defineSchema() {
         return foundry.utils.mergeObject(super.defineSchema(), {
+            vp: new SchemaField({
+                cache: new NumberField({ required: true, initial: 0 }),
+            }),
             maneuvers: new TypedObjectField(new SchemaField({
                 name: new StringField({ required: true }),
                 goal: new NumberField({ required: true }),

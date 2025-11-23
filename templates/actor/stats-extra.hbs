@@ -21,6 +21,11 @@
             <input class="score" type="number" name="system.resistance.spirit" value="{{system.resistance.spirit}}"
                 min="0" />
         </div>
+
+        <div class="form-group flex0">
+            <label for="system.vp.cache">{{ localize "fs4.actor.fields.vp.cache" }}</label>
+            <input class="score" type="number" name="system.vp.cache" value="{{system.vp.cache}}" min="0" />
+        </div>
     </div>
 
     <hr>
@@ -46,6 +51,14 @@
                     min="0">
                 <input type="text" name="system.maneuvers.{{this.id}}.impact" value="{{this.impact}}">
                 <div class="item-controls">
+                    <a class="item-control"
+                        data-action="roll"
+                        data-roll-type="customManeuver"
+                        data-maneuver-name="{{this.name}}"
+                        data-maneuver-goal="{{this.goal}}"
+                        title="{{ localize "fs4.actions.roll" }}">
+                        <i class="fas fa-dice"></i>
+                    </a>
                     {{#each this.controls}}
                     <a class="item-control" data-action="{{this.action}}" data-id="{{../id}}" data-type="{{../type}}"
                         data-name="{{this.name}}" {{#if ../parentId}}data-parent-id="{{../parentId}}" {{/if}}

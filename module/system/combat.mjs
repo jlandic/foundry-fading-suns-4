@@ -1,3 +1,5 @@
+import BaseActor from "../documents/base-actor.mjs";
+
 export const combatTurnChange = async (
     {
         current: { combatantId },
@@ -5,12 +7,20 @@ export const combatTurnChange = async (
     },
 ) => {
     if (combatantId) {
-        const actor = game.combats.active?.combatants?.get(combatantId)?.actor;
-        await actor?.turnStartTick();
+        const combatant = game.combats.active?.combatants?.get(combatantId);
+        if (combatant?.token?.actorLink) {
+            await combatant.actor?.turnStartTick();
+        } else if (combatant?.token) {
+            await BaseActor.turnStartTick(combatant.token);
+        }
     }
 
     if (previousCombatantId) {
-        const actor = game.combats.active?.combatants?.get(previousCombatantId)?.actor;
-        await actor?.turnEndTick();
+        const combatant = game.combats.active?.combatants?.get(previousCombatantId);
+        if (combatant?.token?.actorLink) {
+            await combatant.actor?.turnEndTick();
+        } else if (combatant?.token) {
+            await BaseActor.turnEndTick(combatant.token);
+        }
     }
 };

@@ -78,7 +78,7 @@ Hooks.once("init", async () => {
         },
         extra: {
             bar: ["vitality"],
-            value: [],
+            value: ["vp.cache"],
         },
     };
 

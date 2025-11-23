@@ -1,7 +1,7 @@
 import { selectCharacteristic } from "../apps/dialogs/roll-dialogs.mjs";
 import RollApp from "../apps/roll.mjs";
 import { BASIC_MANEUVERS, Characteristics, ModifierTargetTypes, ResistanceTypes, ResistanceValues, Skills, TECHGNOSIS_TL_MAX } from "../system/references.mjs";
-import { RollIntention } from "../system/rolls.mjs";
+import { CustomManeuver, RollIntention } from "../system/rolls.mjs";
 import { WithModifiersMixin } from "./mixins.mjs";
 
 export default class BaseActor extends WithModifiersMixin(
@@ -215,6 +215,19 @@ export default class BaseActor extends WithModifiersMixin(
         ).render(true);
     }
 
+    async rollCustomManeuver(name, score) {
+        const customManeuver = new CustomManeuver(name, score);
+
+        const rollIntention = new RollIntention({
+            customManeuver,
+        });
+
+        await new RollApp(
+            this,
+            rollIntention,
+        ).render(true);
+    }
+
     toggleEquip(itemId) {
         const item = this.items.get(itemId);
         if (!item || !item.system.isEquippable) return;
@@ -290,5 +303,13 @@ export default class BaseActor extends WithModifiersMixin(
     }
 
     async turnEndTick() {
+    }
+
+    // Handle tokens not linked to their actor
+    static async turnStartTick(token) {
+        await token.delta.update({ "system.vp.cache": 0 });
+    }
+
+    static async turnEndTick() {
     }
 }

@@ -3,7 +3,15 @@ import { ModifierTargetTypes, ModifierValueTypes, RollFavor } from "./references
 export const RollTypes = Object.freeze({
     Skill: "skill",
     Maneuver: "maneuver",
+    CustomManeuver: "customManeuver",
 });
+
+export class CustomManeuver {
+    constructor(name, goal) {
+        this.name = name;
+        this.goal = goal;
+    }
+}
 
 export class RollIntention {
     constructor({
@@ -11,14 +19,16 @@ export class RollIntention {
         skill = null,
         maneuver = null,
         resistance = null,
+        customManeuver = null,
     } = {}) {
         this.maneuver = maneuver;
         this.resistance = resistance;
+        this.customManeuver = customManeuver;
 
         if (this.maneuver) {
             this.characteristic = this.maneuver.system.characteristic;
             this.skill = this.maneuver.system.skill;
-        } else {
+        } else if (!this.customManeuver) {
             this.characteristic = characteristic;
             this.skill = skill;
         }
@@ -27,16 +37,32 @@ export class RollIntention {
     toString() {
         if (this.maneuver) {
             return this.maneuver.name;
+        } else if (this.customManeuver) {
+            return this.customManeuver.name;
         }
 
         return `${this.skillLabel} + ${this.characteristicLabel}`;
     }
 
+    get maneuverName() {
+        if (this.maneuver) {
+            return this.maneuver.name;
+        } else if (this.customManeuver) {
+            return this.customManeuver.name;
+        }
+
+        return null;
+    }
+
     get characteristicLabel() {
+        if (!this.characteristic) return null;
+
         return game.i18n.localize(`fs4.characteristics.${this.characteristic}`)
     }
 
     get skillLabel() {
+        if (!this.skill) return null;
+
         return game.i18n.localize(`fs4.skills.${this.skill}`);
     }
 }
@@ -70,7 +96,7 @@ export class RollData {
 
     get baseGoal() {
         if (this.actor.type === "extra") {
-            return this.rollIntention.maneuver.goal;
+            return this.rollIntention.customManeuver.goal;
         }
 
         return this.modifiedCharacteristicValue + this.modifiedSkillValue;
@@ -275,19 +301,27 @@ export class DiceThrow {
         return this.result === 20;
     }
 
+    get isExtra() {
+        return this.rollData.actor.type === "extra";
+    }
+
+    get hasVpToGain() {
+        return this.vp > 0 && !this.rollData.rollIntention.maneuver?.system?.noVp;
+    }
+
     get chatContext() {
         return {
             subtitle: this.options.subtitle,
             result: this.result,
             vp: this.vp,
-            hasVpToGain: this.vp > 0 && !this.rollData.rollIntention.maneuver?.system?.noVp,
+            hasVpToGain: this.hasVpToGain,
             goal: this.goal,
             isFavorable: this.isFavorable,
             isUnfavorable: this.isUnfavorable,
             isCriticalSuccess: this.isCriticalSuccess,
             isCriticalFailure: this.isCriticalFailure,
             maneuverUuid: this.rollData.rollIntention.maneuver?.uuid,
-            maneuverName: this.rollData.rollIntention.maneuver?.name,
+            maneuverName: this.rollData.rollIntention.maneuverName,
             characteristic: this.rollData.rollIntention.characteristicLabel,
             skill: this.rollData.rollIntention.skillLabel,
             characteristicActorValue: this.rollData.characteristicActorValue,
@@ -302,11 +336,12 @@ export class DiceThrow {
             modifiers: this.rollData.modifiers,
             hasModifiers: this.rollData.modifiers.length > 0,
             actorId: this.rollData.actor.id,
-            isExtra: this.rollData.actor.type === "extra",
+            isExtra: this.isExtra,
             techCompulsionRisk: this.rollData.actor.overloaded && this.isCriticalSuccess,
             resistance: this.rollData.rollIntention.resistance,
             respite: this.options.respite,
             isBlind: this.isBlind,
+            isCustomManeuver: !!this.rollData.rollIntention.customManeuver,
         };
     }
 

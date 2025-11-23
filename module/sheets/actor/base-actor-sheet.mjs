@@ -479,6 +479,12 @@ export default class BaseActorSheet extends BaseSheetMixin(
             case RollTypes.Maneuver:
                 await this.actor.rollManeuver(target.dataset.rollAttribute);
                 break;
+            case RollTypes.CustomManeuver:
+                await this.actor.rollCustomManeuver(
+                    target.dataset.maneuverName,
+                    parseInt(target.dataset.maneuverGoal)
+                );
+                break;
         }
     }
 
