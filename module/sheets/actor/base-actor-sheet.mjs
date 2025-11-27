@@ -361,7 +361,6 @@ export default class BaseActorSheet extends BaseSheetMixin(
     }
 
     _onDragStart(event) {
-        console.log(event);
         event.dataTransfer.setData(
             "text/plain",
             JSON.stringify({

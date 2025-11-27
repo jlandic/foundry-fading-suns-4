@@ -5,7 +5,6 @@ export default class BaseItem extends WithModifiersMixin(
     foundry.documents.Item,
 ) {
     async update(data, options = {}) {
-        console.log(data);
         return super.update(data, options);
     }
 

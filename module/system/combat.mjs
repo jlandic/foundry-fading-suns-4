@@ -6,6 +6,8 @@ export const combatTurnChange = async (
         previous: { combatantId: previousCombatantId },
     },
 ) => {
+    if (!game.users.activeGM.isSelf) return;
+
     if (combatantId) {
         const combatant = game.combats.active?.combatants?.get(combatantId);
         if (combatant?.token?.actorLink) {

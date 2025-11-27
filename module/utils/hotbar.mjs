@@ -12,19 +12,11 @@ export const onHotbarDrop = async (_hotbar, data, slot) => {
 
     const actor = Actor.get(actorId);
 
-    let rootFolder = game.folders.find((folder) => folder.name === HOTBAR_MACROS_FOLDER && folder.type === "Macro");
-    if (rootFolder == null) {
-        rootFolder = await Folder.create({
-            name: HOTBAR_MACROS_FOLDER,
-            type: "Macro",
-        });
-    }
-    let folder = game.folders.find((folder) => folder.name === game.user.name);
+    let folder = game.folders.find((folder) => folder.name === HOTBAR_MACROS_FOLDER && folder.type === "Macro");
     if (folder == null) {
         folder = await Folder.create({
-            name: game.user.name,
+            name: HOTBAR_MACROS_FOLDER,
             type: "Macro",
-            folder: rootFolder,
         });
     }
 
